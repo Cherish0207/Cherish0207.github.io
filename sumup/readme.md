@@ -1,1 +1,0 @@
-[chrome devtools使用详解——Performance](https://www.jianshu.com/p/d8795ff8e079)

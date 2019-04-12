@@ -1,5 +1,5 @@
 #### web前端-柴瑞雪 | 4年经验，25岁，女
-<p>
+
 <table class="table table-bordered table-striped table-condensed">
     <tr>
         <td>phone</td>
@@ -9,12 +9,14 @@
         <td>email</td>
     <td>cheshire_1207@foxmail.com </td>
     </tr>
-</table></p>
-<b>工作经历 Experience</b>
-<table>
+</table>
+
+##### 工作经历 Experience
+
+<table class="table table-bordered table-striped table-condensed">
     <tr>
         <td>2015.6-2017.8</td>
-        <td>杭州双收网络技</td>
+        <td>杭州双收网络技术</td>
         <td>Web前端</td>
     </tr>
     <tr>
@@ -33,78 +35,84 @@
 > 2011 - 2015 河南农业大学
 
 ##### 自我评价
-<p style="background-color:#f6f8fa">1、工作认真对待，按时完成工作，愿意接受适当的加班。
-2、逻辑思维清晰，代码规范，有解决问题、钻研新技术的兴趣和能力；善于学习和运用新知识。
-3、热爱前端开发，喜欢团队协作，沟通能力强，能够迅速融入团队。</p>
+
+<p style="background-color:#f6f8fa;margin:0">
+1、工作认真，代码规范，bug及时自测，愿意接受适当加班。
+</p>
+<p style="background-color:#f6f8fa;margin:0">
+2、逻辑清晰，有解决问题、钻研新技术的兴趣和能力，善于学习并运用新知识。
+</p>
+<p style="background-color:#f6f8fa;margin:0">
+3、热爱前端开发，喜欢团队协作，沟通能力强，能快速融入团队。
+</p>
 
 ##### 技能
+
+<p style="font-size: 12px;text-decoration:underline;background-color:#f6f8fa;margin:0">
 HTML/CSS
-<p style="background-color:#f6f8fa;margin:0">
- • 熟悉W3C规范，掌握DIV+CSS布局，能根据UI设计稿独立完成网页（PC，Mobile）构建；
- • 熟练使用各种布局方式( 流式, 弹性, 响应式, rem )进行多端开发；
- • 熟悉HTML5/CSS3新特性， 能够使用CSS3制作页面动画；
- • 熟悉Less预编译提高开发效率。
- </p>
- <p style="background-color:#f6f8fa">
- JavaScript
+</p>
+<p style="background-color:#f6f8fa;margin:0"> • 熟悉W3C规范，掌握DIV+CSS布局，能根据UI设计稿独立完成网页（PC，Mobile）构建；</p>
+<p style="background-color:#f6f8fa;margin:0"> • 熟练使用各种布局方式( 流式, 弹性, 响应式, rem )多端开发；</p>
+<p style="background-color:#f6f8fa;margin:0"> • 熟悉HTML5/CSS3新特性， 能够使用CSS3制作页面动画；</p>
+
+
+<p style="font-size: 12px;text-decoration:underline;background-color:#f6f8fa;margin-top:10px;margin-bottom:0">
+JavaScript
+</p>
+ <p style="background-color:#f6f8fa;margin:0">
  • 熟练使用原生JavaScript操作DOM，BOM；
- • 熟悉 ES6 常见用法；
- • 对JS面向对象的编程思想以及闭包、继承、原型链、作用域等有一定的认识，并在页面开发中使用；
- • 理解HTTP协议和JSONP实现原理，明白前后端的交互原理，熟练运用ajax/json/jsonp/axios实现前后端通信；
- • 熟悉canvas，能够使用echarts实现数据可视化。
- • 了解websoket </p>
- <p style="background-color:#f6f8fa">
-服务端相关
- • 熟悉请求与响应流程，了解服务端渲染与客户端渲染的区别，
- • 了解nodeJS 和 后台框架express。 </p>
- <p style="background-color:#f6f8fa">
-框架/库/插件 
- • 了解原理, 熟练使用 vue + es6 + webpack 进行 web 开发；了解 angular，react；了解vue部分底层原理(双向数据绑定),了解vuex部分原理
- • 熟悉 elementui, iview 的使用; 
- • 熟练使用jQuery，Bootstrop，Zepto等常用库和框架；
- • 熟悉常见的Lazyload /Swiper/validation等功能插件； </p>
- <p style="background-color:#f6f8fa">
-项目工具
- • 熟练npm管理项目模块所依赖的功能包；nvm 管理多版本node;
- • 熟悉git，使用常用命令管理代码;
- • 会使用gulp/webpack对代码进行压缩管理。
- • 熟练PS切图、取色、测量；
- • 熟练vscode开发工具，并配合 eslint, standard规范代码
  </p>
+ <p style="background-color:#f6f8fa;margin:0"> • 熟悉 ES6 常见用法；</p>
+ <p style="background-color:#f6f8fa;margin:0"> • 对JS面向对象的编程思想以及闭包、继承、原型链、作用域等有一定的认识，并在页面开发中使用；</p>
+ <p style="background-color:#f6f8fa;margin:0"> • 理解HTTP协议和JSONP实现原理，明白前后端的交互原理，熟练运用ajax/json/jsonp/axios实现前后端通信；</p>
+ <p style="background-color:#f6f8fa;margin:0"> • 了解canvas，能够使用echarts实现数据可视化。</p>
+ <p style="background-color:#f6f8fa;margin:0"> • 了解websoket </p>
  
-```
-HTML/CSS
- • 熟悉W3C规范，掌握DIV+CSS布局，能根据UI设计稿独立完成网页（PC，Mobile）构建；
- • 熟练使用各种布局方式( 流式, 弹性, 响应式, rem )进行多端开发；
- • 熟悉HTML5/CSS3新特性， 能够使用CSS3制作页面动画；
- • 熟悉Less预编译提高开发效率。style="color: red;background-color:red"
+ <p style="background-color:#f6f8fa;margin-top:10px;margin-bottom:0;">
+ 服务端相关
+ </p>
+ <p style="background-color:#f6f8fa;margin:0">
+  • 熟悉请求与响应流程，了解服务端渲染与客户端渲染的区别；
+ </p>
+ <p style="background-color:#f6f8fa;margin:0;"> • 了解nodeJS 和 后台框架express； </p>
+ <p style="background-color:#f6f8fa;margin:0;"> • 了解go语言。 </p>
  
- JavaScript
- • 熟练使用原生JavaScript操作DOM，BOM；
- • 熟悉 ES6 常见用法；
- • 对JS面向对象的编程思想以及闭包、继承、原型链、作用域等有一定的认识，并在页面开发中使用；
- • 理解HTTP协议和JSONP实现原理，明白前后端的交互原理，熟练运用ajax/json/jsonp/axios实现前后端通信；
- • 熟悉canvas，能够使用echarts实现数据可视化。
- • 了解websoket
- 
-服务端相关
- • 熟悉请求与响应流程，了解服务端渲染与客户端渲染的区别，
- • 了解nodeJS 和 后台框架express。
- 
-框架/库/插件 
- • 了解原理, 熟练使用 vue + es6 + webpack 进行 web 开发；了解 angular，react；了解vue部分底层原理(双向数据绑定),了解vuex部分原理
- • 熟悉 elementui, iview 的使用; 
+ <p style="background-color:#f6f8fa;margin-top:10px;margin-bottom:0;">
+ 框架/库/插件 
+ </p>
+ <p style="background-color:#f6f8fa;margin:0">
+ • 了解vue部分底层原理(双向数据绑定)和vuex部分原理, 熟练使用 vue + vue-router 进行 web 开发；了解 angular，react； 
+ </p>
+ <p style="background-color:#f6f8fa;margin:0">
+ • 熟练使用 elementui, iview， 了解 iview 中组件封装的技巧并有所实践; 
+ </p>
+ <p style="background-color:#f6f8fa;margin:0">
  • 熟练使用jQuery，Bootstrop，Zepto等常用库和框架；
- • 熟悉常见的Lazyload /Swiper/validation等功能插件；
+ </p>
+ <p style="background-color:#f6f8fa;margin:0">
+ • 熟悉常见的Lazyload /Swiper/validation/iscroll/better-scroll/infinite-list等功能插件； </p>
  
-项目工具
- • 熟练npm管理项目模块所依赖的功能包；nvm 管理多版本node;
- • 熟悉git，使用常用命令管理代码;
- • 会使用gulp/webpack对代码进行压缩管理。
- • 熟练PS切图、取色、测量；
- • 熟练vscode开发工具，并配合 eslint, standard规范代码
- 
-```
+ <p style="font-size: 12px;text-decoration:underline;background-color:#f6f8fa;margin-top:10px;margin-bottom:0">
+ 项目工具
+ </p>
+ <p style="background-color:#f6f8fa;margin:0;">
+ • 熟练vscode开发工具，并配合 eslint, standard规范代码；
+ </p>
+ <p style="background-color:#f6f8fa;margin:0;">
+ • 使用nvm管理多版本node，npm管理项目依赖；
+ </p>
+ <p style="background-color:#f6f8fa;margin:0;">
+ • 使用gulp/webpack对代码进行压缩管理；
+ </p>
+ <p style="background-color:#f6f8fa;margin:0;">
+ • 使用git常用命令管理代码库;
+ </p>
+ <p style="background-color:#f6f8fa;margin:0;">
+ • 熟悉Less预编译提高开发效率；
+ </p>
+ <p style="background-color:#f6f8fa;margin:0;">
+ • 熟练PS切图、取色、测量。
+ </p>
 
 ```
 项目一: 
@@ -126,10 +134,10 @@ http://yun.gw.com.cn/index.html
 2. 通过 inheritAttrs 选项及实例属性 $attrs, $listener 来简化深层嵌套的组件通信;
 3. 基于 dzhyun-view 组件开发小型移动端H5单页应用程序: 国开证券微信项目、数字货币等
 
-项目三: 实现 PC & mobile 2018.2 - 2018.4 头部和左侧固定、内容移动、可无限加载并实时更新数据的高性能虚拟列表
-[PC端]:通过键盘左右键和虚拟滚动条进行内容区域左右移动; 通过键盘上下键、pageup & pagedown键、home & end键、上下滚动条以及滚轮进行内容区域的上下滚动
-1. PC端曾尝试 infinite-scroll 和 vue-virtual-scroll-list 组件进行开发, 但因翻页效果不友好等原因而放弃使用, 直接改变数据驱动视图, 实现业务需求;
-2. 手机端同样未使用组件, 因为它在复用已有dom的基础上通过 css 的绝对定位position:absolute+top偏移量来移动数据, 容易导致回流
+项目三: 实现 PC & mobile 2018.2 - 2018.4 头部和左侧固定、内容移动、可无限加载并实时更新数据的高性能虚拟列表组件
+1. 多种方式分别优化PC和mobile列表性能, 并选择最适合该业务场景的方法使用;
+2. PC端:通过键盘左右键和虚拟滚动条进行内容区域左右移动; 通过键盘上下键、pageup & pagedown键、home & end键、上下滚动条以及滚轮进行内容区域的上下滚动; 实现排序, 高亮, 列拖动, 改变列宽, 格式化数据等功能;
+2. mobile端:通过检测scroll和touchmove事件实现列表内容区域移动; 实现排序, 高亮, 格式化数据等功能
 ```
 ```
 项目一 ：麦德龙metro后台可视数据报表
