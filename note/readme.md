@@ -44,3 +44,6 @@
 <script src="//cdn.jsdelivr.net/npm/eruda"></script>
 <script>eruda.init();</script>
 ```
+
+**typescript**
+[《TypeScript Deep Dive》 的中文翻译版](https://jkchao.github.io/typescript-book-chinese/)
