@@ -36,81 +36,81 @@
 
 ##### 自我评价
 
-<p style="background-color:#f6f8fa;margin:0">
+<p style="margin:0">
 1、工作认真，代码规范，bug及时自测，愿意接受适当加班。
 </p>
-<p style="background-color:#f6f8fa;margin:0">
+<p style="margin:0">
 2、逻辑清晰，有解决问题、钻研新技术的兴趣和能力，善于学习并运用新知识。
 </p>
-<p style="background-color:#f6f8fa;margin:0">
+<p style="margin:0">
 3、热爱前端开发，喜欢团队协作，沟通能力强，能快速融入团队。
 </p>
 
 ##### 技能
 
-<p style="font-size: 12px;text-decoration:underline;background-color:#f6f8fa;margin:0">
+<p style="font-size: 12px;text-decoration:underline;margin:0">
 HTML/CSS
 </p>
-<p style="background-color:#f6f8fa;margin:0"> • 熟悉W3C规范，掌握DIV+CSS布局，能根据UI设计稿独立完成网页（PC，Mobile）构建；</p>
-<p style="background-color:#f6f8fa;margin:0"> • 熟练使用各种布局方式( 流式, 弹性, 响应式, rem )多端开发；</p>
-<p style="background-color:#f6f8fa;margin:0"> • 熟悉HTML5/CSS3新特性， 能够使用CSS3制作页面动画；</p>
+<p style="margin:0"> • 熟悉W3C规范，掌握DIV+CSS布局，能根据UI设计稿独立完成网页（PC，Mobile）构建；</p>
+<p style="margin:0"> • 熟练使用各种布局方式( 流式, 弹性, 响应式, rem )多端开发；</p>
+<p style="margin:0"> • 熟悉HTML5/CSS3新特性， 能够使用CSS3制作页面动画；</p>
 
 
-<p style="font-size: 12px;text-decoration:underline;background-color:#f6f8fa;margin-top:10px;margin-bottom:0">
+<p style="font-size: 12px;text-decoration:underline;margin-top:10px;margin-bottom:0">
 JavaScript
 </p>
- <p style="background-color:#f6f8fa;margin:0">
+ <p style="margin:0">
  • 熟练使用原生JavaScript操作DOM，BOM；
  </p>
- <p style="background-color:#f6f8fa;margin:0"> • 熟悉 ES6 常见用法；</p>
- <p style="background-color:#f6f8fa;margin:0"> • 对JS面向对象的编程思想以及闭包、继承、原型链、作用域等有一定的认识，并在页面开发中使用；</p>
- <p style="background-color:#f6f8fa;margin:0"> • 理解HTTP协议和JSONP实现原理，明白前后端的交互原理，熟练运用ajax/json/jsonp/axios实现前后端通信；</p>
- <p style="background-color:#f6f8fa;margin:0"> • 了解canvas，能够使用echarts实现数据可视化。</p>
- <p style="background-color:#f6f8fa;margin:0"> • 了解websoket </p>
+ <p style="margin:0"> • 熟悉 ES6 常见用法；</p>
+ <p style="margin:0"> • 对JS面向对象的编程思想以及闭包、继承、原型链、作用域等有一定的认识，并在页面开发中使用；</p>
+ <p style="margin:0"> • 理解HTTP协议和JSONP实现原理，明白前后端的交互原理，熟练运用ajax/json/jsonp/axios实现前后端通信；</p>
+ <p style="margin:0"> • 了解canvas，能够使用echarts实现数据可视化。</p>
+ <p style="margin:0"> • 了解websoket </p>
  
- <p style="background-color:#f6f8fa;margin-top:10px;margin-bottom:0;">
+ <p style="margin-top:10px;margin-bottom:0;">
  服务端相关
  </p>
- <p style="background-color:#f6f8fa;margin:0">
+ <p style="margin:0">
   • 熟悉请求与响应流程，了解服务端渲染与客户端渲染的区别；
  </p>
- <p style="background-color:#f6f8fa;margin:0;"> • 了解nodeJS 和 后台框架express； </p>
- <p style="background-color:#f6f8fa;margin:0;"> • 了解go语言。 </p>
+ <p style="margin:0;"> • 了解nodeJS 和 后台框架express； </p>
+ <p style="margin:0;"> • 了解go语言。 </p>
  
- <p style="background-color:#f6f8fa;margin-top:10px;margin-bottom:0;">
+ <p style="margin-top:10px;margin-bottom:0;">
  框架/库/插件 
  </p>
- <p style="background-color:#f6f8fa;margin:0">
+ <p style="margin:0">
  • 了解vue部分底层原理(双向数据绑定)和vuex部分原理, 熟练使用 vue + vue-router 进行 web 开发；了解 angular，react； 
  </p>
- <p style="background-color:#f6f8fa;margin:0">
+ <p style="margin:0">
  • 熟练使用 elementui, iview， 了解 iview 中组件封装的技巧并有所实践; 
  </p>
- <p style="background-color:#f6f8fa;margin:0">
+ <p style="margin:0">
  • 熟练使用jQuery，Bootstrop，Zepto等常用库和框架；
  </p>
- <p style="background-color:#f6f8fa;margin:0">
+ <p style="margin:0">
  • 熟悉常见的Lazyload /Swiper/validation/iscroll/better-scroll/infinite-list等功能插件； </p>
  
- <p style="font-size: 12px;text-decoration:underline;background-color:#f6f8fa;margin-top:10px;margin-bottom:0">
+ <p style="font-size: 12px;text-decoration:underline;margin-top:10px;margin-bottom:0">
  项目工具
  </p>
- <p style="background-color:#f6f8fa;margin:0;">
+ <p style="margin:0;">
  • 熟练vscode开发工具，并配合 eslint, standard规范代码；
  </p>
- <p style="background-color:#f6f8fa;margin:0;">
+ <p style="margin:0;">
  • 使用nvm管理多版本node，npm管理项目依赖；
  </p>
- <p style="background-color:#f6f8fa;margin:0;">
+ <p style="margin:0;">
  • 使用gulp/webpack对代码进行压缩管理；
  </p>
- <p style="background-color:#f6f8fa;margin:0;">
+ <p style="margin:0;">
  • 使用git常用命令管理代码库;
  </p>
- <p style="background-color:#f6f8fa;margin:0;">
+ <p style="margin:0;">
  • 熟悉Less预编译提高开发效率；
  </p>
- <p style="background-color:#f6f8fa;margin:0;">
+ <p style="margin:0;">
  • 熟练PS切图、取色、测量。
  </p>
 
