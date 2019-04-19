@@ -20,6 +20,7 @@
 
 [JS事件中防抖debounce和节流throttle以及requestAnimationFrame](https://blog.csdn.net/liningaa/article/details/79538020)
 
+[深入理解前端性能监控](https://mp.weixin.qq.com/s/YI-96IbtIjTDzS-3N-9FAg)
 
 -----------------------------------------------------------------------------
 
@@ -44,3 +45,5 @@
 <script src="//cdn.jsdelivr.net/npm/eruda"></script>
 <script>eruda.init();</script>
 ```
+
+
