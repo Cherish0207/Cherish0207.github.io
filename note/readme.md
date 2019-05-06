@@ -50,3 +50,7 @@
 =======
 **typescript**
 [《TypeScript Deep Dive》 的中文翻译版](https://jkchao.github.io/typescript-book-chinese/)
+
+**es6**
+[require和import的区别](https://blog.csdn.net/april_4/article/details/80520491)
+
