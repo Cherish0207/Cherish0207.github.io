@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,61 +7,9 @@
   <title>Document</title>
 </head>
 <body>
-  <button onclick="createEmptyElements(10000)">创建空元素</button>
-  <button onclick="createElements(10000)">创建包含文本的元素</button>
-  <button onclick="createElementsWithFragment(10000)">使用fragment创建包含文本的元素</button>
-  <button onclick="createElementsWithHTML(10000)">使用innerHTML包含文本的元素</button>
-  <script>
-    var createElements = function (count) {
-      var start = new Date();
-      for (var i = 0; i < count; i++) {
-        var element = document.createElement('div');
-        element.appendChild(document.createTextNode('' + i));
-        document.body.appendChild(element);
-      }
-      setTimeout(function () {
-        console.log(new Date() - start);
-      }, 0);
-    };
-
-    var createEmptyElements = function (count) {
-      var start = new Date();
-      for (var i = 0; i < count; i++) {
-        var element = document.createElement('div');
-        document.body.appendChild(element);
-      }
-      setTimeout(function () {
-        console.log(new Date() - start);
-      }, 0);
-    };
-
-    var createElementsWithFragment = function (count) {
-      var start = new Date();
-      var fragment = document.createDocumentFragment();
-      for (var i = 0; i < count; i++) {
-        var element = document.createElement('div');
-        element.appendChild(document.createTextNode('' + i));
-        fragment.appendChild(element);
-      }
-      document.body.appendChild(fragment);
-      setTimeout(function () {
-        console.log(new Date() - start);
-      }, 0);
-    };
-    var createElementsWithHTML = function (count) {
-      var start = new Date();
-      var array = [];
-      for (var i = 0; i < count; i++) {
-        array.push('<div>' + i + '</div>');
-      }
-      var element = document.createElement('div');
-      element.innerHTML = array.join('');
-      document.body.appendChild(element);
-      setTimeout(function () {
-        console.log(new Date() - start);
-      }, 0);
-    };
-  </script>
+  <a href="./0. promise异步.xmind">promise异步.xmind</a>
+  <a href="./1. es6-变量声明.xmind"></a>
+  <a href="./2. es6-iterator 遍历器.xmind"></a>
+  <a href="./2. es6-对象.xmind"></a>
 </body>
-
 </html>
