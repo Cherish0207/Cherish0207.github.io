@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let event = new Event("foo", {  // 创建一个 type 为 foo 的事件对象，可以被阻止默认行为 
+      "cancelable": true
+    })
+
+    document.addEventListener("foo", function (event) { // 在 document 上绑定 foo 事件的监听函数
+      console.log(event.defaultPrevented) // false
+      event.preventDefault()
+      console.log(event.defaultPrevented) // 还是 false，preventDefault() 无效
+    }, {
+        passive: true
+      })
+
+    document.dispatchEvent(event) // 派发自定义事件
+  </script>
+</body>
+
+</html>

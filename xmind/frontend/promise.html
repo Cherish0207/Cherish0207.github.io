@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let p = new Promise((res, rej) => {
+      res(1)
+      // return false
+    })
+      .then(res => {
+        console.log('res: ', res)
+        return new Promise((res, rej) => {
+          res(234)
+        });
+        // return false
+      })
+      .then(res => {
+
+        console.log('res: ', res)
+      })
+      .catch(err => {
+        console.log('err: ', err)
+      })
+    console.log(p)
+  </script>
+  <script>
+// const promise = new Promise((resolve, reject) => {
+// 	  setTimeout(() => {
+// 	    console.log('once')
+// 	    resolve('success')
+// 	  }, 1000)
+// 	})
+
+// 	const start = Date.now()
+// 	promise.then((res) => {
+// 	  console.log(res, Date.now() - start)
+// 	})
+// 	promise.then((res) => {
+// 	  console.log(res, Date.now() - start)
+// })
+  </script>
+  <script>
+  // console.log('start');
+	// new Promise(function(resolve,reject){
+	//     setTimeout(function(){    //定时器模拟异步
+	//         resolve('hello');    //修改promise状态调用then中的第一个函数
+	//     },2000);
+	// }).then((value)=>{
+	//     console.log(value);    //接收resolve传来的值
+	//     new Promise(function(resolve){   //该then()返回一个新的promise实例，后面可以继续接then
+	//         setTimeout(function(){
+	//             resolve('world');       //修改新promise的状态，去调用then
+	//         },3000)
+	//     })  
+  //     return false
+	// }).then((value)=>{
+	//    console.log(value);
+	// })
+  </script>
+  <script>
+    let thenable = {
+      then: function (resolve, reject) {
+        resolve(42);
+      }
+    };
+
+    let p1 = Promise.resolve(thenable);
+    p1.then(function (value) {
+      console.log(value);  // 42
+    });
+  </script>
+</body>
+
+</html>

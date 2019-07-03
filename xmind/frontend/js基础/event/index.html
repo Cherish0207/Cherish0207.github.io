@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div style="width:200px;height:200px;background:lightblue" id="content">
+    <div style="width:100px;height:100px;background: lightyellow;" id="btn1">
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+var btn1=document.getElementById("btn1");
+var content=document.getElementById("content");
+btn1.addEventListener("click",function(event){
+    alert("btn1");
+    event.stopImmediatePropagation();
+},false);
+window.onbeforeunload = function() {
+  console.log(arguments)
+  debugger
+}
+/* beforeunload事件
+
+beforeunload在页面卸载之前触发, 该事件会弹出一个对话框, 询问是否确定离开, 事件的returnValue属性表示对话框显示的文字内容; */
+// btn1.addEventListener("click",function(event){
+//     alert("btn2");
+//     event.stopPropagation();
+// },false);
+content.addEventListener("click",function(){
+    alert("content");
+},false);
+</script>
+</html>

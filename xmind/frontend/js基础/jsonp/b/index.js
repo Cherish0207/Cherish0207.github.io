@@ -1,0 +1,1 @@
+person({name: 'crx', age: 18})

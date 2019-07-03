@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <script>
+    let obj = new Proxy({a:0}, {
+      get(target, props,receiver) {
+        console.log('getting ' + props)
+        console.log(target, props, receiver)
+        return Reflect.get(target, props, receiver)
+      },
+      set(target, props, value, receiver) {
+        console.log('setting ' + props)
+      }
+    })
+    console.log(obj.a)
+    obj.a++
+  </script> -->
+  <script>
+    'use strict';
+    const obj = {}
+    // Object.defineProperty(obj, 'foo', {
+    //   value: 'hello',
+    //   // writable: false,
+    //   // configurable: true
+    // })
+    const proxy = new Proxy(obj, {
+      set(target, key, value, receiver) {
+        target[key] = 1
+        return true;
+      }
+    })
+    proxy.foo = 1
+    console.log(proxy.foo)
+// proxy.foo = 1
+// console.log(proxy.foo)
+
+  </script>
+</body>
+
+</html>

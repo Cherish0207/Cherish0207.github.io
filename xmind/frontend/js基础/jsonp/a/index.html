@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+// // function callback(data) {
+// //   console.log(data)
+// // }
+// function addScriptTag(srcUrl) {
+//   let scriptDom = document.createElement('script')
+//   scriptDom.setAttribute('type', 'text/javascript') 
+//   scriptDom.src = srcUrl
+//   document.body.appendChild(scriptDom)
+// }
+// window.onload = function() {
+//   // q=?这个问号是表示你要搜索的内容，
+//   // callback=?表示回调函数的名称，也就是将你自己在客户端定义的回调函数的函数名传送给服务端，服务端则会返回以你定义的回调函数名的方法，将获取的json数据传入这个方法完成回调
+//   addScriptTag('http://192.168.1.110:8081/index.js?callback=person')
+// }
+// //回调函数person
+// function person(data) {
+//     alert(data.name + " is a " + data.age);
+// }
+// 执行person({name:'crx',age:18})
+</script>
+<script src="../jquery.js"></script>
+<script>
+  $.getJSON('http://192.168.1.110:8081/index.js',)
+</script>
+</body>
+</html>

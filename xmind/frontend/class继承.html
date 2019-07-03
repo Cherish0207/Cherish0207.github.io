@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="button" value="按钮1">
+  <input type="button" value="按钮2">
+  <input type="button" value="按钮3">
+  <input type="button" value="按钮4">
+  <input type="button" value="按钮5">
+  <script>
+    const obj = {
+      foo: true,
+      ['a'+'bc']: 123
+    }
+    
+  </script>
+  <script>
+    // class Cherish {
+    //   constructor() {
+    //     this.name = 'chairuixue'
+    //     this.age = "18"
+    //   }
+    //   static hobby = "study"
+    //   getName() {
+    //     return this.name
+    //   }
+    //   getAge() {
+    //     return this.age
+    //   }
+    //   static getName() {
+    //     console.log("static ", this.name)
+    //   }
+    //   static getHobby() {
+    //     return  this.hobby
+    //   }
+    //   static getAge() {
+    //     console.log("static ", this.age)
+    //   }
+    // }
+    // // Cherish.getHobby()
+    // class Yangzh extends Cherish {
+    //   constructor() {
+    //     super()
+    //     this.name = 'yangzehuan'
+    //     this.gender = "男"
+    //   }
+    //   static hobby = "pinpang"
+    //   static getHobby() {
+    //     console.log("static ", super.getHobby())
+    //   }
+    //   getData() {
+    //     console.log("this.name: %s, this.age: %s, this.gender: %s, super.getName(): %s, super.getAge(): %s.",this.name, this.age, this.gender, super.getName(), super.getAge())
+    //   }
+    //   static getData() {
+    //     console.log("this.name: %s, this.age: %s, this.gender: %s, super.getName(): %s, super.getAge(): %s.",this.name, this.age, this.gender, super.getName(), super.getAge())
+    //   }
+    // }
+    // let yzh = new Yangzh()
+    // // yzh.getData()
+    // Yangzh.getHobby()
+  </script>
+  <script>
+    // class Cherish {
+    //   getName() {
+    //     console.log('Cherish getName')
+    //   }
+    //   static getAge() {
+    //     console.log('static Cherish getAge')
+    //   }
+    // }
+    // class Yangzh extends Cherish {
+    //   getName() {
+    //     console.log('Yangzh getName')
+    //   }
+    //   static getAge() {
+    //     console.log('static Yangzh getAge')
+    //   }
+    //   runSuper(arg) {
+    //     try {
+    //       super[arg]()
+    //     } catch (err) {
+    //       console.log(err)
+    //     }
+    //   }
+    // }
+    // let yzh = new Yangzh()
+    // yzh.runSuper('getName')
+    // yzh.runSuper('getAge')
+  </script>
+  <script>
+    // function addMethod(obj, name, fn) {
+//   var old = obj[name];
+//   obj[name] = function () {
+//     if (fn.length == arguments.length) {
+//       return fn.apply(this, arguments);
+//     } else if (typeof old == 'function') {
+//       return old.apply(this, arguments);
+//     }
+//   }
+// }
+
+// var person = { userName: 'ghostwu' };
+// addMethod(person, 'show', function () {
+//   alert(this.userName + '---->' + 'show1');
+// });
+// addMethod(person, 'show', function (str) {
+//   alert(this.userName + '---->' + str);
+// });
+// addMethod(person, 'show', function (a, b) {
+//   alert(this.userName + '---->' + (a + b));
+// });
+// person.show();
+// person.show(10);
+// person.show(10, 20);
+  </script>
+  <script>
+    // var obj = {
+//   show: function () {
+//     switch (arguments.length) {
+//       case 0:
+//         alert('ghostwu');
+//         break;
+//       case 1:
+//         alert(arguments[0]);
+//         break;
+//       case 2:
+//         alert(arguments[0] + arguments[1]);
+//         break;
+//     }
+//   }
+// }
+// obj.show(); //ghostwu
+// obj.show('ghostwu'); //ghostwu
+// obj.show(10, 20); //30
+  </script>
+</body>
+
+</html>
