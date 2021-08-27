@@ -1,0 +1,20 @@
+{
+  "name": "note",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "note": "npx crx-note-pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cherish0207/Cherish0207.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cherish0207/Cherish0207.github.io/issues"
+  },
+  "homepage": "https://github.com/Cherish0207/Cherish0207.github.io#readme"
+}
