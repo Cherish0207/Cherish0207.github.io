@@ -5,4 +5,5 @@ module.exports = {
     filename: "5.other_images.html",
     path: "./",
   },
+  template: "image",
 };
