@@ -4,7 +4,8 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "note": "npx crx-note-pack"
+    "note": "npx crx-note-pack --config=./config/note.config.js",
+    "other_images": "npx crx-note-pack --config=./config/other_images.config.js"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: "./note",
+  publicPath: "note",
   entry: "./src",
   output: {
     filename: "index.html",
