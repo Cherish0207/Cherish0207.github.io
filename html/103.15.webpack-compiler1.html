@@ -1,0 +1,938 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body class="modal-open" style="padding-right: 15px;">
+<div class="nav">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li class="active"><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
+
+                        
+<div class="warpper">
+    <div class="page-toc">
+        <ul><li><a href="#t01.需求分析">1.需求分析</a></li><li><a href="#t12.编译器分为三个阶段">2.编译器分为三个阶段</a><ul><li><a href="#t22.1 解析(Parsing)">2.1 解析(Parsing)</a></li><li><a href="#t32.2 转换(Transformation)">2.2 转换(Transformation)</a></li><li><a href="#t42.3 遍历(Traversal)">2.3 遍历(Traversal)</a></li><li><a href="#t52.4 访问者(Visitors)">2.4 访问者(Visitors)</a></li><li><a href="#t62.5 代码生成(Code Generation)">2.5 代码生成(Code Generation)</a></li></ul></li><li><a href="#t73.实现编译器">3.实现编译器</a><ul><li><a href="#t83.1 词法分析器(Tokenizer)">3.1 词法分析器(Tokenizer)</a></li><li><a href="#t93.2 语法分析器(Parser)">3.2 语法分析器(Parser)</a><ul><li><a href="#t103.2.1 main.js">3.2.1 main.js</a></li><li><a href="#t113.2.2 parser.js">3.2.2 parser.js</a></li></ul></li><li><a href="#t123.3 遍历器">3.3 遍历器</a><ul><li><a href="#t133.3.1 main.js">3.3.1 main.js</a></li><li><a href="#t143.3.2 traverser.js">3.3.2 traverser.js</a></li></ul></li><li><a href="#t153.4 转换AST">3.4 转换AST</a><ul><li><a href="#t163.4.1 main.js">3.4.1 main.js</a></li><li><a href="#t173.4.2 transformer.js">3.4.2 transformer.js</a></li></ul></li><li><a href="#t183.5 代码生成">3.5 代码生成</a><ul><li><a href="#t193.5.1 main.js">3.5.1 main.js</a></li><li><a href="#t203.5.2 codeGenerator.js">3.5.2 codeGenerator.js</a></li></ul></li><li><a href="#t213.6 打包">3.6 打包</a><ul><li><a href="#t223.6.1 main.js">3.6.1 main.js</a></li><li><a href="#t233.6.2 compiler\index.js">3.6.2 compiler\index.js</a></li><li><a href="#t243.6.3 tokenizer.js">3.6.3 tokenizer.js</a></li><li><a href="#t253.6.4 parser.js">3.6.4 parser.js</a></li><li><a href="#t263.6.5 transformer.js">3.6.5 transformer.js</a></li><li><a href="#t273.6.6 codeGenerator.js">3.6.6 codeGenerator.js</a></li><li><a href="#t283.6.7 compiler\traverser.js">3.6.7 compiler\traverser.js</a></li></ul></li></ul></li><li><a href="#t294.有限状态机">4.有限状态机</a></li><li><a href="#t305.正则分词">5.正则分词</a></li></ul>
+    </div>
+    <div class="content markdown-body">
+        <h2 id="t01.需求分析">1.需求分析 <a href="#t01.需求分析"> # </a></h2>
+<ul>
+<li>我们将会用它将 <code>lisp</code> 风格的函数调用转换为 <code>C</code> 风格</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">//假设我们有两个函数,`add` 和 `subtract`，那么它们的写法将会是下面这样</span>
+                  LISP                      C
+   <span class="hljs-number">2</span> + <span class="hljs-number">2</span>          (add <span class="hljs-number">2</span> <span class="hljs-number">2</span>)                 add(<span class="hljs-number">2</span>, <span class="hljs-number">2</span>)
+   <span class="hljs-number">4</span> - <span class="hljs-number">2</span>          (subtract <span class="hljs-number">4</span> <span class="hljs-number">2</span>)            subtract(<span class="hljs-number">4</span>, <span class="hljs-number">2</span>)
+   <span class="hljs-number">2</span> + (<span class="hljs-number">4</span> - <span class="hljs-number">2</span>)    (add <span class="hljs-number">2</span> (subtract <span class="hljs-number">4</span> <span class="hljs-number">2</span>))    add(<span class="hljs-number">2</span>, subtract(<span class="hljs-number">4</span>, <span class="hljs-number">2</span>))
+</code></pre>
+<h2 id="t12.编译器分为三个阶段">2.编译器分为三个阶段 <a href="#t12.编译器分为三个阶段"> # </a></h2>
+<ul>
+<li>解析(Parsing)  <strong>解析</strong>是将最初原始的代码转换为一种更加抽象的表示(即AST)</li>
+<li>转换(Transformation) <strong>转换</strong>将对这个抽象的表示做一些处理,让它能做到编译器期望它做到的事情</li>
+<li>代码生成(Code Generation) 接收处理之后的代码表示,然后把它转换成新的代码</li>
+</ul>
+<h3 id="t22.1 解析(Parsing)">2.1 解析(Parsing) <a href="#t22.1 解析(Parsing)"> # </a></h3>
+<ul>
+<li>解析一般来说会分成两个阶段：词法分析(Lexical Analysis)和语法分析(Syntactic Analysis)<ul>
+<li>*词法分析**接收原始代码,然后把它分割成一些被称为 <code>token</code> 的东西，这个过程是在词法分析器(Tokenizer或者Lexer)中完成的</li>
+<li>Token 是一个数组，由一些代码语句的碎片组成。它们可以是数字、标签、标点符号、运算符或者其它任何东西</li>
+<li><strong>语法分析</strong> 接收之前生成的 <code>token</code>，把它们转换成一种抽象的表示，这种抽象的表示描述了代码语句中的每一个片段以及它们之间的关系。这被称为中间表示(intermediate representation)或抽象语法树(Abstract Syntax Tree, 缩写为AST)</li>
+<li>抽象语法树是一个嵌套程度很深的对象，用一种更容易处理的方式代表了代码本身，也能给我们更多信息</li>
+</ul>
+</li>
+</ul>
+<p>原始<code>lisp</code>代码</p>
+<pre><code class="lang-js">(add <span class="hljs-number">2</span> (subtract <span class="hljs-number">4</span> <span class="hljs-number">2</span>))
+</code></pre>
+<p>tokens</p>
+<pre><code class="lang-js">[
+  { <span class="hljs-attr">type</span>: <span class="hljs-string">'paren'</span>,  <span class="hljs-attr">value</span>: <span class="hljs-string">'('</span>        },
+  { <span class="hljs-attr">type</span>: <span class="hljs-string">'name'</span>,   <span class="hljs-attr">value</span>: <span class="hljs-string">'add'</span>      },
+  { <span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'2'</span>        },
+  { <span class="hljs-attr">type</span>: <span class="hljs-string">'paren'</span>,  <span class="hljs-attr">value</span>: <span class="hljs-string">'('</span>        },
+  { <span class="hljs-attr">type</span>: <span class="hljs-string">'name'</span>,   <span class="hljs-attr">value</span>: <span class="hljs-string">'subtract'</span> },
+  { <span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'4'</span>        },
+  { <span class="hljs-attr">type</span>: <span class="hljs-string">'number'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'2'</span>        },
+  { <span class="hljs-attr">type</span>: <span class="hljs-string">'paren'</span>,  <span class="hljs-attr">value</span>: <span class="hljs-string">')'</span>        },
+  { <span class="hljs-attr">type</span>: <span class="hljs-string">'paren'</span>,  <span class="hljs-attr">value</span>: <span class="hljs-string">')'</span>        }
+]
+</code></pre>
+<p>抽象语法树(AST)</p>
+<pre><code class="lang-js">{
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'Program'</span>,
+  <span class="hljs-attr">body</span>: [{
+    <span class="hljs-attr">type</span>: <span class="hljs-string">'CallExpression'</span>,
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'add'</span>,
+    <span class="hljs-attr">params</span>: [{
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'NumberLiteral'</span>,
+      <span class="hljs-attr">value</span>: <span class="hljs-string">'2'</span>
+    }, {
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'CallExpression'</span>,
+      <span class="hljs-attr">name</span>: <span class="hljs-string">'subtract'</span>,
+      <span class="hljs-attr">params</span>: [{
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'NumberLiteral'</span>,
+        <span class="hljs-attr">value</span>: <span class="hljs-string">'4'</span>
+      }, {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'NumberLiteral'</span>,
+        <span class="hljs-attr">value</span>: <span class="hljs-string">'2'</span>
+      }]
+    }]
+  }]
+}
+</code></pre>
+<h3 id="t32.2 转换(Transformation)">2.2 转换(Transformation) <a href="#t32.2 转换(Transformation)"> # </a></h3>
+<ul>
+<li>编译器的下一步就是转换,它只是把 AST 拿过来然后对它做一些修改.它可以在同种语言下操作 AST，也可以把 AST 翻译成全新的语言</li>
+<li>你或许注意到了我们的 <code>AST</code> 中有很多相似的元素，这些元素都有<code>type</code> 属性，它们被称为 <code>AST</code>结点。这些结点含有若干属性，可以用于描述 AST 的部分信息</li>
+<li>比如下面是一个<code>NumberLiteral</code>结点</li>
+</ul>
+<pre><code class="lang-js">{
+      <span class="hljs-attr">type</span>: <span class="hljs-string">'NumberLiteral'</span>,
+      <span class="hljs-attr">value</span>: <span class="hljs-string">'2'</span>
+}
+</code></pre>
+<ul>
+<li>又比如下面是一个<code>CallExpression</code>结点</li>
+</ul>
+<pre><code class="lang-js"> {
+    <span class="hljs-attr">type</span>: <span class="hljs-string">'CallExpression'</span>,
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'subtract'</span>,
+    <span class="hljs-attr">params</span>: [...nested nodes go here...]
+ }
+</code></pre>
+<ul>
+<li>当转换 AST 的时候我们可以添加、移动、替代这些结点，也可以根据现有的 AST 生成一个全新的 AST</li>
+<li>既然我们编译器的目标是把输入的代码转换为一种新的语言，所以我们将会着重于产生一个针对新语言的全新的 AST</li>
+</ul>
+<h3 id="t42.3 遍历(Traversal)">2.3 遍历(Traversal) <a href="#t42.3 遍历(Traversal)"> # </a></h3>
+<ul>
+<li>为了能处理所有的结点，我们需要遍历它们，使用的是深度优先遍历</li>
+</ul>
+<pre><code class="lang-js"> {
+   <span class="hljs-attr">type</span>: <span class="hljs-string">'Program'</span>,
+   <span class="hljs-attr">body</span>: [{
+     <span class="hljs-attr">type</span>: <span class="hljs-string">'CallExpression'</span>,
+     <span class="hljs-attr">name</span>: <span class="hljs-string">'add'</span>,
+     <span class="hljs-attr">params</span>: [{
+       <span class="hljs-attr">type</span>: <span class="hljs-string">'NumberLiteral'</span>,
+       <span class="hljs-attr">value</span>: <span class="hljs-string">'2'</span>
+     }, {
+       <span class="hljs-attr">type</span>: <span class="hljs-string">'CallExpression'</span>,
+       <span class="hljs-attr">name</span>: <span class="hljs-string">'subtract'</span>,
+       <span class="hljs-attr">params</span>: [{
+         <span class="hljs-attr">type</span>: <span class="hljs-string">'NumberLiteral'</span>,
+         <span class="hljs-attr">value</span>: <span class="hljs-string">'4'</span>
+       }, {
+         <span class="hljs-attr">type</span>: <span class="hljs-string">'NumberLiteral'</span>,
+         <span class="hljs-attr">value</span>: <span class="hljs-string">'2'</span>
+       }]
+     }]
+   }]
+ }
+</code></pre>
+<ul>
+<li>对于上面的 AST 的遍历流程是这样的</li>
+</ul>
+<pre><code class="lang-js">Program - 从 AST 的顶部结点开始
+  CallExpression (add) - Program 的第一个子元素
+    NumberLiteral (<span class="hljs-number">2</span>) - CallExpression (add) 的第一个子元素
+    CallExpression (subtract) - CallExpression (add) 的第二个子元素
+      NumberLiteral (<span class="hljs-number">4</span>) - CallExpression (subtract) 的第一个子元素
+      NumberLiteral (<span class="hljs-number">2</span>) - CallExpression (subtract) 的第二个子元素
+</code></pre>
+<h3 id="t52.4 访问者(Visitors)">2.4 访问者(Visitors) <a href="#t52.4 访问者(Visitors)"> # </a></h3>
+<ul>
+<li>我们最基础的想法是创建一个访问者(visitor)对象,这个对象中包含一些方法，可以接收不同的结点</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> visitor = {
+   NumberLiteral() {},
+   CallExpression() {}
+};
+</code></pre>
+<ul>
+<li>当我们遍历 <code>AST</code> 的时候，如果遇到了匹配 <code>type</code> 的结点，我们可以调用 <code>visitor</code> 中的方法</li>
+<li>一般情况下为了让这些方法可用性更好，我们会把父结点也作为参数传入</li>
+</ul>
+<h3 id="t62.5 代码生成(Code Generation)">2.5 代码生成(Code Generation) <a href="#t62.5 代码生成(Code Generation)"> # </a></h3>
+<ul>
+<li>编译器的最后一个阶段是代码生成，这个阶段做的事情有时候会和转换(transformation)重叠,但是代码生成最主要的部分还是根据 AST 来输出代码</li>
+<li>代码生成有几种不同的工作方式，有些编译器将会重用之前生成的 token，有些会创建独立的代码表示，以便于线性地输出代码。但是接下来我们还是着重于使用之前生成好的 <code>AST</code></li>
+<li>我们的代码生成器需要知道如何<code>打印</code>AST 中所有类型的结点，然后它会递归地调用自身，直到所有代码都被打印到一个很长的字符串中</li>
+</ul>
+<h2 id="t73.实现编译器">3.实现编译器 <a href="#t73.实现编译器"> # </a></h2>
+<h3 id="t83.1 词法分析器(Tokenizer)">3.1 词法分析器(Tokenizer) <a href="#t83.1 词法分析器(Tokenizer)"> # </a></h3>
+<ul>
+<li>我们只是接收代码组成的字符串，然后把它们分割成 <code>token</code> 组成的数组</li>
+</ul>
+<pre><code class="lang-js"> (add <span class="hljs-number">2</span> (subtract <span class="hljs-number">4</span> <span class="hljs-number">2</span>))   =&gt;   [{ <span class="hljs-attr">type</span>: <span class="hljs-string">'paren'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'('</span> }, ...]
+</code></pre>
+<p>main.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> tokenizer = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./tokenizer'</span>);
+<span class="hljs-keyword">let</span> tokens = tokenizer(<span class="hljs-string">"(add 11 22)"</span>);
+<span class="hljs-built_in">console</span>.log(tokens);
+</code></pre>
+<p>tokenizer.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> LETTERS = <span class="hljs-regexp">/[a-z]/i</span>;
+<span class="hljs-keyword">let</span> WHITESPACE = <span class="hljs-regexp">/\s/</span>;
+<span class="hljs-keyword">let</span> NUMBERS = <span class="hljs-regexp">/[0-9]/</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">tokenizer</span>(<span class="hljs-params">input</span>)</span>{
+  <span class="hljs-comment">//current类似指标,用于记录我们在代码字符串中的位置</span>
+  <span class="hljs-keyword">let</span> current=<span class="hljs-number">0</span>;
+  <span class="hljs-comment">//tokens是一个数组,用来放置我们的token</span>
+  <span class="hljs-keyword">let</span> tokens = [];
+  <span class="hljs-comment">//可能会在单个循环中多次增加current  </span>
+  <span class="hljs-keyword">while</span>(current &lt; input.length){
+    <span class="hljs-comment">//char 指向当前字符串</span>
+    <span class="hljs-keyword">let</span> char = input[current];
+    <span class="hljs-comment">//先检查是不是一个左圆括号</span>
+    <span class="hljs-keyword">if</span>(char === <span class="hljs-string">'('</span>){
+        <span class="hljs-comment">//如果是的话,我们往tokens里push一个type为paren,value为左圆括号的对象</span>
+        tokens.push({
+            <span class="hljs-attr">type</span>:<span class="hljs-string">'paren'</span>,
+            <span class="hljs-attr">value</span>:<span class="hljs-string">'('</span>
+        });
+        <span class="hljs-comment">//自增current</span>
+        current++;
+        <span class="hljs-comment">//结束本次循环,进入下一个循环</span>
+        <span class="hljs-keyword">continue</span>;
+    <span class="hljs-comment">//如果token是函数名,函数名是由一系列字母组成 比如  (add 11 22)</span>
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(LETTERS.test(char)){
+        <span class="hljs-keyword">let</span> value = <span class="hljs-string">''</span>;
+        <span class="hljs-comment">//用内层循环遍历所有的字母,把它们存入value中</span>
+        <span class="hljs-keyword">while</span>(LETTERS.test(char)){
+            value+=char;
+            char = input[++current];
+        }
+        <span class="hljs-comment">//然后添加一个类型为name的token,进入下一个循环</span>
+        tokens.push({
+            <span class="hljs-attr">type</span>:<span class="hljs-string">'name'</span>,
+            value
+        });
+        <span class="hljs-keyword">continue</span>;
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(WHITESPACE.test(char)){
+        <span class="hljs-comment">//token并不是有效的token,所以直接进入下一个循环</span>
+        current++;
+        <span class="hljs-keyword">continue</span>;
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(NUMBERS.test(char)){
+        <span class="hljs-keyword">let</span> value = <span class="hljs-string">''</span>;
+        <span class="hljs-comment">//用内层循环遍历所有的数字,把它们存入value中</span>
+        <span class="hljs-keyword">while</span>(NUMBERS.test(char)){
+            value+=char;
+            char = input[++current];
+        }
+        <span class="hljs-comment">//然后添加一个类型为number的token,进入下一个循环</span>
+        tokens.push({
+            <span class="hljs-attr">type</span>:<span class="hljs-string">'number'</span>,
+            value
+        });
+        <span class="hljs-keyword">continue</span>;
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(char === <span class="hljs-string">')'</span>){
+        tokens.push({
+            <span class="hljs-attr">type</span>: <span class="hljs-string">'paren'</span>,
+            <span class="hljs-attr">value</span>: <span class="hljs-string">')'</span>
+          });
+        current++;
+        <span class="hljs-keyword">continue</span>;
+    }
+    <span class="hljs-comment">//如果没有匹配上任何类型的token,则抛出一个错误</span>
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(<span class="hljs-string">'I dont know what this character is '</span>+ char);
+  }
+  <span class="hljs-keyword">return</span> tokens;
+}
+<span class="hljs-built_in">module</span>.exports = tokenizer;
+</code></pre>
+<h3 id="t93.2 语法分析器(Parser)">3.2 语法分析器(Parser) <a href="#t93.2 语法分析器(Parser)"> # </a></h3>
+<ul>
+<li>语法分析器接受 <code>token</code> 数组，然后把它转化为 <code>AST</code></li>
+</ul>
+<h4 id="t103.2.1 main.js">3.2.1 main.js <a href="#t103.2.1 main.js"> # </a></h4>
+<pre><code class="lang-diff">let tokenizer = require('./tokenizer');
+<span class="hljs-addition">+let parser = require('./parser');</span>
+<span class="hljs-addition">+let tokens = tokenizer("(add 11 (sub 3 1))");</span>
+console.log(tokens);
+<span class="hljs-addition">+let ast  = parser(tokens);</span>
+<span class="hljs-addition">+console.log(JSON.stringify(ast,null,2));</span>
+</code></pre>
+<h4 id="t113.2.2 parser.js">3.2.2 parser.js <a href="#t113.2.2 parser.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-comment">/**
+ *  语法分析器接受 token 数组，然后把它转化为 AST
+ *   [{ type: 'paren', value: '(' }, ...]   =&gt;   { type: 'Program', body: [...] }
+ */</span>
+<span class="hljs-comment">//现在我们定义parser函数,接受tokens数组</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">parser</span>(<span class="hljs-params">tokens</span>) </span>{ <span class="hljs-comment">// (add 11 22) (add 2 (subtract 4 2))</span>
+    <span class="hljs-comment">//我们再次声明一个current变量指针</span>
+    <span class="hljs-keyword">let</span> current = <span class="hljs-number">0</span>;
+    <span class="hljs-comment">//但是这次我们使用递归而不是 `while` 循环，所以我们定义一个 `walk` 函数</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">walk</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// walk函数里，我们从当前token开始</span>
+        <span class="hljs-keyword">let</span> token = tokens[current];
+        <span class="hljs-comment">//我们检查是不是 CallExpressions 类型，我们从左圆括号开始</span>
+        <span class="hljs-keyword">if</span> (token.type === <span class="hljs-string">'paren'</span> &amp;&amp; token.value == <span class="hljs-string">'('</span>) {
+            <span class="hljs-comment">// 我们会自增 `current` 来跳过这个括号，因为括号在 AST 中是不重要的</span>
+            token = tokens[++current];
+            <span class="hljs-comment">//我们创建一个类型为 `CallExpression` 的根节点，然后把它的 name 属性设置为当前token 的值</span>
+            <span class="hljs-comment">//因为紧跟在左圆括号后面的 token 一定是调用的函数的名字</span>
+            <span class="hljs-keyword">let</span> node = {
+                <span class="hljs-attr">type</span>: <span class="hljs-string">'CallExpression'</span>,
+                <span class="hljs-attr">name</span>: token.value,
+                <span class="hljs-attr">params</span>: []
+            }
+            <span class="hljs-comment">// 我们再次自增 `current` 变量，跳过当前的 token </span>
+            token = tokens[++current];
+            <span class="hljs-comment">//现在我们循环遍历接下来的每一个 token，直到我们遇到右圆括号，这些 token 将会是 `CallExpression` 的 `params`(参数)</span>
+            <span class="hljs-comment">//这也是递归开始的地方，我们采用递归的方式来解决问题，而不是去尝试解析一个可能有无限层嵌套的结点 </span>
+            <span class="hljs-comment">//(add 2 (subtract 4 2))</span>
+            <span class="hljs-comment">//所以我们创建一个 `while` 循环，直到遇到类型为 `'paren'`，值为右圆括号的 token</span>
+            <span class="hljs-keyword">while</span> (token.type != <span class="hljs-string">'paren'</span> || token.type == <span class="hljs-string">'paren'</span> &amp;&amp; token.value != <span class="hljs-string">')'</span>) {
+                <span class="hljs-comment">//我们调用 `walk` 函数，它将会返回一个结点，然后我们把这个节点放入 `node.params` 中</span>
+                node.params.push(walk());
+                token = tokens[current];
+            }
+            <span class="hljs-comment">// 我们最后一次增加 `current`，跳过右圆括号</span>
+            current++;
+            <span class="hljs-comment">// 返回结点</span>
+            <span class="hljs-keyword">return</span> node;
+        <span class="hljs-comment">//检查是不是 `number` 类型</span>
+        }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(token.type === <span class="hljs-string">'number'</span>){
+            <span class="hljs-comment">// 如果是，`current` 自增。</span>
+            current++;
+            <span class="hljs-comment">// 然后我们会返回一个新的 AST 结点 `NumberLiteral`，并且把它的值设为 token 的值。</span>
+            <span class="hljs-keyword">return</span> {
+              <span class="hljs-attr">type</span>: <span class="hljs-string">'NumberLiteral'</span>,
+              <span class="hljs-attr">value</span>: token.value
+            };
+        }
+        <span class="hljs-comment">//同样，如果我们遇到了一个类型未知的结点，就抛出一个错误。</span>
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(token.type);
+    }
+    <span class="hljs-comment">//现在，我们创建 AST，根结点是一个类型为 `Program` 的结点</span>
+    <span class="hljs-keyword">var</span> ast = {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'Program'</span>,
+        <span class="hljs-attr">body</span>: []
+    };
+    <span class="hljs-comment">//现在我们开始 `walk` 函数，把结点放入 `ast.body` 中</span>
+    <span class="hljs-comment">//之所以在一个循环中处理，是因为我们的程序可能在 `CallExpressions` 后面包含连续的两个参数，而不是嵌套的</span>
+    <span class="hljs-comment">//(add 2 2)  (subtract 4 2)</span>
+    <span class="hljs-keyword">while</span> (current &lt; tokens.length) {
+        ast.body.push(walk());
+    }
+
+    <span class="hljs-comment">// 最后我们的语法分析器返回 AST </span>
+    <span class="hljs-keyword">return</span> ast;
+}
+<span class="hljs-built_in">module</span>.exports  = parser;
+</code></pre>
+<h3 id="t123.3 遍历器">3.3 遍历器 <a href="#t123.3 遍历器"> # </a></h3>
+<ul>
+<li>现在我们有了 AST，我们需要一个 <code>visitor</code> 去遍历所有的结点。当遇到某个类型的结点时，我们需要调用 <code>visitor</code> 中对应类型的处理函数</li>
+</ul>
+<pre><code class="lang-js"> traverse(ast, {
+  Program(node, parent) {
+      <span class="hljs-built_in">console</span>.log(node);
+  },
+  CallExpression(node, parent) {
+    <span class="hljs-built_in">console</span>.log(node);
+  },
+  NumberLiteral(node, parent) {
+    <span class="hljs-built_in">console</span>.log(node);
+  },
+});
+</code></pre>
+<h4 id="t133.3.1 main.js">3.3.1 main.js <a href="#t133.3.1 main.js"> # </a></h4>
+<pre><code class="lang-diff">let tokenizer = require("./tokenizer");
+let parser = require("./parser");
+<span class="hljs-addition">+let traverser = require("./traverser");</span>
+let tokens = tokenizer("(add 11 (sub 3 1))");
+console.log(tokens);
+let ast = parser(tokens);
+console.log(JSON.stringify(ast, null, 2));
+<span class="hljs-addition">+let vistor = {</span>
+<span class="hljs-addition">+  Program(node, parent) {</span>
+<span class="hljs-addition">+      console.log(node);</span>
+<span class="hljs-addition">+  },</span>
+<span class="hljs-addition">+  CallExpression(node, parent) {</span>
+<span class="hljs-addition">+    console.log(node);</span>
+<span class="hljs-addition">+  },</span>
+<span class="hljs-addition">+  NumberLiteral(node, parent) {</span>
+<span class="hljs-addition">+    console.log(node);</span>
+<span class="hljs-addition">+  },</span>
+<span class="hljs-addition">+};</span>
+<span class="hljs-addition">+traverser(ast,vistor);</span>
+</code></pre>
+<h4 id="t143.3.2 traverser.js">3.3.2 traverser.js <a href="#t143.3.2 traverser.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-comment">// 所以我们定义一个遍历器，它有两个参数，AST 和 vistor。在它的里面我们又定义了两个函数...</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">traverser</span>(<span class="hljs-params">ast, visitor</span>) </span>{
+     <span class="hljs-comment">// `traverseArray` 函数允许我们对数组中的每一个元素调用 `traverseNode` 函数。</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">traverseArray</span>(<span class="hljs-params">array, parent</span>) </span>{
+        array.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">child</span>) </span>{
+           traverseNode(child, parent);
+        });
+    }
+
+    <span class="hljs-comment">// `traverseNode` 函数接受一个 `node` 和它的父结点 `parent` 作为参数，这个结点会被</span>
+    <span class="hljs-comment">// 传入到 visitor 中相应的处理函数那里。</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">traverseNode</span>(<span class="hljs-params">node,parent</span>)</span>{
+        <span class="hljs-comment">// 首先我们看看 visitor 中有没有对应 `type` 的处理函数。</span>
+       <span class="hljs-keyword">var</span> method = visitor[node.type];
+        <span class="hljs-comment">// 如果有，那么我们把 `node` 和 `parent` 都传入其中。</span>
+        <span class="hljs-keyword">if</span> (method) {
+            method(node, parent);
+        }
+        <span class="hljs-comment">// 下面我们对每一个不同类型的结点分开处理。</span>
+        <span class="hljs-keyword">switch</span> (node.type) {
+            <span class="hljs-comment">//我们从顶层的 `Program` 开始，Program 结点中有一个 body 属性，它是一个由若干个结点组成的数组，所以我们对这个数组调用 `traverseArray`</span>
+            <span class="hljs-comment">//记住 `traverseArray` 会调用 `traverseNode`，所以我们会递归地遍历这棵树。</span>
+            <span class="hljs-keyword">case</span> <span class="hljs-string">'Program'</span>:
+              traverseArray(node.body, node);
+            <span class="hljs-keyword">break</span>;
+            <span class="hljs-comment">//下面我们对 `CallExpressions` 做同样的事情，遍历它的 `params`。</span>
+            <span class="hljs-keyword">case</span> <span class="hljs-string">'CallExpression'</span>:
+              traverseArray(node.params, node);
+              <span class="hljs-keyword">break</span>;
+              <span class="hljs-comment">// 如果是 `NumberLiterals`，那么就没有任何子结点了，所以我们直接 break</span>
+            <span class="hljs-keyword">case</span> <span class="hljs-string">'NumberLiteral'</span>:
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-comment">// 同样，如果我们不能识别当前的结点，那么就抛出一个错误。</span>
+            <span class="hljs-keyword">default</span>:
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(node.type);
+            }
+    }
+    <span class="hljs-comment">// 最后我们对 AST 调用 `traverseNode`，开始遍历。注意 AST 并没有父结点。</span>
+    traverseNode(ast, <span class="hljs-literal">null</span>);
+}
+<span class="hljs-built_in">module</span>.exports = traverser;
+</code></pre>
+<h3 id="t153.4 转换AST">3.4 转换AST <a href="#t153.4 转换AST"> # </a></h3>
+<ul>
+<li>下面是转换器。转换器接收我们在之前构建好的 AST，然后把它和 visitor 传递进入我们的遍历器中 ，最后得到一个新的 AST</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/transformerAST.png" alt="transformerAST"></p>
+<h4 id="t163.4.1 main.js">3.4.1 main.js <a href="#t163.4.1 main.js"> # </a></h4>
+<pre><code class="lang-diff">let tokenizer = require("./tokenizer");
+let parser = require("./parser");
+let traverser = require("./traverser");
+<span class="hljs-addition">+let transformer = require("./transformer");</span>
+let tokens = tokenizer("(add 2 (subtract 4 2))");
+console.log(tokens);
+let ast = parser(tokens);
+console.log(JSON.stringify(ast, null, 2));
+let vistor = {
+  Program(node, parent) {
+      console.log(node);
+  },
+  CallExpression(node, parent) {
+    console.log(node);
+  },
+  NumberLiteral(node, parent) {
+    console.log(node);
+  },
+};
+//traverser(ast,vistor);
+<span class="hljs-addition">+var newAst = transformer(ast);</span>
+<span class="hljs-addition">+console.log(JSON.stringify(newAst, null, 2));</span>
+</code></pre>
+<h4 id="t173.4.2 transformer.js">3.4.2 transformer.js <a href="#t173.4.2 transformer.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> traverser = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./traverser'</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">transformer</span>(<span class="hljs-params">ast</span>) </span>{
+  <span class="hljs-comment">// 创建 `newAST`，它与我们之前的 AST 类似，有一个类型为 Program 的根节点。</span>
+  <span class="hljs-keyword">var</span> newAst = {
+    <span class="hljs-attr">type</span>: <span class="hljs-string">'Program'</span>,
+    <span class="hljs-attr">body</span>: []
+  };<span class="hljs-comment">//老的ast有一个属性_context指向新的ast的body</span>
+  ast._context = newAst.body;
+  <span class="hljs-comment">// 我们把 AST 和 visitor 函数传入遍历器</span>
+  traverser(ast,{
+    NumberLiteral(node,parent){
+        <span class="hljs-comment">// 我们创建一个新结点，名字叫 `NumberLiteral`，并把它放入父结点的 context 中。</span>
+        parent._context.push({
+            <span class="hljs-attr">type</span>:<span class="hljs-string">'NumberLiteral'</span>,
+            <span class="hljs-attr">value</span>:node.value
+        });
+    },
+    CallExpression(node,parent){
+      <span class="hljs-comment">//我们创建一个 `CallExpression` 结点，里面有一个嵌套的 `Identifier`</span>
+      <span class="hljs-keyword">var</span> expression = {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'CallExpression'</span>,
+        <span class="hljs-attr">callee</span>: {
+          <span class="hljs-attr">type</span>: <span class="hljs-string">'Identifier'</span>,
+          <span class="hljs-attr">name</span>: node.name
+        },
+        <span class="hljs-attr">arguments</span>: []
+      };
+      <span class="hljs-comment">// 下面我们在原来的 `CallExpression` 结点上定义一个新的 context，它是 expression</span>
+      <span class="hljs-comment">// 中 arguments 这个数组的引用，我们可以向其中放入参数。</span>
+      node._context = expression.arguments;
+      <span class="hljs-comment">// 最后我们把 `CallExpression`放入父结点的 context 中。</span>
+      parent._context.push(expression);
+    }
+  });
+  <span class="hljs-comment">// 最后返回创建好的新 AST</span>
+  <span class="hljs-keyword">return</span> newAst;
+}
+<span class="hljs-built_in">module</span>.exports = transformer;
+</code></pre>
+<h3 id="t183.5 代码生成">3.5 代码生成 <a href="#t183.5 代码生成"> # </a></h3>
+<ul>
+<li>我们的代码生成器会递归地调用它自己，把 AST 中的每个结点打印到一个很大的字符串中</li>
+</ul>
+<h4 id="t193.5.1 main.js">3.5.1 main.js <a href="#t193.5.1 main.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> tokenizer = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./tokenizer"</span>);
+<span class="hljs-keyword">let</span> parser = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./parser"</span>);
+<span class="hljs-keyword">let</span> traverser = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./traverser"</span>);
+<span class="hljs-keyword">let</span> transformer = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./transformer"</span>);
+<span class="hljs-keyword">let</span> codeGenerator = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./codeGenerator"</span>);
+<span class="hljs-keyword">let</span> tokens = tokenizer(<span class="hljs-string">"(add 2 (subtract 4 2))"</span>);
+<span class="hljs-built_in">console</span>.log(tokens);
+<span class="hljs-keyword">let</span> ast = parser(tokens);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">JSON</span>.stringify(ast, <span class="hljs-literal">null</span>, <span class="hljs-number">2</span>));
+<span class="hljs-keyword">let</span> vistor = {
+  Program(node, parent) {
+      <span class="hljs-built_in">console</span>.log(node);
+  },
+  CallExpression(node, parent) {
+    <span class="hljs-built_in">console</span>.log(node);
+  },
+  NumberLiteral(node, parent) {
+    <span class="hljs-built_in">console</span>.log(node);
+  },
+};
+<span class="hljs-comment">//traverser(ast,vistor);</span>
+<span class="hljs-keyword">var</span> newAst = transformer(ast);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">JSON</span>.stringify(newAst, <span class="hljs-literal">null</span>, <span class="hljs-number">2</span>));
+
+<span class="hljs-keyword">let</span> newCode = codeGenerator(newAst);
+<span class="hljs-built_in">console</span>.log(newCode);
+</code></pre>
+<h4 id="t203.5.2 codeGenerator.js">3.5.2 codeGenerator.js <a href="#t203.5.2 codeGenerator.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">codeGenerator</span>(<span class="hljs-params">node</span>) </span>{
+    <span class="hljs-comment">// 对于不同 `type` 的结点分开处理。</span>
+    <span class="hljs-keyword">switch</span> (node.type) {
+      <span class="hljs-comment">// 如果是 `Program` 结点，那么我们会遍历它的 `body` 属性中的每一个结点，并且递归地</span>
+      <span class="hljs-comment">// 对这些结点再次调用 codeGenerator，再把结果打印进入新的一行中。</span>
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'Program'</span>:
+        <span class="hljs-keyword">return</span> node.body.map(codeGenerator)
+          .join(<span class="hljs-string">'\n'</span>);
+      <span class="hljs-comment">// 对于 `CallExpressions`，我们会打印出 `callee`，接着是一个左圆括号，然后对</span>
+      <span class="hljs-comment">// arguments 递归调用 codeGenerator，并且在它们之间加一个逗号，最后加上右圆括号。</span>
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'CallExpression'</span>:
+        <span class="hljs-keyword">return</span> (
+          codeGenerator(node.callee) +
+          <span class="hljs-string">'('</span> +
+          node.arguments.map(codeGenerator)
+            .join(<span class="hljs-string">', '</span>) +
+          <span class="hljs-string">')'</span>
+        );
+
+      <span class="hljs-comment">// 对于 `Identifiers` 我们只是返回 `node` 的 name。</span>
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'Identifier'</span>:
+        <span class="hljs-keyword">return</span> node.name;
+
+      <span class="hljs-comment">// 对于 `NumberLiterals` 我们只是返回 `node` 的 value</span>
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'NumberLiteral'</span>:
+        <span class="hljs-keyword">return</span> node.value;
+
+      <span class="hljs-comment">// 如果我们不能识别这个结点，那么抛出一个错误。</span>
+      <span class="hljs-keyword">default</span>:
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(node.type);
+    }
+  }
+  <span class="hljs-built_in">module</span>.exports = codeGenerator;
+</code></pre>
+<h3 id="t213.6 打包">3.6 打包 <a href="#t213.6 打包"> # </a></h3>
+<h4 id="t223.6.1 main.js">3.6.1 main.js <a href="#t223.6.1 main.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> compier = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./compiler"</span>);
+
+<span class="hljs-keyword">let</span> compiler = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./compiler'</span>);
+<span class="hljs-keyword">let</span> output = compiler(<span class="hljs-string">"(add 2 (subtract 4 2))"</span>);
+<span class="hljs-built_in">console</span>.log(output);
+</code></pre>
+<h4 id="t233.6.2 compiler\index.js">3.6.2 compiler\index.js <a href="#t233.6.2 compiler\index.js"> # </a></h4>
+<p>compiler\index.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> tokenizer = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./tokenizer"</span>);
+<span class="hljs-keyword">const</span> parser = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./parser"</span>);
+<span class="hljs-keyword">const</span> transformer = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./transformer"</span>);
+<span class="hljs-keyword">const</span> codeGenerator = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./codeGenerator"</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compier</span>(<span class="hljs-params">input</span>)</span>{
+    <span class="hljs-keyword">let</span> tokens = tokenizer(input);
+    <span class="hljs-keyword">let</span> ast = parser(tokens);
+    <span class="hljs-keyword">let</span> newAst = transformer(ast);
+    <span class="hljs-keyword">let</span> output = codeGenerator(newAst);
+    <span class="hljs-keyword">return</span> output;
+}
+<span class="hljs-built_in">module</span>.exports = compier;
+</code></pre>
+<h4 id="t243.6.3 tokenizer.js">3.6.3 tokenizer.js <a href="#t243.6.3 tokenizer.js"> # </a></h4>
+<p>compiler\tokenizer.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> LETTERS = <span class="hljs-regexp">/[a-z]/i</span>;
+<span class="hljs-keyword">let</span> WHITESPACE = <span class="hljs-regexp">/\s/</span>;
+<span class="hljs-keyword">let</span> NUMBERS = <span class="hljs-regexp">/[0-9]/</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">tokenizer</span>(<span class="hljs-params">input</span>)</span>{
+  <span class="hljs-comment">//current类似指标,用于记录我们在代码字符串中的位置</span>
+  <span class="hljs-keyword">let</span> current=<span class="hljs-number">0</span>;
+  <span class="hljs-comment">//tokens是一个数组,用来放置我们的token</span>
+  <span class="hljs-keyword">let</span> tokens = [];
+  <span class="hljs-comment">//可能会在单个循环中多次增加current  </span>
+  <span class="hljs-keyword">while</span>(current &lt; input.length){
+    <span class="hljs-comment">//char 指向当前字符串</span>
+    <span class="hljs-keyword">let</span> char = input[current];
+    <span class="hljs-comment">//先检查是不是一个左圆括号</span>
+    <span class="hljs-keyword">if</span>(char === <span class="hljs-string">'('</span>){
+        <span class="hljs-comment">//如果是的话,我们往tokens里push一个type为paren,value为左圆括号的对象</span>
+        tokens.push({
+            <span class="hljs-attr">type</span>:<span class="hljs-string">'paren'</span>,
+            <span class="hljs-attr">value</span>:<span class="hljs-string">'('</span>
+        });
+        <span class="hljs-comment">//自增current</span>
+        current++;
+        <span class="hljs-comment">//结束本次循环,进入下一个循环</span>
+        <span class="hljs-keyword">continue</span>;
+    <span class="hljs-comment">//如果token是函数名,函数名是由一系列字母组成 比如  (add 11 22)</span>
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(LETTERS.test(char)){
+        <span class="hljs-keyword">let</span> value = <span class="hljs-string">''</span>;
+        <span class="hljs-comment">//用内层循环遍历所有的字母,把它们存入value中</span>
+        <span class="hljs-keyword">while</span>(LETTERS.test(char)){
+            value+=char;
+            char = input[++current];
+        }
+        <span class="hljs-comment">//然后添加一个类型为name的token,进入下一个循环</span>
+        tokens.push({
+            <span class="hljs-attr">type</span>:<span class="hljs-string">'name'</span>,
+            value
+        });
+        <span class="hljs-keyword">continue</span>;
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(WHITESPACE.test(char)){
+        <span class="hljs-comment">//token并不是有效的token,所以直接进入下一个循环</span>
+        current++;
+        <span class="hljs-keyword">continue</span>;
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(NUMBERS.test(char)){
+        <span class="hljs-keyword">let</span> value = <span class="hljs-string">''</span>;
+        <span class="hljs-comment">//用内层循环遍历所有的数字,把它们存入value中</span>
+        <span class="hljs-keyword">while</span>(NUMBERS.test(char)){
+            value+=char;
+            char = input[++current];
+        }
+        <span class="hljs-comment">//然后添加一个类型为number的token,进入下一个循环</span>
+        tokens.push({
+            <span class="hljs-attr">type</span>:<span class="hljs-string">'number'</span>,
+            value
+        });
+        <span class="hljs-keyword">continue</span>;
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(char === <span class="hljs-string">')'</span>){
+        tokens.push({
+            <span class="hljs-attr">type</span>: <span class="hljs-string">'paren'</span>,
+            <span class="hljs-attr">value</span>: <span class="hljs-string">')'</span>
+          });
+        current++;
+        <span class="hljs-keyword">continue</span>;
+    }
+    <span class="hljs-comment">//如果没有匹配上任何类型的token,则抛出一个错误</span>
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(<span class="hljs-string">'I dont know what this character is '</span>+ char);
+  }
+  <span class="hljs-keyword">return</span> tokens;
+}
+<span class="hljs-built_in">module</span>.exports = tokenizer;
+</code></pre>
+<h4 id="t253.6.4 parser.js">3.6.4 parser.js <a href="#t253.6.4 parser.js"> # </a></h4>
+<p>compiler\parser.js</p>
+<pre><code class="lang-js"><span class="hljs-comment">/**
+ *  语法分析器接受 token 数组，然后把它转化为 AST
+ *   [{ type: 'paren', value: '(' }, ...]   =&gt;   { type: 'Program', body: [...] }
+ */</span>
+<span class="hljs-comment">//现在我们定义parser函数,接受tokens数组</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">parser</span>(<span class="hljs-params">tokens</span>) </span>{ <span class="hljs-comment">// (add 11 22) (add 2 (subtract 4 2))</span>
+    <span class="hljs-comment">//我们再次声明一个current变量指针</span>
+    <span class="hljs-keyword">let</span> current = <span class="hljs-number">0</span>;
+    <span class="hljs-comment">//但是这次我们使用递归而不是 `while` 循环，所以我们定义一个 `walk` 函数</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">walk</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// walk函数里，我们从当前token开始</span>
+        <span class="hljs-keyword">let</span> token = tokens[current];
+        <span class="hljs-comment">//我们检查是不是 CallExpressions 类型，我们从左圆括号开始</span>
+        <span class="hljs-keyword">if</span> (token.type === <span class="hljs-string">'paren'</span> &amp;&amp; token.value == <span class="hljs-string">'('</span>) {
+            <span class="hljs-comment">// 我们会自增 `current` 来跳过这个括号，因为括号在 AST 中是不重要的</span>
+            token = tokens[++current];
+            <span class="hljs-comment">//我们创建一个类型为 `CallExpression` 的根节点，然后把它的 name 属性设置为当前token 的值</span>
+            <span class="hljs-comment">//因为紧跟在左圆括号后面的 token 一定是调用的函数的名字</span>
+            <span class="hljs-keyword">let</span> node = {
+                <span class="hljs-attr">type</span>: <span class="hljs-string">'CallExpression'</span>,
+                <span class="hljs-attr">name</span>: token.value,
+                <span class="hljs-attr">params</span>: []
+            }
+            <span class="hljs-comment">// 我们再次自增 `current` 变量，跳过当前的 token </span>
+            token = tokens[++current];
+            <span class="hljs-comment">//现在我们循环遍历接下来的每一个 token，直到我们遇到右圆括号，这些 token 将会是 `CallExpression` 的 `params`(参数)</span>
+            <span class="hljs-comment">//这也是递归开始的地方，我们采用递归的方式来解决问题，而不是去尝试解析一个可能有无限层嵌套的结点 </span>
+            <span class="hljs-comment">//(add 2 (subtract 4 2))</span>
+            <span class="hljs-comment">//所以我们创建一个 `while` 循环，直到遇到类型为 `'paren'`，值为右圆括号的 token</span>
+            <span class="hljs-keyword">while</span> (token.type != <span class="hljs-string">'paren'</span> || token.type == <span class="hljs-string">'paren'</span> &amp;&amp; token.value != <span class="hljs-string">')'</span>) {
+                <span class="hljs-comment">//我们调用 `walk` 函数，它将会返回一个结点，然后我们把这个节点放入 `node.params` 中</span>
+                node.params.push(walk());
+                token = tokens[current];
+            }
+            <span class="hljs-comment">// 我们最后一次增加 `current`，跳过右圆括号</span>
+            current++;
+            <span class="hljs-comment">// 返回结点</span>
+            <span class="hljs-keyword">return</span> node;
+        <span class="hljs-comment">//检查是不是 `number` 类型</span>
+        }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(token.type === <span class="hljs-string">'number'</span>){
+            <span class="hljs-comment">// 如果是，`current` 自增。</span>
+            current++;
+            <span class="hljs-comment">// 然后我们会返回一个新的 AST 结点 `NumberLiteral`，并且把它的值设为 token 的值。</span>
+            <span class="hljs-keyword">return</span> {
+              <span class="hljs-attr">type</span>: <span class="hljs-string">'NumberLiteral'</span>,
+              <span class="hljs-attr">value</span>: token.value
+            };
+        }
+        <span class="hljs-comment">//同样，如果我们遇到了一个类型未知的结点，就抛出一个错误。</span>
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(token.type);
+    }
+    <span class="hljs-comment">//现在，我们创建 AST，根结点是一个类型为 `Program` 的结点</span>
+    <span class="hljs-keyword">var</span> ast = {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'Program'</span>,
+        <span class="hljs-attr">body</span>: []
+    };
+    <span class="hljs-comment">//现在我们开始 `walk` 函数，把结点放入 `ast.body` 中</span>
+    <span class="hljs-comment">//之所以在一个循环中处理，是因为我们的程序可能在 `CallExpressions` 后面包含连续的两个参数，而不是嵌套的</span>
+    <span class="hljs-comment">//(add 2 2)  (subtract 4 2)</span>
+    <span class="hljs-keyword">while</span> (current &lt; tokens.length) {
+        ast.body.push(walk());
+    }
+
+    <span class="hljs-comment">// 最后我们的语法分析器返回 AST </span>
+    <span class="hljs-keyword">return</span> ast;
+}
+<span class="hljs-built_in">module</span>.exports  = parser;
+</code></pre>
+<h4 id="t263.6.5 transformer.js">3.6.5 transformer.js <a href="#t263.6.5 transformer.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> traverser = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./traverser'</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">transformer</span>(<span class="hljs-params">ast</span>) </span>{
+  <span class="hljs-comment">// 创建 `newAST`，它与我们之前的 AST 类似，有一个类型为 Program 的根节点。</span>
+  <span class="hljs-keyword">var</span> newAst = {
+    <span class="hljs-attr">type</span>: <span class="hljs-string">'Program'</span>,
+    <span class="hljs-attr">body</span>: []
+  };<span class="hljs-comment">//老的ast有一个属性_context指向新的ast的body</span>
+  ast._context = newAst.body;
+  <span class="hljs-comment">// 我们把 AST 和 visitor 函数传入遍历器</span>
+  traverser(ast,{
+    NumberLiteral(node,parent){
+        <span class="hljs-comment">// 我们创建一个新结点，名字叫 `NumberLiteral`，并把它放入父结点的 context 中。</span>
+        parent._context.push({
+            <span class="hljs-attr">type</span>:<span class="hljs-string">'NumberLiteral'</span>,
+            <span class="hljs-attr">value</span>:node.value
+        });
+    },
+    CallExpression(node,parent){
+      <span class="hljs-comment">//我们创建一个 `CallExpression` 结点，里面有一个嵌套的 `Identifier`</span>
+      <span class="hljs-keyword">var</span> expression = {
+        <span class="hljs-attr">type</span>: <span class="hljs-string">'CallExpression'</span>,
+        <span class="hljs-attr">callee</span>: {
+          <span class="hljs-attr">type</span>: <span class="hljs-string">'Identifier'</span>,
+          <span class="hljs-attr">name</span>: node.name
+        },
+        <span class="hljs-attr">arguments</span>: []
+      };
+      <span class="hljs-comment">// 下面我们在原来的 `CallExpression` 结点上定义一个新的 context，它是 expression</span>
+      <span class="hljs-comment">// 中 arguments 这个数组的引用，我们可以向其中放入参数。</span>
+      node._context = expression.arguments;
+      <span class="hljs-comment">// 最后我们把 `CallExpression`放入父结点的 context 中。</span>
+      parent._context.push(expression);
+    }
+  });
+  <span class="hljs-comment">// 最后返回创建好的新 AST</span>
+  <span class="hljs-keyword">return</span> newAst;
+}
+<span class="hljs-built_in">module</span>.exports = transformer;
+</code></pre>
+<h4 id="t273.6.6 codeGenerator.js">3.6.6 codeGenerator.js <a href="#t273.6.6 codeGenerator.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">codeGenerator</span>(<span class="hljs-params">node</span>) </span>{
+    <span class="hljs-comment">// 对于不同 `type` 的结点分开处理。</span>
+    <span class="hljs-keyword">switch</span> (node.type) {
+      <span class="hljs-comment">// 如果是 `Program` 结点，那么我们会遍历它的 `body` 属性中的每一个结点，并且递归地</span>
+      <span class="hljs-comment">// 对这些结点再次调用 codeGenerator，再把结果打印进入新的一行中。</span>
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'Program'</span>:
+        <span class="hljs-keyword">return</span> node.body.map(codeGenerator)
+          .join(<span class="hljs-string">'\n'</span>);
+      <span class="hljs-comment">// 对于 `CallExpressions`，我们会打印出 `callee`，接着是一个左圆括号，然后对</span>
+      <span class="hljs-comment">// arguments 递归调用 codeGenerator，并且在它们之间加一个逗号，最后加上右圆括号。</span>
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'CallExpression'</span>:
+        <span class="hljs-keyword">return</span> (
+          codeGenerator(node.callee) +
+          <span class="hljs-string">'('</span> +
+          node.arguments.map(codeGenerator)
+            .join(<span class="hljs-string">', '</span>) +
+          <span class="hljs-string">')'</span>
+        );
+
+      <span class="hljs-comment">// 对于 `Identifiers` 我们只是返回 `node` 的 name。</span>
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'Identifier'</span>:
+        <span class="hljs-keyword">return</span> node.name;
+
+      <span class="hljs-comment">// 对于 `NumberLiterals` 我们只是返回 `node` 的 value</span>
+      <span class="hljs-keyword">case</span> <span class="hljs-string">'NumberLiteral'</span>:
+        <span class="hljs-keyword">return</span> node.value;
+
+      <span class="hljs-comment">// 如果我们不能识别这个结点，那么抛出一个错误。</span>
+      <span class="hljs-keyword">default</span>:
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(node.type);
+    }
+  }
+  <span class="hljs-built_in">module</span>.exports = codeGenerator;
+</code></pre>
+<h4 id="t283.6.7 compiler\traverser.js">3.6.7 compiler\traverser.js <a href="#t283.6.7 compiler\traverser.js"> # </a></h4>
+<pre><code class="lang-js"><span class="hljs-comment">// 所以我们定义一个遍历器，它有两个参数，AST 和 vistor。在它的里面我们又定义了两个函数...</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">traverser</span>(<span class="hljs-params">ast, visitor</span>) </span>{
+     <span class="hljs-comment">// `traverseArray` 函数允许我们对数组中的每一个元素调用 `traverseNode` 函数。</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">traverseArray</span>(<span class="hljs-params">array, parent</span>) </span>{
+        array.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">child</span>) </span>{
+           traverseNode(child, parent);
+        });
+    }
+
+    <span class="hljs-comment">// `traverseNode` 函数接受一个 `node` 和它的父结点 `parent` 作为参数，这个结点会被</span>
+    <span class="hljs-comment">// 传入到 visitor 中相应的处理函数那里。</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">traverseNode</span>(<span class="hljs-params">node,parent</span>)</span>{
+        <span class="hljs-comment">// 首先我们看看 visitor 中有没有对应 `type` 的处理函数。</span>
+       <span class="hljs-keyword">var</span> method = visitor[node.type];
+        <span class="hljs-comment">// 如果有，那么我们把 `node` 和 `parent` 都传入其中。</span>
+        <span class="hljs-keyword">if</span> (method) {
+            method(node, parent);
+        }
+        <span class="hljs-comment">// 下面我们对每一个不同类型的结点分开处理。</span>
+        <span class="hljs-keyword">switch</span> (node.type) {
+            <span class="hljs-comment">//我们从顶层的 `Program` 开始，Program 结点中有一个 body 属性，它是一个由若干个结点组成的数组，所以我们对这个数组调用 `traverseArray`</span>
+            <span class="hljs-comment">//记住 `traverseArray` 会调用 `traverseNode`，所以我们会递归地遍历这棵树。</span>
+            <span class="hljs-keyword">case</span> <span class="hljs-string">'Program'</span>:
+              traverseArray(node.body, node);
+            <span class="hljs-keyword">break</span>;
+            <span class="hljs-comment">//下面我们对 `CallExpressions` 做同样的事情，遍历它的 `params`。</span>
+            <span class="hljs-keyword">case</span> <span class="hljs-string">'CallExpression'</span>:
+              traverseArray(node.params, node);
+              <span class="hljs-keyword">break</span>;
+              <span class="hljs-comment">// 如果是 `NumberLiterals`，那么就没有任何子结点了，所以我们直接 break</span>
+            <span class="hljs-keyword">case</span> <span class="hljs-string">'NumberLiteral'</span>:
+                <span class="hljs-keyword">break</span>;
+            <span class="hljs-comment">// 同样，如果我们不能识别当前的结点，那么就抛出一个错误。</span>
+            <span class="hljs-keyword">default</span>:
+                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(node.type);
+            }
+    }
+    <span class="hljs-comment">// 最后我们对 AST 调用 `traverseNode`，开始遍历。注意 AST 并没有父结点。</span>
+    traverseNode(ast, <span class="hljs-literal">null</span>);
+}
+<span class="hljs-built_in">module</span>.exports = traverser;
+</code></pre>
+<h2 id="t294.有限状态机">4.有限状态机 <a href="#t294.有限状态机"> # </a></h2>
+<ul>
+<li>每一个状态都是一个机器,每个机器都可以接收输入和计算输出</li>
+<li>机器本身没有状态,每一个机器会根据输入决定下一个状态</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/statemachine.jpg" alt="statemachine.jpg"></p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> LETTERS = <span class="hljs-regexp">/[a-z]/i</span>;
+<span class="hljs-keyword">let</span> WHITESPACE = <span class="hljs-regexp">/\s/</span>;
+<span class="hljs-keyword">let</span> NUMBERS = <span class="hljs-regexp">/[0-9]/</span>;
+<span class="hljs-keyword">let</span> currentToken;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">start</span>(<span class="hljs-params">char</span>)</span>{
+    <span class="hljs-keyword">if</span>(char === <span class="hljs-string">'('</span>){
+        emit({ <span class="hljs-attr">type</span>: <span class="hljs-string">'paren'</span>,  <span class="hljs-attr">value</span>: <span class="hljs-string">'('</span>});
+        <span class="hljs-keyword">return</span> foundParen;
+    }<span class="hljs-keyword">else</span>{
+        <span class="hljs-keyword">return</span> start;
+    }
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foundParen</span>(<span class="hljs-params">char</span>)</span>{
+    <span class="hljs-keyword">if</span>(LETTERS.test(char)){
+        currentToken = {
+            <span class="hljs-attr">type</span>:<span class="hljs-string">'name'</span>,
+            <span class="hljs-attr">value</span>:<span class="hljs-string">''</span>
+        }
+        <span class="hljs-keyword">return</span> name(char);
+    }
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(<span class="hljs-string">'函数名必须是字符 '</span>+ char); 
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">name</span>(<span class="hljs-params">char</span>)</span>{
+    <span class="hljs-keyword">if</span>(char.match(<span class="hljs-regexp">/^[a-zA-Z]$/</span>)){
+        currentToken.value += char;
+        <span class="hljs-keyword">return</span> name;
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(char == <span class="hljs-string">" "</span>){
+        emit(currentToken);
+        currentToken = {
+            <span class="hljs-attr">type</span>:<span class="hljs-string">'number'</span>,
+            <span class="hljs-attr">value</span>:<span class="hljs-string">''</span>
+        }
+        <span class="hljs-keyword">return</span> number;
+    }
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(<span class="hljs-string">'函数名必须以空格结束 '</span>+ char); 
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">number</span>(<span class="hljs-params">char</span>)</span>{
+    <span class="hljs-keyword">if</span>(NUMBERS.test(char)){
+        currentToken.value += char;
+        <span class="hljs-keyword">return</span> number;
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(char == <span class="hljs-string">" "</span>){
+        emit(currentToken);
+        currentToken = {
+            <span class="hljs-attr">type</span>:<span class="hljs-string">'number'</span>,
+            <span class="hljs-attr">value</span>:<span class="hljs-string">''</span>
+        }
+        <span class="hljs-keyword">return</span> number;
+    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(char == <span class="hljs-string">")"</span>){
+        emit(currentToken);
+        emit({ <span class="hljs-attr">type</span>: <span class="hljs-string">'paren'</span>,  <span class="hljs-attr">value</span>: <span class="hljs-string">')'</span>});
+        <span class="hljs-keyword">return</span> start;
+    }
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">TypeError</span>(<span class="hljs-string">'参数必须是数字 '</span>+ char); 
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">tokenizer</span>(<span class="hljs-params">input</span>)</span>{
+    <span class="hljs-keyword">let</span> state = start;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> char <span class="hljs-keyword">of</span> input){
+        state = state(char);
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">emit</span>(<span class="hljs-params">token</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(token);
+}
+tokenizer(<span class="hljs-string">'(add 45 23)'</span>);
+</code></pre>
+<h2 id="t305.正则分词">5.正则分词 <a href="#t305.正则分词"> # </a></h2>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> RegExpObject = <span class="hljs-regexp">/([0-9]+)|([ ])|(\+)|(\-)|(\*)|(\/)|([\(])|([\)])/g</span>;
+<span class="hljs-keyword">let</span> names = [<span class="hljs-string">"Number"</span>,<span class="hljs-string">"Space"</span>,<span class="hljs-string">"+"</span>,<span class="hljs-string">"-"</span>,<span class="hljs-string">"*"</span>,<span class="hljs-string">"/"</span>,<span class="hljs-string">"("</span>,<span class="hljs-string">")"</span>];
+
+<span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">tokenize</span>(<span class="hljs-params">source</span>)</span>{
+  <span class="hljs-keyword">let</span> result = <span class="hljs-literal">null</span>;
+  <span class="hljs-keyword">while</span>(<span class="hljs-literal">true</span>){
+      result = RegExpObject.exec(source);
+      <span class="hljs-keyword">if</span>(!result) <span class="hljs-keyword">break</span>;
+      <span class="hljs-keyword">let</span> token = {<span class="hljs-attr">type</span>:<span class="hljs-literal">null</span>,<span class="hljs-attr">value</span>:<span class="hljs-literal">null</span>};
+      <span class="hljs-keyword">let</span> index = result.find(<span class="hljs-function">(<span class="hljs-params">item,index</span>)=&gt;</span>index&gt;<span class="hljs-number">0</span>&amp;&amp;!!item);
+      token.type = names[index];
+      token.value = (result[<span class="hljs-number">0</span>]);
+      <span class="hljs-keyword">yield</span> token;
+  }
+}
+<span class="hljs-keyword">let</span> tokens = [];
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> token <span class="hljs-keyword">of</span> tokenize(<span class="hljs-string">"33+44-55*66*(77+55)"</span>)){
+    tokens.push(token);
+}
+<span class="hljs-built_in">console</span>.log(tokens);
+</code></pre>
+
+    </div>
+</div>
+</body>

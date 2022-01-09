@@ -1,0 +1,430 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body class="modal-open" style="padding-right: 15px;">
+<div class="nav">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li class="active"><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
+
+                        
+<div class="warpper">
+    <div class="page-toc">
+        <ul><li><a href="#t01.HTTP">1.HTTP</a><ul><li><a href="#t11.1 HTTP服务器">1.1 HTTP服务器</a></li><li><a href="#t21.2 HTTP三大风险">1.2 HTTP三大风险</a></li></ul></li><li><a href="#t32. HTTPS">2. HTTPS</a></li><li><a href="#t43. 加密算法">3. 加密算法</a><ul><li><a href="#t53.1 对称加密 AES">3.1 对称加密 AES</a></li><li><a href="#t63.2 非对称加密">3.2 非对称加密</a></li><li><a href="#t73.3 哈希算法">3.3 哈希算法</a></li><li><a href="#t83.4 签名">3.4 签名</a></li><li><a href="#t93.5 数字证书">3.5 数字证书</a></li><li><a href="#t103.6 密钥交换">3.6 密钥交换</a></li><li><a href="#t113.7 ECC">3.7 ECC</a></li></ul></li><li><a href="#t124. 加密过程">4. 加密过程</a><ul><li><a href="#t134.1 ClientHello">4.1 ClientHello</a></li><li><a href="#t144.2 ServerHello">4.2 ServerHello</a></li><li><a href="#t154.3 Certificate">4.3 Certificate</a></li><li><a href="#t164.4 ServerKeyExchange">4.4 ServerKeyExchange</a></li><li><a href="#t174.5 Server Hello Done">4.5 Server Hello Done</a></li><li><a href="#t184.6 ClientKeyExchange">4.6 ClientKeyExchange</a></li><li><a href="#t194.7 ChangeCipherSpec">4.7 ChangeCipherSpec</a></li><li><a href="#t204.8 EncryptedHandshakeMessage">4.8 EncryptedHandshakeMessage</a></li><li><a href="#t214.9 New Session Ticket">4.9 New Session Ticket</a></li></ul></li><li><a href="#t225.openssl">5.openssl</a><ul><li><a href="#t235.1 查看版本">5.1 查看版本</a></li><li><a href="#t245.2 摘要算法">5.2 摘要算法</a></li><li><a href="#t255.3 对称加密">5.3 对称加密</a></li><li><a href="#t265.5 RSA非对称加密">5.5 RSA非对称加密</a><ul><li><a href="#t275.5.1 RSA">5.5.1 RSA</a><ul><li><a href="#t285.5.1.1 RSA生成公私钥">5.5.1.1 RSA生成公私钥</a></li><li><a href="#t295.5.1.2 RSA加解密">5.5.1.2 RSA加解密</a></li><li><a href="#t305.5.1.3 数字签名">5.5.1.3 数字签名</a></li></ul></li><li><a href="#t315.5.2 ECDSA">5.5.2 ECDSA</a><ul><li><a href="#t325.5.2.1 生成公私钥">5.5.2.1 生成公私钥</a></li><li><a href="#t335.5.2.2 数字签名">5.5.2.2 数字签名</a></li></ul></li></ul></li></ul></li><li><a href="#t346.证书体系（PKI）">6.证书体系（PKI）</a><ul><li><a href="#t356.1. 生成自签的根证书">6.1. 生成自签的根证书</a></li><li><a href="#t366.2.服务器证书申请">6.2.服务器证书申请</a></li></ul></li><li><a href="#t377.nginx">7.nginx</a><ul><li><a href="#t387.1 安装">7.1 安装</a></li><li><a href="#t397.2 布署证书">7.2 布署证书</a></li></ul></li><li><a href="#t408. tls安全">8. tls安全</a><ul><li><a href="#t418.1 证书吊销">8.1 证书吊销</a></li><li><a href="#t428.1 证书链">8.1 证书链</a></li><li><a href="#t438.2 多域名证书与泛域名证书">8.2 多域名证书与泛域名证书</a></li><li><a href="#t448.2 安全的优化">8.2 安全的优化</a></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+        <h2 id="t01.HTTP">1.HTTP <a href="#t01.HTTP"> # </a></h2>
+<ul>
+<li>HTTP 协议(HyperText Transfer Protocol，超文本传输协议)是客户端浏览器或其他程序与Web服务器之间的应用层通信协议</li>
+</ul>
+<h3 id="t11.1 HTTP服务器">1.1 HTTP服务器 <a href="#t11.1 HTTP服务器"> # </a></h3>
+<p><img src="http://img.zhufengpeixun.cn/1.httpprotocal.jpg" style="width:40%"></p>
+<p><img src="http://img.zhufengpeixun.cn/1.httpprotocal.png" style="width:40%"></p>
+<pre><code class="lang-js">tcp.port == <span class="hljs-number">7788</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);
+http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+    <span class="hljs-keyword">let</span> buffer = Buffer.from(<span class="hljs-string">'hello'</span>);
+    <span class="hljs-built_in">console</span>.log(buffer);
+    res.end(buffer);
+}).listen(<span class="hljs-number">7788</span>, () =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'listening 7788'</span>));
+</code></pre>
+<h3 id="t21.2 HTTP三大风险">1.2 HTTP三大风险 <a href="#t21.2 HTTP三大风险"> # </a></h3>
+<ul>
+<li>(1)窃听风险：黑客可以获知通信内容</li>
+<li>(2)篡改风险：黑客可以修改通信内容</li>
+<li>(3)冒充风险：黑客可以冒充他人身份参与通信</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/2.httpprotocaldanger.jpg" style="width:40%"></p>
+<h2 id="t32. HTTPS">2. HTTPS <a href="#t32. HTTPS"> # </a></h2>
+<ul>
+<li>HTTP = HTTP+TLS/SSL</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">风险</th>
+<th style="text-align:left">对策</th>
+<th style="text-align:left">方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">信息窃听</td>
+<td style="text-align:left">信息加密</td>
+<td style="text-align:left">对称加密 AES</td>
+</tr>
+<tr>
+<td style="text-align:left">密钥传递</td>
+<td style="text-align:left">密钥协商</td>
+<td style="text-align:left">非对称加密(RSA和ECC)</td>
+</tr>
+<tr>
+<td style="text-align:left">信息篡改</td>
+<td style="text-align:left">完整性校验</td>
+<td style="text-align:left">散列算法(MD5和SHA)</td>
+</tr>
+<tr>
+<td style="text-align:left">身份冒充</td>
+<td style="text-align:left">CA权威机构</td>
+<td style="text-align:left">散列算法(MD5和SHA)+RSA签名</td>
+</tr>
+</tbody>
+</table>
+<h2 id="t43. 加密算法">3. 加密算法 <a href="#t43. 加密算法"> # </a></h2>
+<h3 id="t53.1 对称加密 AES">3.1 对称加密 AES <a href="#t53.1 对称加密 AES"> # </a></h3>
+<ul>
+<li>加密和解密使用同一个密钥</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/Symmetric_encryption.jpg" style="width:40%"></p>
+<h3 id="t63.2 非对称加密">3.2 非对称加密 <a href="#t63.2 非对称加密"> # </a></h3>
+<p><img src="http://img.zhufengpeixun.cn/4.rsakey.jpg" style="width:60%"></p>
+<h3 id="t73.3 哈希算法">3.3 哈希算法 <a href="#t73.3 哈希算法"> # </a></h3>
+<ul>
+<li>哈希函数的作用是给一个任意长度的数据生成出一个固定长度的数据<ul>
+<li>安全性 可以从给定的数据X计算出哈希值Y，但不能从哈希值Y计算机数据X</li>
+<li>独一无二 不同的数据一定会产出不同的哈希值</li>
+<li>长度固定 不管输入多大的数据,输出长度都是固定的</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/5.hashkey.jpg" alt="5.hashkey"></p>
+<h3 id="t83.4 签名">3.4 签名 <a href="#t83.4 签名"> # </a></h3>
+<ul>
+<li>数字签名的基本原理是用私钥去签名，而用公钥去验证签名</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/verify3.png" alt="verify3"></p>
+<h3 id="t93.5 数字证书">3.5 数字证书 <a href="#t93.5 数字证书"> # </a></h3>
+<ul>
+<li>数字证书是一个由可信的第三方发出的，用来证明所有人身份以及所有人拥有某个公钥的电子文件</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/certification3.jpg" alt="certification3"></p>
+<h3 id="t103.6 密钥交换">3.6 密钥交换 <a href="#t103.6 密钥交换"> # </a></h3>
+<ul>
+<li>Diffie-Hellman算法是一种密钥交换协议，它可以让双方在不泄漏密钥的情况下协商出一个密钥来</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/6.DiffieHellman.jpg" style="width:50%"></p>
+<h3 id="t113.7 ECC">3.7 ECC <a href="#t113.7 ECC"> # </a></h3>
+<ul>
+<li>椭圆曲线加密算法(ECC) 是基于椭圆曲线数学的一种公钥加密的算法</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> basic = <span class="hljs-number">3</span>;<span class="hljs-comment">//共享basic</span>
+<span class="hljs-keyword">let</span> a = <span class="hljs-number">5</span>;
+<span class="hljs-keyword">let</span> basicA = basic * a;<span class="hljs-comment">//15</span>
+<span class="hljs-keyword">let</span> b = <span class="hljs-number">7</span>;
+<span class="hljs-keyword">let</span> basicB = basic * b;<span class="hljs-comment">//21</span>
+
+<span class="hljs-built_in">console</span>.log(a * basicB);<span class="hljs-comment">//105</span>
+<span class="hljs-built_in">console</span>.log(b * basicA);<span class="hljs-comment">//105</span>
+</code></pre>
+<p><img src="http://img.zhufengpeixun.cn/ecc.png" style="width:40%"></p>
+<h2 id="t124. 加密过程">4. 加密过程 <a href="#t124. 加密过程"> # </a></h2>
+<ul>
+<li><code>firefox: https://47.105.191.39</code> <code>ip.addr ==47.105.191.39 and tls</code></li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/httpsoverflow.jpg" style="width:50%"></p>
+<h3 id="t134.1 ClientHello">4.1 ClientHello <a href="#t134.1 ClientHello"> # </a></h3>
+<ul>
+<li>在一次新的握手流程中，客户端先发送ClientHello<ul>
+<li>Version 协议版本</li>
+<li>Random  包含32个字节的随机数 28随机数字节+4字节时间戳,随机数是为了保证每一次连接者是独立无二的</li>
+<li>Cipher Suites 客户端支持的所有密码套件</li>
+<li>Extensions 扩展的额外数据</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/1.clienthello.png" alt="1.clienthello.png"></p>
+<h3 id="t144.2 ServerHello">4.2 ServerHello <a href="#t144.2 ServerHello"> # </a></h3>
+<ul>
+<li>将服务器选择的连接参数发回给客户端，消息结构和ClientHello类似 ，每个字段只包含一个选项</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/2.serverres.png" alt="serverres"></p>
+<p><img src="http://img.zhufengpeixun.cn/3.serverhello.png" alt="serverhello"></p>
+<h3 id="t154.3 Certificate">4.3 Certificate <a href="#t154.3 Certificate"> # </a></h3>
+<ul>
+<li>Certificate消息发送X.509证书</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/4.certificate.png" alt="4.certificate.png"></p>
+<h3 id="t164.4 ServerKeyExchange">4.4 ServerKeyExchange <a href="#t164.4 ServerKeyExchange"> # </a></h3>
+<ul>
+<li>ServerKeyExchange的目的在于发送交换密钥的参数</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/5.serverkeyexchange.png" alt="5.serverkeyexchange.png"></p>
+<h3 id="t174.5 Server Hello Done">4.5 Server Hello Done <a href="#t174.5 Server Hello Done"> # </a></h3>
+<ul>
+<li>ClientKeyExchange消息携带客户端为密钥交换的所有信息</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/6.serverhellodone.png" alt="6.serverhellodone.png"></p>
+<h3 id="t184.6 ClientKeyExchange">4.6 ClientKeyExchange <a href="#t184.6 ClientKeyExchange"> # </a></h3>
+<ul>
+<li>ClientKeyExchange消息携带客户端为密钥交换的所有信息</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/7.clientkeyexchange.png" alt="clientkeyexchange"></p>
+<h3 id="t194.7 ChangeCipherSpec">4.7 ChangeCipherSpec <a href="#t194.7 ChangeCipherSpec"> # </a></h3>
+<ul>
+<li>ChangeCipherSpec表示客户端已经得到了连接参数的足够信息，已生成加密密钥，并切换到了加密模式</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/8.ChangeCipherSpec.png" alt="ChangeCipherSpec"></p>
+<h3 id="t204.8 EncryptedHandshakeMessage">4.8 EncryptedHandshakeMessage <a href="#t204.8 EncryptedHandshakeMessage"> # </a></h3>
+<ul>
+<li>这个报文的目的就是告诉对端自己在整个握手过程中收到了什么数据，发送了什么数据,来保证中间没人篡改报文</li>
+<li>其次这个报文作用就是确认秘钥的正确性。因为<code>Encrypted handshake message</code>是使用对称秘钥进行加密的第一个报文，如果这个报文加解密校验成功，那么就说明对称秘钥是正确的</li>
+<li>计算方法就将之前所有的握手数据(包括接受和发送)计算哈希运算,然后就是使用协商好的对称密钥进行加密</li>
+</ul>
+<pre><code class="lang-js">加密(SHA(客户端随机数+服务器随机数))
+</code></pre>
+<p><img src="http://img.zhufengpeixun.cn/9.EncryptedHandshakeMessage.png" alt="EncryptedHandshakeMessage"></p>
+<h3 id="t214.9 New Session Ticket">4.9 New Session Ticket <a href="#t214.9 New Session Ticket"> # </a></h3>
+<ul>
+<li>SSL 中的 session 会跟 HTTP 的 session 类似,都是用来保存客户端和服务端之间交互的一些记录</li>
+<li>如果服务端允许使用 Session ID,客户端的 Client Hello 带上 Session ID，服务端复用 Session ID 后，会直接略过协商加密密钥的过程，直接发出一个 Change Cipher Spec 报文,然后就是加密的握手信息报文</li>
+<li>在服务器发送New Session Ticket消息<ul>
+<li>Type 类型</li>
+<li>Version 版本</li>
+<li>Length长度</li>
+<li>Session Ticket Lifetime Hint 表示Ticket的剩余有效时间</li>
+<li>Session Ticket  会话标识</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://img.zhufengpeixun.cn/10.NewSessionTicket.png" alt="NewSessionTicket"></p>
+<p><img src="http://img.zhufengpeixun.cn/11.NewSessionTicket.png" alt="11.NewSessionTicket"></p>
+<h2 id="t225.openssl">5.openssl <a href="#t225.openssl"> # </a></h2>
+<ul>
+<li>linux中的openssl 是SSL/TLS协议和多种加密算法的开源实现 </li>
+<li>openssl包括libcrypto实现算法、libssl 实现TLS/SSL协议,libssl是基于会话的，实现了身份认证 ,数据加密, 会话完整性的一个TLS/SSL的库。</li>
+</ul>
+<h3 id="t235.1 查看版本">5.1 查看版本 <a href="#t235.1 查看版本"> # </a></h3>
+<pre><code class="lang-js">openssl version -a   
+</code></pre>
+<h3 id="t245.2 摘要算法">5.2 摘要算法 <a href="#t245.2 摘要算法"> # </a></h3>
+<pre><code class="lang-js">openssl dgst -help
+</code></pre>
+<ul>
+<li>file... files to digest (default is stdin) 生成摘要的文件</li>
+<li>-out outfile       Output to filename rather than stdout 输出文件</li>
+<li>-sign val          Sign digest using private key 使用私钥签名</li>
+<li>-verify val        Verify a signature using public key 使用公钥验证签名</li>
+<li>-signature infile  File with signature to verify  验证的签名的文件</li>
+<li>-hex               Print as hex dump   以16进制打印        </li>
+<li>-hmac val          Create hashed MAC with key  创建hashed过的消息摘要</li>
+</ul>
+<pre><code class="lang-js">echo <span class="hljs-number">123</span> &gt; msg.txt
+openssl dgst -md5  msg.txt
+openssl dgst -sha1  msg.txt
+openssl dgst -sha256  msg.txt
+</code></pre>
+<h3 id="t255.3 对称加密">5.3 对称加密 <a href="#t255.3 对称加密"> # </a></h3>
+<pre><code class="lang-js">openssl enc -help
+</code></pre>
+<ul>
+<li>-in infile     Input file  输入要加密的文件</li>
+<li>-out outfile   Output file 输出加密后的文件</li>
+<li>-e             Encrypt 加密</li>
+<li>-d             Decrypt 解密        </li>
+<li>-a             Base64 encode/decode, depending on encryption flag Base64编码和解码</li>
+<li>-pass val      Passphrase source  指定密码</li>
+<li>-k val         Passphrase 指定密码</li>
+</ul>
+<pre><code class="lang-js">openssl  enc -e -aes128 -a -k <span class="hljs-number">123456789</span>  -<span class="hljs-keyword">in</span> msg.txt  -out enc_msg.txt
+openssl  enc -d -aes128 -a -k <span class="hljs-number">123456789</span>  -<span class="hljs-keyword">in</span> enc_msg.txt  -out dec_msg.txt
+
+openssl  enc -e -aes128 -a -pass pass:<span class="hljs-number">123456</span>  -<span class="hljs-keyword">in</span> msg.txt  -out enc_msg.txt -P
+openssl  enc -d -aes128 -a -pass pass:<span class="hljs-number">123456</span>  -<span class="hljs-keyword">in</span> enc_msg.txt  -out dec_msg.txt
+</code></pre>
+<h3 id="t265.5 RSA非对称加密">5.5 RSA非对称加密 <a href="#t265.5 RSA非对称加密"> # </a></h3>
+<h4 id="t275.5.1 RSA">5.5.1 RSA <a href="#t275.5.1 RSA"> # </a></h4>
+<h5 id="t285.5.1.1 RSA生成公私钥">5.5.1.1 RSA生成公私钥 <a href="#t285.5.1.1 RSA生成公私钥"> # </a></h5>
+<pre><code class="lang-js">openssl genrsa -help
+</code></pre>
+<ul>
+<li>-aes256 是使用aes256算法加密这个私钥</li>
+<li>-passout  指定加密的密钥</li>
+<li>-out output the key to file 指明输出文件</li>
+<li>-in    指定输入文件     </li>
+<li>-pubout 输出公钥信息； 根据私钥的信息得出公钥</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">//生成加密的私钥</span>
+openssl genrsa -aes256 -passout pass:<span class="hljs-number">123456</span> -out private.key <span class="hljs-number">2048</span>
+<span class="hljs-comment">//生成不加密的私钥</span>
+openssl genrsa  -out private.key <span class="hljs-number">1024</span>
+<span class="hljs-comment">//生成公钥</span>
+openssl rsa -pubout -<span class="hljs-keyword">in</span> private.key  -out  public.key
+</code></pre>
+<h5 id="t295.5.1.2 RSA加解密">5.5.1.2 RSA加解密 <a href="#t295.5.1.2 RSA加解密"> # </a></h5>
+<pre><code class="lang-js">openssl rsautl -help
+</code></pre>
+<ul>
+<li>-in infile Input file     输入文件（待加密或待解密的文件）</li>
+<li>-out outfile Output file 输出文件  加密解密后的文件</li>
+<li>-inkey val Input key   输入加密的公钥</li>
+<li>-encrypt Encrypt with public key         使用公钥加密</li>
+<li>-decrypt Decrypt with private key        使用私钥解密</li>
+<li>-pubin Input is an RSA public      表明输入的是公钥(默认是私钥)</li>
+<li>-sign Sign with private key    表明使用私钥签名</li>
+<li>-verify Verify with public key    表明使用公钥验证签名</li>
+<li>-hexdump Hex dump output     以十六进制形式输出</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">//公钥加密</span>
+openssl rsautl -encrypt -inkey public.key  -pubin  -<span class="hljs-keyword">in</span> msg.txt  -out enc.msg.txt 
+<span class="hljs-comment">//私钥解密</span>
+openssl rsautl -decrypt -inkey private.key -<span class="hljs-keyword">in</span> enc.msg.txt   -out  dec.msg.txt 
+</code></pre>
+<h5 id="t305.5.1.3 数字签名">5.5.1.3 数字签名 <a href="#t305.5.1.3 数字签名"> # </a></h5>
+<pre><code class="lang-js"><span class="hljs-comment">//摘要后使用RSA私钥签名，摘要算法sha256</span>
+openssl dgst -sign private.key -sha256 -out  sign.msg.txt  msg.txt
+<span class="hljs-comment">//使用RSA公钥验证签名</span>
+openssl dgst -verify  public.key -sha256 -signature sign.msg.txt  msg.txt
+</code></pre>
+<h4 id="t315.5.2 ECDSA">5.5.2 ECDSA <a href="#t315.5.2 ECDSA"> # </a></h4>
+<h5 id="t325.5.2.1 生成公私钥">5.5.2.1 生成公私钥 <a href="#t325.5.2.1 生成公私钥"> # </a></h5>
+<pre><code class="lang-js"><span class="hljs-comment">//生成ecdsa私钥</span>
+openssl ecparam -genkey  -name secp256k1 -out ec.private.key
+<span class="hljs-comment">//提取 ecdsa 公钥</span>
+openssl ec -<span class="hljs-keyword">in</span> ec.private.key -pubout -out ec.public.key
+</code></pre>
+<h5 id="t335.5.2.2 数字签名">5.5.2.2 数字签名 <a href="#t335.5.2.2 数字签名"> # </a></h5>
+<pre><code class="lang-js"><span class="hljs-comment">//使用ECDSA私钥进行签名 (sha256) </span>
+openssl  dgst -sign ec.private.key  -sha256 -out sign.msg  msg.txt
+<span class="hljs-comment">//使用ECDSA公钥进行签名验证</span>
+openssl dgst -verify ec.public.key -sha256 -signature sign.msg  msg.txt
+</code></pre>
+<h2 id="t346.证书体系（PKI）">6.证书体系（PKI） <a href="#t346.证书体系（PKI）"> # </a></h2>
+<ul>
+<li>为了检查公钥不是服务器就需要引入权威第三方</li>
+<li>数字证书就是权威第三方发布的并包括<ul>
+<li>Issuer (证书的发布机构)：哪个权威第三方发布的证书</li>
+<li>Valid from,Valid to(证书的有效期) 过了有效期限，证书就会作废</li>
+<li>Public key(公钥) 权威第三方给申请者配发的公钥</li>
+<li>Subject(主题): 证书所有者,一般是公司名称、机构名称、公司网站的网址等</li>
+<li>Signature algorithm(签名所使用的算法): 使用哪个算法加密了指纹，指纹的加密结果就是数字签名</li>
+<li>Thumbprint, Thumbprint algorithm (指纹以及指纹算法) 这是个加密后的结果，是用来确保证书完整性的，保证证书不被篡改</li>
+</ul>
+</li>
+</ul>
+<h3 id="t356.1. 生成自签的根证书">6.1. 生成自签的根证书 <a href="#t356.1. 生成自签的根证书"> # </a></h3>
+<ul>
+<li>-new 新的签名请求</li>
+<li>-x509  输出x509格式的证书</li>
+<li>-key 私钥</li>
+<li>-out 输出文件</li>
+<li>-days 证书有效期天数</li>
+<li>-subject 请求主体</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">//1.生成CA私钥</span>
+openssl genrsa -out ca.private.key  <span class="hljs-number">2048</span>
+<span class="hljs-comment">//2.根据CA私钥生成根证书</span>
+openssl req -<span class="hljs-keyword">new</span> -x509 -key ca.private.key  -out ca.crt  -days <span class="hljs-number">365</span>  -subj /C=CN/ST=BeiJing/L=BeiJing/O=ca/OU=ca/CN=www.ca.com/emailAddress=ca@qq.com
+</code></pre>
+<h3 id="t366.2.服务器证书申请">6.2.服务器证书申请 <a href="#t366.2.服务器证书申请"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-comment">//1.生成服务器私钥</span>
+openssl genrsa -out server.private.key <span class="hljs-number">2048</span>
+<span class="hljs-comment">//2.创建证书签名申请CSR(certificate signing request)并且发送给CA</span>
+openssl req -<span class="hljs-keyword">new</span> -key server.private.key -out server.csr -subj  /C=CN/ST=BeiJing/L=BeiJing/O=<span class="hljs-number">47.105</span><span class="hljs-number">.67</span><span class="hljs-number">.214</span>/OU=<span class="hljs-number">47.105</span><span class="hljs-number">.67</span><span class="hljs-number">.214</span>/CN=<span class="hljs-number">47.105</span><span class="hljs-number">.67</span><span class="hljs-number">.214</span>/emailAddress=<span class="hljs-number">47.105</span><span class="hljs-number">.67</span><span class="hljs-number">.214</span>@qq.com
+<span class="hljs-comment">//3.签发证书</span>
+openssl x509 -req -days <span class="hljs-number">365</span>  -CA ca.crt -CAkey ca.private.key -CAcreateserial  -<span class="hljs-keyword">in</span>  server.csr  -out server.crt
+</code></pre>
+<h2 id="t377.nginx">7.nginx <a href="#t377.nginx"> # </a></h2>
+<h3 id="t387.1 安装">7.1 安装 <a href="#t387.1 安装"> # </a></h3>
+<pre><code class="lang-js">yum -y install gcc gcc-c++ pcre-devel zlib-devel
+
+wget https:<span class="hljs-comment">//nginx.org/download/nginx-1.12.2.tar.gz</span>
+wget https:<span class="hljs-comment">//www.openssl.org/source/openssl-1.1.0h.tar.gz</span>
+tar zxf nginx<span class="hljs-number">-1.12</span><span class="hljs-number">.2</span>.tar.gz
+tar zxf openssl<span class="hljs-number">-1.1</span><span class="hljs-number">.0</span>h
+cd nginx<span class="hljs-number">-1.12</span><span class="hljs-number">.2</span>
+
+groupadd nginx
+<span class="hljs-comment">// -M 不要自动建立用户的登入目录 -s 不能登录的shell</span>
+useradd nginx  -M -s /sbin/nologin -g nginx
+
+mkdir -p /usr/nginx
+mkdir -p /usr/nginx/logs  
+mkdir -p /usr/nginx/cache
+
+./configure  --prefix=<span class="hljs-regexp">/usr/</span>nginx   --<span class="hljs-keyword">with</span>-http_ssl_module --<span class="hljs-keyword">with</span>-openssl=<span class="hljs-regexp">/root/</span>openssl<span class="hljs-number">-1.1</span><span class="hljs-number">.0</span>h        --<span class="hljs-keyword">with</span>-http_ssl_module --user=nginx --group=nginx
+
+make 
+make install
+
+<span class="hljs-keyword">export</span> PATH=<span class="hljs-regexp">/usr/</span>nginx/sbin:$PATH
+nginx -t
+nginx -V
+nginx
+netstat -ntlp
+</code></pre>
+<h3 id="t397.2 布署证书">7.2 布署证书 <a href="#t397.2 布署证书"> # </a></h3>
+<ul>
+<li>配置文件<code>/usr/nginx</code></li>
+<li>重启 <code>nginx -s reload</code></li>
+</ul>
+<pre><code class="lang-diff">    server {
+        listen       443 ssl;
+        server_name  localhost;
+
+<span class="hljs-addition">+       ssl_certificate      /root/server.crt;</span>
+<span class="hljs-addition">+       ssl_certificate_key  /root/server.private.key;</span>
+
+        ssl_session_cache    shared:SSL:1m;
+        ssl_session_timeout  5m;
+
+        ssl_ciphers  HIGH:!aNULL:!MD5;
+        ssl_prefer_server_ciphers  on;
+
+        location / {
+            root   html;
+            index  index.html index.htm;
+        }
+    }
+</code></pre>
+<h2 id="t408. tls安全">8. tls安全 <a href="#t408. tls安全"> # </a></h2>
+<h3 id="t418.1 证书吊销">8.1 证书吊销 <a href="#t418.1 证书吊销"> # </a></h3>
+<ul>
+<li>证书吊销列表分发点 (CRL Distribution Point ，简称 CDP) 是含在数字证书中的一个可以共各种应用软件自动下载的最新的 CRL 的位置信息,一般 CA 每隔一定时间 ( 几天或几个月 ) 才发布新的吊销列表</li>
+<li>OCSP(Online Certificate Status Protocol)证书状态在线查询协议，是IETF颁布的用于实时查询数字证书在某一时间是否有效的标准。</li>
+</ul>
+<h3 id="t428.1 证书链">8.1 证书链 <a href="#t428.1 证书链"> # </a></h3>
+<ul>
+<li>一个证书链就是能溯源到一个可信根证书的有序证书列表</li>
+<li>使用证书链的原因<ul>
+<li>保证根证书安全</li>
+<li>交叉证书 用已有的根证书签署新的根证书</li>
+<li>划分二级CA </li>
+<li>委派 签发给一个组织或者公司一个二级CA，但限制用于签署其自用的证书，只能签署他们自己所拥有的域名的证书。</li>
+</ul>
+</li>
+</ul>
+<h3 id="t438.2 多域名证书与泛域名证书">8.2 多域名证书与泛域名证书 <a href="#t438.2 多域名证书与泛域名证书"> # </a></h3>
+<ul>
+<li>建议给每个域名一个单独的证书</li>
+<li><em>.xxxx.com或 </em>.xxxx.org 就是泛域名</li>
+</ul>
+<h3 id="t448.2 安全的优化">8.2 安全的优化 <a href="#t448.2 安全的优化"> # </a></h3>
+<ul>
+<li>使用服务器优先的更安全的密码套件</li>
+<li>密钥算法与加密强度</li>
+<li>注意保护私钥，定期更换</li>
+<li>选择可靠的CA权威机构</li>
+<li>前向安全保密</li>
+</ul>
+
+    </div>
+</div>
+</body>

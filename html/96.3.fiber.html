@@ -1,0 +1,1665 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>珠峰架构师成长计划</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .page-toc > ul .red {
+            background: #f3f3f3;
+            z-index: 1;
+            border-left: 3px solid #009a61;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #000
+        }
+    </style>
+</head>
+<body class="modal-open" style="padding-right: 15px;">
+<div class="nav">
+    <div class="logo">
+        
+                    珠峰架构师成长计划
+                        
+                        </div>
+                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li class="active"><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
+
+                        
+<div class="warpper">
+    <div class="page-toc">
+        <ul><li><a href="#t01.实现虚拟DOM">1.实现虚拟DOM</a><ul><li><a href="#t11.1 src\index.js">1.1 src\index.js</a></li><li><a href="#t21.2 src\react.js">1.2 src\react.js</a></li></ul></li><li><a href="#t32.实现初次渲染">2.实现初次渲染</a><ul><li><a href="#t42.1 index.js">2.1 index.js</a></li><li><a href="#t52.2 constants.js">2.2 constants.js</a></li><li><a href="#t62.3 utils.js">2.3 utils.js</a></li><li><a href="#t72.4 react-dom.js">2.4 react-dom.js</a></li><li><a href="#t82.4 scheduler.js">2.4 scheduler.js</a></li></ul></li><li><a href="#t93.实现元素的更新">3.实现元素的更新</a><ul><li><a href="#t103.1 public\index.html">3.1 public\index.html</a></li><li><a href="#t113.2 src\index.js">3.2 src\index.js</a></li><li><a href="#t123.3 src\constants.js">3.3 src\constants.js</a></li><li><a href="#t133.4 scheduler.js">3.4 scheduler.js</a></li></ul></li><li><a href="#t144.实现类组件">4.实现类组件</a><ul><li><a href="#t154.1 src\index.js">4.1 src\index.js</a></li><li><a href="#t164.2 src\react.js">4.2 src\react.js</a></li><li><a href="#t174.3 constants.js">4.3 constants.js</a></li><li><a href="#t184.4 updateQueue.js">4.4 updateQueue.js</a></li><li><a href="#t194.5 utils.js">4.5 utils.js</a></li><li><a href="#t204.6 scheduler.js">4.6 scheduler.js</a></li></ul></li><li><a href="#t215.实现函数组件">5.实现函数组件</a><ul><li><a href="#t225.1 src\index.js">5.1 src\index.js</a></li><li><a href="#t235.2 constants.js">5.2 constants.js</a></li><li><a href="#t245.3 scheduler.js">5.3 scheduler.js</a></li></ul></li><li><a href="#t256.实现hooks">6.实现hooks</a><ul><li><a href="#t266.1 src\index.js">6.1 src\index.js</a></li><li><a href="#t276.2 src\react.js">6.2 src\react.js</a></li><li><a href="#t286.3 src\scheduler.js">6.3 src\scheduler.js</a></li></ul></li></ul>
+    </div>
+    <div class="content markdown-body">
+        <h2 id="t01.实现虚拟DOM">1.实现虚拟DOM <a href="#t01.实现虚拟DOM"> # </a></h2>
+<h3 id="t11.1 src\index.js">1.1 src\index.js <a href="#t11.1 src\index.js"> # </a></h3>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'./react'</span>;
+<span class="hljs-comment">//import ReactDOM from 'react-dom';</span>
+<span class="hljs-keyword">let</span> element = (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"A1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"B1"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"C1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"C2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"B2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+)
+<span class="hljs-built_in">console</span>.log(element);
+<span class="hljs-comment">/* ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+*/</span>
+</code></pre>
+<h3 id="t21.2 src\react.js">1.2 src\react.js <a href="#t21.2 src\react.js"> # </a></h3>
+<p>src\react.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { ELEMENT_TEXT } <span class="hljs-keyword">from</span> <span class="hljs-string">'./constants'</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createElement</span>(<span class="hljs-params">type, config, ...children</span>) </span>{
+    <span class="hljs-keyword">delete</span> config.__self;
+    <span class="hljs-keyword">delete</span> config.__source;
+    <span class="hljs-keyword">return</span> {
+        type,
+        <span class="hljs-attr">props</span>: {
+            ...config,
+            <span class="hljs-attr">children</span>: children.map(
+                <span class="hljs-function"><span class="hljs-params">child</span> =&gt;</span> <span class="hljs-keyword">typeof</span> child === <span class="hljs-string">"object"</span> ?
+                    child :
+                    { <span class="hljs-attr">type</span>: ELEMENT_TEXT, <span class="hljs-attr">props</span>: { <span class="hljs-attr">text</span>: child, <span class="hljs-attr">children</span>: [] } })
+        }
+    }
+}
+
+<span class="hljs-keyword">let</span> React = {
+    createElement
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> React;
+</code></pre>
+<h2 id="t32.实现初次渲染">2.实现初次渲染 <a href="#t32.实现初次渲染"> # </a></h2>
+<p><img src="http://img.zhufengpeixun.cn/collecting2.jpg" alt="collecting2"></p>
+<p><img src="http://img.zhufengpeixun.cn/fibereffectlistabc.png" alt="fibereffectlistabc"></p>
+<p><img src="http://img.zhufengpeixun.cn/fibereffectlistwithchild3.jpg" alt="fibereffectlistwithchild3"></p>
+<h3 id="t42.1 index.js">2.1 index.js <a href="#t42.1 index.js"> # </a></h3>
+<pre><code class="lang-diff">import React from './react';
+import ReactDOM from './react-dom';
+<span class="hljs-addition">+let style = { border: '3px solid red', margin: '5px' };</span>
+<span class="hljs-addition">+let element = (</span>
+<span class="hljs-addition">+  &lt;div  id="A1" style={style}&gt;</span>
+<span class="hljs-addition">+    A1</span>
+<span class="hljs-addition">+    &lt;div  id="B1" style={style}&gt;</span>
+<span class="hljs-addition">+      B1</span>
+<span class="hljs-addition">+        &lt;div  id="C1" style={style}&gt;C1&lt;/div&gt;</span>
+<span class="hljs-addition">+      &lt;div  id="C2" style={style}&gt;C2&lt;/div&gt;</span>
+<span class="hljs-addition">+    &lt;/div&gt;</span>
+<span class="hljs-addition">+    &lt;div  id="B2" style={style}&gt;B2&lt;/div&gt;</span>
+<span class="hljs-addition">+  &lt;/div&gt;</span>
+<span class="hljs-addition">+)</span>
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+</code></pre>
+<h3 id="t52.2 constants.js">2.2 constants.js <a href="#t52.2 constants.js"> # </a></h3>
+<p>src\constants.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+export const ELEMENT_TEXT = Symbol.for('ELEMENT_TEXT');</span>
+<span class="hljs-addition">+export const TAG_ROOT = Symbol.for('TAG_ROOT');</span>
+<span class="hljs-addition">+export const TAG_HOST = Symbol.for('TAG_HOST');</span>
+<span class="hljs-addition">+export const TAG_TEXT = Symbol.for('TAG_TEXT');</span>
+<span class="hljs-addition">+export const PLACEMENT = Symbol.for('PLACEMENT');</span>
+</code></pre>
+<h3 id="t62.3 utils.js">2.3 utils.js <a href="#t62.3 utils.js"> # </a></h3>
+<p>src\utils.js</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setProp</span>(<span class="hljs-params">dom, key, value</span>) </span>{
+    <span class="hljs-keyword">if</span> (<span class="hljs-regexp">/^on/</span>.test(key)) {
+        dom[key.toLowerCase()] = value;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (key === <span class="hljs-string">'style'</span>) {
+        <span class="hljs-keyword">if</span> (value) {
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> styleName <span class="hljs-keyword">in</span> value) {
+                <span class="hljs-keyword">if</span> (value.hasOwnProperty(styleName)) {
+                    dom.style[styleName] = value[styleName];
+                }
+            }
+        }
+    } <span class="hljs-keyword">else</span> {
+        dom.setAttribute(key, value);
+    }
+    <span class="hljs-keyword">return</span> dom;
+}
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setProps</span>(<span class="hljs-params">elem, oldProps, newProps</span>) </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> key <span class="hljs-keyword">in</span> oldProps) {
+        <span class="hljs-keyword">if</span> (key !== <span class="hljs-string">'children'</span>) {
+            <span class="hljs-keyword">if</span> (newProps.hasOwnProperty(key)) {
+                setProp(elem, key, newProps[key]);
+            } <span class="hljs-keyword">else</span> {
+                elem.removeAttribute(key);
+            }
+        }
+    }
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> key <span class="hljs-keyword">in</span> newProps) {
+        <span class="hljs-keyword">if</span> (key !== <span class="hljs-string">'children'</span>) {
+            setProp(elem, key, newProps[key])
+        }
+    }
+}
+</code></pre>
+<h3 id="t72.4 react-dom.js">2.4 react-dom.js <a href="#t72.4 react-dom.js"> # </a></h3>
+<p>src\react-dom.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { TAG_ROOT } <span class="hljs-keyword">from</span> <span class="hljs-string">'./constants'</span>;
+<span class="hljs-keyword">import</span> { scheduleRoot } <span class="hljs-keyword">from</span> <span class="hljs-string">'./scheduler'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">element, container</span>) </span>{
+    <span class="hljs-keyword">let</span> rootFiber = {
+        <span class="hljs-attr">tag</span>: TAG_ROOT,<span class="hljs-comment">//这是根Fiber</span>
+        <span class="hljs-attr">stateNode</span>: container,<span class="hljs-comment">//此Fiber对应的DOM节点</span>
+        <span class="hljs-attr">props</span>: { <span class="hljs-attr">children</span>: [element] },<span class="hljs-comment">//子元素就是要渲染的element</span>
+    }
+    scheduleRoot(rootFiber);
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+    render
+}
+</code></pre>
+<h3 id="t82.4 scheduler.js">2.4 scheduler.js <a href="#t82.4 scheduler.js"> # </a></h3>
+<p>src\scheduler.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { setProps } <span class="hljs-keyword">from</span> <span class="hljs-string">'./utils'</span>;
+<span class="hljs-keyword">import</span> {
+    ELEMENT_TEXT, TAG_ROOT, TAG_HOST, TAG_TEXT, PLACEMENT
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'./constants'</span>;
+
+<span class="hljs-keyword">let</span> workInProgressRoot = <span class="hljs-literal">null</span>;<span class="hljs-comment">//正在渲染中的根Fiber</span>
+<span class="hljs-keyword">let</span> nextUnitOfWork = <span class="hljs-literal">null</span><span class="hljs-comment">//下一个工作单元</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">scheduleRoot</span>(<span class="hljs-params">rootFiber</span>) </span>{
+    <span class="hljs-comment">//把当前树设置为nextUnitOfWork开始进行调度</span>
+    workInProgressRoot = rootFiber;
+    nextUnitOfWork = workInProgressRoot;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">commitRoot</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">let</span> currentFiber = workInProgressRoot.firstEffect;
+    <span class="hljs-keyword">while</span> (currentFiber) {
+        commitWork(currentFiber);
+        currentFiber = currentFiber.nextEffect;
+    }
+    workInProgressRoot = <span class="hljs-literal">null</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">commitWork</span>(<span class="hljs-params">currentFiber</span>) </span>{
+    <span class="hljs-keyword">if</span> (!currentFiber) {
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">let</span> returnFiber = currentFiber.return;<span class="hljs-comment">//先获取父Fiber</span>
+    <span class="hljs-keyword">const</span> domReturn = returnFiber.stateNode;<span class="hljs-comment">//获取父的DOM节点</span>
+    <span class="hljs-keyword">if</span> (currentFiber.effectTag === PLACEMENT &amp;&amp; currentFiber.stateNode != <span class="hljs-literal">null</span>) {<span class="hljs-comment">//如果是新增DOM节点</span>
+        <span class="hljs-keyword">let</span> nextFiber = currentFiber;
+        domReturn.appendChild(nextFiber.stateNode);
+    }
+    currentFiber.effectTag = <span class="hljs-literal">null</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">performUnitOfWork</span>(<span class="hljs-params">currentFiber</span>) </span>{
+    beginWork(currentFiber);<span class="hljs-comment">//开始渲染前的Fiber,就是把子元素变成子fiber</span>
+
+    <span class="hljs-keyword">if</span> (currentFiber.child) {<span class="hljs-comment">//如果子节点就返回第一个子节点</span>
+        <span class="hljs-keyword">return</span> currentFiber.child;
+    }
+
+    <span class="hljs-keyword">while</span> (currentFiber) {<span class="hljs-comment">//如果没有子节点说明当前节点已经完成了渲染工作</span>
+        completeUnitOfWork(currentFiber);<span class="hljs-comment">//可以结束此fiber的渲染了 </span>
+        <span class="hljs-keyword">if</span> (currentFiber.sibling) {<span class="hljs-comment">//如果它有弟弟就返回弟弟</span>
+            <span class="hljs-keyword">return</span> currentFiber.sibling;
+        }
+        currentFiber = currentFiber.return;<span class="hljs-comment">//如果没有弟弟让爸爸完成，然后找叔叔</span>
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">beginWork</span>(<span class="hljs-params">currentFiber</span>) </span>{
+    <span class="hljs-keyword">if</span> (currentFiber.tag === TAG_ROOT) {<span class="hljs-comment">//如果是根节点</span>
+        updateHostRoot(currentFiber);
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (currentFiber.tag === TAG_TEXT) {<span class="hljs-comment">//如果是原生文本节点</span>
+        updateHostText(currentFiber);
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (currentFiber.tag === TAG_HOST) {<span class="hljs-comment">//如果是原生DOM节点</span>
+        updateHostComponent(currentFiber);
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateHostRoot</span>(<span class="hljs-params">currentFiber</span>) </span>{<span class="hljs-comment">//如果是根节点</span>
+    <span class="hljs-keyword">const</span> newChildren = currentFiber.props.children;<span class="hljs-comment">//直接渲染子节点</span>
+    reconcileChildren(currentFiber, newChildren);
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateHostText</span>(<span class="hljs-params">currentFiber</span>) </span>{
+    <span class="hljs-keyword">if</span> (!currentFiber.stateNode) {
+        currentFiber.stateNode = createDOM(currentFiber);<span class="hljs-comment">//先创建真实的DOM节点</span>
+    }
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateHostComponent</span>(<span class="hljs-params">currentFiber</span>) </span>{<span class="hljs-comment">//如果是原生DOM节点</span>
+    <span class="hljs-keyword">if</span> (!currentFiber.stateNode) {
+        currentFiber.stateNode = createDOM(currentFiber);<span class="hljs-comment">//先创建真实的DOM节点</span>
+    }
+    <span class="hljs-keyword">const</span> newChildren = currentFiber.props.children;
+    reconcileChildren(currentFiber, newChildren);
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createDOM</span>(<span class="hljs-params">currentFiber</span>) </span>{
+    <span class="hljs-keyword">if</span> (currentFiber.type === ELEMENT_TEXT) {
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">document</span>.createTextNode(currentFiber.props.text);
+    }
+    <span class="hljs-keyword">const</span> stateNode = <span class="hljs-built_in">document</span>.createElement(currentFiber.type);
+    updateDOM(stateNode, {}, currentFiber.props);
+    <span class="hljs-keyword">return</span> stateNode;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">reconcileChildren</span>(<span class="hljs-params">currentFiber, newChildren</span>) </span>{
+    <span class="hljs-keyword">let</span> newChildIndex = <span class="hljs-number">0</span>;<span class="hljs-comment">//新虚拟DOM数组中的索引</span>
+    <span class="hljs-keyword">let</span> prevSibling;
+    <span class="hljs-keyword">while</span> (newChildIndex &lt; newChildren.length) {
+        <span class="hljs-keyword">const</span> newChild = newChildren[newChildIndex];
+        <span class="hljs-keyword">let</span> tag;
+        <span class="hljs-keyword">if</span> (newChild &amp;&amp; newChild.type === ELEMENT_TEXT) {
+            tag = TAG_TEXT;<span class="hljs-comment">//文本</span>
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (newChild &amp;&amp; <span class="hljs-keyword">typeof</span> newChild.type === <span class="hljs-string">'string'</span>) {
+            tag = TAG_HOST;<span class="hljs-comment">//原生DOM组件</span>
+        }
+        <span class="hljs-keyword">let</span> newFiber = {
+            tag,<span class="hljs-comment">//原生DOM组件</span>
+            <span class="hljs-attr">type</span>: newChild.type,<span class="hljs-comment">//具体的元素类型</span>
+            <span class="hljs-attr">props</span>: newChild.props,<span class="hljs-comment">//新的属性对象</span>
+            <span class="hljs-attr">stateNode</span>: <span class="hljs-literal">null</span>,<span class="hljs-comment">//stateNode肯定是空的</span>
+            <span class="hljs-attr">return</span>: currentFiber,<span class="hljs-comment">//父Fiber</span>
+            <span class="hljs-attr">effectTag</span>: PLACEMENT,<span class="hljs-comment">//副作用标识</span>
+            <span class="hljs-attr">nextEffect</span>: <span class="hljs-literal">null</span>
+        }
+        <span class="hljs-keyword">if</span> (newFiber) {
+            <span class="hljs-keyword">if</span> (newChildIndex === <span class="hljs-number">0</span>) {
+                currentFiber.child = newFiber;<span class="hljs-comment">//第一个子节点挂到父节点的child属性上</span>
+            } <span class="hljs-keyword">else</span> {
+                prevSibling.sibling = newFiber;
+            }
+            prevSibling = newFiber;<span class="hljs-comment">//然后newFiber变成了上一个哥哥了</span>
+        }
+        prevSibling = newFiber;<span class="hljs-comment">//然后newFiber变成了上一个哥哥了</span>
+        newChildIndex++;
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateDOM</span>(<span class="hljs-params">stateNode, oldProps, newProps</span>) </span>{
+    setProps(stateNode, oldProps, newProps);
+}
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">completeUnitOfWork</span>(<span class="hljs-params">currentFiber</span>) </span>{
+    <span class="hljs-keyword">const</span> returnFiber = currentFiber.return;
+    <span class="hljs-keyword">if</span> (returnFiber) {
+        <span class="hljs-keyword">if</span> (!returnFiber.firstEffect) {
+            returnFiber.firstEffect = currentFiber.firstEffect;
+        }
+        <span class="hljs-keyword">if</span> (!!currentFiber.lastEffect) {
+            <span class="hljs-keyword">if</span> (!!returnFiber.lastEffect) {
+                returnFiber.lastEffect.nextEffect = currentFiber.firstEffect;
+            }
+            returnFiber.lastEffect = currentFiber.lastEffect;
+        }
+
+        <span class="hljs-keyword">const</span> effectTag = currentFiber.effectTag;
+        <span class="hljs-keyword">if</span> (effectTag) {
+            <span class="hljs-keyword">if</span> (!!returnFiber.lastEffect) {
+                returnFiber.lastEffect.nextEffect = currentFiber;
+            } <span class="hljs-keyword">else</span> {
+                returnFiber.firstEffect = currentFiber;
+            }
+            returnFiber.lastEffect = currentFiber;
+        }
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">workLoop</span>(<span class="hljs-params">deadline</span>) </span>{
+    <span class="hljs-keyword">let</span> shouldYield = <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">while</span> (nextUnitOfWork &amp;&amp; !shouldYield) {
+        nextUnitOfWork = performUnitOfWork(nextUnitOfWork);<span class="hljs-comment">//执行一个任务并返回下一个任务</span>
+        shouldYield = deadline.timeRemaining() &lt; <span class="hljs-number">1</span>;<span class="hljs-comment">//如果剩余时间小于1毫秒就说明没有时间了，需要把控制权让给浏览器</span>
+    }
+    <span class="hljs-comment">//如果没有下一个执行单元了，并且当前渲染树存在，则进行提交阶段</span>
+    <span class="hljs-keyword">if</span> (!nextUnitOfWork &amp;&amp; workInProgressRoot) {
+        commitRoot();
+    }
+    requestIdleCallback(workLoop);
+}
+<span class="hljs-comment">//开始在空闲时间执行workLoop</span>
+requestIdleCallback(workLoop);
+
+</code></pre>
+<h2 id="t93.实现元素的更新">3.实现元素的更新 <a href="#t93.实现元素的更新"> # </a></h2>
+<p><img src="http://img.zhufengpeixun.cn/updatecomponent.jpg" alt="updatecomponent"></p>
+<p><img src="http://img.zhufengpeixun.cn/alternate2.jpg" alt="alternate2"></p>
+<h3 id="t103.1 public\index.html">3.1 public\index.html <a href="#t103.1 public\index.html"> # </a></h3>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"root"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"reRender1"</span>&gt;</span>reRender1<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"reRender2"</span>&gt;</span>reRender2<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<h3 id="t113.2 src\index.js">3.2 src\index.js <a href="#t113.2 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-diff">import React from './react';
+import ReactDOM from './react-dom';
+let style = { border: '3px solid red', margin: '5px' };
+let element = (
+  &lt;div id="A1" style={style}&gt;
+    A1
+    &lt;div id="B1" style={style}&gt;
+      B1
+      &lt;div id="C1" style={style}&gt;C1&lt;/div&gt;
+      &lt;div id="C2" style={style}&gt;C2&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="B2" style={style}&gt;B2&lt;/div&gt;
+  &lt;/div&gt;
+)
+console.log(element);
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+
+<span class="hljs-addition">+let reRender2 = document.getElementById('reRender2');</span>
+<span class="hljs-addition">+reRender2.addEventListener('click', () =&gt; {</span>
+<span class="hljs-addition">+  let element2 = (</span>
+<span class="hljs-addition">+    &lt;div id="A1-new" style={style}&gt;</span>
+<span class="hljs-addition">+      A1-new</span>
+<span class="hljs-addition">+      &lt;div id="B1-new" style={style}&gt;</span>
+<span class="hljs-addition">+        B1-new</span>
+<span class="hljs-addition">+        &lt;div id="C1-new" style={style}&gt;C1-new&lt;/div&gt;</span>
+<span class="hljs-addition">+        &lt;div id="C2-new" style={style}&gt;C2-new&lt;/div&gt;</span>
+<span class="hljs-addition">+      &lt;/div&gt;</span>
+<span class="hljs-addition">+      &lt;div id="B2" style={style}&gt;B2&lt;/div&gt;</span>
+<span class="hljs-addition">+      &lt;div id="B3" style={style}&gt;B3&lt;/div&gt;</span>
+<span class="hljs-addition">+    &lt;/div&gt;</span>
+<span class="hljs-addition">+  )</span>
+<span class="hljs-addition">+  ReactDOM.render(</span>
+<span class="hljs-addition">+    element2,</span>
+<span class="hljs-addition">+    document.getElementById('root')</span>
+<span class="hljs-addition">+  );</span>
+<span class="hljs-addition">+});</span>
+<span class="hljs-addition">+</span>
+<span class="hljs-addition">+let reRender3 = document.getElementById('reRender3');</span>
+<span class="hljs-addition">+reRender3.addEventListener('click', () =&gt; {</span>
+<span class="hljs-addition">+  let element3 = (</span>
+<span class="hljs-addition">+    &lt;div id="A1-new2" style={style}&gt;</span>
+<span class="hljs-addition">+      A1-new2</span>
+<span class="hljs-addition">+      &lt;div id="B1-new2" style={style}&gt;</span>
+<span class="hljs-addition">+        B1-new2</span>
+<span class="hljs-addition">+        &lt;div id="C1-new2" style={style}&gt;C1-new2&lt;/div&gt;</span>
+<span class="hljs-addition">+        &lt;div id="C2-new2" style={style}&gt;C2-new2&lt;/div&gt;</span>
+<span class="hljs-addition">+      &lt;/div&gt;</span>
+<span class="hljs-addition">+      &lt;div id="B2" style={style}&gt;B2&lt;/div&gt;</span>
+<span class="hljs-addition">+    &lt;/div&gt;</span>
+<span class="hljs-addition">+  )</span>
+<span class="hljs-addition">+  ReactDOM.render(</span>
+<span class="hljs-addition">+    element3,</span>
+<span class="hljs-addition">+    document.getElementById('root')</span>
+<span class="hljs-addition">+  );</span>
+<span class="hljs-addition">+});</span>
+</code></pre>
+<h3 id="t123.3 src\constants.js">3.3 src\constants.js <a href="#t123.3 src\constants.js"> # </a></h3>
+<pre><code class="lang-diff">export const ELEMENT_TEXT = Symbol.for('ELEMENT_TEXT');
+
+export const TAG_ROOT = Symbol.for('TAG_ROOT');
+export const TAG_HOST = Symbol.for('TAG_HOST');
+export const TAG_TEXT = Symbol.for('TAG_TEXT');
+
+export const PLACEMENT = Symbol.for('PLACEMENT');
+<span class="hljs-addition">+export const UPDATE = Symbol.for('UPDATE');</span>
+<span class="hljs-addition">+export const DELETION = Symbol.for('DELETION');</span>
+</code></pre>
+<h3 id="t133.4 scheduler.js">3.4 scheduler.js <a href="#t133.4 scheduler.js"> # </a></h3>
+<p>src\scheduler.js</p>
+<pre><code class="lang-diff">import { setProps } from './utils';
+import {
+    ELEMENT_TEXT, TAG_ROOT, TAG_HOST, TAG_TEXT, PLACEMENT, DELETION, UPDATE
+} from './constants';
+<span class="hljs-addition">+let currentRoot = null;//当前的根Fiber</span>
+let workInProgressRoot = null;//正在渲染中的根Fiber
+let nextUnitOfWork = null//下一个工作单元
+<span class="hljs-addition">+let deletions = [];//要删除的fiber节点</span>
+
+export function scheduleRoot(rootFiber) {
+    //{tag:TAG_ROOT,stateNode:container,props: { children: [element] }}
+<span class="hljs-addition">+    if (currentRoot &amp;&amp; currentRoot.alternate) {//偶数次更新</span>
+<span class="hljs-addition">+        workInProgressRoot = currentRoot.alternate;</span>
+<span class="hljs-addition">+        workInProgressRoot.firstEffect = workInProgressRoot.lastEffect = workInProgressRoot.nextEffect = null;</span>
+<span class="hljs-addition">+        workInProgressRoot.props = rootFiber.props;</span>
+<span class="hljs-addition">+        workInProgressRoot.alternate = currentRoot;</span>
+<span class="hljs-addition">+    } else if (currentRoot) {//奇数次更新</span>
+<span class="hljs-addition">+        rootFiber.alternate = currentRoot;</span>
+<span class="hljs-addition">+        workInProgressRoot = rootFiber;</span>
+<span class="hljs-addition">+    } else {</span>
+<span class="hljs-addition">+        workInProgressRoot = rootFiber;//第一次渲染</span>
+<span class="hljs-addition">+    }</span>
+    nextUnitOfWork = workInProgressRoot;
+}
+
+function commitRoot() {
+<span class="hljs-addition">+    deletions.forEach(commitWork);</span>
+    let currentFiber = workInProgressRoot.firstEffect;
+    while (currentFiber) {
+        commitWork(currentFiber);
+        currentFiber = currentFiber.nextEffect;
+    }
+<span class="hljs-addition">+    deletions.length = 0;//先把要删除的节点清空掉</span>
+<span class="hljs-addition">+    currentRoot = workInProgressRoot;</span>
+    workInProgressRoot = null;
+}
+function commitWork(currentFiber) {
+    if (!currentFiber) {
+        return;
+    }
+    let returnFiber = currentFiber.return;//先获取父Fiber
+    const domReturn = returnFiber.stateNode;//获取父的DOM节点
+    if (currentFiber.effectTag <span class="hljs-comment">=== PLACEMENT &amp;&amp; currentFiber.stateNode != null) {//如果是新增DOM节点</span>
+        let nextFiber = currentFiber;
+        domReturn.appendChild(nextFiber.stateNode);
+<span class="hljs-addition">+    } else if (currentFiber.effectTag === DELETION) {//如果是删除则删除并返回</span>
+<span class="hljs-addition">+        domReturn.removeChild(currentFiber.stateNode);</span>
+<span class="hljs-addition">+    } else if (currentFiber.effectTag === UPDATE &amp;&amp; currentFiber.stateNode != null) {//如果是更新</span>
+<span class="hljs-addition">+        if (currentFiber.type === ELEMENT_TEXT) {</span>
+<span class="hljs-addition">+            if (currentFiber.alternate.props.text != currentFiber.props.text) {</span>
+<span class="hljs-addition">+                currentFiber.stateNode.textContent = currentFiber.props.text;</span>
+<span class="hljs-addition">+            }</span>
+<span class="hljs-addition">+        } else {</span>
+<span class="hljs-addition">+            updateDOM(currentFiber.stateNode, currentFiber.alternate.props, currentFiber.props);</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+    }</span>
+    currentFiber.effectTag = null;
+}
+
+function performUnitOfWork(currentFiber) {
+    beginWork(currentFiber);//开始渲染前的Fiber,就是把子元素变成子fiber
+
+    if (currentFiber.child) {//如果子节点就返回第一个子节点
+        return currentFiber.child;
+    }
+
+    while (currentFiber) {//如果没有子节点说明当前节点已经完成了渲染工作
+        completeUnitOfWork(currentFiber);//可以结束此fiber的渲染了 
+        if (currentFiber.sibling) {//如果它有弟弟就返回弟弟
+            return currentFiber.sibling;
+        }
+        currentFiber = currentFiber.return;//如果没有弟弟让爸爸完成，然后找叔叔
+    }
+}
+
+function beginWork(currentFiber) {
+    if (currentFiber.tag <span class="hljs-comment">=== TAG_ROOT) {//如果是根节点</span>
+        updateHostRoot(currentFiber);
+    } else if (currentFiber.tag <span class="hljs-comment">=== TAG_TEXT) {//如果是原生文本节点</span>
+        updateHostText(currentFiber);
+    } else if (currentFiber.tag <span class="hljs-comment">=== TAG_HOST) {//如果是原生DOM节点</span>
+        updateHostComponent(currentFiber);
+    }
+}
+function updateHostRoot(currentFiber) {//如果是根节点
+    const newChildren = currentFiber.props.children;//直接渲染子节点
+    reconcileChildren(currentFiber, newChildren);
+}
+function updateHostText(currentFiber) {
+    if (!currentFiber.stateNode) {
+        currentFiber.stateNode = createDOM(currentFiber);//先创建真实的DOM节点
+    }
+}
+function updateHostComponent(currentFiber) {//如果是原生DOM节点
+    if (!currentFiber.stateNode) {
+        currentFiber.stateNode = createDOM(currentFiber);//先创建真实的DOM节点
+    }
+    const newChildren = currentFiber.props.children;
+    reconcileChildren(currentFiber, newChildren);
+}
+function createDOM(currentFiber) {
+    if (currentFiber.type <span class="hljs-comment">=== ELEMENT_TEXT) {</span>
+        return document.createTextNode(currentFiber.props.text);
+    }
+    const stateNode = document.createElement(currentFiber.type);
+    updateDOM(stateNode, {}, currentFiber.props);
+    return stateNode;
+}
+
+function reconcileChildren(currentFiber, newChildren) {
+    let newChildIndex = 0;//新虚拟DOM数组中的索引
+<span class="hljs-addition">+    let oldFiber = currentFiber.alternate &amp;&amp; currentFiber.alternate.child;//父Fiber中的第一个子Fiber</span>
+<span class="hljs-addition">+    let prevSibling;</span>
+<span class="hljs-addition">+    while (newChildIndex &lt; newChildren.length || oldFiber) {</span>
+<span class="hljs-addition">+        const newChild = newChildren[newChildIndex];</span>
+<span class="hljs-addition">+        let newFiber;</span>
+<span class="hljs-addition">+        const sameType = oldFiber &amp;&amp; newChild &amp;&amp; newChild.type === oldFiber.type;//新旧都有，并且元素类型一样</span>
+<span class="hljs-addition">+        let tag;</span>
+<span class="hljs-addition">+        if (newChild &amp;&amp; newChild.type === ELEMENT_TEXT) {</span>
+<span class="hljs-addition">+            tag = TAG_TEXT;//文本</span>
+<span class="hljs-addition">+        } else if (newChild &amp;&amp; typeof newChild.type === 'string') {</span>
+<span class="hljs-addition">+            tag = TAG_HOST;//原生DOM组件</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+        if (sameType) {</span>
+<span class="hljs-addition">+            if (oldFiber.alternate) {</span>
+<span class="hljs-addition">+                newFiber = oldFiber.alternate;</span>
+<span class="hljs-addition">+                newFiber.props = newChild.props;</span>
+<span class="hljs-addition">+                newFiber.alternate = oldFiber;</span>
+<span class="hljs-addition">+                newFiber.effectTag = UPDATE;</span>
+<span class="hljs-addition">+                newFiber.nextEffect = null;</span>
+<span class="hljs-addition">+            } else {</span>
+<span class="hljs-addition">+                newFiber = {</span>
+<span class="hljs-addition">+                    tag:oldFiber.tag,//标记Fiber类型，例如是函数组件或者原生组件</span>
+<span class="hljs-addition">+                    type: oldFiber.type,//具体的元素类型</span>
+<span class="hljs-addition">+                    props: newChild.props,//新的属性对象</span>
+<span class="hljs-addition">+                    stateNode: oldFiber.stateNode,//原生组件的话就存放DOM节点，类组件的话是类组件实例，函数组件的话为空，因为没有实例</span>
+<span class="hljs-addition">+                    return: currentFiber,//父Fiber</span>
+<span class="hljs-addition">+                    alternate: oldFiber,//上一个Fiber 指向旧树中的节点</span>
+<span class="hljs-addition">+                    effectTag: UPDATE,//副作用标识</span>
+<span class="hljs-addition">+                    nextEffect: null //React 同样使用链表来将所有有副作用的Fiber连接起来</span>
+<span class="hljs-addition">+                }</span>
+<span class="hljs-addition">+            }</span>
+<span class="hljs-addition">+        } else {</span>
+<span class="hljs-addition">+            if (newChild) {//类型不一样，创建新的Fiber,旧的不复用了</span>
+<span class="hljs-addition">+                newFiber = {</span>
+<span class="hljs-addition">+                    tag,//原生DOM组件</span>
+<span class="hljs-addition">+                    type: newChild.type,//具体的元素类型</span>
+<span class="hljs-addition">+                    props: newChild.props,//新的属性对象</span>
+<span class="hljs-addition">+                    stateNode: null,//stateNode肯定是空的</span>
+<span class="hljs-addition">+                    return: currentFiber,//父Fiber</span>
+<span class="hljs-addition">+                    effectTag: PLACEMENT//副作用标识</span>
+<span class="hljs-addition">+                }</span>
+<span class="hljs-addition">+            }</span>
+<span class="hljs-addition">+            if (oldFiber) {</span>
+<span class="hljs-addition">+                oldFiber.effectTag = DELETION;</span>
+<span class="hljs-addition">+                deletions.push(oldFiber);</span>
+<span class="hljs-addition">+            }</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+        if (oldFiber) {  //比较完一个元素了，老Fiber向后移动1位</span>
+<span class="hljs-addition">+            oldFiber = oldFiber.sibling;</span>
+<span class="hljs-addition">+        }</span>
+       if (newFiber) {
+            if (newChildIndex <span class="hljs-comment">=== 0) {</span>
+                currentFiber.child = newFiber;//第一个子节点挂到父节点的child属性上
+            } else {
+                prevSibling.sibling = newFiber;
+            }
+            prevSibling = newFiber;//然后newFiber变成了上一个哥哥了
+        }
+        prevSibling = newFiber;//然后newFiber变成了上一个哥哥了
+        newChildIndex++;
+    }
+}
+
+function updateDOM(stateNode, oldProps, newProps) {
+    setProps(stateNode, oldProps, newProps);
+}
+function completeUnitOfWork(currentFiber) {
+    const returnFiber = currentFiber.return;
+    if (returnFiber) {
+        if (!returnFiber.firstEffect) {
+            returnFiber.firstEffect = currentFiber.firstEffect;
+        }
+        if (!!currentFiber.lastEffect) {
+            if (!!returnFiber.lastEffect) {
+                returnFiber.lastEffect.nextEffect = currentFiber.firstEffect;
+            }
+            returnFiber.lastEffect = currentFiber.lastEffect;
+        }
+
+        const effectTag = currentFiber.effectTag;
+        if (effectTag) {
+            if (!!returnFiber.lastEffect) {
+                returnFiber.lastEffect.nextEffect = currentFiber;
+            } else {
+                returnFiber.firstEffect = currentFiber;
+            }
+            returnFiber.lastEffect = currentFiber;
+        }
+    }
+}
+
+function workLoop(deadline) {
+    let shouldYield = false;
+    while (nextUnitOfWork &amp;&amp; !shouldYield) {
+        nextUnitOfWork = performUnitOfWork(nextUnitOfWork);//执行一个任务并返回下一个任务
+        shouldYield = deadline.timeRemaining() &lt; 1;//如果剩余时间小于1毫秒就说明没有时间了，需要把控制权让给浏览器
+    }
+    //如果没有下一个执行单元了，并且当前渲染树存在，则进行提交阶段
+    if (!nextUnitOfWork &amp;&amp; workInProgressRoot) {
+        commitRoot();
+    }
+    requestIdleCallback(workLoop);
+}
+//开始在空闲时间执行workLoop
+requestIdleCallback(workLoop);
+</code></pre>
+<h2 id="t144.实现类组件">4.实现类组件 <a href="#t144.实现类组件"> # </a></h2>
+<p><img src="http://img.zhufengpeixun.cn/singlelink2.jpg" alt="singlelink2"></p>
+<p><img src="http://img.zhufengpeixun.cn/fiberdoublebuffer.jpg" alt="fiberdoublebuffer"></p>
+<h3 id="t154.1 src\index.js">4.1 src\index.js <a href="#t154.1 src\index.js"> # </a></h3>
+<pre><code class="lang-diff">import React from './react';
+import ReactDOM from './react-dom';
+<span class="hljs-addition">+class ClassCounter extends React.Component {</span>
+<span class="hljs-addition">+  constructor(props) {</span>
+<span class="hljs-addition">+    super(props);</span>
+<span class="hljs-addition">+    this.state = { number: 0 };</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+  onClick = () =&gt; {</span>
+<span class="hljs-addition">+    this.setState(state =&gt; ({ number: state.number + 1 }));</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+  render() {</span>
+<span class="hljs-addition">+    return (</span>
+<span class="hljs-addition">+      &lt;div id="counter"&gt;</span>
+<span class="hljs-addition">+        &lt;span&gt;{this.state.number}&lt;/span&gt;</span>
+<span class="hljs-addition">+        &lt;button onClick={this.onClick}&gt;加1&lt;/button&gt;</span>
+<span class="hljs-addition">+      &lt;/div &gt;</span>
+<span class="hljs-addition">+    )</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+}</span>
+ReactDOM.render(
+<span class="hljs-addition">+  &lt;ClassCounter /&gt;,</span>
+  document.getElementById('root')
+);
+
+</code></pre>
+<h3 id="t164.2 src\react.js">4.2 src\react.js <a href="#t164.2 src\react.js"> # </a></h3>
+<p>src\react.js</p>
+<pre><code class="lang-diff">import { ELEMENT_TEXT } from './constants';
+<span class="hljs-addition">+import { Update, UpdateQueue } from './updateQueue';</span>
+<span class="hljs-addition">+import { scheduleRoot } from './scheduler';</span>
+function createElement(type, config, ...children) {
+    delete config.__self;
+    delete config.__source;
+    return {
+        type,
+        props: {
+            ...config,
+            children: children.map(
+                child =&gt; typeof child <span class="hljs-comment">=== "object" ?</span>
+                    child :
+                    { type: ELEMENT_TEXT, props: { text: child, children: [] } })
+        }
+    }
+}
+<span class="hljs-addition">+class Component {</span>
+<span class="hljs-addition">+    constructor(props) {</span>
+<span class="hljs-addition">+        this.props = props;</span>
+<span class="hljs-addition">+        this.updateQueue = new UpdateQueue();</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    setState(payload) {</span>
+<span class="hljs-addition">+        this.internalFiber.updateQueue.enqueueUpdate(new Update(payload));</span>
+<span class="hljs-addition">+        scheduleRoot();</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+Component.prototype.isReactComponent = true;</span>
+let React = {
+    createElement,
+<span class="hljs-addition">+    Component</span>
+}
+export default React;
+</code></pre>
+<h3 id="t174.3 constants.js">4.3 constants.js <a href="#t174.3 constants.js"> # </a></h3>
+<p>src\constants.js</p>
+<pre><code class="lang-diff">export const ELEMENT_TEXT = Symbol.for('ELEMENT_TEXT');
+
+export const TAG_ROOT = Symbol.for('TAG_ROOT');
+export const TAG_HOST = Symbol.for('TAG_HOST');
+export const TAG_TEXT = Symbol.for('TAG_TEXT');
+<span class="hljs-addition">+export const TAG_CLASS = Symbol.for('TAG_CLASS');</span>
+
+export const UPDATE = Symbol.for('UPDATE');
+export const PLACEMENT = Symbol.for('PLACEMENT');
+export const DELETION = Symbol.for('DELETION');
+</code></pre>
+<h3 id="t184.4 updateQueue.js">4.4 updateQueue.js <a href="#t184.4 updateQueue.js"> # </a></h3>
+<p>src\updateQueue.js</p>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Update</span> </span>{
+    <span class="hljs-keyword">constructor</span>(payload) {
+        <span class="hljs-keyword">this</span>.payload = payload;
+    }
+}
+<span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UpdateQueue</span> </span>{
+    <span class="hljs-keyword">constructor</span>() {
+        <span class="hljs-keyword">this</span>.firstUpdate = <span class="hljs-literal">null</span>;
+        <span class="hljs-keyword">this</span>.lastUpdate = <span class="hljs-literal">null</span>;
+    }
+    enqueueUpdate(update) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.lastUpdate === <span class="hljs-literal">null</span>) {
+            <span class="hljs-keyword">this</span>.firstUpdate = <span class="hljs-keyword">this</span>.lastUpdate = update;
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-keyword">this</span>.lastUpdate.nextUpdate = update;
+            <span class="hljs-keyword">this</span>.lastUpdate = update;
+        }
+    }
+    forceUpdate(state) {
+        <span class="hljs-keyword">let</span> currentUpdate = <span class="hljs-keyword">this</span>.firstUpdate;
+        <span class="hljs-keyword">while</span> (currentUpdate) {
+            state = <span class="hljs-keyword">typeof</span> currentUpdate.payload == <span class="hljs-string">'function'</span> ? currentUpdate.payload(state) : currentUpdate.payload;
+            currentUpdate = currentUpdate.nextUpdate;
+        }
+        <span class="hljs-keyword">this</span>.firstUpdate = <span class="hljs-keyword">this</span>.lastUpdate = <span class="hljs-literal">null</span>;
+        <span class="hljs-keyword">return</span> state;
+    }
+}
+
+</code></pre>
+<h3 id="t194.5 utils.js">4.5 utils.js <a href="#t194.5 utils.js"> # </a></h3>
+<p>src\utils.js</p>
+<pre><code class="lang-diff">function setProp(dom, key, value) {
+    if (/^on/.test(key)) {
+        dom[key.toLowerCase()] = value;
+    } else if (key <span class="hljs-comment">=== 'style') {</span>
+        if (value) {
+            for (let styleName in value) {
+                if (value.hasOwnProperty(styleName)) {
+                    dom.style[styleName] = value[styleName];
+                }
+            }
+        }
+    } else {
+        dom.setAttribute(key, value);
+    }
+    return dom;
+}
+export function setProps(elem, oldProps, newProps) {
+    for (let key in oldProps) {
+        if (key !== 'children') {
+            if (newProps.hasOwnProperty(key)) {
+                setProp(elem, key, newProps[key]);
+            } else {
+                elem.removeAttribute(key);
+            }
+        }
+    }
+    for (let key in newProps) {
+        if (key !== 'children') {
+            setProp(elem, key, newProps[key])
+        }
+    }
+}
+
+<span class="hljs-addition">+export function deepEquals(obj1, obj2) {</span>
+<span class="hljs-addition">+    let { children: oldChildren, ...oldProps } = obj1;</span>
+<span class="hljs-addition">+    let { children: newChildren, ...newProps } = obj2;</span>
+<span class="hljs-addition">+    return JSON.stringify(oldProps) === JSON.stringify(newProps);</span>
+<span class="hljs-addition">+}</span>
+
+</code></pre>
+<h3 id="t204.6 scheduler.js">4.6 scheduler.js <a href="#t204.6 scheduler.js"> # </a></h3>
+<p>src\scheduler.js</p>
+<pre><code class="lang-diff">import { setProps,deepEquals } from './utils';
+<span class="hljs-addition">+import { UpdateQueue } from './updateQueue';</span>
+<span class="hljs-addition">+import _ from 'lodash';</span>
+import {
+<span class="hljs-addition">+    ELEMENT_TEXT, TAG_ROOT, TAG_HOST, TAG_TEXT, TAG_CLASS, PLACEMENT, DELETION, UPDATE</span>
+} from './constants';
+let currentRoot = null;        //当前的根Fiber
+let workInProgressRoot = null; //正在渲染中的根Fiber
+let nextUnitOfWork = null;     //下一个工作单元
+let deletions = [];            //要删除的fiber节点
+
+export function scheduleRoot(rootFiber) {
+<span class="hljs-addition">+    if (currentRoot &amp;&amp; currentRoot.alternate) {</span>
+<span class="hljs-addition">+        workInProgressRoot = currentRoot.alternate;</span>
+<span class="hljs-addition">+        workInProgressRoot.alternate = currentRoot;</span>
+<span class="hljs-addition">+        if (rootFiber) {</span>
+<span class="hljs-addition">+            workInProgressRoot.props = rootFiber.props;</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+    } else if (currentRoot) {</span>
+<span class="hljs-addition">+        if (rootFiber) {</span>
+<span class="hljs-addition">+            rootFiber.alternate = currentRoot;</span>
+<span class="hljs-addition">+            workInProgressRoot = rootFiber;</span>
+<span class="hljs-addition">+        } else {</span>
+<span class="hljs-addition">+            workInProgressRoot = {</span>
+<span class="hljs-addition">+                ...currentRoot,</span>
+<span class="hljs-addition">+                alternate: currentRoot</span>
+<span class="hljs-addition">+            }</span>
+<span class="hljs-addition">+        }</span>
+<span class="hljs-addition">+    } else {</span>
+<span class="hljs-addition">+        workInProgressRoot = rootFiber;</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    workInProgressRoot.firstEffect = workInProgressRoot.lastEffect = workInProgressRoot.nextEffect = null;</span>
+<span class="hljs-addition">+    nextUnitOfWork = workInProgressRoot;</span>
+<span class="hljs-addition">+}</span>
+
+function commitRoot() {
+    deletions.forEach(commitWork);
+    let currentFiber = workInProgressRoot.firstEffect;
+    while (currentFiber) {
+        commitWork(currentFiber);
+        currentFiber = currentFiber.nextEffect;
+    }
+    deletions.length = 0;//先把要删除的节点清空掉
+<span class="hljs-addition">+   workInProgressRoot.firstEffect = workInProgressRoot.lastEffect = null;//清除effect list</span>
+    currentRoot = workInProgressRoot;
+    workInProgressRoot = null;
+}
+function commitWork(currentFiber) {
+<span class="hljs-addition">+     if (!currentFiber) {</span>
+<span class="hljs-addition">+        return;</span>
+<span class="hljs-addition">+    }</span>
+    let returnFiber = currentFiber.return;//先获取父Fiber
+<span class="hljs-addition">+    while (returnFiber.tag !== TAG_HOST &amp;&amp; returnFiber.tag !== TAG_ROOT &amp;&amp; returnFiber.tag !== TAG_TEXT) {//如果不是DOM节点就一直向上找,比如ClassCounter</span>
+<span class="hljs-addition">+        returnFiber = returnFiber.return;</span>
+<span class="hljs-addition">+    }</span>
+    const domReturn = returnFiber.stateNode;//获取父的DOM节点
+    if (currentFiber.effectTag <span class="hljs-comment">=== PLACEMENT &amp;&amp; currentFiber.stateNode != null) {//如果是新增DOM节点</span>
+<span class="hljs-addition">+        let nextFiber = currentFiber;</span>
+<span class="hljs-addition">+        while (nextFiber.tag !== TAG_HOST &amp;&amp; nextFiber.tag !== TAG_TEXT) {</span>
+<span class="hljs-addition">+            nextFiber = nextFiber.child;//必须向下找到一个DOM节点 比如Class Counter</span>
+<span class="hljs-addition">+        }</span>
+        domReturn.appendChild(nextFiber.stateNode);
+    } else if (currentFiber.effectTag <span class="hljs-comment">=== DELETION) {//如果是删除则删除并返回</span>
+<span class="hljs-addition">+        commitDeletion(currentFiber, domReturn);</span>
+    } else if (currentFiber.effectTag <span class="hljs-comment">=== UPDATE &amp;&amp; currentFiber.stateNode != null) {//如果是更新</span>
+        if (currentFiber.type <span class="hljs-comment">=== ELEMENT_TEXT) {</span>
+            if (currentFiber.alternate.props.text !== currentFiber.props.text) {
+                currentFiber.stateNode.textContent = currentFiber.props.text;
+            }
+        } else {
+            updateDOM(currentFiber.stateNode, currentFiber.alternate.props, currentFiber.props);
+        }
+    }
+    currentFiber.effectTag = null;
+}
+<span class="hljs-addition">+function commitDeletion(currentFiber, domReturn) {</span>
+<span class="hljs-addition">+    if (currentFiber.tag === TAG_HOST || currentFiber.tag === TAG_TEXT) {</span>
+<span class="hljs-addition">+        domReturn.removeChild(currentFiber.stateNode);</span>
+<span class="hljs-addition">+    } else {</span>
+<span class="hljs-addition">+        commitDeletion(currentFiber.child, domReturn);</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+}</span>
+function performUnitOfWork(currentFiber) {
+    beginWork(currentFiber);//开始渲染前的Fiber,就是把子元素变成子fiber
+
+    if (currentFiber.child) {//如果子节点就返回第一个子节点
+        return currentFiber.child;
+    }
+
+    while (currentFiber) {//如果没有子节点说明当前节点已经完成了渲染工作
+        completeUnitOfWork(currentFiber);//可以结束此fiber的渲染了 
+        if (currentFiber.sibling) {//如果它有弟弟就返回弟弟
+            return currentFiber.sibling;
+        }
+        currentFiber = currentFiber.return;//如果没有弟弟让爸爸完成，然后找叔叔
+    }
+}
+
+function beginWork(currentFiber) {
+    if (currentFiber.tag <span class="hljs-comment">=== TAG_ROOT) {//如果是根节点</span>
+        updateHostRoot(currentFiber);
+    } else if (currentFiber.tag <span class="hljs-comment">=== TAG_TEXT) {//如果是原生文本节点</span>
+        updateHostText(currentFiber);
+    } else if (currentFiber.tag <span class="hljs-comment">=== TAG_HOST) {//如果是原生DOM节点</span>
+        updateHostComponent(currentFiber);
+<span class="hljs-addition">+    } else if (currentFiber.tag === TAG_CLASS) {//如果是类组件</span>
+<span class="hljs-addition">+        updateClassComponent(currentFiber)</span>
+<span class="hljs-addition">+    }</span>
+}
+<span class="hljs-addition">+function updateClassComponent(currentFiber) {</span>
+<span class="hljs-addition">+    if (currentFiber.stateNode === null) {</span>
+<span class="hljs-addition">+        currentFiber.stateNode = new currentFiber.type(currentFiber.props);</span>
+<span class="hljs-addition">+        currentFiber.stateNode.internalFiber = currentFiber;</span>
+<span class="hljs-addition">+        currentFiber.updateQueue = new UpdateQueue();</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    currentFiber.stateNode.state = currentFiber.updateQueue.forceUpdate(currentFiber.stateNode.state);</span>
+<span class="hljs-addition">+    const newChildren = [currentFiber.stateNode.render()];</span>
+<span class="hljs-addition">+    reconcileChildren(currentFiber, newChildren);</span>
+<span class="hljs-addition">+}</span>
+function updateHostText(currentFiber) {
+    if (!currentFiber.stateNode) {
+        currentFiber.stateNode = createDOM(currentFiber);//先创建真实的DOM节点
+    }
+}
+function updateHostRoot(currentFiber) {//如果是根节点
+    const newChildren = currentFiber.props.children;//直接渲染子节点
+    reconcileChildren(currentFiber, newChildren);
+}
+
+function updateHostComponent(currentFiber) {//如果是原生DOM节点
+    if (!currentFiber.stateNode) {
+        currentFiber.stateNode = createDOM(currentFiber);//先创建真实的DOM节点
+    }
+    const newChildren = currentFiber.props.children;
+    reconcileChildren(currentFiber, newChildren);
+}
+function createDOM(currentFiber) {
+    if (currentFiber.type <span class="hljs-comment">=== ELEMENT_TEXT) {</span>
+        return document.createTextNode(currentFiber.props.text);
+    }
+    const stateNode = document.createElement(currentFiber.type);
+    updateDOM(stateNode, {}, currentFiber.props);
+    return stateNode;
+}
+
+function reconcileChildren(currentFiber, newChildren) {
+    let newChildIndex = 0;//新虚拟DOM数组中的索引
+    let oldFiber = currentFiber.alternate &amp;&amp; currentFiber.alternate.child;//父Fiber中的第一个子Fiber
+<span class="hljs-addition">+   if (oldFiber) oldFiber.firstEffect = oldFiber.lastEffect = oldFiber.nextEffect = null;</span>
+    let prevSibling;
+    while (newChildIndex &lt; newChildren.length || oldFiber) {
+        const newChild = newChildren[newChildIndex];
+        let newFiber;
+        const sameType = oldFiber &amp;&amp; newChild &amp;&amp; newChild.type <span class="hljs-comment">=== oldFiber.type;//新旧都有，并且元素类型一样</span>
+        let tag;
+<span class="hljs-addition">+        if (newChild &amp;&amp; typeof newChild.type === 'function' &amp;&amp; newChild.type.prototype.isReactComponent) {</span>
+<span class="hljs-addition">+            tag = TAG_CLASS;//类组件</span>
+<span class="hljs-addition">+        } else if (newChild &amp;&amp; newChild.type === ELEMENT_TEXT) {</span>
+            tag = TAG_TEXT;//文本
+        } else if (newChild &amp;&amp; typeof newChild.type <span class="hljs-comment">=== 'string') {</span>
+            tag = TAG_HOST;//原生DOM组件
+        }
+        if (sameType) {
+<span class="hljs-addition">+            let { children: oldChildren, ...oldProps } = oldFiber.props;</span>
+<span class="hljs-addition">+            let { children: newChildren, ...newProps } = newChild.props;</span>
+<span class="hljs-addition">+            newFiber = {</span>
+<span class="hljs-addition">+                tag,//标记Fiber类型，例如是函数组件或者原生组件</span>
+<span class="hljs-addition">+                type: oldFiber.type,//具体的元素类型</span>
+<span class="hljs-addition">+                props: newChild.props,//新的属性对象</span>
+<span class="hljs-addition">+                stateNode: oldFiber.stateNode,//原生组件的话就存放DOM节点，类组件的话是类组件实例，函数组件的话为空，因为没有实例</span>
+<span class="hljs-addition">+                return: currentFiber,//父Fiber</span>
+<span class="hljs-addition">+                updateQueue: oldFiber.updateQueue || new UpdateQueue(),</span>
+<span class="hljs-addition">+                alternate: oldFiber,//上一个Fiber 指向旧树中的节点</span>
+<span class="hljs-addition">+                effectTag: deepEquals(oldProps, newProps) ? null : UPDATE,//副作用标识</span>
+<span class="hljs-addition">+            }</span>
+        } else {
+            if (newChild) {//类型不一样，创建新的Fiber,旧的不复用了
+                newFiber = {
+                    tag,//原生DOM组件
+                    type: newChild.type,//具体的元素类型
+                    props: newChild.props,//新的属性对象
+                    stateNode: null,//stateNode肯定是空的
+                    return: currentFiber,//父Fiber
+                    effectTag: PLACEMENT//副作用标识
+                }
+            }
+            if (oldFiber) {
+                oldFiber.effectTag = DELETION;
+                deletions.push(oldFiber);
+            }
+        }
+        if (oldFiber) {  //比较完一个元素了，老Fiber向后移动1位
+            oldFiber = oldFiber.sibling;
+        }
+       if (newFiber) {
+            if (newChildIndex <span class="hljs-comment">=== 0) {</span>
+                currentFiber.child = newFiber;//第一个子节点挂到父节点的child属性上
+            } else {
+                prevSibling.sibling = newFiber;
+            }
+            prevSibling = newFiber;//然后newFiber变成了上一个哥哥了
+        }
+        newChildIndex++;
+    }
+}
+
+function updateDOM(stateNode, oldProps, newProps) {
+    setProps(stateNode, oldProps, newProps);
+}
+function completeUnitOfWork(currentFiber) {
+    const returnFiber = currentFiber.return;
+    if (returnFiber) {
+        if (!returnFiber.firstEffect) {
+            returnFiber.firstEffect = currentFiber.firstEffect;
+        }
+        if (!!currentFiber.lastEffect) {
+            if (!!returnFiber.lastEffect) {
+                returnFiber.lastEffect.nextEffect = currentFiber.firstEffect;
+            }
+            returnFiber.lastEffect = currentFiber.lastEffect;
+        }
+
+        const effectTag = currentFiber.effectTag;
+        if (effectTag) {
+            if (!!returnFiber.lastEffect) {
+                returnFiber.lastEffect.nextEffect = currentFiber;
+            } else {
+                returnFiber.firstEffect = currentFiber;
+            }
+            returnFiber.lastEffect = currentFiber;
+        }
+    }
+}
+
+function workLoop(deadline) {
+    let shouldYield = false;
+    while (nextUnitOfWork &amp;&amp; !shouldYield) {
+        nextUnitOfWork = performUnitOfWork(nextUnitOfWork);//执行一个任务并返回下一个任务
+        shouldYield = deadline.timeRemaining() &lt; 1;//如果剩余时间小于1毫秒就说明没有时间了，需要把控制权让给浏览器
+    }
+    //如果没有下一个执行单元了，并且当前渲染树存在，则进行提交阶段
+    if (!nextUnitOfWork &amp;&amp; workInProgressRoot) {
+        commitRoot();
+    }
+    requestIdleCallback(workLoop);
+}
+//开始在空闲时间执行workLoop
+requestIdleCallback(workLoop);
+
+</code></pre>
+<h2 id="t215.实现函数组件">5.实现函数组件 <a href="#t215.实现函数组件"> # </a></h2>
+<h3 id="t225.1 src\index.js">5.1 src\index.js <a href="#t225.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-diff"><span class="hljs-addition">+function FunctionCounter() {</span>
+<span class="hljs-addition">+  return (</span>
+<span class="hljs-addition">+    &lt;h1&gt;</span>
+<span class="hljs-addition">+      Count:0</span>
+<span class="hljs-addition">+    &lt;/h1&gt;</span>
+<span class="hljs-addition">+  )</span>
+<span class="hljs-addition">+}</span>
+ReactDOM.render(
+<span class="hljs-addition">+  &lt;FunctionCounter /&gt;,</span>
+   document.getElementById('root')
+);
+
+</code></pre>
+<h3 id="t235.2 constants.js">5.2 constants.js <a href="#t235.2 constants.js"> # </a></h3>
+<p>src\constants.js</p>
+<pre><code class="lang-diff">export const ELEMENT_TEXT = Symbol.for('ELEMENT_TEXT');
+
+export const TAG_ROOT = Symbol.for('TAG_ROOT');
+export const TAG_HOST = Symbol.for('TAG_HOST');
+export const TAG_TEXT = Symbol.for('TAG_TEXT');
+export const TAG_CLASS = Symbol.for('TAG_CLASS');
+<span class="hljs-addition">+export const TAG_FUNCTION = Symbol.for('TAG_FUNCTION');</span>
+export const UPDATE = Symbol.for('UPDATE');
+export const PLACEMENT = Symbol.for('PLACEMENT');
+export const DELETION = Symbol.for('DELETION');
+</code></pre>
+<h3 id="t245.3 scheduler.js">5.3 scheduler.js <a href="#t245.3 scheduler.js"> # </a></h3>
+<p>src\scheduler.js</p>
+<pre><code class="lang-diff">import { setProps, deepEquals } from './utils';
+import { UpdateQueue } from './updateQueue';
+<span class="hljs-addition">+import {</span>
+<span class="hljs-addition">+    ELEMENT_TEXT, TAG_ROOT, TAG_HOST, TAG_TEXT, TAG_CLASS, TAG_FUNCTION, PLACEMENT, DELETION, UPDATE</span>
+<span class="hljs-addition">+} from './constants';</span>
+let currentRoot = null;        //当前的根Fiber
+let workInProgressRoot = null; //正在渲染中的根Fiber
+let nextUnitOfWork = null;     //下一个工作单元
+let deletions = [];            //要删除的fiber节点
+
+export function scheduleRoot(rootFiber) {
+    if (rootFiber) {
+        workInProgressRoot = rootFiber; //把当前树设置为nextUnitOfWork开始进行调度
+    } else {
+        if (currentRoot.alternate) {
+            workInProgressRoot = currentRoot.alternate;
+            workInProgressRoot.alternate = currentRoot;
+        } else {
+            workInProgressRoot = {
+                ...currentRoot,
+                alternate: currentRoot
+            }
+        }
+    }
+    deletions.length = 0;
+    nextUnitOfWork = workInProgressRoot;
+}
+
+function commitRoot() {
+    deletions.forEach(commitWork);
+    let currentFiber = workInProgressRoot.firstEffect;
+    while (currentFiber) {
+        commitWork(currentFiber);
+        currentFiber = currentFiber.nextEffect;
+    }
+    deletions.length = 0;//先把要删除的节点清空掉
+    workInProgressRoot.firstEffect = workInProgressRoot.lastEffect = null;
+    currentRoot = workInProgressRoot;
+    workInProgressRoot = null;
+}
+function commitWork(currentFiber) {
+    if (!currentFiber) {
+        return;
+    }
+    let returnFiber = currentFiber.return;//先获取父Fiber
+    while (returnFiber.tag !== TAG_HOST &amp;&amp; returnFiber.tag !== TAG_ROOT &amp;&amp; returnFiber.tag !== TAG_TEXT) {//如果不是DOM节点就一直向上找
+        returnFiber = returnFiber.return;
+    }
+    const domReturn = returnFiber.stateNode;//获取父的DOM节点
+    if (currentFiber.effectTag <span class="hljs-comment">=== PLACEMENT &amp;&amp; currentFiber.stateNode != null) {//如果是新增DOM节点</span>
+        let nextFiber = currentFiber;
+        while (nextFiber.tag !== TAG_HOST &amp;&amp; nextFiber.tag !== TAG_TEXT) {//必须向下找到一个DOM节点
+            nextFiber = nextFiber.child;
+        }
+        domReturn.appendChild(nextFiber.stateNode);
+    } else if (currentFiber.effectTag <span class="hljs-comment">=== DELETION) {//如果是删除则删除并返回</span>
+        commitDeletion(currentFiber, domReturn);
+    } else if (currentFiber.effectTag <span class="hljs-comment">=== UPDATE &amp;&amp; currentFiber.stateNode != null) {//如果是更新</span>
+        if (currentFiber.type <span class="hljs-comment">=== ELEMENT_TEXT) {</span>
+            if (currentFiber.alternate.props.text !== currentFiber.props.text) {
+                currentFiber.stateNode.textContent = currentFiber.props.text;
+            }
+        } else {
+            updateDOM(currentFiber.stateNode, currentFiber.alternate.props, currentFiber.props);
+        }
+    }
+    currentFiber.effectTag = null;
+}
+function commitDeletion(currentFiber, domReturn) {
+    if (currentFiber.tag <span class="hljs-comment">=== TAG_HOST || currentFiber.tag === TAG_TEXT) {</span>
+        domReturn.removeChild(currentFiber.stateNode);
+    } else {
+        commitDeletion(currentFiber.child, domReturn);
+    }
+}
+function performUnitOfWork(currentFiber) {
+    beginWork(currentFiber);//开始渲染前的Fiber,就是把子元素变成子fiber
+
+    if (currentFiber.child) {//如果子节点就返回第一个子节点
+        return currentFiber.child;
+    }
+
+    while (currentFiber) {//如果没有子节点说明当前节点已经完成了渲染工作
+        completeUnitOfWork(currentFiber);//可以结束此fiber的渲染了 
+        if (currentFiber.sibling) {//如果它有弟弟就返回弟弟
+            return currentFiber.sibling;
+        }
+        currentFiber = currentFiber.return;//如果没有弟弟让爸爸完成，然后找叔叔
+    }
+}
+
+function beginWork(currentFiber) {
+    if (currentFiber.tag <span class="hljs-comment">=== TAG_ROOT) {//如果是根节点</span>
+        updateHostRoot(currentFiber);
+    } else if (currentFiber.tag <span class="hljs-comment">=== TAG_TEXT) {//如果是原生文本节点</span>
+        updateHostText(currentFiber);
+    } else if (currentFiber.tag <span class="hljs-comment">=== TAG_HOST) {//如果是原生DOM节点</span>
+        updateHostComponent(currentFiber);
+    } else if (currentFiber.tag <span class="hljs-comment">=== TAG_CLASS) {//如果是类组件</span>
+        updateClassComponent(currentFiber)
+<span class="hljs-addition">+    } else if (currentFiber.tag === TAG_FUNCTION) {//如果是函数组件</span>
+<span class="hljs-addition">+        updateFunctionComponent(currentFiber);</span>
+<span class="hljs-addition">+    }</span>
+}
+<span class="hljs-addition">+function updateFunctionComponent(currentFiber) {</span>
+<span class="hljs-addition">+    const newChildren = [currentFiber.type(currentFiber.props)];</span>
+<span class="hljs-addition">+    reconcileChildren(currentFiber, newChildren);</span>
+<span class="hljs-addition">+}</span>
+function updateClassComponent(currentFiber) {
+    if (currentFiber.stateNode <span class="hljs-comment">=== null) {</span>
+        currentFiber.stateNode = new currentFiber.type(currentFiber.props);
+        currentFiber.stateNode.internalFiber = currentFiber;
+        currentFiber.updateQueue = new UpdateQueue();
+    }
+    currentFiber.stateNode.state = currentFiber.updateQueue.forceUpdate(currentFiber.stateNode.state);
+    const newChildren = [currentFiber.stateNode.render()];
+    reconcileChildren(currentFiber, newChildren);
+}
+function updateHostText(currentFiber) {
+    if (!currentFiber.stateNode) {
+        currentFiber.stateNode = createDOM(currentFiber);//先创建真实的DOM节点
+    }
+}
+function updateHostRoot(currentFiber) {//如果是根节点
+    const newChildren = currentFiber.props.children;//直接渲染子节点
+    reconcileChildren(currentFiber, newChildren);
+}
+
+function updateHostComponent(currentFiber) {//如果是原生DOM节点
+    if (!currentFiber.stateNode) {
+        currentFiber.stateNode = createDOM(currentFiber);//先创建真实的DOM节点
+    }
+    const newChildren = currentFiber.props.children;
+    reconcileChildren(currentFiber, newChildren);
+}
+function createDOM(currentFiber) {
+    if (currentFiber.type <span class="hljs-comment">=== ELEMENT_TEXT) {</span>
+        return document.createTextNode(currentFiber.props.text);
+    }
+    const stateNode = document.createElement(currentFiber.type);
+    updateDOM(stateNode, {}, currentFiber.props);
+    return stateNode;
+}
+
+function reconcileChildren(currentFiber, newChildren) {
+    let newChildIndex = 0;//新虚拟DOM数组中的索引
+    let oldFiber = currentFiber.alternate &amp;&amp; currentFiber.alternate.child;//父Fiber中的第一个子Fiber
+    let prevSibling;
+    while (newChildIndex &lt; newChildren.length || oldFiber) {
+        const newChild = newChildren[newChildIndex];
+        let newFiber;
+        const sameType = oldFiber &amp;&amp; newChild &amp;&amp; newChild.type <span class="hljs-comment">=== oldFiber.type;//新旧都有，并且元素类型一样</span>
+        let tag;
+        if (newChild &amp;&amp; typeof newChild.type <span class="hljs-comment">=== 'function' &amp;&amp; newChild.type.prototype.isReactComponent) {</span>
+            tag = TAG_CLASS;//类组件
+<span class="hljs-addition">+        } else if (newChild &amp;&amp; typeof newChild.type === 'function') {</span>
+<span class="hljs-addition">+            tag = TAG_FUNCTION;//函数组件</span>
+<span class="hljs-addition">+        } else if (newChild &amp;&amp; newChild.type === ELEMENT_TEXT) {</span>
+            tag = TAG_TEXT;//文本
+        } else if (newChild &amp;&amp; typeof newChild.type <span class="hljs-comment">=== 'string') {</span>
+            tag = TAG_HOST;//原生DOM组件
+        }
+        if (sameType) {
+            newFiber = {
+                tag,//标记Fiber类型，例如是函数组件或者原生组件
+                type: oldFiber.type,//具体的元素类型
+                props: newChild.props,//新的属性对象
+                stateNode: oldFiber.stateNode,//原生组件的话就存放DOM节点，类组件的话是类组件实例，函数组件的话为空，因为没有实例
+                return: currentFiber,//父Fiber
+                updateQueue: oldFiber.updateQueue || new UpdateQueue(),
+                alternate: oldFiber,//上一个Fiber 指向旧树中的节点
+                effectTag: deepEquals(oldFiber.props, newChild.props) ? null : UPDATE,//副作用标识
+            }
+        } else {
+            if (newChild) {//类型不一样，创建新的Fiber,旧的不复用了
+                newFiber = {
+                    tag,//原生DOM组件
+                    type: newChild.type,//具体的元素类型
+                    props: newChild.props,//新的属性对象
+                    stateNode: null,//stateNode肯定是空的
+                    return: currentFiber,//父Fiber
+                    effectTag: PLACEMENT //副作用标识 
+                }
+            }
+            if (oldFiber) {
+                oldFiber.effectTag = DELETION;
+                deletions.push(oldFiber);
+            }
+        }
+        if (oldFiber) {  //比较完一个元素了，老Fiber向后移动1位
+            oldFiber = oldFiber.sibling;
+        }
+        if (newFiber) {
+            if (newChildIndex <span class="hljs-comment">=== 0) {</span>
+                currentFiber.child = newFiber;//第一个子节点挂到父节点的child属性上
+            } else {
+                prevSibling.sibling = newFiber;
+            }
+            prevSibling = newFiber;//然后newFiber变成了上一个哥哥了
+        }
+        newChildIndex++;
+    }
+}
+
+function updateDOM(stateNode, oldProps, newProps) {
+    setProps(stateNode, oldProps, newProps);
+}
+function completeUnitOfWork(currentFiber) {
+    const returnFiber = currentFiber.return;
+    if (returnFiber) {
+        if (!returnFiber.firstEffect) {
+            returnFiber.firstEffect = currentFiber.firstEffect;
+        }
+        if (!!currentFiber.lastEffect) {
+            if (!!returnFiber.lastEffect) {
+                returnFiber.lastEffect.nextEffect = currentFiber.firstEffect;
+            }
+            returnFiber.lastEffect = currentFiber.lastEffect;
+        }
+
+        const effectTag = currentFiber.effectTag;
+        if (effectTag) {
+            if (!!returnFiber.lastEffect) {
+                returnFiber.lastEffect.nextEffect = currentFiber;
+            } else {
+                returnFiber.firstEffect = currentFiber;
+            }
+            returnFiber.lastEffect = currentFiber;
+        }
+    }
+}
+
+function workLoop(deadline) {
+    let shouldYield = false;
+    while (nextUnitOfWork &amp;&amp; !shouldYield) {
+        nextUnitOfWork = performUnitOfWork(nextUnitOfWork);//执行一个任务并返回下一个任务
+        shouldYield = deadline.timeRemaining() &lt; 1;//如果剩余时间小于1毫秒就说明没有时间了，需要把控制权让给浏览器
+    }
+    //如果没有下一个执行单元了，并且当前渲染树存在，则进行提交阶段
+    if (!nextUnitOfWork &amp;&amp; workInProgressRoot) {
+        commitRoot();
+    }
+    requestIdleCallback(workLoop);
+}
+//开始在空闲时间执行workLoop
+requestIdleCallback(workLoop);
+
+</code></pre>
+<h2 id="t256.实现hooks">6.实现hooks <a href="#t256.实现hooks"> # </a></h2>
+<h3 id="t266.1 src\index.js">6.1 src\index.js <a href="#t266.1 src\index.js"> # </a></h3>
+<p>src\index.js</p>
+<pre><code class="lang-diff">import React from './react';
+import ReactDOM from './react-dom';
+
+<span class="hljs-addition">+function reducer(state, action) {</span>
+<span class="hljs-addition">+  switch (action.type) {</span>
+<span class="hljs-addition">+    case 'ADD':</span>
+<span class="hljs-addition">+      return { count: state.count + 1 };</span>
+<span class="hljs-addition">+    default:</span>
+<span class="hljs-addition">+      return state;</span>
+<span class="hljs-addition">+  }</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+function FunctionCounter() {</span>
+<span class="hljs-addition">+  const [numberState, setNumberState] = React.useState({ number: 0 });</span>
+<span class="hljs-addition">+  const [countState, dispatch] = React.useReducer(reducer, { count: 0 });</span>
+<span class="hljs-addition">+  return (</span>
+<span class="hljs-addition">+    &lt;div&gt;</span>
+<span class="hljs-addition">+      &lt;h1 onClick={() =&gt; setNumberState(state =&gt; ({ number: state.number + 1 }))}&gt;</span>
+<span class="hljs-addition">+        Count: {numberState.number}</span>
+<span class="hljs-addition">+      &lt;/h1 &gt;</span>
+<span class="hljs-addition">+      &lt;hr /&gt;</span>
+<span class="hljs-addition">+      &lt;h1 onClick={() =&gt; dispatch({ type: 'ADD' })}&gt;</span>
+<span class="hljs-addition">+        Count: {countState.count}</span>
+<span class="hljs-addition">+      &lt;/h1 &gt;</span>
+<span class="hljs-addition">+    &lt;/div&gt;</span>
+<span class="hljs-addition">+  )</span>
+<span class="hljs-addition">+}</span>
+ReactDOM.render(
+  &lt;FunctionCounter /&gt;,
+  document.getElementById('root')
+);
+
+</code></pre>
+<h3 id="t276.2 src\react.js">6.2 src\react.js <a href="#t276.2 src\react.js"> # </a></h3>
+<p>src\react.js</p>
+<pre><code class="lang-diff">import { ELEMENT_TEXT } from './constants';
+import { Update, UpdateQueue } from './updateQueue';
+<span class="hljs-addition">+import { scheduleRoot,useState,useReducer} from './scheduler';</span>
+function createElement(type, config, ...children) {
+    delete config.__self;
+    delete config.__source;
+    return {
+        type,
+        props: {
+            ...config,
+            children: children.map(
+                child =&gt; typeof child <span class="hljs-comment">=== "object" ?</span>
+                    child :
+                    { type: ELEMENT_TEXT, props: { text: child, children: [] } })
+        }
+    }
+}
+class Component {
+    constructor(props) {
+        this.props = props;
+        this.updateQueue = new UpdateQueue();
+    }
+    setState(payload) {
+        this.internalFiber.updateQueue.enqueueUpdate(new Update(payload));
+        scheduleRoot();
+    }
+}
+Component.prototype.isReactComponent = true;
+let React = {
+    createElement,
+    Component,
+<span class="hljs-addition">+    useState,</span>
+<span class="hljs-addition">+    useReducer</span>
+}
+export default React;
+</code></pre>
+<h3 id="t286.3 src\scheduler.js">6.3 src\scheduler.js <a href="#t286.3 src\scheduler.js"> # </a></h3>
+<p>src\scheduler.js</p>
+<pre><code class="lang-diff">import { setProps, deepEquals } from './utils';
+<span class="hljs-addition">+import { UpdateQueue, Update } from './updateQueue';</span>
+import {
+    ELEMENT_TEXT, TAG_ROOT, TAG_HOST, TAG_TEXT, TAG_CLASS, TAG_FUNCTION, PLACEMENT, DELETION, UPDATE
+} from './constants';
+let currentRoot = null;         //当前的根Fiber
+let workInProgressRoot = null;  //正在渲染中的根Fiber
+let nextUnitOfWork = null;      //下一个工作单元
+let deletions = [];             //要删除的fiber节点
+<span class="hljs-addition">+let workInProgressFiber = null; //正在工作中的fiber</span>
+<span class="hljs-addition">+let hookIndex = 0;              //hook索引</span>
+export function scheduleRoot(rootFiber) {
+    if (rootFiber) {
+        workInProgressRoot = rootFiber; //把当前树设置为nextUnitOfWork开始进行调度
+    } else {
+        if (currentRoot.alternate) {
+            workInProgressRoot = currentRoot.alternate;
+            workInProgressRoot.alternate = currentRoot;
+        } else {
+            workInProgressRoot = {
+                ...currentRoot,
+                alternate: currentRoot
+            }
+        }
+    }
+    deletions.length = 0;
+    nextUnitOfWork = workInProgressRoot;
+}
+
+function commitRoot() {
+    deletions.forEach(commitWork);
+    let currentFiber = workInProgressRoot.firstEffect;
+    while (currentFiber) {
+        commitWork(currentFiber);
+        currentFiber = currentFiber.nextEffect;
+    }
+    deletions.length = 0;//先把要删除的节点清空掉
+    workInProgressRoot.firstEffect = workInProgressRoot.lastEffect = null;
+    currentRoot = workInProgressRoot;
+    workInProgressRoot = null;
+}
+function commitWork(currentFiber) {
+    if (!currentFiber) {
+        return;
+    }
+    let returnFiber = currentFiber.return;//先获取父Fiber
+    while (returnFiber.tag !== TAG_HOST &amp;&amp; returnFiber.tag !== TAG_ROOT &amp;&amp; returnFiber.tag !== TAG_TEXT) {//如果不是DOM节点就一直向上找
+        returnFiber = returnFiber.return;
+    }
+    const domReturn = returnFiber.stateNode;//获取父的DOM节点
+    if (currentFiber.effectTag <span class="hljs-comment">=== PLACEMENT &amp;&amp; currentFiber.stateNode != null) {//如果是新增DOM节点</span>
+        let nextFiber = currentFiber;
+        while (nextFiber.tag !== TAG_HOST &amp;&amp; nextFiber.tag !== TAG_TEXT) {//必须向下找到一个DOM节点
+            nextFiber = nextFiber.child;
+        }
+        domReturn.appendChild(nextFiber.stateNode);
+    } else if (currentFiber.effectTag <span class="hljs-comment">=== DELETION) {//如果是删除则删除并返回</span>
+        commitDeletion(currentFiber, domReturn);
+    } else if (currentFiber.effectTag <span class="hljs-comment">=== UPDATE &amp;&amp; currentFiber.stateNode != null) {//如果是更新</span>
+        if (currentFiber.type <span class="hljs-comment">=== ELEMENT_TEXT) {</span>
+            if (currentFiber.alternate.props.text !== currentFiber.props.text) {
+                currentFiber.stateNode.textContent = currentFiber.props.text;
+            }
+        } else {
+            updateDOM(currentFiber.stateNode, currentFiber.alternate.props, currentFiber.props);
+        }
+    }
+    currentFiber.effectTag = null;
+}
+function commitDeletion(currentFiber, domReturn) {
+    if (currentFiber.tag <span class="hljs-comment">=== TAG_HOST || currentFiber.tag === TAG_TEXT) {</span>
+        domReturn.removeChild(currentFiber.stateNode);
+    } else {
+        commitDeletion(currentFiber.child, domReturn);
+    }
+}
+function performUnitOfWork(currentFiber) {
+    beginWork(currentFiber);//开始渲染前的Fiber,就是把子元素变成子fiber
+
+    if (currentFiber.child) {//如果子节点就返回第一个子节点
+        return currentFiber.child;
+    }
+
+    while (currentFiber) {//如果没有子节点说明当前节点已经完成了渲染工作
+        completeUnitOfWork(currentFiber);//可以结束此fiber的渲染了 
+        if (currentFiber.sibling) {//如果它有弟弟就返回弟弟
+            return currentFiber.sibling;
+        }
+        currentFiber = currentFiber.return;//如果没有弟弟让爸爸完成，然后找叔叔
+    }
+}
+
+function beginWork(currentFiber) {
+    if (currentFiber.tag <span class="hljs-comment">=== TAG_ROOT) {//如果是根节点</span>
+        updateHostRoot(currentFiber);
+    } else if (currentFiber.tag <span class="hljs-comment">=== TAG_TEXT) {//如果是原生文本节点</span>
+        updateHostText(currentFiber);
+    } else if (currentFiber.tag <span class="hljs-comment">=== TAG_HOST) {//如果是原生DOM节点</span>
+        updateHostComponent(currentFiber);
+    } else if (currentFiber.tag <span class="hljs-comment">=== TAG_CLASS) {//如果是类组件</span>
+        updateClassComponent(currentFiber)
+    } else if (currentFiber.tag <span class="hljs-comment">=== TAG_FUNCTION) {//如果是函数组件</span>
+        updateFunctionComponent(currentFiber);
+    }
+}
+function updateFunctionComponent(currentFiber) {
+<span class="hljs-addition">+    workInProgressFiber = currentFiber;</span>
+<span class="hljs-addition">+    hookIndex = 0;</span>
+<span class="hljs-addition">+    workInProgressFiber.hooks = [];</span>
+    const newChildren = [currentFiber.type(currentFiber.props)];
+    reconcileChildren(currentFiber, newChildren);
+}
+function updateClassComponent(currentFiber) {
+    if (currentFiber.stateNode <span class="hljs-comment">=== null) {</span>
+        currentFiber.stateNode = new currentFiber.type(currentFiber.props);
+        currentFiber.stateNode.internalFiber = currentFiber;
+        currentFiber.updateQueue = new UpdateQueue();
+    }
+    currentFiber.stateNode.state = currentFiber.updateQueue.forceUpdate(currentFiber.stateNode.state);
+    const newChildren = [currentFiber.stateNode.render()];
+    reconcileChildren(currentFiber, newChildren);
+}
+function updateHostText(currentFiber) {
+    if (!currentFiber.stateNode) {
+        currentFiber.stateNode = createDOM(currentFiber);//先创建真实的DOM节点
+    }
+}
+function updateHostRoot(currentFiber) {//如果是根节点
+    const newChildren = currentFiber.props.children;//直接渲染子节点
+    reconcileChildren(currentFiber, newChildren);
+}
+
+function updateHostComponent(currentFiber) {//如果是原生DOM节点
+    if (!currentFiber.stateNode) {
+        currentFiber.stateNode = createDOM(currentFiber);//先创建真实的DOM节点
+    }
+    const newChildren = currentFiber.props.children;
+    reconcileChildren(currentFiber, newChildren);
+}
+function createDOM(currentFiber) {
+    if (currentFiber.type <span class="hljs-comment">=== ELEMENT_TEXT) {</span>
+        return document.createTextNode(currentFiber.props.text);
+    }
+    const stateNode = document.createElement(currentFiber.type);
+    updateDOM(stateNode, {}, currentFiber.props);
+    return stateNode;
+}
+
+function reconcileChildren(currentFiber, newChildren) {
+    let newChildIndex = 0;//新虚拟DOM数组中的索引
+    let oldFiber = currentFiber.alternate &amp;&amp; currentFiber.alternate.child;//父Fiber中的第一个子Fiber
+    let prevSibling;
+    while (newChildIndex &lt; newChildren.length || oldFiber) {
+        const newChild = newChildren[newChildIndex];
+        let newFiber;
+        const sameType = oldFiber &amp;&amp; newChild &amp;&amp; newChild.type <span class="hljs-comment">=== oldFiber.type;//新旧都有，并且元素类型一样</span>
+        let tag;
+        if (newChild &amp;&amp; typeof newChild.type <span class="hljs-comment">=== 'function' &amp;&amp; newChild.type.prototype.isReactComponent) {</span>
+            tag = TAG_CLASS;//类组件
+        } else if (newChild &amp;&amp; typeof newChild.type <span class="hljs-comment">=== 'function') {</span>
+            tag = TAG_FUNCTION;//函数组件
+        } else if (newChild &amp;&amp; newChild.type <span class="hljs-comment">=== ELEMENT_TEXT) {</span>
+            tag = TAG_TEXT;//文本
+        } else if (newChild &amp;&amp; typeof newChild.type <span class="hljs-comment">=== 'string') {</span>
+            tag = TAG_HOST;//原生DOM组件
+        }
+        if (sameType) {
+            newFiber = {
+                tag,//标记Fiber类型，例如是函数组件或者原生组件
+                type: oldFiber.type,//具体的元素类型
+                props: newChild.props,//新的属性对象
+                stateNode: oldFiber.stateNode,//原生组件的话就存放DOM节点，类组件的话是类组件实例，函数组件的话为空，因为没有实例
+                return: currentFiber,//父Fiber
+                updateQueue: oldFiber.updateQueue || new UpdateQueue(),
+                alternate: oldFiber,//上一个Fiber 指向旧树中的节点
+                effectTag: deepEquals(oldFiber.props, newChild.props) ? null : UPDATE,//副作用标识
+            }
+        } else {
+            if (newChild) {//类型不一样，创建新的Fiber,旧的不复用了
+                newFiber = {
+                    tag,//原生DOM组件
+                    type: newChild.type,//具体的元素类型
+                    props: newChild.props,//新的属性对象
+                    stateNode: null,//stateNode肯定是空的
+                    return: currentFiber,//父Fiber
+                    effectTag: PLACEMENT //副作用标识 
+                }
+            }
+            if (oldFiber) {
+                oldFiber.effectTag = DELETION;
+                deletions.push(oldFiber);
+            }
+        }
+        if (oldFiber) {  //比较完一个元素了，老Fiber向后移动1位
+            oldFiber = oldFiber.sibling;
+        }
+        if (newFiber) {
+            if (newChildIndex <span class="hljs-comment">=== 0) {</span>
+                currentFiber.child = newFiber;//第一个子节点挂到父节点的child属性上
+            } else {
+                prevSibling.sibling = newFiber;
+            }
+            prevSibling = newFiber;//然后newFiber变成了上一个哥哥了
+        }
+        newChildIndex++;
+    }
+}
+
+function updateDOM(stateNode, oldProps, newProps) {
+    setProps(stateNode, oldProps, newProps);
+}
+function completeUnitOfWork(currentFiber) {
+    const returnFiber = currentFiber.return;
+    if (returnFiber) {
+        if (!returnFiber.firstEffect) {
+            returnFiber.firstEffect = currentFiber.firstEffect;
+        }
+        if (!!currentFiber.lastEffect) {
+            if (!!returnFiber.lastEffect) {
+                returnFiber.lastEffect.nextEffect = currentFiber.firstEffect;
+            }
+            returnFiber.lastEffect = currentFiber.lastEffect;
+        }
+
+        const effectTag = currentFiber.effectTag;
+        if (effectTag) {
+            if (!!returnFiber.lastEffect) {
+                returnFiber.lastEffect.nextEffect = currentFiber;
+            } else {
+                returnFiber.firstEffect = currentFiber;
+            }
+            returnFiber.lastEffect = currentFiber;
+        }
+    }
+}
+<span class="hljs-addition">+export function useReducer(reducer, initialValue) {</span>
+<span class="hljs-addition">+    let oldHook =</span>
+<span class="hljs-addition">+        workInProgressFiber.alternate &amp;&amp;</span>
+<span class="hljs-addition">+        workInProgressFiber.alternate.hooks &amp;&amp;</span>
+<span class="hljs-addition">+        workInProgressFiber.alternate.hooks[hookIndex];</span>
+<span class="hljs-addition">+    let newHook = oldHook;</span>
+<span class="hljs-addition">+    if (oldHook) {</span>
+<span class="hljs-addition">+        oldHook.state = oldHook.updateQueue.forceUpdate(oldHook.state);</span>
+<span class="hljs-addition">+    } else {</span>
+<span class="hljs-addition">+        newHook = {</span>
+<span class="hljs-addition">+            state: initialValue,</span>
+<span class="hljs-addition">+            updateQueue: new UpdateQueue()</span>
+<span class="hljs-addition">+        };</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    const dispatch = action =&gt; {</span>
+<span class="hljs-addition">+        newHook.updateQueue.enqueueUpdate(</span>
+<span class="hljs-addition">+            new Update(reducer ? reducer(newHook.state, action) : action)</span>
+<span class="hljs-addition">+        );</span>
+<span class="hljs-addition">+        scheduleRoot();</span>
+<span class="hljs-addition">+    }</span>
+<span class="hljs-addition">+    workInProgressFiber.hooks[hookIndex++] = newHook;</span>
+<span class="hljs-addition">+    return [newHook.state, dispatch];</span>
+<span class="hljs-addition">+}</span>
+<span class="hljs-addition">+export function useState(initState) {</span>
+<span class="hljs-addition">+    return useReducer(null, initState)</span>
+<span class="hljs-addition">+}</span>
+function workLoop(deadline) {
+    let shouldYield = false;
+    while (nextUnitOfWork &amp;&amp; !shouldYield) {
+        nextUnitOfWork = performUnitOfWork(nextUnitOfWork);//执行一个任务并返回下一个任务
+        shouldYield = deadline.timeRemaining() &lt; 1;//如果剩余时间小于1毫秒就说明没有时间了，需要把控制权让给浏览器
+    }
+    //如果没有下一个执行单元了，并且当前渲染树存在，则进行提交阶段
+    if (!nextUnitOfWork &amp;&amp; workInProgressRoot) {
+        commitRoot();
+    }
+    requestIdleCallback(workLoop);
+}
+//开始在空闲时间执行workLoop
+requestIdleCallback(workLoop);
+
+</code></pre>
+
+    </div>
+</div>
+</body>
