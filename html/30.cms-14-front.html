@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        .page-toc > ul .red {
+        .page-toc>ul .red {
             background: #f3f3f3;
             z-index: 1;
             border-left: 3px solid #009a61;
@@ -15,45 +15,473 @@
         }
     </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li class="active"><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
-    <div class="page-toc">
-        <ul><li><a href="#t01. 初始化项目">1. 初始化项目</a></li><li><a href="#t12. 配置别名">2. 配置别名</a></li><li><a href="#t23. 注册登录">3. 注册登录</a><ul><li><a href="#t33.1 login/index.js">3.1 login/index.js</a><ul><li><a href="#t43.1.1 Login">3.1.1 Login</a></li><li><a href="#t53.1.2 LoginForm">3.1.2 LoginForm</a></li><li><a href="#t63.1.3 getFieldItems.js">3.1.3 getFieldItems.js</a></li><li><a href="#t73.1.4 addresses.js">3.1.4 addresses.js</a></li><li><a href="#t83.1.4 utils/request.js">3.1.4 utils/request.js</a></li></ul></li><li><a href="#t93.3  models/login.js">3.3  models/login.js</a></li><li><a href="#t103.4 login/services/login.js">3.4 login/services/login.js</a></li></ul></li><li><a href="#t114.验证码">4.验证码</a><ul><li><a href="#t124.1 login/index.js">4.1 login/index.js</a></li></ul></li><li><a href="#t135.后台管理界面布局模版">5.后台管理界面布局模版</a><ul><li><a href="#t145.1 /admin/_layout.js">5.1 /admin/_layout.js</a></li></ul></li><li><a href="#t156. 顶部导航条">6. 顶部导航条</a><ul><li><a href="#t166.1 components\AdminHeader\index.js">6.1 components\AdminHeader\index.js</a></li><li><a href="#t176.2 components\AdminHeader\index.less">6.2 components\AdminHeader\index.less</a></li><li><a href="#t186.3 admin/_layout.js">6.3 admin/_layout.js</a></li></ul></li><li><a href="#t197.左侧菜单和用户页面">7.左侧菜单和用户页面</a><ul><li><a href="#t207.1 components/MenuList.js">7.1 components/MenuList.js</a></li><li><a href="#t217.2 admin/_layout.js">7.2 admin/_layout.js</a></li></ul></li><li><a href="#t228. 用户管理">8. 用户管理</a><ul><li><a href="#t238.1 用户列表">8.1 用户列表</a><ul><li><a href="#t248.1.1 index.js">8.1.1 index.js</a></li><li><a href="#t258.1.2 constants.js">8.1.2 constants.js</a></li><li><a href="#t268.1.3 models\user.js">8.1.3 models\user.js</a></li><li><a href="#t278.1.4 services\user.js">8.1.4 services\user.js</a></li></ul></li><li><a href="#t288.2 新增和编辑用户">8.2 新增和编辑用户</a><ul><li><a href="#t298.1.1 index.js">8.1.1 index.js</a></li><li><a href="#t308.1.2 models/user.js">8.1.2 models/user.js</a></li><li><a href="#t318.1.3 services/user.js">8.1.3 services/user.js</a></li></ul></li><li><a href="#t328.3 删除用户">8.3 删除用户</a><ul><li><a href="#t338.3.1 index.js">8.3.1 index.js</a></li><li><a href="#t348.3.2 models\user.js">8.3.2 models\user.js</a></li><li><a href="#t358.3.3 services\user.js">8.3.3 services\user.js</a></li></ul></li><li><a href="#t368.4 全部删除">8.4 全部删除</a><ul><li><a href="#t378.4.1 src\pages\admin\user\index.js">8.4.1 src\pages\admin\user\index.js</a></li><li><a href="#t388.4.2 user.js">8.4.2 user.js</a></li><li><a href="#t398.4.3 services\user.js">8.4.3 services\user.js</a></li></ul></li><li><a href="#t408.5 搜索">8.5 搜索</a><ul><li><a href="#t418.5.1 src\pages\admin\user\index.js">8.5.1 src\pages\admin\user\index.js</a></li><li><a href="#t428.5.2 user.js">8.5.2 user.js</a></li><li><a href="#t438.5.3 services\user.js">8.5.3 services\user.js</a></li></ul></li><li><a href="#t448.6 点行选择行">8.6 点行选择行</a><ul><li><a href="#t458.6.1 src\pages\admin\user\index.js">8.6.1 src\pages\admin\user\index.js</a></li></ul></li></ul></li><li><a href="#t469 角色管理">9 角色管理</a><ul><li><a href="#t479.1 role\index.js">9.1 role\index.js</a></li><li><a href="#t489.2 role\constants.js">9.2 role\constants.js</a></li><li><a href="#t499.3 models\role.js">9.3 models\role.js</a></li><li><a href="#t509.4 services\role.js">9.4 services\role.js</a></li></ul></li><li><a href="#t5110. 设置权限">10. 设置权限</a><ul><li><a href="#t5210.1 service\role.js">10.1 service\role.js</a></li><li><a href="#t5310.2 role/index.js">10.2 role/index.js</a></li><li><a href="#t5410.3 models\role.js">10.3 models\role.js</a></li><li><a href="#t5510.4 role.js">10.4 role.js</a></li></ul></li><li><a href="#t5611.给角色加用户">11.给角色加用户</a><ul><li><a href="#t5711.1 roles/index.js">11.1 roles/index.js</a></li><li><a href="#t5811.2 models/roles.js">11.2 models/roles.js</a></li><li><a href="#t5911.3 services/roles.js">11.3 services/roles.js</a></li></ul></li></ul>
+<body class="modal-open" style="padding-right: 15px;">
+    <div class="nav">
+        <div class="logo">
+
+            珠峰架构师成长计划
+
+        </div>
+        <ul>
+            <li><a href="../index.html">0.Async</a></li>
+            <li><a href="../html/0.editor.html">0.editor</a></li>
+            <li><a href="../html/0.module.html">0.module</a></li>
+            <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+            <li><a href="../html/2.Promise.html">2.Promise</a></li>
+            <li><a href="../html/3.Node.html">3.Node</a></li>
+            <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+            <li><a href="../html/5.REPL.html">5.REPL</a></li>
+            <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+            <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+            <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+            <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+            <li><a href="../html/10.fs.html">10.fs</a></li>
+            <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+            <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+            <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+            <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+            <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+            <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+            <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+            <li><a href="../html/13.tcp.html">13.tcp</a></li>
+            <li><a href="../html/14.http-1.html">14.http-1</a></li>
+            <li><a href="../html/14.http-2.html">14.http-2</a></li>
+            <li><a href="../html/15.compress.html">15.compress</a></li>
+            <li><a href="../html/16.crypto.html">16.crypto</a></li>
+            <li><a href="../html/17.process.html">17.process</a></li>
+            <li><a href="../html/18.yargs.html">18.yargs</a></li>
+            <li><a href="../html/19.cache.html">19.cache</a></li>
+            <li><a href="../html/20.action.html">20.action</a></li>
+            <li><a href="../html/21.https.html">21.https</a></li>
+            <li><a href="../html/22.cookie.html">22.cookie</a></li>
+            <li><a href="../html/23.session.html">23.session</a></li>
+            <li><a href="../html/24.express-1.html">24.express-1</a></li>
+            <li><a href="../html/24.express-2.html">24.express-2</a></li>
+            <li><a href="../html/24.express-3.html">24.express-3</a></li>
+            <li><a href="../html/24.express-4.html">24.express-4</a></li>
+            <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+            <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+            <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+            <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+            <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+            <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+            <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+            <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+            <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+            <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+            <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+            <li><a href="../html/28.redux.html">28.redux</a></li>
+            <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+            <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+            <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+            <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+            <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+            <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+            <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+            <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+            <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+            <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+            <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+            <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+            <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+            <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+            <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+            <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+            <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+            <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+            <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+            <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+            <li class="active"><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+            <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+            <li><a href="../html/31.dva.html">31.dva</a></li>
+            <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+            <li><a href="../html/33.redis.html">33.redis</a></li>
+            <li><a href="../html/34.unittest.html">34.unittest</a></li>
+            <li><a href="../html/35.jwt.html">35.jwt</a></li>
+            <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+            <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+            <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+            <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+            <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+            <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+            <li><a href="../html/38.chat.html">38.chat</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+            <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+            <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+            <li><a href="../html/40.deploy.html">40.deploy</a></li>
+            <li><a href="../html/41.safe.html">41.safe</a></li>
+            <li><a href="../html/42.test.html">42.test</a></li>
+            <li><a href="../html/43.nginx.html">43.nginx</a></li>
+            <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+            <li><a href="../html/45.docker.html">45.docker</a></li>
+            <li><a href="../html/46.elastic.html">46.elastic</a></li>
+            <li><a href="../html/47.oauth.html">47.oauth</a></li>
+            <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/52.UML.html">52.UML</a></li>
+            <li><a href="../html/53.design.html">53.design</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/54.linux.html">54.linux</a></li>
+            <li><a href="../html/57.ts.html">57.ts</a></li>
+            <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+            <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+            <li><a href="../html/59.ketang.html">59.ketang</a></li>
+            <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+            <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+            <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+            <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+            <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+            <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+            <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+            <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+            <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+            <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+            <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+            <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+            <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+            <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+            <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+            <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+            <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+            <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+            <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+            <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+            <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+            <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+            <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+            <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+            <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+            <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+            <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+            <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+            <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+            <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+            <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+            <li><a href="../html/64.1.router.html">64.1.router</a></li>
+            <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+            <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+            <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+            <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+            <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+            <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+            <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+            <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+            <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+            <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+            <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+            <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+            <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+            <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+            <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+            <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+            <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+            <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+            <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+            <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+            <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+            <li><a href="../html/67-1-network.html">67-1-network</a></li>
+            <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+            <li><a href="../html/7.npm2.html">7.npm2</a></li>
+            <li><a href="../html/69-hooks.html">69-hooks</a></li>
+            <li><a href="../html/70-deploy.html">70-deploy</a></li>
+            <li><a href="../html/71-hmr.html">71-hmr</a></li>
+            <li><a href="../html/72.deploy.html">72.deploy</a></li>
+            <li><a href="../html/73.import.html">73.import</a></li>
+            <li><a href="../html/74.mobile.html">74.mobile</a></li>
+            <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+            <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+            <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+            <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+            <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+            <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+            <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+            <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+            <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+            <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+            <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+            <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+            <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+            <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+            <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+            <li><a href="../html/79.grammar.html">79.grammar</a></li>
+            <li><a href="../html/80.tree.html">80.tree</a></li>
+            <li><a href="../html/81.axios.html">81.axios</a></li>
+            <li><a href="../html/82.1.react.html">82.1.react</a></li>
+            <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+            <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+            <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+            <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+            <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+            <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+            <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+            <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+            <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+            <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+            <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+            <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+            <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+            <li><a href="../html/83.upload.html">83.upload</a></li>
+            <li><a href="../html/84.graphql.html">84.graphql</a></li>
+            <li><a href="../html/85.antpro.html">85.antpro</a></li>
+            <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+            <li><a href="../html/86.2.design.html">86.2.design</a></li>
+            <li><a href="../html/87.postcss.html">87.postcss</a></li>
+            <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+            <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+            <li><a href="../html/90.react-test.html">90.react-test</a></li>
+            <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+            <li><a href="../html/92.rbac.html">92.rbac</a></li>
+            <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+            <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+            <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+            <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+            <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+            <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+            <li><a href="../html/94.6.https.html">94.6.https</a></li>
+            <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+            <li><a href="../html/95.1. react.html">95.1. react</a></li>
+            <li><a href="../html/95.2.react.html">95.2.react</a></li>
+            <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+            <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+            <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+            <li><a href="../html/97.serverless.html">97.serverless</a></li>
+            <li><a href="../html/98.websocket.html">98.websocket</a></li>
+            <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+            <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+            <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+            <li><a href="../html/102.java.html">102.java</a></li>
+            <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+            <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+            <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+            <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+            <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+            <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+            <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+            <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+            <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+            <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+            <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+            <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+            <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+            <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+            <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+            <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+            <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+            <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+            <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+            <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+            <li><a href="../html/106.1.react.html">106.1.react</a></li>
+            <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+            <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+            <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+            <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+            <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+            <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+            <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+            <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+            <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+            <li><a href="../html/107.fiber.html">107.fiber</a></li>
+            <li><a href="../html/108.http.html">108.http</a></li>
+            <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+            <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+            <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+            <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+            <li><a href="../html/111.xstate.html">111.xstate</a></li>
+            <li><a href="../html/112.Form.html">112.Form</a></li>
+            <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+            <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+            <li><a href="../html/115.immer.html">115.immer</a></li>
+            <li><a href="../html/116.pro5.html">116.pro5</a></li>
+            <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+            <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+            <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+            <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+            <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+            <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+            <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+            <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+            <li><a href="../html/124.next.js.html">124.next.js</a></li>
+            <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+            <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+            <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+            <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+            <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+            <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+            <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+            <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+            <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+            <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+            <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+            <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+            <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+            <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+            <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+            <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+            <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+            <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+            <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+            <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+            <li><a href="../html/127.frontend.html">127.frontend</a></li>
+            <li><a href="../html/128.rollup.html">128.rollup</a></li>
+            <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+            <li><a href="../html/130.health.html">130.health</a></li>
+            <li><a href="../html/131.hooks.html">131.hooks</a></li>
+            <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+            <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+            <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+            <li><a href="../html/134.react18.html">134.react18</a></li>
+            <li><a href="../html/135.function.html">135.function</a></li>
+            <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+        </ul>
     </div>
-    <div class="content markdown-body">
-        <h2 id="t01. 初始化项目">1. 初始化项目 <a href="#t01. 初始化项目"> # </a></h2>
-<ul>
-<li><a href="https://umijs.org/zh/guide/create-umi-app.html">create-umi-app</a></li>
-<li><a href="https://ant.design/docs/react/introduce-cn">ant.design</a></li>
-</ul>
-<pre><code class="lang-js">$ mkdir myapp &amp;&amp; cd myapp
+
+
+    <div class="warpper">
+        <div class="page-toc">
+            <ul>
+                <li><a href="#t01. 初始化项目">1. 初始化项目</a></li>
+                <li><a href="#t12. 配置别名">2. 配置别名</a></li>
+                <li><a href="#t23. 注册登录">3. 注册登录</a>
+                    <ul>
+                        <li><a href="#t33.1 login/index.js">3.1 login/index.js</a>
+                            <ul>
+                                <li><a href="#t43.1.1 Login">3.1.1 Login</a></li>
+                                <li><a href="#t53.1.2 LoginForm">3.1.2 LoginForm</a></li>
+                                <li><a href="#t63.1.3 getFieldItems.js">3.1.3 getFieldItems.js</a></li>
+                                <li><a href="#t73.1.4 addresses.js">3.1.4 addresses.js</a></li>
+                                <li><a href="#t83.1.4 utils/request.js">3.1.4 utils/request.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t93.3  models/login.js">3.3 models/login.js</a></li>
+                        <li><a href="#t103.4 login/services/login.js">3.4 login/services/login.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t114.验证码">4.验证码</a>
+                    <ul>
+                        <li><a href="#t124.1 login/index.js">4.1 login/index.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t135.后台管理界面布局模版">5.后台管理界面布局模版</a>
+                    <ul>
+                        <li><a href="#t145.1 /admin/_layout.js">5.1 /admin/_layout.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t156. 顶部导航条">6. 顶部导航条</a>
+                    <ul>
+                        <li><a href="#t166.1 components\AdminHeader\index.js">6.1 components\AdminHeader\index.js</a>
+                        </li>
+                        <li><a href="#t176.2 components\AdminHeader\index.less">6.2
+                                components\AdminHeader\index.less</a></li>
+                        <li><a href="#t186.3 admin/_layout.js">6.3 admin/_layout.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t197.左侧菜单和用户页面">7.左侧菜单和用户页面</a>
+                    <ul>
+                        <li><a href="#t207.1 components/MenuList.js">7.1 components/MenuList.js</a></li>
+                        <li><a href="#t217.2 admin/_layout.js">7.2 admin/_layout.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t228. 用户管理">8. 用户管理</a>
+                    <ul>
+                        <li><a href="#t238.1 用户列表">8.1 用户列表</a>
+                            <ul>
+                                <li><a href="#t248.1.1 index.js">8.1.1 index.js</a></li>
+                                <li><a href="#t258.1.2 constants.js">8.1.2 constants.js</a></li>
+                                <li><a href="#t268.1.3 models\user.js">8.1.3 models\user.js</a></li>
+                                <li><a href="#t278.1.4 services\user.js">8.1.4 services\user.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t288.2 新增和编辑用户">8.2 新增和编辑用户</a>
+                            <ul>
+                                <li><a href="#t298.1.1 index.js">8.1.1 index.js</a></li>
+                                <li><a href="#t308.1.2 models/user.js">8.1.2 models/user.js</a></li>
+                                <li><a href="#t318.1.3 services/user.js">8.1.3 services/user.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t328.3 删除用户">8.3 删除用户</a>
+                            <ul>
+                                <li><a href="#t338.3.1 index.js">8.3.1 index.js</a></li>
+                                <li><a href="#t348.3.2 models\user.js">8.3.2 models\user.js</a></li>
+                                <li><a href="#t358.3.3 services\user.js">8.3.3 services\user.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t368.4 全部删除">8.4 全部删除</a>
+                            <ul>
+                                <li><a href="#t378.4.1 src\pages\admin\user\index.js">8.4.1
+                                        src\pages\admin\user\index.js</a></li>
+                                <li><a href="#t388.4.2 user.js">8.4.2 user.js</a></li>
+                                <li><a href="#t398.4.3 services\user.js">8.4.3 services\user.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t408.5 搜索">8.5 搜索</a>
+                            <ul>
+                                <li><a href="#t418.5.1 src\pages\admin\user\index.js">8.5.1
+                                        src\pages\admin\user\index.js</a></li>
+                                <li><a href="#t428.5.2 user.js">8.5.2 user.js</a></li>
+                                <li><a href="#t438.5.3 services\user.js">8.5.3 services\user.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t448.6 点行选择行">8.6 点行选择行</a>
+                            <ul>
+                                <li><a href="#t458.6.1 src\pages\admin\user\index.js">8.6.1
+                                        src\pages\admin\user\index.js</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#t469 角色管理">9 角色管理</a>
+                    <ul>
+                        <li><a href="#t479.1 role\index.js">9.1 role\index.js</a></li>
+                        <li><a href="#t489.2 role\constants.js">9.2 role\constants.js</a></li>
+                        <li><a href="#t499.3 models\role.js">9.3 models\role.js</a></li>
+                        <li><a href="#t509.4 services\role.js">9.4 services\role.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t5110. 设置权限">10. 设置权限</a>
+                    <ul>
+                        <li><a href="#t5210.1 service\role.js">10.1 service\role.js</a></li>
+                        <li><a href="#t5310.2 role/index.js">10.2 role/index.js</a></li>
+                        <li><a href="#t5410.3 models\role.js">10.3 models\role.js</a></li>
+                        <li><a href="#t5510.4 role.js">10.4 role.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t5611.给角色加用户">11.给角色加用户</a>
+                    <ul>
+                        <li><a href="#t5711.1 roles/index.js">11.1 roles/index.js</a></li>
+                        <li><a href="#t5811.2 models/roles.js">11.2 models/roles.js</a></li>
+                        <li><a href="#t5911.3 services/roles.js">11.3 services/roles.js</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content markdown-body">
+            <h2 id="t01. 初始化项目">1. 初始化项目 <a href="#t01. 初始化项目"> # </a></h2>
+            <ul>
+                <li><a href="https://umijs.org/zh/guide/create-umi-app.html">create-umi-app</a></li>
+                <li><a href="https://ant.design/docs/react/introduce-cn">ant.design</a></li>
+            </ul>
+            <pre><code class="lang-js">$ mkdir myapp &amp;&amp; cd myapp
 $ yarn create umi
 $ cnpm i styled-components jsonwebtoken -S
 $ npm start
 </code></pre>
-<h2 id="t12. 配置别名">2. 配置别名 <a href="#t12. 配置别名"> # </a></h2>
-<p>.webpackrc.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> {resolve}=<span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+            <h2 id="t12. 配置别名">2. 配置别名 <a href="#t12. 配置别名"> # </a></h2>
+            <p>.webpackrc.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> {resolve}=<span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
     <span class="hljs-string">"alias"</span>:{
         <span class="hljs-string">"@"</span>:resolve(<span class="hljs-string">"src"</span>)
     }
 }
 </code></pre>
-<h2 id="t23. 注册登录">3. 注册登录 <a href="#t23. 注册登录"> # </a></h2>
-<p><img src="http://img.zhufengpeixun.cn/loginregister.png" alt="注册"></p>
-<h3 id="t33.1 login/index.js">3.1 login/index.js <a href="#t33.1 login/index.js"> # </a></h3>
-<h4 id="t43.1.1 Login">3.1.1 Login <a href="#t43.1.1 Login"> # </a></h4>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h2 id="t23. 注册登录">3. 注册登录 <a href="#t23. 注册登录"> # </a></h2>
+            <p><img src="http://img.zhufengpeixun.cn/loginregister.png" alt="注册"></p>
+            <h3 id="t33.1 login/index.js">3.1 login/index.js <a href="#t33.1 login/index.js"> # </a></h3>
+            <h4 id="t43.1.1 Login">3.1.1 Login <a href="#t43.1.1 Login"> # </a></h4>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> {Layout,Form,Input,Radio,Cascader,Select,AutoComplete,Checkbox,Button,message} <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
 <span class="hljs-keyword">import</span> styled <span class="hljs-keyword">from</span> <span class="hljs-string">'styled-components'</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">'dva'</span>;<span class="hljs-comment">//react-redux 是用来连接仓库和组件</span>
@@ -92,8 +520,8 @@ $ npm start
    }
 }
 </code></pre>
-<h4 id="t53.1.2 LoginForm">3.1.2 LoginForm <a href="#t53.1.2 LoginForm"> # </a></h4>
-<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LoginForm</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
+            <h4 id="t53.1.2 LoginForm">3.1.2 LoginForm <a href="#t53.1.2 LoginForm"> # </a></h4>
+            <pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LoginForm</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
     state ={<span class="hljs-attr">gender</span>:<span class="hljs-number">1</span>,<span class="hljs-attr">autoCompleteResult</span>:[],<span class="hljs-attr">repasswordDirty</span>:<span class="hljs-literal">false</span>}
     handleWebsiteChange = <span class="hljs-function">(<span class="hljs-params">value</span>)=&gt;</span>{<span class="hljs-comment">//1 [1.com,1.cn,1.org]</span>
       <span class="hljs-keyword">let</span> autoCompleteResult=[];
@@ -200,9 +628,9 @@ LoginForm  = Form.create()(LoginForm);
     <span class="hljs-function"><span class="hljs-params">state</span>=&gt;</span>state.login
 )(Login);
 </code></pre>
-<h4 id="t63.1.3 getFieldItems.js">3.1.3 getFieldItems.js <a href="#t63.1.3 getFieldItems.js"> # </a></h4>
-<p>src\utils\getFieldItems.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {Form} <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
+            <h4 id="t63.1.3 getFieldItems.js">3.1.3 getFieldItems.js <a href="#t63.1.3 getFieldItems.js"> # </a></h4>
+            <p>src\utils\getFieldItems.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> {Form} <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
 <span class="hljs-keyword">const</span> FormItem = Form.Item;
 <span class="hljs-keyword">let</span> formItemLayout = {
    <span class="hljs-attr">labelCol</span>:{<span class="hljs-attr">span</span>:<span class="hljs-number">4</span>},<span class="hljs-attr">wrapperCol</span>:{<span class="hljs-attr">span</span>:<span class="hljs-number">20</span>}
@@ -227,9 +655,9 @@ LoginForm  = Form.create()(LoginForm);
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> getFieldItems;
 </code></pre>
-<h4 id="t73.1.4 addresses.js">3.1.4 addresses.js <a href="#t73.1.4 addresses.js"> # </a></h4>
-<p>src\utils\addresses.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span>  [
+            <h4 id="t73.1.4 addresses.js">3.1.4 addresses.js <a href="#t73.1.4 addresses.js"> # </a></h4>
+            <p>src\utils\addresses.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span>  [
             {
                 <span class="hljs-attr">value</span>:<span class="hljs-string">'guangdong'</span>,
                 <span class="hljs-attr">label</span>: <span class="hljs-string">'广东'</span>,
@@ -248,9 +676,9 @@ LoginForm  = Form.create()(LoginForm);
             }
         ]
 </code></pre>
-<h4 id="t83.1.4 utils/request.js">3.1.4 utils/request.js <a href="#t83.1.4 utils/request.js"> # </a></h4>
-<p>src/utils/request.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> fetch <span class="hljs-keyword">from</span> <span class="hljs-string">'dva/fetch'</span>;
+            <h4 id="t83.1.4 utils/request.js">3.1.4 utils/request.js <a href="#t83.1.4 utils/request.js"> # </a></h4>
+            <p>src/utils/request.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> fetch <span class="hljs-keyword">from</span> <span class="hljs-string">'dva/fetch'</span>;
 <span class="hljs-keyword">const</span> BASE_URL = <span class="hljs-string">'http://127.0.0.1:7001'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">url, options={}</span>) </span>{
   <span class="hljs-keyword">let</span> token = localStorage.getItem(<span class="hljs-string">'token'</span>);
@@ -265,9 +693,9 @@ LoginForm  = Form.create()(LoginForm);
   <span class="hljs-keyword">return</span> fetch(BASE_URL + url,options).then(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> res.json());
 }
 </code></pre>
-<h3 id="t93.3  models/login.js">3.3  models/login.js <a href="#t93.3  models/login.js"> # </a></h3>
-<p>src/pages/login/models/login.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> service <span class="hljs-keyword">from</span> <span class="hljs-string">'../services/login'</span>;
+            <h3 id="t93.3  models/login.js">3.3 models/login.js <a href="#t93.3  models/login.js"> # </a></h3>
+            <p>src/pages/login/models/login.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> service <span class="hljs-keyword">from</span> <span class="hljs-string">'../services/login'</span>;
 <span class="hljs-keyword">import</span> {decode} <span class="hljs-keyword">from</span> <span class="hljs-string">'jsonwebtoken'</span>;
 <span class="hljs-keyword">import</span> {routerRedux} <span class="hljs-keyword">from</span> <span class="hljs-string">'dva/router'</span>;
 <span class="hljs-keyword">import</span> {message} <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
@@ -315,9 +743,10 @@ LoginForm  = Form.create()(LoginForm);
   }
 }
 </code></pre>
-<h3 id="t103.4 login/services/login.js">3.4 login/services/login.js <a href="#t103.4 login/services/login.js"> # </a></h3>
-<p>src/pages/login/services/login.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> request <span class="hljs-keyword">from</span> <span class="hljs-string">'../../../utils/request'</span>;
+            <h3 id="t103.4 login/services/login.js">3.4 login/services/login.js <a
+                    href="#t103.4 login/services/login.js"> # </a></h3>
+            <p>src/pages/login/services/login.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> request <span class="hljs-keyword">from</span> <span class="hljs-string">'../../../utils/request'</span>;
 
 <span class="hljs-comment">//定义一个注册的方法,调用api接口</span>
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">signup</span>(<span class="hljs-params">payload</span>)</span>{
@@ -334,11 +763,11 @@ LoginForm  = Form.create()(LoginForm);
   });
 }
 </code></pre>
-<h2 id="t114.验证码">4.验证码 <a href="#t114.验证码"> # </a></h2>
-<h3 id="t124.1 login/index.js">4.1 login/index.js <a href="#t124.1 login/index.js"> # </a></h3>
-<p>src/pages/login/index.js
-LoginForm</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+ import getFieldItems,{formItemLayout} from '../../utils/getFieldItems';</span>
+            <h2 id="t114.验证码">4.验证码 <a href="#t114.验证码"> # </a></h2>
+            <h3 id="t124.1 login/index.js">4.1 login/index.js <a href="#t124.1 login/index.js"> # </a></h3>
+            <p>src/pages/login/index.js
+                LoginForm</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+ import getFieldItems,{formItemLayout} from '../../utils/getFieldItems';</span>
 
 <span class="hljs-addition">+ const captchaUrl=`http://127.0.0.1:7001/api/captcha?ts=`;</span>
 
@@ -361,10 +790,10 @@ LoginForm</p>
 <span class="hljs-addition">+     &lt;/Row&gt;</span>
 <span class="hljs-addition">+ &lt;/FormItem&gt;</span>
 </code></pre>
-<h2 id="t135.后台管理界面布局模版">5.后台管理界面布局模版 <a href="#t135.后台管理界面布局模版"> # </a></h2>
-<h3 id="t145.1 /admin/_layout.js">5.1 /admin/_layout.js <a href="#t145.1 /admin/_layout.js"> # </a></h3>
-<p>src/pages/admin/_layout.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component,Fragment} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h2 id="t135.后台管理界面布局模版">5.后台管理界面布局模版 <a href="#t135.后台管理界面布局模版"> # </a></h2>
+            <h3 id="t145.1 /admin/_layout.js">5.1 /admin/_layout.js <a href="#t145.1 /admin/_layout.js"> # </a></h3>
+            <p>src/pages/admin/_layout.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component,Fragment} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> { Layout } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
 <span class="hljs-keyword">const</span> { Header, Footer, Sider, Content } = Layout;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
@@ -384,11 +813,12 @@ LoginForm</p>
    }
 }
 </code></pre>
-<h2 id="t156. 顶部导航条">6. 顶部导航条 <a href="#t156. 顶部导航条"> # </a></h2>
-<p><img src="http://img.zhufengpeixun.cn/adminheader.png" alt="adminheader"></p>
-<h3 id="t166.1 components\AdminHeader\index.js">6.1 components\AdminHeader\index.js <a href="#t166.1 components\AdminHeader\index.js"> # </a></h3>
-<p>src\components\AdminHeader\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h2 id="t156. 顶部导航条">6. 顶部导航条 <a href="#t156. 顶部导航条"> # </a></h2>
+            <p><img src="http://img.zhufengpeixun.cn/adminheader.png" alt="adminheader"></p>
+            <h3 id="t166.1 components\AdminHeader\index.js">6.1 components\AdminHeader\index.js <a
+                    href="#t166.1 components\AdminHeader\index.js"> # </a></h3>
+            <p>src\components\AdminHeader\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> {Layout} <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">'dva'</span>;
 <span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">'./index.less'</span>;
@@ -411,9 +841,10 @@ LoginForm</p>
   <span class="hljs-function"><span class="hljs-params">state</span> =&gt;</span> state.login
 )(AdminHeader);
 </code></pre>
-<h3 id="t176.2 components\AdminHeader\index.less">6.2 components\AdminHeader\index.less <a href="#t176.2 components\AdminHeader\index.less"> # </a></h3>
-<p>src\components\AdminHeader\index.less</p>
-<pre><code class="lang-less"><span class="hljs-selector-class">.logo</span>{
+            <h3 id="t176.2 components\AdminHeader\index.less">6.2 components\AdminHeader\index.less <a
+                    href="#t176.2 components\AdminHeader\index.less"> # </a></h3>
+            <p>src\components\AdminHeader\index.less</p>
+            <pre><code class="lang-less"><span class="hljs-selector-class">.logo</span>{
     <span class="hljs-attribute">width</span>:<span class="hljs-number">120px</span>;
     <span class="hljs-attribute">height</span>:<span class="hljs-number">32px</span>;
     <span class="hljs-attribute">margin</span>:<span class="hljs-number">16px</span>;
@@ -424,9 +855,9 @@ LoginForm</p>
     <span class="hljs-attribute">color</span>:<span class="hljs-number">#FFF</span>;
 }
 </code></pre>
-<h3 id="t186.3 admin/_layout.js">6.3 admin/_layout.js <a href="#t186.3 admin/_layout.js"> # </a></h3>
-<p>src/pages/admin/_layout.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t186.3 admin/_layout.js">6.3 admin/_layout.js <a href="#t186.3 admin/_layout.js"> # </a></h3>
+            <p>src/pages/admin/_layout.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> { Layout } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
 <span class="hljs-keyword">import</span> AdminHeader <span class="hljs-keyword">from</span> <span class="hljs-string">'../../components/AdminHeader'</span>;
 <span class="hljs-keyword">const</span> {Footer,Sider,Content}=Layout;
@@ -447,12 +878,13 @@ LoginForm</p>
    }
 }
 </code></pre>
-<h2 id="t197.左侧菜单和用户页面">7.左侧菜单和用户页面 <a href="#t197.左侧菜单和用户页面"> # </a></h2>
-<p><img src="http://img.zhufengpeixun.cn/resources.png" alt="resources"></p>
-<p><img src="http://img.zhufengpeixun.cn/leftmenus.png" alt="leftmenus"></p>
-<h3 id="t207.1 components/MenuList.js">7.1 components/MenuList.js <a href="#t207.1 components/MenuList.js"> # </a></h3>
-<p>src/components/MenuList.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component,Fragment} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h2 id="t197.左侧菜单和用户页面">7.左侧菜单和用户页面 <a href="#t197.左侧菜单和用户页面"> # </a></h2>
+            <p><img src="http://img.zhufengpeixun.cn/resources.png" alt="resources"></p>
+            <p><img src="http://img.zhufengpeixun.cn/leftmenus.png" alt="leftmenus"></p>
+            <h3 id="t207.1 components/MenuList.js">7.1 components/MenuList.js <a href="#t207.1 components/MenuList.js">
+                    # </a></h3>
+            <p>src/components/MenuList.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component,Fragment} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> {Menu,Icon} <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
 <span class="hljs-keyword">import</span> Link <span class="hljs-keyword">from</span> <span class="hljs-string">'umi/link'</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">'dva'</span>;
@@ -493,8 +925,8 @@ LoginForm</p>
     <span class="hljs-function"><span class="hljs-params">state</span> =&gt;</span> state.login
   )(MenuList);
 </code></pre>
-<p>app\controller\user.js</p>
-<pre><code class="lang-js">   <span class="hljs-keyword">let</span> list = <span class="hljs-keyword">await</span> app.mysql.query(<span class="hljs-string">`SELECT resource.* FROM role_user,role_resource,resource where role_user.role_id = role_resource.role_id AND role_resource.resource_id = resource.id AND role_user.user_id = ? ORDER BY resource.id ASC`</span>,[user.id]);
+            <p>app\controller\user.js</p>
+            <pre><code class="lang-js">   <span class="hljs-keyword">let</span> list = <span class="hljs-keyword">await</span> app.mysql.query(<span class="hljs-string">`SELECT resource.* FROM role_user,role_resource,resource where role_user.role_id = role_resource.role_id AND role_resource.resource_id = resource.id AND role_user.user_id = ? ORDER BY resource.id ASC`</span>,[user.id]);
       <span class="hljs-keyword">let</span> resources = [];
       <span class="hljs-keyword">let</span> map = {};
       list.forEach(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> {
@@ -508,9 +940,9 @@ LoginForm</p>
       });
       user.resources=resources;
 </code></pre>
-<h3 id="t217.2 admin/_layout.js">7.2 admin/_layout.js <a href="#t217.2 admin/_layout.js"> # </a></h3>
-<p>src/pages/admin/_layout.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t217.2 admin/_layout.js">7.2 admin/_layout.js <a href="#t217.2 admin/_layout.js"> # </a></h3>
+            <p>src/pages/admin/_layout.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> { Layout } <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
 <span class="hljs-keyword">import</span> AdminHeader <span class="hljs-keyword">from</span> <span class="hljs-string">'../../components/AdminHeader'</span>;
 <span class="hljs-keyword">import</span> MenuList <span class="hljs-keyword">from</span> <span class="hljs-string">'../../components/MenuList'</span>;
@@ -536,11 +968,11 @@ LoginForm</p>
    }
 }
 </code></pre>
-<h2 id="t228. 用户管理">8. 用户管理 <a href="#t228. 用户管理"> # </a></h2>
-<h3 id="t238.1 用户列表">8.1 用户列表 <a href="#t238.1 用户列表"> # </a></h3>
-<h4 id="t248.1.1 index.js">8.1.1 index.js <a href="#t248.1.1 index.js"> # </a></h4>
-<p>src\pages\admin\user\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component,Fragment} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h2 id="t228. 用户管理">8. 用户管理 <a href="#t228. 用户管理"> # </a></h2>
+            <h3 id="t238.1 用户列表">8.1 用户列表 <a href="#t238.1 用户列表"> # </a></h3>
+            <h4 id="t248.1.1 index.js">8.1.1 index.js <a href="#t248.1.1 index.js"> # </a></h4>
+            <p>src\pages\admin\user\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component,Fragment} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">'dva'</span>;
 <span class="hljs-keyword">import</span> {Card,Table,Button,Modal,Form,Input,message,Popconfirm} <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
 <span class="hljs-keyword">import</span> {PAGE_SIZE} <span class="hljs-keyword">from</span> <span class="hljs-string">'./constants'</span>;
@@ -600,13 +1032,13 @@ LoginForm</p>
      }
 }
 </code></pre>
-<h4 id="t258.1.2 constants.js">8.1.2 constants.js <a href="#t258.1.2 constants.js"> # </a></h4>
-<p>src\pages\admin\user\constants.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> PAGE_SIZE = <span class="hljs-number">3</span>;
+            <h4 id="t258.1.2 constants.js">8.1.2 constants.js <a href="#t258.1.2 constants.js"> # </a></h4>
+            <p>src\pages\admin\user\constants.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> PAGE_SIZE = <span class="hljs-number">3</span>;
 </code></pre>
-<h4 id="t268.1.3 models\user.js">8.1.3 models\user.js <a href="#t268.1.3 models\user.js"> # </a></h4>
-<p>src\pages\admin\user\models\user.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> userService <span class="hljs-keyword">from</span> <span class="hljs-string">'../services/user'</span>;
+            <h4 id="t268.1.3 models\user.js">8.1.3 models\user.js <a href="#t268.1.3 models\user.js"> # </a></h4>
+            <p>src\pages\admin\user\models\user.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> userService <span class="hljs-keyword">from</span> <span class="hljs-string">'../services/user'</span>;
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
     <span class="hljs-attr">namespace</span>: <span class="hljs-string">'user'</span>,
@@ -641,18 +1073,18 @@ LoginForm</p>
     }
 }
 </code></pre>
-<h4 id="t278.1.4 services\user.js">8.1.4 services\user.js <a href="#t278.1.4 services\user.js"> # </a></h4>
-<p>src\pages\admin\user\services\user.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> request <span class="hljs-keyword">from</span> <span class="hljs-string">'@/utils/request'</span>;
+            <h4 id="t278.1.4 services\user.js">8.1.4 services\user.js <a href="#t278.1.4 services\user.js"> # </a></h4>
+            <p>src\pages\admin\user\services\user.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> request <span class="hljs-keyword">from</span> <span class="hljs-string">'@/utils/request'</span>;
 <span class="hljs-keyword">import</span> {PAGE_SIZE} <span class="hljs-keyword">from</span> <span class="hljs-string">'../constants'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fetch</span>(<span class="hljs-params">pageNum</span>) </span>{
     <span class="hljs-keyword">return</span> request(<span class="hljs-string">`/api/user?pageNum=<span class="hljs-subst">${pageNum}</span>&amp;pageSize=<span class="hljs-subst">${PAGE_SIZE}</span>`</span>);
 }
 </code></pre>
-<h3 id="t288.2 新增和编辑用户">8.2 新增和编辑用户 <a href="#t288.2 新增和编辑用户"> # </a></h3>
-<h4 id="t298.1.1 index.js">8.1.1 index.js <a href="#t298.1.1 index.js"> # </a></h4>
-<p>src\pages\admin\user\index.js</p>
-<pre><code class="lang-diff">import React,{Component,Fragment} from 'react';
+            <h3 id="t288.2 新增和编辑用户">8.2 新增和编辑用户 <a href="#t288.2 新增和编辑用户"> # </a></h3>
+            <h4 id="t298.1.1 index.js">8.1.1 index.js <a href="#t298.1.1 index.js"> # </a></h4>
+            <p>src\pages\admin\user\index.js</p>
+            <pre><code class="lang-diff">import React,{Component,Fragment} from 'react';
 import {connect} from 'dva';
 import {Card,Table,Button,Modal,Form,Input,message,Popconfirm} from 'antd';
 import {PAGE_SIZE} from './constants';
@@ -804,9 +1236,9 @@ class user extends Component{
 <span class="hljs-addition">+    }</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h4 id="t308.1.2 models/user.js">8.1.2 models/user.js <a href="#t308.1.2 models/user.js"> # </a></h4>
-<p>src/pages/admin/user/models/user.js</p>
-<pre><code class="lang-diff">import * as userService from '../services/user';
+            <h4 id="t308.1.2 models/user.js">8.1.2 models/user.js <a href="#t308.1.2 models/user.js"> # </a></h4>
+            <p>src/pages/admin/user/models/user.js</p>
+            <pre><code class="lang-diff">import * as userService from '../services/user';
 
 export default {
     namespace: 'user',
@@ -855,9 +1287,9 @@ export default {
     }
 }
 </code></pre>
-<h4 id="t318.1.3 services/user.js">8.1.3 services/user.js <a href="#t318.1.3 services/user.js"> # </a></h4>
-<p>src/pages/admin/user/services/user.js</p>
-<pre><code class="lang-diff">import request from '@/utils/request';
+            <h4 id="t318.1.3 services/user.js">8.1.3 services/user.js <a href="#t318.1.3 services/user.js"> # </a></h4>
+            <p>src/pages/admin/user/services/user.js</p>
+            <pre><code class="lang-diff">import request from '@/utils/request';
 import {PAGE_SIZE} from '../constants';
 export function fetch(pageNum) {
     return request(`/api/user?pageNum=${pageNum}&amp;pageSize=${PAGE_SIZE}`);
@@ -877,10 +1309,10 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+    });</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t328.3 删除用户">8.3 删除用户 <a href="#t328.3 删除用户"> # </a></h3>
-<h4 id="t338.3.1 index.js">8.3.1 index.js <a href="#t338.3.1 index.js"> # </a></h4>
-<p>src\pages\admin\user\index.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+    onDel=(id) =&gt; {</span>
+            <h3 id="t328.3 删除用户">8.3 删除用户 <a href="#t328.3 删除用户"> # </a></h3>
+            <h4 id="t338.3.1 index.js">8.3.1 index.js <a href="#t338.3.1 index.js"> # </a></h4>
+            <p>src\pages\admin\user\index.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+    onDel=(id) =&gt; {</span>
 <span class="hljs-addition">+        this.props.dispatch({</span>
 <span class="hljs-addition">+            type: 'user/del',</span>
 <span class="hljs-addition">+            payload:id</span>
@@ -899,24 +1331,25 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+           &lt;/Popconfirm&gt;</span>
        &lt;/Fragment&gt;
 </code></pre>
-<h4 id="t348.3.2 models\user.js">8.3.2 models\user.js <a href="#t348.3.2 models\user.js"> # </a></h4>
-<p>src\pages\admin\user\models\user.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+        *del({payload},{call,put}) {</span>
+            <h4 id="t348.3.2 models\user.js">8.3.2 models\user.js <a href="#t348.3.2 models\user.js"> # </a></h4>
+            <p>src\pages\admin\user\models\user.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+        *del({payload},{call,put}) {</span>
 <span class="hljs-addition">+            yield call(userService.del,payload);</span>
 <span class="hljs-addition">+            yield put({type: 'fetch',payload: {pageNum:1}});</span>
 <span class="hljs-addition">+        }</span>
 </code></pre>
-<h4 id="t358.3.3 services\user.js">8.3.3 services\user.js <a href="#t358.3.3 services\user.js"> # </a></h4>
-<p>src\pages\admin\user\services\user.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+ export function del(id) {</span>
+            <h4 id="t358.3.3 services\user.js">8.3.3 services\user.js <a href="#t358.3.3 services\user.js"> # </a></h4>
+            <p>src\pages\admin\user\services\user.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+ export function del(id) {</span>
 <span class="hljs-addition">+     return request(`/api/user/${id}`,{</span>
 <span class="hljs-addition">+        method: 'DELETE'</span>
 <span class="hljs-addition">+ });</span>
 </code></pre>
-<h3 id="t368.4 全部删除">8.4 全部删除 <a href="#t368.4 全部删除"> # </a></h3>
-<h4 id="t378.4.1 src\pages\admin\user\index.js">8.4.1 src\pages\admin\user\index.js <a href="#t378.4.1 src\pages\admin\user\index.js"> # </a></h4>
-<p>src\pages\admin\user\index.js</p>
-<pre><code class="lang-diff">            type: 'user/del',
+            <h3 id="t368.4 全部删除">8.4 全部删除 <a href="#t368.4 全部删除"> # </a></h3>
+            <h4 id="t378.4.1 src\pages\admin\user\index.js">8.4.1 src\pages\admin\user\index.js <a
+                    href="#t378.4.1 src\pages\admin\user\index.js"> # </a></h4>
+            <p>src\pages\admin\user\index.js</p>
+            <pre><code class="lang-diff">            type: 'user/del',
             payload:id
         });
    }
@@ -954,18 +1387,18 @@ export function fetch(pageNum) {
                  &lt;EditModal
                     wrappedComponentRef={instance =&gt;this.editForm=instance}         
 </code></pre>
-<h4 id="t388.4.2 user.js">8.4.2 user.js <a href="#t388.4.2 user.js"> # </a></h4>
-<p>pages\admin\user\models\user.js</p>
-<pre><code class="lang-diff">        record: {},
+            <h4 id="t388.4.2 user.js">8.4.2 user.js <a href="#t388.4.2 user.js"> # </a></h4>
+            <p>pages\admin\user\models\user.js</p>
+            <pre><code class="lang-diff">        record: {},
 <span class="hljs-addition">+        selectedRowKeys:[]</span>
 <span class="hljs-addition">+        *delAll({payload},{call,put}) {</span>
 <span class="hljs-addition">+           yield call(userService.delAll,payload);</span>
 <span class="hljs-addition">+           yield put({type: 'fetch',payload: {pageNum:1}});</span>
 <span class="hljs-addition">+        }</span>
 </code></pre>
-<h4 id="t398.4.3 services\user.js">8.4.3 services\user.js <a href="#t398.4.3 services\user.js"> # </a></h4>
-<p>src\pages\admin\user\services\user.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+ export function delAll(ids) {</span>
+            <h4 id="t398.4.3 services\user.js">8.4.3 services\user.js <a href="#t398.4.3 services\user.js"> # </a></h4>
+            <p>src\pages\admin\user\services\user.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+ export function delAll(ids) {</span>
 <span class="hljs-addition">+    return request(`/api/user/${ids[0]}`,{</span>
 <span class="hljs-addition">+        method: 'DELETE',</span>
 <span class="hljs-addition">+        headers: {"Content-Type": "application/json"},</span>
@@ -973,10 +1406,11 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+    });</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t408.5 搜索">8.5 搜索 <a href="#t408.5 搜索"> # </a></h3>
-<h4 id="t418.5.1 src\pages\admin\user\index.js">8.5.1 src\pages\admin\user\index.js <a href="#t418.5.1 src\pages\admin\user\index.js"> # </a></h4>
-<p>src\pages\admin\user\index.js</p>
-<pre><code class="lang-diff">        type: 'user/delAll',
+            <h3 id="t408.5 搜索">8.5 搜索 <a href="#t408.5 搜索"> # </a></h3>
+            <h4 id="t418.5.1 src\pages\admin\user\index.js">8.5.1 src\pages\admin\user\index.js <a
+                    href="#t418.5.1 src\pages\admin\user\index.js"> # </a></h4>
+            <p>src\pages\admin\user\index.js</p>
+            <pre><code class="lang-diff">        type: 'user/delAll',
         payload:this.props.selectedRowKeys
     });
    }
@@ -1037,9 +1471,9 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+    }</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h4 id="t428.5.2 user.js">8.5.2 user.js <a href="#t428.5.2 user.js"> # </a></h4>
-<p>pages\admin\user\models\user.js</p>
-<pre><code class="lang-diff">        selectedRowKeys:[],
+            <h4 id="t428.5.2 user.js">8.5.2 user.js <a href="#t428.5.2 user.js"> # </a></h4>
+            <p>pages\admin\user\models\user.js</p>
+            <pre><code class="lang-diff">        selectedRowKeys:[],
 <span class="hljs-addition">+        where:{}</span>
 
 <span class="hljs-addition">+ *fetch({payload: {pageNum=1,where}},{call,put,select}) {</span>
@@ -1059,18 +1493,19 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+            yield put({type: 'fetch',payload: {pageNum:1,where}});</span>
 <span class="hljs-addition">+        },</span>
 </code></pre>
-<h4 id="t438.5.3 services\user.js">8.5.3 services\user.js <a href="#t438.5.3 services\user.js"> # </a></h4>
-<p>src\pages\admin\user\services\user.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import querystring from 'querystring';</span>
+            <h4 id="t438.5.3 services\user.js">8.5.3 services\user.js <a href="#t438.5.3 services\user.js"> # </a></h4>
+            <p>src\pages\admin\user\services\user.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+import querystring from 'querystring';</span>
 <span class="hljs-addition">+export function fetch(pageNum,where) {</span>
 <span class="hljs-addition">+    let whereString=querystring.stringify(where);</span>
 <span class="hljs-addition">+    return request(`/api/user?pageNum=${pageNum}&amp;pageSize=${PAGE_SIZE}&amp;${whereString}`);</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t448.6 点行选择行">8.6 点行选择行 <a href="#t448.6 点行选择行"> # </a></h3>
-<h4 id="t458.6.1 src\pages\admin\user\index.js">8.6.1 src\pages\admin\user\index.js <a href="#t458.6.1 src\pages\admin\user\index.js"> # </a></h4>
-<p>src\pages\admin\user\index.js</p>
-<pre><code class="lang-diff"> &lt;Table
+            <h3 id="t448.6 点行选择行">8.6 点行选择行 <a href="#t448.6 点行选择行"> # </a></h3>
+            <h4 id="t458.6.1 src\pages\admin\user\index.js">8.6.1 src\pages\admin\user\index.js <a
+                    href="#t458.6.1 src\pages\admin\user\index.js"> # </a></h4>
+            <p>src\pages\admin\user\index.js</p>
+            <pre><code class="lang-diff"> &lt;Table
                     columns={columns}
                     dataSource={list}
                     loading={loading}
@@ -1097,10 +1532,10 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+                    }</span>
                 /&gt;
 </code></pre>
-<h2 id="t469 角色管理">9 角色管理 <a href="#t469 角色管理"> # </a></h2>
-<h3 id="t479.1 role\index.js">9.1 role\index.js <a href="#t479.1 role\index.js"> # </a></h3>
-<p>src\pages\admin\role\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component,Fragment} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h2 id="t469 角色管理">9 角色管理 <a href="#t469 角色管理"> # </a></h2>
+            <h3 id="t479.1 role\index.js">9.1 role\index.js <a href="#t479.1 role\index.js"> # </a></h3>
+            <p>src\pages\admin\role\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component,Fragment} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">'dva'</span>;
 <span class="hljs-keyword">import</span> {Card,Table,Button,Modal,Form,Input,message,Popconfirm} <span class="hljs-keyword">from</span> <span class="hljs-string">'antd'</span>;
 <span class="hljs-keyword">import</span> {PAGE_SIZE} <span class="hljs-keyword">from</span> <span class="hljs-string">'./constants'</span>;
@@ -1320,13 +1755,13 @@ export function fetch(pageNum) {
     }
 }
 </code></pre>
-<h3 id="t489.2 role\constants.js">9.2 role\constants.js <a href="#t489.2 role\constants.js"> # </a></h3>
-<p>src\pages\admin\role\constants.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> PAGE_SIZE = <span class="hljs-number">3</span>;
+            <h3 id="t489.2 role\constants.js">9.2 role\constants.js <a href="#t489.2 role\constants.js"> # </a></h3>
+            <p>src\pages\admin\role\constants.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> PAGE_SIZE = <span class="hljs-number">3</span>;
 </code></pre>
-<h3 id="t499.3 models\role.js">9.3 models\role.js <a href="#t499.3 models\role.js"> # </a></h3>
-<p>src\pages\admin\role\models\role.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> service <span class="hljs-keyword">from</span> <span class="hljs-string">'../services/role'</span>;
+            <h3 id="t499.3 models\role.js">9.3 models\role.js <a href="#t499.3 models\role.js"> # </a></h3>
+            <p>src\pages\admin\role\models\role.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> service <span class="hljs-keyword">from</span> <span class="hljs-string">'../services/role'</span>;
 <span class="hljs-keyword">const</span> ENTITY=<span class="hljs-string">'role'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
     <span class="hljs-attr">namespace</span>: ENTITY,
@@ -1393,9 +1828,9 @@ export function fetch(pageNum) {
     }
 }
 </code></pre>
-<h3 id="t509.4 services\role.js">9.4 services\role.js <a href="#t509.4 services\role.js"> # </a></h3>
-<p>src\pages\admin\role\services\role.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> request <span class="hljs-keyword">from</span> <span class="hljs-string">'@/utils/request'</span>;
+            <h3 id="t509.4 services\role.js">9.4 services\role.js <a href="#t509.4 services\role.js"> # </a></h3>
+            <p>src\pages\admin\role\services\role.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> request <span class="hljs-keyword">from</span> <span class="hljs-string">'@/utils/request'</span>;
 <span class="hljs-keyword">import</span> {PAGE_SIZE} <span class="hljs-keyword">from</span> <span class="hljs-string">'../constants'</span>;
 <span class="hljs-keyword">import</span> querystring <span class="hljs-keyword">from</span> <span class="hljs-string">'querystring'</span>;
 <span class="hljs-keyword">const</span> ENTITY=<span class="hljs-string">'role'</span>;
@@ -1430,9 +1865,9 @@ export function fetch(pageNum) {
     });
 }
 </code></pre>
-<h2 id="t5110. 设置权限">10. 设置权限 <a href="#t5110. 设置权限"> # </a></h2>
-<h3 id="t5210.1 service\role.js">10.1 service\role.js <a href="#t5210.1 service\role.js"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-comment">//list  resourceIds=代表这个角色所拥有的资源ID数组</span>
+            <h2 id="t5110. 设置权限">10. 设置权限 <a href="#t5110. 设置权限"> # </a></h2>
+            <h3 id="t5210.1 service\role.js">10.1 service\role.js <a href="#t5210.1 service\role.js"> # </a></h3>
+            <pre><code class="lang-js"><span class="hljs-comment">//list  resourceIds=代表这个角色所拥有的资源ID数组</span>
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; list.length; i++) {
     <span class="hljs-keyword">let</span> rows = <span class="hljs-keyword">await</span> app.mysql.select(<span class="hljs-string">'role_resource'</span>, {
         <span class="hljs-attr">where</span>: { <span class="hljs-attr">role_id</span>: list[i].id }
@@ -1444,8 +1879,8 @@ export function fetch(pageNum) {
    list[i].userIds = rows.map(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item.user_id);<span class="hljs-comment">//[2,3]</span>
 }
 </code></pre>
-<h3 id="t5310.2 role/index.js">10.2 role/index.js <a href="#t5310.2 role/index.js"> # </a></h3>
-<pre><code class="lang-diff"><span class="hljs-addition">+ import {Tree,Card,Table,Button,Modal,Form,Input,message,Popconfirm} from 'antd';</span>
+            <h3 id="t5310.2 role/index.js">10.2 role/index.js <a href="#t5310.2 role/index.js"> # </a></h3>
+            <pre><code class="lang-diff"><span class="hljs-addition">+ import {Tree,Card,Table,Button,Modal,Form,Input,message,Popconfirm} from 'antd';</span>
 <span class="hljs-addition">+const TreeNode=Tree.TreeNode;</span>
 
 <span class="hljs-addition">+   setRolePermission=() =&gt; {</span>
@@ -1529,9 +1964,9 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+    }</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t5410.3 models\role.js">10.3 models\role.js <a href="#t5410.3 models\role.js"> # </a></h3>
-<p>src\pages\admin\role\models\role.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+        selectedRows: [],</span>
+            <h3 id="t5410.3 models\role.js">10.3 models\role.js <a href="#t5410.3 models\role.js"> # </a></h3>
+            <p>src\pages\admin\role\models\role.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+        selectedRows: [],</span>
 <span class="hljs-addition">+        checkedKeys: [],</span>
 <span class="hljs-addition">+        resources:[],</span>
 <span class="hljs-addition">+        setPermissionVisible:false</span>
@@ -1552,9 +1987,9 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+                   dispatch({type:'getResource'});</span>
                 }
 </code></pre>
-<h3 id="t5510.4 role.js">10.4 role.js <a href="#t5510.4 role.js"> # </a></h3>
-<p>src\pages\admin\role\services\role.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+ export function getResources() {</span>
+            <h3 id="t5510.4 role.js">10.4 role.js <a href="#t5510.4 role.js"> # </a></h3>
+            <p>src\pages\admin\role\services\role.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+ export function getResources() {</span>
 <span class="hljs-addition">+    return request(`/api/role/getResource`);</span>
 <span class="hljs-addition">+}</span>
 <span class="hljs-addition">+export function setRolePermission(values) {</span>
@@ -1565,9 +2000,9 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+    });</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h2 id="t5611.给角色加用户">11.给角色加用户 <a href="#t5611.给角色加用户"> # </a></h2>
-<h3 id="t5711.1 roles/index.js">11.1 roles/index.js <a href="#t5711.1 roles/index.js"> # </a></h3>
-<pre><code class="lang-diff"><span class="hljs-addition">+ import { Transfer} from 'antd';</span>
+            <h2 id="t5611.给角色加用户">11.给角色加用户 <a href="#t5611.给角色加用户"> # </a></h2>
+            <h3 id="t5711.1 roles/index.js">11.1 roles/index.js <a href="#t5711.1 roles/index.js"> # </a></h3>
+            <pre><code class="lang-diff"><span class="hljs-addition">+ import { Transfer} from 'antd';</span>
 <span class="hljs-addition">+ setUser = () =&gt; {</span>
 <span class="hljs-addition">+        let selectedRows = this.props.selectedRows;</span>
 <span class="hljs-addition">+        if (selectedRows.length == 1) {</span>
@@ -1639,9 +2074,9 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+    }</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t5811.2 models/roles.js">11.2 models/roles.js <a href="#t5811.2 models/roles.js"> # </a></h3>
-<p>src/pages/admin/roles/models/roles.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+        setPermissionVisible:false,</span>
+            <h3 id="t5811.2 models/roles.js">11.2 models/roles.js <a href="#t5811.2 models/roles.js"> # </a></h3>
+            <p>src/pages/admin/roles/models/roles.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+        setPermissionVisible:false,</span>
 <span class="hljs-addition">+        setUserVisible: false,//窗口是否显示</span>
 <span class="hljs-addition">+        targetKeys: [],//选中的用户</span>
 <span class="hljs-addition">+        users: [] //所有的用户</span>
@@ -1664,9 +2099,9 @@ export function fetch(pageNum) {
             dispatch({type:'getResource'});
 <span class="hljs-addition">+           dispatch({ type: 'getUser' });</span>
 </code></pre>
-<h3 id="t5911.3 services/roles.js">11.3 services/roles.js <a href="#t5911.3 services/roles.js"> # </a></h3>
-<p>src/pages/admin/roles/services/roles.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+export function getUser() {</span>
+            <h3 id="t5911.3 services/roles.js">11.3 services/roles.js <a href="#t5911.3 services/roles.js"> # </a></h3>
+            <p>src/pages/admin/roles/services/roles.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+export function getUser() {</span>
 <span class="hljs-addition">+    return request(`/api/role/getUser`);</span>
 <span class="hljs-addition">+}</span>
 <span class="hljs-addition">+export function setUser(values) {</span>
@@ -1679,6 +2114,6 @@ export function fetch(pageNum) {
 <span class="hljs-addition">+    });</span>
 </code></pre>
 
+        </div>
     </div>
-</div>
 </body>

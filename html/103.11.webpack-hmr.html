@@ -1,47 +1,459 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <style>
-        .page-toc > ul .red {
-            background: #f3f3f3;
-            z-index: 1;
-            border-left: 3px solid #009a61;
-            -webkit-transition: all .2s ease;
-            transition: all .2s ease;
-            color: #000
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>珠峰架构师成长计划</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    .page-toc>ul .red {
+      background: #f3f3f3;
+      z-index: 1;
+      border-left: 3px solid #009a61;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      color: #000
+    }
+  </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li class="active"><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
+<body class="modal-open" style="padding-right: 15px;">
+  <div class="nav">
+    <div class="logo">
+
+      珠峰架构师成长计划
+
+    </div>
+    <ul>
+      <li><a href="../index.html">0.Async</a></li>
+      <li><a href="../html/0.editor.html">0.editor</a></li>
+      <li><a href="../html/0.module.html">0.module</a></li>
+      <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+      <li><a href="../html/2.Promise.html">2.Promise</a></li>
+      <li><a href="../html/3.Node.html">3.Node</a></li>
+      <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+      <li><a href="../html/5.REPL.html">5.REPL</a></li>
+      <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+      <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+      <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+      <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+      <li><a href="../html/10.fs.html">10.fs</a></li>
+      <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+      <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+      <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+      <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+      <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+      <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+      <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+      <li><a href="../html/13.tcp.html">13.tcp</a></li>
+      <li><a href="../html/14.http-1.html">14.http-1</a></li>
+      <li><a href="../html/14.http-2.html">14.http-2</a></li>
+      <li><a href="../html/15.compress.html">15.compress</a></li>
+      <li><a href="../html/16.crypto.html">16.crypto</a></li>
+      <li><a href="../html/17.process.html">17.process</a></li>
+      <li><a href="../html/18.yargs.html">18.yargs</a></li>
+      <li><a href="../html/19.cache.html">19.cache</a></li>
+      <li><a href="../html/20.action.html">20.action</a></li>
+      <li><a href="../html/21.https.html">21.https</a></li>
+      <li><a href="../html/22.cookie.html">22.cookie</a></li>
+      <li><a href="../html/23.session.html">23.session</a></li>
+      <li><a href="../html/24.express-1.html">24.express-1</a></li>
+      <li><a href="../html/24.express-2.html">24.express-2</a></li>
+      <li><a href="../html/24.express-3.html">24.express-3</a></li>
+      <li><a href="../html/24.express-4.html">24.express-4</a></li>
+      <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+      <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+      <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+      <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+      <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+      <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+      <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+      <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+      <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+      <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+      <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+      <li><a href="../html/28.redux.html">28.redux</a></li>
+      <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+      <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+      <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+      <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+      <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+      <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+      <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+      <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+      <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+      <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+      <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+      <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+      <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+      <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+      <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+      <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+      <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+      <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+      <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+      <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+      <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+      <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+      <li><a href="../html/31.dva.html">31.dva</a></li>
+      <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+      <li><a href="../html/33.redis.html">33.redis</a></li>
+      <li><a href="../html/34.unittest.html">34.unittest</a></li>
+      <li><a href="../html/35.jwt.html">35.jwt</a></li>
+      <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+      <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+      <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+      <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+      <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+      <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+      <li><a href="../html/38.chat.html">38.chat</a></li>
+      <li><a href="../html/38.chat2.html">38.chat2</a></li>
+      <li><a href="../html/38.chat2.html">38.chat2</a></li>
+      <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+      <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+      <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+      <li><a href="../html/40.deploy.html">40.deploy</a></li>
+      <li><a href="../html/41.safe.html">41.safe</a></li>
+      <li><a href="../html/42.test.html">42.test</a></li>
+      <li><a href="../html/43.nginx.html">43.nginx</a></li>
+      <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+      <li><a href="../html/45.docker.html">45.docker</a></li>
+      <li><a href="../html/46.elastic.html">46.elastic</a></li>
+      <li><a href="../html/47.oauth.html">47.oauth</a></li>
+      <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+      <li><a href="../html/index.html">index</a></li>
+      <li><a href="../html/52.UML.html">52.UML</a></li>
+      <li><a href="../html/53.design.html">53.design</a></li>
+      <li><a href="../html/index.html">index</a></li>
+      <li><a href="../html/54.linux.html">54.linux</a></li>
+      <li><a href="../html/57.ts.html">57.ts</a></li>
+      <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+      <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+      <li><a href="../html/59.ketang.html">59.ketang</a></li>
+      <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+      <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+      <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+      <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+      <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+      <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+      <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+      <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+      <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+      <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+      <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+      <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+      <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+      <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+      <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+      <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+      <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+      <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+      <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+      <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+      <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+      <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+      <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+      <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+      <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+      <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+      <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+      <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+      <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+      <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+      <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+      <li><a href="../html/64.1.router.html">64.1.router</a></li>
+      <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+      <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+      <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+      <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+      <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+      <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+      <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+      <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+      <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+      <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+      <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+      <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+      <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+      <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+      <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+      <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+      <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+      <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+      <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+      <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+      <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+      <li><a href="../html/67-1-network.html">67-1-network</a></li>
+      <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+      <li><a href="../html/7.npm2.html">7.npm2</a></li>
+      <li><a href="../html/69-hooks.html">69-hooks</a></li>
+      <li><a href="../html/70-deploy.html">70-deploy</a></li>
+      <li><a href="../html/71-hmr.html">71-hmr</a></li>
+      <li><a href="../html/72.deploy.html">72.deploy</a></li>
+      <li><a href="../html/73.import.html">73.import</a></li>
+      <li><a href="../html/74.mobile.html">74.mobile</a></li>
+      <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+      <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+      <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+      <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+      <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+      <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+      <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+      <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+      <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+      <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+      <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+      <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+      <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+      <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+      <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+      <li><a href="../html/79.grammar.html">79.grammar</a></li>
+      <li><a href="../html/80.tree.html">80.tree</a></li>
+      <li><a href="../html/81.axios.html">81.axios</a></li>
+      <li><a href="../html/82.1.react.html">82.1.react</a></li>
+      <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+      <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+      <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+      <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+      <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+      <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+      <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+      <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+      <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+      <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+      <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+      <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+      <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+      <li><a href="../html/83.upload.html">83.upload</a></li>
+      <li><a href="../html/84.graphql.html">84.graphql</a></li>
+      <li><a href="../html/85.antpro.html">85.antpro</a></li>
+      <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+      <li><a href="../html/86.2.design.html">86.2.design</a></li>
+      <li><a href="../html/87.postcss.html">87.postcss</a></li>
+      <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+      <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+      <li><a href="../html/90.react-test.html">90.react-test</a></li>
+      <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+      <li><a href="../html/92.rbac.html">92.rbac</a></li>
+      <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+      <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+      <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+      <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+      <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+      <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+      <li><a href="../html/94.6.https.html">94.6.https</a></li>
+      <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+      <li><a href="../html/95.1. react.html">95.1. react</a></li>
+      <li><a href="../html/95.2.react.html">95.2.react</a></li>
+      <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+      <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+      <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+      <li><a href="../html/97.serverless.html">97.serverless</a></li>
+      <li><a href="../html/98.websocket.html">98.websocket</a></li>
+      <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+      <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+      <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+      <li><a href="../html/102.java.html">102.java</a></li>
+      <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+      <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+      <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+      <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+      <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+      <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+      <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+      <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+      <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+      <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+      <li class="active"><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+      <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+      <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+      <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+      <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+      <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+      <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+      <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+      <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+      <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+      <li><a href="../html/106.1.react.html">106.1.react</a></li>
+      <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+      <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+      <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+      <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+      <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+      <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+      <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+      <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+      <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+      <li><a href="../html/107.fiber.html">107.fiber</a></li>
+      <li><a href="../html/108.http.html">108.http</a></li>
+      <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+      <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+      <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+      <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+      <li><a href="../html/111.xstate.html">111.xstate</a></li>
+      <li><a href="../html/112.Form.html">112.Form</a></li>
+      <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+      <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+      <li><a href="../html/115.immer.html">115.immer</a></li>
+      <li><a href="../html/116.pro5.html">116.pro5</a></li>
+      <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+      <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+      <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+      <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+      <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+      <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+      <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+      <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+      <li><a href="../html/124.next.js.html">124.next.js</a></li>
+      <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+      <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+      <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+      <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+      <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+      <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+      <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+      <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+      <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+      <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+      <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+      <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+      <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+      <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+      <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+      <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+      <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+      <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+      <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+      <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+      <li><a href="../html/127.frontend.html">127.frontend</a></li>
+      <li><a href="../html/128.rollup.html">128.rollup</a></li>
+      <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+      <li><a href="../html/130.health.html">130.health</a></li>
+      <li><a href="../html/131.hooks.html">131.hooks</a></li>
+      <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+      <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+      <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+      <li><a href="../html/134.react18.html">134.react18</a></li>
+      <li><a href="../html/135.function.html">135.function</a></li>
+      <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+    </ul>
+  </div>
+
+
+  <div class="warpper">
     <div class="page-toc">
-        <ul><li><a href="#t01. 什么是HMR">1. 什么是HMR</a></li><li><a href="#t12.使用HMR">2.使用HMR</a><ul><li><a href="#t22.1 安装">2.1 安装</a></li><li><a href="#t32.2 使用">2.2 使用</a><ul><li><a href="#t42.2.1 webpack.config.js">2.2.1 webpack.config.js</a></li><li><a href="#t52.2.2 src\index.html">2.2.2 src\index.html</a></li><li><a href="#t62.2.3 src\index.js">2.2.3 src\index.js</a></li><li><a href="#t72.2.4 title.js">2.2.4 title.js</a></li><li><a href="#t82.2.5 package.json">2.2.5 package.json</a></li><li><a href="#t92.2.6 debugger">2.2.6 debugger</a></li></ul></li></ul></li><li><a href="#t103.基础知识">3.基础知识</a><ul><li><a href="#t113.1 module和chunk">3.1 module和chunk</a></li><li><a href="#t123.2 HotModuleReplacementPlugin">3.2 HotModuleReplacementPlugin</a></li><li><a href="#t133.3 webpack的监控模式">3.3 webpack的监控模式</a></li></ul></li><li><a href="#t144.工作流程">4.工作流程</a><ul><li><a href="#t154.1. 服务器部分">4.1. 服务器部分</a></li><li><a href="#t164.2. 客户端部分">4.2. 客户端部分</a></li><li><a href="#t174.3 相关代码">4.3 相关代码</a></li></ul></li><li><a href="#t185.启动开发服务器">5.启动开发服务器</a><ul><li><a href="#t195.1 startDevServer.js">5.1 startDevServer.js</a></li><li><a href="#t205.2 Server.js">5.2 Server.js</a></li><li><a href="#t215.3 package.json">5.3 package.json</a></li></ul></li><li><a href="#t226.给entry添加客户端">6.给entry添加客户端</a><ul><li><a href="#t236.1 Server.js">6.1 Server.js</a></li><li><a href="#t246.2 updateCompiler.js">6.2 updateCompiler.js</a></li><li><a href="#t256.3 client\index.js">6.3 client\index.js</a></li><li><a href="#t266.4 dev-server.js">6.4 dev-server.js</a></li></ul></li><li><a href="#t277.添加webpack的done事件回调">7.添加webpack的done事件回调</a><ul><li><a href="#t287.1 Server.js">7.1 Server.js</a></li></ul></li><li><a href="#t298.webpack-dev-middleware中间件">8.webpack-dev-middleware中间件</a><ul><li><a href="#t308.1 Server.js">8.1 Server.js</a></li><li><a href="#t318.2 webpack-dev-middleware\index.js">8.2 webpack-dev-middleware\index.js</a></li><li><a href="#t328.3 middleware.js">8.3 middleware.js</a></li></ul></li><li><a href="#t339.创建消息服务器">9.创建消息服务器</a><ul><li><a href="#t349.1 Server.js">9.1 Server.js</a></li></ul></li><li><a href="#t351.客户端连接消息服务器">1.客户端连接消息服务器</a><ul><li><a href="#t361.1 index.html">1.1 index.html</a></li><li><a href="#t371.2 webpack\hot\emitter.js">1.2 webpack\hot\emitter.js</a></li><li><a href="#t381.3 webpack-dev-server\client\index.js">1.3 webpack-dev-server\client\index.js</a></li><li><a href="#t391.4 webpack\hot\dev-server.js">1.4 webpack\hot\dev-server.js</a></li></ul></li><li><a href="#t402.打包后文件分析">2.打包后文件分析</a><ul><li><a href="#t412.1 static\hmr.html">2.1 static\hmr.html</a></li><li><a href="#t422.2 static\hmr.js">2.2 static\hmr.js</a></li></ul></li><li><a href="#t432.创建模块父子关系">2.创建模块父子关系</a><ul><li><a href="#t442.1 hmr.js">2.1 hmr.js</a></li></ul></li><li><a href="#t453.热更新">3.热更新</a><ul><li><a href="#t463.1 webpack.config.js">3.1 webpack.config.js</a></li><li><a href="#t473.2 hmr.js">3.2 hmr.js</a></li></ul></li><li><a href="#t484.注释版">4.注释版</a><ul><li><a href="#t494.1 hmr.js">4.1 hmr.js</a></li><li><a href="#t504.2 startDevServer.js">4.2 startDevServer.js</a></li><li><a href="#t514.3 webpack-dev-server\lib\Server.js">4.3 webpack-dev-server\lib\Server.js</a></li><li><a href="#t524.4 webpack-dev-middleware\index.js">4.4 webpack-dev-middleware\index.js</a></li></ul></li></ul>
+      <ul>
+        <li><a href="#t01. 什么是HMR">1. 什么是HMR</a></li>
+        <li><a href="#t12.使用HMR">2.使用HMR</a>
+          <ul>
+            <li><a href="#t22.1 安装">2.1 安装</a></li>
+            <li><a href="#t32.2 使用">2.2 使用</a>
+              <ul>
+                <li><a href="#t42.2.1 webpack.config.js">2.2.1 webpack.config.js</a></li>
+                <li><a href="#t52.2.2 src\index.html">2.2.2 src\index.html</a></li>
+                <li><a href="#t62.2.3 src\index.js">2.2.3 src\index.js</a></li>
+                <li><a href="#t72.2.4 title.js">2.2.4 title.js</a></li>
+                <li><a href="#t82.2.5 package.json">2.2.5 package.json</a></li>
+                <li><a href="#t92.2.6 debugger">2.2.6 debugger</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#t103.基础知识">3.基础知识</a>
+          <ul>
+            <li><a href="#t113.1 module和chunk">3.1 module和chunk</a></li>
+            <li><a href="#t123.2 HotModuleReplacementPlugin">3.2 HotModuleReplacementPlugin</a></li>
+            <li><a href="#t133.3 webpack的监控模式">3.3 webpack的监控模式</a></li>
+          </ul>
+        </li>
+        <li><a href="#t144.工作流程">4.工作流程</a>
+          <ul>
+            <li><a href="#t154.1. 服务器部分">4.1. 服务器部分</a></li>
+            <li><a href="#t164.2. 客户端部分">4.2. 客户端部分</a></li>
+            <li><a href="#t174.3 相关代码">4.3 相关代码</a></li>
+          </ul>
+        </li>
+        <li><a href="#t185.启动开发服务器">5.启动开发服务器</a>
+          <ul>
+            <li><a href="#t195.1 startDevServer.js">5.1 startDevServer.js</a></li>
+            <li><a href="#t205.2 Server.js">5.2 Server.js</a></li>
+            <li><a href="#t215.3 package.json">5.3 package.json</a></li>
+          </ul>
+        </li>
+        <li><a href="#t226.给entry添加客户端">6.给entry添加客户端</a>
+          <ul>
+            <li><a href="#t236.1 Server.js">6.1 Server.js</a></li>
+            <li><a href="#t246.2 updateCompiler.js">6.2 updateCompiler.js</a></li>
+            <li><a href="#t256.3 client\index.js">6.3 client\index.js</a></li>
+            <li><a href="#t266.4 dev-server.js">6.4 dev-server.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t277.添加webpack的done事件回调">7.添加webpack的done事件回调</a>
+          <ul>
+            <li><a href="#t287.1 Server.js">7.1 Server.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t298.webpack-dev-middleware中间件">8.webpack-dev-middleware中间件</a>
+          <ul>
+            <li><a href="#t308.1 Server.js">8.1 Server.js</a></li>
+            <li><a href="#t318.2 webpack-dev-middleware\index.js">8.2 webpack-dev-middleware\index.js</a></li>
+            <li><a href="#t328.3 middleware.js">8.3 middleware.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t339.创建消息服务器">9.创建消息服务器</a>
+          <ul>
+            <li><a href="#t349.1 Server.js">9.1 Server.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t351.客户端连接消息服务器">1.客户端连接消息服务器</a>
+          <ul>
+            <li><a href="#t361.1 index.html">1.1 index.html</a></li>
+            <li><a href="#t371.2 webpack\hot\emitter.js">1.2 webpack\hot\emitter.js</a></li>
+            <li><a href="#t381.3 webpack-dev-server\client\index.js">1.3 webpack-dev-server\client\index.js</a></li>
+            <li><a href="#t391.4 webpack\hot\dev-server.js">1.4 webpack\hot\dev-server.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t402.打包后文件分析">2.打包后文件分析</a>
+          <ul>
+            <li><a href="#t412.1 static\hmr.html">2.1 static\hmr.html</a></li>
+            <li><a href="#t422.2 static\hmr.js">2.2 static\hmr.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t432.创建模块父子关系">2.创建模块父子关系</a>
+          <ul>
+            <li><a href="#t442.1 hmr.js">2.1 hmr.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t453.热更新">3.热更新</a>
+          <ul>
+            <li><a href="#t463.1 webpack.config.js">3.1 webpack.config.js</a></li>
+            <li><a href="#t473.2 hmr.js">3.2 hmr.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t484.注释版">4.注释版</a>
+          <ul>
+            <li><a href="#t494.1 hmr.js">4.1 hmr.js</a></li>
+            <li><a href="#t504.2 startDevServer.js">4.2 startDevServer.js</a></li>
+            <li><a href="#t514.3 webpack-dev-server\lib\Server.js">4.3 webpack-dev-server\lib\Server.js</a></li>
+            <li><a href="#t524.4 webpack-dev-middleware\index.js">4.4 webpack-dev-middleware\index.js</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
     <div class="content markdown-body">
-        <h2 id="t01. 什么是HMR">1. 什么是HMR <a href="#t01. 什么是HMR"> # </a></h2>
-<ul>
-<li><code>Hot Module Replacement</code>是指当我们对代码修改并保存后，webpack将会对代码进行重新打包，并将新的模块发送到浏览器端，浏览器用新的模块替换掉旧的模块，以实现在不刷新浏览器的前提下更新页面</li>
-</ul>
-<h2 id="t12.使用HMR">2.使用HMR <a href="#t12.使用HMR"> # </a></h2>
-<h3 id="t22.1 安装">2.1 安装 <a href="#t22.1 安装"> # </a></h3>
-<pre><code class="lang-js">yarn add webpack webpack-cli webpack-dev-server html-webpack-plugin socket.io socket.io-client events mime fs-extra --dev
+      <h2 id="t01. 什么是HMR">1. 什么是HMR <a href="#t01. 什么是HMR"> # </a></h2>
+      <ul>
+        <li>
+          <code>Hot Module Replacement</code>是指当我们对代码修改并保存后，webpack将会对代码进行重新打包，并将新的模块发送到浏览器端，浏览器用新的模块替换掉旧的模块，以实现在不刷新浏览器的前提下更新页面
+        </li>
+      </ul>
+      <h2 id="t12.使用HMR">2.使用HMR <a href="#t12.使用HMR"> # </a></h2>
+      <h3 id="t22.1 安装">2.1 安装 <a href="#t22.1 安装"> # </a></h3>
+      <pre><code class="lang-js">yarn add webpack webpack-cli webpack-dev-server html-webpack-plugin socket.io socket.io-client events mime fs-extra --dev
 </code></pre>
-<h3 id="t32.2 使用">2.2 使用 <a href="#t32.2 使用"> # </a></h3>
-<h4 id="t42.2.1 webpack.config.js">2.2.1 webpack.config.js <a href="#t42.2.1 webpack.config.js"> # </a></h4>
-<p>webpack.config.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">"path"</span>);
+      <h3 id="t32.2 使用">2.2 使用 <a href="#t32.2 使用"> # </a></h3>
+      <h4 id="t42.2.1 webpack.config.js">2.2.1 webpack.config.js <a href="#t42.2.1 webpack.config.js"> # </a></h4>
+      <p>webpack.config.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">let</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">"path"</span>);
 <span class="hljs-keyword">let</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">"webpack"</span>);
 <span class="hljs-keyword">let</span> HtmlWebpackPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">"html-webpack-plugin"</span>);
 <span class="hljs-keyword">let</span> HotModuleReplacementPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack/lib/HotModuleReplacementPlugin'</span>);
@@ -65,9 +477,9 @@
     ]
 }
 </code></pre>
-<h4 id="t52.2.2 src\index.html">2.2.2 src\index.html <a href="#t52.2.2 src\index.html"> # </a></h4>
-<p>src\index.html</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+      <h4 id="t52.2.2 src\index.html">2.2.2 src\index.html <a href="#t52.2.2 src\index.html"> # </a></h4>
+      <p>src\index.html</p>
+      <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
@@ -80,9 +492,9 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h4 id="t62.2.3 src\index.js">2.2.3 src\index.js <a href="#t62.2.3 src\index.js"> # </a></h4>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> render = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <h4 id="t62.2.3 src\index.js">2.2.3 src\index.js <a href="#t62.2.3 src\index.js"> # </a></h4>
+      <p>src\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">let</span> render = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-keyword">let</span> title = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./title.js"</span>);
     root.innerText = title;
 }
@@ -92,234 +504,316 @@ render();
     <span class="hljs-built_in">module</span>.hot.accept([<span class="hljs-string">"./title.js"</span>], render);
 }
 </code></pre>
-<h4 id="t72.2.4 title.js">2.2.4 title.js <a href="#t72.2.4 title.js"> # </a></h4>
-<p>src\title.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-string">"title"</span>;
+      <h4 id="t72.2.4 title.js">2.2.4 title.js <a href="#t72.2.4 title.js"> # </a></h4>
+      <p>src\title.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-string">"title"</span>;
 </code></pre>
-<h4 id="t82.2.5 package.json">2.2.5 package.json <a href="#t82.2.5 package.json"> # </a></h4>
-<pre><code class="lang-json">"scripts": {
+      <h4 id="t82.2.5 package.json">2.2.5 package.json <a href="#t82.2.5 package.json"> # </a></h4>
+      <pre><code class="lang-json">"scripts": {
   "build": "webpack",
   "dev": "webpack serve"
 }
 </code></pre>
-<h4 id="t92.2.6 debugger">2.2.6 debugger <a href="#t92.2.6 debugger"> # </a></h4>
-<pre><code class="lang-diff">  "scripts": {
+      <h4 id="t92.2.6 debugger">2.2.6 debugger <a href="#t92.2.6 debugger"> # </a></h4>
+      <pre><code class="lang-diff">  "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
 <span class="hljs-addition">+    "debug": "webpack serve"</span>
   },
 </code></pre>
-<h2 id="t103.基础知识">3.基础知识 <a href="#t103.基础知识"> # </a></h2>
-<h3 id="t113.1 module和chunk">3.1 module和chunk <a href="#t113.1 module和chunk"> # </a></h3>
-<ul>
-<li>在 webpack里有各种各样的模块</li>
-<li>一般一个入口会依赖多个模块</li>
-<li>一个入口一般会对应一个chunk,这个chunk里包含这个入口依赖的所有的模块 </li>
-</ul>
-<h3 id="t123.2 HotModuleReplacementPlugin">3.2 HotModuleReplacementPlugin <a href="#t123.2 HotModuleReplacementPlugin"> # </a></h3>
-<ul>
-<li>webpack\lib\HotModuleReplacementPlugin.js</li>
-<li>它会生成两个补丁文件<ul>
-<li>上一次编译生成的hash.hot-update.json,说明从上次编译到现在哪些代码块发生成改变</li>
-<li>chunk名字.上一次编译生成的hash.hot-update.js,存放着此代码块最新的模块定义,里面会调用<code>webpackHotUpdate</code>方法</li>
-</ul>
-</li>
-<li>向代码块中注入HMR runtime代码,热更新的主要逻辑,比如拉取代码、执行代码、执行accept回调都是它注入的到chunk中的</li>
-<li><code>hotCreateRequire</code>会帮我们给模块 module的<code>parents</code>、<code>children</code>赋值</li>
-</ul>
-<h3 id="t133.3 webpack的监控模式">3.3 webpack的监控模式 <a href="#t133.3 webpack的监控模式"> # </a></h3>
-<ul>
-<li>如果使用监控模式编译webpack的话,如果文件系统中有文件发生了改变,webpack会监听到并重新打包</li>
-<li>每次编译会产生一个新的hash值</li>
-</ul>
-<h2 id="t144.工作流程">4.工作流程 <a href="#t144.工作流程"> # </a></h2>
-<h3 id="t154.1. 服务器部分">4.1. 服务器部分 <a href="#t154.1. 服务器部分"> # </a></h3>
-<ol>
-<li>启动webpack-dev-server服务器</li>
-<li>创建webpack实例</li>
-<li>创建Server服务器</li>
-<li>添加webpack的<code>done</code>事件回调，在编译完成后会向浏览器发送消息</li>
-<li>创建express应用app</li>
-<li>使用监控模式开始启动webpack编译,在 webpack 的 watch 模式下，文件系统中某一个文件发生修改，webpack 监听到文件变化，根据配置文件对模块重新编译打包，并将打包后的代码通过简单的 JavaScript 对象保存在内存中</li>
-<li>设置文件系统为内存文件系统</li>
-<li>添加webpack-dev-middleware中间件</li>
-<li>创建http服务器并启动服务</li>
-<li>使用sockjs在浏览器端和服务端之间建立一个 websocket 长连接，将 webpack 编译打包的各个阶段的状态信息告知浏览器端,浏览器端根据这些<code>socket</code>消息进行不同的操作。当然服务端传递的最主要信息还是新模块的<code>hash</code>值，后面的步骤根据这一<code>hash</code>值来进行模块热替换</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">步骤</th>
-<th style="text-align:left">代码位置</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1.启动webpack-dev-server服务器</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/bin/webpack-dev-server.js#L83">webpack-dev-server.js#L159</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2.创建webpack实例</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/bin/webpack-dev-server.js#L89">webpack-dev-server.js#L89</a></td>
-</tr>
-<tr>
-<td style="text-align:left">3.创建Server服务器</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/bin/webpack-dev-server.js#L107">webpack-dev-server.js#L100</a></td>
-</tr>
-<tr>
-<td style="text-align:left">4.更改config的entry属性</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L57">webpack-dev-server.js#L157</a></td>
-</tr>
-<tr>
-<td style="text-align:left">entry添加dev-server/client/index.js</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/utils/addEntries.js#L22">addEntries.js#L22</a></td>
-</tr>
-<tr>
-<td style="text-align:left">entry添加webpack/hot/dev-server.js</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/utils/addEntries.js#L30">addEntries.js#L30</a></td>
-</tr>
-<tr>
-<td style="text-align:left">5. setupHooks</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L122">Server.js#L122</a></td>
-</tr>
-<tr>
-<td style="text-align:left">6. 添加webpack的<code>done</code>事件回调</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L183">Server.js#L183</a></td>
-</tr>
-<tr>
-<td style="text-align:left">编译完成向websocket客户端推送消息，最主要信息还是新模块的hash值，后面的步骤根据这一hash值来进行模块热替换</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L178">Server.js#L178</a></td>
-</tr>
-<tr>
-<td style="text-align:left">7.创建express应用app</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L169">Server.js#L169</a></td>
-</tr>
-<tr>
-<td style="text-align:left">8. 添加webpack-dev-middleware中间件</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L208">Server.js#L208</a></td>
-</tr>
-<tr>
-<td style="text-align:left">以watch模式启动webpack编译，文件系统中某一个文件发生修改，webpack 监听到文件变化，根据配置文件对模块重新编译打包</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-middleware/blob/v3.7.2/index.js#L41">index.js#L41</a></td>
-</tr>
-<tr>
-<td style="text-align:left">设置文件系统为内存文件系统</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-middleware/blob/v3.7.2/index.js#L65">index.js#L65</a></td>
-</tr>
-<tr>
-<td style="text-align:left">返回一个中间件，负责返回生成的文件</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-middleware/blob/v3.7.2/lib/middleware.js#L20">middleware.js#L20</a></td>
-</tr>
-<tr>
-<td style="text-align:left">app中使用webpack-dev-middlerware返回的中间件</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L128">Server.js#L128</a></td>
-</tr>
-<tr>
-<td style="text-align:left">9. 创建http服务器并启动服务</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L135">Server.js#L135</a></td>
-</tr>
-<tr>
-<td style="text-align:left">10. 使用sockjs在浏览器端和服务端之间建立一个 websocket 长连接</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L745">Server.js#L745</a></td>
-</tr>
-<tr>
-<td style="text-align:left">创建socket服务器并监听connection事件</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/servers/SockJSServer.js#L33">SockJSServer.js#L33</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="t164.2. 客户端部分">4.2. 客户端部分 <a href="#t164.2. 客户端部分"> # </a></h3>
-<ol>
-<li><code>webpack-dev-server/client-src/default/index.js</code>端会监听到此<code>hash</code>消息,会保存此hash值</li>
-<li>客户端收到<code>ok</code>的消息后会执行<code>reloadApp</code>方法进行更新</li>
-<li>在reloadApp中会进行判断，是否支持热更新，如果支持的话发射<code>webpackHotUpdate</code>事件,如果不支持则直接刷新浏览器</li>
-<li>在<code>webpack/hot/dev-server.js</code>会监听<code>webpackHotUpdate</code>事件,然后执行<code>check()</code>方法进行检查</li>
-<li>在check方法里会调用<code>module.hot.check</code>方法</li>
-<li>它通过调用 <code>JsonpMainTemplate.runtime</code>的<code>hotDownloadManifest</code>方法，向 server 端发送 Ajax 请求，服务端返回一个 <code>Manifest</code>文件，该 <code>Manifest</code> 包含了所有要更新的模块的 <code>hash</code> 值和chunk名</li>
-<li>调用<code>JsonpMainTemplate.runtime</code>的<code>hotDownloadUpdateChunk</code>方法通过JSONP请求获取到最新的模块代码</li>
-<li>补丁JS取回来后会调用<code>JsonpMainTemplate.runtime.js</code>的<code>webpackHotUpdate</code>方法，里面会调用<code>hotAddUpdateChunk</code>方法,用新的模块替换掉旧的模块</li>
-<li>然后会调用<code>HotModuleReplacement.runtime.js</code>的<code>hotAddUpdateChunk</code>方法动态更新模块代
-码</li>
-<li>然后调用<code>hotApply</code>方法进行热更新</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">步骤</th>
-<th style="text-align:left">代码</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1.连接websocket服务器</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/client-src/default/socket.js#L25">socket.js#L25</a></td>
-</tr>
-<tr>
-<td style="text-align:left">2.websocket客户端监听事件</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/client-src/default/socket.js#L53">socket.js#L53</a></td>
-</tr>
-<tr>
-<td style="text-align:left">监听hash事件，保存此hash值</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/client-src/default/index.js#L55">index.js#L55</a></td>
-</tr>
-<tr>
-<td style="text-align:left">3.监听ok事件，执行reloadApp方法进行更新</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/client-src/default/index.js#L93">index.js#L93</a></td>
-</tr>
-<tr>
-<td style="text-align:left">4. 在reloadApp中会进行判断，是否支持热更新，如果支持的话发射<code>webpackHotUpdate</code>事件,如果不支持则直接刷新浏览器</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/client-src/default/utils/reloadApp.js#L7">reloadApp.js#L7</a></td>
-</tr>
-<tr>
-<td style="text-align:left">5. 在<code>webpack/hot/dev-server.js</code>会监听<code>webpackHotUpdate</code>事件</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack/blob/v4.39.1/hot/dev-server.js#L55">dev-server.js#L55</a></td>
-</tr>
-<tr>
-<td style="text-align:left">6. 在check方法里会调用<code>module.hot.check</code>方法</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack/blob/v4.39.1/hot/dev-server.js#L13">dev-server.js#L13</a></td>
-</tr>
-<tr>
-<td style="text-align:left">7. 调用<code>hotDownloadManifest</code>，向 server 端发送 Ajax 请求，服务端返回一个 Manifest文件(lastHash.hot-update.json)，该 Manifest 包含了本次编译hash值 和 更新模块的chunk名</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack/blob/v4.39.1/lib/HotModuleReplacement.runtime.js#L180">HotModuleReplacement.runtime.js#L180</a></td>
-</tr>
-<tr>
-<td style="text-align:left">8. 调用<code>JsonpMainTemplate.runtime</code>的<code>hotDownloadUpdateChunk</code>方法通过JSONP请求获取到最新的模块代码</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack/blob/v4.39.1/lib/web/JsonpMainTemplate.runtime.js#L14">JsonpMainTemplate.runtime.js#L14</a></td>
-</tr>
-<tr>
-<td style="text-align:left">9. 补丁JS取回来后会调用<code>JsonpMainTemplate.runtime.js</code>的<code>webpackHotUpdate</code>方法</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack/blob/v4.39.1/lib/web/JsonpMainTemplate.runtime.js#L8">JsonpMainTemplate.runtime.js#L8</a></td>
-</tr>
-<tr>
-<td style="text-align:left">10. 然后会调用<code>HotModuleReplacement.runtime.js</code>的<code>hotAddUpdateChunk</code>方法动态更新模块代码</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack/blob/v4.39.1/lib/HotModuleReplacement.runtime.js#L222">HotModuleReplacement.runtime.js#L222</a></td>
-</tr>
-<tr>
-<td style="text-align:left">11.然后调用<code>hotApply</code>方法进行热更新</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack/blob/v4.39.1/lib/HotModuleReplacement.runtime.js#L257">HotModuleReplacement.runtime.js#L257</a> <a href="https://github.com/webpack/webpack/blob/v4.39.1/lib/HotModuleReplacement.runtime.js#L278">HotModuleReplacement.runtime.js#L278</a></td>
-</tr>
-<tr>
-<td style="text-align:left">12.从缓存中删除旧模块</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack/blob/v4.39.1/lib/HotModuleReplacement.runtime.js#L510">HotModuleReplacement.runtime.js#L510</a></td>
-</tr>
-<tr>
-<td style="text-align:left">13.执行accept的回调</td>
-<td style="text-align:left"><a href="https://github.com/webpack/webpack/blob/v4.39.1/lib/HotModuleReplacement.runtime.js#L569">HotModuleReplacement.runtime.js#L569</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="t174.3 相关代码">4.3 相关代码 <a href="#t174.3 相关代码"> # </a></h3>
-<ul>
-<li><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/bin/webpack-dev-server.js">webpack-dev-server.js</a></li>
-<li><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js">Server.js</a></li>
-<li><a href="https://github.com/webpack/webpack-dev-middleware/blob/v3.7.0/index.js">webpack-dev-middleware/index.js</a></li>
-<li><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/servers/SockJSServer.js">SockJSServer.js</a></li>
-</ul>
-<p><img src="https://img.zhufengpeixun.com/1608382424775" alt="1608382424775.jpg"></p>
-<h2 id="t185.启动开发服务器">5.启动开发服务器 <a href="#t185.启动开发服务器"> # </a></h2>
-<h3 id="t195.1 startDevServer.js">5.1 startDevServer.js <a href="#t195.1 startDevServer.js"> # </a></h3>
-<p>startDevServer.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">"webpack"</span>)
+      <h2 id="t103.基础知识">3.基础知识 <a href="#t103.基础知识"> # </a></h2>
+      <h3 id="t113.1 module和chunk">3.1 module和chunk <a href="#t113.1 module和chunk"> # </a></h3>
+      <ul>
+        <li>在 webpack里有各种各样的模块</li>
+        <li>一般一个入口会依赖多个模块</li>
+        <li>一个入口一般会对应一个chunk,这个chunk里包含这个入口依赖的所有的模块 </li>
+      </ul>
+      <h3 id="t123.2 HotModuleReplacementPlugin">3.2 HotModuleReplacementPlugin <a
+          href="#t123.2 HotModuleReplacementPlugin"> # </a></h3>
+      <ul>
+        <li>webpack\lib\HotModuleReplacementPlugin.js</li>
+        <li>它会生成两个补丁文件<ul>
+            <li>上一次编译生成的hash.hot-update.json,说明从上次编译到现在哪些代码块发生成改变</li>
+            <li>chunk名字.上一次编译生成的hash.hot-update.js,存放着此代码块最新的模块定义,里面会调用<code>webpackHotUpdate</code>方法</li>
+          </ul>
+        </li>
+        <li>向代码块中注入HMR runtime代码,热更新的主要逻辑,比如拉取代码、执行代码、执行accept回调都是它注入的到chunk中的</li>
+        <li><code>hotCreateRequire</code>会帮我们给模块 module的<code>parents</code>、<code>children</code>赋值</li>
+      </ul>
+      <h3 id="t133.3 webpack的监控模式">3.3 webpack的监控模式 <a href="#t133.3 webpack的监控模式"> # </a></h3>
+      <ul>
+        <li>如果使用监控模式编译webpack的话,如果文件系统中有文件发生了改变,webpack会监听到并重新打包</li>
+        <li>每次编译会产生一个新的hash值</li>
+      </ul>
+      <h2 id="t144.工作流程">4.工作流程 <a href="#t144.工作流程"> # </a></h2>
+      <h3 id="t154.1. 服务器部分">4.1. 服务器部分 <a href="#t154.1. 服务器部分"> # </a></h3>
+      <ol>
+        <li>启动webpack-dev-server服务器</li>
+        <li>创建webpack实例</li>
+        <li>创建Server服务器</li>
+        <li>添加webpack的<code>done</code>事件回调，在编译完成后会向浏览器发送消息</li>
+        <li>创建express应用app</li>
+        <li>使用监控模式开始启动webpack编译,在 webpack 的 watch 模式下，文件系统中某一个文件发生修改，webpack 监听到文件变化，根据配置文件对模块重新编译打包，并将打包后的代码通过简单的
+          JavaScript 对象保存在内存中</li>
+        <li>设置文件系统为内存文件系统</li>
+        <li>添加webpack-dev-middleware中间件</li>
+        <li>创建http服务器并启动服务</li>
+        <li>使用sockjs在浏览器端和服务端之间建立一个 websocket 长连接，将 webpack
+          编译打包的各个阶段的状态信息告知浏览器端,浏览器端根据这些<code>socket</code>消息进行不同的操作。当然服务端传递的最主要信息还是新模块的<code>hash</code>值，后面的步骤根据这一<code>hash</code>值来进行模块热替换
+        </li>
+      </ol>
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align:left">步骤</th>
+            <th style="text-align:left">代码位置</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left">1.启动webpack-dev-server服务器</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/bin/webpack-dev-server.js#L83">webpack-dev-server.js#L159</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">2.创建webpack实例</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/bin/webpack-dev-server.js#L89">webpack-dev-server.js#L89</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">3.创建Server服务器</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/bin/webpack-dev-server.js#L107">webpack-dev-server.js#L100</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">4.更改config的entry属性</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L57">webpack-dev-server.js#L157</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">entry添加dev-server/client/index.js</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/utils/addEntries.js#L22">addEntries.js#L22</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">entry添加webpack/hot/dev-server.js</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/utils/addEntries.js#L30">addEntries.js#L30</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">5. setupHooks</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L122">Server.js#L122</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">6. 添加webpack的<code>done</code>事件回调</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L183">Server.js#L183</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">编译完成向websocket客户端推送消息，最主要信息还是新模块的hash值，后面的步骤根据这一hash值来进行模块热替换</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L178">Server.js#L178</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">7.创建express应用app</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L169">Server.js#L169</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">8. 添加webpack-dev-middleware中间件</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L208">Server.js#L208</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">以watch模式启动webpack编译，文件系统中某一个文件发生修改，webpack 监听到文件变化，根据配置文件对模块重新编译打包</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-middleware/blob/v3.7.2/index.js#L41">index.js#L41</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left">设置文件系统为内存文件系统</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-middleware/blob/v3.7.2/index.js#L65">index.js#L65</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left">返回一个中间件，负责返回生成的文件</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-middleware/blob/v3.7.2/lib/middleware.js#L20">middleware.js#L20</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">app中使用webpack-dev-middlerware返回的中间件</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L128">Server.js#L128</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">9. 创建http服务器并启动服务</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L135">Server.js#L135</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">10. 使用sockjs在浏览器端和服务端之间建立一个 websocket 长连接</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js#L745">Server.js#L745</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">创建socket服务器并监听connection事件</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/servers/SockJSServer.js#L33">SockJSServer.js#L33</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="t164.2. 客户端部分">4.2. 客户端部分 <a href="#t164.2. 客户端部分"> # </a></h3>
+      <ol>
+        <li><code>webpack-dev-server/client-src/default/index.js</code>端会监听到此<code>hash</code>消息,会保存此hash值</li>
+        <li>客户端收到<code>ok</code>的消息后会执行<code>reloadApp</code>方法进行更新</li>
+        <li>在reloadApp中会进行判断，是否支持热更新，如果支持的话发射<code>webpackHotUpdate</code>事件,如果不支持则直接刷新浏览器</li>
+        <li>在<code>webpack/hot/dev-server.js</code>会监听<code>webpackHotUpdate</code>事件,然后执行<code>check()</code>方法进行检查
+        </li>
+        <li>在check方法里会调用<code>module.hot.check</code>方法</li>
+        <li>它通过调用 <code>JsonpMainTemplate.runtime</code>的<code>hotDownloadManifest</code>方法，向 server 端发送 Ajax 请求，服务端返回一个
+          <code>Manifest</code>文件，该 <code>Manifest</code> 包含了所有要更新的模块的 <code>hash</code> 值和chunk名</li>
+        <li>调用<code>JsonpMainTemplate.runtime</code>的<code>hotDownloadUpdateChunk</code>方法通过JSONP请求获取到最新的模块代码</li>
+        <li>
+          补丁JS取回来后会调用<code>JsonpMainTemplate.runtime.js</code>的<code>webpackHotUpdate</code>方法，里面会调用<code>hotAddUpdateChunk</code>方法,用新的模块替换掉旧的模块
+        </li>
+        <li>然后会调用<code>HotModuleReplacement.runtime.js</code>的<code>hotAddUpdateChunk</code>方法动态更新模块代
+          码</li>
+        <li>然后调用<code>hotApply</code>方法进行热更新</li>
+      </ol>
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align:left">步骤</th>
+            <th style="text-align:left">代码</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left">1.连接websocket服务器</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/client-src/default/socket.js#L25">socket.js#L25</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">2.websocket客户端监听事件</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/client-src/default/socket.js#L53">socket.js#L53</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">监听hash事件，保存此hash值</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/client-src/default/index.js#L55">index.js#L55</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">3.监听ok事件，执行reloadApp方法进行更新</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/client-src/default/index.js#L93">index.js#L93</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">4.
+              在reloadApp中会进行判断，是否支持热更新，如果支持的话发射<code>webpackHotUpdate</code>事件,如果不支持则直接刷新浏览器</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/client-src/default/utils/reloadApp.js#L7">reloadApp.js#L7</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">5. 在<code>webpack/hot/dev-server.js</code>会监听<code>webpackHotUpdate</code>事件
+            </td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack/blob/v4.39.1/hot/dev-server.js#L55">dev-server.js#L55</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left">6. 在check方法里会调用<code>module.hot.check</code>方法</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack/blob/v4.39.1/hot/dev-server.js#L13">dev-server.js#L13</a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left">7. 调用<code>hotDownloadManifest</code>，向 server 端发送 Ajax 请求，服务端返回一个
+              Manifest文件(lastHash.hot-update.json)，该 Manifest 包含了本次编译hash值 和 更新模块的chunk名</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack/blob/v4.39.1/lib/HotModuleReplacement.runtime.js#L180">HotModuleReplacement.runtime.js#L180</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">8.
+              调用<code>JsonpMainTemplate.runtime</code>的<code>hotDownloadUpdateChunk</code>方法通过JSONP请求获取到最新的模块代码</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack/blob/v4.39.1/lib/web/JsonpMainTemplate.runtime.js#L14">JsonpMainTemplate.runtime.js#L14</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">9.
+              补丁JS取回来后会调用<code>JsonpMainTemplate.runtime.js</code>的<code>webpackHotUpdate</code>方法</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack/blob/v4.39.1/lib/web/JsonpMainTemplate.runtime.js#L8">JsonpMainTemplate.runtime.js#L8</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">10.
+              然后会调用<code>HotModuleReplacement.runtime.js</code>的<code>hotAddUpdateChunk</code>方法动态更新模块代码</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack/blob/v4.39.1/lib/HotModuleReplacement.runtime.js#L222">HotModuleReplacement.runtime.js#L222</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">11.然后调用<code>hotApply</code>方法进行热更新</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack/blob/v4.39.1/lib/HotModuleReplacement.runtime.js#L257">HotModuleReplacement.runtime.js#L257</a>
+              <a
+                href="https://github.com/webpack/webpack/blob/v4.39.1/lib/HotModuleReplacement.runtime.js#L278">HotModuleReplacement.runtime.js#L278</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">12.从缓存中删除旧模块</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack/blob/v4.39.1/lib/HotModuleReplacement.runtime.js#L510">HotModuleReplacement.runtime.js#L510</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">13.执行accept的回调</td>
+            <td style="text-align:left"><a
+                href="https://github.com/webpack/webpack/blob/v4.39.1/lib/HotModuleReplacement.runtime.js#L569">HotModuleReplacement.runtime.js#L569</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="t174.3 相关代码">4.3 相关代码 <a href="#t174.3 相关代码"> # </a></h3>
+      <ul>
+        <li><a
+            href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/bin/webpack-dev-server.js">webpack-dev-server.js</a>
+        </li>
+        <li><a href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/Server.js">Server.js</a></li>
+        <li><a
+            href="https://github.com/webpack/webpack-dev-middleware/blob/v3.7.0/index.js">webpack-dev-middleware/index.js</a>
+        </li>
+        <li><a
+            href="https://github.com/webpack/webpack-dev-server/blob/v3.7.2/lib/servers/SockJSServer.js">SockJSServer.js</a>
+        </li>
+      </ul>
+      <p><img src="https://img.zhufengpeixun.com/1608382424775" alt="1608382424775.jpg"></p>
+      <h2 id="t185.启动开发服务器">5.启动开发服务器 <a href="#t185.启动开发服务器"> # </a></h2>
+      <h3 id="t195.1 startDevServer.js">5.1 startDevServer.js <a href="#t195.1 startDevServer.js"> # </a></h3>
+      <p>startDevServer.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">"webpack"</span>)
 <span class="hljs-keyword">const</span> Server = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./webpack-dev-server/lib/Server'</span>);
 <span class="hljs-keyword">const</span> config = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./webpack.config"</span>)
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">startDevServer</span>(<span class="hljs-params">compiler,options</span>) </span>{
@@ -333,9 +827,9 @@ render();
 <span class="hljs-keyword">const</span> compiler = webpack(config);
 startDevServer(compiler,config);
 </code></pre>
-<h3 id="t205.2 Server.js">5.2 Server.js <a href="#t205.2 Server.js"> # </a></h3>
-<p>webpack-dev-server\lib\Server.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+      <h3 id="t205.2 Server.js">5.2 Server.js <a href="#t205.2 Server.js"> # </a></h3>
+      <p>webpack-dev-server\lib\Server.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
 <span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">"http"</span>);
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Server</span> </span>{
     <span class="hljs-keyword">constructor</span>(compiler,devServerOptions) {
@@ -356,18 +850,18 @@ startDevServer(compiler,config);
 }
 <span class="hljs-built_in">module</span>.exports = Server;
 </code></pre>
-<h3 id="t215.3 package.json">5.3 package.json <a href="#t215.3 package.json"> # </a></h3>
-<p>package.json</p>
-<pre><code class="lang-diff">  "scripts": {
+      <h3 id="t215.3 package.json">5.3 package.json <a href="#t215.3 package.json"> # </a></h3>
+      <p>package.json</p>
+      <pre><code class="lang-diff">  "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server",
 <span class="hljs-addition">+   "start":"node ./startDevServer.js"</span>
   },
 </code></pre>
-<h2 id="t226.给entry添加客户端">6.给entry添加客户端 <a href="#t226.给entry添加客户端"> # </a></h2>
-<h3 id="t236.1 Server.js">6.1 Server.js <a href="#t236.1 Server.js"> # </a></h3>
-<p>webpack-dev-server\lib\server\Server.js</p>
-<pre><code class="lang-diff">const express = require("express");
+      <h2 id="t226.给entry添加客户端">6.给entry添加客户端 <a href="#t226.给entry添加客户端"> # </a></h2>
+      <h3 id="t236.1 Server.js">6.1 Server.js <a href="#t236.1 Server.js"> # </a></h3>
+      <p>webpack-dev-server\lib\server\Server.js</p>
+      <pre><code class="lang-diff">const express = require("express");
 <span class="hljs-addition">+const updateCompiler = require('./utils/updateCompiler');</span>
 const http = require("http");
 class Server {
@@ -390,9 +884,9 @@ class Server {
 }
 module.exports = Server;
 </code></pre>
-<h3 id="t246.2 updateCompiler.js">6.2 updateCompiler.js <a href="#t246.2 updateCompiler.js"> # </a></h3>
-<p>webpack-dev-server\lib\utils\updateCompiler.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">"path"</span>);
+      <h3 id="t246.2 updateCompiler.js">6.2 updateCompiler.js <a href="#t246.2 updateCompiler.js"> # </a></h3>
+      <p>webpack-dev-server\lib\utils\updateCompiler.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">"path"</span>);
 <span class="hljs-keyword">let</span> updateCompiler = <span class="hljs-function">(<span class="hljs-params">compiler</span>) =&gt;</span> {
     <span class="hljs-keyword">const</span> config = compiler.options;
     <span class="hljs-comment">//来自webpack-dev-server/client/index.js 在浏览器启动WS客户端</span>
@@ -404,18 +898,18 @@ module.exports = Server;
 }
 <span class="hljs-built_in">module</span>.exports = updateCompiler;
 </code></pre>
-<h3 id="t256.3 client\index.js">6.3 client\index.js <a href="#t256.3 client\index.js"> # </a></h3>
-<p>webpack-dev-server\lib\client\index.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'webpack-dev-server\client\index.js'</span>);
+      <h3 id="t256.3 client\index.js">6.3 client\index.js <a href="#t256.3 client\index.js"> # </a></h3>
+      <p>webpack-dev-server\lib\client\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'webpack-dev-server\client\index.js'</span>);
 </code></pre>
-<h3 id="t266.4 dev-server.js">6.4 dev-server.js <a href="#t266.4 dev-server.js"> # </a></h3>
-<p>webpack-dev-server\lib\client\hot\dev-server.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'webpack-dev-server\lib\client\hot\dev-server.js'</span>);
+      <h3 id="t266.4 dev-server.js">6.4 dev-server.js <a href="#t266.4 dev-server.js"> # </a></h3>
+      <p>webpack-dev-server\lib\client\hot\dev-server.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'webpack-dev-server\lib\client\hot\dev-server.js'</span>);
 </code></pre>
-<h2 id="t277.添加webpack的done事件回调">7.添加webpack的done事件回调 <a href="#t277.添加webpack的done事件回调"> # </a></h2>
-<h3 id="t287.1 Server.js">7.1 Server.js <a href="#t287.1 Server.js"> # </a></h3>
-<p>webpack-dev-server\lib\server\Server.js</p>
-<pre><code class="lang-diff">const express = require("express");
+      <h2 id="t277.添加webpack的done事件回调">7.添加webpack的done事件回调 <a href="#t277.添加webpack的done事件回调"> # </a></h2>
+      <h3 id="t287.1 Server.js">7.1 Server.js <a href="#t287.1 Server.js"> # </a></h3>
+      <p>webpack-dev-server\lib\server\Server.js</p>
+      <pre><code class="lang-diff">const express = require("express");
 const updateCompiler = require('./utils/updateCompiler');
 const http = require("http");
 class Server {
@@ -450,13 +944,14 @@ class Server {
 }
 module.exports = Server;
 </code></pre>
-<h2 id="t298.webpack-dev-middleware中间件">8.webpack-dev-middleware中间件 <a href="#t298.webpack-dev-middleware中间件"> # </a></h2>
-<ul>
-<li><code>webpack-dev-middleware</code> 实现webpack编译和文件相关操作</li>
-</ul>
-<h3 id="t308.1 Server.js">8.1 Server.js <a href="#t308.1 Server.js"> # </a></h3>
-<p>webpack-dev-server\lib\Server.js</p>
-<pre><code class="lang-diff">const express = require("express");
+      <h2 id="t298.webpack-dev-middleware中间件">8.webpack-dev-middleware中间件 <a href="#t298.webpack-dev-middleware中间件"> #
+        </a></h2>
+      <ul>
+        <li><code>webpack-dev-middleware</code> 实现webpack编译和文件相关操作</li>
+      </ul>
+      <h3 id="t308.1 Server.js">8.1 Server.js <a href="#t308.1 Server.js"> # </a></h3>
+      <p>webpack-dev-server\lib\Server.js</p>
+      <pre><code class="lang-diff">const express = require("express");
 const updateCompiler = require('./utils/updateCompiler');
 <span class="hljs-addition">+const webpackDevMiddleware = require('../../webpack-dev-middleware');</span>
 const http = require("http");
@@ -499,9 +994,10 @@ class Server {
 }
 module.exports = Server;
 </code></pre>
-<h3 id="t318.2 webpack-dev-middleware\index.js">8.2 webpack-dev-middleware\index.js <a href="#t318.2 webpack-dev-middleware\index.js"> # </a></h3>
-<p>webpack-dev-middleware\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> middleware = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./middleware"</span>);
+      <h3 id="t318.2 webpack-dev-middleware\index.js">8.2 webpack-dev-middleware\index.js <a
+          href="#t318.2 webpack-dev-middleware\index.js"> # </a></h3>
+      <p>webpack-dev-middleware\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> middleware = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./middleware"</span>);
 <span class="hljs-keyword">const</span> MemoryFileSystem = <span class="hljs-built_in">require</span>(<span class="hljs-string">"memory-fs"</span>);
 <span class="hljs-keyword">let</span> memoryFileSystem = <span class="hljs-keyword">new</span> MemoryFileSystem();
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">webpackDevMiddleware</span>(<span class="hljs-params">compiler</span>) </span>{
@@ -517,9 +1013,9 @@ module.exports = Server;
 
 <span class="hljs-built_in">module</span>.exports = webpackDevMiddleware;
 </code></pre>
-<h3 id="t328.3 middleware.js">8.3 middleware.js <a href="#t328.3 middleware.js"> # </a></h3>
-<p>webpack-dev-middleware\middleware.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> mime = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mime'</span>);
+      <h3 id="t328.3 middleware.js">8.3 middleware.js <a href="#t328.3 middleware.js"> # </a></h3>
+      <p>webpack-dev-middleware\middleware.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> mime = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mime'</span>);
 <span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">"path"</span>);
 <span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">wrapper</span>(<span class="hljs-params">context</span>) </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">middleware</span>(<span class="hljs-params">req, res, next</span>) </span>{
@@ -541,10 +1037,10 @@ module.exports = Server;
     };
 };
 </code></pre>
-<h2 id="t339.创建消息服务器">9.创建消息服务器 <a href="#t339.创建消息服务器"> # </a></h2>
-<h3 id="t349.1 Server.js">9.1 Server.js <a href="#t349.1 Server.js"> # </a></h3>
-<p>webpack-dev-server\lib\server\Server.js</p>
-<pre><code class="lang-diff">const express = require("express");
+      <h2 id="t339.创建消息服务器">9.创建消息服务器 <a href="#t339.创建消息服务器"> # </a></h2>
+      <h3 id="t349.1 Server.js">9.1 Server.js <a href="#t349.1 Server.js"> # </a></h3>
+      <p>webpack-dev-server\lib\server\Server.js</p>
+      <pre><code class="lang-diff">const express = require("express");
 const updateCompiler = require('./utils/updateCompiler');
 const webpackDevMiddleware = require('../../webpack-dev-middleware');
 const http = require("http");
@@ -601,10 +1097,10 @@ class Server {
 }
 module.exports = Server;
 </code></pre>
-<h2 id="t351.客户端连接消息服务器">1.客户端连接消息服务器 <a href="#t351.客户端连接消息服务器"> # </a></h2>
-<h3 id="t361.1 index.html">1.1 index.html <a href="#t361.1 index.html"> # </a></h3>
-<p>src\index.html</p>
-<pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
+      <h2 id="t351.客户端连接消息服务器">1.客户端连接消息服务器 <a href="#t351.客户端连接消息服务器"> # </a></h2>
+      <h3 id="t361.1 index.html">1.1 index.html <a href="#t361.1 index.html"> # </a></h3>
+      <p>src\index.html</p>
+      <pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -618,9 +1114,10 @@ module.exports = Server;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h3 id="t371.2 webpack\hot\emitter.js">1.2 webpack\hot\emitter.js <a href="#t371.2 webpack\hot\emitter.js"> # </a></h3>
-<p>webpack\hot\emitter.js</p>
-<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EventEmitter</span> </span>{
+      <h3 id="t371.2 webpack\hot\emitter.js">1.2 webpack\hot\emitter.js <a href="#t371.2 webpack\hot\emitter.js"> # </a>
+      </h3>
+      <p>webpack\hot\emitter.js</p>
+      <pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EventEmitter</span> </span>{
   <span class="hljs-keyword">constructor</span>() {
     <span class="hljs-keyword">this</span>.events = {};
   }
@@ -633,9 +1130,10 @@ module.exports = Server;
 }
 <span class="hljs-built_in">module</span>.exports = <span class="hljs-keyword">new</span> EventEmitter();
 </code></pre>
-<h3 id="t381.3 webpack-dev-server\client\index.js">1.3 webpack-dev-server\client\index.js <a href="#t381.3 webpack-dev-server\client\index.js"> # </a></h3>
-<p>webpack-dev-server\client\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> hotEmitter = <span class="hljs-built_in">require</span>(<span class="hljs-string">"../../webpack/hot/emitter"</span>);
+      <h3 id="t381.3 webpack-dev-server\client\index.js">1.3 webpack-dev-server\client\index.js <a
+          href="#t381.3 webpack-dev-server\client\index.js"> # </a></h3>
+      <p>webpack-dev-server\client\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">var</span> hotEmitter = <span class="hljs-built_in">require</span>(<span class="hljs-string">"../../webpack/hot/emitter"</span>);
 <span class="hljs-keyword">var</span> socket = io();
 <span class="hljs-keyword">var</span> currentHash = <span class="hljs-string">""</span>;
 <span class="hljs-keyword">var</span> initial = <span class="hljs-literal">true</span>;
@@ -653,17 +1151,18 @@ socket.on(<span class="hljs-string">"ok"</span>, () =&gt; {
   hotEmitter.emit(<span class="hljs-string">"webpackHotUpdate"</span>, currentHash);
 }
 </code></pre>
-<h3 id="t391.4 webpack\hot\dev-server.js">1.4 webpack\hot\dev-server.js <a href="#t391.4 webpack\hot\dev-server.js"> # </a></h3>
-<p>webpack\hot\dev-server.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> hotEmitter = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../../webpack/hot/emitter'</span>);
+      <h3 id="t391.4 webpack\hot\dev-server.js">1.4 webpack\hot\dev-server.js <a
+          href="#t391.4 webpack\hot\dev-server.js"> # </a></h3>
+      <p>webpack\hot\dev-server.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">var</span> hotEmitter = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../../webpack/hot/emitter'</span>);
 hotEmitter.on(<span class="hljs-string">"webpackHotUpdate"</span>, (currentHash) =&gt; {
    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'dev-server'</span>,currentHash);
 })
 </code></pre>
-<h2 id="t402.打包后文件分析">2.打包后文件分析 <a href="#t402.打包后文件分析"> # </a></h2>
-<h3 id="t412.1 static\hmr.html">2.1 static\hmr.html <a href="#t412.1 static\hmr.html"> # </a></h3>
-<p>static\hmr.html</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+      <h2 id="t402.打包后文件分析">2.打包后文件分析 <a href="#t402.打包后文件分析"> # </a></h2>
+      <h3 id="t412.1 static\hmr.html">2.1 static\hmr.html <a href="#t412.1 static\hmr.html"> # </a></h3>
+      <p>static\hmr.html</p>
+      <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
@@ -677,9 +1176,9 @@ hotEmitter.on(<span class="hljs-string">"webpackHotUpdate"</span>, (currentHash)
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"hmr.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h3 id="t422.2 static\hmr.js">2.2 static\hmr.js <a href="#t422.2 static\hmr.js"> # </a></h3>
-<p>static\hmr.js</p>
-<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <h3 id="t422.2 static\hmr.js">2.2 static\hmr.js <a href="#t422.2 static\hmr.js"> # </a></h3>
+      <p>static\hmr.js</p>
+      <pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
   <span class="hljs-keyword">var</span> modules = {
     <span class="hljs-string">"./src/title.js"</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-built_in">module</span></span>) =&gt;</span> {
       <span class="hljs-built_in">module</span>.exports = <span class="hljs-string">"title3"</span>;
@@ -744,9 +1243,9 @@ hotEmitter.on(<span class="hljs-string">"webpackHotUpdate"</span>, (currentHash)
   })();
 })();
 </code></pre>
-<h2 id="t432.创建模块父子关系">2.创建模块父子关系 <a href="#t432.创建模块父子关系"> # </a></h2>
-<h3 id="t442.1 hmr.js">2.1 hmr.js <a href="#t442.1 hmr.js"> # </a></h3>
-<pre><code class="lang-diff">(() =&gt; {
+      <h2 id="t432.创建模块父子关系">2.创建模块父子关系 <a href="#t432.创建模块父子关系"> # </a></h2>
+      <h3 id="t442.1 hmr.js">2.1 hmr.js <a href="#t442.1 hmr.js"> # </a></h3>
+      <pre><code class="lang-diff">(() =&gt; {
   var modules = {
 <span class="hljs-addition">+    "./src/index.js": (module,exports,require) =&gt; {</span>
 <span class="hljs-addition">+      let render = () =&gt; {</span>
@@ -835,10 +1334,10 @@ hotEmitter.on(<span class="hljs-string">"webpackHotUpdate"</span>, (currentHash)
 <span class="hljs-addition">+  return hotCreateRequire("./src/index.js")("./src/index.js");</span>
 })();
 </code></pre>
-<h2 id="t453.热更新">3.热更新 <a href="#t453.热更新"> # </a></h2>
-<h3 id="t463.1 webpack.config.js">3.1 webpack.config.js <a href="#t463.1 webpack.config.js"> # </a></h3>
-<p>webpack.config.js</p>
-<pre><code class="lang-diff">module.exports = {
+      <h2 id="t453.热更新">3.热更新 <a href="#t453.热更新"> # </a></h2>
+      <h3 id="t463.1 webpack.config.js">3.1 webpack.config.js <a href="#t463.1 webpack.config.js"> # </a></h3>
+      <p>webpack.config.js</p>
+      <pre><code class="lang-diff">module.exports = {
     output: {
         filename: "[name].js",
         path: path.resolve(__dirname, "dist"),
@@ -846,9 +1345,9 @@ hotEmitter.on(<span class="hljs-string">"webpackHotUpdate"</span>, (currentHash)
     }
 }
 </code></pre>
-<h3 id="t473.2 hmr.js">3.2 hmr.js <a href="#t473.2 hmr.js"> # </a></h3>
-<p>static\hmr.js</p>
-<pre><code class="lang-diff">(() =&gt; {
+      <h3 id="t473.2 hmr.js">3.2 hmr.js <a href="#t473.2 hmr.js"> # </a></h3>
+      <p>static\hmr.js</p>
+      <pre><code class="lang-diff">(() =&gt; {
    var cache = {};
 <span class="hljs-addition">+  var currentHash;</span>
 <span class="hljs-addition">+  var lastHash;</span>
@@ -1003,9 +1502,9 @@ hotEmitter.on(<span class="hljs-string">"webpackHotUpdate"</span>, (currentHash)
 })();
 
 </code></pre>
-<h2 id="t484.注释版">4.注释版 <a href="#t484.注释版"> # </a></h2>
-<h3 id="t494.1 hmr.js">4.1 hmr.js <a href="#t494.1 hmr.js"> # </a></h3>
-<pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <h2 id="t484.注释版">4.注释版 <a href="#t484.注释版"> # </a></h2>
+      <h3 id="t494.1 hmr.js">4.1 hmr.js <a href="#t494.1 hmr.js"> # </a></h3>
+      <pre><code class="lang-js">(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
   <span class="hljs-keyword">var</span> cache = {};
   <span class="hljs-keyword">var</span> currentHash;
   <span class="hljs-keyword">var</span> lastHash;
@@ -1172,9 +1671,9 @@ hotEmitter.on(<span class="hljs-string">"webpackHotUpdate"</span>, (currentHash)
   <span class="hljs-keyword">return</span> hotCreateRequire(<span class="hljs-string">"./src/index.js"</span>)(<span class="hljs-string">"./src/index.js"</span>);
 })();
 </code></pre>
-<h3 id="t504.2 startDevServer.js">4.2 startDevServer.js <a href="#t504.2 startDevServer.js"> # </a></h3>
-<p>startDevServer.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">"webpack"</span>)
+      <h3 id="t504.2 startDevServer.js">4.2 startDevServer.js <a href="#t504.2 startDevServer.js"> # </a></h3>
+      <p>startDevServer.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">"webpack"</span>)
 <span class="hljs-keyword">const</span> Server = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./webpack-dev-server/lib/Server'</span>);
 <span class="hljs-keyword">const</span> config = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./webpack.config"</span>)
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">startDevServer</span>(<span class="hljs-params">compiler,options</span>) </span>{
@@ -1191,9 +1690,10 @@ hotEmitter.on(<span class="hljs-string">"webpackHotUpdate"</span>, (currentHash)
 <span class="hljs-keyword">const</span> compiler = webpack(config);
 startDevServer(compiler,config);
 </code></pre>
-<h3 id="t514.3 webpack-dev-server\lib\Server.js">4.3 webpack-dev-server\lib\Server.js <a href="#t514.3 webpack-dev-server\lib\Server.js"> # </a></h3>
-<p>webpack-dev-server\lib\Server.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
+      <h3 id="t514.3 webpack-dev-server\lib\Server.js">4.3 webpack-dev-server\lib\Server.js <a
+          href="#t514.3 webpack-dev-server\lib\Server.js"> # </a></h3>
+      <p>webpack-dev-server\lib\Server.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">"express"</span>);
 <span class="hljs-keyword">const</span> updateCompiler = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./utils/updateCompiler'</span>);
 <span class="hljs-keyword">const</span> webpackDevMiddleware = <span class="hljs-built_in">require</span>(<span class="hljs-string">'../../webpack-dev-middleware'</span>);
 <span class="hljs-keyword">const</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">"http"</span>);
@@ -1259,9 +1759,10 @@ startDevServer(compiler,config);
 }
 <span class="hljs-built_in">module</span>.exports = Server;
 </code></pre>
-<h3 id="t524.4 webpack-dev-middleware\index.js">4.4 webpack-dev-middleware\index.js <a href="#t524.4 webpack-dev-middleware\index.js"> # </a></h3>
-<p>webpack-dev-middleware\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> middleware = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./middleware"</span>);
+      <h3 id="t524.4 webpack-dev-middleware\index.js">4.4 webpack-dev-middleware\index.js <a
+          href="#t524.4 webpack-dev-middleware\index.js"> # </a></h3>
+      <p>webpack-dev-middleware\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> middleware = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./middleware"</span>);
 <span class="hljs-keyword">const</span> MemoryFileSystem = <span class="hljs-built_in">require</span>(<span class="hljs-string">"memory-fs"</span>);
 <span class="hljs-keyword">let</span> memoryFileSystem = <span class="hljs-keyword">new</span> MemoryFileSystem();
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">webpackDevMiddleware</span>(<span class="hljs-params">compiler</span>) </span>{
@@ -1280,5 +1781,5 @@ startDevServer(compiler,config);
 </code></pre>
 
     </div>
-</div>
+  </div>
 </body>

@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        .page-toc > ul .red {
+        .page-toc>ul .red {
             background: #f3f3f3;
             z-index: 1;
             border-left: 3px solid #009a61;
@@ -15,71 +15,476 @@
         }
     </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li class="active"><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
-    <div class="page-toc">
-        <ul><li><a href="#t01. DOM事件">1. DOM事件</a><ul><li><a href="#t11.1 事件">1.1 事件</a></li><li><a href="#t21.2 DOM事件流">1.2 DOM事件流</a><ul><li><a href="#t31.2.1  事件捕获">1.2.1  事件捕获</a></li><li><a href="#t41.2.2  目标阶段">1.2.2  目标阶段</a></li><li><a href="#t51.2.3  事件冒泡">1.2.3  事件冒泡</a></li></ul></li><li><a href="#t61.3 addEventListener">1.3 addEventListener</a></li><li><a href="#t71.4 阻止冒泡">1.4 阻止冒泡</a></li><li><a href="#t81.5 阻止默认行为">1.5 阻止默认行为</a></li><li><a href="#t91.6 事件代理">1.6 事件代理</a></li></ul></li><li><a href="#t102.React事件系统">2.React事件系统</a><ul><li><a href="#t112.1 面试题">2.1 面试题</a></li><li><a href="#t122.2 使用">2.2 使用</a></li><li><a href="#t132.3 简易实现">2.3 简易实现</a></li><li><a href="#t142.4 源码实现">2.4 源码实现</a></li></ul></li><li><a href="#t153. 初次渲染">3. 初次渲染</a><ul><li><a href="#t163.1 src\index.js">3.1 src\index.js</a></li><li><a href="#t173.2 react.js">3.2 react.js</a></li><li><a href="#t183.3 react-dom.js">3.3 react-dom.js</a></li></ul></li><li><a href="#t194. 事件注册">4. 事件注册</a><ul><li><a href="#t204.1 react-dom.js">4.1 react-dom.js</a></li><li><a href="#t214.2 EventRegistry.js">4.2 EventRegistry.js</a></li><li><a href="#t224.3 DOMEventProperties.js">4.3 DOMEventProperties.js</a></li><li><a href="#t234.4 SimpleEventPlugin.js">4.4 SimpleEventPlugin.js</a></li><li><a href="#t244.5 DOMPluginEventSystem.js">4.5 DOMPluginEventSystem.js</a></li></ul></li><li><a href="#t255. 事件绑定">5. 事件绑定</a><ul><li><a href="#t265.1 DOMPluginEventSystem.js">5.1 DOMPluginEventSystem.js</a></li><li><a href="#t275.2 EventSystemFlags.js">5.2 EventSystemFlags.js</a></li><li><a href="#t285.3 EventListener.js">5.3 EventListener.js</a></li><li><a href="#t295.4 ReactDOMComponentTree.js">5.4 ReactDOMComponentTree.js</a></li><li><a href="#t305.5 ReactDOMEventListener.js">5.5 ReactDOMEventListener.js</a></li></ul></li><li><a href="#t316 事件触发">6 事件触发</a><ul><li><a href="#t326.1 构建fiber树">6.1 构建fiber树</a><ul><li><a href="#t336.1.1 react-dom.js">6.1.1 react-dom.js</a></li><li><a href="#t346.1.2 ReactWorkTags.js">6.1.2 ReactWorkTags.js</a></li><li><a href="#t356.1.3 ReactDOMComponentTree.js">6.1.3 ReactDOMComponentTree.js</a></li><li><a href="#t366.1.4 ReactDOMEventListener.js">6.1.4 ReactDOMEventListener.js</a></li></ul></li><li><a href="#t376.2 收集事件函数">6.2 收集事件函数</a><ul><li><a href="#t386.2.1 ReactDOMEventListener.js">6.2.1 ReactDOMEventListener.js</a></li><li><a href="#t396.2.2 DOMPluginEventSystem.js">6.2.2 DOMPluginEventSystem.js</a></li><li><a href="#t406.2.3 SimpleEventPlugin.js">6.2.3 SimpleEventPlugin.js</a></li><li><a href="#t416.2.4 getListener.js">6.2.4 getListener.js</a></li><li><a href="#t426.2.5 SyntheticEvent.js">6.2.5 SyntheticEvent.js</a></li></ul></li><li><a href="#t436.3 执行事件函数">6.3 执行事件函数</a><ul><li><a href="#t446.3.1 DOMPluginEventSystem.js">6.3.1 DOMPluginEventSystem.js</a></li></ul></li></ul></li><li><a href="#t457 批量执行">7 批量执行</a><ul><li><a href="#t467.1 ReactDOMUpdateBatching.js">7.1 ReactDOMUpdateBatching.js</a></li><li><a href="#t477.2 ReactDOMEventListener.js">7.2 ReactDOMEventListener.js</a></li></ul></li><li><a href="#t488 支持onChange事件">8 支持onChange事件</a><ul><li><a href="#t498.1 src\index.js">8.1 src\index.js</a></li><li><a href="#t508.2 SyntheticEvent.js">8.2 SyntheticEvent.js</a></li><li><a href="#t518.3 ChangeEventPlugin.js">8.3 ChangeEventPlugin.js</a></li><li><a href="#t528.4 DOMPluginEventSystem.js">8.4 DOMPluginEventSystem.js</a></li></ul></li></ul>
+<body class="modal-open" style="padding-right: 15px;">
+    <div class="nav">
+        <div class="logo">
+
+            珠峰架构师成长计划
+
+        </div>
+        <ul>
+            <li><a href="../index.html">0.Async</a></li>
+            <li><a href="../html/0.editor.html">0.editor</a></li>
+            <li><a href="../html/0.module.html">0.module</a></li>
+            <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+            <li><a href="../html/2.Promise.html">2.Promise</a></li>
+            <li><a href="../html/3.Node.html">3.Node</a></li>
+            <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+            <li><a href="../html/5.REPL.html">5.REPL</a></li>
+            <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+            <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+            <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+            <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+            <li><a href="../html/10.fs.html">10.fs</a></li>
+            <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+            <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+            <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+            <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+            <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+            <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+            <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+            <li><a href="../html/13.tcp.html">13.tcp</a></li>
+            <li><a href="../html/14.http-1.html">14.http-1</a></li>
+            <li><a href="../html/14.http-2.html">14.http-2</a></li>
+            <li><a href="../html/15.compress.html">15.compress</a></li>
+            <li><a href="../html/16.crypto.html">16.crypto</a></li>
+            <li><a href="../html/17.process.html">17.process</a></li>
+            <li><a href="../html/18.yargs.html">18.yargs</a></li>
+            <li><a href="../html/19.cache.html">19.cache</a></li>
+            <li><a href="../html/20.action.html">20.action</a></li>
+            <li><a href="../html/21.https.html">21.https</a></li>
+            <li><a href="../html/22.cookie.html">22.cookie</a></li>
+            <li><a href="../html/23.session.html">23.session</a></li>
+            <li><a href="../html/24.express-1.html">24.express-1</a></li>
+            <li><a href="../html/24.express-2.html">24.express-2</a></li>
+            <li><a href="../html/24.express-3.html">24.express-3</a></li>
+            <li><a href="../html/24.express-4.html">24.express-4</a></li>
+            <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+            <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+            <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+            <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+            <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+            <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+            <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+            <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+            <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+            <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+            <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+            <li><a href="../html/28.redux.html">28.redux</a></li>
+            <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+            <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+            <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+            <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+            <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+            <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+            <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+            <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+            <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+            <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+            <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+            <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+            <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+            <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+            <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+            <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+            <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+            <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+            <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+            <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+            <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+            <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+            <li><a href="../html/31.dva.html">31.dva</a></li>
+            <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+            <li><a href="../html/33.redis.html">33.redis</a></li>
+            <li><a href="../html/34.unittest.html">34.unittest</a></li>
+            <li><a href="../html/35.jwt.html">35.jwt</a></li>
+            <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+            <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+            <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+            <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+            <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+            <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+            <li><a href="../html/38.chat.html">38.chat</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+            <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+            <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+            <li><a href="../html/40.deploy.html">40.deploy</a></li>
+            <li><a href="../html/41.safe.html">41.safe</a></li>
+            <li><a href="../html/42.test.html">42.test</a></li>
+            <li><a href="../html/43.nginx.html">43.nginx</a></li>
+            <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+            <li><a href="../html/45.docker.html">45.docker</a></li>
+            <li><a href="../html/46.elastic.html">46.elastic</a></li>
+            <li><a href="../html/47.oauth.html">47.oauth</a></li>
+            <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/52.UML.html">52.UML</a></li>
+            <li><a href="../html/53.design.html">53.design</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/54.linux.html">54.linux</a></li>
+            <li><a href="../html/57.ts.html">57.ts</a></li>
+            <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+            <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+            <li><a href="../html/59.ketang.html">59.ketang</a></li>
+            <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+            <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+            <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+            <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+            <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+            <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+            <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+            <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+            <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+            <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+            <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+            <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+            <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+            <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+            <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+            <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+            <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+            <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+            <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+            <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+            <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+            <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+            <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+            <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+            <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+            <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+            <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+            <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+            <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+            <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+            <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+            <li><a href="../html/64.1.router.html">64.1.router</a></li>
+            <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+            <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+            <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+            <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+            <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+            <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+            <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+            <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+            <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+            <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+            <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+            <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+            <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+            <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+            <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+            <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+            <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+            <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+            <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+            <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+            <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+            <li><a href="../html/67-1-network.html">67-1-network</a></li>
+            <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+            <li><a href="../html/7.npm2.html">7.npm2</a></li>
+            <li><a href="../html/69-hooks.html">69-hooks</a></li>
+            <li><a href="../html/70-deploy.html">70-deploy</a></li>
+            <li><a href="../html/71-hmr.html">71-hmr</a></li>
+            <li><a href="../html/72.deploy.html">72.deploy</a></li>
+            <li><a href="../html/73.import.html">73.import</a></li>
+            <li><a href="../html/74.mobile.html">74.mobile</a></li>
+            <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+            <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+            <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+            <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+            <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+            <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+            <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+            <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+            <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+            <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+            <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+            <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+            <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+            <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+            <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+            <li><a href="../html/79.grammar.html">79.grammar</a></li>
+            <li><a href="../html/80.tree.html">80.tree</a></li>
+            <li><a href="../html/81.axios.html">81.axios</a></li>
+            <li><a href="../html/82.1.react.html">82.1.react</a></li>
+            <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+            <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+            <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+            <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+            <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+            <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+            <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+            <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+            <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+            <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+            <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+            <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+            <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+            <li><a href="../html/83.upload.html">83.upload</a></li>
+            <li><a href="../html/84.graphql.html">84.graphql</a></li>
+            <li><a href="../html/85.antpro.html">85.antpro</a></li>
+            <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+            <li><a href="../html/86.2.design.html">86.2.design</a></li>
+            <li><a href="../html/87.postcss.html">87.postcss</a></li>
+            <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+            <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+            <li><a href="../html/90.react-test.html">90.react-test</a></li>
+            <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+            <li><a href="../html/92.rbac.html">92.rbac</a></li>
+            <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+            <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+            <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+            <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+            <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+            <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+            <li><a href="../html/94.6.https.html">94.6.https</a></li>
+            <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+            <li><a href="../html/95.1. react.html">95.1. react</a></li>
+            <li><a href="../html/95.2.react.html">95.2.react</a></li>
+            <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+            <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+            <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+            <li><a href="../html/97.serverless.html">97.serverless</a></li>
+            <li><a href="../html/98.websocket.html">98.websocket</a></li>
+            <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+            <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+            <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+            <li><a href="../html/102.java.html">102.java</a></li>
+            <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+            <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+            <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+            <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+            <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+            <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+            <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+            <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+            <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+            <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+            <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+            <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+            <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+            <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+            <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+            <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+            <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+            <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+            <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+            <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+            <li><a href="../html/106.1.react.html">106.1.react</a></li>
+            <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+            <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+            <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+            <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+            <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+            <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+            <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+            <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+            <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+            <li><a href="../html/107.fiber.html">107.fiber</a></li>
+            <li><a href="../html/108.http.html">108.http</a></li>
+            <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+            <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+            <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+            <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+            <li><a href="../html/111.xstate.html">111.xstate</a></li>
+            <li><a href="../html/112.Form.html">112.Form</a></li>
+            <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+            <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+            <li><a href="../html/115.immer.html">115.immer</a></li>
+            <li><a href="../html/116.pro5.html">116.pro5</a></li>
+            <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+            <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+            <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+            <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+            <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+            <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+            <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+            <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+            <li><a href="../html/124.next.js.html">124.next.js</a></li>
+            <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+            <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+            <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+            <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+            <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+            <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+            <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+            <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+            <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+            <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+            <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+            <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+            <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+            <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+            <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+            <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+            <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+            <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+            <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+            <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+            <li><a href="../html/127.frontend.html">127.frontend</a></li>
+            <li><a href="../html/128.rollup.html">128.rollup</a></li>
+            <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+            <li><a href="../html/130.health.html">130.health</a></li>
+            <li><a href="../html/131.hooks.html">131.hooks</a></li>
+            <li class="active"><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+            <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+            <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+            <li><a href="../html/134.react18.html">134.react18</a></li>
+            <li><a href="../html/135.function.html">135.function</a></li>
+            <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+        </ul>
     </div>
-    <div class="content markdown-body">
-        <h2 id="t01. DOM事件">1. DOM事件 <a href="#t01. DOM事件"> # </a></h2>
-<h3 id="t11.1 事件">1.1 事件 <a href="#t11.1 事件"> # </a></h3>
-<ul>
-<li>事件是用户或浏览器自身执行的某种动作，而响应某个事件的函数叫做事件处理程序</li>
-</ul>
-<h3 id="t21.2 DOM事件流">1.2 DOM事件流 <a href="#t21.2 DOM事件流"> # </a></h3>
-<p><img src="https://img.zhufengpeixun.com/6f1dae04a2159507c0875343ca202169" alt="6f1dae04a2159507c0875343ca202169"></p>
-<ul>
-<li>事件流包含三个阶段<ul>
-<li>事件捕获阶段</li>
-<li>处于目标阶段</li>
-<li>事件冒泡阶段</li>
-</ul>
-</li>
-<li>首先发生的是事件捕获，然后是实际的目标接收到事件，最后阶段是冒泡阶段</li>
-</ul>
-<h4 id="t31.2.1  事件捕获">1.2.1  事件捕获 <a href="#t31.2.1  事件捕获"> # </a></h4>
-<ul>
-<li>是先由最上一级的节点先接收事件,然后向下传播到具体的节点 <code>document-&gt;body-&gt;div-&gt;button</code></li>
-</ul>
-<h4 id="t41.2.2  目标阶段">1.2.2  目标阶段 <a href="#t41.2.2  目标阶段"> # </a></h4>
-<ul>
-<li>在目标节点上触发,称为目标阶段</li>
-<li>事件目标是真正触发事件的对象</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-comment">//w3c浏览器：event.target</span>
+
+
+    <div class="warpper">
+        <div class="page-toc">
+            <ul>
+                <li><a href="#t01. DOM事件">1. DOM事件</a>
+                    <ul>
+                        <li><a href="#t11.1 事件">1.1 事件</a></li>
+                        <li><a href="#t21.2 DOM事件流">1.2 DOM事件流</a>
+                            <ul>
+                                <li><a href="#t31.2.1  事件捕获">1.2.1 事件捕获</a></li>
+                                <li><a href="#t41.2.2  目标阶段">1.2.2 目标阶段</a></li>
+                                <li><a href="#t51.2.3  事件冒泡">1.2.3 事件冒泡</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t61.3 addEventListener">1.3 addEventListener</a></li>
+                        <li><a href="#t71.4 阻止冒泡">1.4 阻止冒泡</a></li>
+                        <li><a href="#t81.5 阻止默认行为">1.5 阻止默认行为</a></li>
+                        <li><a href="#t91.6 事件代理">1.6 事件代理</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t102.React事件系统">2.React事件系统</a>
+                    <ul>
+                        <li><a href="#t112.1 面试题">2.1 面试题</a></li>
+                        <li><a href="#t122.2 使用">2.2 使用</a></li>
+                        <li><a href="#t132.3 简易实现">2.3 简易实现</a></li>
+                        <li><a href="#t142.4 源码实现">2.4 源码实现</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t153. 初次渲染">3. 初次渲染</a>
+                    <ul>
+                        <li><a href="#t163.1 src\index.js">3.1 src\index.js</a></li>
+                        <li><a href="#t173.2 react.js">3.2 react.js</a></li>
+                        <li><a href="#t183.3 react-dom.js">3.3 react-dom.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t194. 事件注册">4. 事件注册</a>
+                    <ul>
+                        <li><a href="#t204.1 react-dom.js">4.1 react-dom.js</a></li>
+                        <li><a href="#t214.2 EventRegistry.js">4.2 EventRegistry.js</a></li>
+                        <li><a href="#t224.3 DOMEventProperties.js">4.3 DOMEventProperties.js</a></li>
+                        <li><a href="#t234.4 SimpleEventPlugin.js">4.4 SimpleEventPlugin.js</a></li>
+                        <li><a href="#t244.5 DOMPluginEventSystem.js">4.5 DOMPluginEventSystem.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t255. 事件绑定">5. 事件绑定</a>
+                    <ul>
+                        <li><a href="#t265.1 DOMPluginEventSystem.js">5.1 DOMPluginEventSystem.js</a></li>
+                        <li><a href="#t275.2 EventSystemFlags.js">5.2 EventSystemFlags.js</a></li>
+                        <li><a href="#t285.3 EventListener.js">5.3 EventListener.js</a></li>
+                        <li><a href="#t295.4 ReactDOMComponentTree.js">5.4 ReactDOMComponentTree.js</a></li>
+                        <li><a href="#t305.5 ReactDOMEventListener.js">5.5 ReactDOMEventListener.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t316 事件触发">6 事件触发</a>
+                    <ul>
+                        <li><a href="#t326.1 构建fiber树">6.1 构建fiber树</a>
+                            <ul>
+                                <li><a href="#t336.1.1 react-dom.js">6.1.1 react-dom.js</a></li>
+                                <li><a href="#t346.1.2 ReactWorkTags.js">6.1.2 ReactWorkTags.js</a></li>
+                                <li><a href="#t356.1.3 ReactDOMComponentTree.js">6.1.3 ReactDOMComponentTree.js</a></li>
+                                <li><a href="#t366.1.4 ReactDOMEventListener.js">6.1.4 ReactDOMEventListener.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t376.2 收集事件函数">6.2 收集事件函数</a>
+                            <ul>
+                                <li><a href="#t386.2.1 ReactDOMEventListener.js">6.2.1 ReactDOMEventListener.js</a></li>
+                                <li><a href="#t396.2.2 DOMPluginEventSystem.js">6.2.2 DOMPluginEventSystem.js</a></li>
+                                <li><a href="#t406.2.3 SimpleEventPlugin.js">6.2.3 SimpleEventPlugin.js</a></li>
+                                <li><a href="#t416.2.4 getListener.js">6.2.4 getListener.js</a></li>
+                                <li><a href="#t426.2.5 SyntheticEvent.js">6.2.5 SyntheticEvent.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t436.3 执行事件函数">6.3 执行事件函数</a>
+                            <ul>
+                                <li><a href="#t446.3.1 DOMPluginEventSystem.js">6.3.1 DOMPluginEventSystem.js</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#t457 批量执行">7 批量执行</a>
+                    <ul>
+                        <li><a href="#t467.1 ReactDOMUpdateBatching.js">7.1 ReactDOMUpdateBatching.js</a></li>
+                        <li><a href="#t477.2 ReactDOMEventListener.js">7.2 ReactDOMEventListener.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t488 支持onChange事件">8 支持onChange事件</a>
+                    <ul>
+                        <li><a href="#t498.1 src\index.js">8.1 src\index.js</a></li>
+                        <li><a href="#t508.2 SyntheticEvent.js">8.2 SyntheticEvent.js</a></li>
+                        <li><a href="#t518.3 ChangeEventPlugin.js">8.3 ChangeEventPlugin.js</a></li>
+                        <li><a href="#t528.4 DOMPluginEventSystem.js">8.4 DOMPluginEventSystem.js</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content markdown-body">
+            <h2 id="t01. DOM事件">1. DOM事件 <a href="#t01. DOM事件"> # </a></h2>
+            <h3 id="t11.1 事件">1.1 事件 <a href="#t11.1 事件"> # </a></h3>
+            <ul>
+                <li>事件是用户或浏览器自身执行的某种动作，而响应某个事件的函数叫做事件处理程序</li>
+            </ul>
+            <h3 id="t21.2 DOM事件流">1.2 DOM事件流 <a href="#t21.2 DOM事件流"> # </a></h3>
+            <p><img src="https://img.zhufengpeixun.com/6f1dae04a2159507c0875343ca202169"
+                    alt="6f1dae04a2159507c0875343ca202169"></p>
+            <ul>
+                <li>事件流包含三个阶段<ul>
+                        <li>事件捕获阶段</li>
+                        <li>处于目标阶段</li>
+                        <li>事件冒泡阶段</li>
+                    </ul>
+                </li>
+                <li>首先发生的是事件捕获，然后是实际的目标接收到事件，最后阶段是冒泡阶段</li>
+            </ul>
+            <h4 id="t31.2.1  事件捕获">1.2.1 事件捕获 <a href="#t31.2.1  事件捕获"> # </a></h4>
+            <ul>
+                <li>是先由最上一级的节点先接收事件,然后向下传播到具体的节点 <code>document-&gt;body-&gt;div-&gt;button</code></li>
+            </ul>
+            <h4 id="t41.2.2  目标阶段">1.2.2 目标阶段 <a href="#t41.2.2  目标阶段"> # </a></h4>
+            <ul>
+                <li>在目标节点上触发,称为目标阶段</li>
+                <li>事件目标是真正触发事件的对象</li>
+            </ul>
+            <pre><code class="lang-js"><span class="hljs-comment">//w3c浏览器：event.target</span>
 <span class="hljs-comment">//IE6、7、8： event.srcElement</span>
 <span class="hljs-keyword">let</span> target = event.target || event.srcElement;
 </code></pre>
-<h4 id="t51.2.3  事件冒泡">1.2.3  事件冒泡 <a href="#t51.2.3  事件冒泡"> # </a></h4>
-<ul>
-<li>事件开始时由最具体的元素(文档中嵌套层次最深的那个节点)接收,然后逐级向上传播  <code>button-&gt;div-&gt;body-&gt;document</code></li>
-</ul>
-<h3 id="t61.3 addEventListener">1.3 addEventListener <a href="#t61.3 addEventListener"> # </a></h3>
-<ul>
-<li>任何发生在W3C事件模型中的事件，首是进入捕获阶段，直到达到目标元素，再进入冒泡阶段</li>
-<li>可以选择是在捕获阶段还是冒泡阶段绑定事件处理函数</li>
-<li><code>useCapture</code>参数是<code>true</code>，则在捕获阶段绑定函数，反之<code>false</code>，在冒泡阶段绑定函数</li>
-</ul>
-<pre><code class="lang-js">element.addEventListener(event, <span class="hljs-function"><span class="hljs-keyword">function</span>, <span class="hljs-title">useCapture</span>)
+            <h4 id="t51.2.3  事件冒泡">1.2.3 事件冒泡 <a href="#t51.2.3  事件冒泡"> # </a></h4>
+            <ul>
+                <li>事件开始时由最具体的元素(文档中嵌套层次最深的那个节点)接收,然后逐级向上传播 <code>button-&gt;div-&gt;body-&gt;document</code></li>
+            </ul>
+            <h3 id="t61.3 addEventListener">1.3 addEventListener <a href="#t61.3 addEventListener"> # </a></h3>
+            <ul>
+                <li>任何发生在W3C事件模型中的事件，首是进入捕获阶段，直到达到目标元素，再进入冒泡阶段</li>
+                <li>可以选择是在捕获阶段还是冒泡阶段绑定事件处理函数</li>
+                <li><code>useCapture</code>参数是<code>true</code>，则在捕获阶段绑定函数，反之<code>false</code>，在冒泡阶段绑定函数</li>
+            </ul>
+            <pre><code class="lang-js">element.addEventListener(event, <span class="hljs-function"><span class="hljs-keyword">function</span>, <span class="hljs-title">useCapture</span>)
 </span></code></pre>
-<h3 id="t71.4 阻止冒泡">1.4 阻止冒泡 <a href="#t71.4 阻止冒泡"> # </a></h3>
-<ul>
-<li>如果想要阻止事件的传播<ul>
-<li>在微软的模型中你必须设置事件的<code>cancelBubble</code>的属性为true</li>
-<li>在W3C模型中你必须调用事件的<code>stopPropagation()</code>方法</li>
-</ul>
-</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stopPropagation</span>(<span class="hljs-params">event</span>) </span>{
+            <h3 id="t71.4 阻止冒泡">1.4 阻止冒泡 <a href="#t71.4 阻止冒泡"> # </a></h3>
+            <ul>
+                <li>如果想要阻止事件的传播<ul>
+                        <li>在微软的模型中你必须设置事件的<code>cancelBubble</code>的属性为true</li>
+                        <li>在W3C模型中你必须调用事件的<code>stopPropagation()</code>方法</li>
+                    </ul>
+                </li>
+            </ul>
+            <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">stopPropagation</span>(<span class="hljs-params">event</span>) </span>{
     <span class="hljs-keyword">if</span> (!event) {
         <span class="hljs-built_in">window</span>.event.cancelBubble = <span class="hljs-literal">true</span>;
     }
@@ -88,11 +493,11 @@
     }
 }
 </code></pre>
-<h3 id="t81.5 阻止默认行为">1.5 阻止默认行为 <a href="#t81.5 阻止默认行为"> # </a></h3>
-<ul>
-<li>取消默认事件</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">preventDefault</span>(<span class="hljs-params">event</span>) </span>{
+            <h3 id="t81.5 阻止默认行为">1.5 阻止默认行为 <a href="#t81.5 阻止默认行为"> # </a></h3>
+            <ul>
+                <li>取消默认事件</li>
+            </ul>
+            <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">preventDefault</span>(<span class="hljs-params">event</span>) </span>{
     <span class="hljs-keyword">if</span> (!event) {
         <span class="hljs-built_in">window</span>.event.returnValue  = <span class="hljs-literal">false</span>;
     }
@@ -101,18 +506,18 @@
     }
 }
 </code></pre>
-<h3 id="t91.6 事件代理">1.6 事件代理 <a href="#t91.6 事件代理"> # </a></h3>
-<ul>
-<li>事件代理又称之为事件委托</li>
-<li>事件代理是把原本需要绑定在<code>子元素</code>的事件委托给<code>父元素</code>，让父元素负责事件监听</li>
-<li>事件代理是利用<code>事件冒泡</code>来实现的</li>
-<li>优点<ul>
-<li>可以大量节省内存占用，减少事件注册</li>
-<li>当新增子对象时无需再次对其绑定</li>
-</ul>
-</li>
-</ul>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+            <h3 id="t91.6 事件代理">1.6 事件代理 <a href="#t91.6 事件代理"> # </a></h3>
+            <ul>
+                <li>事件代理又称之为事件委托</li>
+                <li>事件代理是把原本需要绑定在<code>子元素</code>的事件委托给<code>父元素</code>，让父元素负责事件监听</li>
+                <li>事件代理是利用<code>事件冒泡</code>来实现的</li>
+                <li>优点<ul>
+                        <li>可以大量节省内存占用，减少事件注册</li>
+                        <li>当新增子对象时无需再次对其绑定</li>
+                    </ul>
+                </li>
+            </ul>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"list"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"show(event)"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -126,20 +531,21 @@
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 </code></pre>
-<h2 id="t102.React事件系统">2.React事件系统 <a href="#t102.React事件系统"> # </a></h2>
-<ul>
-<li>合成事件是围绕浏览器原生事件充当跨浏览器包装器的对象,它们将不同浏览器的行为合并为一个 API,这样做是为了确保事件在不同浏览器中显示一致的属性</li>
-</ul>
-<h3 id="t112.1 面试题">2.1 面试题 <a href="#t112.1 面试题"> # </a></h3>
-<ul>
-<li>为什么不能使用<code>return false</code>来阻止事件默认行为?</li>
-<li>请说一下React合成事件的工作原理?</li>
-<li>可以给函数组件绑定事件吗?为什么?</li>
-<li>......</li>
-</ul>
-<h3 id="t122.2 使用">2.2 使用 <a href="#t122.2 使用"> # </a></h3>
-<p><img src="https://img.zhufengpeixun.com/5f3ce0fe2ec27f8644983e7d8f31c367" alt="5f3ce0fe2ec27f8644983e7d8f31c367"></p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h2 id="t102.React事件系统">2.React事件系统 <a href="#t102.React事件系统"> # </a></h2>
+            <ul>
+                <li>合成事件是围绕浏览器原生事件充当跨浏览器包装器的对象,它们将不同浏览器的行为合并为一个 API,这样做是为了确保事件在不同浏览器中显示一致的属性</li>
+            </ul>
+            <h3 id="t112.1 面试题">2.1 面试题 <a href="#t112.1 面试题"> # </a></h3>
+            <ul>
+                <li>为什么不能使用<code>return false</code>来阻止事件默认行为?</li>
+                <li>请说一下React合成事件的工作原理?</li>
+                <li>可以给函数组件绑定事件吗?为什么?</li>
+                <li>......</li>
+            </ul>
+            <h3 id="t122.2 使用">2.2 使用 <a href="#t122.2 使用"> # </a></h3>
+            <p><img src="https://img.zhufengpeixun.com/5f3ce0fe2ec27f8644983e7d8f31c367"
+                    alt="5f3ce0fe2ec27f8644983e7d8f31c367"></p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
   parentRef=React.createRef();
@@ -200,8 +606,8 @@ document原生捕获
 document原生冒泡
  */</span>
 </code></pre>
-<h3 id="t132.3 简易实现">2.3 简易实现 <a href="#t132.3 简易实现"> # </a></h3>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+            <h3 id="t132.3 简易实现">2.3 简易实现 <a href="#t132.3 简易实现"> # </a></h3>
+            <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
@@ -279,16 +685,16 @@ document原生冒泡
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h3 id="t142.4 源码实现">2.4 源码实现 <a href="#t142.4 源码实现"> # </a></h3>
-<ul>
-<li>事件注册</li>
-<li>事件绑定</li>
-<li>事件触发</li>
-</ul>
-<h2 id="t153. 初次渲染">3. 初次渲染 <a href="#t153. 初次渲染"> # </a></h2>
-<h3 id="t163.1 src\index.js">3.1 src\index.js <a href="#t163.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'./react'</span>;
+            <h3 id="t142.4 源码实现">2.4 源码实现 <a href="#t142.4 源码实现"> # </a></h3>
+            <ul>
+                <li>事件注册</li>
+                <li>事件绑定</li>
+                <li>事件触发</li>
+            </ul>
+            <h2 id="t153. 初次渲染">3. 初次渲染 <a href="#t153. 初次渲染"> # </a></h2>
+            <h3 id="t163.1 src\index.js">3.1 src\index.js <a href="#t163.1 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'./react'</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'./react-dom'</span>;
 <span class="hljs-keyword">let</span> rootContainerElement = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'root'</span>);
 <span class="hljs-keyword">const</span> handleDivClick = <span class="hljs-function">(<span class="hljs-params">event</span>)=&gt;</span>{
@@ -315,9 +721,9 @@ ReactDOM.render(
   rootContainerElement
 );
 </code></pre>
-<h3 id="t173.2 react.js">3.2 react.js <a href="#t173.2 react.js"> # </a></h3>
-<p>src\react.js</p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createElement</span>(<span class="hljs-params">type, config, children</span>) </span>{
+            <h3 id="t173.2 react.js">3.2 react.js <a href="#t173.2 react.js"> # </a></h3>
+            <p>src\react.js</p>
+            <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createElement</span>(<span class="hljs-params">type, config, children</span>) </span>{
     <span class="hljs-keyword">delete</span> config.__source;
     <span class="hljs-keyword">delete</span> config.__self;
     <span class="hljs-keyword">delete</span> config.ref;
@@ -338,9 +744,9 @@ ReactDOM.render(
 };
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> React;
 </code></pre>
-<h3 id="t183.3 react-dom.js">3.3 react-dom.js <a href="#t183.3 react-dom.js"> # </a></h3>
-<p>src\react-dom.js</p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">vdom, container</span>) </span>{
+            <h3 id="t183.3 react-dom.js">3.3 react-dom.js <a href="#t183.3 react-dom.js"> # </a></h3>
+            <p>src\react-dom.js</p>
+            <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">vdom, container</span>) </span>{
     mount(vdom, container);
 }
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">mount</span>(<span class="hljs-params">vdom, container</span>) </span>{
@@ -390,10 +796,10 @@ ReactDOM.render(
 };
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> ReactDOM;
 </code></pre>
-<h2 id="t194. 事件注册">4. 事件注册 <a href="#t194. 事件注册"> # </a></h2>
-<h3 id="t204.1 react-dom.js">4.1 react-dom.js <a href="#t204.1 react-dom.js"> # </a></h3>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import { listenToAllSupportedEvents } from './DOMPluginEventSystem';</span>
+            <h2 id="t194. 事件注册">4. 事件注册 <a href="#t194. 事件注册"> # </a></h2>
+            <h3 id="t204.1 react-dom.js">4.1 react-dom.js <a href="#t204.1 react-dom.js"> # </a></h3>
+            <p>src\react-dom.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+import { listenToAllSupportedEvents } from './DOMPluginEventSystem';</span>
 function render(vdom, container) {
 <span class="hljs-addition">+   listenToAllSupportedEvents(container);</span>
     mount(vdom, container);
@@ -445,9 +851,9 @@ const ReactDOM = {
 };
 export default ReactDOM;
 </code></pre>
-<h3 id="t214.2 EventRegistry.js">4.2 EventRegistry.js <a href="#t214.2 EventRegistry.js"> # </a></h3>
-<p>src\EventRegistry.js</p>
-<pre><code class="lang-js"><span class="hljs-comment">//依赖 {onClick:['click'],onClickCapture:['click']}</span>
+            <h3 id="t214.2 EventRegistry.js">4.2 EventRegistry.js <a href="#t214.2 EventRegistry.js"> # </a></h3>
+            <p>src\EventRegistry.js</p>
+            <pre><code class="lang-js"><span class="hljs-comment">//依赖 {onClick:['click'],onClickCapture:['click']}</span>
 <span class="hljs-comment">//export const registrationNameDependencies = {};</span>
 <span class="hljs-comment">//所有的原生事件 ['click','dblclick']</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> allNativeEvents = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>();
@@ -468,9 +874,10 @@ export default ReactDOM;
     }
 }
 </code></pre>
-<h3 id="t224.3 DOMEventProperties.js">4.3 DOMEventProperties.js <a href="#t224.3 DOMEventProperties.js"> # </a></h3>
-<p>src\DOMEventProperties.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { registerTwoPhaseEvent } <span class="hljs-keyword">from</span> <span class="hljs-string">'./EventRegistry'</span>;
+            <h3 id="t224.3 DOMEventProperties.js">4.3 DOMEventProperties.js <a href="#t224.3 DOMEventProperties.js"> #
+                </a></h3>
+            <p>src\DOMEventProperties.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> { registerTwoPhaseEvent } <span class="hljs-keyword">from</span> <span class="hljs-string">'./EventRegistry'</span>;
 <span class="hljs-comment">//SimpleEventPlugin的离散的成对事件名称</span>
 <span class="hljs-keyword">const</span> discreteEventPairsForSimpleEventPlugin = [
     <span class="hljs-string">'click'</span>, <span class="hljs-string">'click'</span>,
@@ -489,14 +896,16 @@ export default ReactDOM;
     }
 }
 </code></pre>
-<h3 id="t234.4 SimpleEventPlugin.js">4.4 SimpleEventPlugin.js <a href="#t234.4 SimpleEventPlugin.js"> # </a></h3>
-<p>src\SimpleEventPlugin.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { registerSimpleEvents } <span class="hljs-keyword">from</span> <span class="hljs-string">'./DOMEventProperties'</span>;
+            <h3 id="t234.4 SimpleEventPlugin.js">4.4 SimpleEventPlugin.js <a href="#t234.4 SimpleEventPlugin.js"> # </a>
+            </h3>
+            <p>src\SimpleEventPlugin.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> { registerSimpleEvents } <span class="hljs-keyword">from</span> <span class="hljs-string">'./DOMEventProperties'</span>;
 <span class="hljs-keyword">export</span> { registerSimpleEvents <span class="hljs-keyword">as</span> registerEvents };
 </code></pre>
-<h3 id="t244.5 DOMPluginEventSystem.js">4.5 DOMPluginEventSystem.js <a href="#t244.5 DOMPluginEventSystem.js"> # </a></h3>
-<p>src\DOMPluginEventSystem.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { allNativeEvents } <span class="hljs-keyword">from</span> <span class="hljs-string">'./EventRegistry'</span>;
+            <h3 id="t244.5 DOMPluginEventSystem.js">4.5 DOMPluginEventSystem.js <a
+                    href="#t244.5 DOMPluginEventSystem.js"> # </a></h3>
+            <p>src\DOMPluginEventSystem.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> { allNativeEvents } <span class="hljs-keyword">from</span> <span class="hljs-string">'./EventRegistry'</span>;
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> SimpleEventPlugin <span class="hljs-keyword">from</span> <span class="hljs-string">'./SimpleEventPlugin'</span>;
 <span class="hljs-comment">//注册插件 其实就是收集原生事件名称</span>
 SimpleEventPlugin.registerEvents();
@@ -506,10 +915,11 @@ SimpleEventPlugin.registerEvents();
     });
 }
 </code></pre>
-<h2 id="t255. 事件绑定">5. 事件绑定 <a href="#t255. 事件绑定"> # </a></h2>
-<h3 id="t265.1 DOMPluginEventSystem.js">5.1 DOMPluginEventSystem.js <a href="#t265.1 DOMPluginEventSystem.js"> # </a></h3>
-<p>src\DOMPluginEventSystem.js</p>
-<pre><code class="lang-diff">import { allNativeEvents } from './EventRegistry';
+            <h2 id="t255. 事件绑定">5. 事件绑定 <a href="#t255. 事件绑定"> # </a></h2>
+            <h3 id="t265.1 DOMPluginEventSystem.js">5.1 DOMPluginEventSystem.js <a
+                    href="#t265.1 DOMPluginEventSystem.js"> # </a></h3>
+            <p>src\DOMPluginEventSystem.js</p>
+            <pre><code class="lang-diff">import { allNativeEvents } from './EventRegistry';
 import * as SimpleEventPlugin from './SimpleEventPlugin';
 <span class="hljs-addition">+import { addEventCaptureListener, addEventBubbleListener } from './EventListener';</span>
 <span class="hljs-addition">+import { getEventListenerSet } from './ReactDOMComponentTree';</span>
@@ -586,13 +996,14 @@ export function listenToAllSupportedEvents(rootContainerElement) {
 <span class="hljs-addition">+    }</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t275.2 EventSystemFlags.js">5.2 EventSystemFlags.js <a href="#t275.2 EventSystemFlags.js"> # </a></h3>
-<p>src\EventSystemFlags.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> IS_CAPTURE_PHASE = <span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">2</span>;
+            <h3 id="t275.2 EventSystemFlags.js">5.2 EventSystemFlags.js <a href="#t275.2 EventSystemFlags.js"> # </a>
+            </h3>
+            <p>src\EventSystemFlags.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> IS_CAPTURE_PHASE = <span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">2</span>;
 </code></pre>
-<h3 id="t285.3 EventListener.js">5.3 EventListener.js <a href="#t285.3 EventListener.js"> # </a></h3>
-<p>src\EventListener.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addEventCaptureListener</span>(<span class="hljs-params">target,eventType,listener</span>) </span>{
+            <h3 id="t285.3 EventListener.js">5.3 EventListener.js <a href="#t285.3 EventListener.js"> # </a></h3>
+            <p>src\EventListener.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addEventCaptureListener</span>(<span class="hljs-params">target,eventType,listener</span>) </span>{
     target.addEventListener(eventType, listener, <span class="hljs-literal">true</span>);
     <span class="hljs-keyword">return</span> listener;
 }
@@ -602,9 +1013,10 @@ export function listenToAllSupportedEvents(rootContainerElement) {
     <span class="hljs-keyword">return</span> listener;
 }
 </code></pre>
-<h3 id="t295.4 ReactDOMComponentTree.js">5.4 ReactDOMComponentTree.js <a href="#t295.4 ReactDOMComponentTree.js"> # </a></h3>
-<p>src\ReactDOMComponentTree.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> randomKey = <span class="hljs-built_in">Math</span>.random().toString(<span class="hljs-number">36</span>).slice(<span class="hljs-number">2</span>);
+            <h3 id="t295.4 ReactDOMComponentTree.js">5.4 ReactDOMComponentTree.js <a
+                    href="#t295.4 ReactDOMComponentTree.js"> # </a></h3>
+            <p>src\ReactDOMComponentTree.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> randomKey = <span class="hljs-built_in">Math</span>.random().toString(<span class="hljs-number">36</span>).slice(<span class="hljs-number">2</span>);
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> internalEventHandlersKey = <span class="hljs-string">'__reactEvents$'</span> + randomKey;<span class="hljs-comment">//dom上的事件绑定集合</span>
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getEventListenerSet</span>(<span class="hljs-params">node</span>) </span>{
   <span class="hljs-keyword">let</span> elementListenerSet = node[internalEventHandlersKey];
@@ -614,9 +1026,10 @@ export function listenToAllSupportedEvents(rootContainerElement) {
   <span class="hljs-keyword">return</span> elementListenerSet;
 }
 </code></pre>
-<h3 id="t305.5 ReactDOMEventListener.js">5.5 ReactDOMEventListener.js <a href="#t305.5 ReactDOMEventListener.js"> # </a></h3>
-<p>src\ReactDOMEventListener.js</p>
-<pre><code class="lang-js"><span class="hljs-comment">/**
+            <h3 id="t305.5 ReactDOMEventListener.js">5.5 ReactDOMEventListener.js <a
+                    href="#t305.5 ReactDOMEventListener.js"> # </a></h3>
+            <p>src\ReactDOMEventListener.js</p>
+            <pre><code class="lang-js"><span class="hljs-comment">/**
  * 事件处理函数
  * <span class="hljs-doctag">@param <span class="hljs-type">{*}</span> </span>domEventName 事件名 click
  * <span class="hljs-doctag">@param <span class="hljs-type">{*}</span> </span>eventSystemFlags 4 事件系统标志
@@ -628,12 +1041,13 @@ export function listenToAllSupportedEvents(rootContainerElement) {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'domEventName'</span>,domEventName,<span class="hljs-string">'eventSystemFlags'</span>,eventSystemFlags,<span class="hljs-string">'nativeEventTarget'</span>,nativeEventTarget);
 }
 </code></pre>
-<h2 id="t316 事件触发">6 事件触发 <a href="#t316 事件触发"> # </a></h2>
-<h3 id="t326.1 构建fiber树">6.1 构建fiber树 <a href="#t326.1 构建fiber树"> # </a></h3>
-<p><img src="https://img.zhufengpeixun.com/f5567dd756ad8b372fcdf12ece2477a8" alt="f5567dd756ad8b372fcdf12ece2477a8"></p>
-<h4 id="t336.1.1 react-dom.js">6.1.1 react-dom.js <a href="#t336.1.1 react-dom.js"> # </a></h4>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff">import { listenToAllSupportedEvents } from './DOMPluginEventSystem';
+            <h2 id="t316 事件触发">6 事件触发 <a href="#t316 事件触发"> # </a></h2>
+            <h3 id="t326.1 构建fiber树">6.1 构建fiber树 <a href="#t326.1 构建fiber树"> # </a></h3>
+            <p><img src="https://img.zhufengpeixun.com/f5567dd756ad8b372fcdf12ece2477a8"
+                    alt="f5567dd756ad8b372fcdf12ece2477a8"></p>
+            <h4 id="t336.1.1 react-dom.js">6.1.1 react-dom.js <a href="#t336.1.1 react-dom.js"> # </a></h4>
+            <p>src\react-dom.js</p>
+            <pre><code class="lang-diff">import { listenToAllSupportedEvents } from './DOMPluginEventSystem';
 <span class="hljs-addition">+import { internalInstanceKey, internalPropsKey } from './ReactDOMComponentTree';</span>
 <span class="hljs-addition">+import { HostComponent } from './ReactWorkTags';</span>
 function render(vdom, container) {
@@ -691,13 +1105,14 @@ const ReactDOM = {
 };
 export default ReactDOM;
 </code></pre>
-<h4 id="t346.1.2 ReactWorkTags.js">6.1.2 ReactWorkTags.js <a href="#t346.1.2 ReactWorkTags.js"> # </a></h4>
-<p>src\ReactWorkTags.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> HostComponent = <span class="hljs-number">5</span>;
+            <h4 id="t346.1.2 ReactWorkTags.js">6.1.2 ReactWorkTags.js <a href="#t346.1.2 ReactWorkTags.js"> # </a></h4>
+            <p>src\ReactWorkTags.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> HostComponent = <span class="hljs-number">5</span>;
 </code></pre>
-<h4 id="t356.1.3 ReactDOMComponentTree.js">6.1.3 ReactDOMComponentTree.js <a href="#t356.1.3 ReactDOMComponentTree.js"> # </a></h4>
-<p>src\ReactDOMComponentTree.js</p>
-<pre><code class="lang-diff">const randomKey = Math.random().toString(36).slice(2);
+            <h4 id="t356.1.3 ReactDOMComponentTree.js">6.1.3 ReactDOMComponentTree.js <a
+                    href="#t356.1.3 ReactDOMComponentTree.js"> # </a></h4>
+            <p>src\ReactDOMComponentTree.js</p>
+            <pre><code class="lang-diff">const randomKey = Math.random().toString(36).slice(2);
 export const internalEventHandlersKey = '__reactEvents$' + randomKey;//dom上的事件绑定集合
 <span class="hljs-addition">+export const internalInstanceKey = '__reactFiber$' + randomKey;//dom上的fiber节点</span>
 <span class="hljs-addition">+export const internalPropsKey = '__reactProps$' + randomKey;//dom上的属性对象</span>
@@ -723,9 +1138,10 @@ export function getEventListenerSet(node) {
 <span class="hljs-addition">+  return node[internalPropsKey] || null;</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h4 id="t366.1.4 ReactDOMEventListener.js">6.1.4 ReactDOMEventListener.js <a href="#t366.1.4 ReactDOMEventListener.js"> # </a></h4>
-<p>src\ReactDOMEventListener.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import {getClosestInstanceFromNode,getFiberCurrentPropsFromNode} from './ReactDOMComponentTree';</span>
+            <h4 id="t366.1.4 ReactDOMEventListener.js">6.1.4 ReactDOMEventListener.js <a
+                    href="#t366.1.4 ReactDOMEventListener.js"> # </a></h4>
+            <p>src\ReactDOMEventListener.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+import {getClosestInstanceFromNode,getFiberCurrentPropsFromNode} from './ReactDOMComponentTree';</span>
 
 /**
  * 事件处理函数
@@ -744,10 +1160,11 @@ export function dispatchEvent(domEventName,eventSystemFlags,targetContainer,nati
 <span class="hljs-addition">+    console.log('props',props);</span>
 }
 </code></pre>
-<h3 id="t376.2 收集事件函数">6.2 收集事件函数 <a href="#t376.2 收集事件函数"> # </a></h3>
-<h4 id="t386.2.1 ReactDOMEventListener.js">6.2.1 ReactDOMEventListener.js <a href="#t386.2.1 ReactDOMEventListener.js"> # </a></h4>
-<p>src\ReactDOMEventListener.js</p>
-<pre><code class="lang-diff">import {getClosestInstanceFromNode,getFiberCurrentPropsFromNode} from './ReactDOMComponentTree';
+            <h3 id="t376.2 收集事件函数">6.2 收集事件函数 <a href="#t376.2 收集事件函数"> # </a></h3>
+            <h4 id="t386.2.1 ReactDOMEventListener.js">6.2.1 ReactDOMEventListener.js <a
+                    href="#t386.2.1 ReactDOMEventListener.js"> # </a></h4>
+            <p>src\ReactDOMEventListener.js</p>
+            <pre><code class="lang-diff">import {getClosestInstanceFromNode,getFiberCurrentPropsFromNode} from './ReactDOMComponentTree';
 <span class="hljs-addition">+import {dispatchEventsForPlugins} from './DOMPluginEventSystem';</span>
 /**
  * 事件处理函数
@@ -773,9 +1190,10 @@ export function dispatchEvent(domEventName,eventSystemFlags,targetContainer,nati
 <span class="hljs-addition">+   );</span>
 }
 </code></pre>
-<h4 id="t396.2.2 DOMPluginEventSystem.js">6.2.2 DOMPluginEventSystem.js <a href="#t396.2.2 DOMPluginEventSystem.js"> # </a></h4>
-<p>src\DOMPluginEventSystem.js</p>
-<pre><code class="lang-diff">import { allNativeEvents } from './EventRegistry';
+            <h4 id="t396.2.2 DOMPluginEventSystem.js">6.2.2 DOMPluginEventSystem.js <a
+                    href="#t396.2.2 DOMPluginEventSystem.js"> # </a></h4>
+            <p>src\DOMPluginEventSystem.js</p>
+            <pre><code class="lang-diff">import { allNativeEvents } from './EventRegistry';
 import * as SimpleEventPlugin from './SimpleEventPlugin';
 import { addEventCaptureListener, addEventBubbleListener } from './EventListener';
 import { getEventListenerSet } from './ReactDOMComponentTree';
@@ -921,9 +1339,10 @@ export function listenToAllSupportedEvents(rootContainerElement) {
 <span class="hljs-addition">+    return { instance, listener, currentTarget };</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h4 id="t406.2.3 SimpleEventPlugin.js">6.2.3 SimpleEventPlugin.js <a href="#t406.2.3 SimpleEventPlugin.js"> # </a></h4>
-<p>src\SimpleEventPlugin.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import { registerSimpleEvents ,topLevelEventsToReactNames} from './DOMEventProperties';</span>
+            <h4 id="t406.2.3 SimpleEventPlugin.js">6.2.3 SimpleEventPlugin.js <a href="#t406.2.3 SimpleEventPlugin.js">
+                    # </a></h4>
+            <p>src\SimpleEventPlugin.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+import { registerSimpleEvents ,topLevelEventsToReactNames} from './DOMEventProperties';</span>
 <span class="hljs-addition">+import { IS_CAPTURE_PHASE } from './EventSystemFlags';</span>
 <span class="hljs-addition">+import { SyntheticMouseEvent } from './SyntheticEvent';</span>
 <span class="hljs-addition">+import { accumulateSinglePhaseListeners } from './DOMPluginEventSystem';</span>
@@ -963,9 +1382,9 @@ export function listenToAllSupportedEvents(rootContainerElement) {
 <span class="hljs-addition">+</span>
 <span class="hljs-addition">+export { registerSimpleEvents as registerEvents ,extractEvents};</span>
 </code></pre>
-<h4 id="t416.2.4 getListener.js">6.2.4 getListener.js <a href="#t416.2.4 getListener.js"> # </a></h4>
-<p>src\getListener.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {getFiberCurrentPropsFromNode} <span class="hljs-keyword">from</span> <span class="hljs-string">'./ReactDOMComponentTree'</span>;
+            <h4 id="t416.2.4 getListener.js">6.2.4 getListener.js <a href="#t416.2.4 getListener.js"> # </a></h4>
+            <p>src\getListener.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> {getFiberCurrentPropsFromNode} <span class="hljs-keyword">from</span> <span class="hljs-string">'./ReactDOMComponentTree'</span>;
 <span class="hljs-comment">/**
  * 返回属性里的监听函数
  * @param {*} inst fiber实例
@@ -979,9 +1398,10 @@ export function listenToAllSupportedEvents(rootContainerElement) {
     <span class="hljs-keyword">return</span> listener;
 }
 </code></pre>
-<h4 id="t426.2.5 SyntheticEvent.js">6.2.5 SyntheticEvent.js <a href="#t426.2.5 SyntheticEvent.js"> # </a></h4>
-<p>src\SyntheticEvent.js</p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">functionThatReturnsTrue</span>(<span class="hljs-params"></span>) </span>{
+            <h4 id="t426.2.5 SyntheticEvent.js">6.2.5 SyntheticEvent.js <a href="#t426.2.5 SyntheticEvent.js"> # </a>
+            </h4>
+            <p>src\SyntheticEvent.js</p>
+            <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">functionThatReturnsTrue</span>(<span class="hljs-params"></span>) </span>{
   <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
 }
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">functionThatReturnsFalse</span>(<span class="hljs-params"></span>) </span>{
@@ -1036,10 +1456,11 @@ export function listenToAllSupportedEvents(rootContainerElement) {
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> SyntheticMouseEvent = createSyntheticEvent(MouseEventInterface);
 </code></pre>
-<h3 id="t436.3 执行事件函数">6.3 执行事件函数 <a href="#t436.3 执行事件函数"> # </a></h3>
-<h4 id="t446.3.1 DOMPluginEventSystem.js">6.3.1 DOMPluginEventSystem.js <a href="#t446.3.1 DOMPluginEventSystem.js"> # </a></h4>
-<p>src\DOMPluginEventSystem.js</p>
-<pre><code class="lang-diff">import { allNativeEvents } from './EventRegistry';
+            <h3 id="t436.3 执行事件函数">6.3 执行事件函数 <a href="#t436.3 执行事件函数"> # </a></h3>
+            <h4 id="t446.3.1 DOMPluginEventSystem.js">6.3.1 DOMPluginEventSystem.js <a
+                    href="#t446.3.1 DOMPluginEventSystem.js"> # </a></h4>
+            <p>src\DOMPluginEventSystem.js</p>
+            <pre><code class="lang-diff">import { allNativeEvents } from './EventRegistry';
 import * as SimpleEventPlugin from './SimpleEventPlugin';
 import { addEventCaptureListener, addEventBubbleListener } from './EventListener';
 import { getEventListenerSet } from './ReactDOMComponentTree';
@@ -1233,10 +1654,11 @@ export function listenToAllSupportedEvents(rootContainerElement) {
     return { instance, listener, currentTarget };
 }
 </code></pre>
-<h2 id="t457 批量执行">7 批量执行 <a href="#t457 批量执行"> # </a></h2>
-<h3 id="t467.1 ReactDOMUpdateBatching.js">7.1 ReactDOMUpdateBatching.js <a href="#t467.1 ReactDOMUpdateBatching.js"> # </a></h3>
-<p>src\ReactDOMUpdateBatching.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">let</span> isBatchingEventUpdates = <span class="hljs-literal">false</span>;
+            <h2 id="t457 批量执行">7 批量执行 <a href="#t457 批量执行"> # </a></h2>
+            <h3 id="t467.1 ReactDOMUpdateBatching.js">7.1 ReactDOMUpdateBatching.js <a
+                    href="#t467.1 ReactDOMUpdateBatching.js"> # </a></h3>
+            <p>src\ReactDOMUpdateBatching.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">let</span> isBatchingEventUpdates = <span class="hljs-literal">false</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">batchedEventUpdates</span>(<span class="hljs-params">fn, a, b</span>) </span>{
     isBatchingEventUpdates = <span class="hljs-literal">true</span>;
     <span class="hljs-keyword">try</span> {
@@ -1246,9 +1668,10 @@ export function listenToAllSupportedEvents(rootContainerElement) {
     }
 }
 </code></pre>
-<h3 id="t477.2 ReactDOMEventListener.js">7.2 ReactDOMEventListener.js <a href="#t477.2 ReactDOMEventListener.js"> # </a></h3>
-<p>src\ReactDOMEventListener.js</p>
-<pre><code class="lang-diff">import {getClosestInstanceFromNode,getFiberCurrentPropsFromNode} from './ReactDOMComponentTree';
+            <h3 id="t477.2 ReactDOMEventListener.js">7.2 ReactDOMEventListener.js <a
+                    href="#t477.2 ReactDOMEventListener.js"> # </a></h3>
+            <p>src\ReactDOMEventListener.js</p>
+            <pre><code class="lang-diff">import {getClosestInstanceFromNode,getFiberCurrentPropsFromNode} from './ReactDOMComponentTree';
 import {dispatchEventsForPlugins} from './DOMPluginEventSystem';
 <span class="hljs-addition">+import {batchedEventUpdates} from './ReactDOMUpdateBatching'</span>
 /**
@@ -1277,9 +1700,9 @@ export function dispatchEvent(domEventName,eventSystemFlags,targetContainer,nati
     })   
 }
 </code></pre>
-<h2 id="t488 支持onChange事件">8 支持onChange事件 <a href="#t488 支持onChange事件"> # </a></h2>
-<h3 id="t498.1 src\index.js">8.1 src\index.js <a href="#t498.1 src\index.js"> # </a></h3>
-<pre><code class="lang-diff">import React from './react';
+            <h2 id="t488 支持onChange事件">8 支持onChange事件 <a href="#t488 支持onChange事件"> # </a></h2>
+            <h3 id="t498.1 src\index.js">8.1 src\index.js <a href="#t498.1 src\index.js"> # </a></h3>
+            <pre><code class="lang-diff">import React from './react';
 import ReactDOM from './react-dom';
 let rootContainerElement = document.getElementById('root');
 const handleDivClick = (event)=&gt;{
@@ -1310,9 +1733,9 @@ ReactDOM.render(
   rootContainerElement
 );
 </code></pre>
-<h3 id="t508.2 SyntheticEvent.js">8.2 SyntheticEvent.js <a href="#t508.2 SyntheticEvent.js"> # </a></h3>
-<p>src\SyntheticEvent.js</p>
-<pre><code class="lang-diff">function functionThatReturnsTrue() {
+            <h3 id="t508.2 SyntheticEvent.js">8.2 SyntheticEvent.js <a href="#t508.2 SyntheticEvent.js"> # </a></h3>
+            <p>src\SyntheticEvent.js</p>
+            <pre><code class="lang-diff">function functionThatReturnsTrue() {
   return true;
 }
 function functionThatReturnsFalse() {
@@ -1368,9 +1791,10 @@ const MouseEventInterface = {
 export const SyntheticMouseEvent = createSyntheticEvent(MouseEventInterface);
 <span class="hljs-addition">+export const SyntheticEvent = createSyntheticEvent({});</span>
 </code></pre>
-<h3 id="t518.3 ChangeEventPlugin.js">8.3 ChangeEventPlugin.js <a href="#t518.3 ChangeEventPlugin.js"> # </a></h3>
-<p>src\ChangeEventPlugin.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { SyntheticEvent } <span class="hljs-keyword">from</span> <span class="hljs-string">'./SyntheticEvent'</span>;
+            <h3 id="t518.3 ChangeEventPlugin.js">8.3 ChangeEventPlugin.js <a href="#t518.3 ChangeEventPlugin.js"> # </a>
+            </h3>
+            <p>src\ChangeEventPlugin.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> { SyntheticEvent } <span class="hljs-keyword">from</span> <span class="hljs-string">'./SyntheticEvent'</span>;
 <span class="hljs-keyword">import</span> {registerTwoPhaseEvent} <span class="hljs-keyword">from</span> <span class="hljs-string">'./EventRegistry'</span>;
 <span class="hljs-keyword">import</span> {accumulateTwoPhaseListeners} <span class="hljs-keyword">from</span> <span class="hljs-string">'./DOMPluginEventSystem'</span>;
 <span class="hljs-comment">/**
@@ -1406,9 +1830,10 @@ export const SyntheticMouseEvent = createSyntheticEvent(MouseEventInterface);
   }
 <span class="hljs-keyword">export</span> { registerEvents, extractEvents };
 </code></pre>
-<h3 id="t528.4 DOMPluginEventSystem.js">8.4 DOMPluginEventSystem.js <a href="#t528.4 DOMPluginEventSystem.js"> # </a></h3>
-<p>src\DOMPluginEventSystem.js</p>
-<pre><code class="lang-diff">import { allNativeEvents } from './EventRegistry';
+            <h3 id="t528.4 DOMPluginEventSystem.js">8.4 DOMPluginEventSystem.js <a
+                    href="#t528.4 DOMPluginEventSystem.js"> # </a></h3>
+            <p>src\DOMPluginEventSystem.js</p>
+            <pre><code class="lang-diff">import { allNativeEvents } from './EventRegistry';
 import * as SimpleEventPlugin from './SimpleEventPlugin';
 <span class="hljs-addition">+import * as ChangeEventPlugin from './ChangeEventPlugin';</span>
 import { addEventCaptureListener, addEventBubbleListener } from './EventListener';
@@ -1641,6 +2066,6 @@ function processDispatchQueueItemsInOrder(event, dispatchListeners, inCapturePha
 <span class="hljs-addition">+}</span>
 </code></pre>
 
+        </div>
     </div>
-</div>
 </body>

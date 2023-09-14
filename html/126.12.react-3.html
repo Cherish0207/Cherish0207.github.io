@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        .page-toc > ul .red {
+        .page-toc>ul .red {
             background: #f3f3f3;
             z-index: 1;
             border-left: 3px solid #009a61;
@@ -15,43 +15,437 @@
         }
     </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li class="active"><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
-    <div class="page-toc">
-        <ul><li><a href="#t01. React面试题">1. React面试题</a></li><li><a href="#t12.前置知识">2.前置知识</a><ul><li><a href="#t22.1 位操作">2.1 位操作</a><ul><li><a href="#t32.1.1 按位与(&amp;)">2.1.1 按位与(&amp;)</a></li><li><a href="#t42.1.2 按位或(|)">2.1.2 按位或(|)</a></li><li><a href="#t52.1.3 位操作">2.1.3 位操作</a></li></ul></li><li><a href="#t62.2 Fiber">2.2 Fiber</a><ul><li><a href="#t72.2.1 Fiber是一种数据结构">2.2.1 Fiber是一种数据结构</a></li><li><a href="#t82.2.2 Fiber树">2.2.2 Fiber树</a></li><li><a href="#t92.2.3  Fiber是一个执行单元">2.2.3  Fiber是一个执行单元</a></li></ul></li><li><a href="#t102.3 循环链表">2.3 循环链表</a></li></ul></li><li><a href="#t113.使用useReducer">3.使用useReducer</a><ul><li><a href="#t123.1 renderWithHooks">3.1 renderWithHooks</a></li><li><a href="#t133.2 hooks更新">3.2 hooks更新</a></li><li><a href="#t143.3 src\index.js">3.3 src\index.js</a></li></ul></li><li><a href="#t154.实现useReducer">4.实现useReducer</a><ul><li><a href="#t164.1 src\index.js">4.1 src\index.js</a></li><li><a href="#t174.2 ReactWorkTags.js">4.2 ReactWorkTags.js</a></li><li><a href="#t184.3 ReactFiberWorkLoop.js">4.3 ReactFiberWorkLoop.js</a></li><li><a href="#t194.4 ReactFiberBeginWork.js">4.4 ReactFiberBeginWork.js</a></li><li><a href="#t204.5 ReactFiberHooks.js">4.5 ReactFiberHooks.js</a></li></ul></li><li><a href="#t215.useReducer更新">5.useReducer更新</a><ul><li><a href="#t225.1 ReactFiberHooks.js">5.1 ReactFiberHooks.js</a></li><li><a href="#t235.2 ReactFiberWorkLoop.js">5.2 ReactFiberWorkLoop.js</a></li><li><a href="#t245.3 ReactFiberBeginWork.js">5.3 ReactFiberBeginWork.js</a></li></ul></li><li><a href="#t256.useState">6.useState</a><ul><li><a href="#t266.1 src\index.js">6.1 src\index.js</a></li><li><a href="#t276.2 src\ReactFiberHooks.js">6.2 src\ReactFiberHooks.js</a></li></ul></li><li><a href="#t287.useEffect">7.useEffect</a><ul><li><a href="#t297.1 src\index.js">7.1 src\index.js</a></li><li><a href="#t307.2 ReactFiberFlags.js">7.2 ReactFiberFlags.js</a></li><li><a href="#t317.3 ReactHookEffectTags.js">7.3 ReactHookEffectTags.js</a></li><li><a href="#t327.4 ReactFiberHooks.js">7.4 ReactFiberHooks.js</a></li><li><a href="#t337.5 ReactFiberWorkLoop.js">7.5 ReactFiberWorkLoop.js</a></li><li><a href="#t347.6 ReactFiberCommitWork.js">7.6 ReactFiberCommitWork.js</a></li></ul></li><li><a href="#t358.useLayoutEffect">8.useLayoutEffect</a><ul><li><a href="#t368.1.src\index.js">8.1.src\index.js</a></li><li><a href="#t378.2 src\ReactFiberHooks.js">8.2 src\ReactFiberHooks.js</a></li><li><a href="#t388.3 ReactFiberWorkLoop.js">8.3 ReactFiberWorkLoop.js</a></li><li><a href="#t398.4 ReactFiberCommitWork.js">8.4 ReactFiberCommitWork.js</a></li></ul></li><li><a href="#t409.useRef">9.useRef</a><ul><li><a href="#t419.1.src\index.js">9.1.src\index.js</a></li><li><a href="#t429.2 ReactFiberHooks.js">9.2 ReactFiberHooks.js</a></li></ul></li><li><a href="#t4310.useMemo">10.useMemo</a><ul><li><a href="#t4410.1.src\index.js">10.1.src\index.js</a></li><li><a href="#t4510.2 ReactFiberHooks.js">10.2 ReactFiberHooks.js</a></li></ul></li></ul>
+<body class="modal-open" style="padding-right: 15px;">
+    <div class="nav">
+        <div class="logo">
+
+            珠峰架构师成长计划
+
+        </div>
+        <ul>
+            <li><a href="../index.html">0.Async</a></li>
+            <li><a href="../html/0.editor.html">0.editor</a></li>
+            <li><a href="../html/0.module.html">0.module</a></li>
+            <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+            <li><a href="../html/2.Promise.html">2.Promise</a></li>
+            <li><a href="../html/3.Node.html">3.Node</a></li>
+            <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+            <li><a href="../html/5.REPL.html">5.REPL</a></li>
+            <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+            <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+            <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+            <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+            <li><a href="../html/10.fs.html">10.fs</a></li>
+            <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+            <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+            <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+            <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+            <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+            <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+            <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+            <li><a href="../html/13.tcp.html">13.tcp</a></li>
+            <li><a href="../html/14.http-1.html">14.http-1</a></li>
+            <li><a href="../html/14.http-2.html">14.http-2</a></li>
+            <li><a href="../html/15.compress.html">15.compress</a></li>
+            <li><a href="../html/16.crypto.html">16.crypto</a></li>
+            <li><a href="../html/17.process.html">17.process</a></li>
+            <li><a href="../html/18.yargs.html">18.yargs</a></li>
+            <li><a href="../html/19.cache.html">19.cache</a></li>
+            <li><a href="../html/20.action.html">20.action</a></li>
+            <li><a href="../html/21.https.html">21.https</a></li>
+            <li><a href="../html/22.cookie.html">22.cookie</a></li>
+            <li><a href="../html/23.session.html">23.session</a></li>
+            <li><a href="../html/24.express-1.html">24.express-1</a></li>
+            <li><a href="../html/24.express-2.html">24.express-2</a></li>
+            <li><a href="../html/24.express-3.html">24.express-3</a></li>
+            <li><a href="../html/24.express-4.html">24.express-4</a></li>
+            <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+            <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+            <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+            <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+            <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+            <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+            <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+            <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+            <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+            <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+            <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+            <li><a href="../html/28.redux.html">28.redux</a></li>
+            <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+            <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+            <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+            <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+            <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+            <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+            <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+            <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+            <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+            <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+            <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+            <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+            <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+            <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+            <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+            <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+            <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+            <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+            <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+            <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+            <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+            <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+            <li><a href="../html/31.dva.html">31.dva</a></li>
+            <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+            <li><a href="../html/33.redis.html">33.redis</a></li>
+            <li><a href="../html/34.unittest.html">34.unittest</a></li>
+            <li><a href="../html/35.jwt.html">35.jwt</a></li>
+            <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+            <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+            <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+            <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+            <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+            <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+            <li><a href="../html/38.chat.html">38.chat</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+            <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+            <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+            <li><a href="../html/40.deploy.html">40.deploy</a></li>
+            <li><a href="../html/41.safe.html">41.safe</a></li>
+            <li><a href="../html/42.test.html">42.test</a></li>
+            <li><a href="../html/43.nginx.html">43.nginx</a></li>
+            <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+            <li><a href="../html/45.docker.html">45.docker</a></li>
+            <li><a href="../html/46.elastic.html">46.elastic</a></li>
+            <li><a href="../html/47.oauth.html">47.oauth</a></li>
+            <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/52.UML.html">52.UML</a></li>
+            <li><a href="../html/53.design.html">53.design</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/54.linux.html">54.linux</a></li>
+            <li><a href="../html/57.ts.html">57.ts</a></li>
+            <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+            <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+            <li><a href="../html/59.ketang.html">59.ketang</a></li>
+            <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+            <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+            <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+            <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+            <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+            <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+            <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+            <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+            <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+            <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+            <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+            <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+            <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+            <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+            <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+            <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+            <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+            <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+            <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+            <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+            <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+            <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+            <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+            <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+            <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+            <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+            <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+            <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+            <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+            <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+            <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+            <li><a href="../html/64.1.router.html">64.1.router</a></li>
+            <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+            <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+            <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+            <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+            <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+            <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+            <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+            <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+            <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+            <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+            <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+            <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+            <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+            <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+            <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+            <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+            <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+            <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+            <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+            <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+            <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+            <li><a href="../html/67-1-network.html">67-1-network</a></li>
+            <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+            <li><a href="../html/7.npm2.html">7.npm2</a></li>
+            <li><a href="../html/69-hooks.html">69-hooks</a></li>
+            <li><a href="../html/70-deploy.html">70-deploy</a></li>
+            <li><a href="../html/71-hmr.html">71-hmr</a></li>
+            <li><a href="../html/72.deploy.html">72.deploy</a></li>
+            <li><a href="../html/73.import.html">73.import</a></li>
+            <li><a href="../html/74.mobile.html">74.mobile</a></li>
+            <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+            <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+            <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+            <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+            <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+            <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+            <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+            <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+            <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+            <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+            <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+            <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+            <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+            <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+            <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+            <li><a href="../html/79.grammar.html">79.grammar</a></li>
+            <li><a href="../html/80.tree.html">80.tree</a></li>
+            <li><a href="../html/81.axios.html">81.axios</a></li>
+            <li><a href="../html/82.1.react.html">82.1.react</a></li>
+            <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+            <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+            <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+            <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+            <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+            <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+            <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+            <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+            <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+            <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+            <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+            <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+            <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+            <li><a href="../html/83.upload.html">83.upload</a></li>
+            <li><a href="../html/84.graphql.html">84.graphql</a></li>
+            <li><a href="../html/85.antpro.html">85.antpro</a></li>
+            <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+            <li><a href="../html/86.2.design.html">86.2.design</a></li>
+            <li><a href="../html/87.postcss.html">87.postcss</a></li>
+            <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+            <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+            <li><a href="../html/90.react-test.html">90.react-test</a></li>
+            <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+            <li><a href="../html/92.rbac.html">92.rbac</a></li>
+            <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+            <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+            <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+            <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+            <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+            <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+            <li><a href="../html/94.6.https.html">94.6.https</a></li>
+            <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+            <li><a href="../html/95.1. react.html">95.1. react</a></li>
+            <li><a href="../html/95.2.react.html">95.2.react</a></li>
+            <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+            <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+            <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+            <li><a href="../html/97.serverless.html">97.serverless</a></li>
+            <li><a href="../html/98.websocket.html">98.websocket</a></li>
+            <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+            <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+            <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+            <li><a href="../html/102.java.html">102.java</a></li>
+            <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+            <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+            <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+            <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+            <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+            <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+            <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+            <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+            <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+            <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+            <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+            <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+            <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+            <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+            <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+            <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+            <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+            <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+            <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+            <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+            <li><a href="../html/106.1.react.html">106.1.react</a></li>
+            <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+            <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+            <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+            <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+            <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+            <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+            <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+            <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+            <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+            <li><a href="../html/107.fiber.html">107.fiber</a></li>
+            <li><a href="../html/108.http.html">108.http</a></li>
+            <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+            <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+            <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+            <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+            <li><a href="../html/111.xstate.html">111.xstate</a></li>
+            <li><a href="../html/112.Form.html">112.Form</a></li>
+            <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+            <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+            <li><a href="../html/115.immer.html">115.immer</a></li>
+            <li><a href="../html/116.pro5.html">116.pro5</a></li>
+            <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+            <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+            <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+            <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+            <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+            <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+            <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+            <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+            <li><a href="../html/124.next.js.html">124.next.js</a></li>
+            <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+            <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+            <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+            <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+            <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+            <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+            <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+            <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+            <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+            <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+            <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+            <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+            <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+            <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+            <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+            <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+            <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+            <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+            <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+            <li class="active"><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+            <li><a href="../html/127.frontend.html">127.frontend</a></li>
+            <li><a href="../html/128.rollup.html">128.rollup</a></li>
+            <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+            <li><a href="../html/130.health.html">130.health</a></li>
+            <li><a href="../html/131.hooks.html">131.hooks</a></li>
+            <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+            <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+            <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+            <li><a href="../html/134.react18.html">134.react18</a></li>
+            <li><a href="../html/135.function.html">135.function</a></li>
+            <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+        </ul>
     </div>
-    <div class="content markdown-body">
-        <h2 id="t01. React面试题">1. React面试题 <a href="#t01. React面试题"> # </a></h2>
-<ul>
-<li>为什么不能在条件和循环里使用Hooks?</li>
-<li>为什么不能在函数组件外部使用Hooks?</li>
-<li>React Hooks的状态保存在了哪里?</li>
-<li>为什么传入二次相同的状态，函数组件不更新?</li>
-<li>函数组件的useState和类组件的setState有什么区别?</li>
-</ul>
-<h2 id="t12.前置知识">2.前置知识 <a href="#t12.前置知识"> # </a></h2>
-<h3 id="t22.1 位操作">2.1 位操作 <a href="#t22.1 位操作"> # </a></h3>
-<h4 id="t32.1.1 按位与(&amp;)">2.1.1 按位与(&amp;) <a href="#t32.1.1 按位与(&amp;)"> # </a></h4>
-<ul>
-<li>两个输入数的同一位都为1才为1</li>
-</ul>
-<p><img src="https://img.zhufengpeixun.com/1b7c2037153ec6d34c1e06ad04c6943d" alt="bitand2"></p>
-<h4 id="t42.1.2 按位或(|)">2.1.2 按位或(|) <a href="#t42.1.2 按位或(|)"> # </a></h4>
-<ul>
-<li>两个输入数的同一位只要有一个为1就是1</li>
-</ul>
-<p><img src="https://img.zhufengpeixun.com/df9f40a961da150a9eb65bc42533f9cb" alt="bitor2"></p>
-<h4 id="t52.1.3 位操作">2.1.3 位操作 <a href="#t52.1.3 位操作"> # </a></h4>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> NoFlags =    <span class="hljs-number">0b000</span>;<span class="hljs-comment">//没有Effect</span>
+
+
+    <div class="warpper">
+        <div class="page-toc">
+            <ul>
+                <li><a href="#t01. React面试题">1. React面试题</a></li>
+                <li><a href="#t12.前置知识">2.前置知识</a>
+                    <ul>
+                        <li><a href="#t22.1 位操作">2.1 位操作</a>
+                            <ul>
+                                <li><a href="#t32.1.1 按位与(&amp;)">2.1.1 按位与(&amp;)</a></li>
+                                <li><a href="#t42.1.2 按位或(|)">2.1.2 按位或(|)</a></li>
+                                <li><a href="#t52.1.3 位操作">2.1.3 位操作</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t62.2 Fiber">2.2 Fiber</a>
+                            <ul>
+                                <li><a href="#t72.2.1 Fiber是一种数据结构">2.2.1 Fiber是一种数据结构</a></li>
+                                <li><a href="#t82.2.2 Fiber树">2.2.2 Fiber树</a></li>
+                                <li><a href="#t92.2.3  Fiber是一个执行单元">2.2.3 Fiber是一个执行单元</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t102.3 循环链表">2.3 循环链表</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t113.使用useReducer">3.使用useReducer</a>
+                    <ul>
+                        <li><a href="#t123.1 renderWithHooks">3.1 renderWithHooks</a></li>
+                        <li><a href="#t133.2 hooks更新">3.2 hooks更新</a></li>
+                        <li><a href="#t143.3 src\index.js">3.3 src\index.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t154.实现useReducer">4.实现useReducer</a>
+                    <ul>
+                        <li><a href="#t164.1 src\index.js">4.1 src\index.js</a></li>
+                        <li><a href="#t174.2 ReactWorkTags.js">4.2 ReactWorkTags.js</a></li>
+                        <li><a href="#t184.3 ReactFiberWorkLoop.js">4.3 ReactFiberWorkLoop.js</a></li>
+                        <li><a href="#t194.4 ReactFiberBeginWork.js">4.4 ReactFiberBeginWork.js</a></li>
+                        <li><a href="#t204.5 ReactFiberHooks.js">4.5 ReactFiberHooks.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t215.useReducer更新">5.useReducer更新</a>
+                    <ul>
+                        <li><a href="#t225.1 ReactFiberHooks.js">5.1 ReactFiberHooks.js</a></li>
+                        <li><a href="#t235.2 ReactFiberWorkLoop.js">5.2 ReactFiberWorkLoop.js</a></li>
+                        <li><a href="#t245.3 ReactFiberBeginWork.js">5.3 ReactFiberBeginWork.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t256.useState">6.useState</a>
+                    <ul>
+                        <li><a href="#t266.1 src\index.js">6.1 src\index.js</a></li>
+                        <li><a href="#t276.2 src\ReactFiberHooks.js">6.2 src\ReactFiberHooks.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t287.useEffect">7.useEffect</a>
+                    <ul>
+                        <li><a href="#t297.1 src\index.js">7.1 src\index.js</a></li>
+                        <li><a href="#t307.2 ReactFiberFlags.js">7.2 ReactFiberFlags.js</a></li>
+                        <li><a href="#t317.3 ReactHookEffectTags.js">7.3 ReactHookEffectTags.js</a></li>
+                        <li><a href="#t327.4 ReactFiberHooks.js">7.4 ReactFiberHooks.js</a></li>
+                        <li><a href="#t337.5 ReactFiberWorkLoop.js">7.5 ReactFiberWorkLoop.js</a></li>
+                        <li><a href="#t347.6 ReactFiberCommitWork.js">7.6 ReactFiberCommitWork.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t358.useLayoutEffect">8.useLayoutEffect</a>
+                    <ul>
+                        <li><a href="#t368.1.src\index.js">8.1.src\index.js</a></li>
+                        <li><a href="#t378.2 src\ReactFiberHooks.js">8.2 src\ReactFiberHooks.js</a></li>
+                        <li><a href="#t388.3 ReactFiberWorkLoop.js">8.3 ReactFiberWorkLoop.js</a></li>
+                        <li><a href="#t398.4 ReactFiberCommitWork.js">8.4 ReactFiberCommitWork.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t409.useRef">9.useRef</a>
+                    <ul>
+                        <li><a href="#t419.1.src\index.js">9.1.src\index.js</a></li>
+                        <li><a href="#t429.2 ReactFiberHooks.js">9.2 ReactFiberHooks.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t4310.useMemo">10.useMemo</a>
+                    <ul>
+                        <li><a href="#t4410.1.src\index.js">10.1.src\index.js</a></li>
+                        <li><a href="#t4510.2 ReactFiberHooks.js">10.2 ReactFiberHooks.js</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content markdown-body">
+            <h2 id="t01. React面试题">1. React面试题 <a href="#t01. React面试题"> # </a></h2>
+            <ul>
+                <li>为什么不能在条件和循环里使用Hooks?</li>
+                <li>为什么不能在函数组件外部使用Hooks?</li>
+                <li>React Hooks的状态保存在了哪里?</li>
+                <li>为什么传入二次相同的状态，函数组件不更新?</li>
+                <li>函数组件的useState和类组件的setState有什么区别?</li>
+            </ul>
+            <h2 id="t12.前置知识">2.前置知识 <a href="#t12.前置知识"> # </a></h2>
+            <h3 id="t22.1 位操作">2.1 位操作 <a href="#t22.1 位操作"> # </a></h3>
+            <h4 id="t32.1.1 按位与(&amp;)">2.1.1 按位与(&amp;) <a href="#t32.1.1 按位与(&amp;)"> # </a></h4>
+            <ul>
+                <li>两个输入数的同一位都为1才为1</li>
+            </ul>
+            <p><img src="https://img.zhufengpeixun.com/1b7c2037153ec6d34c1e06ad04c6943d" alt="bitand2"></p>
+            <h4 id="t42.1.2 按位或(|)">2.1.2 按位或(|) <a href="#t42.1.2 按位或(|)"> # </a></h4>
+            <ul>
+                <li>两个输入数的同一位只要有一个为1就是1</li>
+            </ul>
+            <p><img src="https://img.zhufengpeixun.com/df9f40a961da150a9eb65bc42533f9cb" alt="bitor2"></p>
+            <h4 id="t52.1.3 位操作">2.1.3 位操作 <a href="#t52.1.3 位操作"> # </a></h4>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> NoFlags =    <span class="hljs-number">0b000</span>;<span class="hljs-comment">//没有Effect</span>
 <span class="hljs-keyword">const</span> HasEffect =  <span class="hljs-number">0b001</span>;<span class="hljs-comment">//有Effect</span>
 <span class="hljs-keyword">const</span> Layout =     <span class="hljs-number">0b010</span>;<span class="hljs-comment">//useLayoutEffect</span>
 <span class="hljs-keyword">const</span> Passive =    <span class="hljs-number">0b100</span>;<span class="hljs-comment">//useEffect</span>
@@ -65,37 +459,41 @@
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'useEffect'</span>);
 }
 </code></pre>
-<h3 id="t62.2 Fiber">2.2 Fiber <a href="#t62.2 Fiber"> # </a></h3>
-<p><img src="https://img.zhufengpeixun.com/a04c606956d8cc1341c7e5e2e40affec" alt="67a6025209e54ce64b9fc66d85285daf"></p>
-<h4 id="t72.2.1 Fiber是一种数据结构">2.2.1 Fiber是一种数据结构 <a href="#t72.2.1 Fiber是一种数据结构"> # </a></h4>
-<ul>
-<li>React目前的做法是使用链表, 每个<code>VirtualDOM</code>节点内部表示为一个<code>Fiber</code></li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> virtualDOM = (
+            <h3 id="t62.2 Fiber">2.2 Fiber <a href="#t62.2 Fiber"> # </a></h3>
+            <p><img src="https://img.zhufengpeixun.com/a04c606956d8cc1341c7e5e2e40affec"
+                    alt="67a6025209e54ce64b9fc66d85285daf"></p>
+            <h4 id="t72.2.1 Fiber是一种数据结构">2.2.1 Fiber是一种数据结构 <a href="#t72.2.1 Fiber是一种数据结构"> # </a></h4>
+            <ul>
+                <li>React目前的做法是使用链表, 每个<code>VirtualDOM</code>节点内部表示为一个<code>Fiber</code></li>
+            </ul>
+            <pre><code class="lang-js"><span class="hljs-keyword">let</span> virtualDOM = (
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">key</span>=<span class="hljs-string">"A"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">key</span>=<span class="hljs-string">"B1"</span>&gt;</span>B1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">key</span>=<span class="hljs-string">"B2"</span>&gt;</span>B2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
 )
 </code></pre>
-<h4 id="t82.2.2 Fiber树">2.2.2 Fiber树 <a href="#t82.2.2 Fiber树"> # </a></h4>
-<ul>
-<li>current fiber树 当渲染完成后会产生一个current Fiber树</li>
-<li>workInProgress fiber树 在render阶段，会基于current树创建新的workInProgress fiber树,更新完成后会把workInProgress fiber树赋给current fiber树</li>
-<li>workInProgress fiber树的每个节点会有一个alternate指针指向current树对应的fiber节点</li>
-</ul>
-<h4 id="t92.2.3  Fiber是一个执行单元">2.2.3  Fiber是一个执行单元 <a href="#t92.2.3  Fiber是一个执行单元"> # </a></h4>
-<ul>
-<li>Fiber是一个执行单元,每次执行完一个执行单元, React 就会检查现在还剩多少时间，如果没有时间就将控制权让出去</li>
-</ul>
-<p><img src="https://img.zhufengpeixun.com/8bed037dfa35a83bad852c6f3afa18fe" alt="8bed037dfa35a83bad852c6f3afa18fe"></p>
-<h3 id="t102.3 循环链表">2.3 循环链表 <a href="#t102.3 循环链表"> # </a></h3>
-<ul>
-<li>循环链表是另一种形式的链式存储结构</li>
-<li>它的特点是表中最后一个结点的指针域指向头结点，整个链表形成一个环</li>
-</ul>
-<p><img src="https://img.zhufengpeixun.com/09ac92e85389a9e3b7bfa5ec38ae8dda" alt="09ac92e85389a9e3b7bfa5ec38ae8dda"></p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dispatchAction</span>(<span class="hljs-params">queue, action</span>) </span>{
+            <h4 id="t82.2.2 Fiber树">2.2.2 Fiber树 <a href="#t82.2.2 Fiber树"> # </a></h4>
+            <ul>
+                <li>current fiber树 当渲染完成后会产生一个current Fiber树</li>
+                <li>workInProgress fiber树 在render阶段，会基于current树创建新的workInProgress fiber树,更新完成后会把workInProgress
+                    fiber树赋给current fiber树</li>
+                <li>workInProgress fiber树的每个节点会有一个alternate指针指向current树对应的fiber节点</li>
+            </ul>
+            <h4 id="t92.2.3  Fiber是一个执行单元">2.2.3 Fiber是一个执行单元 <a href="#t92.2.3  Fiber是一个执行单元"> # </a></h4>
+            <ul>
+                <li>Fiber是一个执行单元,每次执行完一个执行单元, React 就会检查现在还剩多少时间，如果没有时间就将控制权让出去</li>
+            </ul>
+            <p><img src="https://img.zhufengpeixun.com/8bed037dfa35a83bad852c6f3afa18fe"
+                    alt="8bed037dfa35a83bad852c6f3afa18fe"></p>
+            <h3 id="t102.3 循环链表">2.3 循环链表 <a href="#t102.3 循环链表"> # </a></h3>
+            <ul>
+                <li>循环链表是另一种形式的链式存储结构</li>
+                <li>它的特点是表中最后一个结点的指针域指向头结点，整个链表形成一个环</li>
+            </ul>
+            <p><img src="https://img.zhufengpeixun.com/09ac92e85389a9e3b7bfa5ec38ae8dda"
+                    alt="09ac92e85389a9e3b7bfa5ec38ae8dda"></p>
+            <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dispatchAction</span>(<span class="hljs-params">queue, action</span>) </span>{
     <span class="hljs-keyword">const</span> update = { action, <span class="hljs-attr">next</span>: <span class="hljs-literal">null</span> };
     <span class="hljs-keyword">const</span> pending = queue.pending;
     <span class="hljs-keyword">if</span> (pending === <span class="hljs-literal">null</span>) {
@@ -121,14 +519,16 @@ dispatchAction(queue, <span class="hljs-string">'action3'</span>);
     } <span class="hljs-keyword">while</span> (update !== <span class="hljs-literal">null</span> &amp;&amp; update !== first);
 }
 </code></pre>
-<h2 id="t113.使用useReducer">3.使用useReducer <a href="#t113.使用useReducer"> # </a></h2>
-<h3 id="t123.1 renderWithHooks">3.1 renderWithHooks <a href="#t123.1 renderWithHooks"> # </a></h3>
-<p><img src="https://img.zhufengpeixun.com/0de1b5f3093e22ee8d72c1cc9d201198" alt="205720261c942084b9cb45cc27367b17"></p>
-<h3 id="t133.2 hooks更新">3.2 hooks更新 <a href="#t133.2 hooks更新"> # </a></h3>
-<p><img src="https://img.zhufengpeixun.com/6c42e509155f6a11f0d9884581ce0fe7" alt="6c42e509155f6a11f0d9884581ce0fe7"></p>
-<h3 id="t143.3 src\index.js">3.3 src\index.js <a href="#t143.3 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h2 id="t113.使用useReducer">3.使用useReducer <a href="#t113.使用useReducer"> # </a></h2>
+            <h3 id="t123.1 renderWithHooks">3.1 renderWithHooks <a href="#t123.1 renderWithHooks"> # </a></h3>
+            <p><img src="https://img.zhufengpeixun.com/0de1b5f3093e22ee8d72c1cc9d201198"
+                    alt="205720261c942084b9cb45cc27367b17"></p>
+            <h3 id="t133.2 hooks更新">3.2 hooks更新 <a href="#t133.2 hooks更新"> # </a></h3>
+            <p><img src="https://img.zhufengpeixun.com/6c42e509155f6a11f0d9884581ce0fe7"
+                    alt="6c42e509155f6a11f0d9884581ce0fe7"></p>
+            <h3 id="t143.3 src\index.js">3.3 src\index.js <a href="#t143.3 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
 <span class="hljs-keyword">const</span> reducer = <span class="hljs-function">(<span class="hljs-params">state, action</span>) =&gt;</span> {
   <span class="hljs-keyword">if</span> (action.type === <span class="hljs-string">'add'</span>)
@@ -144,10 +544,10 @@ dispatchAction(queue, <span class="hljs-string">'action3'</span>);
 }
 ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Counter</span>/&gt;</span></span>,<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'root'</span>));
 </code></pre>
-<h2 id="t154.实现useReducer">4.实现useReducer <a href="#t154.实现useReducer"> # </a></h2>
-<h3 id="t164.1 src\index.js">4.1 src\index.js <a href="#t164.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h2 id="t154.实现useReducer">4.实现useReducer <a href="#t154.实现useReducer"> # </a></h2>
+            <h3 id="t164.1 src\index.js">4.1 src\index.js <a href="#t164.1 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> { IndeterminateComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'./ReactWorkTags'</span>;
 <span class="hljs-keyword">import</span> {render} <span class="hljs-keyword">from</span> <span class="hljs-string">'./ReactFiberWorkLoop'</span>;
 <span class="hljs-keyword">import</span> {useReducer} <span class="hljs-keyword">from</span> <span class="hljs-string">'./ReactFiberHooks'</span>
@@ -170,17 +570,18 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
 }
 render(workInProgress);
 </code></pre>
-<h3 id="t174.2 ReactWorkTags.js">4.2 ReactWorkTags.js <a href="#t174.2 ReactWorkTags.js"> # </a></h3>
-<p>src\ReactWorkTags.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> FunctionComponent = <span class="hljs-number">0</span>;
+            <h3 id="t174.2 ReactWorkTags.js">4.2 ReactWorkTags.js <a href="#t174.2 ReactWorkTags.js"> # </a></h3>
+            <p>src\ReactWorkTags.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> FunctionComponent = <span class="hljs-number">0</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> ClassComponent = <span class="hljs-number">1</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> IndeterminateComponent = <span class="hljs-number">2</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> HostRoot = <span class="hljs-number">3</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> HostComponent = <span class="hljs-number">5</span>;
 </code></pre>
-<h3 id="t184.3 ReactFiberWorkLoop.js">4.3 ReactFiberWorkLoop.js <a href="#t184.3 ReactFiberWorkLoop.js"> # </a></h3>
-<p>src\ReactFiberWorkLoop.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {beginWork} <span class="hljs-keyword">from</span> <span class="hljs-string">'./ReactFiberBeginWork'</span>;
+            <h3 id="t184.3 ReactFiberWorkLoop.js">4.3 ReactFiberWorkLoop.js <a href="#t184.3 ReactFiberWorkLoop.js"> #
+                </a></h3>
+            <p>src\ReactFiberWorkLoop.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> {beginWork} <span class="hljs-keyword">from</span> <span class="hljs-string">'./ReactFiberBeginWork'</span>;
 <span class="hljs-keyword">let</span> workInProgress;
 
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">workLoop</span>(<span class="hljs-params"></span>)</span>{
@@ -198,9 +599,10 @@ render(workInProgress);
     workLoop();
 }
 </code></pre>
-<h3 id="t194.4 ReactFiberBeginWork.js">4.4 ReactFiberBeginWork.js <a href="#t194.4 ReactFiberBeginWork.js"> # </a></h3>
-<p>ReactFiberBeginWork.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { IndeterminateComponent,FunctionComponent,HostComponent} <span class="hljs-keyword">from</span> <span class="hljs-string">'./ReactWorkTags'</span>;
+            <h3 id="t194.4 ReactFiberBeginWork.js">4.4 ReactFiberBeginWork.js <a href="#t194.4 ReactFiberBeginWork.js">
+                    # </a></h3>
+            <p>ReactFiberBeginWork.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> { IndeterminateComponent,FunctionComponent,HostComponent} <span class="hljs-keyword">from</span> <span class="hljs-string">'./ReactWorkTags'</span>;
 <span class="hljs-keyword">import</span> { renderWithHooks } <span class="hljs-keyword">from</span> <span class="hljs-string">'./ReactFiberHooks'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">beginWork</span>(<span class="hljs-params">current, workInProgress</span>) </span>{
     <span class="hljs-keyword">switch</span> (workInProgress.tag) {
@@ -231,9 +633,9 @@ render(workInProgress);
     workInProgress.child = childFiber;
 }
 </code></pre>
-<h3 id="t204.5 ReactFiberHooks.js">4.5 ReactFiberHooks.js <a href="#t204.5 ReactFiberHooks.js"> # </a></h3>
-<p>src\ReactFiberHooks.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> ReactCurrentDispatcher = {
+            <h3 id="t204.5 ReactFiberHooks.js">4.5 ReactFiberHooks.js <a href="#t204.5 ReactFiberHooks.js"> # </a></h3>
+            <p>src\ReactFiberHooks.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">let</span> ReactCurrentDispatcher = {
     <span class="hljs-attr">current</span>: <span class="hljs-literal">null</span>
 }
 <span class="hljs-keyword">let</span> currentlyRenderingFiber = <span class="hljs-literal">null</span>;
@@ -282,10 +684,10 @@ render(workInProgress);
    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'dispatchAction'</span>);
 }
 </code></pre>
-<h2 id="t215.useReducer更新">5.useReducer更新 <a href="#t215.useReducer更新"> # </a></h2>
-<h3 id="t225.1 ReactFiberHooks.js">5.1 ReactFiberHooks.js <a href="#t225.1 ReactFiberHooks.js"> # </a></h3>
-<p>src\ReactFiberHooks.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';</span>
+            <h2 id="t215.useReducer更新">5.useReducer更新 <a href="#t215.useReducer更新"> # </a></h2>
+            <h3 id="t225.1 ReactFiberHooks.js">5.1 ReactFiberHooks.js <a href="#t225.1 ReactFiberHooks.js"> # </a></h3>
+            <p>src\ReactFiberHooks.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';</span>
 let ReactCurrentDispatcher = {
     current: null
 }
@@ -403,9 +805,10 @@ export function dispatchAction(fiber, queue, action) {
 <span class="hljs-addition">+  scheduleUpdateOnFiber(fiber);</span>
 }
 </code></pre>
-<h3 id="t235.2 ReactFiberWorkLoop.js">5.2 ReactFiberWorkLoop.js <a href="#t235.2 ReactFiberWorkLoop.js"> # </a></h3>
-<p>src\ReactFiberWorkLoop.js</p>
-<pre><code class="lang-diff">import { beginWork } from './ReactFiberBeginWork';
+            <h3 id="t235.2 ReactFiberWorkLoop.js">5.2 ReactFiberWorkLoop.js <a href="#t235.2 ReactFiberWorkLoop.js"> #
+                </a></h3>
+            <p>src\ReactFiberWorkLoop.js</p>
+            <pre><code class="lang-diff">import { beginWork } from './ReactFiberBeginWork';
 let workInProgress;
 
 export function workLoop() {
@@ -430,9 +833,10 @@ export function render(fiber) {
     workLoop();
 }
 </code></pre>
-<h3 id="t245.3 ReactFiberBeginWork.js">5.3 ReactFiberBeginWork.js <a href="#t245.3 ReactFiberBeginWork.js"> # </a></h3>
-<p>src\ReactFiberBeginWork.js</p>
-<pre><code class="lang-diff">import { IndeterminateComponent, FunctionComponent, HostComponent } from './ReactWorkTags';
+            <h3 id="t245.3 ReactFiberBeginWork.js">5.3 ReactFiberBeginWork.js <a href="#t245.3 ReactFiberBeginWork.js">
+                    # </a></h3>
+            <p>src\ReactFiberBeginWork.js</p>
+            <pre><code class="lang-diff">import { IndeterminateComponent, FunctionComponent, HostComponent } from './ReactWorkTags';
 import { renderWithHooks } from './ReactFiberHooks';
 export function beginWork(current, workInProgress) {
 <span class="hljs-addition">+    if (current !== null) {</span>
@@ -485,10 +889,10 @@ function reconcileChildren(current, workInProgress, nextChildren) {
     workInProgress.child = childFiber;
 }
 </code></pre>
-<h2 id="t256.useState">6.useState <a href="#t256.useState"> # </a></h2>
-<h3 id="t266.1 src\index.js">6.1 src\index.js <a href="#t266.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import * as React from 'react';
+            <h2 id="t256.useState">6.useState <a href="#t256.useState"> # </a></h2>
+            <h3 id="t266.1 src\index.js">6.1 src\index.js <a href="#t266.1 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-diff">import * as React from 'react';
 import { IndeterminateComponent } from './ReactWorkTags';
 import {render} from './ReactFiberWorkLoop';
 <span class="hljs-addition">+import {useReducer,useState} from './ReactFiberHooks'</span>
@@ -506,9 +910,10 @@ let workInProgress = {
 }
 render(workInProgress);
 </code></pre>
-<h3 id="t276.2 src\ReactFiberHooks.js">6.2 src\ReactFiberHooks.js <a href="#t276.2 src\ReactFiberHooks.js"> # </a></h3>
-<p>src\ReactFiberHooks.js</p>
-<pre><code class="lang-diff">import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';
+            <h3 id="t276.2 src\ReactFiberHooks.js">6.2 src\ReactFiberHooks.js <a href="#t276.2 src\ReactFiberHooks.js">
+                    # </a></h3>
+            <p>src\ReactFiberHooks.js</p>
+            <pre><code class="lang-diff">import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';
 let ReactCurrentDispatcher = {
     current: null
 }
@@ -647,77 +1052,79 @@ const lastRenderedReducer = queue.lastRenderedReducer;
    scheduleUpdateOnFiber(fiber);
 }
 </code></pre>
-<h2 id="t287.useEffect">7.useEffect <a href="#t287.useEffect"> # </a></h2>
-<ul>
-<li>React工作的三个阶段<ul>
-<li>scheduler(调度) 确定最高优的任务并进入<code>reconciler</code></li>
-<li>reconciler(协调) 找出变化的内容</li>
-<li>renderer(渲染) 把变化的内容更新到DOM上<ul>
-<li>beforeMutation  更新DOM前</li>
-<li>mutation 更新DOM</li>
-<li>layout 更新DOM后</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><img src="https://img.zhufengpeixun.com/9e2ae1e1704713f21f5bf6d9ac6dc990" alt="9e2ae1e1704713f21f5bf6d9ac6dc990"></p>
-<p><img src="https://img.zhufengpeixun.com/5e3f17b04be8f6b223ddb55d0187acb4" alt="f7a2a93f0896e5f697793a2a4c7d4b58"></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">类型</th>
-<th style="text-align:left">fiberFlags</th>
-<th style="text-align:left">hookFlags</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">useEffect</td>
-<td style="text-align:left">UpdateEffect或PassiveEffect</td>
-<td style="text-align:left">HookHasEffect或HookPassive</td>
-</tr>
-<tr>
-<td style="text-align:left">useLayoutEffect</td>
-<td style="text-align:left">UpdateEffect</td>
-<td style="text-align:left">HookHasEffect或HookLayout</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">阶段</th>
-<th style="text-align:left">useEffect</th>
-<th style="text-align:left">useLayoutEffect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">commitBeforeMutationEffects</td>
-<td style="text-align:left">调度flushPassiveEffects</td>
-<td style="text-align:left">无</td>
-</tr>
-<tr>
-<td style="text-align:left">commitMutationEffects</td>
-<td style="text-align:left">无</td>
-<td style="text-align:left">执行destroy</td>
-</tr>
-<tr>
-<td style="text-align:left">commitLayoutEffects</td>
-<td style="text-align:left">注册destroy、create</td>
-<td style="text-align:left">执行create</td>
-</tr>
-<tr>
-<td style="text-align:left">commit完成后</td>
-<td style="text-align:left">执行flushPassiveEffects</td>
-<td style="text-align:left">无</td>
-</tr>
-</tbody>
-</table>
-<h3 id="t297.1 src\index.js">7.1 src\index.js <a href="#t297.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import * as React from 'react';
+            <h2 id="t287.useEffect">7.useEffect <a href="#t287.useEffect"> # </a></h2>
+            <ul>
+                <li>React工作的三个阶段<ul>
+                        <li>scheduler(调度) 确定最高优的任务并进入<code>reconciler</code></li>
+                        <li>reconciler(协调) 找出变化的内容</li>
+                        <li>renderer(渲染) 把变化的内容更新到DOM上<ul>
+                                <li>beforeMutation 更新DOM前</li>
+                                <li>mutation 更新DOM</li>
+                                <li>layout 更新DOM后</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p><img src="https://img.zhufengpeixun.com/9e2ae1e1704713f21f5bf6d9ac6dc990"
+                    alt="9e2ae1e1704713f21f5bf6d9ac6dc990"></p>
+            <p><img src="https://img.zhufengpeixun.com/5e3f17b04be8f6b223ddb55d0187acb4"
+                    alt="f7a2a93f0896e5f697793a2a4c7d4b58"></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align:left">类型</th>
+                        <th style="text-align:left">fiberFlags</th>
+                        <th style="text-align:left">hookFlags</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align:left">useEffect</td>
+                        <td style="text-align:left">UpdateEffect或PassiveEffect</td>
+                        <td style="text-align:left">HookHasEffect或HookPassive</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">useLayoutEffect</td>
+                        <td style="text-align:left">UpdateEffect</td>
+                        <td style="text-align:left">HookHasEffect或HookLayout</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align:left">阶段</th>
+                        <th style="text-align:left">useEffect</th>
+                        <th style="text-align:left">useLayoutEffect</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align:left">commitBeforeMutationEffects</td>
+                        <td style="text-align:left">调度flushPassiveEffects</td>
+                        <td style="text-align:left">无</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">commitMutationEffects</td>
+                        <td style="text-align:left">无</td>
+                        <td style="text-align:left">执行destroy</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">commitLayoutEffects</td>
+                        <td style="text-align:left">注册destroy、create</td>
+                        <td style="text-align:left">执行create</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">commit完成后</td>
+                        <td style="text-align:left">执行flushPassiveEffects</td>
+                        <td style="text-align:left">无</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 id="t297.1 src\index.js">7.1 src\index.js <a href="#t297.1 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-diff">import * as React from 'react';
 import { IndeterminateComponent } from './ReactWorkTags';
 import {render} from './ReactFiberWorkLoop';
 import {useReducer,useState,useEffect} from './ReactFiberHooks'
@@ -754,35 +1161,36 @@ let workInProgress = {
 }
 render(workInProgress);
 </code></pre>
-<h3 id="t307.2 ReactFiberFlags.js">7.2 ReactFiberFlags.js <a href="#t307.2 ReactFiberFlags.js"> # </a></h3>
-<ul>
-<li>NoFlags 没有任何副作用</li>
-<li>PerformedWork 有工作要做</li>
-<li>Update  有<code>useLayoutEffect</code>对应副作用</li>
-<li>Passive 有<code>useEffect</code>对应的副作用</li>
-</ul>
-<p>src\ReactFiberFlags.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> NoFlags = <span class="hljs-comment">/*                      */</span> <span class="hljs-number">0b000000000000000000</span>;<span class="hljs-comment">//0</span>
+            <h3 id="t307.2 ReactFiberFlags.js">7.2 ReactFiberFlags.js <a href="#t307.2 ReactFiberFlags.js"> # </a></h3>
+            <ul>
+                <li>NoFlags 没有任何副作用</li>
+                <li>PerformedWork 有工作要做</li>
+                <li>Update 有<code>useLayoutEffect</code>对应副作用</li>
+                <li>Passive 有<code>useEffect</code>对应的副作用</li>
+            </ul>
+            <p>src\ReactFiberFlags.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> NoFlags = <span class="hljs-comment">/*                      */</span> <span class="hljs-number">0b000000000000000000</span>;<span class="hljs-comment">//0</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> PerformedWork = <span class="hljs-comment">/*                */</span> <span class="hljs-number">0b000000000000000001</span>;<span class="hljs-comment">//1</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> Update = <span class="hljs-comment">/*                       */</span> <span class="hljs-number">0b000000000000000100</span>;<span class="hljs-comment">//4</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> Passive = <span class="hljs-comment">/*                      */</span> <span class="hljs-number">0b000000001000000000</span>;<span class="hljs-comment">//512</span>
 </code></pre>
-<h3 id="t317.3 ReactHookEffectTags.js">7.3 ReactHookEffectTags.js <a href="#t317.3 ReactHookEffectTags.js"> # </a></h3>
-<ul>
-<li>NoFlags</li>
-<li>HasEffect 有effect</li>
-<li>Layout <code>useLayoutEffect</code>创建的effect</li>
-<li>Passive <code>useEffect</code>创建的effect</li>
-</ul>
-<p>src\ReactHookEffectTags.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> NoFlags = <span class="hljs-comment">/*  */</span> <span class="hljs-number">0b000</span>;
+            <h3 id="t317.3 ReactHookEffectTags.js">7.3 ReactHookEffectTags.js <a href="#t317.3 ReactHookEffectTags.js">
+                    # </a></h3>
+            <ul>
+                <li>NoFlags</li>
+                <li>HasEffect 有effect</li>
+                <li>Layout <code>useLayoutEffect</code>创建的effect</li>
+                <li>Passive <code>useEffect</code>创建的effect</li>
+            </ul>
+            <p>src\ReactHookEffectTags.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> NoFlags = <span class="hljs-comment">/*  */</span> <span class="hljs-number">0b000</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> HasEffect = <span class="hljs-comment">/* */</span> <span class="hljs-number">0b001</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> Layout = <span class="hljs-comment">/*    */</span> <span class="hljs-number">0b010</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> Passive = <span class="hljs-comment">/*   */</span> <span class="hljs-number">0b100</span>;
 </code></pre>
-<h3 id="t327.4 ReactFiberHooks.js">7.4 ReactFiberHooks.js <a href="#t327.4 ReactFiberHooks.js"> # </a></h3>
-<p>src\ReactFiberHooks.js</p>
-<pre><code class="lang-diff">import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';
+            <h3 id="t327.4 ReactFiberHooks.js">7.4 ReactFiberHooks.js <a href="#t327.4 ReactFiberHooks.js"> # </a></h3>
+            <p>src\ReactFiberHooks.js</p>
+            <pre><code class="lang-diff">import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';
 <span class="hljs-addition">+import { Update as UpdateEffect, Passive as PassiveEffect } from './ReactFiberFlags';</span>
 <span class="hljs-addition">+import { HasEffect as HookHasEffect, Passive as HookPassive} from './ReactHookEffectTags';</span>
 let ReactCurrentDispatcher = {
@@ -1010,9 +1418,10 @@ export function dispatchAction(fiber, queue, action) {
    scheduleUpdateOnFiber(fiber);
 }
 </code></pre>
-<h3 id="t337.5 ReactFiberWorkLoop.js">7.5 ReactFiberWorkLoop.js <a href="#t337.5 ReactFiberWorkLoop.js"> # </a></h3>
-<p>src\ReactFiberWorkLoop.js</p>
-<pre><code class="lang-diff">import { beginWork } from './ReactFiberBeginWork';
+            <h3 id="t337.5 ReactFiberWorkLoop.js">7.5 ReactFiberWorkLoop.js <a href="#t337.5 ReactFiberWorkLoop.js"> #
+                </a></h3>
+            <p>src\ReactFiberWorkLoop.js</p>
+            <pre><code class="lang-diff">import { beginWork } from './ReactFiberBeginWork';
 <span class="hljs-addition">+import {Update, Passive, NoFlags } from './ReactFiberFlags';</span>
 <span class="hljs-addition">+import { commitLifeCycles as commitLayoutEffectOnFiber } from './ReactFiberCommitWork';</span>
 let workInProgress;
@@ -1092,9 +1501,10 @@ export function render(fiber) {
     workLoop();
 }
 </code></pre>
-<h3 id="t347.6 ReactFiberCommitWork.js">7.6 ReactFiberCommitWork.js <a href="#t347.6 ReactFiberCommitWork.js"> # </a></h3>
-<p>src\ReactFiberCommitWork.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { FunctionComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'./ReactWorkTags'</span>;
+            <h3 id="t347.6 ReactFiberCommitWork.js">7.6 ReactFiberCommitWork.js <a
+                    href="#t347.6 ReactFiberCommitWork.js"> # </a></h3>
+            <p>src\ReactFiberCommitWork.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> { FunctionComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'./ReactWorkTags'</span>;
 <span class="hljs-keyword">import</span> {
     Layout <span class="hljs-keyword">as</span> HookLayout, HasEffect <span class="hljs-keyword">as</span> HookHasEffect,
     Passive <span class="hljs-keyword">as</span> HookPassive, NoFlags <span class="hljs-keyword">as</span> NoHookEffect
@@ -1129,10 +1539,11 @@ export function render(fiber) {
     }
 }
 </code></pre>
-<h2 id="t358.useLayoutEffect">8.useLayoutEffect <a href="#t358.useLayoutEffect"> # </a></h2>
-<p><img src="https://img.zhufengpeixun.com/92f53cdf5c22c78086bef8ba7c825502" alt="92f53cdf5c22c78086bef8ba7c825502"></p>
-<h3 id="t368.1.src\index.js">8.1.src\index.js <a href="#t368.1.src\index.js"> # </a></h3>
-<pre><code class="lang-diff">import * as React from 'react';
+            <h2 id="t358.useLayoutEffect">8.useLayoutEffect <a href="#t358.useLayoutEffect"> # </a></h2>
+            <p><img src="https://img.zhufengpeixun.com/92f53cdf5c22c78086bef8ba7c825502"
+                    alt="92f53cdf5c22c78086bef8ba7c825502"></p>
+            <h3 id="t368.1.src\index.js">8.1.src\index.js <a href="#t368.1.src\index.js"> # </a></h3>
+            <pre><code class="lang-diff">import * as React from 'react';
 import { IndeterminateComponent } from './ReactWorkTags';
 import {render} from './ReactFiberWorkLoop';
 <span class="hljs-addition">+import {useReducer,useState,useEffect,useLayoutEffect} from './ReactFiberHooks'</span>
@@ -1169,9 +1580,10 @@ let workInProgress = {
 }
 render(workInProgress);
 </code></pre>
-<h3 id="t378.2 src\ReactFiberHooks.js">8.2 src\ReactFiberHooks.js <a href="#t378.2 src\ReactFiberHooks.js"> # </a></h3>
-<p>src\ReactFiberHooks.js</p>
-<pre><code class="lang-diff">import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';
+            <h3 id="t378.2 src\ReactFiberHooks.js">8.2 src\ReactFiberHooks.js <a href="#t378.2 src\ReactFiberHooks.js">
+                    # </a></h3>
+            <p>src\ReactFiberHooks.js</p>
+            <pre><code class="lang-diff">import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';
 import { Update as UpdateEffect, Passive as PassiveEffect } from './ReactFiberFlags';
 <span class="hljs-addition">+import { HasEffect as HookHasEffect, Passive as HookPassive, Layout as HookLayout} from './ReactHookEffectTags';</span>
 let ReactCurrentDispatcher = {
@@ -1410,9 +1822,10 @@ export function dispatchAction(fiber, queue, action) {
    scheduleUpdateOnFiber(fiber);
 }
 </code></pre>
-<h3 id="t388.3 ReactFiberWorkLoop.js">8.3 ReactFiberWorkLoop.js <a href="#t388.3 ReactFiberWorkLoop.js"> # </a></h3>
-<p>src\ReactFiberWorkLoop.js</p>
-<pre><code class="lang-diff">import { beginWork } from './ReactFiberBeginWork';
+            <h3 id="t388.3 ReactFiberWorkLoop.js">8.3 ReactFiberWorkLoop.js <a href="#t388.3 ReactFiberWorkLoop.js"> #
+                </a></h3>
+            <p>src\ReactFiberWorkLoop.js</p>
+            <pre><code class="lang-diff">import { beginWork } from './ReactFiberBeginWork';
 import {Update, Passive, NoFlags } from './ReactFiberFlags';
 import { commitLifeCycles as commitLayoutEffectOnFiber } from './ReactFiberCommitWork';
 <span class="hljs-addition">+import { FunctionComponent } from './ReactWorkTags';</span>
@@ -1533,9 +1946,10 @@ export function render(fiber) {
     workLoop();
 }
 </code></pre>
-<h3 id="t398.4 ReactFiberCommitWork.js">8.4 ReactFiberCommitWork.js <a href="#t398.4 ReactFiberCommitWork.js"> # </a></h3>
-<p>src\ReactFiberCommitWork.js</p>
-<pre><code class="lang-diff">
+            <h3 id="t398.4 ReactFiberCommitWork.js">8.4 ReactFiberCommitWork.js <a
+                    href="#t398.4 ReactFiberCommitWork.js"> # </a></h3>
+            <p>src\ReactFiberCommitWork.js</p>
+            <pre><code class="lang-diff">
 import { FunctionComponent } from './ReactWorkTags';
 import {
     Layout as HookLayout, HasEffect as HookHasEffect,
@@ -1587,9 +2001,9 @@ function schedulePassiveEffects(finishedWork) {
     }
 }
 </code></pre>
-<h2 id="t409.useRef">9.useRef <a href="#t409.useRef"> # </a></h2>
-<h3 id="t419.1.src\index.js">9.1.src\index.js <a href="#t419.1.src\index.js"> # </a></h3>
-<pre><code class="lang-diff">import * as React from 'react';
+            <h2 id="t409.useRef">9.useRef <a href="#t409.useRef"> # </a></h2>
+            <h3 id="t419.1.src\index.js">9.1.src\index.js <a href="#t419.1.src\index.js"> # </a></h3>
+            <pre><code class="lang-diff">import * as React from 'react';
 import { IndeterminateComponent } from './ReactWorkTags';
 import {render} from './ReactFiberWorkLoop';
 <span class="hljs-addition">+import {useReducer,useState,useEffect,useLayoutEffect,useRef} from './ReactFiberHooks'</span>
@@ -1616,9 +2030,9 @@ let workInProgress = {
 }
 render(workInProgress);
 </code></pre>
-<h3 id="t429.2 ReactFiberHooks.js">9.2 ReactFiberHooks.js <a href="#t429.2 ReactFiberHooks.js"> # </a></h3>
-<p>src\ReactFiberHooks.js</p>
-<pre><code class="lang-diff">import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';
+            <h3 id="t429.2 ReactFiberHooks.js">9.2 ReactFiberHooks.js <a href="#t429.2 ReactFiberHooks.js"> # </a></h3>
+            <p>src\ReactFiberHooks.js</p>
+            <pre><code class="lang-diff">import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';
 import { Update as UpdateEffect, Passive as PassiveEffect } from './ReactFiberFlags';
 import { HasEffect as HookHasEffect, Passive as HookPassive, Layout as HookLayout} from './ReactHookEffectTags';
 let ReactCurrentDispatcher = {
@@ -1872,9 +2286,9 @@ export function dispatchAction(fiber, queue, action) {
    scheduleUpdateOnFiber(fiber);
 }
 </code></pre>
-<h2 id="t4310.useMemo">10.useMemo <a href="#t4310.useMemo"> # </a></h2>
-<h3 id="t4410.1.src\index.js">10.1.src\index.js <a href="#t4410.1.src\index.js"> # </a></h3>
-<pre><code class="lang-diff">import * as React from 'react';
+            <h2 id="t4310.useMemo">10.useMemo <a href="#t4310.useMemo"> # </a></h2>
+            <h3 id="t4410.1.src\index.js">10.1.src\index.js <a href="#t4410.1.src\index.js"> # </a></h3>
+            <pre><code class="lang-diff">import * as React from 'react';
 import { IndeterminateComponent } from './ReactWorkTags';
 import {render} from './ReactFiberWorkLoop';
 <span class="hljs-addition">+import {useReducer,useState,useEffect,useLayoutEffect,useRef,useMemo} from './ReactFiberHooks'</span>
@@ -1897,9 +2311,10 @@ let workInProgress = {
 }
 render(workInProgress);
 </code></pre>
-<h3 id="t4510.2 ReactFiberHooks.js">10.2 ReactFiberHooks.js <a href="#t4510.2 ReactFiberHooks.js"> # </a></h3>
-<p>src\ReactFiberHooks.js</p>
-<pre><code class="lang-diff">import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';
+            <h3 id="t4510.2 ReactFiberHooks.js">10.2 ReactFiberHooks.js <a href="#t4510.2 ReactFiberHooks.js"> # </a>
+            </h3>
+            <p>src\ReactFiberHooks.js</p>
+            <pre><code class="lang-diff">import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';
 import { Update as UpdateEffect, Passive as PassiveEffect } from './ReactFiberFlags';
 import { HasEffect as HookHasEffect, Passive as HookPassive, Layout as HookLayout} from './ReactHookEffectTags';
 let ReactCurrentDispatcher = {
@@ -2182,6 +2597,6 @@ export function dispatchAction(fiber, queue, action) {
 }
 </code></pre>
 
+        </div>
     </div>
-</div>
 </body>

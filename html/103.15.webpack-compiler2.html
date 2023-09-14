@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        .page-toc > ul .red {
+        .page-toc>ul .red {
             background: #f3f3f3;
             z-index: 1;
             border-left: 3px solid #009a61;
@@ -15,55 +15,447 @@
         }
     </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li class="active"><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
-    <div class="page-toc">
-        <ul><li><a href="#t01.需求分析">1.需求分析</a></li><li><a href="#t12.编译器工作流">2.编译器工作流</a><ul><li><a href="#t22.1 解析(Parsing)">2.1 解析(Parsing)</a></li><li><a href="#t32.2 遍历(Traversal)">2.2 遍历(Traversal)</a></li><li><a href="#t42.3 转换(Transformation)">2.3 转换(Transformation)</a></li><li><a href="#t52.4 代码生成(Code Generation)">2.4 代码生成(Code Generation)</a></li></ul></li><li><a href="#t63. 有限状态机">3. 有限状态机</a><ul><li><a href="#t74 词法分析器">4 词法分析器</a></li><li><a href="#t84.1 tokenTypes.js">4.1 tokenTypes.js</a></li><li><a href="#t94.2 tokenizer.js">4.2 tokenizer.js</a></li></ul></li><li><a href="#t105.语法分析">5.语法分析</a><ul><li><a href="#t115.1 递归下降算法">5.1 递归下降算法</a></li><li><a href="#t125.2 上下文无关文法">5.2 上下文无关文法</a></li><li><a href="#t135.3 算术表达式">5.3 算术表达式</a></li><li><a href="#t145.4 实现">5.4 实现</a><ul><li><a href="#t155.4.1 index.js">5.4.1 index.js</a></li><li><a href="#t165.4.2 parse.js">5.4.2 parse.js</a></li><li><a href="#t175.4.3 tokenTypes.js">5.4.3 tokenTypes.js</a></li><li><a href="#t185.4.4 tokenize.js">5.4.4 tokenize.js</a></li><li><a href="#t195.4.5 nodeTypes.js">5.4.5 nodeTypes.js</a></li><li><a href="#t205.4.6 ASTNode.js">5.4.6 ASTNode.js</a></li><li><a href="#t215.4.7 toAst.js">5.4.7 toAst.js</a></li><li><a href="#t225.4.8 evaluate.js">5.4.8 evaluate.js</a></li></ul></li><li><a href="#t235.5 支持减法和除法">5.5 支持减法和除法</a><ul><li><a href="#t245.5.1 index.js">5.5.1 index.js</a></li><li><a href="#t255.5.2 tokenTypes.js">5.5.2 tokenTypes.js</a></li><li><a href="#t265.5.3 tokenize.js">5.5.3 tokenize.js</a></li><li><a href="#t275.5.4 nodeTypes.js">5.5.4 nodeTypes.js</a></li><li><a href="#t285.5.5 toAST.js">5.5.5 toAST.js</a></li><li><a href="#t295.5.6 evaluate.js">5.5.6 evaluate.js</a></li></ul></li><li><a href="#t305.6 支持括号">5.6 支持括号</a><ul><li><a href="#t315.6.1 index.js">5.6.1 index.js</a></li><li><a href="#t325.6.2 tokenTypes.js">5.6.2 tokenTypes.js</a></li><li><a href="#t335.6.3 tokenize.js">5.6.3 tokenize.js</a></li><li><a href="#t345.6.4 toAST.js">5.6.4 toAST.js</a></li></ul></li><li><a href="#t355.7 二元表达式">5.7 二元表达式</a><ul><li><a href="#t365.7.1  优先级（Priority）">5.7.1  优先级（Priority）</a></li><li><a href="#t375.7.2  结合性（Associativity）">5.7.2  结合性（Associativity）</a></li><li><a href="#t385.7.3 文法规则">5.7.3 文法规则</a></li><li><a href="#t395.7.3 左递归（Left Recursive）">5.7.3 左递归（Left Recursive）</a></li><li><a href="#t405.7.4 消除左递归">5.7.4 消除左递归</a></li><li><a href="#t415.7.5 循环消除左递归">5.7.5 循环消除左递归</a></li><li><a href="#t425.7.6 实现">5.7.6 实现</a></li></ul></li></ul></li><li><a href="#t436. 语法分析器">6. 语法分析器</a><ul><li><a href="#t446.1  nodeTypes.js">6.1  nodeTypes.js</a></li><li><a href="#t456.2  parser.js">6.2  parser.js</a></li></ul></li><li><a href="#t467. 遍历语法树">7. 遍历语法树</a></li><li><a href="#t478. 转换器">8. 转换器</a></li><li><a href="#t489. 生成器">9. 生成器</a></li></ul>
+<body class="modal-open" style="padding-right: 15px;">
+    <div class="nav">
+        <div class="logo">
+
+            珠峰架构师成长计划
+
+        </div>
+        <ul>
+            <li><a href="../index.html">0.Async</a></li>
+            <li><a href="../html/0.editor.html">0.editor</a></li>
+            <li><a href="../html/0.module.html">0.module</a></li>
+            <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+            <li><a href="../html/2.Promise.html">2.Promise</a></li>
+            <li><a href="../html/3.Node.html">3.Node</a></li>
+            <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+            <li><a href="../html/5.REPL.html">5.REPL</a></li>
+            <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+            <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+            <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+            <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+            <li><a href="../html/10.fs.html">10.fs</a></li>
+            <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+            <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+            <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+            <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+            <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+            <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+            <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+            <li><a href="../html/13.tcp.html">13.tcp</a></li>
+            <li><a href="../html/14.http-1.html">14.http-1</a></li>
+            <li><a href="../html/14.http-2.html">14.http-2</a></li>
+            <li><a href="../html/15.compress.html">15.compress</a></li>
+            <li><a href="../html/16.crypto.html">16.crypto</a></li>
+            <li><a href="../html/17.process.html">17.process</a></li>
+            <li><a href="../html/18.yargs.html">18.yargs</a></li>
+            <li><a href="../html/19.cache.html">19.cache</a></li>
+            <li><a href="../html/20.action.html">20.action</a></li>
+            <li><a href="../html/21.https.html">21.https</a></li>
+            <li><a href="../html/22.cookie.html">22.cookie</a></li>
+            <li><a href="../html/23.session.html">23.session</a></li>
+            <li><a href="../html/24.express-1.html">24.express-1</a></li>
+            <li><a href="../html/24.express-2.html">24.express-2</a></li>
+            <li><a href="../html/24.express-3.html">24.express-3</a></li>
+            <li><a href="../html/24.express-4.html">24.express-4</a></li>
+            <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+            <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+            <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+            <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+            <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+            <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+            <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+            <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+            <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+            <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+            <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+            <li><a href="../html/28.redux.html">28.redux</a></li>
+            <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+            <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+            <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+            <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+            <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+            <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+            <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+            <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+            <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+            <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+            <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+            <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+            <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+            <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+            <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+            <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+            <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+            <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+            <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+            <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+            <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+            <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+            <li><a href="../html/31.dva.html">31.dva</a></li>
+            <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+            <li><a href="../html/33.redis.html">33.redis</a></li>
+            <li><a href="../html/34.unittest.html">34.unittest</a></li>
+            <li><a href="../html/35.jwt.html">35.jwt</a></li>
+            <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+            <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+            <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+            <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+            <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+            <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+            <li><a href="../html/38.chat.html">38.chat</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+            <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+            <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+            <li><a href="../html/40.deploy.html">40.deploy</a></li>
+            <li><a href="../html/41.safe.html">41.safe</a></li>
+            <li><a href="../html/42.test.html">42.test</a></li>
+            <li><a href="../html/43.nginx.html">43.nginx</a></li>
+            <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+            <li><a href="../html/45.docker.html">45.docker</a></li>
+            <li><a href="../html/46.elastic.html">46.elastic</a></li>
+            <li><a href="../html/47.oauth.html">47.oauth</a></li>
+            <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/52.UML.html">52.UML</a></li>
+            <li><a href="../html/53.design.html">53.design</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/54.linux.html">54.linux</a></li>
+            <li><a href="../html/57.ts.html">57.ts</a></li>
+            <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+            <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+            <li><a href="../html/59.ketang.html">59.ketang</a></li>
+            <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+            <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+            <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+            <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+            <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+            <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+            <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+            <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+            <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+            <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+            <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+            <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+            <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+            <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+            <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+            <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+            <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+            <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+            <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+            <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+            <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+            <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+            <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+            <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+            <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+            <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+            <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+            <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+            <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+            <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+            <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+            <li><a href="../html/64.1.router.html">64.1.router</a></li>
+            <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+            <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+            <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+            <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+            <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+            <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+            <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+            <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+            <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+            <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+            <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+            <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+            <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+            <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+            <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+            <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+            <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+            <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+            <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+            <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+            <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+            <li><a href="../html/67-1-network.html">67-1-network</a></li>
+            <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+            <li><a href="../html/7.npm2.html">7.npm2</a></li>
+            <li><a href="../html/69-hooks.html">69-hooks</a></li>
+            <li><a href="../html/70-deploy.html">70-deploy</a></li>
+            <li><a href="../html/71-hmr.html">71-hmr</a></li>
+            <li><a href="../html/72.deploy.html">72.deploy</a></li>
+            <li><a href="../html/73.import.html">73.import</a></li>
+            <li><a href="../html/74.mobile.html">74.mobile</a></li>
+            <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+            <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+            <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+            <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+            <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+            <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+            <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+            <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+            <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+            <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+            <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+            <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+            <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+            <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+            <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+            <li><a href="../html/79.grammar.html">79.grammar</a></li>
+            <li><a href="../html/80.tree.html">80.tree</a></li>
+            <li><a href="../html/81.axios.html">81.axios</a></li>
+            <li><a href="../html/82.1.react.html">82.1.react</a></li>
+            <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+            <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+            <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+            <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+            <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+            <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+            <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+            <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+            <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+            <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+            <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+            <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+            <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+            <li><a href="../html/83.upload.html">83.upload</a></li>
+            <li><a href="../html/84.graphql.html">84.graphql</a></li>
+            <li><a href="../html/85.antpro.html">85.antpro</a></li>
+            <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+            <li><a href="../html/86.2.design.html">86.2.design</a></li>
+            <li><a href="../html/87.postcss.html">87.postcss</a></li>
+            <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+            <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+            <li><a href="../html/90.react-test.html">90.react-test</a></li>
+            <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+            <li><a href="../html/92.rbac.html">92.rbac</a></li>
+            <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+            <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+            <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+            <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+            <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+            <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+            <li><a href="../html/94.6.https.html">94.6.https</a></li>
+            <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+            <li><a href="../html/95.1. react.html">95.1. react</a></li>
+            <li><a href="../html/95.2.react.html">95.2.react</a></li>
+            <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+            <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+            <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+            <li><a href="../html/97.serverless.html">97.serverless</a></li>
+            <li><a href="../html/98.websocket.html">98.websocket</a></li>
+            <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+            <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+            <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+            <li><a href="../html/102.java.html">102.java</a></li>
+            <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+            <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+            <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+            <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+            <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+            <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+            <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+            <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+            <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+            <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+            <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+            <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+            <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+            <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+            <li class="active"><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+            <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+            <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+            <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+            <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+            <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+            <li><a href="../html/106.1.react.html">106.1.react</a></li>
+            <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+            <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+            <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+            <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+            <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+            <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+            <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+            <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+            <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+            <li><a href="../html/107.fiber.html">107.fiber</a></li>
+            <li><a href="../html/108.http.html">108.http</a></li>
+            <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+            <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+            <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+            <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+            <li><a href="../html/111.xstate.html">111.xstate</a></li>
+            <li><a href="../html/112.Form.html">112.Form</a></li>
+            <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+            <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+            <li><a href="../html/115.immer.html">115.immer</a></li>
+            <li><a href="../html/116.pro5.html">116.pro5</a></li>
+            <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+            <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+            <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+            <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+            <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+            <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+            <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+            <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+            <li><a href="../html/124.next.js.html">124.next.js</a></li>
+            <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+            <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+            <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+            <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+            <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+            <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+            <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+            <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+            <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+            <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+            <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+            <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+            <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+            <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+            <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+            <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+            <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+            <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+            <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+            <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+            <li><a href="../html/127.frontend.html">127.frontend</a></li>
+            <li><a href="../html/128.rollup.html">128.rollup</a></li>
+            <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+            <li><a href="../html/130.health.html">130.health</a></li>
+            <li><a href="../html/131.hooks.html">131.hooks</a></li>
+            <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+            <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+            <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+            <li><a href="../html/134.react18.html">134.react18</a></li>
+            <li><a href="../html/135.function.html">135.function</a></li>
+            <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+        </ul>
     </div>
-    <div class="content markdown-body">
-        <h2 id="t01.需求分析">1.需求分析 <a href="#t01.需求分析"> # </a></h2>
-<ul>
-<li>实现JSX语法转成JS语法的编译器</li>
-<li>需求：将一段<code>JSX</code>语法的代码生成一个<code>AST</code>，并支持遍历和修改这个<code>AST</code>，将<code>AST</code>重新生成JS语法的代码</li>
-</ul>
-<p>JSX代码</p>
-<pre><code class="lang-js">&lt;h1 id="title"&gt;&lt;span&gt;hello&lt;/span&gt;world&lt;/h1&gt;
+
+
+    <div class="warpper">
+        <div class="page-toc">
+            <ul>
+                <li><a href="#t01.需求分析">1.需求分析</a></li>
+                <li><a href="#t12.编译器工作流">2.编译器工作流</a>
+                    <ul>
+                        <li><a href="#t22.1 解析(Parsing)">2.1 解析(Parsing)</a></li>
+                        <li><a href="#t32.2 遍历(Traversal)">2.2 遍历(Traversal)</a></li>
+                        <li><a href="#t42.3 转换(Transformation)">2.3 转换(Transformation)</a></li>
+                        <li><a href="#t52.4 代码生成(Code Generation)">2.4 代码生成(Code Generation)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t63. 有限状态机">3. 有限状态机</a>
+                    <ul>
+                        <li><a href="#t74 词法分析器">4 词法分析器</a></li>
+                        <li><a href="#t84.1 tokenTypes.js">4.1 tokenTypes.js</a></li>
+                        <li><a href="#t94.2 tokenizer.js">4.2 tokenizer.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t105.语法分析">5.语法分析</a>
+                    <ul>
+                        <li><a href="#t115.1 递归下降算法">5.1 递归下降算法</a></li>
+                        <li><a href="#t125.2 上下文无关文法">5.2 上下文无关文法</a></li>
+                        <li><a href="#t135.3 算术表达式">5.3 算术表达式</a></li>
+                        <li><a href="#t145.4 实现">5.4 实现</a>
+                            <ul>
+                                <li><a href="#t155.4.1 index.js">5.4.1 index.js</a></li>
+                                <li><a href="#t165.4.2 parse.js">5.4.2 parse.js</a></li>
+                                <li><a href="#t175.4.3 tokenTypes.js">5.4.3 tokenTypes.js</a></li>
+                                <li><a href="#t185.4.4 tokenize.js">5.4.4 tokenize.js</a></li>
+                                <li><a href="#t195.4.5 nodeTypes.js">5.4.5 nodeTypes.js</a></li>
+                                <li><a href="#t205.4.6 ASTNode.js">5.4.6 ASTNode.js</a></li>
+                                <li><a href="#t215.4.7 toAst.js">5.4.7 toAst.js</a></li>
+                                <li><a href="#t225.4.8 evaluate.js">5.4.8 evaluate.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t235.5 支持减法和除法">5.5 支持减法和除法</a>
+                            <ul>
+                                <li><a href="#t245.5.1 index.js">5.5.1 index.js</a></li>
+                                <li><a href="#t255.5.2 tokenTypes.js">5.5.2 tokenTypes.js</a></li>
+                                <li><a href="#t265.5.3 tokenize.js">5.5.3 tokenize.js</a></li>
+                                <li><a href="#t275.5.4 nodeTypes.js">5.5.4 nodeTypes.js</a></li>
+                                <li><a href="#t285.5.5 toAST.js">5.5.5 toAST.js</a></li>
+                                <li><a href="#t295.5.6 evaluate.js">5.5.6 evaluate.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t305.6 支持括号">5.6 支持括号</a>
+                            <ul>
+                                <li><a href="#t315.6.1 index.js">5.6.1 index.js</a></li>
+                                <li><a href="#t325.6.2 tokenTypes.js">5.6.2 tokenTypes.js</a></li>
+                                <li><a href="#t335.6.3 tokenize.js">5.6.3 tokenize.js</a></li>
+                                <li><a href="#t345.6.4 toAST.js">5.6.4 toAST.js</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t355.7 二元表达式">5.7 二元表达式</a>
+                            <ul>
+                                <li><a href="#t365.7.1  优先级（Priority）">5.7.1 优先级（Priority）</a></li>
+                                <li><a href="#t375.7.2  结合性（Associativity）">5.7.2 结合性（Associativity）</a></li>
+                                <li><a href="#t385.7.3 文法规则">5.7.3 文法规则</a></li>
+                                <li><a href="#t395.7.3 左递归（Left Recursive）">5.7.3 左递归（Left Recursive）</a></li>
+                                <li><a href="#t405.7.4 消除左递归">5.7.4 消除左递归</a></li>
+                                <li><a href="#t415.7.5 循环消除左递归">5.7.5 循环消除左递归</a></li>
+                                <li><a href="#t425.7.6 实现">5.7.6 实现</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#t436. 语法分析器">6. 语法分析器</a>
+                    <ul>
+                        <li><a href="#t446.1  nodeTypes.js">6.1 nodeTypes.js</a></li>
+                        <li><a href="#t456.2  parser.js">6.2 parser.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t467. 遍历语法树">7. 遍历语法树</a></li>
+                <li><a href="#t478. 转换器">8. 转换器</a></li>
+                <li><a href="#t489. 生成器">9. 生成器</a></li>
+            </ul>
+        </div>
+        <div class="content markdown-body">
+            <h2 id="t01.需求分析">1.需求分析 <a href="#t01.需求分析"> # </a></h2>
+            <ul>
+                <li>实现JSX语法转成JS语法的编译器</li>
+                <li>需求：将一段<code>JSX</code>语法的代码生成一个<code>AST</code>，并支持遍历和修改这个<code>AST</code>，将<code>AST</code>重新生成JS语法的代码
+                </li>
+            </ul>
+            <p>JSX代码</p>
+            <pre><code class="lang-js">&lt;h1 id="title"&gt;&lt;span&gt;hello&lt;/span&gt;world&lt;/h1&gt;
 </code></pre>
-<p>JS代码</p>
-<pre><code class="lang-js">React.createElement(<span class="hljs-string">"h1"</span>, {
+            <p>JS代码</p>
+            <pre><code class="lang-js">React.createElement(<span class="hljs-string">"h1"</span>, {
   <span class="hljs-attr">id</span>: <span class="hljs-string">"title"</span>
 },React.createElement(<span class="hljs-string">"span"</span>, <span class="hljs-literal">null</span>, <span class="hljs-string">"hello"</span>), <span class="hljs-string">"world"</span>);
 </code></pre>
-<h2 id="t12.编译器工作流">2.编译器工作流 <a href="#t12.编译器工作流"> # </a></h2>
-<ul>
-<li>解析(Parsing)  <strong>解析</strong>是将最初原始的代码转换为一种更加抽象的表示(即AST)</li>
-<li>转换(Transformation) <strong>转换</strong>将对这个抽象的表示做一些处理,让它能做到编译器期望它做到的事情</li>
-<li>代码生成(Code Generation) 接收处理之后的代码表示,然后把它转换成新的代码</li>
-</ul>
-<h3 id="t22.1 解析(Parsing)">2.1 解析(Parsing) <a href="#t22.1 解析(Parsing)"> # </a></h3>
-<ul>
-<li>解析一般来说会分成两个阶段：词法分析(Lexical Analysis)和语法分析(Syntactic Analysis)<ul>
-<li><code>词法分析</code> 接收原始代码,然后把它分割成一些被称为 <code>token</code> 的东西，这个过程是在词法分析器(Tokenizer或者Lexer)中完成的</li>
-<li>Token 是一个数组，由一些代码语句的碎片组成。它们可以是数字、标签、标点符号、运算符或者其它任何东西</li>
-<li><code>语法分析</code> 接收之前生成的 <code>token</code>，把它们转换成一种抽象的表示，这种抽象的表示描述了代码语句中的每一个片段以及它们之间的关系。这被称为中间表示(intermediate representation)或抽象语法树(Abstract Syntax Tree, 缩写为AST)</li>
-<li>抽象语法树是一个嵌套程度很深的对象，用一种更容易处理的方式代表了代码本身，也能给我们更多信息</li>
-</ul>
-</li>
-</ul>
-<p>原始<code>jsx</code>代码</p>
-<pre><code class="lang-js">&lt;h1 id="title"&gt;&lt;span&gt;hello&lt;/span&gt;world&lt;/h1&gt;
+            <h2 id="t12.编译器工作流">2.编译器工作流 <a href="#t12.编译器工作流"> # </a></h2>
+            <ul>
+                <li>解析(Parsing) <strong>解析</strong>是将最初原始的代码转换为一种更加抽象的表示(即AST)</li>
+                <li>转换(Transformation) <strong>转换</strong>将对这个抽象的表示做一些处理,让它能做到编译器期望它做到的事情</li>
+                <li>代码生成(Code Generation) 接收处理之后的代码表示,然后把它转换成新的代码</li>
+            </ul>
+            <h3 id="t22.1 解析(Parsing)">2.1 解析(Parsing) <a href="#t22.1 解析(Parsing)"> # </a></h3>
+            <ul>
+                <li>解析一般来说会分成两个阶段：词法分析(Lexical Analysis)和语法分析(Syntactic Analysis)<ul>
+                        <li><code>词法分析</code> 接收原始代码,然后把它分割成一些被称为 <code>token</code>
+                            的东西，这个过程是在词法分析器(Tokenizer或者Lexer)中完成的</li>
+                        <li>Token 是一个数组，由一些代码语句的碎片组成。它们可以是数字、标签、标点符号、运算符或者其它任何东西</li>
+                        <li><code>语法分析</code> 接收之前生成的
+                            <code>token</code>，把它们转换成一种抽象的表示，这种抽象的表示描述了代码语句中的每一个片段以及它们之间的关系。这被称为中间表示(intermediate
+                            representation)或抽象语法树(Abstract Syntax Tree, 缩写为AST)</li>
+                        <li>抽象语法树是一个嵌套程度很深的对象，用一种更容易处理的方式代表了代码本身，也能给我们更多信息</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>原始<code>jsx</code>代码</p>
+            <pre><code class="lang-js">&lt;h1 id="title"&gt;&lt;span&gt;hello&lt;/span&gt;world&lt;/h1&gt;
 </code></pre>
-<p>tokens</p>
-<pre><code class="lang-js">[
+            <p>tokens</p>
+            <pre><code class="lang-js">[
     { <span class="hljs-attr">type</span>: <span class="hljs-string">'Punctuator'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'&lt;'</span> },
     { <span class="hljs-attr">type</span>: <span class="hljs-string">'JSXIdentifier'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'h1'</span> },
     { <span class="hljs-attr">type</span>: <span class="hljs-string">'JSXIdentifier'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'id'</span> },
@@ -85,9 +477,9 @@
     { <span class="hljs-attr">type</span>: <span class="hljs-string">'Punctuator'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'&gt;'</span> }
   ]
 </code></pre>
-<p>抽象语法树(AST)</p>
-<p><a href="https://astexplorer.net/">astexplorer</a></p>
-<pre><code class="lang-js">{
+            <p>抽象语法树(AST)</p>
+            <p><a href="https://astexplorer.net/">astexplorer</a></p>
+            <pre><code class="lang-js">{
     <span class="hljs-string">"type"</span>: <span class="hljs-string">"Program"</span>,
     <span class="hljs-string">"body"</span>: [
         {
@@ -156,12 +548,12 @@
     ]
 }
 </code></pre>
-<h3 id="t32.2 遍历(Traversal)">2.2 遍历(Traversal) <a href="#t32.2 遍历(Traversal)"> # </a></h3>
-<ul>
-<li>为了能处理所有的结点，我们需要遍历它们，使用的是深度优先遍历</li>
-<li>对于上面的 <code>AST</code> 的遍历流程是这样的</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> esprima = <span class="hljs-built_in">require</span>(<span class="hljs-string">'esprima'</span>);<span class="hljs-comment">//把JS源代码转成AST语法树</span>
+            <h3 id="t32.2 遍历(Traversal)">2.2 遍历(Traversal) <a href="#t32.2 遍历(Traversal)"> # </a></h3>
+            <ul>
+                <li>为了能处理所有的结点，我们需要遍历它们，使用的是深度优先遍历</li>
+                <li>对于上面的 <code>AST</code> 的遍历流程是这样的</li>
+            </ul>
+            <pre><code class="lang-js"><span class="hljs-keyword">let</span> esprima = <span class="hljs-built_in">require</span>(<span class="hljs-string">'esprima'</span>);<span class="hljs-comment">//把JS源代码转成AST语法树</span>
 <span class="hljs-keyword">let</span> code = <span class="hljs-string">`&lt;h1 id="title"&gt;&lt;span&gt;hello&lt;/span&gt;world&lt;/h1&gt;`</span>;
 <span class="hljs-keyword">let</span> estraverse = <span class="hljs-built_in">require</span>(<span class="hljs-string">'estraverse-fb'</span>);<span class="hljs-comment">///遍历语法树,修改树上的节点</span>
 <span class="hljs-keyword">let</span> ast = esprima.parseScript(code, {  <span class="hljs-attr">tokens</span>: <span class="hljs-literal">true</span>,<span class="hljs-attr">jsx</span>: <span class="hljs-literal">true</span> });
@@ -180,7 +572,7 @@ estraverse.traverse(ast,{
     }
 });
 </code></pre>
-<pre><code class="lang-js">Program进入
+            <pre><code class="lang-js">Program进入
   ExpressionStatement进入
     JSXElement进入
       JSXOpeningElement进入
@@ -215,25 +607,28 @@ estraverse.traverse(ast,{
   ExpressionStatement离开
 Program离开
 </code></pre>
-<h3 id="t42.3 转换(Transformation)">2.3 转换(Transformation) <a href="#t42.3 转换(Transformation)"> # </a></h3>
-<ul>
-<li>编译器的下一步就是转换,它只是把 AST 拿过来然后对它做一些修改.它可以在同种语言下操作 AST，也可以把 AST 翻译成全新的语言</li>
-<li>你或许注意到了我们的 <code>AST</code> 中有很多相似的元素，这些元素都有<code>type</code> 属性，它们被称为 <code>AST</code>结点。这些结点含有若干属性，可以用于描述 AST 的部分信息</li>
-<li>当转换 AST 的时候我们可以添加、移动、替代这些结点，也可以根据现有的 AST 生成一个全新的 AST</li>
-<li>既然我们编译器的目标是把输入的代码转换为一种新的语言，所以我们将会着重于产生一个针对新语言的全新的 AST</li>
-</ul>
-<h3 id="t52.4 代码生成(Code Generation)">2.4 代码生成(Code Generation) <a href="#t52.4 代码生成(Code Generation)"> # </a></h3>
-<ul>
-<li>编译器的最后一个阶段是代码生成，这个阶段做的事情有时候会和转换(transformation)重叠,但是代码生成最主要的部分还是根据 AST 来输出代码</li>
-<li>代码生成有几种不同的工作方式，有些编译器将会重用之前生成的 token，有些会创建独立的代码表示，以便于线性地输出代码。但是接下来我们还是着重于使用之前生成好的 <code>AST</code></li>
-<li>我们的代码生成器需要知道如何<code>打印</code>AST 中所有类型的结点，然后它会递归地调用自身，直到所有代码都被打印到一个很长的字符串中</li>
-</ul>
-<h2 id="t63. 有限状态机">3. 有限状态机 <a href="#t63. 有限状态机"> # </a></h2>
-<ul>
-<li>每一个状态都是一个机器,每个机器都可以接收输入和计算输出</li>
-<li>机器本身没有状态,每一个机器会根据输入决定下一个状态</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> WHITESPACE = <span class="hljs-regexp">/\s/</span>;
+            <h3 id="t42.3 转换(Transformation)">2.3 转换(Transformation) <a href="#t42.3 转换(Transformation)"> # </a></h3>
+            <ul>
+                <li>编译器的下一步就是转换,它只是把 AST 拿过来然后对它做一些修改.它可以在同种语言下操作 AST，也可以把 AST 翻译成全新的语言</li>
+                <li>你或许注意到了我们的 <code>AST</code> 中有很多相似的元素，这些元素都有<code>type</code> 属性，它们被称为
+                    <code>AST</code>结点。这些结点含有若干属性，可以用于描述 AST 的部分信息</li>
+                <li>当转换 AST 的时候我们可以添加、移动、替代这些结点，也可以根据现有的 AST 生成一个全新的 AST</li>
+                <li>既然我们编译器的目标是把输入的代码转换为一种新的语言，所以我们将会着重于产生一个针对新语言的全新的 AST</li>
+            </ul>
+            <h3 id="t52.4 代码生成(Code Generation)">2.4 代码生成(Code Generation) <a href="#t52.4 代码生成(Code Generation)"> #
+                </a></h3>
+            <ul>
+                <li>编译器的最后一个阶段是代码生成，这个阶段做的事情有时候会和转换(transformation)重叠,但是代码生成最主要的部分还是根据 AST 来输出代码</li>
+                <li>代码生成有几种不同的工作方式，有些编译器将会重用之前生成的 token，有些会创建独立的代码表示，以便于线性地输出代码。但是接下来我们还是着重于使用之前生成好的 <code>AST</code>
+                </li>
+                <li>我们的代码生成器需要知道如何<code>打印</code>AST 中所有类型的结点，然后它会递归地调用自身，直到所有代码都被打印到一个很长的字符串中</li>
+            </ul>
+            <h2 id="t63. 有限状态机">3. 有限状态机 <a href="#t63. 有限状态机"> # </a></h2>
+            <ul>
+                <li>每一个状态都是一个机器,每个机器都可以接收输入和计算输出</li>
+                <li>机器本身没有状态,每一个机器会根据输入决定下一个状态</li>
+            </ul>
+            <pre><code class="lang-js"><span class="hljs-keyword">let</span> WHITESPACE = <span class="hljs-regexp">/\s/</span>;
 <span class="hljs-keyword">let</span> NUMBERS = <span class="hljs-regexp">/[0-9]/</span>;
 
 <span class="hljs-keyword">const</span> <span class="hljs-built_in">Number</span> = <span class="hljs-string">'Number'</span>;
@@ -281,19 +676,19 @@ Program离开
 tokenizer(<span class="hljs-string">'10+20'</span>)
 <span class="hljs-built_in">console</span>.log(tokens);
 </code></pre>
-<pre><code class="lang-js">[
+            <pre><code class="lang-js">[
   { <span class="hljs-attr">type</span>: <span class="hljs-string">'Number'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'10'</span> },
   { <span class="hljs-attr">type</span>: <span class="hljs-string">'Plus'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'+'</span> },
   { <span class="hljs-attr">type</span>: <span class="hljs-string">'Number'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'20'</span> }
 ]
 </code></pre>
-<h3 id="t74 词法分析器">4 词法分析器 <a href="#t74 词法分析器"> # </a></h3>
-<ul>
-<li>我们只是接收代码组成的字符串，然后把它们分割成 <code>token</code> 组成的数组</li>
-</ul>
-<h3 id="t84.1 tokenTypes.js">4.1 tokenTypes.js <a href="#t84.1 tokenTypes.js"> # </a></h3>
-<p>src\tokenTypes.js</p>
-<pre><code class="lang-js">exports.LeftParentheses = <span class="hljs-string">'LeftParentheses'</span>;<span class="hljs-comment">// &lt; </span>
+            <h3 id="t74 词法分析器">4 词法分析器 <a href="#t74 词法分析器"> # </a></h3>
+            <ul>
+                <li>我们只是接收代码组成的字符串，然后把它们分割成 <code>token</code> 组成的数组</li>
+            </ul>
+            <h3 id="t84.1 tokenTypes.js">4.1 tokenTypes.js <a href="#t84.1 tokenTypes.js"> # </a></h3>
+            <p>src\tokenTypes.js</p>
+            <pre><code class="lang-js">exports.LeftParentheses = <span class="hljs-string">'LeftParentheses'</span>;<span class="hljs-comment">// &lt; </span>
 exports.RightParentheses = <span class="hljs-string">'RightParentheses'</span>;<span class="hljs-comment">// &lt; </span>
 exports.JSXIdentifier = <span class="hljs-string">'JSXIdentifier'</span>;<span class="hljs-comment">//标识符</span>
 exports.AttributeKey = <span class="hljs-string">'AttributeKey'</span>;<span class="hljs-comment">//属性的key</span>
@@ -301,9 +696,9 @@ exports.AttributeStringValue = <span class="hljs-string">'AttributeStringValue'<
 exports.JSXText = <span class="hljs-string">'JSXText'</span>;<span class="hljs-comment">//文本</span>
 exports.BackSlash = <span class="hljs-string">'BackSlash'</span>;<span class="hljs-comment">//反斜杠</span>
 </code></pre>
-<h3 id="t94.2 tokenizer.js">4.2 tokenizer.js <a href="#t94.2 tokenizer.js"> # </a></h3>
-<p>src\tokenizer.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> LETTERS = <span class="hljs-regexp">/[a-z0-9]/</span>;
+            <h3 id="t94.2 tokenizer.js">4.2 tokenizer.js <a href="#t94.2 tokenizer.js"> # </a></h3>
+            <p>src\tokenizer.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> LETTERS = <span class="hljs-regexp">/[a-z0-9]/</span>;
 <span class="hljs-keyword">const</span> tokenTypes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./tokenTypes'</span>);
 <span class="hljs-keyword">let</span> currentToken = {<span class="hljs-attr">type</span>:<span class="hljs-string">''</span>,<span class="hljs-attr">value</span>:<span class="hljs-string">''</span>};
 <span class="hljs-keyword">let</span> tokens = [];
@@ -452,8 +847,8 @@ console.log(tokenizer(sourceCode));
   ]
  */</span>
 </code></pre>
-<p>分词结果</p>
-<pre><code class="lang-js">[
+            <p>分词结果</p>
+            <pre><code class="lang-js">[
   { <span class="hljs-attr">type</span>: <span class="hljs-string">'LeftParentheses'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'&lt;'</span> },
   { <span class="hljs-attr">type</span>: <span class="hljs-string">'JSXIdentifier'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'h1'</span> },
   { <span class="hljs-attr">type</span>: <span class="hljs-string">'AttributeKey'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'id'</span> },
@@ -474,36 +869,36 @@ console.log(tokenizer(sourceCode));
   { <span class="hljs-attr">type</span>: <span class="hljs-string">'RightParentheses'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'&gt;'</span> }
 ]
 </code></pre>
-<h2 id="t105.语法分析">5.语法分析 <a href="#t105.语法分析"> # </a></h2>
-<ul>
-<li>语法分析的原理和递归下降算法（Recursive Descent Parsing）</li>
-<li>并初步了解上下文无关文法（Context-free Grammar，CFG）</li>
-</ul>
-<h3 id="t115.1 递归下降算法">5.1 递归下降算法 <a href="#t115.1 递归下降算法"> # </a></h3>
-<ul>
-<li>它的左边是一个非终结符（Non-terminal）</li>
-<li>右边是它的产生式（Production Rule）</li>
-<li>在语法解析的过程中，左边会被右边替代。如果替代之后还有非终结符，那么继续这个替代过程，直到最后全部都是终结符（Terminal），也就是 <code>Token</code></li>
-<li>只有终结符才可以成为 <code>AST</code> 的叶子节点。这个过程，也叫做推导（Derivation）过程</li>
-<li>上级文法嵌套下级文法，上级的算法调用下级的算法。表现在生成 AST 中，上级算法生成上级节点，下级算法生成下级节点。这就是<code>下降</code>的含义</li>
-</ul>
-<h3 id="t125.2 上下文无关文法">5.2 上下文无关文法 <a href="#t125.2 上下文无关文法"> # </a></h3>
-<ul>
-<li>上下文无关的意思是，无论在任何情况下，文法的推导规则都是一样的</li>
-<li>规则分成两级：第一级是加法规则，第二级是乘法规则。把乘法规则作为加法规则的子规则</li>
-<li>解析形成 AST 时，乘法节点就一定是加法节点的子节点，从而被优先计算</li>
-<li>加法规则中还<code>递归</code>地又引用了加法规则</li>
-</ul>
-<h3 id="t135.3 算术表达式">5.3 算术表达式 <a href="#t135.3 算术表达式"> # </a></h3>
-<p>算术表达式</p>
-<pre><code class="lang-js"><span class="hljs-number">2</span>+<span class="hljs-number">3</span>*<span class="hljs-number">4</span>
+            <h2 id="t105.语法分析">5.语法分析 <a href="#t105.语法分析"> # </a></h2>
+            <ul>
+                <li>语法分析的原理和递归下降算法（Recursive Descent Parsing）</li>
+                <li>并初步了解上下文无关文法（Context-free Grammar，CFG）</li>
+            </ul>
+            <h3 id="t115.1 递归下降算法">5.1 递归下降算法 <a href="#t115.1 递归下降算法"> # </a></h3>
+            <ul>
+                <li>它的左边是一个非终结符（Non-terminal）</li>
+                <li>右边是它的产生式（Production Rule）</li>
+                <li>在语法解析的过程中，左边会被右边替代。如果替代之后还有非终结符，那么继续这个替代过程，直到最后全部都是终结符（Terminal），也就是 <code>Token</code></li>
+                <li>只有终结符才可以成为 <code>AST</code> 的叶子节点。这个过程，也叫做推导（Derivation）过程</li>
+                <li>上级文法嵌套下级文法，上级的算法调用下级的算法。表现在生成 AST 中，上级算法生成上级节点，下级算法生成下级节点。这就是<code>下降</code>的含义</li>
+            </ul>
+            <h3 id="t125.2 上下文无关文法">5.2 上下文无关文法 <a href="#t125.2 上下文无关文法"> # </a></h3>
+            <ul>
+                <li>上下文无关的意思是，无论在任何情况下，文法的推导规则都是一样的</li>
+                <li>规则分成两级：第一级是加法规则，第二级是乘法规则。把乘法规则作为加法规则的子规则</li>
+                <li>解析形成 AST 时，乘法节点就一定是加法节点的子节点，从而被优先计算</li>
+                <li>加法规则中还<code>递归</code>地又引用了加法规则</li>
+            </ul>
+            <h3 id="t135.3 算术表达式">5.3 算术表达式 <a href="#t135.3 算术表达式"> # </a></h3>
+            <p>算术表达式</p>
+            <pre><code class="lang-js"><span class="hljs-number">2</span>+<span class="hljs-number">3</span>*<span class="hljs-number">4</span>
 </code></pre>
-<p>语法规则</p>
-<pre><code class="lang-js">add -&gt;  multiple|multiple + add
+            <p>语法规则</p>
+            <pre><code class="lang-js">add -&gt;  multiple|multiple + add
 multiple -&gt; NUMBER | NUMBER *  multiple
 </code></pre>
-<p>tokens</p>
-<pre><code class="lang-js"> [
+            <p>tokens</p>
+            <pre><code class="lang-js"> [
     { <span class="hljs-attr">type</span>: <span class="hljs-string">'NUMBER'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'2'</span> },
     { <span class="hljs-attr">type</span>: <span class="hljs-string">'PLUS'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'+'</span> },
     { <span class="hljs-attr">type</span>: <span class="hljs-string">'NUMBER'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'3'</span> },
@@ -511,10 +906,10 @@ multiple -&gt; NUMBER | NUMBER *  multiple
     { <span class="hljs-attr">type</span>: <span class="hljs-string">'NUMBER'</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">'4'</span> }
   ]
 </code></pre>
-<p><img src="https://img.zhufengpeixun.com/formularast.png" alt="formularast.png"></p>
-<p><img src="https://img.zhufengpeixun.com/binaryast.jpg" alt="binaryast.jpg"></p>
-<p>ast</p>
-<pre><code class="lang-json">{
+            <p><img src="https://img.zhufengpeixun.com/formularast.png" alt="formularast.png"></p>
+            <p><img src="https://img.zhufengpeixun.com/binaryast.jpg" alt="binaryast.jpg"></p>
+            <p>ast</p>
+            <pre><code class="lang-json">{
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Program"</span>,
   <span class="hljs-attr">"children"</span>: [
     {
@@ -542,10 +937,10 @@ multiple -&gt; NUMBER | NUMBER *  multiple
   ]
 }
 </code></pre>
-<h3 id="t145.4 实现">5.4 实现 <a href="#t145.4 实现"> # </a></h3>
-<h4 id="t155.4.1 index.js">5.4.1 index.js <a href="#t155.4.1 index.js"> # </a></h4>
-<p>index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> parse = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./parse'</span>);
+            <h3 id="t145.4 实现">5.4 实现 <a href="#t145.4 实现"> # </a></h3>
+            <h4 id="t155.4.1 index.js">5.4.1 index.js <a href="#t155.4.1 index.js"> # </a></h4>
+            <p>index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">let</span> parse = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./parse'</span>);
 <span class="hljs-keyword">let</span> evaluate = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./evaluate'</span>);
 <span class="hljs-keyword">let</span> sourceCode = <span class="hljs-string">"2+3*4"</span>;
 <span class="hljs-keyword">let</span> ast = parse(sourceCode);
@@ -553,9 +948,9 @@ multiple -&gt; NUMBER | NUMBER *  multiple
 <span class="hljs-keyword">let</span> result = evaluate(ast);
 <span class="hljs-built_in">console</span>.log(result);
 </code></pre>
-<h4 id="t165.4.2 parse.js">5.4.2 parse.js <a href="#t165.4.2 parse.js"> # </a></h4>
-<p>parse.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> tokenize = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./tokenize'</span>);
+            <h4 id="t165.4.2 parse.js">5.4.2 parse.js <a href="#t165.4.2 parse.js"> # </a></h4>
+            <p>parse.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">let</span> tokenize = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./tokenize'</span>);
 <span class="hljs-keyword">let</span> toAst = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./toAst'</span>);
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">parse</span>(<span class="hljs-params">script</span>) </span>{
     <span class="hljs-keyword">let</span> tokens = tokenize(script);
@@ -566,16 +961,16 @@ multiple -&gt; NUMBER | NUMBER *  multiple
 
 <span class="hljs-built_in">module</span>.exports = parse;
 </code></pre>
-<h4 id="t175.4.3 tokenTypes.js">5.4.3 tokenTypes.js <a href="#t175.4.3 tokenTypes.js"> # </a></h4>
-<p>tokenTypes.js</p>
-<pre><code class="lang-js">exports.Program = <span class="hljs-string">'Program'</span>;
+            <h4 id="t175.4.3 tokenTypes.js">5.4.3 tokenTypes.js <a href="#t175.4.3 tokenTypes.js"> # </a></h4>
+            <p>tokenTypes.js</p>
+            <pre><code class="lang-js">exports.Program = <span class="hljs-string">'Program'</span>;
 exports.Numeric = <span class="hljs-string">'Numeric'</span>;
 exports.Additive = <span class="hljs-string">'Additive'</span>;
 exports.Multiplicative = <span class="hljs-string">'Multiplicative'</span>;
 </code></pre>
-<h4 id="t185.4.4 tokenize.js">5.4.4 tokenize.js <a href="#t185.4.4 tokenize.js"> # </a></h4>
-<p>tokenize.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> RegExpObject = <span class="hljs-regexp">/([0-9]+)|(\+)|(\*)/g</span>;
+            <h4 id="t185.4.4 tokenize.js">5.4.4 tokenize.js <a href="#t185.4.4 tokenize.js"> # </a></h4>
+            <p>tokenize.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">let</span> RegExpObject = <span class="hljs-regexp">/([0-9]+)|(\+)|(\*)/g</span>;
 <span class="hljs-keyword">let</span> tokenTypes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./tokenTypes'</span>);
 <span class="hljs-keyword">let</span> tokenArray = [tokenTypes.NUMBER,tokenTypes.PLUS,tokenTypes.MULTIPLY];
 <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">tokenizer</span>(<span class="hljs-params">source</span>)</span>{
@@ -632,16 +1027,16 @@ exports.Multiplicative = <span class="hljs-string">'Multiplicative'</span>;
 <span class="hljs-comment">/* let tokens = tokenize('2+3*4');
 console.log(tokens); */</span>
 </code></pre>
-<h4 id="t195.4.5 nodeTypes.js">5.4.5 nodeTypes.js <a href="#t195.4.5 nodeTypes.js"> # </a></h4>
-<p>nodeTypes.js</p>
-<pre><code class="lang-js">exports.Program = <span class="hljs-string">'Program'</span>;
+            <h4 id="t195.4.5 nodeTypes.js">5.4.5 nodeTypes.js <a href="#t195.4.5 nodeTypes.js"> # </a></h4>
+            <p>nodeTypes.js</p>
+            <pre><code class="lang-js">exports.Program = <span class="hljs-string">'Program'</span>;
 exports.Numeric = <span class="hljs-string">'Numeric'</span>;
 exports.Additive = <span class="hljs-string">'Additive'</span>;
 exports.Multiplicative = <span class="hljs-string">'Multiplicative'</span>;
 </code></pre>
-<h4 id="t205.4.6 ASTNode.js">5.4.6 ASTNode.js <a href="#t205.4.6 ASTNode.js"> # </a></h4>
-<p>ASTNode.js</p>
-<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ASTNode</span></span>{
+            <h4 id="t205.4.6 ASTNode.js">5.4.6 ASTNode.js <a href="#t205.4.6 ASTNode.js"> # </a></h4>
+            <p>ASTNode.js</p>
+            <pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ASTNode</span></span>{
   <span class="hljs-keyword">constructor</span>(type,value){
       <span class="hljs-keyword">this</span>.type = type;
       <span class="hljs-keyword">if</span>(value)<span class="hljs-keyword">this</span>.value = value;
@@ -654,9 +1049,9 @@ exports.Multiplicative = <span class="hljs-string">'Multiplicative'</span>;
 
 <span class="hljs-built_in">module</span>.exports = ASTNode;
 </code></pre>
-<h4 id="t215.4.7 toAst.js">5.4.7 toAst.js <a href="#t215.4.7 toAst.js"> # </a></h4>
-<p>toAst.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> ASTNode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./ASTNode'</span>);
+            <h4 id="t215.4.7 toAst.js">5.4.7 toAst.js <a href="#t215.4.7 toAst.js"> # </a></h4>
+            <p>toAst.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">let</span> ASTNode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./ASTNode'</span>);
 <span class="hljs-keyword">let</span> tokenTypes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./tokenTypes'</span>);
 <span class="hljs-keyword">let</span> nodeTypes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./nodeTypes'</span>);
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">toAst</span>(<span class="hljs-params">tokenReader</span>)</span>{
@@ -722,9 +1117,9 @@ exports.Multiplicative = <span class="hljs-string">'Multiplicative'</span>;
 
 <span class="hljs-built_in">module</span>.exports = toAst;
 </code></pre>
-<h4 id="t225.4.8 evaluate.js">5.4.8 evaluate.js <a href="#t225.4.8 evaluate.js"> # </a></h4>
-<p>evaluate.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> nodeTypes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./nodeTypes'</span>);
+            <h4 id="t225.4.8 evaluate.js">5.4.8 evaluate.js <a href="#t225.4.8 evaluate.js"> # </a></h4>
+            <p>evaluate.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">let</span> nodeTypes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./nodeTypes'</span>);
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">evaluate</span>(<span class="hljs-params">node</span>) </span>{
     <span class="hljs-keyword">let</span> result = <span class="hljs-number">0</span>;
@@ -748,27 +1143,27 @@ exports.Multiplicative = <span class="hljs-string">'Multiplicative'</span>;
 }
 <span class="hljs-built_in">module</span>.exports = evaluate;
 </code></pre>
-<h3 id="t235.5 支持减法和除法">5.5 支持减法和除法 <a href="#t235.5 支持减法和除法"> # </a></h3>
-<h4 id="t245.5.1 index.js">5.5.1 index.js <a href="#t245.5.1 index.js"> # </a></h4>
-<pre><code class="lang-diff"><span class="hljs-deletion">-let sourceCode = '2+2*2+4';</span>
+            <h3 id="t235.5 支持减法和除法">5.5 支持减法和除法 <a href="#t235.5 支持减法和除法"> # </a></h3>
+            <h4 id="t245.5.1 index.js">5.5.1 index.js <a href="#t245.5.1 index.js"> # </a></h4>
+            <pre><code class="lang-diff"><span class="hljs-deletion">-let sourceCode = '2+2*2+4';</span>
 <span class="hljs-addition">+let sourceCode = '6+1-3*4/2';</span>
 </code></pre>
-<h4 id="t255.5.2 tokenTypes.js">5.5.2 tokenTypes.js <a href="#t255.5.2 tokenTypes.js"> # </a></h4>
-<pre><code class="lang-diff"><span class="hljs-addition">+exports.MINUS = 'MINUS';</span>
+            <h4 id="t255.5.2 tokenTypes.js">5.5.2 tokenTypes.js <a href="#t255.5.2 tokenTypes.js"> # </a></h4>
+            <pre><code class="lang-diff"><span class="hljs-addition">+exports.MINUS = 'MINUS';</span>
 <span class="hljs-addition">+exports.MULTIPLY = 'MULTIPLY';//乘号</span>
 <span class="hljs-addition">+exports.DIVIDE = 'DIVIDE';</span>
 </code></pre>
-<h4 id="t265.5.3 tokenize.js">5.5.3 tokenize.js <a href="#t265.5.3 tokenize.js"> # </a></h4>
-<pre><code class="lang-diff"><span class="hljs-addition">+let RegExpObject  = /([0-9]+)|(\+)|(\-)|(\*)|(\/)/g;</span>
+            <h4 id="t265.5.3 tokenize.js">5.5.3 tokenize.js <a href="#t265.5.3 tokenize.js"> # </a></h4>
+            <pre><code class="lang-diff"><span class="hljs-addition">+let RegExpObject  = /([0-9]+)|(\+)|(\-)|(\*)|(\/)/g;</span>
 <span class="hljs-addition">+let tokenNames = [tokenTypes.NUMBER,tokenTypes.PLUS,tokenTypes.MINUS,tokenTypes.MULTIPLY,tokenTypes.DIVIDE];</span>
 </code></pre>
-<h4 id="t275.5.4 nodeTypes.js">5.5.4 nodeTypes.js <a href="#t275.5.4 nodeTypes.js"> # </a></h4>
-<pre><code class="lang-diff"><span class="hljs-addition">+exports.Minus = 'Minus';//加法运算</span>
+            <h4 id="t275.5.4 nodeTypes.js">5.5.4 nodeTypes.js <a href="#t275.5.4 nodeTypes.js"> # </a></h4>
+            <pre><code class="lang-diff"><span class="hljs-addition">+exports.Minus = 'Minus';//加法运算</span>
 <span class="hljs-addition">+exports.Multiplicative = 'Multiplicative';//乘法运算</span>
 <span class="hljs-addition">+exports.Divide = 'Divide';//加法运算</span>
 </code></pre>
-<h4 id="t285.5.5 toAST.js">5.5.5 toAST.js <a href="#t285.5.5 toAST.js"> # </a></h4>
-<pre><code class="lang-diff">function additive(tokenReader){
+            <h4 id="t285.5.5 toAST.js">5.5.5 toAST.js <a href="#t285.5.5 toAST.js"> # </a></h4>
+            <pre><code class="lang-diff">function additive(tokenReader){
      let child1 = multiple(tokenReader);   
      let node = child1;
      let token = tokenReader.peek();//看看一下符号是不是加号
@@ -804,8 +1199,8 @@ function multiple(tokenReader){
     return node;
 }
 </code></pre>
-<h4 id="t295.5.6 evaluate.js">5.5.6 evaluate.js <a href="#t295.5.6 evaluate.js"> # </a></h4>
-<pre><code class="lang-diff"> switch(node.type){
+            <h4 id="t295.5.6 evaluate.js">5.5.6 evaluate.js <a href="#t295.5.6 evaluate.js"> # </a></h4>
+            <pre><code class="lang-diff"> switch(node.type){
     case nodeTypes.Program:
         for(let child of node.children){
             result = evaluate(child);//child  Additive
@@ -829,21 +1224,21 @@ function multiple(tokenReader){
         break;        
   }  
 </code></pre>
-<h3 id="t305.6 支持括号">5.6 支持括号 <a href="#t305.6 支持括号"> # </a></h3>
-<h4 id="t315.6.1 index.js">5.6.1 index.js <a href="#t315.6.1 index.js"> # </a></h4>
-<pre><code class="lang-diff"><span class="hljs-addition">+ let sourceCode = '(1+2)*3*(2+2)';</span>
+            <h3 id="t305.6 支持括号">5.6 支持括号 <a href="#t305.6 支持括号"> # </a></h3>
+            <h4 id="t315.6.1 index.js">5.6.1 index.js <a href="#t315.6.1 index.js"> # </a></h4>
+            <pre><code class="lang-diff"><span class="hljs-addition">+ let sourceCode = '(1+2)*3*(2+2)';</span>
 </code></pre>
-<h4 id="t325.6.2 tokenTypes.js">5.6.2 tokenTypes.js <a href="#t325.6.2 tokenTypes.js"> # </a></h4>
-<pre><code class="lang-diff"><span class="hljs-addition">+ exports.LEFT_PARA = 'LEFT_PARA';</span>
+            <h4 id="t325.6.2 tokenTypes.js">5.6.2 tokenTypes.js <a href="#t325.6.2 tokenTypes.js"> # </a></h4>
+            <pre><code class="lang-diff"><span class="hljs-addition">+ exports.LEFT_PARA = 'LEFT_PARA';</span>
 <span class="hljs-addition">+ exports.RIGHT_PARA = 'RIGHT_PARA';</span>
 </code></pre>
-<h4 id="t335.6.3 tokenize.js">5.6.3 tokenize.js <a href="#t335.6.3 tokenize.js"> # </a></h4>
-<pre><code class="lang-diff"><span class="hljs-addition">+let RegExpObject  = /([0-9]+)|(\+)|(\-)|(\*)|(\/)|(\()|(\))/g;</span>
+            <h4 id="t335.6.3 tokenize.js">5.6.3 tokenize.js <a href="#t335.6.3 tokenize.js"> # </a></h4>
+            <pre><code class="lang-diff"><span class="hljs-addition">+let RegExpObject  = /([0-9]+)|(\+)|(\-)|(\*)|(\/)|(\()|(\))/g;</span>
 let tokenTypes = require('./tokenTypes');
 <span class="hljs-addition">+let tokenNames = [tokenTypes.NUMBER,tokenTypes.PLUS,tokenTypes.MINUS,tokenTypes.MULTIPLY,tokenTypes.DIVIDE,tokenTypes.LEFT_PARA,tokenTypes.RIGHT_PARA];</span>
 </code></pre>
-<h4 id="t345.6.4 toAST.js">5.6.4 toAST.js <a href="#t345.6.4 toAST.js"> # </a></h4>
-<pre><code class="lang-diff">additive -&gt; multiple|multiple + additive
+            <h4 id="t345.6.4 toAST.js">5.6.4 toAST.js <a href="#t345.6.4 toAST.js"> # </a></h4>
+            <pre><code class="lang-diff">additive -&gt; multiple|multiple + additive
 multiple -&gt; primary | primary *  multiple
 primary -&gt; NUMBER | (add)
 
@@ -877,62 +1272,65 @@ function multiple(tokenReader){
 <span class="hljs-addition">+  return node;</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t355.7 二元表达式">5.7 二元表达式 <a href="#t355.7 二元表达式"> # </a></h3>
-<h4 id="t365.7.1  优先级（Priority）">5.7.1  优先级（Priority） <a href="#t365.7.1  优先级（Priority）"> # </a></h4>
-<ul>
-<li>不同的运算符之间是有优先级的</li>
-<li>加减的优先级一样,乘除的优先级一样</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-number">2</span>+<span class="hljs-number">3</span>*<span class="hljs-number">4</span>
+            <h3 id="t355.7 二元表达式">5.7 二元表达式 <a href="#t355.7 二元表达式"> # </a></h3>
+            <h4 id="t365.7.1  优先级（Priority）">5.7.1 优先级（Priority） <a href="#t365.7.1  优先级（Priority）"> # </a></h4>
+            <ul>
+                <li>不同的运算符之间是有优先级的</li>
+                <li>加减的优先级一样,乘除的优先级一样</li>
+            </ul>
+            <pre><code class="lang-js"><span class="hljs-number">2</span>+<span class="hljs-number">3</span>*<span class="hljs-number">4</span>
 </code></pre>
-<h4 id="t375.7.2  结合性（Associativity）">5.7.2  结合性（Associativity） <a href="#t375.7.2  结合性（Associativity）"> # </a></h4>
-<ul>
-<li>同样优先级的运算符是从左到右计算还是从右到左计算叫做结合性</li>
-<li>加减乘除等算术运算是左结合的，<code>.</code>符号也是左结合的。</li>
-<li>结合性是跟左递归还是右递归有关的，左递归导致左结合，右递归导致右结合</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-number">4</span>+<span class="hljs-number">3</span><span class="hljs-number">-2</span><span class="hljs-number">-2</span>
+            <h4 id="t375.7.2  结合性（Associativity）">5.7.2 结合性（Associativity） <a href="#t375.7.2  结合性（Associativity）"> #
+                </a></h4>
+            <ul>
+                <li>同样优先级的运算符是从左到右计算还是从右到左计算叫做结合性</li>
+                <li>加减乘除等算术运算是左结合的，<code>.</code>符号也是左结合的。</li>
+                <li>结合性是跟左递归还是右递归有关的，左递归导致左结合，右递归导致右结合</li>
+            </ul>
+            <pre><code class="lang-js"><span class="hljs-number">4</span>+<span class="hljs-number">3</span><span class="hljs-number">-2</span><span class="hljs-number">-2</span>
 <span class="hljs-number">8</span>/<span class="hljs-number">2</span>/<span class="hljs-number">2</span>
 </code></pre>
-<h4 id="t385.7.3 文法规则">5.7.3 文法规则 <a href="#t385.7.3 文法规则"> # </a></h4>
-<ul>
-<li>优先级是通过在语法推导中的层次来决定的，优先级越低的，越先尝试推导</li>
-<li>通过文法的嵌套，实现对运算优先级的支持</li>
-</ul>
-<pre><code class="lang-js">additive : multiple|additive+multiple
+            <h4 id="t385.7.3 文法规则">5.7.3 文法规则 <a href="#t385.7.3 文法规则"> # </a></h4>
+            <ul>
+                <li>优先级是通过在语法推导中的层次来决定的，优先级越低的，越先尝试推导</li>
+                <li>通过文法的嵌套，实现对运算优先级的支持</li>
+            </ul>
+            <pre><code class="lang-js">additive : multiple|additive+multiple
 <span class="hljs-attr">multiple</span> : NUMBER|multiple*NUMBER
 </code></pre>
-<p><img src="https://img.zhufengpeixun.com/twoplustheemultiplyfour.jpg" alt="twoplustheemultiplyfour.jpg"></p>
-<p><img src="https://img.zhufengpeixun.com/twoplustheeplusfour" alt="twoplustheeplusfour"></p>
-<h4 id="t395.7.3 左递归（Left Recursive）">5.7.3 左递归（Left Recursive） <a href="#t395.7.3 左递归（Left Recursive）"> # </a></h4>
-<ul>
-<li>在二元表达式的语法规则中，如果产生式的第一个元素是它自身，那么程序就会无限地递归下去，这种情况就叫做左递归</li>
-<li>巴科斯范式 以美国人巴科斯和丹麦人诺尔的名字命名的一种形式化的语法表示方法，用来描述语法的一种形式体系</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params"></span>)</span>{
+            <p><img src="https://img.zhufengpeixun.com/twoplustheemultiplyfour.jpg" alt="twoplustheemultiplyfour.jpg">
+            </p>
+            <p><img src="https://img.zhufengpeixun.com/twoplustheeplusfour" alt="twoplustheeplusfour"></p>
+            <h4 id="t395.7.3 左递归（Left Recursive）">5.7.3 左递归（Left Recursive） <a href="#t395.7.3 左递归（Left Recursive）"> #
+                </a></h4>
+            <ul>
+                <li>在二元表达式的语法规则中，如果产生式的第一个元素是它自身，那么程序就会无限地递归下去，这种情况就叫做左递归</li>
+                <li>巴科斯范式 以美国人巴科斯和丹麦人诺尔的名字命名的一种形式化的语法表示方法，用来描述语法的一种形式体系</li>
+            </ul>
+            <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params"></span>)</span>{
     add();
     multiply();
 }
 </code></pre>
-<h4 id="t405.7.4 消除左递归">5.7.4 消除左递归 <a href="#t405.7.4 消除左递归"> # </a></h4>
-<ul>
-<li>这样可以消除左递归,但是会带来结合性的问题</li>
-</ul>
-<pre><code class="lang-js">additive : multiple|multiple+additive
+            <h4 id="t405.7.4 消除左递归">5.7.4 消除左递归 <a href="#t405.7.4 消除左递归"> # </a></h4>
+            <ul>
+                <li>这样可以消除左递归,但是会带来结合性的问题</li>
+            </ul>
+            <pre><code class="lang-js">additive : multiple|multiple+additive
 <span class="hljs-attr">multiple</span> : NUMBER|NUMBER*multiple
 </code></pre>
-<p><img src="https://img.zhufengpeixun.com/twoplustheeplusfour2.jpg" alt="twoplustheeplusfour2.jpg"></p>
-<h4 id="t415.7.5 循环消除左递归">5.7.5 循环消除左递归 <a href="#t415.7.5 循环消除左递归"> # </a></h4>
-<ul>
-<li>扩展巴科斯范式 (EBNF)会用到类似<code>正则表达式</code>的一些写法</li>
-<li>可以把递归改成<code>循环</code></li>
-</ul>
-<pre><code class="lang-js">additive -&gt; multiple (+ multiple)*
+            <p><img src="https://img.zhufengpeixun.com/twoplustheeplusfour2.jpg" alt="twoplustheeplusfour2.jpg"></p>
+            <h4 id="t415.7.5 循环消除左递归">5.7.5 循环消除左递归 <a href="#t415.7.5 循环消除左递归"> # </a></h4>
+            <ul>
+                <li>扩展巴科斯范式 (EBNF)会用到类似<code>正则表达式</code>的一些写法</li>
+                <li>可以把递归改成<code>循环</code></li>
+            </ul>
+            <pre><code class="lang-js">additive -&gt; multiple (+ multiple)*
 multiple -&gt; NUMBER (* NUMBER)*
 </code></pre>
-<h4 id="t425.7.6 实现">5.7.6 实现 <a href="#t425.7.6 实现"> # </a></h4>
-<p>toAST.js</p>
-<pre><code class="lang-diff">
+            <h4 id="t425.7.6 实现">5.7.6 实现 <a href="#t425.7.6 实现"> # </a></h4>
+            <p>toAST.js</p>
+            <pre><code class="lang-diff">
 const ASTNode = require('./ASTNode');
 let nodeTypes = require('./nodeTypes');
 let tokenTypes = require('./tokenTypes');
@@ -1020,13 +1418,13 @@ function number(tokenReader) {
 
 module.exports = toAST;
 </code></pre>
-<h2 id="t436. 语法分析器">6. 语法分析器 <a href="#t436. 语法分析器"> # </a></h2>
-<ul>
-<li>语法分析器接受 token 数组，然后把它转化为 <code>AST</code></li>
-</ul>
-<h3 id="t446.1  nodeTypes.js">6.1  nodeTypes.js <a href="#t446.1  nodeTypes.js"> # </a></h3>
-<p>src\nodeTypes.js</p>
-<pre><code class="lang-js">exports.Program = <span class="hljs-string">'Program'</span>;
+            <h2 id="t436. 语法分析器">6. 语法分析器 <a href="#t436. 语法分析器"> # </a></h2>
+            <ul>
+                <li>语法分析器接受 token 数组，然后把它转化为 <code>AST</code></li>
+            </ul>
+            <h3 id="t446.1  nodeTypes.js">6.1 nodeTypes.js <a href="#t446.1  nodeTypes.js"> # </a></h3>
+            <p>src\nodeTypes.js</p>
+            <pre><code class="lang-js">exports.Program = <span class="hljs-string">'Program'</span>;
 exports.ExpressionStatement = <span class="hljs-string">'ExpressionStatement'</span>;
 <span class="hljs-comment">//JSX元素</span>
 exports.JSXElement = <span class="hljs-string">'JSXElement'</span>;
@@ -1054,9 +1452,9 @@ exports.NumberLiteral = <span class="hljs-string">'NumberLiteral'</span>;
 exports.StringLiteral = <span class="hljs-string">'StringLiteral'</span>;
 exports.NullLiteral = <span class="hljs-string">'NullLiteral'</span>;
 </code></pre>
-<h3 id="t456.2  parser.js">6.2  parser.js <a href="#t456.2  parser.js"> # </a></h3>
-<p>src\parser.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> { tokenizer } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./tokenizer'</span>);
+            <h3 id="t456.2  parser.js">6.2 parser.js <a href="#t456.2  parser.js"> # </a></h3>
+            <p>src\parser.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> { tokenizer } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./tokenizer'</span>);
 <span class="hljs-keyword">const</span> tokenTypes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./tokenTypes'</span>);
 <span class="hljs-keyword">const</span> nodeTypes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./nodeTypes'</span>);
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">parser</span>(<span class="hljs-params">code</span>) </span>{
@@ -1164,7 +1562,7 @@ let code = '&lt;h1 id="title"&gt;&lt;span&gt;hello&lt;/span&gt;world&lt;/h1&gt;'
 console.log(JSON.stringify(parser(code), null, 2));
 */</span>
 </code></pre>
-<pre><code class="lang-json">{
+            <pre><code class="lang-json">{
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Program"</span>,
   <span class="hljs-attr">"body"</span>: [
     {
@@ -1232,9 +1630,9 @@ console.log(JSON.stringify(parser(code), null, 2));
   ]
 }
 </code></pre>
-<h2 id="t467. 遍历语法树">7. 遍历语法树 <a href="#t467. 遍历语法树"> # </a></h2>
-<p>src\traverse.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> { parser } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./parser'</span>);
+            <h2 id="t467. 遍历语法树">7. 遍历语法树 <a href="#t467. 遍历语法树"> # </a></h2>
+            <p>src\traverse.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> { parser } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./parser'</span>);
 <span class="hljs-keyword">const</span> replace = <span class="hljs-function">(<span class="hljs-params">parent,oldNode,newNode</span>)=&gt;</span>{
     <span class="hljs-keyword">if</span>(parent){
         <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> key <span class="hljs-keyword">in</span> parent) {
@@ -1343,9 +1741,9 @@ traverse(ast, {
     }
 }) */</span>
 </code></pre>
-<h2 id="t478. 转换器">8. 转换器 <a href="#t478. 转换器"> # </a></h2>
-<p>src\transformer.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> { traverse } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./traverse'</span>);
+            <h2 id="t478. 转换器">8. 转换器 <a href="#t478. 转换器"> # </a></h2>
+            <p>src\transformer.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> { traverse } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./traverse'</span>);
 <span class="hljs-keyword">const</span> { parser } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./parser'</span>);
 <span class="hljs-keyword">const</span> nodeTypes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./nodeTypes'</span>);
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">t</span> </span>{
@@ -1458,7 +1856,7 @@ let ast = parser(code);
 transformer(ast);
 console.log(JSON.stringify(ast, null, 2)); */</span>
 </code></pre>
-<pre><code class="lang-json">{
+            <pre><code class="lang-json">{
   <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Program"</span>,
   <span class="hljs-attr">"body"</span>: [
     {
@@ -1534,12 +1932,12 @@ console.log(JSON.stringify(ast, null, 2)); */</span>
   ]
 }
 </code></pre>
-<h2 id="t489. 生成器">9. 生成器 <a href="#t489. 生成器"> # </a></h2>
-<ul>
-<li>先序遍历抽象语法树，将特定的节点类型转换成对应的js代码即可</li>
-</ul>
-<p>src\codeGenerator.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> nodeTypes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./nodeTypes'</span>);
+            <h2 id="t489. 生成器">9. 生成器 <a href="#t489. 生成器"> # </a></h2>
+            <ul>
+                <li>先序遍历抽象语法树，将特定的节点类型转换成对应的js代码即可</li>
+            </ul>
+            <p>src\codeGenerator.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> nodeTypes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./nodeTypes'</span>);
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">codeGenerator</span>(<span class="hljs-params">node</span>) </span>{
     <span class="hljs-keyword">switch</span> (node.type) {
         <span class="hljs-keyword">case</span> nodeTypes.Program:
@@ -1599,8 +1997,8 @@ console.log(JSON.stringify(ast, null, 2)); */</span>
     codeGenerator
 }
 </code></pre>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> { parser } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./parser'</span>);
+            <p>src\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> { parser } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./parser'</span>);
 <span class="hljs-keyword">const</span> { transformer } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./transformer'</span>);
 <span class="hljs-keyword">const</span> { codeGenerator } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./codeGenerator'</span>);
 <span class="hljs-keyword">let</span> code = <span class="hljs-string">'&lt;h1 id="title"&gt;&lt;span&gt;hello&lt;/span&gt;world&lt;/h1&gt;'</span>;
@@ -1611,6 +2009,6 @@ transformer(ast);
 <span class="hljs-built_in">console</span>.log(result);
 </code></pre>
 
+        </div>
     </div>
-</div>
 </body>

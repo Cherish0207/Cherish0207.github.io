@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        .page-toc > ul .red {
+        .page-toc>ul .red {
             background: #f3f3f3;
             z-index: 1;
             border-left: 3px solid #009a61;
@@ -15,58 +15,460 @@
         }
     </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li class="active"><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
-    <div class="page-toc">
-        <ul><li><a href="#t01. redux-saga">1. redux-saga</a></li><li><a href="#t12. redux-saga工作原理">2. redux-saga工作原理</a></li><li><a href="#t23. redux-saga分类">3. redux-saga分类</a></li><li><a href="#t34. 构建项目">4. 构建项目</a><ul><li><a href="#t44.1 初始化项目">4.1 初始化项目</a></li></ul></li><li><a href="#t55. 跑通saga">5. 跑通saga</a><ul><li><a href="#t65.1 src\index.js">5.1 src\index.js</a></li><li><a href="#t75.2 store\index.js">5.2 store\index.js</a></li><li><a href="#t85.3 store\reducer.js">5.3 store\reducer.js</a></li><li><a href="#t95.4 store\sagas.js">5.4 store\sagas.js</a></li></ul></li><li><a href="#t106. 异步计数器">6. 异步计数器</a><ul><li><a href="#t116.1 components/Counter.js">6.1 components/Counter.js</a></li><li><a href="#t126.2 src/index.js">6.2 src/index.js</a></li><li><a href="#t136.3 store/action-types.js">6.3 store/action-types.js</a></li><li><a href="#t146.4 store/actions.js">6.4 store/actions.js</a></li><li><a href="#t156.5 src/store/index.js">6.5 src/store/index.js</a></li><li><a href="#t166.6 store/reducer.js">6.6 store/reducer.js</a></li><li><a href="#t176.7 store/sagas.js">6.7 store/sagas.js</a></li></ul></li><li><a href="#t187. 单元测试">7. 单元测试</a><ul><li><a href="#t197.1 安装模块">7.1 安装模块</a></li><li><a href="#t207.2 测试脚本">7.2 测试脚本</a></li><li><a href="#t217.3 utils.js">7.3 utils.js</a></li><li><a href="#t227.4 store\sagas.spec.js">7.4 store\sagas.spec.js</a></li></ul></li><li><a href="#t238. 声明式effects">8. 声明式effects</a><ul><li><a href="#t248.1 src/store/sagas.js">8.1 src/store/sagas.js</a></li><li><a href="#t258.2 store/sagas.spec.js">8.2 store/sagas.spec.js</a></li><li><a href="#t268.3 src/utils.js">8.3 src/utils.js</a></li></ul></li><li><a href="#t279. 错误处理">9. 错误处理</a><ul><li><a href="#t289.1 try catch">9.1 try catch</a></li><li><a href="#t299.2 错误标识">9.2 错误标识</a></li></ul></li><li><a href="#t3010. take">10. take</a><ul><li><a href="#t3110.1 store/sagas.js">10.1 store/sagas.js</a></li></ul></li><li><a href="#t3211. 登陆流程">11. 登陆流程</a><ul><li><a href="#t3311.1 src/index.js">11.1 src/index.js</a></li><li><a href="#t3411.2 store/action-types.js">11.2 store/action-types.js</a></li><li><a href="#t3511.3 store/actions.js">11.3 store/actions.js</a></li><li><a href="#t3611.4 store/reducer.js">11.4 store/reducer.js</a></li><li><a href="#t3711.5 store/sagas.js">11.5 store/sagas.js</a></li><li><a href="#t3811.6  src/Api.js">11.6  src/Api.js</a></li><li><a href="#t3911.7 components/Login.js">11.7 components/Login.js</a></li></ul></li><li><a href="#t4012. fork">12. fork</a><ul><li><a href="#t4112.1 store/sagas.js">12.1 store/sagas.js</a></li></ul></li><li><a href="#t4213. 取消任务">13. 取消任务</a><ul><li><a href="#t4313.1 components/Login.js">13.1 components/Login.js</a></li><li><a href="#t4413.2 store/sagas.js">13.2 store/sagas.js</a></li></ul></li><li><a href="#t4514. race">14. race</a><ul><li><a href="#t4614.1 src/index.js">14.1 src/index.js</a></li><li><a href="#t4714.2 store/action-types.js">14.2 store/action-types.js</a></li><li><a href="#t4814.3 store/actions.js">14.3 store/actions.js</a></li><li><a href="#t4914.4 store/sagas.js">14.4 store/sagas.js</a></li><li><a href="#t5014.5 components/Counter.js">14.5 components/Counter.js</a></li></ul></li><li><a href="#t51参考">参考</a></li></ul>
+<body class="modal-open" style="padding-right: 15px;">
+    <div class="nav">
+        <div class="logo">
+
+            珠峰架构师成长计划
+
+        </div>
+        <ul>
+            <li><a href="../index.html">0.Async</a></li>
+            <li><a href="../html/0.editor.html">0.editor</a></li>
+            <li><a href="../html/0.module.html">0.module</a></li>
+            <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+            <li><a href="../html/2.Promise.html">2.Promise</a></li>
+            <li><a href="../html/3.Node.html">3.Node</a></li>
+            <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+            <li><a href="../html/5.REPL.html">5.REPL</a></li>
+            <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+            <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+            <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+            <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+            <li><a href="../html/10.fs.html">10.fs</a></li>
+            <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+            <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+            <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+            <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+            <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+            <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+            <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+            <li><a href="../html/13.tcp.html">13.tcp</a></li>
+            <li><a href="../html/14.http-1.html">14.http-1</a></li>
+            <li><a href="../html/14.http-2.html">14.http-2</a></li>
+            <li><a href="../html/15.compress.html">15.compress</a></li>
+            <li><a href="../html/16.crypto.html">16.crypto</a></li>
+            <li><a href="../html/17.process.html">17.process</a></li>
+            <li><a href="../html/18.yargs.html">18.yargs</a></li>
+            <li><a href="../html/19.cache.html">19.cache</a></li>
+            <li><a href="../html/20.action.html">20.action</a></li>
+            <li><a href="../html/21.https.html">21.https</a></li>
+            <li><a href="../html/22.cookie.html">22.cookie</a></li>
+            <li><a href="../html/23.session.html">23.session</a></li>
+            <li><a href="../html/24.express-1.html">24.express-1</a></li>
+            <li><a href="../html/24.express-2.html">24.express-2</a></li>
+            <li><a href="../html/24.express-3.html">24.express-3</a></li>
+            <li><a href="../html/24.express-4.html">24.express-4</a></li>
+            <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+            <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+            <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+            <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+            <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+            <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+            <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+            <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+            <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+            <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+            <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+            <li><a href="../html/28.redux.html">28.redux</a></li>
+            <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+            <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+            <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+            <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+            <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+            <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+            <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+            <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+            <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+            <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+            <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+            <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+            <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+            <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+            <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+            <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+            <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+            <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+            <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+            <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+            <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+            <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+            <li><a href="../html/31.dva.html">31.dva</a></li>
+            <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+            <li><a href="../html/33.redis.html">33.redis</a></li>
+            <li><a href="../html/34.unittest.html">34.unittest</a></li>
+            <li><a href="../html/35.jwt.html">35.jwt</a></li>
+            <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+            <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+            <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+            <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+            <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+            <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+            <li><a href="../html/38.chat.html">38.chat</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+            <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+            <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+            <li><a href="../html/40.deploy.html">40.deploy</a></li>
+            <li><a href="../html/41.safe.html">41.safe</a></li>
+            <li><a href="../html/42.test.html">42.test</a></li>
+            <li><a href="../html/43.nginx.html">43.nginx</a></li>
+            <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+            <li><a href="../html/45.docker.html">45.docker</a></li>
+            <li><a href="../html/46.elastic.html">46.elastic</a></li>
+            <li><a href="../html/47.oauth.html">47.oauth</a></li>
+            <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/52.UML.html">52.UML</a></li>
+            <li><a href="../html/53.design.html">53.design</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/54.linux.html">54.linux</a></li>
+            <li><a href="../html/57.ts.html">57.ts</a></li>
+            <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+            <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+            <li><a href="../html/59.ketang.html">59.ketang</a></li>
+            <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+            <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+            <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+            <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+            <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+            <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+            <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+            <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+            <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+            <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+            <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+            <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+            <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+            <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+            <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+            <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+            <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+            <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+            <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+            <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+            <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+            <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+            <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+            <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+            <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+            <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+            <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+            <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+            <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+            <li class="active"><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+            <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+            <li><a href="../html/64.1.router.html">64.1.router</a></li>
+            <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+            <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+            <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+            <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+            <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+            <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+            <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+            <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+            <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+            <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+            <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+            <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+            <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+            <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+            <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+            <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+            <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+            <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+            <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+            <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+            <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+            <li><a href="../html/67-1-network.html">67-1-network</a></li>
+            <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+            <li><a href="../html/7.npm2.html">7.npm2</a></li>
+            <li><a href="../html/69-hooks.html">69-hooks</a></li>
+            <li><a href="../html/70-deploy.html">70-deploy</a></li>
+            <li><a href="../html/71-hmr.html">71-hmr</a></li>
+            <li><a href="../html/72.deploy.html">72.deploy</a></li>
+            <li><a href="../html/73.import.html">73.import</a></li>
+            <li><a href="../html/74.mobile.html">74.mobile</a></li>
+            <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+            <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+            <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+            <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+            <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+            <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+            <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+            <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+            <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+            <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+            <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+            <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+            <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+            <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+            <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+            <li><a href="../html/79.grammar.html">79.grammar</a></li>
+            <li><a href="../html/80.tree.html">80.tree</a></li>
+            <li><a href="../html/81.axios.html">81.axios</a></li>
+            <li><a href="../html/82.1.react.html">82.1.react</a></li>
+            <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+            <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+            <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+            <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+            <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+            <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+            <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+            <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+            <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+            <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+            <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+            <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+            <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+            <li><a href="../html/83.upload.html">83.upload</a></li>
+            <li><a href="../html/84.graphql.html">84.graphql</a></li>
+            <li><a href="../html/85.antpro.html">85.antpro</a></li>
+            <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+            <li><a href="../html/86.2.design.html">86.2.design</a></li>
+            <li><a href="../html/87.postcss.html">87.postcss</a></li>
+            <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+            <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+            <li><a href="../html/90.react-test.html">90.react-test</a></li>
+            <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+            <li><a href="../html/92.rbac.html">92.rbac</a></li>
+            <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+            <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+            <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+            <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+            <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+            <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+            <li><a href="../html/94.6.https.html">94.6.https</a></li>
+            <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+            <li><a href="../html/95.1. react.html">95.1. react</a></li>
+            <li><a href="../html/95.2.react.html">95.2.react</a></li>
+            <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+            <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+            <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+            <li><a href="../html/97.serverless.html">97.serverless</a></li>
+            <li><a href="../html/98.websocket.html">98.websocket</a></li>
+            <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+            <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+            <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+            <li><a href="../html/102.java.html">102.java</a></li>
+            <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+            <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+            <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+            <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+            <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+            <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+            <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+            <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+            <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+            <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+            <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+            <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+            <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+            <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+            <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+            <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+            <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+            <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+            <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+            <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+            <li><a href="../html/106.1.react.html">106.1.react</a></li>
+            <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+            <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+            <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+            <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+            <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+            <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+            <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+            <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+            <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+            <li><a href="../html/107.fiber.html">107.fiber</a></li>
+            <li><a href="../html/108.http.html">108.http</a></li>
+            <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+            <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+            <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+            <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+            <li><a href="../html/111.xstate.html">111.xstate</a></li>
+            <li><a href="../html/112.Form.html">112.Form</a></li>
+            <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+            <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+            <li><a href="../html/115.immer.html">115.immer</a></li>
+            <li><a href="../html/116.pro5.html">116.pro5</a></li>
+            <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+            <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+            <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+            <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+            <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+            <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+            <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+            <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+            <li><a href="../html/124.next.js.html">124.next.js</a></li>
+            <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+            <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+            <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+            <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+            <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+            <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+            <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+            <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+            <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+            <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+            <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+            <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+            <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+            <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+            <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+            <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+            <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+            <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+            <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+            <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+            <li><a href="../html/127.frontend.html">127.frontend</a></li>
+            <li><a href="../html/128.rollup.html">128.rollup</a></li>
+            <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+            <li><a href="../html/130.health.html">130.health</a></li>
+            <li><a href="../html/131.hooks.html">131.hooks</a></li>
+            <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+            <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+            <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+            <li><a href="../html/134.react18.html">134.react18</a></li>
+            <li><a href="../html/135.function.html">135.function</a></li>
+            <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+        </ul>
     </div>
-    <div class="content markdown-body">
-        <h2 id="t01. redux-saga">1. redux-saga <a href="#t01. redux-saga"> # </a></h2>
-<ul>
-<li><a href="https://redux-saga-in-chinese.js.org/">redux-saga</a> 是一个 redux 的中间件，而中间件的作用是为 redux 提供额外的功能。</li>
-<li>在 reducers 中的所有操作都是同步的并且是纯粹的，即 reducer 都是纯函数，纯函数是指一个函数的返回结果只依赖于它的参数，并且在执行过程中不会对外部产生副作用，即给它传什么，就吐出什么。</li>
-<li>但是在实际的应用开发中，我们希望做一些异步的（如Ajax请求）且不纯粹的操作（如改变外部的状态），这些在函数式编程范式中被称为“副作用”。</li>
-</ul>
-<blockquote>
-<p>redux-saga 就是用来处理上述副作用（异步任务）的一个中间件。它是一个接收事件，并可能触发新事件的过程管理者，为你的应用管理复杂的流程。</p>
-</blockquote>
-<h2 id="t12. redux-saga工作原理">2. redux-saga工作原理 <a href="#t12. redux-saga工作原理"> # </a></h2>
-<ul>
-<li>sages 采用 Generator 函数来 yield Effects（包含指令的文本对象）</li>
-<li>Generator 函数的作用是可以暂停执行，再次执行的时候从上次暂停的地方继续执行</li>
-<li>Effect 是一个简单的对象，该对象包含了一些给 middleware 解释执行的信息。</li>
-<li>你可以通过使用 effects API 如 fork，call，take，put，cancel 等来创建 Effect。 </li>
-</ul>
-<h2 id="t23. redux-saga分类">3. redux-saga分类 <a href="#t23. redux-saga分类"> # </a></h2>
-<ul>
-<li>worker saga 做实际的工作，如调用API，进行异步请求，获取异步封装结果</li>
-<li>watcher saga 监听被dispatch的actions,当接受到action或者知道其被触发时，调用worker执行任务</li>
-<li>root saga  立即启动saga的唯一入口</li>
-</ul>
-<h2 id="t34. 构建项目">4. 构建项目 <a href="#t34. 构建项目"> # </a></h2>
-<h3 id="t44.1 初始化项目">4.1 初始化项目 <a href="#t44.1 初始化项目"> # </a></h3>
-<pre><code class="lang-js">cnpm install create-react-app -g 
+
+
+    <div class="warpper">
+        <div class="page-toc">
+            <ul>
+                <li><a href="#t01. redux-saga">1. redux-saga</a></li>
+                <li><a href="#t12. redux-saga工作原理">2. redux-saga工作原理</a></li>
+                <li><a href="#t23. redux-saga分类">3. redux-saga分类</a></li>
+                <li><a href="#t34. 构建项目">4. 构建项目</a>
+                    <ul>
+                        <li><a href="#t44.1 初始化项目">4.1 初始化项目</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t55. 跑通saga">5. 跑通saga</a>
+                    <ul>
+                        <li><a href="#t65.1 src\index.js">5.1 src\index.js</a></li>
+                        <li><a href="#t75.2 store\index.js">5.2 store\index.js</a></li>
+                        <li><a href="#t85.3 store\reducer.js">5.3 store\reducer.js</a></li>
+                        <li><a href="#t95.4 store\sagas.js">5.4 store\sagas.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t106. 异步计数器">6. 异步计数器</a>
+                    <ul>
+                        <li><a href="#t116.1 components/Counter.js">6.1 components/Counter.js</a></li>
+                        <li><a href="#t126.2 src/index.js">6.2 src/index.js</a></li>
+                        <li><a href="#t136.3 store/action-types.js">6.3 store/action-types.js</a></li>
+                        <li><a href="#t146.4 store/actions.js">6.4 store/actions.js</a></li>
+                        <li><a href="#t156.5 src/store/index.js">6.5 src/store/index.js</a></li>
+                        <li><a href="#t166.6 store/reducer.js">6.6 store/reducer.js</a></li>
+                        <li><a href="#t176.7 store/sagas.js">6.7 store/sagas.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t187. 单元测试">7. 单元测试</a>
+                    <ul>
+                        <li><a href="#t197.1 安装模块">7.1 安装模块</a></li>
+                        <li><a href="#t207.2 测试脚本">7.2 测试脚本</a></li>
+                        <li><a href="#t217.3 utils.js">7.3 utils.js</a></li>
+                        <li><a href="#t227.4 store\sagas.spec.js">7.4 store\sagas.spec.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t238. 声明式effects">8. 声明式effects</a>
+                    <ul>
+                        <li><a href="#t248.1 src/store/sagas.js">8.1 src/store/sagas.js</a></li>
+                        <li><a href="#t258.2 store/sagas.spec.js">8.2 store/sagas.spec.js</a></li>
+                        <li><a href="#t268.3 src/utils.js">8.3 src/utils.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t279. 错误处理">9. 错误处理</a>
+                    <ul>
+                        <li><a href="#t289.1 try catch">9.1 try catch</a></li>
+                        <li><a href="#t299.2 错误标识">9.2 错误标识</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t3010. take">10. take</a>
+                    <ul>
+                        <li><a href="#t3110.1 store/sagas.js">10.1 store/sagas.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t3211. 登陆流程">11. 登陆流程</a>
+                    <ul>
+                        <li><a href="#t3311.1 src/index.js">11.1 src/index.js</a></li>
+                        <li><a href="#t3411.2 store/action-types.js">11.2 store/action-types.js</a></li>
+                        <li><a href="#t3511.3 store/actions.js">11.3 store/actions.js</a></li>
+                        <li><a href="#t3611.4 store/reducer.js">11.4 store/reducer.js</a></li>
+                        <li><a href="#t3711.5 store/sagas.js">11.5 store/sagas.js</a></li>
+                        <li><a href="#t3811.6  src/Api.js">11.6 src/Api.js</a></li>
+                        <li><a href="#t3911.7 components/Login.js">11.7 components/Login.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t4012. fork">12. fork</a>
+                    <ul>
+                        <li><a href="#t4112.1 store/sagas.js">12.1 store/sagas.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t4213. 取消任务">13. 取消任务</a>
+                    <ul>
+                        <li><a href="#t4313.1 components/Login.js">13.1 components/Login.js</a></li>
+                        <li><a href="#t4413.2 store/sagas.js">13.2 store/sagas.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t4514. race">14. race</a>
+                    <ul>
+                        <li><a href="#t4614.1 src/index.js">14.1 src/index.js</a></li>
+                        <li><a href="#t4714.2 store/action-types.js">14.2 store/action-types.js</a></li>
+                        <li><a href="#t4814.3 store/actions.js">14.3 store/actions.js</a></li>
+                        <li><a href="#t4914.4 store/sagas.js">14.4 store/sagas.js</a></li>
+                        <li><a href="#t5014.5 components/Counter.js">14.5 components/Counter.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t51参考">参考</a></li>
+            </ul>
+        </div>
+        <div class="content markdown-body">
+            <h2 id="t01. redux-saga">1. redux-saga <a href="#t01. redux-saga"> # </a></h2>
+            <ul>
+                <li><a href="https://redux-saga-in-chinese.js.org/">redux-saga</a> 是一个 redux 的中间件，而中间件的作用是为 redux
+                    提供额外的功能。</li>
+                <li>在 reducers 中的所有操作都是同步的并且是纯粹的，即 reducer 都是纯函数，纯函数是指一个函数的返回结果只依赖于它的参数，并且在执行过程中不会对外部产生副作用，即给它传什么，就吐出什么。
+                </li>
+                <li>但是在实际的应用开发中，我们希望做一些异步的（如Ajax请求）且不纯粹的操作（如改变外部的状态），这些在函数式编程范式中被称为“副作用”。</li>
+            </ul>
+            <blockquote>
+                <p>redux-saga 就是用来处理上述副作用（异步任务）的一个中间件。它是一个接收事件，并可能触发新事件的过程管理者，为你的应用管理复杂的流程。</p>
+            </blockquote>
+            <h2 id="t12. redux-saga工作原理">2. redux-saga工作原理 <a href="#t12. redux-saga工作原理"> # </a></h2>
+            <ul>
+                <li>sages 采用 Generator 函数来 yield Effects（包含指令的文本对象）</li>
+                <li>Generator 函数的作用是可以暂停执行，再次执行的时候从上次暂停的地方继续执行</li>
+                <li>Effect 是一个简单的对象，该对象包含了一些给 middleware 解释执行的信息。</li>
+                <li>你可以通过使用 effects API 如 fork，call，take，put，cancel 等来创建 Effect。 </li>
+            </ul>
+            <h2 id="t23. redux-saga分类">3. redux-saga分类 <a href="#t23. redux-saga分类"> # </a></h2>
+            <ul>
+                <li>worker saga 做实际的工作，如调用API，进行异步请求，获取异步封装结果</li>
+                <li>watcher saga 监听被dispatch的actions,当接受到action或者知道其被触发时，调用worker执行任务</li>
+                <li>root saga 立即启动saga的唯一入口</li>
+            </ul>
+            <h2 id="t34. 构建项目">4. 构建项目 <a href="#t34. 构建项目"> # </a></h2>
+            <h3 id="t44.1 初始化项目">4.1 初始化项目 <a href="#t44.1 初始化项目"> # </a></h3>
+            <pre><code class="lang-js">cnpm install create-react-app -g 
 create-react-app zhufeng-saga-start
 cd zhufeng-saga-start
 cnpm i redux react-redux redux-saga tape --save
 </code></pre>
-<h2 id="t55. 跑通saga">5. 跑通saga <a href="#t55. 跑通saga"> # </a></h2>
-<h3 id="t65.1 src\index.js">5.1 src\index.js <a href="#t65.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">'./store'</span>;
+            <h2 id="t55. 跑通saga">5. 跑通saga <a href="#t55. 跑通saga"> # </a></h2>
+            <h3 id="t65.1 src\index.js">5.1 src\index.js <a href="#t65.1 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">'./store'</span>;
 </code></pre>
-<h3 id="t75.2 store\index.js">5.2 store\index.js <a href="#t75.2 store\index.js"> # </a></h3>
-<p>src\store\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {createStore, applyMiddleware} <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>;
+            <h3 id="t75.2 store\index.js">5.2 store\index.js <a href="#t75.2 store\index.js"> # </a></h3>
+            <p>src\store\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> {createStore, applyMiddleware} <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>;
 <span class="hljs-keyword">import</span> reducer <span class="hljs-keyword">from</span> <span class="hljs-string">'./reducer'</span>;
 <span class="hljs-keyword">import</span> createSagaMiddleware <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga'</span>;
 <span class="hljs-comment">//首先我们引入 ./sagas 模块中的 Saga。然后使用 redux-saga 模块的 createSagaMiddleware 工厂函数来创建一个 Saga middleware</span>
@@ -77,21 +479,22 @@ cnpm i redux react-redux redux-saga tape --save
 sagaMiddleware.run(helloSaga);
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> store;
 </code></pre>
-<h3 id="t85.3 store\reducer.js">5.3 store\reducer.js <a href="#t85.3 store\reducer.js"> # </a></h3>
-<p>src\store\reducer.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state,action</span>) </span>{}
+            <h3 id="t85.3 store\reducer.js">5.3 store\reducer.js <a href="#t85.3 store\reducer.js"> # </a></h3>
+            <p>src\store\reducer.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state,action</span>) </span>{}
 </code></pre>
-<h3 id="t95.4 store\sagas.js">5.4 store\sagas.js <a href="#t95.4 store\sagas.js"> # </a></h3>
-<p>src\store\sagas.js</p>
-<pre><code class="lang-js"><span class="hljs-comment">//helloSaga它只是打印了一条消息，然后退出。</span>
+            <h3 id="t95.4 store\sagas.js">5.4 store\sagas.js <a href="#t95.4 store\sagas.js"> # </a></h3>
+            <p>src\store\sagas.js</p>
+            <pre><code class="lang-js"><span class="hljs-comment">//helloSaga它只是打印了一条消息，然后退出。</span>
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">helloSaga</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Hello Saga!'</span>);
 }
 </code></pre>
-<h2 id="t106. 异步计数器">6. 异步计数器 <a href="#t106. 异步计数器"> # </a></h2>
-<h3 id="t116.1 components/Counter.js">6.1 components/Counter.js <a href="#t116.1 components/Counter.js"> # </a></h3>
-<p>src/components/Counter.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h2 id="t106. 异步计数器">6. 异步计数器 <a href="#t106. 异步计数器"> # </a></h2>
+            <h3 id="t116.1 components/Counter.js">6.1 components/Counter.js <a href="#t116.1 components/Counter.js"> #
+                </a></h3>
+            <p>src/components/Counter.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">'react-redux'</span>;
 <span class="hljs-keyword">import</span> actions <span class="hljs-keyword">from</span> <span class="hljs-string">'../store/actions'</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
@@ -109,9 +512,9 @@ sagaMiddleware.run(helloSaga);
     actions
 )(Counter);
 </code></pre>
-<h3 id="t126.2 src/index.js">6.2 src/index.js <a href="#t126.2 src/index.js"> # </a></h3>
-<p>src/index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h3 id="t126.2 src/index.js">6.2 src/index.js <a href="#t126.2 src/index.js"> # </a></h3>
+            <p>src/index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
 <span class="hljs-keyword">import</span> Counter <span class="hljs-keyword">from</span> <span class="hljs-string">'./components/Counter'</span>;
 <span class="hljs-keyword">import</span> {Provider} <span class="hljs-keyword">from</span> <span class="hljs-string">'react-redux'</span>;
@@ -120,23 +523,24 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
   <span class="hljs-tag">&lt;<span class="hljs-name">Counter</span>/&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span></span>,<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'#root'</span>));
 </code></pre>
-<h3 id="t136.3 store/action-types.js">6.3 store/action-types.js <a href="#t136.3 store/action-types.js"> # </a></h3>
-<p>src/store/action-types.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> INCREMENT=<span class="hljs-string">'INCREMENT'</span>;
+            <h3 id="t136.3 store/action-types.js">6.3 store/action-types.js <a href="#t136.3 store/action-types.js"> #
+                </a></h3>
+            <p>src/store/action-types.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> INCREMENT=<span class="hljs-string">'INCREMENT'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> INCREMENT_ASYNC=<span class="hljs-string">'INCREMENT_ASYNC'</span>;
 </code></pre>
-<h3 id="t146.4 store/actions.js">6.4 store/actions.js <a href="#t146.4 store/actions.js"> # </a></h3>
-<p>src/store/actions.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">'./action-types'</span>;
+            <h3 id="t146.4 store/actions.js">6.4 store/actions.js <a href="#t146.4 store/actions.js"> # </a></h3>
+            <p>src/store/actions.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">'./action-types'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
     incrementAsync() {
         <span class="hljs-keyword">return</span> {<span class="hljs-attr">type</span>:types.INCREMENT_ASYNC}
     }
 }
 </code></pre>
-<h3 id="t156.5 src/store/index.js">6.5 src/store/index.js <a href="#t156.5 src/store/index.js"> # </a></h3>
-<p>src/store/index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {createStore, applyMiddleware} <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>;
+            <h3 id="t156.5 src/store/index.js">6.5 src/store/index.js <a href="#t156.5 src/store/index.js"> # </a></h3>
+            <p>src/store/index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> {createStore, applyMiddleware} <span class="hljs-keyword">from</span> <span class="hljs-string">'redux'</span>;
 <span class="hljs-keyword">import</span> reducer <span class="hljs-keyword">from</span> <span class="hljs-string">'./reducer'</span>;
 <span class="hljs-keyword">import</span> createSagaMiddleware <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga'</span>;
 <span class="hljs-comment">//首先我们引入 ./sagas 模块中的 Saga。然后使用 redux-saga 模块的 createSagaMiddleware 工厂函数来创建一个 Saga middleware</span>
@@ -147,9 +551,9 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
 sagaMiddleware.run(rootSaga);
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> store;
 </code></pre>
-<h3 id="t166.6 store/reducer.js">6.6 store/reducer.js <a href="#t166.6 store/reducer.js"> # </a></h3>
-<p>src/store/reducer.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">'./action-types'</span>;
+            <h3 id="t166.6 store/reducer.js">6.6 store/reducer.js <a href="#t166.6 store/reducer.js"> # </a></h3>
+            <p>src/store/reducer.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">'./action-types'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state={number:<span class="hljs-number">0</span>},action</span>) </span>{
     <span class="hljs-keyword">switch</span>(action.type){
         <span class="hljs-keyword">case</span> types.INCREMENT:
@@ -159,9 +563,9 @@ sagaMiddleware.run(rootSaga);
     }
 }
 </code></pre>
-<h3 id="t176.7 store/sagas.js">6.7 store/sagas.js <a href="#t176.7 store/sagas.js"> # </a></h3>
-<p>src/store/sagas.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { delay,all,put, takeEvery } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>
+            <h3 id="t176.7 store/sagas.js">6.7 store/sagas.js <a href="#t176.7 store/sagas.js"> # </a></h3>
+            <p>src/store/sagas.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> { delay,all,put, takeEvery } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>
 
 <span class="hljs-comment">//worker Saga: 将执行异步的 increment 任务</span>
 <span class="hljs-comment">//incrementAsync Saga 通过 delay(1000) 延迟了 1 秒钟，然后 dispatch 一个叫 INCREMENT 的 action。</span>
@@ -193,21 +597,23 @@ sagaMiddleware.run(rootSaga);
     ])
   }
 </code></pre>
-<h2 id="t187. 单元测试">7. 单元测试 <a href="#t187. 单元测试"> # </a></h2>
-<ul>
-<li><a href="https://babeljs.io/docs/en/next/babel-node.html">babel-node</a>：提供一个支持ES6的REPL环境，支持Node的REPL环境的所有功能，可以直接运行ES6代码</li>
-</ul>
-<h3 id="t197.1 安装模块">7.1 安装模块 <a href="#t197.1 安装模块"> # </a></h3>
-<pre><code class="lang-js">cnpm i @babel/core @babel/node @babel/plugin-transform-modules-commonjs --save-dev
+            <h2 id="t187. 单元测试">7. 单元测试 <a href="#t187. 单元测试"> # </a></h2>
+            <ul>
+                <li><a
+                        href="https://babeljs.io/docs/en/next/babel-node.html">babel-node</a>：提供一个支持ES6的REPL环境，支持Node的REPL环境的所有功能，可以直接运行ES6代码
+                </li>
+            </ul>
+            <h3 id="t197.1 安装模块">7.1 安装模块 <a href="#t197.1 安装模块"> # </a></h3>
+            <pre><code class="lang-js">cnpm i @babel/core @babel/node @babel/plugin-transform-modules-commonjs --save-dev
 </code></pre>
-<h3 id="t207.2 测试脚本">7.2 测试脚本 <a href="#t207.2 测试脚本"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-string">"scripts"</span>: {
+            <h3 id="t207.2 测试脚本">7.2 测试脚本 <a href="#t207.2 测试脚本"> # </a></h3>
+            <pre><code class="lang-js"><span class="hljs-string">"scripts"</span>: {
     <span class="hljs-string">"test"</span>: <span class="hljs-string">"babel-node src/store/sagas.spec.js --plugins @babel/plugin-transform-modules-commonjs"</span>
 }
 </code></pre>
-<h3 id="t217.3 utils.js">7.3 utils.js <a href="#t217.3 utils.js"> # </a></h3>
-<p>src\utils.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span>   delay = <span class="hljs-function">(<span class="hljs-params">ms</span>)=&gt;</span>{
+            <h3 id="t217.3 utils.js">7.3 utils.js <a href="#t217.3 utils.js"> # </a></h3>
+            <p>src\utils.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span>   delay = <span class="hljs-function">(<span class="hljs-params">ms</span>)=&gt;</span>{
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve</span>)</span>{
         setTimeout(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
             resolve();
@@ -215,9 +621,10 @@ sagaMiddleware.run(rootSaga);
     });
 }
 </code></pre>
-<h3 id="t227.4 store\sagas.spec.js">7.4 store\sagas.spec.js <a href="#t227.4 store\sagas.spec.js"> # </a></h3>
-<p>src\store\sagas.spec.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> test <span class="hljs-keyword">from</span> <span class="hljs-string">'tape'</span>;
+            <h3 id="t227.4 store\sagas.spec.js">7.4 store\sagas.spec.js <a href="#t227.4 store\sagas.spec.js"> # </a>
+            </h3>
+            <p>src\store\sagas.spec.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> test <span class="hljs-keyword">from</span> <span class="hljs-string">'tape'</span>;
 <span class="hljs-keyword">import</span> { all,put, takeEvery,call } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>;
 <span class="hljs-keyword">import</span> { incrementAsync }  <span class="hljs-keyword">from</span> <span class="hljs-string">'./sagas'</span>;
 <span class="hljs-keyword">import</span> {delay} <span class="hljs-keyword">from</span> <span class="hljs-string">'../utils'</span>;
@@ -249,19 +656,20 @@ test(<span class="hljs-string">'incrementAsync Saga test'</span>, (assert) =&gt;
   assert.end() 
 });
 </code></pre>
-<h2 id="t238. 声明式effects">8. 声明式effects <a href="#t238. 声明式effects"> # </a></h2>
-<ul>
-<li>在 redux-saga 的世界里，Sagas 都用 Generator 函数实现。我们从 Generator 里 yield 纯 JavaScript 对象以表达 Saga 逻辑</li>
-<li>我们称呼那些对象为 Effect。Effect 是一个简单的对象，这个对象包含了一些给 middleware 解释执行的信息</li>
-<li>你可以把 Effect 看作是发送给 middleware 的指令以执行某些操作（调用某些异步函数，发起一个 action 到 store，等等）</li>
-<li><code>cps(fn, ...args)</code> 创建一个 Effect 描述信息，用来命令 middleware 以 Node 风格的函数（Node style function）的方式调用 fn</li>
-<li><code>call(fn, ...args)</code> 创建一个 Effect 描述信息，用来命令 middleware 以参数 args 调用函数 fn</li>
-<li><code>call([context, fn], ...args)</code> 类似 call(fn, ...args)，但支持传递 this 上下文给 fn,在调用对象方法时很有用</li>
-<li><code>apply(context, fn, [args])</code> call([context, fn], ...args) 的另一种写法</li>
-</ul>
-<h3 id="t248.1 src/store/sagas.js">8.1 src/store/sagas.js <a href="#t248.1 src/store/sagas.js"> # </a></h3>
-<p>src/store/sagas.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {all,put, takeEvery,call,takeLatest,cps,apply } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>
+            <h2 id="t238. 声明式effects">8. 声明式effects <a href="#t238. 声明式effects"> # </a></h2>
+            <ul>
+                <li>在 redux-saga 的世界里，Sagas 都用 Generator 函数实现。我们从 Generator 里 yield 纯 JavaScript 对象以表达 Saga 逻辑</li>
+                <li>我们称呼那些对象为 Effect。Effect 是一个简单的对象，这个对象包含了一些给 middleware 解释执行的信息</li>
+                <li>你可以把 Effect 看作是发送给 middleware 的指令以执行某些操作（调用某些异步函数，发起一个 action 到 store，等等）</li>
+                <li><code>cps(fn, ...args)</code> 创建一个 Effect 描述信息，用来命令 middleware 以 Node 风格的函数（Node style
+                    function）的方式调用 fn</li>
+                <li><code>call(fn, ...args)</code> 创建一个 Effect 描述信息，用来命令 middleware 以参数 args 调用函数 fn</li>
+                <li><code>call([context, fn], ...args)</code> 类似 call(fn, ...args)，但支持传递 this 上下文给 fn,在调用对象方法时很有用</li>
+                <li><code>apply(context, fn, [args])</code> call([context, fn], ...args) 的另一种写法</li>
+            </ul>
+            <h3 id="t248.1 src/store/sagas.js">8.1 src/store/sagas.js <a href="#t248.1 src/store/sagas.js"> # </a></h3>
+            <p>src/store/sagas.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> {all,put, takeEvery,call,takeLatest,cps,apply } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>
 <span class="hljs-keyword">import</span> {delay,read} <span class="hljs-keyword">from</span> <span class="hljs-string">'../utils'</span>;
 
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">readAsync</span>(<span class="hljs-params"></span>) </span>{
@@ -281,9 +689,10 @@ test(<span class="hljs-string">'incrementAsync Saga test'</span>, (assert) =&gt;
     <span class="hljs-keyword">yield</span> put({ <span class="hljs-attr">type</span>: <span class="hljs-string">'INCREMENT'</span> })
 }
 </code></pre>
-<h3 id="t258.2 store/sagas.spec.js">8.2 store/sagas.spec.js <a href="#t258.2 store/sagas.spec.js"> # </a></h3>
-<p>src/store/sagas.spec.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> test <span class="hljs-keyword">from</span> <span class="hljs-string">'tape'</span>;
+            <h3 id="t258.2 store/sagas.spec.js">8.2 store/sagas.spec.js <a href="#t258.2 store/sagas.spec.js"> # </a>
+            </h3>
+            <p>src/store/sagas.spec.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> test <span class="hljs-keyword">from</span> <span class="hljs-string">'tape'</span>;
 <span class="hljs-keyword">import</span> { all,put, takeEvery,call,cps,apply } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>;
 <span class="hljs-keyword">import</span> { incrementAsync,readAsync }  <span class="hljs-keyword">from</span> <span class="hljs-string">'./sagas'</span>;
 <span class="hljs-keyword">import</span> {delay,read} <span class="hljs-keyword">from</span> <span class="hljs-string">'../utils'</span>;
@@ -303,22 +712,22 @@ test(<span class="hljs-string">'readAsync Saga test'</span>, (assert) =&gt; {
   assert.end();
 });
 </code></pre>
-<h3 id="t268.3 src/utils.js">8.3 src/utils.js <a href="#t268.3 src/utils.js"> # </a></h3>
-<p>src/utils.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">read</span>(<span class="hljs-params">filename,callback</span>)</span>{
+            <h3 id="t268.3 src/utils.js">8.3 src/utils.js <a href="#t268.3 src/utils.js"> # </a></h3>
+            <p>src/utils.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">read</span>(<span class="hljs-params">filename,callback</span>)</span>{
     setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'read'</span>,filename);
      callback(<span class="hljs-literal">null</span>,filename);
     },<span class="hljs-number">1000</span>);
  }
 </code></pre>
-<h2 id="t279. 错误处理">9. 错误处理 <a href="#t279. 错误处理"> # </a></h2>
-<h3 id="t289.1 try catch">9.1 try catch <a href="#t289.1 try catch"> # </a></h3>
-<ul>
-<li>我们可以使用熟悉的 try/catch 语法在 Saga 中捕获错误</li>
-</ul>
-<p>src\store\sagas.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> delay2=<span class="hljs-function"><span class="hljs-params">ms</span> =&gt;</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve,reject</span>) =&gt;</span> {
+            <h2 id="t279. 错误处理">9. 错误处理 <a href="#t279. 错误处理"> # </a></h2>
+            <h3 id="t289.1 try catch">9.1 try catch <a href="#t289.1 try catch"> # </a></h3>
+            <ul>
+                <li>我们可以使用熟悉的 try/catch 语法在 Saga 中捕获错误</li>
+            </ul>
+            <p>src\store\sagas.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> delay2=<span class="hljs-function"><span class="hljs-params">ms</span> =&gt;</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve,reject</span>) =&gt;</span> {
     setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
         <span class="hljs-keyword">if</span>(<span class="hljs-built_in">Math</span>.random()&gt;<span class="hljs-number">.5</span>){
             resolve();
@@ -343,10 +752,11 @@ test(<span class="hljs-string">'readAsync Saga test'</span>, (assert) =&gt; {
     <span class="hljs-keyword">yield</span> takeLatest(<span class="hljs-string">'INCREMENT_ASYNC'</span>, incrementAsync2);
 }
 </code></pre>
-<h3 id="t299.2 错误标识">9.2 错误标识 <a href="#t299.2 错误标识"> # </a></h3>
-<ul>
-<li>你也可以让你的 API 服务返回一个正常的含有错误标识的值
-src\store\sagas.js<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> delay3=<span class="hljs-function"><span class="hljs-params">ms</span> =&gt;</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve,reject</span>) =&gt;</span> {
+            <h3 id="t299.2 错误标识">9.2 错误标识 <a href="#t299.2 错误标识"> # </a></h3>
+            <ul>
+                <li>你也可以让你的 API 服务返回一个正常的含有错误标识的值
+                    src\store\sagas.js
+                    <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> delay3=<span class="hljs-function"><span class="hljs-params">ms</span> =&gt;</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve,reject</span>) =&gt;</span> {
   setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
       <span class="hljs-keyword">let</span> data = <span class="hljs-built_in">Math</span>.random();
       resolve({
@@ -371,16 +781,16 @@ src\store\sagas.js<pre><code class="lang-js"><span class="hljs-keyword">export</
   <span class="hljs-keyword">yield</span> takeLatest(<span class="hljs-string">'INCREMENT_ASYNC'</span>, incrementAsync3);
 }
 </code></pre>
-</li>
-</ul>
-<h2 id="t3010. take">10. take <a href="#t3010. take"> # </a></h2>
-<ul>
-<li>takeEvery 只是一个在强大的低阶 API 之上构建的 <code>wrapper effect</code></li>
-<li>take 就像我们更早之前看到的 call 和 put。它创建另一个命令对象，告诉 middleware 等待一个特定的 action</li>
-</ul>
-<h3 id="t3110.1 store/sagas.js">10.1 store/sagas.js <a href="#t3110.1 store/sagas.js"> # </a></h3>
-<p>src/store/sagas.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {all,put,take,select } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>
+                </li>
+            </ul>
+            <h2 id="t3010. take">10. take <a href="#t3010. take"> # </a></h2>
+            <ul>
+                <li>takeEvery 只是一个在强大的低阶 API 之上构建的 <code>wrapper effect</code></li>
+                <li>take 就像我们更早之前看到的 call 和 put。它创建另一个命令对象，告诉 middleware 等待一个特定的 action</li>
+            </ul>
+            <h3 id="t3110.1 store/sagas.js">10.1 store/sagas.js <a href="#t3110.1 store/sagas.js"> # </a></h3>
+            <p>src/store/sagas.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> {all,put,take,select } <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>
 <span class="hljs-keyword">import</span> {INCREMENT_ASYNC,INCREMENT} <span class="hljs-keyword">from</span> <span class="hljs-string">'./action-types'</span>;
 
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">watchIncrementAsync</span>(<span class="hljs-params"></span>) </span>{
@@ -411,10 +821,10 @@ src\store\sagas.js<pre><code class="lang-js"><span class="hljs-keyword">export</
     ])
   }
 </code></pre>
-<h2 id="t3211. 登陆流程">11. 登陆流程 <a href="#t3211. 登陆流程"> # </a></h2>
-<h3 id="t3311.1 src/index.js">11.1 src/index.js <a href="#t3311.1 src/index.js"> # </a></h3>
-<p>src/index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h2 id="t3211. 登陆流程">11. 登陆流程 <a href="#t3211. 登陆流程"> # </a></h2>
+            <h3 id="t3311.1 src/index.js">11.1 src/index.js <a href="#t3311.1 src/index.js"> # </a></h3>
+            <p>src/index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
 <span class="hljs-keyword">import</span> Login <span class="hljs-keyword">from</span> <span class="hljs-string">'./components/Login'</span>;
 <span class="hljs-keyword">import</span> {Provider} <span class="hljs-keyword">from</span> <span class="hljs-string">'react-redux'</span>;
@@ -423,9 +833,10 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
   <span class="hljs-tag">&lt;<span class="hljs-name">Login</span>/&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span></span>,<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'#root'</span>));
 </code></pre>
-<h3 id="t3411.2 store/action-types.js">11.2 store/action-types.js <a href="#t3411.2 store/action-types.js"> # </a></h3>
-<p>src/store/action-types.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> INCREMENT=<span class="hljs-string">'INCREMENT'</span>;
+            <h3 id="t3411.2 store/action-types.js">11.2 store/action-types.js <a href="#t3411.2 store/action-types.js">
+                    # </a></h3>
+            <p>src/store/action-types.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> INCREMENT=<span class="hljs-string">'INCREMENT'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> INCREMENT_ASYNC=<span class="hljs-string">'INCREMENT_ASYNC'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> LOGIN_REQUEST=<span class="hljs-string">'LOGIN_REQUEST'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> LOGIN_SUCCESS=<span class="hljs-string">'LOGIN_SUCCESS'</span>;
@@ -433,9 +844,9 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> LOGIN_ERROR=<span class="hljs-string">'LOGIN_ERROR'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> LOGOUT=<span class="hljs-string">'LOGOUT'</span>;
 </code></pre>
-<h3 id="t3511.3 store/actions.js">11.3 store/actions.js <a href="#t3511.3 store/actions.js"> # </a></h3>
-<p>src/store/actions.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">'./action-types'</span>;
+            <h3 id="t3511.3 store/actions.js">11.3 store/actions.js <a href="#t3511.3 store/actions.js"> # </a></h3>
+            <p>src/store/actions.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">'./action-types'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
     incrementAsync() {
         <span class="hljs-keyword">return</span> {<span class="hljs-attr">type</span>:types.INCREMENT_ASYNC}
@@ -448,9 +859,9 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
     }
 }
 </code></pre>
-<h3 id="t3611.4 store/reducer.js">11.4 store/reducer.js <a href="#t3611.4 store/reducer.js"> # </a></h3>
-<p>src/store/reducer.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">'./action-types'</span>;
+            <h3 id="t3611.4 store/reducer.js">11.4 store/reducer.js <a href="#t3611.4 store/reducer.js"> # </a></h3>
+            <p>src/store/reducer.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> types <span class="hljs-keyword">from</span> <span class="hljs-string">'./action-types'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">state={number:<span class="hljs-number">0</span>,username:null},action</span>) </span>{
     <span class="hljs-keyword">switch</span>(action.type){
         <span class="hljs-keyword">case</span> types.INCREMENT:
@@ -464,9 +875,9 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
     }
 }
 </code></pre>
-<h3 id="t3711.5 store/sagas.js">11.5 store/sagas.js <a href="#t3711.5 store/sagas.js"> # </a></h3>
-<p>src/store/sagas.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { call, all, put, take } <span class="hljs-keyword">from</span> <span class="hljs-string">"redux-saga/effects"</span>;
+            <h3 id="t3711.5 store/sagas.js">11.5 store/sagas.js <a href="#t3711.5 store/sagas.js"> # </a></h3>
+            <p>src/store/sagas.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> { call, all, put, take } <span class="hljs-keyword">from</span> <span class="hljs-string">"redux-saga/effects"</span>;
 <span class="hljs-keyword">import</span> {LOGIN_ERROR,LOGIN_REQUEST,SET_USERNAME,LOGOUT} <span class="hljs-keyword">from</span> <span class="hljs-string">"./action-types"</span>;
 <span class="hljs-keyword">import</span> Api <span class="hljs-keyword">from</span> <span class="hljs-string">"../Api"</span>;
 <span class="hljs-comment">//首先我们创建了一个独立的 Generator login，它将执行真实的 API 调用并在成功后通知 Store。</span>
@@ -517,9 +928,9 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
 }
 
 </code></pre>
-<h3 id="t3811.6  src/Api.js">11.6  src/Api.js <a href="#t3811.6  src/Api.js"> # </a></h3>
-<p> src/Api.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+            <h3 id="t3811.6  src/Api.js">11.6 src/Api.js <a href="#t3811.6  src/Api.js"> # </a></h3>
+            <p> src/Api.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
     login(username, password){
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve,reject</span>)</span>{
             setTimeout(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
@@ -539,9 +950,10 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
     }
 }
 </code></pre>
-<h3 id="t3911.7 components/Login.js">11.7 components/Login.js <a href="#t3911.7 components/Login.js"> # </a></h3>
-<p>src/components/Login.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h3 id="t3911.7 components/Login.js">11.7 components/Login.js <a href="#t3911.7 components/Login.js"> # </a>
+            </h3>
+            <p>src/components/Login.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">'react-redux'</span>;
 <span class="hljs-keyword">import</span> actions <span class="hljs-keyword">from</span> <span class="hljs-string">'../store/actions'</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Login</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
@@ -585,15 +997,16 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
     actions
 )(Login);
 </code></pre>
-<h2 id="t4012. fork">12. fork <a href="#t4012. fork"> # </a></h2>
-<ul>
-<li>当 loginFlow 在 login 中被阻塞了，最终发生在开始调用和收到响应之间的 <code>LOGOUT</code> 将会被错过</li>
-<li>我们需要的是一些非阻塞调用login</li>
-<li>为了表示无阻塞调用，redux-saga 提供了另一个 Effect：<code>fork</code>,当我们 fork 一个 任务，任务会在后台启动，调用者也可以继续它自己的流程，而不用等待被 fork 的任务结束</li>
-</ul>
-<h3 id="t4112.1 store/sagas.js">12.1 store/sagas.js <a href="#t4112.1 store/sagas.js"> # </a></h3>
-<p>src/store/sagas.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {call,all,put,take,fork} <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>
+            <h2 id="t4012. fork">12. fork <a href="#t4012. fork"> # </a></h2>
+            <ul>
+                <li>当 loginFlow 在 login 中被阻塞了，最终发生在开始调用和收到响应之间的 <code>LOGOUT</code> 将会被错过</li>
+                <li>我们需要的是一些非阻塞调用login</li>
+                <li>为了表示无阻塞调用，redux-saga 提供了另一个 Effect：<code>fork</code>,当我们 fork 一个 任务，任务会在后台启动，调用者也可以继续它自己的流程，而不用等待被
+                    fork 的任务结束</li>
+            </ul>
+            <h3 id="t4112.1 store/sagas.js">12.1 store/sagas.js <a href="#t4112.1 store/sagas.js"> # </a></h3>
+            <p>src/store/sagas.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> {call,all,put,take,fork} <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>
 <span class="hljs-keyword">import</span> {LOGIN_ERROR,LOGOUT,LOGIN_REQUEST,LOGIN_SUCCESS,SET_USERNAME} <span class="hljs-keyword">from</span> <span class="hljs-string">'./action-types'</span>;
 <span class="hljs-keyword">import</span> Api <span class="hljs-keyword">from</span> <span class="hljs-string">'../Api'</span>
 <span class="hljs-comment">//首先我们创建了一个独立的 Generator login，它将执行真实的 API 调用并在成功后通知 Store。</span>
@@ -634,14 +1047,16 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
     ])
 }
 </code></pre>
-<h2 id="t4213. 取消任务">13. 取消任务 <a href="#t4213. 取消任务"> # </a></h2>
-<ul>
-<li>如果我们在 API 调用期间收到一个 LOGOUT action，我们必须要 取消 login 处理进程,否则将有 2 个并发的任务， 并且 login 任务将会继续运行，并在成功的响应（或失败的响应）返回后发起一个 LOGIN_SUCCESS action（或一个 LOGIN_ERROR action），而这将导致状态不一致</li>
-<li>cancel Effect 不会粗暴地结束我们的 login 任务，相反它会给予一个机会执行清理的逻辑,在 finally 区块可以处理任何的取消逻辑（以及其他类型的完成逻辑）</li>
-</ul>
-<h3 id="t4313.1 components/Login.js">13.1 components/Login.js <a href="#t4313.1 components/Login.js"> # </a></h3>
-<p>src/components/Login.js</p>
-<pre><code class="lang-diff">class Login extends Component{
+            <h2 id="t4213. 取消任务">13. 取消任务 <a href="#t4213. 取消任务"> # </a></h2>
+            <ul>
+                <li>如果我们在 API 调用期间收到一个 LOGOUT action，我们必须要 取消 login 处理进程,否则将有 2 个并发的任务， 并且 login
+                    任务将会继续运行，并在成功的响应（或失败的响应）返回后发起一个 LOGIN_SUCCESS action（或一个 LOGIN_ERROR action），而这将导致状态不一致</li>
+                <li>cancel Effect 不会粗暴地结束我们的 login 任务，相反它会给予一个机会执行清理的逻辑,在 finally 区块可以处理任何的取消逻辑（以及其他类型的完成逻辑）</li>
+            </ul>
+            <h3 id="t4313.1 components/Login.js">13.1 components/Login.js <a href="#t4313.1 components/Login.js"> # </a>
+            </h3>
+            <p>src/components/Login.js</p>
+            <pre><code class="lang-diff">class Login extends Component{
     render() {
         let {token} = this.props;
         let loginForm = (
@@ -655,9 +1070,9 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
   }
 }
 </code></pre>
-<h3 id="t4413.2 store/sagas.js">13.2 store/sagas.js <a href="#t4413.2 store/sagas.js"> # </a></h3>
-<p>src/store/sagas.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {call,all,put,take,fork,cancel,cancelled} <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>
+            <h3 id="t4413.2 store/sagas.js">13.2 store/sagas.js <a href="#t4413.2 store/sagas.js"> # </a></h3>
+            <p>src/store/sagas.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> {call,all,put,take,fork,cancel,cancelled} <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>
 <span class="hljs-keyword">import</span> {LOGIN_ERROR,LOGOUT,LOGIN_REQUEST,LOGIN_SUCCESS} <span class="hljs-keyword">from</span> <span class="hljs-string">'./action-types'</span>;
 <span class="hljs-keyword">import</span> Api <span class="hljs-keyword">from</span> <span class="hljs-string">'../Api'</span>
 
@@ -712,14 +1127,14 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
     ])
 }
 </code></pre>
-<h2 id="t4514. race">14. race <a href="#t4514. race"> # </a></h2>
-<ul>
-<li>有时候我们同时启动多个任务，但又不想等待所有任务完成，我们只希望拿到 胜利者：即第一个被 resolve（或 reject）的任务</li>
-<li>race 的另一个有用的功能是，它会自动取消那些失败的 Effects</li>
-</ul>
-<h3 id="t4614.1 src/index.js">14.1 src/index.js <a href="#t4614.1 src/index.js"> # </a></h3>
-<p>src/index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h2 id="t4514. race">14. race <a href="#t4514. race"> # </a></h2>
+            <ul>
+                <li>有时候我们同时启动多个任务，但又不想等待所有任务完成，我们只希望拿到 胜利者：即第一个被 resolve（或 reject）的任务</li>
+                <li>race 的另一个有用的功能是，它会自动取消那些失败的 Effects</li>
+            </ul>
+            <h3 id="t4614.1 src/index.js">14.1 src/index.js <a href="#t4614.1 src/index.js"> # </a></h3>
+            <p>src/index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
 <span class="hljs-keyword">import</span> Login <span class="hljs-keyword">from</span> <span class="hljs-string">'./components/Login'</span>;
 <span class="hljs-keyword">import</span> Recorder <span class="hljs-keyword">from</span> <span class="hljs-string">'./components/Recorder'</span>;
@@ -729,19 +1144,20 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
   <span class="hljs-tag">&lt;<span class="hljs-name">Recorder</span>/&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span></span>,<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'#root'</span>));
 </code></pre>
-<h3 id="t4714.2 store/action-types.js">14.2 store/action-types.js <a href="#t4714.2 store/action-types.js"> # </a></h3>
-<p>src/store/action-types.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> CANCEL_TASK=<span class="hljs-string">'CANCEL_TASK'</span>;
+            <h3 id="t4714.2 store/action-types.js">14.2 store/action-types.js <a href="#t4714.2 store/action-types.js">
+                    # </a></h3>
+            <p>src/store/action-types.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> CANCEL_TASK=<span class="hljs-string">'CANCEL_TASK'</span>;
 </code></pre>
-<h3 id="t4814.3 store/actions.js">14.3 store/actions.js <a href="#t4814.3 store/actions.js"> # </a></h3>
-<p>src/store/actions.js</p>
-<pre><code class="lang-js">stop(){
+            <h3 id="t4814.3 store/actions.js">14.3 store/actions.js <a href="#t4814.3 store/actions.js"> # </a></h3>
+            <p>src/store/actions.js</p>
+            <pre><code class="lang-js">stop(){
         <span class="hljs-keyword">return</span> {<span class="hljs-attr">type</span>:types.CANCEL_TASK}
 }
 </code></pre>
-<h3 id="t4914.4 store/sagas.js">14.4 store/sagas.js <a href="#t4914.4 store/sagas.js"> # </a></h3>
-<p>src/store/sagas.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> {call,all,put,take,race} <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>
+            <h3 id="t4914.4 store/sagas.js">14.4 store/sagas.js <a href="#t4914.4 store/sagas.js"> # </a></h3>
+            <p>src/store/sagas.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> {call,all,put,take,race} <span class="hljs-keyword">from</span> <span class="hljs-string">'redux-saga/effects'</span>
 <span class="hljs-keyword">import</span> {INCREMENT,CANCEL_TASK} <span class="hljs-keyword">from</span> <span class="hljs-string">'./action-types'</span>;
 <span class="hljs-keyword">import</span> {delay} <span class="hljs-keyword">from</span> <span class="hljs-string">'../utils'</span>;
 <span class="hljs-comment">/**
@@ -776,9 +1192,10 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
     <span class="hljs-keyword">yield</span> all([recorder()])
 }
 </code></pre>
-<h3 id="t5014.5 components/Counter.js">14.5 components/Counter.js <a href="#t5014.5 components/Counter.js"> # </a></h3>
-<p>src/components/Counter.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h3 id="t5014.5 components/Counter.js">14.5 components/Counter.js <a href="#t5014.5 components/Counter.js">
+                    # </a></h3>
+            <p>src/components/Counter.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> {connect} <span class="hljs-keyword">from</span> <span class="hljs-string">'react-redux'</span>;
 <span class="hljs-keyword">import</span> actions <span class="hljs-keyword">from</span> <span class="hljs-string">'../store/actions'</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
@@ -796,11 +1213,11 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
     actions
 )(Counter);
 </code></pre>
-<h2 id="t51参考">参考 <a href="#t51参考"> # </a></h2>
-<ul>
-<li><a href="https://gitee.com/zhufengpeixun/zhufeng-saga-start">zhufeng-saga-start</a></li>
-</ul>
+            <h2 id="t51参考">参考 <a href="#t51参考"> # </a></h2>
+            <ul>
+                <li><a href="https://gitee.com/zhufengpeixun/zhufeng-saga-start">zhufeng-saga-start</a></li>
+            </ul>
 
+        </div>
     </div>
-</div>
 </body>

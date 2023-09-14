@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        .page-toc > ul .red {
+        .page-toc>ul .red {
             background: #f3f3f3;
             z-index: 1;
             border-left: 3px solid #009a61;
@@ -15,53 +15,399 @@
         }
     </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li class="active"><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
-    <div class="page-toc">
-        <ul><li><a href="#t0什么是vue?">什么是vue?</a></li><li><a href="#t1什么是库，什么是框架?">什么是库，什么是框架?</a></li><li><a href="#t2初始使用">初始使用</a></li><li><a href="#t3mvc &amp;&amp; mvvm">mvc &amp;&amp; mvvm</a></li><li><a href="#t4声明式和命令式">声明式和命令式</a></li><li><a href="#t5模板语法 mustache">模板语法 mustache</a></li><li><a href="#t6观察数据变化">观察数据变化</a></li><li><a href="#t7使用proxy实现响应式变化">使用proxy实现响应式变化</a></li><li><a href="#t8响应式变化">响应式变化</a></li><li><a href="#t9vue实例上常见属性和方法">vue实例上常见属性和方法</a></li><li><a href="#t10vue中的指令">vue中的指令</a></li><li><a href="#t11v-for使用">v-for使用</a></li><li><a href="#t12属性绑定 :（v-bind）">属性绑定 :（v-bind）</a></li><li><a href="#t13绑定事件 @ （v-on）">绑定事件 @ （v-on）</a></li><li><a href="#t14vue的双向绑定 (v-model)">vue的双向绑定 (v-model)</a></li><li><a href="#t15鼠标 键盘事件">鼠标 键盘事件</a></li><li><a href="#t16watch &amp; computed">watch &amp; computed</a></li><li><a href="#t17条件渲染">条件渲染</a></li><li><a href="#t18过滤器的应用 (过滤器中的this都是window)">过滤器的应用 (过滤器中的this都是window)</a></li><li><a href="#t19指令的编写">指令的编写</a></li><li><a href="#t20vue中的生命周期">vue中的生命周期</a></li><li><a href="#t21钩子函数中该做的事情">钩子函数中该做的事情</a></li><li><a href="#t22vue中的动画">vue中的动画</a></li><li><a href="#t23使用animate.css设置动画">使用animate.css设置动画</a></li><li><a href="#t24vue中js动画">vue中js动画</a></li><li><a href="#t25使用js动画库">使用js动画库</a></li><li><a href="#t26筛选动画">筛选动画</a></li></ul>
+<body class="modal-open" style="padding-right: 15px;">
+    <div class="nav">
+        <div class="logo">
+
+            珠峰架构师成长计划
+
+        </div>
+        <ul>
+            <li><a href="../index.html">0.Async</a></li>
+            <li><a href="../html/0.editor.html">0.editor</a></li>
+            <li><a href="../html/0.module.html">0.module</a></li>
+            <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+            <li><a href="../html/2.Promise.html">2.Promise</a></li>
+            <li><a href="../html/3.Node.html">3.Node</a></li>
+            <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+            <li><a href="../html/5.REPL.html">5.REPL</a></li>
+            <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+            <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+            <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+            <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+            <li><a href="../html/10.fs.html">10.fs</a></li>
+            <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+            <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+            <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+            <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+            <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+            <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+            <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+            <li><a href="../html/13.tcp.html">13.tcp</a></li>
+            <li><a href="../html/14.http-1.html">14.http-1</a></li>
+            <li><a href="../html/14.http-2.html">14.http-2</a></li>
+            <li><a href="../html/15.compress.html">15.compress</a></li>
+            <li><a href="../html/16.crypto.html">16.crypto</a></li>
+            <li><a href="../html/17.process.html">17.process</a></li>
+            <li><a href="../html/18.yargs.html">18.yargs</a></li>
+            <li><a href="../html/19.cache.html">19.cache</a></li>
+            <li><a href="../html/20.action.html">20.action</a></li>
+            <li><a href="../html/21.https.html">21.https</a></li>
+            <li><a href="../html/22.cookie.html">22.cookie</a></li>
+            <li><a href="../html/23.session.html">23.session</a></li>
+            <li><a href="../html/24.express-1.html">24.express-1</a></li>
+            <li><a href="../html/24.express-2.html">24.express-2</a></li>
+            <li><a href="../html/24.express-3.html">24.express-3</a></li>
+            <li><a href="../html/24.express-4.html">24.express-4</a></li>
+            <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+            <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+            <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+            <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+            <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+            <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+            <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+            <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+            <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+            <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+            <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+            <li><a href="../html/28.redux.html">28.redux</a></li>
+            <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+            <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+            <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+            <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+            <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+            <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+            <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+            <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+            <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+            <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+            <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+            <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+            <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+            <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+            <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+            <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+            <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+            <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+            <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+            <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+            <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+            <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+            <li><a href="../html/31.dva.html">31.dva</a></li>
+            <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+            <li><a href="../html/33.redis.html">33.redis</a></li>
+            <li><a href="../html/34.unittest.html">34.unittest</a></li>
+            <li><a href="../html/35.jwt.html">35.jwt</a></li>
+            <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+            <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+            <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+            <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+            <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+            <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+            <li><a href="../html/38.chat.html">38.chat</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+            <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+            <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+            <li><a href="../html/40.deploy.html">40.deploy</a></li>
+            <li><a href="../html/41.safe.html">41.safe</a></li>
+            <li><a href="../html/42.test.html">42.test</a></li>
+            <li><a href="../html/43.nginx.html">43.nginx</a></li>
+            <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+            <li><a href="../html/45.docker.html">45.docker</a></li>
+            <li><a href="../html/46.elastic.html">46.elastic</a></li>
+            <li><a href="../html/47.oauth.html">47.oauth</a></li>
+            <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/52.UML.html">52.UML</a></li>
+            <li><a href="../html/53.design.html">53.design</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/54.linux.html">54.linux</a></li>
+            <li><a href="../html/57.ts.html">57.ts</a></li>
+            <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+            <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+            <li><a href="../html/59.ketang.html">59.ketang</a></li>
+            <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+            <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+            <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+            <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+            <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+            <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+            <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+            <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+            <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+            <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+            <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+            <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+            <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+            <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+            <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+            <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+            <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+            <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+            <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+            <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+            <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+            <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+            <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+            <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+            <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+            <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+            <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+            <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+            <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+            <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+            <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+            <li><a href="../html/64.1.router.html">64.1.router</a></li>
+            <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+            <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+            <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+            <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+            <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+            <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+            <li class="active"><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+            <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+            <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+            <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+            <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+            <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+            <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+            <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+            <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+            <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+            <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+            <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+            <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+            <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+            <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+            <li><a href="../html/67-1-network.html">67-1-network</a></li>
+            <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+            <li><a href="../html/7.npm2.html">7.npm2</a></li>
+            <li><a href="../html/69-hooks.html">69-hooks</a></li>
+            <li><a href="../html/70-deploy.html">70-deploy</a></li>
+            <li><a href="../html/71-hmr.html">71-hmr</a></li>
+            <li><a href="../html/72.deploy.html">72.deploy</a></li>
+            <li><a href="../html/73.import.html">73.import</a></li>
+            <li><a href="../html/74.mobile.html">74.mobile</a></li>
+            <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+            <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+            <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+            <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+            <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+            <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+            <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+            <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+            <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+            <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+            <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+            <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+            <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+            <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+            <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+            <li><a href="../html/79.grammar.html">79.grammar</a></li>
+            <li><a href="../html/80.tree.html">80.tree</a></li>
+            <li><a href="../html/81.axios.html">81.axios</a></li>
+            <li><a href="../html/82.1.react.html">82.1.react</a></li>
+            <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+            <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+            <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+            <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+            <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+            <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+            <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+            <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+            <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+            <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+            <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+            <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+            <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+            <li><a href="../html/83.upload.html">83.upload</a></li>
+            <li><a href="../html/84.graphql.html">84.graphql</a></li>
+            <li><a href="../html/85.antpro.html">85.antpro</a></li>
+            <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+            <li><a href="../html/86.2.design.html">86.2.design</a></li>
+            <li><a href="../html/87.postcss.html">87.postcss</a></li>
+            <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+            <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+            <li><a href="../html/90.react-test.html">90.react-test</a></li>
+            <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+            <li><a href="../html/92.rbac.html">92.rbac</a></li>
+            <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+            <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+            <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+            <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+            <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+            <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+            <li><a href="../html/94.6.https.html">94.6.https</a></li>
+            <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+            <li><a href="../html/95.1. react.html">95.1. react</a></li>
+            <li><a href="../html/95.2.react.html">95.2.react</a></li>
+            <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+            <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+            <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+            <li><a href="../html/97.serverless.html">97.serverless</a></li>
+            <li><a href="../html/98.websocket.html">98.websocket</a></li>
+            <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+            <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+            <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+            <li><a href="../html/102.java.html">102.java</a></li>
+            <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+            <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+            <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+            <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+            <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+            <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+            <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+            <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+            <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+            <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+            <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+            <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+            <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+            <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+            <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+            <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+            <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+            <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+            <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+            <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+            <li><a href="../html/106.1.react.html">106.1.react</a></li>
+            <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+            <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+            <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+            <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+            <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+            <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+            <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+            <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+            <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+            <li><a href="../html/107.fiber.html">107.fiber</a></li>
+            <li><a href="../html/108.http.html">108.http</a></li>
+            <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+            <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+            <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+            <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+            <li><a href="../html/111.xstate.html">111.xstate</a></li>
+            <li><a href="../html/112.Form.html">112.Form</a></li>
+            <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+            <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+            <li><a href="../html/115.immer.html">115.immer</a></li>
+            <li><a href="../html/116.pro5.html">116.pro5</a></li>
+            <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+            <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+            <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+            <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+            <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+            <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+            <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+            <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+            <li><a href="../html/124.next.js.html">124.next.js</a></li>
+            <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+            <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+            <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+            <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+            <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+            <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+            <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+            <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+            <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+            <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+            <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+            <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+            <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+            <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+            <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+            <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+            <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+            <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+            <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+            <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+            <li><a href="../html/127.frontend.html">127.frontend</a></li>
+            <li><a href="../html/128.rollup.html">128.rollup</a></li>
+            <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+            <li><a href="../html/130.health.html">130.health</a></li>
+            <li><a href="../html/131.hooks.html">131.hooks</a></li>
+            <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+            <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+            <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+            <li><a href="../html/134.react18.html">134.react18</a></li>
+            <li><a href="../html/135.function.html">135.function</a></li>
+            <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+        </ul>
     </div>
-    <div class="content markdown-body">
-        <h2 id="t0什么是vue?">什么是vue? <a href="#t0什么是vue?"> # </a></h2>
-<p>Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。<br>特点: 易用，灵活，高效
-渐进式框架   </p>
-<p><img src="https://www.fullstackjavascript.cn/vue.png" alt="">  </p>
-<p>逐一递增 vue + components + vue-router + vuex + vue-cli </p>
-<h2 id="t1什么是库，什么是框架?">什么是库，什么是框架? <a href="#t1什么是库，什么是框架?"> # </a></h2>
-<ul>
-<li>库是将代码集合成一个产品,库是我们调用库中的方法实现自己的功能。</li>
-<li>框架则是为解决一类问题而开发的产品,框架是我们在指定的位置编写好代码，框架帮我们调用。</li>
-</ul>
-<p>框架是库的升级版</p>
-<h2 id="t2初始使用">初始使用 <a href="#t2初始使用"> # </a></h2>
-<pre><code>new Vue({
+
+
+    <div class="warpper">
+        <div class="page-toc">
+            <ul>
+                <li><a href="#t0什么是vue?">什么是vue?</a></li>
+                <li><a href="#t1什么是库，什么是框架?">什么是库，什么是框架?</a></li>
+                <li><a href="#t2初始使用">初始使用</a></li>
+                <li><a href="#t3mvc &amp;&amp; mvvm">mvc &amp;&amp; mvvm</a></li>
+                <li><a href="#t4声明式和命令式">声明式和命令式</a></li>
+                <li><a href="#t5模板语法 mustache">模板语法 mustache</a></li>
+                <li><a href="#t6观察数据变化">观察数据变化</a></li>
+                <li><a href="#t7使用proxy实现响应式变化">使用proxy实现响应式变化</a></li>
+                <li><a href="#t8响应式变化">响应式变化</a></li>
+                <li><a href="#t9vue实例上常见属性和方法">vue实例上常见属性和方法</a></li>
+                <li><a href="#t10vue中的指令">vue中的指令</a></li>
+                <li><a href="#t11v-for使用">v-for使用</a></li>
+                <li><a href="#t12属性绑定 :（v-bind）">属性绑定 :（v-bind）</a></li>
+                <li><a href="#t13绑定事件 @ （v-on）">绑定事件 @ （v-on）</a></li>
+                <li><a href="#t14vue的双向绑定 (v-model)">vue的双向绑定 (v-model)</a></li>
+                <li><a href="#t15鼠标 键盘事件">鼠标 键盘事件</a></li>
+                <li><a href="#t16watch &amp; computed">watch &amp; computed</a></li>
+                <li><a href="#t17条件渲染">条件渲染</a></li>
+                <li><a href="#t18过滤器的应用 (过滤器中的this都是window)">过滤器的应用 (过滤器中的this都是window)</a></li>
+                <li><a href="#t19指令的编写">指令的编写</a></li>
+                <li><a href="#t20vue中的生命周期">vue中的生命周期</a></li>
+                <li><a href="#t21钩子函数中该做的事情">钩子函数中该做的事情</a></li>
+                <li><a href="#t22vue中的动画">vue中的动画</a></li>
+                <li><a href="#t23使用animate.css设置动画">使用animate.css设置动画</a></li>
+                <li><a href="#t24vue中js动画">vue中js动画</a></li>
+                <li><a href="#t25使用js动画库">使用js动画库</a></li>
+                <li><a href="#t26筛选动画">筛选动画</a></li>
+            </ul>
+        </div>
+        <div class="content markdown-body">
+            <h2 id="t0什么是vue?">什么是vue? <a href="#t0什么是vue?"> # </a></h2>
+            <p>Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。<br>特点: 易用，灵活，高效
+                渐进式框架 </p>
+            <p><img src="https://www.fullstackjavascript.cn/vue.png" alt=""> </p>
+            <p>逐一递增 vue + components + vue-router + vuex + vue-cli </p>
+            <h2 id="t1什么是库，什么是框架?">什么是库，什么是框架? <a href="#t1什么是库，什么是框架?"> # </a></h2>
+            <ul>
+                <li>库是将代码集合成一个产品,库是我们调用库中的方法实现自己的功能。</li>
+                <li>框架则是为解决一类问题而开发的产品,框架是我们在指定的位置编写好代码，框架帮我们调用。</li>
+            </ul>
+            <p>框架是库的升级版</p>
+            <h2 id="t2初始使用">初始使用 <a href="#t2初始使用"> # </a></h2>
+            <pre><code>new Vue({
     el:'#app',
     template:'&lt;div&gt;我是姜文～～&lt;/div&gt;', // 优先使用template
     data:{}
 });
-</code></pre><h2 id="t3mvc &amp;&amp; mvvm">mvc &amp;&amp; mvvm <a href="#t3mvc &amp;&amp; mvvm"> # </a></h2>
-<p><img src="https://www.fullstackjavascript.cn/mvc.png" alt="">
-<img src="https://www.fullstackjavascript.cn/mvvm.png" alt=""></p>
-<p>在传统的mvc中除了model和view以外的逻辑都放在了controller中，导致controller逻辑复杂难以维护,在mvvm中view和model没有直接的关系，全部通过viewModel进行交互</p>
-<h2 id="t4声明式和命令式">声明式和命令式 <a href="#t4声明式和命令式"> # </a></h2>
-<ul>
-<li>自己写for循环就是命令式  (命令其按照自己的方式得到结果)</li>
-<li>声明式就是利用数组的方法forEach (我们想要的是循环，内部帮我们去做)</li>
-</ul>
-<h2 id="t5模板语法 mustache">模板语法 mustache <a href="#t5模板语法 mustache"> # </a></h2>
-<p>允许开发者声明式地将 DOM 绑定至底层 Vue 实例的数据。在使用数据前需要先声明</p>
-<ul>
-<li>编写三元表达式 </li>
-<li>获取返回值 </li>
-<li>JavaScript 表达式 <pre><code>&lt;div id="app"&gt;
+</code></pre>
+            <h2 id="t3mvc &amp;&amp; mvvm">mvc &amp;&amp; mvvm <a href="#t3mvc &amp;&amp; mvvm"> # </a></h2>
+            <p><img src="https://www.fullstackjavascript.cn/mvc.png" alt="">
+                <img src="https://www.fullstackjavascript.cn/mvvm.png" alt="">
+            </p>
+            <p>在传统的mvc中除了model和view以外的逻辑都放在了controller中，导致controller逻辑复杂难以维护,在mvvm中view和model没有直接的关系，全部通过viewModel进行交互
+            </p>
+            <h2 id="t4声明式和命令式">声明式和命令式 <a href="#t4声明式和命令式"> # </a></h2>
+            <ul>
+                <li>自己写for循环就是命令式 (命令其按照自己的方式得到结果)</li>
+                <li>声明式就是利用数组的方法forEach (我们想要的是循环，内部帮我们去做)</li>
+            </ul>
+            <h2 id="t5模板语法 mustache">模板语法 mustache <a href="#t5模板语法 mustache"> # </a></h2>
+            <p>允许开发者声明式地将 DOM 绑定至底层 Vue 实例的数据。在使用数据前需要先声明</p>
+            <ul>
+                <li>编写三元表达式 </li>
+                <li>获取返回值 </li>
+                <li>JavaScript 表达式
+                    <pre><code>&lt;div id="app"&gt;
   {{ 1+1 }}
   {{ msg == 'hello'?'yes':'no' }}
   {{ {name:1} }}
@@ -75,10 +421,11 @@
       }
   })
 &lt;/script&gt;
-</code></pre></li>
-</ul>
-<h2 id="t6观察数据变化">观察数据变化 <a href="#t6观察数据变化"> # </a></h2>
-<pre><code>function notify(){
+</code></pre>
+                </li>
+            </ul>
+            <h2 id="t6观察数据变化">观察数据变化 <a href="#t6观察数据变化"> # </a></h2>
+            <pre><code>function notify(){
     console.log('视图更新')
 }
 let data = {
@@ -121,8 +468,9 @@ function defineReactive(obj,key,value){
 }
 observer(data);
 data.arr.push(1);
-</code></pre><h2 id="t7使用proxy实现响应式变化">使用proxy实现响应式变化 <a href="#t7使用proxy实现响应式变化"> # </a></h2>
-<pre><code>let obj = {
+</code></pre>
+            <h2 id="t7使用proxy实现响应式变化">使用proxy实现响应式变化 <a href="#t7使用proxy实现响应式变化"> # </a></h2>
+            <pre><code>let obj = {
     name:{name:'jw'},
     arr:['吃','喝','玩']
 }
@@ -141,10 +489,12 @@ let handler = {
 }
 let proxy = new Proxy(obj,handler);
 proxy.name.name = 'zf';
-</code></pre><h2 id="t8响应式变化">响应式变化 <a href="#t8响应式变化"> # </a></h2>
-<ul>
-<li><p>数组的变异方法(不能通过通过长度，索引改变数组)</p>
-<pre><code>  &lt;div id="app"&gt;
+</code></pre>
+            <h2 id="t8响应式变化">响应式变化 <a href="#t8响应式变化"> # </a></h2>
+            <ul>
+                <li>
+                    <p>数组的变异方法(不能通过通过长度，索引改变数组)</p>
+                    <pre><code>  &lt;div id="app"&gt;
       {{hobbies}}
   &lt;/div&gt;
   &lt;script src="node_modules/vue/dist/vue.js"&gt;&lt;/script&gt;
@@ -158,11 +508,14 @@ proxy.name.name = 'zf';
       vm.hobbies[0] = '喝水';// 数据变化视图不刷新
       vm.hobbies.length--;// 数据变化视图不会刷新
   &lt;/script&gt;
-</code></pre><pre><code>  vm.hobbies = ['喝水']; // 替换的方式
+</code></pre>
+                    <pre><code>  vm.hobbies = ['喝水']; // 替换的方式
   vm.hobbies.push('吃饭'); // push slice pop ...变异方法
-</code></pre></li>
-<li><p>不能给对象新增属性 </p>
-<pre><code>  &lt;div id="app"&gt;
+</code></pre>
+                </li>
+                <li>
+                    <p>不能给对象新增属性 </p>
+                    <pre><code>  &lt;div id="app"&gt;
   {{state.a}}
   &lt;/div&gt;
   &lt;script src="node_modules/vue/dist/vue.js"&gt;&lt;/script&gt;
@@ -175,9 +528,11 @@ proxy.name.name = 'zf';
       });
       //vm.state.a = 100; // 新增熟悉不会响应到视图上
   &lt;/script&gt;
-</code></pre></li>
-<li><p>使用vm.$set方法强制添加响应式数据   </p>
-<pre><code>  function $set(data,key,val){
+</code></pre>
+                </li>
+                <li>
+                    <p>使用vm.$set方法强制添加响应式数据 </p>
+                    <pre><code>  function $set(data,key,val){
   if(Array.isArray(data)){
       return data.splice(key,1,val);
   }
@@ -186,71 +541,95 @@ proxy.name.name = 'zf';
   $set(data.arr,0,1);
 
   vm.$set(vm.state,'a','100');
-</code></pre></li>
-</ul>
-<h2 id="t9vue实例上常见属性和方法">vue实例上常见属性和方法 <a href="#t9vue实例上常见属性和方法"> # </a></h2>
-<ul>
-<li><p>vm.$set();  </p>
-<pre><code>  vm.$set(vm.state,'a','100');
-</code></pre></li>
-<li><p>vm.$watch();</p>
-<pre><code>  vm.$watch('state.count',function(newValue,oldValue){
+</code></pre>
+                </li>
+            </ul>
+            <h2 id="t9vue实例上常见属性和方法">vue实例上常见属性和方法 <a href="#t9vue实例上常见属性和方法"> # </a></h2>
+            <ul>
+                <li>
+                    <p>vm.$set(); </p>
+                    <pre><code>  vm.$set(vm.state,'a','100');
+</code></pre>
+                </li>
+                <li>
+                    <p>vm.$watch();</p>
+                    <pre><code>  vm.$watch('state.count',function(newValue,oldValue){
       console.log(newValue,oldValue);
   });
-</code></pre></li>
-<li><p>vm.$mount();</p>
-<pre><code>  let vm = new Vue({
+</code></pre>
+                </li>
+                <li>
+                    <p>vm.$mount();</p>
+                    <pre><code>  let vm = new Vue({
       data:{state:{count:0}}
   });
   vm.$mount('#app');
-</code></pre></li>
-<li><p>vm.$nextTick();</p>
-<pre><code>  vm.state.count = 100; // 更高数据后会将更改的内容缓存起来
+</code></pre>
+                </li>
+                <li>
+                    <p>vm.$nextTick();</p>
+                    <pre><code>  vm.state.count = 100; // 更高数据后会将更改的内容缓存起来
   // 在下一个事件循环tick中 刷新队列
   vm.$nextTick(function(){
       console.log(vm.$el.innerHTML);
   });
-</code></pre></li>
-<li><p>vm.$data  </p>
-</li>
-<li><p>vm.$el</p>
-</li>
-</ul>
-<h2 id="t10vue中的指令">vue中的指令 <a href="#t10vue中的指令"> # </a></h2>
-<p>在vue中 指令 (Directives) 是带有 v- 前缀的特殊特性,主要的功能就是操作DOM  </p>
-<ul>
-<li><p>v-once   </p>
-<pre><code>  &lt;div v-once&gt;{{state.count}} &lt;/div&gt;
-</code></pre></li>
-<li><p>v-html （不要对用户输入使用v-html显示）</p>
-<pre><code>  &lt;div v-html="text"&gt;&lt;/div&gt;
-</code></pre><p>  <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/innerHTML#%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98">https://developer.mozilla.org/zh-CN/docs/Web/API/Element/innerHTML#%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98</a>  </p>
-</li>
-<li>v-text</li>
-<li>v-if/v-else使用</li>
-</ul>
-<h2 id="t11v-for使用">v-for使用 <a href="#t11v-for使用"> # </a></h2>
-<ul>
-<li><p>v-for遍历数组</p>
-<pre><code>  fruits:['香蕉','苹果','桃子']
+</code></pre>
+                </li>
+                <li>
+                    <p>vm.$data </p>
+                </li>
+                <li>
+                    <p>vm.$el</p>
+                </li>
+            </ul>
+            <h2 id="t10vue中的指令">vue中的指令 <a href="#t10vue中的指令"> # </a></h2>
+            <p>在vue中 指令 (Directives) 是带有 v- 前缀的特殊特性,主要的功能就是操作DOM </p>
+            <ul>
+                <li>
+                    <p>v-once </p>
+                    <pre><code>  &lt;div v-once&gt;{{state.count}} &lt;/div&gt;
+</code></pre>
+                </li>
+                <li>
+                    <p>v-html （不要对用户输入使用v-html显示）</p>
+                    <pre><code>  &lt;div v-html="text"&gt;&lt;/div&gt;
+</code></pre>
+                    <p> <a
+                            href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/innerHTML#%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98">https://developer.mozilla.org/zh-CN/docs/Web/API/Element/innerHTML#%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98</a>
+                    </p>
+                </li>
+                <li>v-text</li>
+                <li>v-if/v-else使用</li>
+            </ul>
+            <h2 id="t11v-for使用">v-for使用 <a href="#t11v-for使用"> # </a></h2>
+            <ul>
+                <li>
+                    <p>v-for遍历数组</p>
+                    <pre><code>  fruits:['香蕉','苹果','桃子']
   &lt;div v-for="(fruit,index) in fruits" :key="index"&gt;
       {{fruit}}
   &lt;/div&gt;
-</code></pre></li>
-<li><p>v-for遍历对象</p>
-<pre><code>  info:{name:'jiang',location:'回龙观',phone:18310349227}
+</code></pre>
+                </li>
+                <li>
+                    <p>v-for遍历对象</p>
+                    <pre><code>  info:{name:'jiang',location:'回龙观',phone:18310349227}
   &lt;div v-for="(item,key) in info" :key="key"&gt;
       {{item}} {{key}}
   &lt;/div&gt;
-</code></pre></li>
-<li><p>template的使用</p>
-<pre><code>  &lt;template v-for="(item,key) in fruits"&gt;
+</code></pre>
+                </li>
+                <li>
+                    <p>template的使用</p>
+                    <pre><code>  &lt;template v-for="(item,key) in fruits"&gt;
       &lt;p v-if="key%2"&gt;hello&lt;/p&gt;
       &lt;span v-else&gt;world&lt;/span&gt;
   &lt;/template&gt;
-</code></pre></li>
-<li><p>key属性的应用  </p>
-<pre><code>  &lt;div v-if="flag"&gt;
+</code></pre>
+                </li>
+                <li>
+                    <p>key属性的应用 </p>
+                    <pre><code>  &lt;div v-if="flag"&gt;
       &lt;span&gt;珠峰&lt;/span&gt;
       &lt;input key="2"/&gt;   
   &lt;/div&gt;
@@ -258,9 +637,11 @@ proxy.name.name = 'zf';
       &lt;span&gt;架构&lt;/span&gt;
       &lt;input key="1"/&gt;  
   &lt;/div&gt;
-</code></pre></li>
-<li><p>key尽量不要使用索引  </p>
-<pre><code>   &lt;ul&gt;
+</code></pre>
+                </li>
+                <li>
+                    <p>key尽量不要使用索引 </p>
+                    <pre><code>   &lt;ul&gt;
       &lt;li key="0"&gt;🍌&lt;/li&gt;
       &lt;li key="1"&gt;🍎&lt;/li&gt;
       &lt;li key="2"&gt;🍊&lt;/l&gt;
@@ -270,65 +651,82 @@ proxy.name.name = 'zf';
       &lt;li key="1"&gt;🍎&lt;/li&gt;
       &lt;li key="2"&gt;🍌&lt;/li&gt;
   &lt;/ul&gt;
-</code></pre></li>
-</ul>
-<h2 id="t12属性绑定 :（v-bind）">属性绑定 :（v-bind） <a href="#t12属性绑定 :（v-bind）"> # </a></h2>
-<p>Class 与 Style 绑定  </p>
-<ul>
-<li><p>数组的绑定  </p>
-<pre><code>      &lt;div :class="['apple','banana']" &gt;&lt;/div&gt;
+</code></pre>
+                </li>
+            </ul>
+            <h2 id="t12属性绑定 :（v-bind）">属性绑定 :（v-bind） <a href="#t12属性绑定 :（v-bind）"> # </a></h2>
+            <p>Class 与 Style 绑定 </p>
+            <ul>
+                <li>
+                    <p>数组的绑定 </p>
+                    <pre><code>      &lt;div :class="['apple','banana']" &gt;&lt;/div&gt;
       &lt;div :class="{banana:true}"&gt;&lt;/div&gt;
-</code></pre></li>
-<li><p>对象类型的绑定  </p>
-<pre><code>      &lt;div :class="['apple','banana']" &gt;&lt;/div&gt;
+</code></pre>
+                </li>
+                <li>
+                    <p>对象类型的绑定 </p>
+                    <pre><code>      &lt;div :class="['apple','banana']" &gt;&lt;/div&gt;
       &lt;div :class="{banana:true}"&gt;&lt;/div&gt;
       &lt;div :style="[{background:'red'},{color:'red'}]"&gt;&lt;/div&gt;
       &lt;div :style="{color:'red'}"&gt;&lt;/div&gt;
-</code></pre></li>
-</ul>
-<h2 id="t13绑定事件 @ （v-on）">绑定事件 @ （v-on） <a href="#t13绑定事件 @ （v-on）"> # </a></h2>
-<ul>
-<li>事件的绑定 v-on绑定事件</li>
-<li>事件修饰符 (.stop .prevent) .capture .self .once .passive</li>
-</ul>
-<h2 id="t14vue的双向绑定 (v-model)">vue的双向绑定 (v-model) <a href="#t14vue的双向绑定 (v-model)"> # </a></h2>
-<pre><code>    &lt;input type="text" :value="value" @input="input"&gt;
+</code></pre>
+                </li>
+            </ul>
+            <h2 id="t13绑定事件 @ （v-on）">绑定事件 @ （v-on） <a href="#t13绑定事件 @ （v-on）"> # </a></h2>
+            <ul>
+                <li>事件的绑定 v-on绑定事件</li>
+                <li>事件修饰符 (.stop .prevent) .capture .self .once .passive</li>
+            </ul>
+            <h2 id="t14vue的双向绑定 (v-model)">vue的双向绑定 (v-model) <a href="#t14vue的双向绑定 (v-model)"> # </a></h2>
+            <pre><code>    &lt;input type="text" :value="value" @input="input"&gt;
     &lt;input type="text" v-model="value"&gt;
-</code></pre><ul>
-<li>input,textarea</li>
-<li><p>select</p>
-<pre><code>  &lt;select v-model="select"&gt;
+</code></pre>
+            <ul>
+                <li>input,textarea</li>
+                <li>
+                    <p>select</p>
+                    <pre><code>  &lt;select v-model="select"&gt;
       &lt;option 
           v-for="fruit in fruits"
           :value="fruit"&gt;
               {{fruit}}
       &lt;/option&gt;
   &lt;/select&gt;
-</code></pre></li>
-<li><p>radio </p>
-<pre><code>  &lt;input type="radio" v-model="value"  value="男"&gt;
+</code></pre>
+                </li>
+                <li>
+                    <p>radio </p>
+                    <pre><code>  &lt;input type="radio" v-model="value"  value="男"&gt;
   &lt;input type="radio" v-model="value"  value="女"&gt;
-</code></pre></li>
-<li><p>checkbox</p>
-<pre><code>  &lt;input type="checkbox" v-model="checks" value="游泳" &gt;
+</code></pre>
+                </li>
+                <li>
+                    <p>checkbox</p>
+                    <pre><code>  &lt;input type="checkbox" v-model="checks" value="游泳" &gt;
   &lt;input type="checkbox" v-model="checks" value="健身"&gt;
-</code></pre></li>
-<li><p>修饰符应用 .number .lazy .trim</p>
-<pre><code>  &lt;input type="text" v-model.number="value"&gt;
+</code></pre>
+                </li>
+                <li>
+                    <p>修饰符应用 .number .lazy .trim</p>
+                    <pre><code>  &lt;input type="text" v-model.number="value"&gt;
   &lt;input type="text" v-model.trim="value"&gt;
-</code></pre></li>
-</ul>
-<h2 id="t15鼠标 键盘事件">鼠标 键盘事件 <a href="#t15鼠标 键盘事件"> # </a></h2>
-<ul>
-<li>按键、鼠标修饰符  Vue.config.keyCodes<pre><code>Vue.config.keyCodes = {
+</code></pre>
+                </li>
+            </ul>
+            <h2 id="t15鼠标 键盘事件">鼠标 键盘事件 <a href="#t15鼠标 键盘事件"> # </a></h2>
+            <ul>
+                <li>按键、鼠标修饰符 Vue.config.keyCodes
+                    <pre><code>Vue.config.keyCodes = {
   'f1':112
 }
-</code></pre></li>
-</ul>
-<h2 id="t16watch &amp; computed">watch &amp; computed <a href="#t16watch &amp; computed"> # </a></h2>
-<ul>
-<li><p>计算属性和watch的区别  （异步）</p>
-<pre><code>  let vm = new Vue({
+</code></pre>
+                </li>
+            </ul>
+            <h2 id="t16watch &amp; computed">watch &amp; computed <a href="#t16watch &amp; computed"> # </a></h2>
+            <ul>
+                <li>
+                    <p>计算属性和watch的区别 （异步）</p>
+                    <pre><code>  let vm = new Vue({
       el:'#app',
       data:{
           firstName:'姜',
@@ -360,32 +758,39 @@ proxy.name.name = 'zf';
       //    }
       // }
   });
-</code></pre></li>
-<li><p>计算属性和 method的区别 （缓存）</p>
-</li>
-</ul>
-<h2 id="t17条件渲染">条件渲染 <a href="#t17条件渲染"> # </a></h2>
-<ul>
-<li>v-if和v-show区别</li>
-<li>v-if/v-else-if/v-else</li>
-<li>v-show</li>
-</ul>
-<h2 id="t18过滤器的应用 (过滤器中的this都是window)">过滤器的应用 (过滤器中的this都是window) <a href="#t18过滤器的应用 (过滤器中的this都是window)"> # </a></h2>
-<ul>
-<li>全局过滤器 和 局部过滤器 </li>
-<li>编写一个过滤器<pre><code>&lt;div&gt;{{'hello' | capitalize(3)}}&lt;/div&gt;
+</code></pre>
+                </li>
+                <li>
+                    <p>计算属性和 method的区别 （缓存）</p>
+                </li>
+            </ul>
+            <h2 id="t17条件渲染">条件渲染 <a href="#t17条件渲染"> # </a></h2>
+            <ul>
+                <li>v-if和v-show区别</li>
+                <li>v-if/v-else-if/v-else</li>
+                <li>v-show</li>
+            </ul>
+            <h2 id="t18过滤器的应用 (过滤器中的this都是window)">过滤器的应用 (过滤器中的this都是window) <a href="#t18过滤器的应用 (过滤器中的this都是window)">
+                    # </a></h2>
+            <ul>
+                <li>全局过滤器 和 局部过滤器 </li>
+                <li>编写一个过滤器
+                    <pre><code>&lt;div&gt;{{'hello' | capitalize(3)}}&lt;/div&gt;
 Vue.filter('capitalize',(value,count=1)=&gt;{
   return value.slice(0,count).toUpperCase() + value.slice(count);
 });
-</code></pre></li>
-</ul>
-<h2 id="t19指令的编写">指令的编写 <a href="#t19指令的编写"> # </a></h2>
-<ul>
-<li>全局指令和 局部指令 </li>
-<li><p>编写一个自定义指令 </p>
-<ul>
-<li><p>钩子函数bind，inserted，update  </p>
-<pre><code>      &lt;input type="text" v-focus.color="'red'"&gt;
+</code></pre>
+                </li>
+            </ul>
+            <h2 id="t19指令的编写">指令的编写 <a href="#t19指令的编写"> # </a></h2>
+            <ul>
+                <li>全局指令和 局部指令 </li>
+                <li>
+                    <p>编写一个自定义指令 </p>
+                    <ul>
+                        <li>
+                            <p>钩子函数bind，inserted，update </p>
+                            <pre><code>      &lt;input type="text" v-focus.color="'red'"&gt;
       Vue.directive('focus',{
           inserted:(el,bindings)=&gt;{
               let color = bindings.modifiers.color;
@@ -396,11 +801,13 @@ Vue.filter('capitalize',(value,count=1)=&gt;{
               el.focus();
           }
       });
-</code></pre></li>
-</ul>
-</li>
-<li><p>clickoutside指令</p>
-<pre><code>&lt;div v-click-outside="change"&gt;
+</code></pre>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>clickoutside指令</p>
+                    <pre><code>&lt;div v-click-outside="change"&gt;
   &lt;input type="text"  @focus="flag=true" &gt;
   &lt;div v-show="flag"&gt;
       contenter
@@ -427,81 +834,87 @@ let vm = new Vue({
       }
   }
 })
-</code></pre><h2 id="t20vue中的生命周期">vue中的生命周期 <a href="#t20vue中的生命周期"> # </a></h2>
-</li>
-<li>beforeCreate
-在实例初始化之后，数据观测(data observer) 和 event/watcher 事件配置之前被调用。</li>
-<li>created
-实例已经创建完成之后被调用。在这一步，实例已完成以下的配置：数据观测(data observer)，属性和方法的运算， watch/event 事件回调。这里没有$el</li>
-<li>beforeMount
-在挂载开始之前被调用：相关的 render 函数首次被调用。</li>
-<li>mounted
-el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子。</li>
-<li>beforeUpdate
-数据更新时调用，发生在虚拟 DOM 重新渲染和打补丁之前。</li>
-<li>updated
-由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。</li>
-<li>beforeDestroy
-实例销毁之前调用。在这一步，实例仍然完全可用。</li>
-<li>destroyed
-Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。 该钩子在服务器端渲染期间不被调用。</li>
-</ul>
-<h2 id="t21钩子函数中该做的事情">钩子函数中该做的事情 <a href="#t21钩子函数中该做的事情"> # </a></h2>
-<ul>
-<li>created
-实例已经创建完成，因为它是最早触发的原因可以进行一些数据，资源的请求。</li>
-<li>mounted
-实例已经挂载完成，可以进行一些DOM操作</li>
-<li>beforeUpdate
-可以在这个钩子中进一步地更改状态，这不会触发附加的重渲染过程。</li>
-<li>updated
-可以执行依赖于 DOM 的操作。然而在大多数情况下，你应该避免在此期间更改状态，因为这可能会导致更新无限循环。
-该钩子在服务器端渲染期间不被调用。</li>
-<li>destroyed
-可以执行一些优化操作,清空定时器，解除绑定事件</li>
-</ul>
-<p><img src="https://www.fullstackjavascript.cn/lifecycle.png" alt="">  </p>
-<h2 id="t22vue中的动画">vue中的动画 <a href="#t22vue中的动画"> # </a></h2>
-<p>vue中的动画就是从无到有或者从有到无产生的。有以下几个状态
-transition组件的应用</p>
-<pre><code>.v-enter-active,.v-leave-active {
+</code></pre>
+                    <h2 id="t20vue中的生命周期">vue中的生命周期 <a href="#t20vue中的生命周期"> # </a></h2>
+                </li>
+                <li>beforeCreate
+                    在实例初始化之后，数据观测(data observer) 和 event/watcher 事件配置之前被调用。</li>
+                <li>created
+                    实例已经创建完成之后被调用。在这一步，实例已完成以下的配置：数据观测(data observer)，属性和方法的运算， watch/event 事件回调。这里没有$el</li>
+                <li>beforeMount
+                    在挂载开始之前被调用：相关的 render 函数首次被调用。</li>
+                <li>mounted
+                    el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子。</li>
+                <li>beforeUpdate
+                    数据更新时调用，发生在虚拟 DOM 重新渲染和打补丁之前。</li>
+                <li>updated
+                    由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。</li>
+                <li>beforeDestroy
+                    实例销毁之前调用。在这一步，实例仍然完全可用。</li>
+                <li>destroyed
+                    Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。 该钩子在服务器端渲染期间不被调用。</li>
+            </ul>
+            <h2 id="t21钩子函数中该做的事情">钩子函数中该做的事情 <a href="#t21钩子函数中该做的事情"> # </a></h2>
+            <ul>
+                <li>created
+                    实例已经创建完成，因为它是最早触发的原因可以进行一些数据，资源的请求。</li>
+                <li>mounted
+                    实例已经挂载完成，可以进行一些DOM操作</li>
+                <li>beforeUpdate
+                    可以在这个钩子中进一步地更改状态，这不会触发附加的重渲染过程。</li>
+                <li>updated
+                    可以执行依赖于 DOM 的操作。然而在大多数情况下，你应该避免在此期间更改状态，因为这可能会导致更新无限循环。
+                    该钩子在服务器端渲染期间不被调用。</li>
+                <li>destroyed
+                    可以执行一些优化操作,清空定时器，解除绑定事件</li>
+            </ul>
+            <p><img src="https://www.fullstackjavascript.cn/lifecycle.png" alt=""> </p>
+            <h2 id="t22vue中的动画">vue中的动画 <a href="#t22vue中的动画"> # </a></h2>
+            <p>vue中的动画就是从无到有或者从有到无产生的。有以下几个状态
+                transition组件的应用</p>
+            <pre><code>.v-enter-active,.v-leave-active {
     transition: opacity 0.25s ease-out;
 }
 .v-enter, .v-leave-to {
     opacity: 0;
 }
-</code></pre><p>切换isShow的显示或者隐藏就显示出效果啦~</p>
-<pre><code>&lt;button @click="toggle"&gt;toggle&lt;/button&gt;
+</code></pre>
+            <p>切换isShow的显示或者隐藏就显示出效果啦~</p>
+            <pre><code>&lt;button @click="toggle"&gt;toggle&lt;/button&gt;
 &lt;transition&gt;
     &lt;span v-show="isShow"&gt;珠峰架构&lt;/span&gt;
 &lt;/transition&gt;
-</code></pre><blockquote>
-<p>默认的name是以v-开头，当然你可以自己指定name属性来修改前缀</p>
-</blockquote>
-<h2 id="t23使用animate.css设置动画">使用animate.css设置动画 <a href="#t23使用animate.css设置动画"> # </a></h2>
-<pre><code>.v-enter-active {
+</code></pre>
+            <blockquote>
+                <p>默认的name是以v-开头，当然你可以自己指定name属性来修改前缀</p>
+            </blockquote>
+            <h2 id="t23使用animate.css设置动画">使用animate.css设置动画 <a href="#t23使用animate.css设置动画"> # </a></h2>
+            <pre><code>.v-enter-active {
     animation:zoomIn  2s linear
 }
 .v-leave-avitve{
     animation:zoomOut 2s linear
 }
-</code></pre><p>直接修改激活时的样式</p>
-<pre><code>&lt;transition 
+</code></pre>
+            <p>直接修改激活时的样式</p>
+            <pre><code>&lt;transition 
     enter-active-class="zoomIn"
     leave-active-class="zoomOut"
 &gt;
     &lt;span class="animated" v-show="isShow"&gt;珠峰架构&lt;/span&gt;
 &lt;/transition&gt;
-</code></pre><h2 id="t24vue中js动画">vue中js动画 <a href="#t24vue中js动画"> # </a></h2>
-<pre><code>&lt;transition 
+</code></pre>
+            <h2 id="t24vue中js动画">vue中js动画 <a href="#t24vue中js动画"> # </a></h2>
+            <pre><code>&lt;transition 
     @before-enter="beforeEnter"
     @enter="enter"
     @after-enter="afterEnter"
 &gt;   
     &lt;span class="animated" v-show="isShow"&gt;珠峰架构&lt;/span&gt;
 &lt;/transition&gt;
-</code></pre><p>对应的钩子有before-leave,leave,after-leave钩子函数,函数的参数为当前元素</p>
-<pre><code>beforeEnter(el){
+</code></pre>
+            <p>对应的钩子有before-leave,leave,after-leave钩子函数,函数的参数为当前元素</p>
+            <pre><code>beforeEnter(el){
     el.style.color="red"
 },
 enter(el,done){
@@ -515,11 +928,12 @@ enter(el,done){
 afterEnter(el){
     el.style.color = 'blue';
 }
-</code></pre><h2 id="t25使用js动画库">使用js动画库 <a href="#t25使用js动画库"> # </a></h2>
-<blockquote>
-<p><a href="https://github.com/julianshapiro/velocity">https://github.com/julianshapiro/velocity</a></p>
-</blockquote>
-<pre><code>&lt;script src="node_modules/velocity-animate/velocity.js"&gt;&lt;/script&gt;
+</code></pre>
+            <h2 id="t25使用js动画库">使用js动画库 <a href="#t25使用js动画库"> # </a></h2>
+            <blockquote>
+                <p><a href="https://github.com/julianshapiro/velocity">https://github.com/julianshapiro/velocity</a></p>
+            </blockquote>
+            <pre><code>&lt;script src="node_modules/velocity-animate/velocity.js"&gt;&lt;/script&gt;
 beforeEnter(el){
     el.style.opacity = 0;
 },
@@ -532,8 +946,9 @@ afterEnter(el){
 leave(el,done){
     Velocity(el, {opacity: 0}, {duration: 2000, complete: done})
 }
-</code></pre><h2 id="t26筛选动画">筛选动画 <a href="#t26筛选动画"> # </a></h2>
-<pre><code>&lt;div id="app"&gt;
+</code></pre>
+            <h2 id="t26筛选动画">筛选动画 <a href="#t26筛选动画"> # </a></h2>
+            <pre><code>&lt;div id="app"&gt;
     &lt;input type="text" v-model="filterData"&gt;
     &lt;transition-group  
         enter-active-class="zoomInLeft" 
@@ -566,21 +981,22 @@ leave(el,done){
         },
     })
 &lt;/script&gt;
-</code></pre><list>
-    <li>{{</li>
-</list>
+</code></pre>
+            <list>
+                <li>{{</li>
+            </list>
 
 
 
-<div>
-    <slot v-for="i in 5">
+            <div>
+                <slot v-for="i in 5">
 
-    </slot>
-</div>
+                </slot>
+            </div>
 
 
-<p>slot v-for i in 5</p>
+            <p>slot v-for i in 5</p>
 
+        </div>
     </div>
-</div>
 </body>

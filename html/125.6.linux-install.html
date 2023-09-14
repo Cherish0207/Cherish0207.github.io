@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        .page-toc > ul .red {
+        .page-toc>ul .red {
             background: #f3f3f3;
             z-index: 1;
             border-left: 3px solid #009a61;
@@ -15,76 +15,436 @@
         }
     </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li class="active"><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
-    <div class="page-toc">
-        <ul><li><a href="#t01.软件包管理">1.软件包管理</a><ul><li><a href="#t11.1 软件包的分类">1.1 软件包的分类</a></li></ul></li><li><a href="#t22. YUM在线管理">2. YUM在线管理</a><ul><li><a href="#t32.1 CentOS-Base.repo">2.1 CentOS-Base.repo</a></li></ul></li><li><a href="#t43. YUM命令">3. YUM命令</a></li><li><a href="#t54. 常用软件安装">4. 常用软件安装</a><ul><li><a href="#t64.1 nginx">4.1 nginx</a></li><li><a href="#t74.2 mongodb">4.2 mongodb</a><ul><li><a href="#t84.2.1 添加安装源">4.2.1 添加安装源</a></li><li><a href="#t94.2.2 更新缓存">4.2.2 更新缓存</a></li><li><a href="#t104.2.3 安装">4.2.3 安装</a></li><li><a href="#t114.2.4 修改配置文件">4.2.4 修改配置文件</a></li><li><a href="#t124.2.5 启动服务">4.2.5 启动服务</a></li><li><a href="#t134.2.6 远程连接">4.2.6 远程连接</a></li></ul></li><li><a href="#t144.3 redis">4.3 redis</a><ul><li><a href="#t154.3.1 安装软件">4.3.1 安装软件</a></li><li><a href="#t164.3.2 启动服务">4.3.2 启动服务</a></li></ul></li><li><a href="#t174.4 mysql">4.4 mysql</a><ul><li><a href="#t184.4.1 查看最新的安装包">4.4.1 查看最新的安装包</a></li><li><a href="#t194.4.2 下载MySQL源安装包">4.4.2 下载MySQL源安装包</a></li><li><a href="#t204.4.3 安装源">4.4.3 安装源</a></li><li><a href="#t214.4.4 安装MYSQL服务器">4.4.4 安装MYSQL服务器</a></li><li><a href="#t224.4.5 启动服务器">4.4.5 启动服务器</a></li><li><a href="#t234.4.6 初始化数据库密码">4.4.6 初始化数据库密码</a></li><li><a href="#t244.4.7 支持远程访问">4.4.7 支持远程访问</a></li><li><a href="#t254.4.8 开机自动访问">4.4.8 开机自动访问</a></li><li><a href="#t264.4.9 远程访问">4.4.9 远程访问</a></li></ul></li></ul></li></ul>
+<body class="modal-open" style="padding-right: 15px;">
+    <div class="nav">
+        <div class="logo">
+
+            珠峰架构师成长计划
+
+        </div>
+        <ul>
+            <li><a href="../index.html">0.Async</a></li>
+            <li><a href="../html/0.editor.html">0.editor</a></li>
+            <li><a href="../html/0.module.html">0.module</a></li>
+            <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+            <li><a href="../html/2.Promise.html">2.Promise</a></li>
+            <li><a href="../html/3.Node.html">3.Node</a></li>
+            <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+            <li><a href="../html/5.REPL.html">5.REPL</a></li>
+            <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+            <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+            <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+            <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+            <li><a href="../html/10.fs.html">10.fs</a></li>
+            <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+            <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+            <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+            <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+            <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+            <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+            <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+            <li><a href="../html/13.tcp.html">13.tcp</a></li>
+            <li><a href="../html/14.http-1.html">14.http-1</a></li>
+            <li><a href="../html/14.http-2.html">14.http-2</a></li>
+            <li><a href="../html/15.compress.html">15.compress</a></li>
+            <li><a href="../html/16.crypto.html">16.crypto</a></li>
+            <li><a href="../html/17.process.html">17.process</a></li>
+            <li><a href="../html/18.yargs.html">18.yargs</a></li>
+            <li><a href="../html/19.cache.html">19.cache</a></li>
+            <li><a href="../html/20.action.html">20.action</a></li>
+            <li><a href="../html/21.https.html">21.https</a></li>
+            <li><a href="../html/22.cookie.html">22.cookie</a></li>
+            <li><a href="../html/23.session.html">23.session</a></li>
+            <li><a href="../html/24.express-1.html">24.express-1</a></li>
+            <li><a href="../html/24.express-2.html">24.express-2</a></li>
+            <li><a href="../html/24.express-3.html">24.express-3</a></li>
+            <li><a href="../html/24.express-4.html">24.express-4</a></li>
+            <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+            <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+            <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+            <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+            <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+            <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+            <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+            <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+            <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+            <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+            <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+            <li><a href="../html/28.redux.html">28.redux</a></li>
+            <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+            <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+            <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+            <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+            <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+            <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+            <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+            <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+            <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+            <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+            <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+            <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+            <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+            <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+            <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+            <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+            <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+            <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+            <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+            <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+            <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+            <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+            <li><a href="../html/31.dva.html">31.dva</a></li>
+            <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+            <li><a href="../html/33.redis.html">33.redis</a></li>
+            <li><a href="../html/34.unittest.html">34.unittest</a></li>
+            <li><a href="../html/35.jwt.html">35.jwt</a></li>
+            <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+            <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+            <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+            <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+            <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+            <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+            <li><a href="../html/38.chat.html">38.chat</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+            <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+            <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+            <li><a href="../html/40.deploy.html">40.deploy</a></li>
+            <li><a href="../html/41.safe.html">41.safe</a></li>
+            <li><a href="../html/42.test.html">42.test</a></li>
+            <li><a href="../html/43.nginx.html">43.nginx</a></li>
+            <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+            <li><a href="../html/45.docker.html">45.docker</a></li>
+            <li><a href="../html/46.elastic.html">46.elastic</a></li>
+            <li><a href="../html/47.oauth.html">47.oauth</a></li>
+            <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/52.UML.html">52.UML</a></li>
+            <li><a href="../html/53.design.html">53.design</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/54.linux.html">54.linux</a></li>
+            <li><a href="../html/57.ts.html">57.ts</a></li>
+            <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+            <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+            <li><a href="../html/59.ketang.html">59.ketang</a></li>
+            <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+            <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+            <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+            <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+            <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+            <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+            <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+            <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+            <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+            <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+            <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+            <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+            <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+            <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+            <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+            <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+            <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+            <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+            <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+            <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+            <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+            <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+            <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+            <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+            <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+            <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+            <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+            <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+            <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+            <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+            <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+            <li><a href="../html/64.1.router.html">64.1.router</a></li>
+            <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+            <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+            <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+            <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+            <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+            <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+            <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+            <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+            <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+            <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+            <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+            <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+            <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+            <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+            <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+            <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+            <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+            <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+            <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+            <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+            <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+            <li><a href="../html/67-1-network.html">67-1-network</a></li>
+            <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+            <li><a href="../html/7.npm2.html">7.npm2</a></li>
+            <li><a href="../html/69-hooks.html">69-hooks</a></li>
+            <li><a href="../html/70-deploy.html">70-deploy</a></li>
+            <li><a href="../html/71-hmr.html">71-hmr</a></li>
+            <li><a href="../html/72.deploy.html">72.deploy</a></li>
+            <li><a href="../html/73.import.html">73.import</a></li>
+            <li><a href="../html/74.mobile.html">74.mobile</a></li>
+            <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+            <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+            <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+            <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+            <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+            <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+            <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+            <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+            <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+            <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+            <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+            <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+            <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+            <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+            <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+            <li><a href="../html/79.grammar.html">79.grammar</a></li>
+            <li><a href="../html/80.tree.html">80.tree</a></li>
+            <li><a href="../html/81.axios.html">81.axios</a></li>
+            <li><a href="../html/82.1.react.html">82.1.react</a></li>
+            <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+            <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+            <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+            <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+            <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+            <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+            <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+            <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+            <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+            <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+            <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+            <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+            <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+            <li><a href="../html/83.upload.html">83.upload</a></li>
+            <li><a href="../html/84.graphql.html">84.graphql</a></li>
+            <li><a href="../html/85.antpro.html">85.antpro</a></li>
+            <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+            <li><a href="../html/86.2.design.html">86.2.design</a></li>
+            <li><a href="../html/87.postcss.html">87.postcss</a></li>
+            <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+            <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+            <li><a href="../html/90.react-test.html">90.react-test</a></li>
+            <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+            <li><a href="../html/92.rbac.html">92.rbac</a></li>
+            <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+            <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+            <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+            <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+            <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+            <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+            <li><a href="../html/94.6.https.html">94.6.https</a></li>
+            <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+            <li><a href="../html/95.1. react.html">95.1. react</a></li>
+            <li><a href="../html/95.2.react.html">95.2.react</a></li>
+            <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+            <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+            <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+            <li><a href="../html/97.serverless.html">97.serverless</a></li>
+            <li><a href="../html/98.websocket.html">98.websocket</a></li>
+            <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+            <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+            <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+            <li><a href="../html/102.java.html">102.java</a></li>
+            <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+            <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+            <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+            <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+            <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+            <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+            <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+            <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+            <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+            <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+            <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+            <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+            <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+            <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+            <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+            <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+            <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+            <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+            <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+            <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+            <li><a href="../html/106.1.react.html">106.1.react</a></li>
+            <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+            <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+            <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+            <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+            <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+            <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+            <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+            <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+            <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+            <li><a href="../html/107.fiber.html">107.fiber</a></li>
+            <li><a href="../html/108.http.html">108.http</a></li>
+            <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+            <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+            <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+            <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+            <li><a href="../html/111.xstate.html">111.xstate</a></li>
+            <li><a href="../html/112.Form.html">112.Form</a></li>
+            <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+            <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+            <li><a href="../html/115.immer.html">115.immer</a></li>
+            <li><a href="../html/116.pro5.html">116.pro5</a></li>
+            <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+            <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+            <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+            <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+            <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+            <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+            <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+            <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+            <li><a href="../html/124.next.js.html">124.next.js</a></li>
+            <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+            <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+            <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+            <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+            <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+            <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+            <li class="active"><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+            <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+            <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+            <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+            <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+            <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+            <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+            <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+            <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+            <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+            <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+            <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+            <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+            <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+            <li><a href="../html/127.frontend.html">127.frontend</a></li>
+            <li><a href="../html/128.rollup.html">128.rollup</a></li>
+            <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+            <li><a href="../html/130.health.html">130.health</a></li>
+            <li><a href="../html/131.hooks.html">131.hooks</a></li>
+            <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+            <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+            <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+            <li><a href="../html/134.react18.html">134.react18</a></li>
+            <li><a href="../html/135.function.html">135.function</a></li>
+            <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+        </ul>
     </div>
-    <div class="content markdown-body">
-        <h2 id="t01.软件包管理">1.软件包管理 <a href="#t01.软件包管理"> # </a></h2>
-<ul>
-<li>RPM是RedHat Package Manager（RedHat软件包管理工具）类似Windows里面的"添加/删除程序"</li>
-</ul>
-<h3 id="t11.1 软件包的分类">1.1 软件包的分类 <a href="#t11.1 软件包的分类"> # </a></h3>
-<ul>
-<li>源码包(需要经过编译，把人所编写的源代码编译成机器语言才能运行)<ul>
-<li>优点<ul>
-<li>开源免费</li>
-<li>可以自由配置功能</li>
-<li>编译安装更适合自己系统，更稳定 </li>
-<li>卸载方便</li>
-</ul>
-</li>
-<li>缺点  <ul>
-<li>安装过程比较复杂</li>
-<li>编译过程比较长</li>
-<li>安装过程一旦报错，非常难以排查</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>二进制包(把源代码包经过编译生成0/1二进制，PRM包、系统默认的安装包)<ul>
-<li>优点<ul>
-<li>包管理系统比较简单，只要通过简单的命令就可以实现包的安装、升级、查询和卸载</li>
-<li>安装速度比源码包快很多</li>
-</ul>
-</li>
-<li>缺点<ul>
-<li>经过编译则不能看到源代码</li>
-<li>功能选择不灵活</li>
-<li>依赖性比较麻烦</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>脚本安装包(就是把复杂的安装过程写成了脚本，可以一键安装，本质上安装的还是源代码包和二进制包)<ul>
-<li>优点是安装简单</li>
-<li>缺点是失去了自定义性</li>
-</ul>
-</li>
-</ul>
-<h2 id="t22. YUM在线管理">2. YUM在线管理 <a href="#t22. YUM在线管理"> # </a></h2>
-<ul>
-<li>yum = Yellow dog Updater, Modified主要功能是更方便的添加/删除/更新RPM包.它能自动解决包的倚赖性问题.</li>
-<li>这是rpm包的在线管理命令</li>
-<li>将所有的软件名放到官方服务器上，当进行YUM在线安装时，可以自动解决依赖性问题</li>
-<li>/etc/yum.repos.d/<ul>
-<li>CentOS-Base.repo</li>
-<li>epel.repo</li>
-</ul>
-</li>
-</ul>
-<h3 id="t32.1 CentOS-Base.repo">2.1 CentOS-Base.repo <a href="#t32.1 CentOS-Base.repo"> # </a></h3>
-<pre><code class="lang-js">[base]
+
+
+    <div class="warpper">
+        <div class="page-toc">
+            <ul>
+                <li><a href="#t01.软件包管理">1.软件包管理</a>
+                    <ul>
+                        <li><a href="#t11.1 软件包的分类">1.1 软件包的分类</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t22. YUM在线管理">2. YUM在线管理</a>
+                    <ul>
+                        <li><a href="#t32.1 CentOS-Base.repo">2.1 CentOS-Base.repo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t43. YUM命令">3. YUM命令</a></li>
+                <li><a href="#t54. 常用软件安装">4. 常用软件安装</a>
+                    <ul>
+                        <li><a href="#t64.1 nginx">4.1 nginx</a></li>
+                        <li><a href="#t74.2 mongodb">4.2 mongodb</a>
+                            <ul>
+                                <li><a href="#t84.2.1 添加安装源">4.2.1 添加安装源</a></li>
+                                <li><a href="#t94.2.2 更新缓存">4.2.2 更新缓存</a></li>
+                                <li><a href="#t104.2.3 安装">4.2.3 安装</a></li>
+                                <li><a href="#t114.2.4 修改配置文件">4.2.4 修改配置文件</a></li>
+                                <li><a href="#t124.2.5 启动服务">4.2.5 启动服务</a></li>
+                                <li><a href="#t134.2.6 远程连接">4.2.6 远程连接</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t144.3 redis">4.3 redis</a>
+                            <ul>
+                                <li><a href="#t154.3.1 安装软件">4.3.1 安装软件</a></li>
+                                <li><a href="#t164.3.2 启动服务">4.3.2 启动服务</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t174.4 mysql">4.4 mysql</a>
+                            <ul>
+                                <li><a href="#t184.4.1 查看最新的安装包">4.4.1 查看最新的安装包</a></li>
+                                <li><a href="#t194.4.2 下载MySQL源安装包">4.4.2 下载MySQL源安装包</a></li>
+                                <li><a href="#t204.4.3 安装源">4.4.3 安装源</a></li>
+                                <li><a href="#t214.4.4 安装MYSQL服务器">4.4.4 安装MYSQL服务器</a></li>
+                                <li><a href="#t224.4.5 启动服务器">4.4.5 启动服务器</a></li>
+                                <li><a href="#t234.4.6 初始化数据库密码">4.4.6 初始化数据库密码</a></li>
+                                <li><a href="#t244.4.7 支持远程访问">4.4.7 支持远程访问</a></li>
+                                <li><a href="#t254.4.8 开机自动访问">4.4.8 开机自动访问</a></li>
+                                <li><a href="#t264.4.9 远程访问">4.4.9 远程访问</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content markdown-body">
+            <h2 id="t01.软件包管理">1.软件包管理 <a href="#t01.软件包管理"> # </a></h2>
+            <ul>
+                <li>RPM是RedHat Package Manager（RedHat软件包管理工具）类似Windows里面的"添加/删除程序"</li>
+            </ul>
+            <h3 id="t11.1 软件包的分类">1.1 软件包的分类 <a href="#t11.1 软件包的分类"> # </a></h3>
+            <ul>
+                <li>源码包(需要经过编译，把人所编写的源代码编译成机器语言才能运行)<ul>
+                        <li>优点<ul>
+                                <li>开源免费</li>
+                                <li>可以自由配置功能</li>
+                                <li>编译安装更适合自己系统，更稳定 </li>
+                                <li>卸载方便</li>
+                            </ul>
+                        </li>
+                        <li>缺点 <ul>
+                                <li>安装过程比较复杂</li>
+                                <li>编译过程比较长</li>
+                                <li>安装过程一旦报错，非常难以排查</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>二进制包(把源代码包经过编译生成0/1二进制，PRM包、系统默认的安装包)<ul>
+                        <li>优点<ul>
+                                <li>包管理系统比较简单，只要通过简单的命令就可以实现包的安装、升级、查询和卸载</li>
+                                <li>安装速度比源码包快很多</li>
+                            </ul>
+                        </li>
+                        <li>缺点<ul>
+                                <li>经过编译则不能看到源代码</li>
+                                <li>功能选择不灵活</li>
+                                <li>依赖性比较麻烦</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>脚本安装包(就是把复杂的安装过程写成了脚本，可以一键安装，本质上安装的还是源代码包和二进制包)<ul>
+                        <li>优点是安装简单</li>
+                        <li>缺点是失去了自定义性</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 id="t22. YUM在线管理">2. YUM在线管理 <a href="#t22. YUM在线管理"> # </a></h2>
+            <ul>
+                <li>yum = Yellow dog Updater, Modified主要功能是更方便的添加/删除/更新RPM包.它能自动解决包的倚赖性问题.</li>
+                <li>这是rpm包的在线管理命令</li>
+                <li>将所有的软件名放到官方服务器上，当进行YUM在线安装时，可以自动解决依赖性问题</li>
+                <li>/etc/yum.repos.d/<ul>
+                        <li>CentOS-Base.repo</li>
+                        <li>epel.repo</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="t32.1 CentOS-Base.repo">2.1 CentOS-Base.repo <a href="#t32.1 CentOS-Base.repo"> # </a></h3>
+            <pre><code class="lang-js">[base]
 name=CentOS-$releasever
 enabled=<span class="hljs-number">1</span>
 failovermethod=priority
@@ -92,215 +452,218 @@ baseurl=http:<span class="hljs-comment">//mirrors.cloud.aliyuncs.com/centos/$rel
 gpgcheck=<span class="hljs-number">1</span>
 gpgkey=http:<span class="hljs-comment">//mirrors.cloud.aliyuncs.com/centos/RPM-GPG-KEY-CentOS-7</span>
 </code></pre>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">字段</th>
-<th style="text-align:left">含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">base</td>
-<td style="text-align:left">容器名称，一定要放在[]中</td>
-</tr>
-<tr>
-<td style="text-align:left">name</td>
-<td style="text-align:left">容器说明，可以自己随便写</td>
-</tr>
-<tr>
-<td style="text-align:left">mirrorlist</td>
-<td style="text-align:left">镜像站点，可以注释掉</td>
-</tr>
-<tr>
-<td style="text-align:left">baseurl</td>
-<td style="text-align:left">YUM源服务器的地址，默认是CentOS官方的YUM源</td>
-</tr>
-<tr>
-<td style="text-align:left">enable</td>
-<td style="text-align:left">此容器是否生效 不写或者写成enable=1表示生效，写成enable=0表示不生效</td>
-</tr>
-<tr>
-<td style="text-align:left">gpgcheck</td>
-<td style="text-align:left">如果是1就是指 RPM的数字证书生效,如果是0则表示不生效</td>
-</tr>
-<tr>
-<td style="text-align:left">gpgkey</td>
-<td style="text-align:left">数字证书的公钥文件保存位置，不用改</td>
-</tr>
-</tbody>
-</table>
-<p>使用阿里云镜像</p>
-<pre><code class="lang-js">mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align:left">字段</th>
+                        <th style="text-align:left">含义</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align:left">base</td>
+                        <td style="text-align:left">容器名称，一定要放在[]中</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">name</td>
+                        <td style="text-align:left">容器说明，可以自己随便写</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">mirrorlist</td>
+                        <td style="text-align:left">镜像站点，可以注释掉</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">baseurl</td>
+                        <td style="text-align:left">YUM源服务器的地址，默认是CentOS官方的YUM源</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">enable</td>
+                        <td style="text-align:left">此容器是否生效 不写或者写成enable=1表示生效，写成enable=0表示不生效</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">gpgcheck</td>
+                        <td style="text-align:left">如果是1就是指 RPM的数字证书生效,如果是0则表示不生效</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">gpgkey</td>
+                        <td style="text-align:left">数字证书的公钥文件保存位置，不用改</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>使用阿里云镜像</p>
+            <pre><code class="lang-js">mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
 wget -O /etc/yum.repos.d/CentOS-Base.repo http:<span class="hljs-comment">//mirrors.aliyun.com/repo/Centos-7.repo</span>
 yum makecache
 yum -y update <span class="hljs-comment">//升级所有包同时也升级软件和系统内核</span>
 </code></pre>
-<h2 id="t43. YUM命令">3. YUM命令 <a href="#t43. YUM命令"> # </a></h2>
-<ul>
-<li>yum安装只需要写包名即可</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">命令</th>
-<th style="text-align:left">含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">yum list</td>
-<td style="text-align:left">查询所有可用软件包列表</td>
-</tr>
-<tr>
-<td style="text-align:left">yum search 关键字</td>
-<td style="text-align:left">搜索服务器上所有和关键字相关的包</td>
-</tr>
-<tr>
-<td style="text-align:left">yum -y install 包名</td>
-<td style="text-align:left">-y 自动回答yes install安装</td>
-</tr>
-<tr>
-<td style="text-align:left">yum -y update 包名</td>
-<td style="text-align:left">-y 自动回答yes update升级</td>
-</tr>
-<tr>
-<td style="text-align:left">yum -y remove 包名</td>
-<td style="text-align:left">-y 自动回答yes remove 卸载,卸载有依赖性，所以尽量不要卸载</td>
-</tr>
-<tr>
-<td style="text-align:left">yum grouplist</td>
-<td style="text-align:left">列出所有可用的软件组列表</td>
-</tr>
-<tr>
-<td style="text-align:left">yum groupinstall 软件组名</td>
-<td style="text-align:left">安装指定的组，组名可以用grouplist查询</td>
-</tr>
-<tr>
-<td style="text-align:left">yum groupremove 软件组名</td>
-<td style="text-align:left">卸载指定软件组</td>
-</tr>
-</tbody>
-</table>
-<pre><code class="lang-js">yum -y install gcc  <span class="hljs-comment">//安装C语言安装包</span>
+            <h2 id="t43. YUM命令">3. YUM命令 <a href="#t43. YUM命令"> # </a></h2>
+            <ul>
+                <li>yum安装只需要写包名即可</li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align:left">命令</th>
+                        <th style="text-align:left">含义</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align:left">yum list</td>
+                        <td style="text-align:left">查询所有可用软件包列表</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">yum search 关键字</td>
+                        <td style="text-align:left">搜索服务器上所有和关键字相关的包</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">yum -y install 包名</td>
+                        <td style="text-align:left">-y 自动回答yes install安装</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">yum -y update 包名</td>
+                        <td style="text-align:left">-y 自动回答yes update升级</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">yum -y remove 包名</td>
+                        <td style="text-align:left">-y 自动回答yes remove 卸载,卸载有依赖性，所以尽量不要卸载</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">yum grouplist</td>
+                        <td style="text-align:left">列出所有可用的软件组列表</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">yum groupinstall 软件组名</td>
+                        <td style="text-align:left">安装指定的组，组名可以用grouplist查询</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">yum groupremove 软件组名</td>
+                        <td style="text-align:left">卸载指定软件组</td>
+                    </tr>
+                </tbody>
+            </table>
+            <pre><code class="lang-js">yum -y install gcc  <span class="hljs-comment">//安装C语言安装包</span>
 </code></pre>
-<h2 id="t54. 常用软件安装">4. 常用软件安装 <a href="#t54. 常用软件安装"> # </a></h2>
-<h3 id="t64.1 nginx">4.1 nginx <a href="#t64.1 nginx"> # </a></h3>
-<pre><code class="lang-js">yum install nginx  -y
+            <h2 id="t54. 常用软件安装">4. 常用软件安装 <a href="#t54. 常用软件安装"> # </a></h2>
+            <h3 id="t64.1 nginx">4.1 nginx <a href="#t64.1 nginx"> # </a></h3>
+            <pre><code class="lang-js">yum install nginx  -y
 </code></pre>
-<pre><code class="lang-js">whereis nginx <span class="hljs-comment">//查看安装位置</span>
+            <pre><code class="lang-js">whereis nginx <span class="hljs-comment">//查看安装位置</span>
 </code></pre>
-<p>启动服务</p>
-<pre><code class="lang-js">/bin/systemctl start nginx.service
+            <p>启动服务</p>
+            <pre><code class="lang-js">/bin/systemctl start nginx.service
 /bin/systemctl stop nginx.service
 </code></pre>
-<pre><code class="lang-js">curl http:<span class="hljs-comment">//115.29.148.6/</span>
+            <pre><code class="lang-js">curl http:<span class="hljs-comment">//115.29.148.6/</span>
 </code></pre>
-<h3 id="t74.2 mongodb">4.2 mongodb <a href="#t74.2 mongodb"> # </a></h3>
-<h4 id="t84.2.1 添加安装源">4.2.1 添加安装源 <a href="#t84.2.1 添加安装源"> # </a></h4>
-<ul>
-<li>vim /etc/yum.repos.d/mongodb-org-3.4.repo</li>
-</ul>
-<p>添加以下内容：</p>
-<pre><code class="lang-js">[mongodb-org<span class="hljs-number">-3.4</span>]  
+            <h3 id="t74.2 mongodb">4.2 mongodb <a href="#t74.2 mongodb"> # </a></h3>
+            <h4 id="t84.2.1 添加安装源">4.2.1 添加安装源 <a href="#t84.2.1 添加安装源"> # </a></h4>
+            <ul>
+                <li>vim /etc/yum.repos.d/mongodb-org-3.4.repo</li>
+            </ul>
+            <p>添加以下内容：</p>
+            <pre><code class="lang-js">[mongodb-org<span class="hljs-number">-3.4</span>]  
 name=MongoDB Repository  
 baseurl=https:<span class="hljs-comment">//repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.4/x86_64/  </span>
 gpgcheck=<span class="hljs-number">1</span>  
 enabled=<span class="hljs-number">1</span>  
 gpgkey=https:<span class="hljs-comment">//www.mongodb.org/static/pgp/server-3.4.asc</span>
 </code></pre>
-<ul>
-<li>这里可以修改 gpgcheck=0, 省去gpg验证</li>
-<li><code>yum makecache</code> 就是把服务器的包信息下载到本地电脑缓存起来</li>
-</ul>
-<h4 id="t94.2.2 更新缓存">4.2.2 更新缓存 <a href="#t94.2.2 更新缓存"> # </a></h4>
-<pre><code class="lang-js">yum makecache
+            <ul>
+                <li>这里可以修改 gpgcheck=0, 省去gpg验证</li>
+                <li><code>yum makecache</code> 就是把服务器的包信息下载到本地电脑缓存起来</li>
+            </ul>
+            <h4 id="t94.2.2 更新缓存">4.2.2 更新缓存 <a href="#t94.2.2 更新缓存"> # </a></h4>
+            <pre><code class="lang-js">yum makecache
 </code></pre>
-<h4 id="t104.2.3 安装">4.2.3 安装 <a href="#t104.2.3 安装"> # </a></h4>
-<pre><code class="lang-js">yum -y install mongodb-org
+            <h4 id="t104.2.3 安装">4.2.3 安装 <a href="#t104.2.3 安装"> # </a></h4>
+            <pre><code class="lang-js">yum -y install mongodb-org
 </code></pre>
-<h4 id="t114.2.4 修改配置文件">4.2.4 修改配置文件 <a href="#t114.2.4 修改配置文件"> # </a></h4>
-<pre><code class="lang-js">whereis mongod
+            <h4 id="t114.2.4 修改配置文件">4.2.4 修改配置文件 <a href="#t114.2.4 修改配置文件"> # </a></h4>
+            <pre><code class="lang-js">whereis mongod
 vi /etc/mongod.conf
 </code></pre>
-<p>/etc/mongod.conf</p>
-<pre><code class="lang-js">net:
+            <p>/etc/mongod.conf</p>
+            <pre><code class="lang-js">net:
   port: 27017
 #  bindIp: 127.0.0.1 
 </code></pre>
-<h4 id="t124.2.5 启动服务">4.2.5 启动服务 <a href="#t124.2.5 启动服务"> # </a></h4>
-<pre><code class="lang-js">systemctl start mongod.service
+            <h4 id="t124.2.5 启动服务">4.2.5 启动服务 <a href="#t124.2.5 启动服务"> # </a></h4>
+            <pre><code class="lang-js">systemctl start mongod.service
 systemctl stop mongod.service
 systemctl status mongod.service
 systemctl restart mongod.service
 </code></pre>
-<h4 id="t134.2.6 远程连接">4.2.6 远程连接 <a href="#t134.2.6 远程连接"> # </a></h4>
-<pre><code class="lang-js">systemctl stop firewalld.service #停止firewall
+            <h4 id="t134.2.6 远程连接">4.2.6 远程连接 <a href="#t134.2.6 远程连接"> # </a></h4>
+            <pre><code class="lang-js">systemctl stop firewalld.service #停止firewall
 systemctl disable firewalld.service #禁止firewall开机启动
 mongo 115.29.148.6
 </code></pre>
-<h3 id="t144.3 redis">4.3 redis <a href="#t144.3 redis"> # </a></h3>
-<h4 id="t154.3.1 安装软件">4.3.1 安装软件 <a href="#t154.3.1 安装软件"> # </a></h4>
-<pre><code class="lang-js">yum install redis -y
+            <h3 id="t144.3 redis">4.3 redis <a href="#t144.3 redis"> # </a></h3>
+            <h4 id="t154.3.1 安装软件">4.3.1 安装软件 <a href="#t154.3.1 安装软件"> # </a></h4>
+            <pre><code class="lang-js">yum install redis -y
 </code></pre>
-<h4 id="t164.3.2 启动服务">4.3.2 启动服务 <a href="#t164.3.2 启动服务"> # </a></h4>
-<pre><code class="lang-js">systemctl start redis.service
+            <h4 id="t164.3.2 启动服务">4.3.2 启动服务 <a href="#t164.3.2 启动服务"> # </a></h4>
+            <pre><code class="lang-js">systemctl start redis.service
 systemctl stop redis.service
 systemctl status redis.service
 systemctl restart redis.service
 </code></pre>
-<h3 id="t174.4 mysql">4.4 mysql <a href="#t174.4 mysql"> # </a></h3>
-<h4 id="t184.4.1 查看最新的安装包">4.4.1 查看最新的安装包 <a href="#t184.4.1 查看最新的安装包"> # </a></h4>
-<ul>
-<li><a href="https://dev.mysql.com/downloads/repo/yum/">https://dev.mysql.com/downloads/repo/yum/</a></li>
-</ul>
-<h4 id="t194.4.2 下载MySQL源安装包">4.4.2 下载MySQL源安装包 <a href="#t194.4.2 下载MySQL源安装包"> # </a></h4>
-<ul>
-<li>wget <a href="http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm">http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm</a></li>
-</ul>
-<h4 id="t204.4.3 安装源">4.4.3 安装源 <a href="#t204.4.3 安装源"> # </a></h4>
-<ul>
-<li>yum -y install mysql57-community-release-el7-11.noarch.rpm</li>
-<li>yum repolist enabled | grep mysql.*</li>
-</ul>
-<h4 id="t214.4.4 安装MYSQL服务器">4.4.4 安装MYSQL服务器 <a href="#t214.4.4 安装MYSQL服务器"> # </a></h4>
-<ul>
-<li><code>yum install mysql-community-server -y</code></li>
-</ul>
-<pre><code class="lang-js">/<span class="hljs-keyword">var</span>/cache/yum/x86_64/<span class="hljs-number">7</span>/mysql57-community/packages
+            <h3 id="t174.4 mysql">4.4 mysql <a href="#t174.4 mysql"> # </a></h3>
+            <h4 id="t184.4.1 查看最新的安装包">4.4.1 查看最新的安装包 <a href="#t184.4.1 查看最新的安装包"> # </a></h4>
+            <ul>
+                <li><a href="https://dev.mysql.com/downloads/repo/yum/">https://dev.mysql.com/downloads/repo/yum/</a>
+                </li>
+            </ul>
+            <h4 id="t194.4.2 下载MySQL源安装包">4.4.2 下载MySQL源安装包 <a href="#t194.4.2 下载MySQL源安装包"> # </a></h4>
+            <ul>
+                <li>wget <a
+                        href="http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm">http://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm</a>
+                </li>
+            </ul>
+            <h4 id="t204.4.3 安装源">4.4.3 安装源 <a href="#t204.4.3 安装源"> # </a></h4>
+            <ul>
+                <li>yum -y install mysql57-community-release-el7-11.noarch.rpm</li>
+                <li>yum repolist enabled | grep mysql.*</li>
+            </ul>
+            <h4 id="t214.4.4 安装MYSQL服务器">4.4.4 安装MYSQL服务器 <a href="#t214.4.4 安装MYSQL服务器"> # </a></h4>
+            <ul>
+                <li><code>yum install mysql-community-server -y</code></li>
+            </ul>
+            <pre><code class="lang-js">/<span class="hljs-keyword">var</span>/cache/yum/x86_64/<span class="hljs-number">7</span>/mysql57-community/packages
 <span class="hljs-attr">https</span>:<span class="hljs-comment">//mirrors.ustc.edu.cn/mysql-ftp/Downloads/MySQL-5.7/</span>
 wget https:<span class="hljs-comment">//img.zhufengpeixun.com/mysql5.7-centos7.zip</span>
 </code></pre>
-<h4 id="t224.4.5 启动服务器">4.4.5 启动服务器 <a href="#t224.4.5 启动服务器"> # </a></h4>
-<pre><code class="lang-js">systemctl start mysqld.service
+            <h4 id="t224.4.5 启动服务器">4.4.5 启动服务器 <a href="#t224.4.5 启动服务器"> # </a></h4>
+            <pre><code class="lang-js">systemctl start mysqld.service
 systemctl stop mysqld.service
 systemctl status mysqld.service
 systemctl restart mysqld.service
 </code></pre>
-<h4 id="t234.4.6 初始化数据库密码">4.4.6 初始化数据库密码 <a href="#t234.4.6 初始化数据库密码"> # </a></h4>
-<ul>
-<li>grep "password" /var/log/mysqld.log</li>
-<li>mysql -uroot -p</li>
-<li>ALTER USER 'root'@'localhost' IDENTIFIED BY 'abcd1#EFG';</li>
-<li>SHOW VARIABLES LIKE 'validate_password%';</li>
-</ul>
-<h4 id="t244.4.7 支持远程访问">4.4.7 支持远程访问 <a href="#t244.4.7 支持远程访问"> # </a></h4>
-<ul>
-<li>GRANT ALL PRIVILEGES ON <em>.</em> TO 'root'@'%' IDENTIFIED BY 'abcd1#EFG' WITH GRANT OPTION;</li>
-<li>FLUSH PRIVILEGES;</li>
-</ul>
-<h4 id="t254.4.8 开机自动访问">4.4.8 开机自动访问 <a href="#t254.4.8 开机自动访问"> # </a></h4>
-<ul>
-<li>systemctl enable mysqld</li>
-<li>systemctl daemon-reload</li>
-</ul>
-<h4 id="t264.4.9 远程访问">4.4.9 远程访问 <a href="#t264.4.9 远程访问"> # </a></h4>
-<ul>
-<li>C:\program1\mysql-5.7.31-winx64\bin\mysqld MySQL</li>
-</ul>
-<pre><code class="lang-js">mysql -h115<span class="hljs-number">.29</span><span class="hljs-number">.148</span><span class="hljs-number">.6</span> -uroot -p
+            <h4 id="t234.4.6 初始化数据库密码">4.4.6 初始化数据库密码 <a href="#t234.4.6 初始化数据库密码"> # </a></h4>
+            <ul>
+                <li>grep "password" /var/log/mysqld.log</li>
+                <li>mysql -uroot -p</li>
+                <li>ALTER USER 'root'@'localhost' IDENTIFIED BY 'abcd1#EFG';</li>
+                <li>SHOW VARIABLES LIKE 'validate_password%';</li>
+            </ul>
+            <h4 id="t244.4.7 支持远程访问">4.4.7 支持远程访问 <a href="#t244.4.7 支持远程访问"> # </a></h4>
+            <ul>
+                <li>GRANT ALL PRIVILEGES ON <em>.</em> TO 'root'@'%' IDENTIFIED BY 'abcd1#EFG' WITH GRANT OPTION;</li>
+                <li>FLUSH PRIVILEGES;</li>
+            </ul>
+            <h4 id="t254.4.8 开机自动访问">4.4.8 开机自动访问 <a href="#t254.4.8 开机自动访问"> # </a></h4>
+            <ul>
+                <li>systemctl enable mysqld</li>
+                <li>systemctl daemon-reload</li>
+            </ul>
+            <h4 id="t264.4.9 远程访问">4.4.9 远程访问 <a href="#t264.4.9 远程访问"> # </a></h4>
+            <ul>
+                <li>C:\program1\mysql-5.7.31-winx64\bin\mysqld MySQL</li>
+            </ul>
+            <pre><code class="lang-js">mysql -h115<span class="hljs-number">.29</span><span class="hljs-number">.148</span><span class="hljs-number">.6</span> -uroot -p
 </code></pre>
 
+        </div>
     </div>
-</div>
 </body>

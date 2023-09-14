@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        .page-toc > ul .red {
+        .page-toc>ul .red {
             background: #f3f3f3;
             z-index: 1;
             border-left: 3px solid #009a61;
@@ -15,102 +15,501 @@
         }
     </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li class="active"><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
-    <div class="page-toc">
-        <ul><li><a href="#t01. 创建项目">1. 创建项目</a><ul><li><a href="#t11.1 Lerna">1.1 Lerna</a><ul><li><a href="#t21.1.1 安装">1.1.1 安装</a></li><li><a href="#t31.1.2 初始化">1.1.2 初始化</a></li><li><a href="#t41.1.3 文件">1.1.3 文件</a><ul><li><a href="#t51.1.3.1 package.json">1.1.3.1 package.json</a></li><li><a href="#t61.1.3.2 lerna.json">1.1.3.2 lerna.json</a></li><li><a href="#t71.1.3.3 .gitignore">1.1.3.3 .gitignore</a></li></ul></li><li><a href="#t81.1.4 yarn workspace">1.1.4 yarn workspace</a><ul><li><a href="#t91.1.4.1 package.json">1.1.4.1 package.json</a></li><li><a href="#t101.1.4.2 lerna.json">1.1.4.2 lerna.json</a></li><li><a href="#t111.1.4.3 添加依赖">1.1.4.3 添加依赖</a></li></ul></li><li><a href="#t121.1.5 创建子项目">1.1.5 创建子项目</a><ul><li><a href="#t131.1.5.1 vite-cli">1.1.5.1 vite-cli</a><ul><li><a href="#t141.1.5.1.1 package.json">1.1.5.1.1 package.json</a></li><li><a href="#t151.1.5.1.2 vite.js">1.1.5.1.2 vite.js</a></li><li><a href="#t161.1.5.1.3 cli.js">1.1.5.1.3 cli.js</a></li></ul></li><li><a href="#t171.1.5.2 vite-project">1.1.5.2 vite-project</a><ul><li><a href="#t181.1.5.2.1 package.json">1.1.5.2.1 package.json</a></li></ul></li></ul></li><li><a href="#t191.1.6 创建软链接">1.1.6 创建软链接</a></li></ul></li><li><a href="#t201.2 安装依赖">1.2 安装依赖</a></li></ul></li><li><a href="#t212. 启动并调试">2. 启动并调试</a><ul><li><a href="#t222.1 package.json">2.1 package.json</a></li><li><a href="#t232.2 index.html">2.2 index.html</a></li><li><a href="#t242.3 src\main.js">2.3 src\main.js</a></li><li><a href="#t252.4 launch.json">2.4 launch.json</a></li></ul></li><li><a href="#t263. 实现静态服务">3. 实现静态服务</a><ul><li><a href="#t273.1 serverPluginServeStatic.js">3.1 serverPluginServeStatic.js</a></li><li><a href="#t283.2 cli.js">3.2 cli.js</a></li></ul></li><li><a href="#t294.重写导入路径">4.重写导入路径</a><ul><li><a href="#t304.1 安装">4.1 安装</a></li><li><a href="#t314.2 nodemon.json">4.2 nodemon.json</a></li><li><a href="#t324.3 vite.config.js">4.3 vite.config.js</a></li><li><a href="#t334.4 main.js">4.4 main.js</a></li><li><a href="#t344.5 cli.js">4.5 cli.js</a></li><li><a href="#t354.6 serverPluginModuleRewrite.js">4.6 serverPluginModuleRewrite.js</a></li><li><a href="#t364.7 utils.js">4.7 utils.js</a></li></ul></li><li><a href="#t375.解析/@modules文件">5.解析/@modules文件</a><ul><li><a href="#t385.1 serverPluginModuleResolve.js">5.1 serverPluginModuleResolve.js</a></li><li><a href="#t395.2 serverPluginHtml.js">5.2 serverPluginHtml.js</a></li><li><a href="#t405.3 utils.js">5.3 utils.js</a></li><li><a href="#t415.4 cli.js">5.4 cli.js</a></li></ul></li><li><a href="#t426.编译vue模板">6.编译vue模板</a><ul><li><a href="#t436.1 main.js">6.1 main.js</a></li><li><a href="#t446.2 App.vue">6.2 App.vue</a></li><li><a href="#t456.3 serverPluginVue.js">6.3 serverPluginVue.js</a></li><li><a href="#t466.4 cli.js">6.4 cli.js</a></li></ul></li></ul>
+<body class="modal-open" style="padding-right: 15px;">
+    <div class="nav">
+        <div class="logo">
+
+            珠峰架构师成长计划
+
+        </div>
+        <ul>
+            <li><a href="../index.html">0.Async</a></li>
+            <li><a href="../html/0.editor.html">0.editor</a></li>
+            <li><a href="../html/0.module.html">0.module</a></li>
+            <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+            <li><a href="../html/2.Promise.html">2.Promise</a></li>
+            <li><a href="../html/3.Node.html">3.Node</a></li>
+            <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+            <li><a href="../html/5.REPL.html">5.REPL</a></li>
+            <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+            <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+            <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+            <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+            <li><a href="../html/10.fs.html">10.fs</a></li>
+            <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+            <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+            <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+            <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+            <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+            <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+            <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+            <li><a href="../html/13.tcp.html">13.tcp</a></li>
+            <li><a href="../html/14.http-1.html">14.http-1</a></li>
+            <li><a href="../html/14.http-2.html">14.http-2</a></li>
+            <li><a href="../html/15.compress.html">15.compress</a></li>
+            <li><a href="../html/16.crypto.html">16.crypto</a></li>
+            <li><a href="../html/17.process.html">17.process</a></li>
+            <li><a href="../html/18.yargs.html">18.yargs</a></li>
+            <li><a href="../html/19.cache.html">19.cache</a></li>
+            <li><a href="../html/20.action.html">20.action</a></li>
+            <li><a href="../html/21.https.html">21.https</a></li>
+            <li><a href="../html/22.cookie.html">22.cookie</a></li>
+            <li><a href="../html/23.session.html">23.session</a></li>
+            <li><a href="../html/24.express-1.html">24.express-1</a></li>
+            <li><a href="../html/24.express-2.html">24.express-2</a></li>
+            <li><a href="../html/24.express-3.html">24.express-3</a></li>
+            <li><a href="../html/24.express-4.html">24.express-4</a></li>
+            <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+            <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+            <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+            <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+            <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+            <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+            <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+            <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+            <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+            <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+            <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+            <li><a href="../html/28.redux.html">28.redux</a></li>
+            <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+            <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+            <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+            <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+            <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+            <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+            <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+            <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+            <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+            <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+            <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+            <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+            <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+            <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+            <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+            <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+            <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+            <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+            <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+            <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+            <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+            <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+            <li><a href="../html/31.dva.html">31.dva</a></li>
+            <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+            <li><a href="../html/33.redis.html">33.redis</a></li>
+            <li><a href="../html/34.unittest.html">34.unittest</a></li>
+            <li><a href="../html/35.jwt.html">35.jwt</a></li>
+            <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+            <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+            <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+            <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+            <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+            <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+            <li><a href="../html/38.chat.html">38.chat</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+            <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+            <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+            <li><a href="../html/40.deploy.html">40.deploy</a></li>
+            <li><a href="../html/41.safe.html">41.safe</a></li>
+            <li><a href="../html/42.test.html">42.test</a></li>
+            <li><a href="../html/43.nginx.html">43.nginx</a></li>
+            <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+            <li><a href="../html/45.docker.html">45.docker</a></li>
+            <li><a href="../html/46.elastic.html">46.elastic</a></li>
+            <li><a href="../html/47.oauth.html">47.oauth</a></li>
+            <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/52.UML.html">52.UML</a></li>
+            <li><a href="../html/53.design.html">53.design</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/54.linux.html">54.linux</a></li>
+            <li><a href="../html/57.ts.html">57.ts</a></li>
+            <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+            <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+            <li><a href="../html/59.ketang.html">59.ketang</a></li>
+            <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+            <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+            <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+            <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+            <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+            <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+            <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+            <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+            <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+            <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+            <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+            <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+            <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+            <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+            <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+            <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+            <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+            <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+            <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+            <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+            <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+            <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+            <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+            <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+            <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+            <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+            <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+            <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+            <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+            <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+            <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+            <li><a href="../html/64.1.router.html">64.1.router</a></li>
+            <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+            <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+            <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+            <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+            <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+            <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+            <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+            <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+            <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+            <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+            <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+            <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+            <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+            <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+            <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+            <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+            <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+            <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+            <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+            <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+            <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+            <li><a href="../html/67-1-network.html">67-1-network</a></li>
+            <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+            <li><a href="../html/7.npm2.html">7.npm2</a></li>
+            <li><a href="../html/69-hooks.html">69-hooks</a></li>
+            <li><a href="../html/70-deploy.html">70-deploy</a></li>
+            <li><a href="../html/71-hmr.html">71-hmr</a></li>
+            <li><a href="../html/72.deploy.html">72.deploy</a></li>
+            <li><a href="../html/73.import.html">73.import</a></li>
+            <li><a href="../html/74.mobile.html">74.mobile</a></li>
+            <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+            <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+            <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+            <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+            <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+            <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+            <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+            <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+            <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+            <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+            <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+            <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+            <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+            <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+            <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+            <li><a href="../html/79.grammar.html">79.grammar</a></li>
+            <li><a href="../html/80.tree.html">80.tree</a></li>
+            <li><a href="../html/81.axios.html">81.axios</a></li>
+            <li><a href="../html/82.1.react.html">82.1.react</a></li>
+            <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+            <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+            <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+            <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+            <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+            <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+            <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+            <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+            <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+            <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+            <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+            <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+            <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+            <li><a href="../html/83.upload.html">83.upload</a></li>
+            <li><a href="../html/84.graphql.html">84.graphql</a></li>
+            <li><a href="../html/85.antpro.html">85.antpro</a></li>
+            <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+            <li><a href="../html/86.2.design.html">86.2.design</a></li>
+            <li><a href="../html/87.postcss.html">87.postcss</a></li>
+            <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+            <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+            <li><a href="../html/90.react-test.html">90.react-test</a></li>
+            <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+            <li><a href="../html/92.rbac.html">92.rbac</a></li>
+            <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+            <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+            <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+            <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+            <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+            <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+            <li><a href="../html/94.6.https.html">94.6.https</a></li>
+            <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+            <li><a href="../html/95.1. react.html">95.1. react</a></li>
+            <li><a href="../html/95.2.react.html">95.2.react</a></li>
+            <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+            <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+            <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+            <li><a href="../html/97.serverless.html">97.serverless</a></li>
+            <li><a href="../html/98.websocket.html">98.websocket</a></li>
+            <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+            <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+            <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+            <li><a href="../html/102.java.html">102.java</a></li>
+            <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+            <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+            <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+            <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+            <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+            <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+            <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+            <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+            <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+            <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+            <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+            <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+            <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+            <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+            <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+            <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+            <li class="active"><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+            <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+            <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+            <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+            <li><a href="../html/106.1.react.html">106.1.react</a></li>
+            <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+            <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+            <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+            <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+            <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+            <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+            <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+            <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+            <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+            <li><a href="../html/107.fiber.html">107.fiber</a></li>
+            <li><a href="../html/108.http.html">108.http</a></li>
+            <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+            <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+            <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+            <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+            <li><a href="../html/111.xstate.html">111.xstate</a></li>
+            <li><a href="../html/112.Form.html">112.Form</a></li>
+            <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+            <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+            <li><a href="../html/115.immer.html">115.immer</a></li>
+            <li><a href="../html/116.pro5.html">116.pro5</a></li>
+            <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+            <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+            <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+            <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+            <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+            <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+            <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+            <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+            <li><a href="../html/124.next.js.html">124.next.js</a></li>
+            <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+            <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+            <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+            <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+            <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+            <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+            <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+            <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+            <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+            <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+            <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+            <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+            <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+            <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+            <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+            <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+            <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+            <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+            <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+            <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+            <li><a href="../html/127.frontend.html">127.frontend</a></li>
+            <li><a href="../html/128.rollup.html">128.rollup</a></li>
+            <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+            <li><a href="../html/130.health.html">130.health</a></li>
+            <li><a href="../html/131.hooks.html">131.hooks</a></li>
+            <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+            <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+            <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+            <li><a href="../html/134.react18.html">134.react18</a></li>
+            <li><a href="../html/135.function.html">135.function</a></li>
+            <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+        </ul>
     </div>
-    <div class="content markdown-body">
-        <h2 id="t01. 创建项目">1. 创建项目 <a href="#t01. 创建项目"> # </a></h2>
-<ul>
-<li>monoRepo 是将所有的模块统一的放在一个主干分支之中管理</li>
-<li>multiRepo 将项目分化成为多个模块，并针对每一个模块单独的开辟一个Repo来进行管理</li>
-</ul>
-<p><img src="https://img.zhufengpeixun.com/1278ae09f1de08186e9e70fe3bb1c4d1" alt="1278ae09f1de08186e9e70fe3bb1c4d1"></p>
-<h3 id="t11.1 Lerna">1.1 Lerna <a href="#t11.1 Lerna"> # </a></h3>
-<ul>
-<li>Lerna是一个管理多个 npm 模块的工具,优化维护多包的工作流，解决多个包互相依赖，且发布需要手动维护多个包的问题</li>
-</ul>
-<h4 id="t21.1.1 安装">1.1.1 安装 <a href="#t21.1.1 安装"> # </a></h4>
-<pre><code class="lang-js">npm i lerna -g
+
+
+    <div class="warpper">
+        <div class="page-toc">
+            <ul>
+                <li><a href="#t01. 创建项目">1. 创建项目</a>
+                    <ul>
+                        <li><a href="#t11.1 Lerna">1.1 Lerna</a>
+                            <ul>
+                                <li><a href="#t21.1.1 安装">1.1.1 安装</a></li>
+                                <li><a href="#t31.1.2 初始化">1.1.2 初始化</a></li>
+                                <li><a href="#t41.1.3 文件">1.1.3 文件</a>
+                                    <ul>
+                                        <li><a href="#t51.1.3.1 package.json">1.1.3.1 package.json</a></li>
+                                        <li><a href="#t61.1.3.2 lerna.json">1.1.3.2 lerna.json</a></li>
+                                        <li><a href="#t71.1.3.3 .gitignore">1.1.3.3 .gitignore</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#t81.1.4 yarn workspace">1.1.4 yarn workspace</a>
+                                    <ul>
+                                        <li><a href="#t91.1.4.1 package.json">1.1.4.1 package.json</a></li>
+                                        <li><a href="#t101.1.4.2 lerna.json">1.1.4.2 lerna.json</a></li>
+                                        <li><a href="#t111.1.4.3 添加依赖">1.1.4.3 添加依赖</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#t121.1.5 创建子项目">1.1.5 创建子项目</a>
+                                    <ul>
+                                        <li><a href="#t131.1.5.1 vite-cli">1.1.5.1 vite-cli</a>
+                                            <ul>
+                                                <li><a href="#t141.1.5.1.1 package.json">1.1.5.1.1 package.json</a></li>
+                                                <li><a href="#t151.1.5.1.2 vite.js">1.1.5.1.2 vite.js</a></li>
+                                                <li><a href="#t161.1.5.1.3 cli.js">1.1.5.1.3 cli.js</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#t171.1.5.2 vite-project">1.1.5.2 vite-project</a>
+                                            <ul>
+                                                <li><a href="#t181.1.5.2.1 package.json">1.1.5.2.1 package.json</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#t191.1.6 创建软链接">1.1.6 创建软链接</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t201.2 安装依赖">1.2 安装依赖</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t212. 启动并调试">2. 启动并调试</a>
+                    <ul>
+                        <li><a href="#t222.1 package.json">2.1 package.json</a></li>
+                        <li><a href="#t232.2 index.html">2.2 index.html</a></li>
+                        <li><a href="#t242.3 src\main.js">2.3 src\main.js</a></li>
+                        <li><a href="#t252.4 launch.json">2.4 launch.json</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t263. 实现静态服务">3. 实现静态服务</a>
+                    <ul>
+                        <li><a href="#t273.1 serverPluginServeStatic.js">3.1 serverPluginServeStatic.js</a></li>
+                        <li><a href="#t283.2 cli.js">3.2 cli.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t294.重写导入路径">4.重写导入路径</a>
+                    <ul>
+                        <li><a href="#t304.1 安装">4.1 安装</a></li>
+                        <li><a href="#t314.2 nodemon.json">4.2 nodemon.json</a></li>
+                        <li><a href="#t324.3 vite.config.js">4.3 vite.config.js</a></li>
+                        <li><a href="#t334.4 main.js">4.4 main.js</a></li>
+                        <li><a href="#t344.5 cli.js">4.5 cli.js</a></li>
+                        <li><a href="#t354.6 serverPluginModuleRewrite.js">4.6 serverPluginModuleRewrite.js</a></li>
+                        <li><a href="#t364.7 utils.js">4.7 utils.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t375.解析/@modules文件">5.解析/@modules文件</a>
+                    <ul>
+                        <li><a href="#t385.1 serverPluginModuleResolve.js">5.1 serverPluginModuleResolve.js</a></li>
+                        <li><a href="#t395.2 serverPluginHtml.js">5.2 serverPluginHtml.js</a></li>
+                        <li><a href="#t405.3 utils.js">5.3 utils.js</a></li>
+                        <li><a href="#t415.4 cli.js">5.4 cli.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t426.编译vue模板">6.编译vue模板</a>
+                    <ul>
+                        <li><a href="#t436.1 main.js">6.1 main.js</a></li>
+                        <li><a href="#t446.2 App.vue">6.2 App.vue</a></li>
+                        <li><a href="#t456.3 serverPluginVue.js">6.3 serverPluginVue.js</a></li>
+                        <li><a href="#t466.4 cli.js">6.4 cli.js</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content markdown-body">
+            <h2 id="t01. 创建项目">1. 创建项目 <a href="#t01. 创建项目"> # </a></h2>
+            <ul>
+                <li>monoRepo 是将所有的模块统一的放在一个主干分支之中管理</li>
+                <li>multiRepo 将项目分化成为多个模块，并针对每一个模块单独的开辟一个Repo来进行管理</li>
+            </ul>
+            <p><img src="https://img.zhufengpeixun.com/1278ae09f1de08186e9e70fe3bb1c4d1"
+                    alt="1278ae09f1de08186e9e70fe3bb1c4d1"></p>
+            <h3 id="t11.1 Lerna">1.1 Lerna <a href="#t11.1 Lerna"> # </a></h3>
+            <ul>
+                <li>Lerna是一个管理多个 npm 模块的工具,优化维护多包的工作流，解决多个包互相依赖，且发布需要手动维护多个包的问题</li>
+            </ul>
+            <h4 id="t21.1.1 安装">1.1.1 安装 <a href="#t21.1.1 安装"> # </a></h4>
+            <pre><code class="lang-js">npm i lerna -g
 </code></pre>
-<h4 id="t31.1.2 初始化">1.1.2 初始化 <a href="#t31.1.2 初始化"> # </a></h4>
-<pre><code class="lang-js">lerna init
+            <h4 id="t31.1.2 初始化">1.1.2 初始化 <a href="#t31.1.2 初始化"> # </a></h4>
+            <pre><code class="lang-js">lerna init
 </code></pre>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">命令</th>
-<th style="text-align:left">功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">lerna bootstrap</td>
-<td style="text-align:left">安装依赖</td>
-</tr>
-<tr>
-<td style="text-align:left">lerna clean</td>
-<td style="text-align:left">删除各个包下的node_modules</td>
-</tr>
-<tr>
-<td style="text-align:left">lerna init</td>
-<td style="text-align:left">创建新的lerna库</td>
-</tr>
-<tr>
-<td style="text-align:left">lerna list</td>
-<td style="text-align:left">查看本地包列表</td>
-</tr>
-<tr>
-<td style="text-align:left">lerna changed</td>
-<td style="text-align:left">显示自上次release tag以来有修改的包， 选项通 list</td>
-</tr>
-<tr>
-<td style="text-align:left">lerna diff</td>
-<td style="text-align:left">显示自上次release tag以来有修改的包的差异， 执行 git diff</td>
-</tr>
-<tr>
-<td style="text-align:left">lerna exec</td>
-<td style="text-align:left">在每个包目录下执行任意命令</td>
-</tr>
-<tr>
-<td style="text-align:left">lerna run</td>
-<td style="text-align:left">执行每个包package.json中的脚本命令</td>
-</tr>
-<tr>
-<td style="text-align:left">lerna add</td>
-<td style="text-align:left">添加一个包的版本为各个包的依赖</td>
-</tr>
-<tr>
-<td style="text-align:left">lerna import</td>
-<td style="text-align:left">引入package</td>
-</tr>
-<tr>
-<td style="text-align:left">lerna link</td>
-<td style="text-align:left">链接互相引用的库</td>
-</tr>
-<tr>
-<td style="text-align:left">lerna create</td>
-<td style="text-align:left">新建package</td>
-</tr>
-<tr>
-<td style="text-align:left">lerna publish</td>
-<td style="text-align:left">发布</td>
-</tr>
-</tbody>
-</table>
-<h4 id="t41.1.3 文件">1.1.3 文件 <a href="#t41.1.3 文件"> # </a></h4>
-<h5 id="t51.1.3.1 package.json">1.1.3.1 package.json <a href="#t51.1.3.1 package.json"> # </a></h5>
-<pre><code class="lang-json">{
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align:left">命令</th>
+                        <th style="text-align:left">功能</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align:left">lerna bootstrap</td>
+                        <td style="text-align:left">安装依赖</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">lerna clean</td>
+                        <td style="text-align:left">删除各个包下的node_modules</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">lerna init</td>
+                        <td style="text-align:left">创建新的lerna库</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">lerna list</td>
+                        <td style="text-align:left">查看本地包列表</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">lerna changed</td>
+                        <td style="text-align:left">显示自上次release tag以来有修改的包， 选项通 list</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">lerna diff</td>
+                        <td style="text-align:left">显示自上次release tag以来有修改的包的差异， 执行 git diff</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">lerna exec</td>
+                        <td style="text-align:left">在每个包目录下执行任意命令</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">lerna run</td>
+                        <td style="text-align:left">执行每个包package.json中的脚本命令</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">lerna add</td>
+                        <td style="text-align:left">添加一个包的版本为各个包的依赖</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">lerna import</td>
+                        <td style="text-align:left">引入package</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">lerna link</td>
+                        <td style="text-align:left">链接互相引用的库</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">lerna create</td>
+                        <td style="text-align:left">新建package</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">lerna publish</td>
+                        <td style="text-align:left">发布</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4 id="t41.1.3 文件">1.1.3 文件 <a href="#t41.1.3 文件"> # </a></h4>
+            <h5 id="t51.1.3.1 package.json">1.1.3.1 package.json <a href="#t51.1.3.1 package.json"> # </a></h5>
+            <pre><code class="lang-json">{
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"root"</span>,
   <span class="hljs-attr">"private"</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">"devDependencies"</span>: {
@@ -118,16 +517,16 @@
   }
 }
 </code></pre>
-<h5 id="t61.1.3.2 lerna.json">1.1.3.2 lerna.json <a href="#t61.1.3.2 lerna.json"> # </a></h5>
-<pre><code class="lang-json">{
+            <h5 id="t61.1.3.2 lerna.json">1.1.3.2 lerna.json <a href="#t61.1.3.2 lerna.json"> # </a></h5>
+            <pre><code class="lang-json">{
   <span class="hljs-attr">"packages"</span>: [
     <span class="hljs-string">"packages/*"</span>
   ],
   <span class="hljs-attr">"version"</span>: <span class="hljs-string">"0.0.0"</span>
 }
 </code></pre>
-<h5 id="t71.1.3.3 .gitignore">1.1.3.3 .gitignore <a href="#t71.1.3.3 .gitignore"> # </a></h5>
-<pre><code class="lang-yaml"><span class="hljs-string">node_modules</span>
+            <h5 id="t71.1.3.3 .gitignore">1.1.3.3 .gitignore <a href="#t71.1.3.3 .gitignore"> # </a></h5>
+            <pre><code class="lang-yaml"><span class="hljs-string">node_modules</span>
 <span class="hljs-string">.DS_Store</span>
 <span class="hljs-string">design</span>
 <span class="hljs-string">*.log</span>
@@ -139,16 +538,16 @@
 <span class="hljs-string">.versions</span>
 <span class="hljs-string">.changelog</span>
 </code></pre>
-<h4 id="t81.1.4 yarn workspace">1.1.4 yarn workspace <a href="#t81.1.4 yarn workspace"> # </a></h4>
-<ul>
-<li>yarn workspace允许我们使用 monorepo 的形式来管理项目</li>
-<li>在安装 node_modules 的时候它不会安装到每个子项目的 node_modules 里面，而是直接安装到根目录下面，这样每个子项目都可以读取到根目录的 node_modules</li>
-<li>整个项目只有根目录下面会有一份 yarn.lock 文件。子项目也会被 link 到 node_modules 里面，这样就允许我们就可以直接用 import 导入对应的项目</li>
-<li>yarn.lock文件是自动生成的,也完全Yarn来处理.yarn.lock锁定你安装的每个依赖项的版本，这可以确保你不会意外获得不良依赖</li>
-</ul>
-<h6 id="t91.1.4.1 package.json">1.1.4.1 package.json <a href="#t91.1.4.1 package.json"> # </a></h6>
-<p>package.json</p>
-<pre><code class="lang-diff">{
+            <h4 id="t81.1.4 yarn workspace">1.1.4 yarn workspace <a href="#t81.1.4 yarn workspace"> # </a></h4>
+            <ul>
+                <li>yarn workspace允许我们使用 monorepo 的形式来管理项目</li>
+                <li>在安装 node_modules 的时候它不会安装到每个子项目的 node_modules 里面，而是直接安装到根目录下面，这样每个子项目都可以读取到根目录的 node_modules</li>
+                <li>整个项目只有根目录下面会有一份 yarn.lock 文件。子项目也会被 link 到 node_modules 里面，这样就允许我们就可以直接用 import 导入对应的项目</li>
+                <li>yarn.lock文件是自动生成的,也完全Yarn来处理.yarn.lock锁定你安装的每个依赖项的版本，这可以确保你不会意外获得不良依赖</li>
+            </ul>
+            <h6 id="t91.1.4.1 package.json">1.1.4.1 package.json <a href="#t91.1.4.1 package.json"> # </a></h6>
+            <p>package.json</p>
+            <pre><code class="lang-diff">{
   "name": "root",
   "private": true,
 <span class="hljs-addition">+  "workspaces": [</span>
@@ -159,9 +558,9 @@
   }
 }
 </code></pre>
-<h6 id="t101.1.4.2 lerna.json">1.1.4.2 lerna.json <a href="#t101.1.4.2 lerna.json"> # </a></h6>
-<p>lerna.json</p>
-<pre><code class="lang-diff">{
+            <h6 id="t101.1.4.2 lerna.json">1.1.4.2 lerna.json <a href="#t101.1.4.2 lerna.json"> # </a></h6>
+            <p>lerna.json</p>
+            <pre><code class="lang-diff">{
   "packages": [
     "packages/*"
   ],
@@ -170,64 +569,66 @@
 <span class="hljs-addition">+ "npmClient": "yarn"</span>
 }
 </code></pre>
-<h6 id="t111.1.4.3 添加依赖">1.1.4.3 添加依赖 <a href="#t111.1.4.3 添加依赖"> # </a></h6>
-<ul>
-<li><a href="https://classic.yarnpkg.com/en/docs/cli">yarnpkg</a></li>
-<li><a href="https://github.com/lerna/lerna#readme">lerna</a></li>
-</ul>
-<p>设置加速镜像</p>
-<pre><code class="lang-js">yarn config <span class="hljs-keyword">set</span> registry http://registry.npm.taobao.org
+            <h6 id="t111.1.4.3 添加依赖">1.1.4.3 添加依赖 <a href="#t111.1.4.3 添加依赖"> # </a></h6>
+            <ul>
+                <li><a href="https://classic.yarnpkg.com/en/docs/cli">yarnpkg</a></li>
+                <li><a href="https://github.com/lerna/lerna#readme">lerna</a></li>
+            </ul>
+            <p>设置加速镜像</p>
+            <pre><code class="lang-js">yarn config <span class="hljs-keyword">set</span> registry http://registry.npm.taobao.org
  npm config <span class="hljs-keyword">set</span> registry https://registry.npm.taobao.org
 </code></pre>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">作用</th>
-<th style="text-align:left">命令</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">查看工作空间信息</td>
-<td style="text-align:left">yarn workspaces info</td>
-</tr>
-<tr>
-<td style="text-align:left">给根空间添加依赖</td>
-<td style="text-align:left">yarn add chalk cross-spawn fs-extra --ignore-workspace-root-check</td>
-</tr>
-<tr>
-<td style="text-align:left">给某个项目添加依赖</td>
-<td style="text-align:left">yarn workspace create-react-app3 add commander</td>
-</tr>
-<tr>
-<td style="text-align:left">删除所有的 node_modules</td>
-<td style="text-align:left">lerna clean 等于 yarn workspaces run clean</td>
-</tr>
-<tr>
-<td style="text-align:left">安装和link</td>
-<td style="text-align:left">yarn install 等于 lerna bootstrap --npm-client yarn --use-workspaces</td>
-</tr>
-<tr>
-<td style="text-align:left">重新获取所有的 node_modules</td>
-<td style="text-align:left">yarn install --force</td>
-</tr>
-<tr>
-<td style="text-align:left">查看缓存目录</td>
-<td style="text-align:left">yarn cache dir</td>
-</tr>
-<tr>
-<td style="text-align:left">清除本地缓存</td>
-<td style="text-align:left">yarn cache clean</td>
-</tr>
-</tbody>
-</table>
-<h4 id="t121.1.5 创建子项目">1.1.5 创建子项目 <a href="#t121.1.5 创建子项目"> # </a></h4>
-<pre><code class="lang-js">lerna create vite-cli
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align:left">作用</th>
+                        <th style="text-align:left">命令</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align:left">查看工作空间信息</td>
+                        <td style="text-align:left">yarn workspaces info</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">给根空间添加依赖</td>
+                        <td style="text-align:left">yarn add chalk cross-spawn fs-extra --ignore-workspace-root-check
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">给某个项目添加依赖</td>
+                        <td style="text-align:left">yarn workspace create-react-app3 add commander</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">删除所有的 node_modules</td>
+                        <td style="text-align:left">lerna clean 等于 yarn workspaces run clean</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">安装和link</td>
+                        <td style="text-align:left">yarn install 等于 lerna bootstrap --npm-client yarn --use-workspaces
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">重新获取所有的 node_modules</td>
+                        <td style="text-align:left">yarn install --force</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">查看缓存目录</td>
+                        <td style="text-align:left">yarn cache dir</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">清除本地缓存</td>
+                        <td style="text-align:left">yarn cache clean</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4 id="t121.1.5 创建子项目">1.1.5 创建子项目 <a href="#t121.1.5 创建子项目"> # </a></h4>
+            <pre><code class="lang-js">lerna create vite-cli
 lerna create  vite-project
 </code></pre>
-<h5 id="t131.1.5.1 vite-cli">1.1.5.1 vite-cli <a href="#t131.1.5.1 vite-cli"> # </a></h5>
-<h6 id="t141.1.5.1.1 package.json">1.1.5.1.1 package.json <a href="#t141.1.5.1.1 package.json"> # </a></h6>
-<pre><code class="lang-json">{
+            <h5 id="t131.1.5.1 vite-cli">1.1.5.1 vite-cli <a href="#t131.1.5.1 vite-cli"> # </a></h5>
+            <h6 id="t141.1.5.1.1 package.json">1.1.5.1.1 package.json <a href="#t141.1.5.1.1 package.json"> # </a></h6>
+            <pre><code class="lang-json">{
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"vite-cli"</span>,
   <span class="hljs-attr">"version"</span>: <span class="hljs-string">"0.0.0"</span>,
   <span class="hljs-attr">"bin"</span>:{
@@ -236,44 +637,44 @@ lerna create  vite-project
   <span class="hljs-attr">"scripts"</span>: {}
 }
 </code></pre>
-<h6 id="t151.1.5.1.2 vite.js">1.1.5.1.2 vite.js <a href="#t151.1.5.1.2 vite.js"> # </a></h6>
-<p>packages\vite-cli\bin\vite.js</p>
-<pre><code class="lang-js"><span class="hljs-meta">#!/usr/bin/env node</span>
+            <h6 id="t151.1.5.1.2 vite.js">1.1.5.1.2 vite.js <a href="#t151.1.5.1.2 vite.js"> # </a></h6>
+            <p>packages\vite-cli\bin\vite.js</p>
+            <pre><code class="lang-js"><span class="hljs-meta">#!/usr/bin/env node</span>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">start</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-built_in">require</span>(<span class="hljs-string">'../lib/cli'</span>)
 }
 start()
 </code></pre>
-<h6 id="t161.1.5.1.3 cli.js">1.1.5.1.3 cli.js <a href="#t161.1.5.1.3 cli.js"> # </a></h6>
-<p>packages\vite-cli\lib\cli.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'vite'</span>);
+            <h6 id="t161.1.5.1.3 cli.js">1.1.5.1.3 cli.js <a href="#t161.1.5.1.3 cli.js"> # </a></h6>
+            <p>packages\vite-cli\lib\cli.js</p>
+            <pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'vite'</span>);
 </code></pre>
-<h5 id="t171.1.5.2 vite-project">1.1.5.2 vite-project <a href="#t171.1.5.2 vite-project"> # </a></h5>
-<h6 id="t181.1.5.2.1 package.json">1.1.5.2.1 package.json <a href="#t181.1.5.2.1 package.json"> # </a></h6>
-<pre><code class="lang-json">{
+            <h5 id="t171.1.5.2 vite-project">1.1.5.2 vite-project <a href="#t171.1.5.2 vite-project"> # </a></h5>
+            <h6 id="t181.1.5.2.1 package.json">1.1.5.2.1 package.json <a href="#t181.1.5.2.1 package.json"> # </a></h6>
+            <pre><code class="lang-json">{
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"vite-project"</span>,
   <span class="hljs-attr">"version"</span>: <span class="hljs-string">"0.0.0"</span>,
   <span class="hljs-attr">"scripts"</span>: {}
 }
 </code></pre>
-<h4 id="t191.1.6 创建软链接">1.1.6 创建软链接 <a href="#t191.1.6 创建软链接"> # </a></h4>
-<pre><code class="lang-sh">yarn
+            <h4 id="t191.1.6 创建软链接">1.1.6 创建软链接 <a href="#t191.1.6 创建软链接"> # </a></h4>
+            <pre><code class="lang-sh">yarn
 <span class="hljs-built_in">cd</span> packages/vite-cli
 npm link
 npm root -g
 vite-cli
 </code></pre>
-<h3 id="t201.2 安装依赖">1.2 安装依赖 <a href="#t201.2 安装依赖"> # </a></h3>
-<pre><code class="lang-js">cd packages/vite-project
+            <h3 id="t201.2 安装依赖">1.2 安装依赖 <a href="#t201.2 安装依赖"> # </a></h3>
+            <pre><code class="lang-js">cd packages/vite-project
 yarn workspace vite-project add vite
 
 cd packages/vite-cli
 yarn workspace vite-cli add   es-<span class="hljs-built_in">module</span>-lexer koa koa-<span class="hljs-keyword">static</span> magic-string
 </code></pre>
-<h2 id="t212. 启动并调试">2. 启动并调试 <a href="#t212. 启动并调试"> # </a></h2>
-<h3 id="t222.1 package.json">2.1 package.json <a href="#t222.1 package.json"> # </a></h3>
-<p>packages\vite-project\package.json</p>
-<pre><code class="lang-diff">{
+            <h2 id="t212. 启动并调试">2. 启动并调试 <a href="#t212. 启动并调试"> # </a></h2>
+            <h3 id="t222.1 package.json">2.1 package.json <a href="#t222.1 package.json"> # </a></h3>
+            <p>packages\vite-project\package.json</p>
+            <pre><code class="lang-diff">{
   "name": "vite-project",
   "version": "0.0.0",
 <span class="hljs-addition">+ "scripts": {</span>
@@ -284,9 +685,9 @@ yarn workspace vite-cli add   es-<span class="hljs-built_in">module</span>-lexer
   }
 }
 </code></pre>
-<h3 id="t232.2 index.html">2.2 index.html <a href="#t232.2 index.html"> # </a></h3>
-<p>packages\vite-project\index.html</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+            <h3 id="t232.2 index.html">2.2 index.html <a href="#t232.2 index.html"> # </a></h3>
+            <p>packages\vite-project\index.html</p>
+            <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span> /&gt;</span>
@@ -299,13 +700,13 @@ yarn workspace vite-cli add   es-<span class="hljs-built_in">module</span>-lexer
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h3 id="t242.3 src\main.js">2.3 src\main.js <a href="#t242.3 src\main.js"> # </a></h3>
-<p>packages\vite-project\src\main.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'main.js'</span>);
+            <h3 id="t242.3 src\main.js">2.3 src\main.js <a href="#t242.3 src\main.js"> # </a></h3>
+            <p>packages\vite-project\src\main.js</p>
+            <pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'main.js'</span>);
 </code></pre>
-<h3 id="t252.4 launch.json">2.4 launch.json <a href="#t252.4 launch.json"> # </a></h3>
-<p>.vscode\launch.json</p>
-<pre><code class="lang-json">{
+            <h3 id="t252.4 launch.json">2.4 launch.json <a href="#t252.4 launch.json"> # </a></h3>
+            <p>.vscode\launch.json</p>
+            <pre><code class="lang-json">{
     <span class="hljs-attr">"version"</span>: <span class="hljs-string">"0.2.0"</span>,
     <span class="hljs-attr">"configurations"</span>: [
         {
@@ -328,10 +729,11 @@ yarn workspace vite-cli add   es-<span class="hljs-built_in">module</span>-lexer
     ]
 }
 </code></pre>
-<h2 id="t263. 实现静态服务">3. 实现静态服务 <a href="#t263. 实现静态服务"> # </a></h2>
-<h3 id="t273.1 serverPluginServeStatic.js">3.1 serverPluginServeStatic.js <a href="#t273.1 serverPluginServeStatic.js"> # </a></h3>
-<p>packages\vite-cli\lib\serverPluginServeStatic.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+            <h2 id="t263. 实现静态服务">3. 实现静态服务 <a href="#t263. 实现静态服务"> # </a></h2>
+            <h3 id="t273.1 serverPluginServeStatic.js">3.1 serverPluginServeStatic.js <a
+                    href="#t273.1 serverPluginServeStatic.js"> # </a></h3>
+            <p>packages\vite-cli\lib\serverPluginServeStatic.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">serveStaticPlugin</span>(<span class="hljs-params">{ app, root }</span>) </span>{
     <span class="hljs-comment">// 以当前根目录作为静态目录</span>
     app.use(<span class="hljs-built_in">require</span>(<span class="hljs-string">'koa-static'</span>)(root));
@@ -340,9 +742,9 @@ yarn workspace vite-cli add   es-<span class="hljs-built_in">module</span>-lexer
 }
 exports.serveStaticPlugin = serveStaticPlugin;
 </code></pre>
-<h3 id="t283.2 cli.js">3.2 cli.js <a href="#t283.2 cli.js"> # </a></h3>
-<p>packages\vite-cli\lib\cli.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> Koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">'koa'</span>);
+            <h3 id="t283.2 cli.js">3.2 cli.js <a href="#t283.2 cli.js"> # </a></h3>
+            <p>packages\vite-cli\lib\cli.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> Koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">'koa'</span>);
 <span class="hljs-keyword">const</span> {serveStaticPlugin} = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./serverPluginServeStatic'</span>);
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createServer</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">const</span> app = <span class="hljs-keyword">new</span> Koa();
@@ -366,38 +768,38 @@ exports.serveStaticPlugin = serveStaticPlugin;
 }
 createServer().listen(<span class="hljs-number">4000</span>);
 </code></pre>
-<h2 id="t294.重写导入路径">4.重写导入路径 <a href="#t294.重写导入路径"> # </a></h2>
-<ul>
-<li>Vue单文件组件(SFC)规范 vue文件用于表示一个单一组件，其内使用类html语法，顶级标签有template,script,style和自定义的标签</li>
-</ul>
-<h3 id="t304.1 安装">4.1 安装 <a href="#t304.1 安装"> # </a></h3>
-<pre><code class="lang-js">yarn workspace vite-project add  vue@<span class="hljs-number">3</span>  @vitejs/plugin-vue @vue/compiler-sfc
+            <h2 id="t294.重写导入路径">4.重写导入路径 <a href="#t294.重写导入路径"> # </a></h2>
+            <ul>
+                <li>Vue单文件组件(SFC)规范 vue文件用于表示一个单一组件，其内使用类html语法，顶级标签有template,script,style和自定义的标签</li>
+            </ul>
+            <h3 id="t304.1 安装">4.1 安装 <a href="#t304.1 安装"> # </a></h3>
+            <pre><code class="lang-js">yarn workspace vite-project add  vue@<span class="hljs-number">3</span>  @vitejs/plugin-vue @vue/compiler-sfc
 node ./node_modules/esbuild/install.js
 </code></pre>
-<h3 id="t314.2 nodemon.json">4.2 nodemon.json <a href="#t314.2 nodemon.json"> # </a></h3>
-<p>packages\vite-project\nodemon.json</p>
-<pre><code class="lang-json">{
+            <h3 id="t314.2 nodemon.json">4.2 nodemon.json <a href="#t314.2 nodemon.json"> # </a></h3>
+            <p>packages\vite-project\nodemon.json</p>
+            <pre><code class="lang-json">{
     <span class="hljs-attr">"watch"</span>:[<span class="hljs-string">"../vite-cli"</span>]
 }
 </code></pre>
-<pre><code class="lang-js">nodemon ../vite-cli/bin/vite.js
+            <pre><code class="lang-js">nodemon ../vite-cli/bin/vite.js
 </code></pre>
-<h3 id="t324.3 vite.config.js">4.3 vite.config.js <a href="#t324.3 vite.config.js"> # </a></h3>
-<p>packages\vite-project\vite.config.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">"vite"</span>;
+            <h3 id="t324.3 vite.config.js">4.3 vite.config.js <a href="#t324.3 vite.config.js"> # </a></h3>
+            <p>packages\vite-project\vite.config.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">"vite"</span>;
 <span class="hljs-keyword">import</span> vue <span class="hljs-keyword">from</span> <span class="hljs-string">"@vitejs/plugin-vue"</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineConfig({
   <span class="hljs-attr">plugins</span>: [vue({})],
 });
 </code></pre>
-<h3 id="t334.4 main.js">4.4 main.js <a href="#t334.4 main.js"> # </a></h3>
-<p>packages\vite-project\src\main.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import {createApp} from 'vue';</span>
+            <h3 id="t334.4 main.js">4.4 main.js <a href="#t334.4 main.js"> # </a></h3>
+            <p>packages\vite-project\src\main.js</p>
+            <pre><code class="lang-diff"><span class="hljs-addition">+import {createApp} from 'vue';</span>
 <span class="hljs-addition">+console.log(createApp);</span>
 </code></pre>
-<h3 id="t344.5 cli.js">4.5 cli.js <a href="#t344.5 cli.js"> # </a></h3>
-<p>packages\vite-cli\lib\cli.js</p>
-<pre><code class="lang-diff">const Koa = require('koa');
+            <h3 id="t344.5 cli.js">4.5 cli.js <a href="#t344.5 cli.js"> # </a></h3>
+            <p>packages\vite-cli\lib\cli.js</p>
+            <pre><code class="lang-diff">const Koa = require('koa');
 const {serveStaticPlugin} = require('./serverPluginServeStatic');
 <span class="hljs-addition">+const {moduleRewritePlugin} = require('./serverPluginModuleRewrite');</span>
 function createServer() {
@@ -425,10 +827,11 @@ createServer().listen(4000,()=&gt;{
 <span class="hljs-addition">+   console.log(`dev server running at:  http://localhost:4000/`);</span>
 });
 </code></pre>
-<h3 id="t354.6 serverPluginModuleRewrite.js">4.6 serverPluginModuleRewrite.js <a href="#t354.6 serverPluginModuleRewrite.js"> # </a></h3>
-<p>packages\vite-cli\lib\serverPluginModuleRewrite.js</p>
-<p><code>magic-string</code>是一个操作字符串和生成source-map的工具</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> MagicString = <span class="hljs-built_in">require</span>(<span class="hljs-string">'magic-string'</span>);
+            <h3 id="t354.6 serverPluginModuleRewrite.js">4.6 serverPluginModuleRewrite.js <a
+                    href="#t354.6 serverPluginModuleRewrite.js"> # </a></h3>
+            <p>packages\vite-cli\lib\serverPluginModuleRewrite.js</p>
+            <p><code>magic-string</code>是一个操作字符串和生成source-map的工具</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">var</span> MagicString = <span class="hljs-built_in">require</span>(<span class="hljs-string">'magic-string'</span>);
 <span class="hljs-keyword">var</span> magicString = <span class="hljs-keyword">new</span> MagicString(<span class="hljs-string">'export var name = "zhufeng"'</span>);
 <span class="hljs-comment">//返回magicString的克隆，删除原始字符串开头和结尾字符之前的所有内容</span>
 <span class="hljs-built_in">console</span>.log(magicString.snip(<span class="hljs-number">0</span>, <span class="hljs-number">6</span>).toString());
@@ -446,7 +849,7 @@ bundleString.addSource({
 })
 <span class="hljs-built_in">console</span>.log(bundleString.toString());
 </code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> { readBody } = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./utils"</span>);
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> { readBody } = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./utils"</span>);
 <span class="hljs-keyword">const</span> { parse } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'es-module-lexer'</span>);
 <span class="hljs-keyword">const</span> MagicString = <span class="hljs-built_in">require</span>(<span class="hljs-string">'magic-string'</span>);
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rewriteImports</span>(<span class="hljs-params">source</span>) </span>{
@@ -480,9 +883,9 @@ bundleString.addSource({
 }
 exports.moduleRewritePlugin = moduleRewritePlugin;
 </code></pre>
-<h3 id="t364.7 utils.js">4.7 utils.js <a href="#t364.7 utils.js"> # </a></h3>
-<p>packages\vite-cli\lib\utils.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> { Readable } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream'</span>)
+            <h3 id="t364.7 utils.js">4.7 utils.js <a href="#t364.7 utils.js"> # </a></h3>
+            <p>packages\vite-cli\lib\utils.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> { Readable } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream'</span>)
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">readBody</span>(<span class="hljs-params">stream</span>) </span>{
     <span class="hljs-keyword">if</span> (stream <span class="hljs-keyword">instanceof</span> Readable) {
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve</span>) =&gt;</span> {
@@ -497,10 +900,11 @@ exports.moduleRewritePlugin = moduleRewritePlugin;
 }
 exports.readBody = readBody
 </code></pre>
-<h2 id="t375.解析/@modules文件">5.解析/@modules文件 <a href="#t375.解析/@modules文件"> # </a></h2>
-<h3 id="t385.1 serverPluginModuleResolve.js">5.1 serverPluginModuleResolve.js <a href="#t385.1 serverPluginModuleResolve.js"> # </a></h3>
-<p>packages\vite-cli\lib\serverPluginModuleResolve.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>).promises;
+            <h2 id="t375.解析/@modules文件">5.解析/@modules文件 <a href="#t375.解析/@modules文件"> # </a></h2>
+            <h3 id="t385.1 serverPluginModuleResolve.js">5.1 serverPluginModuleResolve.js <a
+                    href="#t385.1 serverPluginModuleResolve.js"> # </a></h3>
+            <p>packages\vite-cli\lib\serverPluginModuleResolve.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>).promises;
 <span class="hljs-keyword">const</span> moduleRE = <span class="hljs-regexp">/^\/@modules\//</span>;
 <span class="hljs-keyword">const</span> { resolveVue } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./utils'</span>)
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">moduleResolvePlugin</span>(<span class="hljs-params">{ app, root }</span>) </span>{
@@ -519,9 +923,10 @@ exports.readBody = readBody
 }
 exports.moduleResolvePlugin = moduleResolvePlugin;
 </code></pre>
-<h3 id="t395.2 serverPluginHtml.js">5.2 serverPluginHtml.js <a href="#t395.2 serverPluginHtml.js"> # </a></h3>
-<p>packages\vite-cli\lib\serverPluginHtml.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> { readBody } = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./utils"</span>);
+            <h3 id="t395.2 serverPluginHtml.js">5.2 serverPluginHtml.js <a href="#t395.2 serverPluginHtml.js"> # </a>
+            </h3>
+            <p>packages\vite-cli\lib\serverPluginHtml.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> { readBody } = <span class="hljs-built_in">require</span>(<span class="hljs-string">"./utils"</span>);
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">htmlRewritePlugin</span>(<span class="hljs-params">{root,app}</span>)</span>{
     <span class="hljs-keyword">const</span> devInjection = <span class="hljs-string">`
     &lt;script&gt;
@@ -538,9 +943,9 @@ exports.moduleResolvePlugin = moduleResolvePlugin;
 }
 exports.htmlRewritePlugin = htmlRewritePlugin
 </code></pre>
-<h3 id="t405.3 utils.js">5.3 utils.js <a href="#t405.3 utils.js"> # </a></h3>
-<p>packages\vite-cli\lib\utils.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> { Readable } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream'</span>)
+            <h3 id="t405.3 utils.js">5.3 utils.js <a href="#t405.3 utils.js"> # </a></h3>
+            <p>packages\vite-cli\lib\utils.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> { Readable } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'stream'</span>)
 <span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">readBody</span>(<span class="hljs-params">stream</span>) </span>{
     <span class="hljs-keyword">if</span> (stream <span class="hljs-keyword">instanceof</span> Readable) {
@@ -581,9 +986,9 @@ exports.readBody = readBody
 }
 exports.resolveVue=resolveVue;
 </code></pre>
-<h3 id="t415.4 cli.js">5.4 cli.js <a href="#t415.4 cli.js"> # </a></h3>
-<p>packages\vite-cli\lib\cli.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> Koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">'koa'</span>);
+            <h3 id="t415.4 cli.js">5.4 cli.js <a href="#t415.4 cli.js"> # </a></h3>
+            <p>packages\vite-cli\lib\cli.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> Koa = <span class="hljs-built_in">require</span>(<span class="hljs-string">'koa'</span>);
 <span class="hljs-keyword">const</span> {serveStaticPlugin} = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./serverPluginServeStatic'</span>);
 <span class="hljs-keyword">const</span> {moduleRewritePlugin} = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./serverPluginModuleRewrite'</span>);
 <span class="hljs-keyword">const</span> {moduleResolvePlugin} = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./serverPluginModuleResolve'</span>);
@@ -615,16 +1020,16 @@ createServer().listen(<span class="hljs-number">4000</span>,()=&gt;{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`dev server running at:  http://localhost:4000/`</span>);
 });
 </code></pre>
-<h2 id="t426.编译vue模板">6.编译vue模板 <a href="#t426.编译vue模板"> # </a></h2>
-<h3 id="t436.1 main.js">6.1 main.js <a href="#t436.1 main.js"> # </a></h3>
-<p>packages\vite-project\src\main.js</p>
-<pre><code class="lang-diff">import {createApp} from 'vue';
+            <h2 id="t426.编译vue模板">6.编译vue模板 <a href="#t426.编译vue模板"> # </a></h2>
+            <h3 id="t436.1 main.js">6.1 main.js <a href="#t436.1 main.js"> # </a></h3>
+            <p>packages\vite-project\src\main.js</p>
+            <pre><code class="lang-diff">import {createApp} from 'vue';
 <span class="hljs-addition">+import App from './App.vue';</span>
 <span class="hljs-addition">+createApp(App).mount("#app");</span>
 </code></pre>
-<h3 id="t446.2 App.vue">6.2 App.vue <a href="#t446.2 App.vue"> # </a></h3>
-<p>packages\vite-project\src\App.vue</p>
-<pre><code class="lang-js">&lt;template&gt;
+            <h3 id="t446.2 App.vue">6.2 App.vue <a href="#t446.2 App.vue"> # </a></h3>
+            <p>packages\vite-project\src\App.vue</p>
+            <pre><code class="lang-js">&lt;template&gt;
     &lt;h1&gt;App&lt;/h1&gt;
 &lt;/template&gt;
 &lt;script&gt;
@@ -633,9 +1038,9 @@ export default {
 }
 &lt;/script&gt;
 </code></pre>
-<h3 id="t456.3 serverPluginVue.js">6.3 serverPluginVue.js <a href="#t456.3 serverPluginVue.js"> # </a></h3>
-<p>packages\vite-cli\lib\serverPluginVue.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+            <h3 id="t456.3 serverPluginVue.js">6.3 serverPluginVue.js <a href="#t456.3 serverPluginVue.js"> # </a></h3>
+            <p>packages\vite-cli\lib\serverPluginVue.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
 <span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>).promises;
 <span class="hljs-keyword">const</span> { resolveVue } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./utils'</span>);
 <span class="hljs-keyword">const</span> defaultExportRE = <span class="hljs-regexp">/((?:^|\n|;)\s*)export default/</span>
@@ -680,9 +1085,9 @@ export default {
 }
 exports.serverPluginVue = serverPluginVue;
 </code></pre>
-<h3 id="t466.4 cli.js">6.4 cli.js <a href="#t466.4 cli.js"> # </a></h3>
-<p>packages\vite-cli\lib\cli.js</p>
-<pre><code class="lang-diff">const Koa = require('koa');
+            <h3 id="t466.4 cli.js">6.4 cli.js <a href="#t466.4 cli.js"> # </a></h3>
+            <p>packages\vite-cli\lib\cli.js</p>
+            <pre><code class="lang-diff">const Koa = require('koa');
 const {serveStaticPlugin} = require('./serverPluginServeStatic');
 const {moduleRewritePlugin} = require('./serverPluginModuleRewrite');
 const {moduleResolvePlugin} = require('./serverPluginModuleResolve');
@@ -717,6 +1122,6 @@ createServer().listen(4000,()=&gt;{
 });
 </code></pre>
 
+        </div>
     </div>
-</div>
 </body>

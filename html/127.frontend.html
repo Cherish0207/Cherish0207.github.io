@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        .page-toc > ul .red {
+        .page-toc>ul .red {
             background: #f3f3f3;
             z-index: 1;
             border-left: 3px solid #009a61;
@@ -15,241 +15,623 @@
         }
     </style>
 </head>
+
 <body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li class="active"><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
+    <div class="nav">
+        <div class="logo">
 
-                        
-<div class="warpper">
-    <div class="page-toc">
-        <ul><li><a href="#t01.大厂">1.大厂</a></li><li><a href="#t12.职级">2.职级</a></li><li><a href="#t23.晋升">3.晋升</a></li><li><a href="#t34.能力模型">4.能力模型</a><ul><li><a href="#t44.1编程能力">4.1编程能力</a></li><li><a href="#t54.2工程能力">4.2工程能力</a></li><li><a href="#t64.3架构能力">4.3架构能力</a></li></ul></li><li><a href="#t75.级别">5.级别</a><ul><li><a href="#t85.1 初级(一般外包开发公司,月薪8000左右)">5.1 初级(一般外包开发公司,月薪8000左右)</a><ul><li><a href="#t95.1.1 编程能力">5.1.1 编程能力</a></li><li><a href="#t105.1.2 工程能力">5.1.2 工程能力</a></li><li><a href="#t115.1.3 架构能力">5.1.3 架构能力</a></li></ul></li><li><a href="#t125.2 中级(创业公司、一线互联网企业月薪 20000 左右)">5.2 中级(创业公司、一线互联网企业月薪 20000 左右)</a><ul><li><a href="#t135.2.1 编程能力">5.2.1 编程能力</a></li><li><a href="#t145.2.2 工程能力">5.2.2 工程能力</a></li><li><a href="#t155.2.3 架构能力">5.2.3 架构能力</a></li></ul></li><li><a href="#t165.3 高级(" 一线互联网企业、bat月薪="" 30000="" 以上")"="">5.3 高级("一线互联网企业、BAT月薪 30000 以上")</a><ul><li><a href="#t175.3.1 编程能力">5.3.1 编程能力</a></li><li><a href="#t185.3.2 工程能力">5.3.2 工程能力</a></li><li><a href="#t195.3.3 架构能力">5.3.3 架构能力</a></li></ul></li></ul></li><li><a href="#t206.简历">6.简历</a></li><li><a href="#t217.面试">7.面试</a></li><li><a href="#t228.知识点">8.知识点</a><ul><li><a href="#t238.1 CSS">8.1 CSS</a></li><li><a href="#t248.2.JavaScript">8.2.JavaScript</a></li><li><a href="#t258.3.HTML&amp;浏览器">8.3.HTML&amp;浏览器</a></li><li><a href="#t268.4.性能优化">8.4.性能优化</a></li><li><a href="#t278.5.工程化">8.5.工程化</a></li><li><a href="#t288.6.React">8.6.React</a></li><li><a href="#t298.7.Vue">8.7.Vue</a></li><li><a href="#t308.8.算法">8.8.算法</a></li><li><a href="#t318.9.编程">8.9.编程</a></li><li><a href="#t328.10.操作系统">8.10.操作系统</a></li><li><a href="#t338.11.网络">8.11.网络</a></li><li><a href="#t348.12.Node">8.12.Node</a></li><li><a href="#t358.13.架构与模式">8.13.架构与模式</a></li></ul></li></ul>
-    </div>
-    <div class="content markdown-body">
-        <h2 id="t01.大厂">1.大厂 <a href="#t01.大厂"> # </a></h2>
-<p><img style="width=100%" src="https://img.zhufengpeixun.com/5aea32ff3f77a7535669e42d0492eb27"></p>
-<h2 id="t12.职级">2.职级 <a href="#t12.职级"> # </a></h2>
-<p><img style="width=100%" src="https://img.zhufengpeixun.com/8538db162dfaba99de0386d105b307f0"></p>
-<h2 id="t23.晋升">3.晋升 <a href="#t23.晋升"> # </a></h2>
-<ul>
-<li>P5 对应工作 0～2 年，大部分人会在参加工作后 1～4 年内升到下一级别</li>
-<li>P6 对应工作 2～5 年，大部分人会在参加工作后 3～8 年内升到下一级别</li>
-<li>P7 对应工作 5～8 年</li>
-<li>P8 对应工作 8～12 年</li>
-</ul>
-<h2 id="t34.能力模型">4.能力模型 <a href="#t34.能力模型"> # </a></h2>
-<h3 id="t44.1编程能力">4.1编程能力 <a href="#t44.1编程能力"> # </a></h3>
-<ul>
-<li>创造高质量合规代码(具备低耦合，高扩展性，高性能，安全性等特征）及相关工具的能力。<h3 id="t54.2工程能力">4.2工程能力 <a href="#t54.2工程能力"> # </a></h3>
-</li>
-<li>使用各种（开发、调式、编译、测试、部署等）工具，提升项目开发过程中编码体验和交付质量的能力。<h3 id="t64.3架构能力">4.3架构能力 <a href="#t64.3架构能力"> # </a></h3>
-</li>
-<li>灵活运用各种编码、工程、网络等技术，从技术选型、模块划分、开发部署、产品交付、系统监控等多个方面，从无到有地设计、统筹大型前端项目的能力</li>
-</ul>
-<h2 id="t75.级别">5.级别 <a href="#t75.级别"> # </a></h2>
-<h3 id="t85.1 初级(一般外包开发公司,月薪8000左右)">5.1 初级(一般外包开发公司,月薪8000左右) <a href="#t85.1 初级(一般外包开发公司,月薪8000左右)"> # </a></h3>
-<h4 id="t95.1.1 编程能力">5.1.1 编程能力 <a href="#t95.1.1 编程能力"> # </a></h4>
-<ul>
-<li>可以使用 HTML 和 CSS 还原简单的页面</li>
-<li>可以使用 HTML 和 CSS 还原较复杂的页面，并可以使用 JavaScript 做一些简单的动效</li>
-<li>熟练掌握 HTML/CSS 和 JavaScript ，能和其他岗位配合，做相对简单的网站或系统开发</li>
-<li>进一步夯实语言基础（如面向对象、正则表达式等），熟悉常见的算法，掌握一种流行的开发框架<h4 id="t105.1.2 工程能力">5.1.2 工程能力 <a href="#t105.1.2 工程能力"> # </a></h4>
-</li>
-<li>了解常用前端开发工具，并对代码进行测试、调试定位问题</li>
-<li>了解常见的工程化工具（Webpack，Babel 等），熟悉网络抓包工具（Fiddler，Whistle等），熟悉版本管理工具（Git等）<h4 id="t115.1.3 架构能力">5.1.3 架构能力 <a href="#t115.1.3 架构能力"> # </a></h4>
-</li>
-<li>熟悉基本的网络的知识（例如：HTTP、TCP/ IP）</li>
-</ul>
-<h3 id="t125.2 中级(创业公司、一线互联网企业月薪 20000 左右)">5.2 中级(创业公司、一线互联网企业月薪 20000 左右) <a href="#t125.2 中级(创业公司、一线互联网企业月薪 20000 左右)"> # </a></h3>
-<h4 id="t135.2.1 编程能力">5.2.1 编程能力 <a href="#t135.2.1 编程能力"> # </a></h4>
-<ul>
-<li>熟悉多种流行框架，深入理解其中一种的设计原理；熟悉常见的设计模式；了解 Node.js 的一些基本概念</li>
-<li>可以提炼模块，输出高质量的代码，并且有基本的性能考量；可以比较快速地熟悉小程序开发、TypeScript 等。</li>
-<li>熟悉前端技术标准，熟悉浏览器兼容性问题，熟练掌握和运用常见的设计模式；开始熟悉 Node.js 常见 API 。</li>
-<li>能编写符合规范、高性能、易维护的代码，并注重代码的复用性、维护性和扩展性。<h4 id="t145.2.2 工程能力">5.2.2 工程能力 <a href="#t145.2.2 工程能力"> # </a></h4>
-</li>
-<li>更深入的认识工程化工具（Webpack，Babel）、版本管理工具（Git）等各种工具，了解其设计原理。</li>
-<li>掌握自动化测试工具来保障代码质量，编写文档来保障代码的可读和可维护。</li>
-<li>能给各种工具编写插件，可以串联掌握各种工具，初步实现开发、测试、部署的自动化。</li>
-<li>能根据项目需要编写（常见或不常见的）工具，提升代码质量和提升开发效率（例如：NodeJS扩展，浏览器插件，Electron工具）<h4 id="t155.2.3 架构能力">5.2.3 架构能力 <a href="#t155.2.3 架构能力"> # </a></h4>
-</li>
-<li>了解浏览器/小程序等常见运行端的技术原理及其架构；开始认识到网络安全的重要性</li>
-<li>深入理解HTTP协议，及其常用用法。综合网络和端（浏览器、小程序等）的设计原理，熟悉网站的各种性能指标。</li>
-<li>熟悉业务开发中常见的前后台通讯协议，（例如：Protobuffer，JCE，HTTP最佳实践）；熟悉服务器开发的基本过程</li>
-<li>有日志、监控的意识，注意生产环境的质量；有系统层面定位问题的能力（协议不合理、网络瓶颈、浏览器限制等），并给出优化方案</li>
-</ul>
-<h3 id="t165.3 高级(&quot;一线互联网企业、BAT月薪 30000 以上&quot;)">5.3 高级("一线互联网企业、BAT月薪 30000 以上") <a 30000="" href="#t165.3 高级(" 一线互联网企业、bat月薪="" 以上")"=""> # </a></h3>
-<h4 id="t175.3.1 编程能力">5.3.1 编程能力 <a href="#t175.3.1 编程能力"> # </a></h4>
-<ul>
-<li>综合 T1-T8 的编码能力，有能力从整个项目的角度提炼和输出组件和框架，同时有能力指导他人写出更好的代码。<h4 id="t185.3.2 工程能力">5.3.2 工程能力 <a href="#t185.3.2 工程能力"> # </a></h4>
-</li>
-<li>从团队和业务角度，建设工程化体系，创造生产力引擎/生产线，系统化的提升效能，并用于组织大规模生产。<h4 id="t195.3.3 架构能力">5.3.3 架构能力 <a href="#t195.3.3 架构能力"> # </a></h4>
-</li>
-<li>综合编码能力和工程能力，同时结合对客户端、网络、服务器等节点的理解，独立完成中大型项目的设计。</li>
-</ul>
-<h2 id="t206.简历">6.简历 <a href="#t206.简历"> # </a></h2>
-<ul>
-<li>大厂简历筛选有一套机制，有大厂经历或学历好或经验匹配的会比较容易通过筛选，缺少光环的需要有其他东西来证明，比如优秀的项目经历，参与过好的开源项目等</li>
-<li>简历上描述的技术/内容/项目确保自己是真的熟悉/掌握，看看每个技能是不是自己真的掌握了，能说出个1.2.3；每个项目是否自己能说清楚，一些细节是否了解，有哪些复盘点，是否有改进空间</li>
-<li>简历上描述的应该是与目标岗位直接/间接相关的，其他的比较优秀的点可以一笔带过，不需要花大篇幅介绍这些与目标岗位不符的能力</li>
-<li>面试官简历评估时也会看跳槽频率，像1年1跳这种会被评为不稳定，这时除非学历/经历特别出色的，其他基本就不通过了</li>
-</ul>
-<h2 id="t217.面试">7.面试 <a href="#t217.面试"> # </a></h2>
-<ul>
-<li>面试除了技能/项目知识外，状态也很重要；接到面试电话说明简历评估通过了，时间可以你自己定，如果没准备好，可以把时间拉长些，给自己一些准备时间；要求当场面试的可以礼貌拒绝然后定一个合适的时间</li>
-<li>对不同工作年限的同学会有不同的要求，校招主要看潜力，所以基础（计算机、网络）和算法会考得比较多；1~3年除了潜力外还看经验是否与业务匹配，项目经验；3~5年看是否有独挡一面的能力，需要在技术上有较好的深度，在做事情方面有自己的一套；大于5年的除了深度外对广度也有要求，且需要有跨端和架构设计的能力，对于管理岗位也会看带团队的能力</li>
-<li>面试时遇到不会的不用慌，每个人的知识面不一样，碰到不会的很正常，但可以积极思考，首先坦诚表示没有了解过相关知识，然后以现有的知识体系思考下这个问题，说明思路，合理猜测结果</li>
-<li>有时会有面试官会刻意施加压力，这时不在于问题回答的是否正确，而在于是否能在这些压力下仍然能够理性思考，面对面试官的每个问题，可以尝试想下面试官问这个问题的背后目的是什么</li>
-</ul>
-<h2 id="t228.知识点">8.知识点 <a href="#t228.知识点"> # </a></h2>
-<h3 id="t238.1 CSS">8.1 CSS <a href="#t238.1 CSS"> # </a></h3>
-<ul>
-<li>盒子模型</li>
-<li>CSS选择器</li>
-<li>BFC</li>
-<li>position</li>
-<li>flex布局</li>
-<li>css优先级</li>
-<li>双飞冀/圣杯布局</li>
-<li>CSS3新特性</li>
-<li>CSS样式隔离</li>
-<li>CSS性能优化</li>
-<li>层叠上下文</li>
-<li>div居中</li>
-<li>浮动<h3 id="t248.2.JavaScript">8.2.JavaScript <a href="#t248.2.JavaScript"> # </a></h3>
-</li>
-<li>原型链</li>
-<li>继承</li>
-<li>作用域</li>
-<li>闭包</li>
-<li>变量提升</li>
-<li>this的指向</li>
-<li>立即执行函数</li>
-<li>instanceof原理</li>
-<li>bind的实现</li>
-<li>apply和call</li>
-<li>柯里化</li>
-<li>v8垃圾回收机制</li>
-<li>浮点数精度</li>
-<li>new操作符</li>
-<li>事件循环机制</li>
-<li>promise原理</li>
-<li>generator原理<h3 id="t258.3.HTML&amp;浏览器">8.3.HTML&amp;浏览器 <a href="#t258.3.HTML&amp;浏览器"> # </a></h3>
-</li>
-<li>行内元素、块级元素</li>
-<li>跨标签页通信</li>
-<li>history和hash两种路由</li>
-<li>DOM树</li>
-<li>事件模型</li>
-<li>缓存策略</li>
-<li>浏览器架构</li>
-<li>浏览器工作原理</li>
-<li>内存泄露<h3 id="t268.4.性能优化">8.4.性能优化 <a href="#t268.4.性能优化"> # </a></h3>
-</li>
-<li>前端性能优化指标</li>
-<li>前端性能优化手段</li>
-<li>重排和重绘</li>
-<li>白屏</li>
-<li>大量图片加载优化</li>
-<li>描述下浏览器从输入网址到页面展现的整个过程</li>
-<li>动画性能</li>
-<li>渲染合成层<h3 id="t278.5.工程化">8.5.工程化 <a href="#t278.5.工程化"> # </a></h3>
-</li>
-<li>模块化机制</li>
-<li>tree shaking</li>
-<li>uglify原理</li>
-<li>babel原理</li>
-<li>webpack工作流程</li>
-<li>webpack插件机制</li>
-<li>webpack loader机制</li>
-<li>前端微服务<h3 id="t288.6.React">8.6.React <a href="#t288.6.React"> # </a></h3>
-</li>
-<li>合成事件</li>
-<li>virtual dom</li>
-<li>setState过程</li>
-<li>fiber</li>
-<li>高阶组件</li>
-<li>错误处理</li>
-<li>性能优化</li>
-<li>redux核心原则</li>
-<li>redux核心逻辑<h3 id="t298.7.Vue">8.7.Vue <a href="#t298.7.Vue"> # </a></h3>
-</li>
-<li>数据绑定原理</li>
-<li>computed和watch</li>
-<li>slot</li>
-<li>next tick原理</li>
-<li>keep alive<h3 id="t308.8.算法">8.8.算法 <a href="#t308.8.算法"> # </a></h3>
-</li>
-<li>斐波那契数列</li>
-<li>合并二维有序数组成一维有序数组</li>
-<li>链表：反转链表</li>
-<li>链表：链表有环</li>
-<li>堆栈队列：判断括号字符串是否有效</li>
-<li>返回数组中第k个最大元素</li>
-<li>找出数组中和为sum的n个数</li>
-<li>贪心：具有给定数值的最小字符串</li>
-<li>二叉树：最大深度</li>
-<li>二叉树：层次遍历</li>
-<li>剪枝：判断数独是否有效</li>
-<li>二分查找：求解平方根</li>
-<li>字典树：实现一个字典树</li>
-<li>爬楼梯问题</li>
-<li>最短距离</li>
-<li>LRU缓存</li>
-<li>翻转二叉树<h3 id="t318.9.编程">8.9.编程 <a href="#t318.9.编程"> # </a></h3>
-</li>
-<li>实现一个trim方法</li>
-<li>实现一个deepClone方法</li>
-<li>实现 add(1)(2)(3)</li>
-<li>大数相加</li>
-<li>拍平数组</li>
-<li>实现防抖函数</li>
-<li>实现节流函数</li>
-<li>实现字符串翻转</li>
-<li>数组去重</li>
-<li>实现千位分隔符</li>
-<li>判断是否是回文数</li>
-<li>实现一个模板引擎</li>
-<li>判断一个数是否是素数</li>
-<li>获取n以内所有的素数<h3 id="t328.10.操作系统">8.10.操作系统 <a href="#t328.10.操作系统"> # </a></h3>
-</li>
-<li>进程和线程</li>
-<li>进程通信</li>
-<li>进程调度策略</li>
-<li>死锁</li>
-<li>IO多路复用<h3 id="t338.11.网络">8.11.网络 <a href="#t338.11.网络"> # </a></h3>
-</li>
-<li>七层网络模型</li>
-<li>http</li>
-<li>https</li>
-<li>http2.0</li>
-<li>http3.0</li>
-<li>websocket</li>
-<li>tcp</li>
-<li>udp<h3 id="t348.12.Node">8.12.Node <a href="#t348.12.Node"> # </a></h3>
-</li>
-<li>模块机制</li>
-<li>require原理</li>
-<li>事件循环</li>
-<li>cluster原理</li>
-<li>流机制</li>
-<li>pipe原理</li>
-<li>守护进程</li>
-<li>进程通信</li>
-<li>异常处理<h3 id="t358.13.架构与模式">8.13.架构与模式 <a href="#t358.13.架构与模式"> # </a></h3>
-</li>
-<li>常用设计模式</li>
-<li>重构</li>
-<li>MVVM</li>
-<li>MVC</li>
-<li>MVP</li>
-</ul>
-<p><img src="../C:\Users\83687\Desktop\temp\下载.png" alt=""></p>
+            珠峰架构师成长计划
 
+        </div>
+        <ul>
+            <li><a href="../index.html">0.Async</a></li>
+            <li><a href="../html/0.editor.html">0.editor</a></li>
+            <li><a href="../html/0.module.html">0.module</a></li>
+            <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+            <li><a href="../html/2.Promise.html">2.Promise</a></li>
+            <li><a href="../html/3.Node.html">3.Node</a></li>
+            <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+            <li><a href="../html/5.REPL.html">5.REPL</a></li>
+            <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+            <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+            <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+            <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+            <li><a href="../html/10.fs.html">10.fs</a></li>
+            <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+            <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+            <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+            <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+            <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+            <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+            <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+            <li><a href="../html/13.tcp.html">13.tcp</a></li>
+            <li><a href="../html/14.http-1.html">14.http-1</a></li>
+            <li><a href="../html/14.http-2.html">14.http-2</a></li>
+            <li><a href="../html/15.compress.html">15.compress</a></li>
+            <li><a href="../html/16.crypto.html">16.crypto</a></li>
+            <li><a href="../html/17.process.html">17.process</a></li>
+            <li><a href="../html/18.yargs.html">18.yargs</a></li>
+            <li><a href="../html/19.cache.html">19.cache</a></li>
+            <li><a href="../html/20.action.html">20.action</a></li>
+            <li><a href="../html/21.https.html">21.https</a></li>
+            <li><a href="../html/22.cookie.html">22.cookie</a></li>
+            <li><a href="../html/23.session.html">23.session</a></li>
+            <li><a href="../html/24.express-1.html">24.express-1</a></li>
+            <li><a href="../html/24.express-2.html">24.express-2</a></li>
+            <li><a href="../html/24.express-3.html">24.express-3</a></li>
+            <li><a href="../html/24.express-4.html">24.express-4</a></li>
+            <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+            <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+            <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+            <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+            <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+            <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+            <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+            <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+            <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+            <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+            <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+            <li><a href="../html/28.redux.html">28.redux</a></li>
+            <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+            <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+            <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+            <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+            <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+            <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+            <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+            <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+            <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+            <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+            <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+            <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+            <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+            <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+            <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+            <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+            <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+            <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+            <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+            <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+            <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+            <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+            <li><a href="../html/31.dva.html">31.dva</a></li>
+            <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+            <li><a href="../html/33.redis.html">33.redis</a></li>
+            <li><a href="../html/34.unittest.html">34.unittest</a></li>
+            <li><a href="../html/35.jwt.html">35.jwt</a></li>
+            <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+            <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+            <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+            <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+            <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+            <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+            <li><a href="../html/38.chat.html">38.chat</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+            <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+            <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+            <li><a href="../html/40.deploy.html">40.deploy</a></li>
+            <li><a href="../html/41.safe.html">41.safe</a></li>
+            <li><a href="../html/42.test.html">42.test</a></li>
+            <li><a href="../html/43.nginx.html">43.nginx</a></li>
+            <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+            <li><a href="../html/45.docker.html">45.docker</a></li>
+            <li><a href="../html/46.elastic.html">46.elastic</a></li>
+            <li><a href="../html/47.oauth.html">47.oauth</a></li>
+            <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/52.UML.html">52.UML</a></li>
+            <li><a href="../html/53.design.html">53.design</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/54.linux.html">54.linux</a></li>
+            <li><a href="../html/57.ts.html">57.ts</a></li>
+            <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+            <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+            <li><a href="../html/59.ketang.html">59.ketang</a></li>
+            <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+            <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+            <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+            <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+            <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+            <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+            <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+            <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+            <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+            <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+            <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+            <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+            <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+            <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+            <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+            <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+            <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+            <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+            <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+            <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+            <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+            <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+            <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+            <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+            <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+            <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+            <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+            <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+            <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+            <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+            <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+            <li><a href="../html/64.1.router.html">64.1.router</a></li>
+            <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+            <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+            <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+            <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+            <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+            <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+            <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+            <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+            <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+            <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+            <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+            <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+            <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+            <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+            <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+            <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+            <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+            <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+            <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+            <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+            <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+            <li><a href="../html/67-1-network.html">67-1-network</a></li>
+            <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+            <li><a href="../html/7.npm2.html">7.npm2</a></li>
+            <li><a href="../html/69-hooks.html">69-hooks</a></li>
+            <li><a href="../html/70-deploy.html">70-deploy</a></li>
+            <li><a href="../html/71-hmr.html">71-hmr</a></li>
+            <li><a href="../html/72.deploy.html">72.deploy</a></li>
+            <li><a href="../html/73.import.html">73.import</a></li>
+            <li><a href="../html/74.mobile.html">74.mobile</a></li>
+            <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+            <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+            <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+            <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+            <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+            <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+            <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+            <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+            <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+            <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+            <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+            <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+            <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+            <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+            <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+            <li><a href="../html/79.grammar.html">79.grammar</a></li>
+            <li><a href="../html/80.tree.html">80.tree</a></li>
+            <li><a href="../html/81.axios.html">81.axios</a></li>
+            <li><a href="../html/82.1.react.html">82.1.react</a></li>
+            <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+            <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+            <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+            <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+            <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+            <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+            <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+            <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+            <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+            <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+            <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+            <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+            <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+            <li><a href="../html/83.upload.html">83.upload</a></li>
+            <li><a href="../html/84.graphql.html">84.graphql</a></li>
+            <li><a href="../html/85.antpro.html">85.antpro</a></li>
+            <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+            <li><a href="../html/86.2.design.html">86.2.design</a></li>
+            <li><a href="../html/87.postcss.html">87.postcss</a></li>
+            <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+            <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+            <li><a href="../html/90.react-test.html">90.react-test</a></li>
+            <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+            <li><a href="../html/92.rbac.html">92.rbac</a></li>
+            <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+            <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+            <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+            <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+            <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+            <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+            <li><a href="../html/94.6.https.html">94.6.https</a></li>
+            <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+            <li><a href="../html/95.1. react.html">95.1. react</a></li>
+            <li><a href="../html/95.2.react.html">95.2.react</a></li>
+            <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+            <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+            <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+            <li><a href="../html/97.serverless.html">97.serverless</a></li>
+            <li><a href="../html/98.websocket.html">98.websocket</a></li>
+            <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+            <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+            <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+            <li><a href="../html/102.java.html">102.java</a></li>
+            <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+            <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+            <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+            <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+            <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+            <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+            <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+            <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+            <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+            <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+            <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+            <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+            <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+            <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+            <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+            <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+            <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+            <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+            <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+            <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+            <li><a href="../html/106.1.react.html">106.1.react</a></li>
+            <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+            <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+            <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+            <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+            <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+            <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+            <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+            <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+            <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+            <li><a href="../html/107.fiber.html">107.fiber</a></li>
+            <li><a href="../html/108.http.html">108.http</a></li>
+            <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+            <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+            <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+            <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+            <li><a href="../html/111.xstate.html">111.xstate</a></li>
+            <li><a href="../html/112.Form.html">112.Form</a></li>
+            <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+            <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+            <li><a href="../html/115.immer.html">115.immer</a></li>
+            <li><a href="../html/116.pro5.html">116.pro5</a></li>
+            <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+            <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+            <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+            <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+            <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+            <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+            <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+            <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+            <li><a href="../html/124.next.js.html">124.next.js</a></li>
+            <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+            <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+            <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+            <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+            <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+            <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+            <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+            <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+            <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+            <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+            <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+            <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+            <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+            <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+            <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+            <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+            <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+            <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+            <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+            <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+            <li class="active"><a href="../html/127.frontend.html">127.frontend</a></li>
+            <li><a href="../html/128.rollup.html">128.rollup</a></li>
+            <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+            <li><a href="../html/130.health.html">130.health</a></li>
+            <li><a href="../html/131.hooks.html">131.hooks</a></li>
+            <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+            <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+            <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+            <li><a href="../html/134.react18.html">134.react18</a></li>
+            <li><a href="../html/135.function.html">135.function</a></li>
+            <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+        </ul>
     </div>
-</div>
+
+
+    <div class="warpper">
+        <div class="page-toc">
+            <ul>
+                <li><a href="#t01.大厂">1.大厂</a></li>
+                <li><a href="#t12.职级">2.职级</a></li>
+                <li><a href="#t23.晋升">3.晋升</a></li>
+                <li><a href="#t34.能力模型">4.能力模型</a>
+                    <ul>
+                        <li><a href="#t44.1编程能力">4.1编程能力</a></li>
+                        <li><a href="#t54.2工程能力">4.2工程能力</a></li>
+                        <li><a href="#t64.3架构能力">4.3架构能力</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t75.级别">5.级别</a>
+                    <ul>
+                        <li><a href="#t85.1 初级(一般外包开发公司,月薪8000左右)">5.1 初级(一般外包开发公司,月薪8000左右)</a>
+                            <ul>
+                                <li><a href="#t95.1.1 编程能力">5.1.1 编程能力</a></li>
+                                <li><a href="#t105.1.2 工程能力">5.1.2 工程能力</a></li>
+                                <li><a href="#t115.1.3 架构能力">5.1.3 架构能力</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t125.2 中级(创业公司、一线互联网企业月薪 20000 左右)">5.2 中级(创业公司、一线互联网企业月薪 20000 左右)</a>
+                            <ul>
+                                <li><a href="#t135.2.1 编程能力">5.2.1 编程能力</a></li>
+                                <li><a href="#t145.2.2 工程能力">5.2.2 工程能力</a></li>
+                                <li><a href="#t155.2.3 架构能力">5.2.3 架构能力</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#t165.3 高级(" 一线互联网企业、bat月薪="" 30000="" 以上")"="">5.3 高级("一线互联网企业、BAT月薪 30000
+                                以上")</a>
+                            <ul>
+                                <li><a href="#t175.3.1 编程能力">5.3.1 编程能力</a></li>
+                                <li><a href="#t185.3.2 工程能力">5.3.2 工程能力</a></li>
+                                <li><a href="#t195.3.3 架构能力">5.3.3 架构能力</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#t206.简历">6.简历</a></li>
+                <li><a href="#t217.面试">7.面试</a></li>
+                <li><a href="#t228.知识点">8.知识点</a>
+                    <ul>
+                        <li><a href="#t238.1 CSS">8.1 CSS</a></li>
+                        <li><a href="#t248.2.JavaScript">8.2.JavaScript</a></li>
+                        <li><a href="#t258.3.HTML&amp;浏览器">8.3.HTML&amp;浏览器</a></li>
+                        <li><a href="#t268.4.性能优化">8.4.性能优化</a></li>
+                        <li><a href="#t278.5.工程化">8.5.工程化</a></li>
+                        <li><a href="#t288.6.React">8.6.React</a></li>
+                        <li><a href="#t298.7.Vue">8.7.Vue</a></li>
+                        <li><a href="#t308.8.算法">8.8.算法</a></li>
+                        <li><a href="#t318.9.编程">8.9.编程</a></li>
+                        <li><a href="#t328.10.操作系统">8.10.操作系统</a></li>
+                        <li><a href="#t338.11.网络">8.11.网络</a></li>
+                        <li><a href="#t348.12.Node">8.12.Node</a></li>
+                        <li><a href="#t358.13.架构与模式">8.13.架构与模式</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content markdown-body">
+            <h2 id="t01.大厂">1.大厂 <a href="#t01.大厂"> # </a></h2>
+            <p><img style="width=100%" src="https://img.zhufengpeixun.com/5aea32ff3f77a7535669e42d0492eb27"></p>
+            <h2 id="t12.职级">2.职级 <a href="#t12.职级"> # </a></h2>
+            <p><img style="width=100%" src="https://img.zhufengpeixun.com/8538db162dfaba99de0386d105b307f0"></p>
+            <h2 id="t23.晋升">3.晋升 <a href="#t23.晋升"> # </a></h2>
+            <ul>
+                <li>P5 对应工作 0～2 年，大部分人会在参加工作后 1～4 年内升到下一级别</li>
+                <li>P6 对应工作 2～5 年，大部分人会在参加工作后 3～8 年内升到下一级别</li>
+                <li>P7 对应工作 5～8 年</li>
+                <li>P8 对应工作 8～12 年</li>
+            </ul>
+            <h2 id="t34.能力模型">4.能力模型 <a href="#t34.能力模型"> # </a></h2>
+            <h3 id="t44.1编程能力">4.1编程能力 <a href="#t44.1编程能力"> # </a></h3>
+            <ul>
+                <li>创造高质量合规代码(具备低耦合，高扩展性，高性能，安全性等特征）及相关工具的能力。<h3 id="t54.2工程能力">4.2工程能力 <a href="#t54.2工程能力"> # </a>
+                    </h3>
+                </li>
+                <li>使用各种（开发、调式、编译、测试、部署等）工具，提升项目开发过程中编码体验和交付质量的能力。<h3 id="t64.3架构能力">4.3架构能力 <a href="#t64.3架构能力"> #
+                        </a></h3>
+                </li>
+                <li>灵活运用各种编码、工程、网络等技术，从技术选型、模块划分、开发部署、产品交付、系统监控等多个方面，从无到有地设计、统筹大型前端项目的能力</li>
+            </ul>
+            <h2 id="t75.级别">5.级别 <a href="#t75.级别"> # </a></h2>
+            <h3 id="t85.1 初级(一般外包开发公司,月薪8000左右)">5.1 初级(一般外包开发公司,月薪8000左右) <a href="#t85.1 初级(一般外包开发公司,月薪8000左右)"> #
+                </a></h3>
+            <h4 id="t95.1.1 编程能力">5.1.1 编程能力 <a href="#t95.1.1 编程能力"> # </a></h4>
+            <ul>
+                <li>可以使用 HTML 和 CSS 还原简单的页面</li>
+                <li>可以使用 HTML 和 CSS 还原较复杂的页面，并可以使用 JavaScript 做一些简单的动效</li>
+                <li>熟练掌握 HTML/CSS 和 JavaScript ，能和其他岗位配合，做相对简单的网站或系统开发</li>
+                <li>进一步夯实语言基础（如面向对象、正则表达式等），熟悉常见的算法，掌握一种流行的开发框架<h4 id="t105.1.2 工程能力">5.1.2 工程能力 <a
+                            href="#t105.1.2 工程能力"> # </a></h4>
+                </li>
+                <li>了解常用前端开发工具，并对代码进行测试、调试定位问题</li>
+                <li>了解常见的工程化工具（Webpack，Babel 等），熟悉网络抓包工具（Fiddler，Whistle等），熟悉版本管理工具（Git等）<h4 id="t115.1.3 架构能力">5.1.3
+                        架构能力 <a href="#t115.1.3 架构能力"> # </a></h4>
+                </li>
+                <li>熟悉基本的网络的知识（例如：HTTP、TCP/ IP）</li>
+            </ul>
+            <h3 id="t125.2 中级(创业公司、一线互联网企业月薪 20000 左右)">5.2 中级(创业公司、一线互联网企业月薪 20000 左右) <a
+                    href="#t125.2 中级(创业公司、一线互联网企业月薪 20000 左右)"> # </a></h3>
+            <h4 id="t135.2.1 编程能力">5.2.1 编程能力 <a href="#t135.2.1 编程能力"> # </a></h4>
+            <ul>
+                <li>熟悉多种流行框架，深入理解其中一种的设计原理；熟悉常见的设计模式；了解 Node.js 的一些基本概念</li>
+                <li>可以提炼模块，输出高质量的代码，并且有基本的性能考量；可以比较快速地熟悉小程序开发、TypeScript 等。</li>
+                <li>熟悉前端技术标准，熟悉浏览器兼容性问题，熟练掌握和运用常见的设计模式；开始熟悉 Node.js 常见 API 。</li>
+                <li>能编写符合规范、高性能、易维护的代码，并注重代码的复用性、维护性和扩展性。<h4 id="t145.2.2 工程能力">5.2.2 工程能力 <a href="#t145.2.2 工程能力"> #
+                        </a></h4>
+                </li>
+                <li>更深入的认识工程化工具（Webpack，Babel）、版本管理工具（Git）等各种工具，了解其设计原理。</li>
+                <li>掌握自动化测试工具来保障代码质量，编写文档来保障代码的可读和可维护。</li>
+                <li>能给各种工具编写插件，可以串联掌握各种工具，初步实现开发、测试、部署的自动化。</li>
+                <li>能根据项目需要编写（常见或不常见的）工具，提升代码质量和提升开发效率（例如：NodeJS扩展，浏览器插件，Electron工具）<h4 id="t155.2.3 架构能力">5.2.3 架构能力 <a
+                            href="#t155.2.3 架构能力"> # </a></h4>
+                </li>
+                <li>了解浏览器/小程序等常见运行端的技术原理及其架构；开始认识到网络安全的重要性</li>
+                <li>深入理解HTTP协议，及其常用用法。综合网络和端（浏览器、小程序等）的设计原理，熟悉网站的各种性能指标。</li>
+                <li>熟悉业务开发中常见的前后台通讯协议，（例如：Protobuffer，JCE，HTTP最佳实践）；熟悉服务器开发的基本过程</li>
+                <li>有日志、监控的意识，注意生产环境的质量；有系统层面定位问题的能力（协议不合理、网络瓶颈、浏览器限制等），并给出优化方案</li>
+            </ul>
+            <h3 id="t165.3 高级(&quot;一线互联网企业、BAT月薪 30000 以上&quot;)">5.3 高级("一线互联网企业、BAT月薪 30000 以上") <a 30000=""
+                    href="#t165.3 高级(" 一线互联网企业、bat月薪="" 以上")"=""> # </a></h3>
+            <h4 id="t175.3.1 编程能力">5.3.1 编程能力 <a href="#t175.3.1 编程能力"> # </a></h4>
+            <ul>
+                <li>综合 T1-T8 的编码能力，有能力从整个项目的角度提炼和输出组件和框架，同时有能力指导他人写出更好的代码。<h4 id="t185.3.2 工程能力">5.3.2 工程能力 <a
+                            href="#t185.3.2 工程能力"> # </a></h4>
+                </li>
+                <li>从团队和业务角度，建设工程化体系，创造生产力引擎/生产线，系统化的提升效能，并用于组织大规模生产。<h4 id="t195.3.3 架构能力">5.3.3 架构能力 <a
+                            href="#t195.3.3 架构能力"> # </a></h4>
+                </li>
+                <li>综合编码能力和工程能力，同时结合对客户端、网络、服务器等节点的理解，独立完成中大型项目的设计。</li>
+            </ul>
+            <h2 id="t206.简历">6.简历 <a href="#t206.简历"> # </a></h2>
+            <ul>
+                <li>大厂简历筛选有一套机制，有大厂经历或学历好或经验匹配的会比较容易通过筛选，缺少光环的需要有其他东西来证明，比如优秀的项目经历，参与过好的开源项目等</li>
+                <li>简历上描述的技术/内容/项目确保自己是真的熟悉/掌握，看看每个技能是不是自己真的掌握了，能说出个1.2.3；每个项目是否自己能说清楚，一些细节是否了解，有哪些复盘点，是否有改进空间</li>
+                <li>简历上描述的应该是与目标岗位直接/间接相关的，其他的比较优秀的点可以一笔带过，不需要花大篇幅介绍这些与目标岗位不符的能力</li>
+                <li>面试官简历评估时也会看跳槽频率，像1年1跳这种会被评为不稳定，这时除非学历/经历特别出色的，其他基本就不通过了</li>
+            </ul>
+            <h2 id="t217.面试">7.面试 <a href="#t217.面试"> # </a></h2>
+            <ul>
+                <li>面试除了技能/项目知识外，状态也很重要；接到面试电话说明简历评估通过了，时间可以你自己定，如果没准备好，可以把时间拉长些，给自己一些准备时间；要求当场面试的可以礼貌拒绝然后定一个合适的时间</li>
+                <li>对不同工作年限的同学会有不同的要求，校招主要看潜力，所以基础（计算机、网络）和算法会考得比较多；1~3年除了潜力外还看经验是否与业务匹配，项目经验；3~5年看是否有独挡一面的能力，需要在技术上有较好的深度，在做事情方面有自己的一套；大于5年的除了深度外对广度也有要求，且需要有跨端和架构设计的能力，对于管理岗位也会看带团队的能力
+                </li>
+                <li>面试时遇到不会的不用慌，每个人的知识面不一样，碰到不会的很正常，但可以积极思考，首先坦诚表示没有了解过相关知识，然后以现有的知识体系思考下这个问题，说明思路，合理猜测结果</li>
+                <li>有时会有面试官会刻意施加压力，这时不在于问题回答的是否正确，而在于是否能在这些压力下仍然能够理性思考，面对面试官的每个问题，可以尝试想下面试官问这个问题的背后目的是什么</li>
+            </ul>
+            <h2 id="t228.知识点">8.知识点 <a href="#t228.知识点"> # </a></h2>
+            <h3 id="t238.1 CSS">8.1 CSS <a href="#t238.1 CSS"> # </a></h3>
+            <ul>
+                <li>盒子模型</li>
+                <li>CSS选择器</li>
+                <li>BFC</li>
+                <li>position</li>
+                <li>flex布局</li>
+                <li>css优先级</li>
+                <li>双飞冀/圣杯布局</li>
+                <li>CSS3新特性</li>
+                <li>CSS样式隔离</li>
+                <li>CSS性能优化</li>
+                <li>层叠上下文</li>
+                <li>div居中</li>
+                <li>浮动<h3 id="t248.2.JavaScript">8.2.JavaScript <a href="#t248.2.JavaScript"> # </a></h3>
+                </li>
+                <li>原型链</li>
+                <li>继承</li>
+                <li>作用域</li>
+                <li>闭包</li>
+                <li>变量提升</li>
+                <li>this的指向</li>
+                <li>立即执行函数</li>
+                <li>instanceof原理</li>
+                <li>bind的实现</li>
+                <li>apply和call</li>
+                <li>柯里化</li>
+                <li>v8垃圾回收机制</li>
+                <li>浮点数精度</li>
+                <li>new操作符</li>
+                <li>事件循环机制</li>
+                <li>promise原理</li>
+                <li>generator原理<h3 id="t258.3.HTML&amp;浏览器">8.3.HTML&amp;浏览器 <a href="#t258.3.HTML&amp;浏览器"> # </a></h3>
+                </li>
+                <li>行内元素、块级元素</li>
+                <li>跨标签页通信</li>
+                <li>history和hash两种路由</li>
+                <li>DOM树</li>
+                <li>事件模型</li>
+                <li>缓存策略</li>
+                <li>浏览器架构</li>
+                <li>浏览器工作原理</li>
+                <li>内存泄露<h3 id="t268.4.性能优化">8.4.性能优化 <a href="#t268.4.性能优化"> # </a></h3>
+                </li>
+                <li>前端性能优化指标</li>
+                <li>前端性能优化手段</li>
+                <li>重排和重绘</li>
+                <li>白屏</li>
+                <li>大量图片加载优化</li>
+                <li>描述下浏览器从输入网址到页面展现的整个过程</li>
+                <li>动画性能</li>
+                <li>渲染合成层<h3 id="t278.5.工程化">8.5.工程化 <a href="#t278.5.工程化"> # </a></h3>
+                </li>
+                <li>模块化机制</li>
+                <li>tree shaking</li>
+                <li>uglify原理</li>
+                <li>babel原理</li>
+                <li>webpack工作流程</li>
+                <li>webpack插件机制</li>
+                <li>webpack loader机制</li>
+                <li>前端微服务<h3 id="t288.6.React">8.6.React <a href="#t288.6.React"> # </a></h3>
+                </li>
+                <li>合成事件</li>
+                <li>virtual dom</li>
+                <li>setState过程</li>
+                <li>fiber</li>
+                <li>高阶组件</li>
+                <li>错误处理</li>
+                <li>性能优化</li>
+                <li>redux核心原则</li>
+                <li>redux核心逻辑<h3 id="t298.7.Vue">8.7.Vue <a href="#t298.7.Vue"> # </a></h3>
+                </li>
+                <li>数据绑定原理</li>
+                <li>computed和watch</li>
+                <li>slot</li>
+                <li>next tick原理</li>
+                <li>keep alive<h3 id="t308.8.算法">8.8.算法 <a href="#t308.8.算法"> # </a></h3>
+                </li>
+                <li>斐波那契数列</li>
+                <li>合并二维有序数组成一维有序数组</li>
+                <li>链表：反转链表</li>
+                <li>链表：链表有环</li>
+                <li>堆栈队列：判断括号字符串是否有效</li>
+                <li>返回数组中第k个最大元素</li>
+                <li>找出数组中和为sum的n个数</li>
+                <li>贪心：具有给定数值的最小字符串</li>
+                <li>二叉树：最大深度</li>
+                <li>二叉树：层次遍历</li>
+                <li>剪枝：判断数独是否有效</li>
+                <li>二分查找：求解平方根</li>
+                <li>字典树：实现一个字典树</li>
+                <li>爬楼梯问题</li>
+                <li>最短距离</li>
+                <li>LRU缓存</li>
+                <li>翻转二叉树<h3 id="t318.9.编程">8.9.编程 <a href="#t318.9.编程"> # </a></h3>
+                </li>
+                <li>实现一个trim方法</li>
+                <li>实现一个deepClone方法</li>
+                <li>实现 add(1)(2)(3)</li>
+                <li>大数相加</li>
+                <li>拍平数组</li>
+                <li>实现防抖函数</li>
+                <li>实现节流函数</li>
+                <li>实现字符串翻转</li>
+                <li>数组去重</li>
+                <li>实现千位分隔符</li>
+                <li>判断是否是回文数</li>
+                <li>实现一个模板引擎</li>
+                <li>判断一个数是否是素数</li>
+                <li>获取n以内所有的素数<h3 id="t328.10.操作系统">8.10.操作系统 <a href="#t328.10.操作系统"> # </a></h3>
+                </li>
+                <li>进程和线程</li>
+                <li>进程通信</li>
+                <li>进程调度策略</li>
+                <li>死锁</li>
+                <li>IO多路复用<h3 id="t338.11.网络">8.11.网络 <a href="#t338.11.网络"> # </a></h3>
+                </li>
+                <li>七层网络模型</li>
+                <li>http</li>
+                <li>https</li>
+                <li>http2.0</li>
+                <li>http3.0</li>
+                <li>websocket</li>
+                <li>tcp</li>
+                <li>udp<h3 id="t348.12.Node">8.12.Node <a href="#t348.12.Node"> # </a></h3>
+                </li>
+                <li>模块机制</li>
+                <li>require原理</li>
+                <li>事件循环</li>
+                <li>cluster原理</li>
+                <li>流机制</li>
+                <li>pipe原理</li>
+                <li>守护进程</li>
+                <li>进程通信</li>
+                <li>异常处理<h3 id="t358.13.架构与模式">8.13.架构与模式 <a href="#t358.13.架构与模式"> # </a></h3>
+                </li>
+                <li>常用设计模式</li>
+                <li>重构</li>
+                <li>MVVM</li>
+                <li>MVC</li>
+                <li>MVP</li>
+            </ul>
+            <p><img src="../C:\Users\83687\Desktop\temp\下载.png" alt=""></p>
+
+        </div>
+    </div>
 </body>

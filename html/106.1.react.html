@@ -1,72 +1,550 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
-    <style>
-        .page-toc > ul .red {
-            background: #f3f3f3;
-            z-index: 1;
-            border-left: 3px solid #009a61;
-            -webkit-transition: all .2s ease;
-            transition: all .2s ease;
-            color: #000
-        }
-    </style>
-</head>
-<body>
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&NPM.html">7.module&NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li class="active"><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>珠峰架构师成长计划</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    .page-toc>ul .red {
+      background: #f3f3f3;
+      z-index: 1;
+      border-left: 3px solid #009a61;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      color: #000
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="logo">
+
+      珠峰架构师成长计划
+
+    </div>
+    <ul>
+      <li><a href="../index.html">0.Async</a></li>
+      <li><a href="../html/0.editor.html">0.editor</a></li>
+      <li><a href="../html/0.module.html">0.module</a></li>
+      <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+      <li><a href="../html/2.Promise.html">2.Promise</a></li>
+      <li><a href="../html/3.Node.html">3.Node</a></li>
+      <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+      <li><a href="../html/5.REPL.html">5.REPL</a></li>
+      <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+      <li><a href="../html/7.module&NPM.html">7.module&NPM</a></li>
+      <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+      <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+      <li><a href="../html/10.fs.html">10.fs</a></li>
+      <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+      <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+      <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+      <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+      <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+      <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+      <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+      <li><a href="../html/13.tcp.html">13.tcp</a></li>
+      <li><a href="../html/14.http-1.html">14.http-1</a></li>
+      <li><a href="../html/14.http-2.html">14.http-2</a></li>
+      <li><a href="../html/15.compress.html">15.compress</a></li>
+      <li><a href="../html/16.crypto.html">16.crypto</a></li>
+      <li><a href="../html/17.process.html">17.process</a></li>
+      <li><a href="../html/18.yargs.html">18.yargs</a></li>
+      <li><a href="../html/19.cache.html">19.cache</a></li>
+      <li><a href="../html/20.action.html">20.action</a></li>
+      <li><a href="../html/21.https.html">21.https</a></li>
+      <li><a href="../html/22.cookie.html">22.cookie</a></li>
+      <li><a href="../html/23.session.html">23.session</a></li>
+      <li><a href="../html/24.express-1.html">24.express-1</a></li>
+      <li><a href="../html/24.express-2.html">24.express-2</a></li>
+      <li><a href="../html/24.express-3.html">24.express-3</a></li>
+      <li><a href="../html/24.express-4.html">24.express-4</a></li>
+      <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+      <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+      <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+      <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+      <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+      <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+      <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+      <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+      <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+      <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+      <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+      <li><a href="../html/28.redux.html">28.redux</a></li>
+      <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+      <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+      <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+      <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+      <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+      <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+      <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+      <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+      <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+      <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+      <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+      <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+      <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+      <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+      <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+      <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+      <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+      <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+      <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+      <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+      <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+      <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+      <li><a href="../html/31.dva.html">31.dva</a></li>
+      <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+      <li><a href="../html/33.redis.html">33.redis</a></li>
+      <li><a href="../html/34.unittest.html">34.unittest</a></li>
+      <li><a href="../html/35.jwt.html">35.jwt</a></li>
+      <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+      <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+      <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+      <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+      <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+      <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+      <li><a href="../html/38.chat.html">38.chat</a></li>
+      <li><a href="../html/38.chat2.html">38.chat2</a></li>
+      <li><a href="../html/38.chat2.html">38.chat2</a></li>
+      <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+      <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+      <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+      <li><a href="../html/40.deploy.html">40.deploy</a></li>
+      <li><a href="../html/41.safe.html">41.safe</a></li>
+      <li><a href="../html/42.test.html">42.test</a></li>
+      <li><a href="../html/43.nginx.html">43.nginx</a></li>
+      <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+      <li><a href="../html/45.docker.html">45.docker</a></li>
+      <li><a href="../html/46.elastic.html">46.elastic</a></li>
+      <li><a href="../html/47.oauth.html">47.oauth</a></li>
+      <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+      <li><a href="../html/index.html">index</a></li>
+      <li><a href="../html/52.UML.html">52.UML</a></li>
+      <li><a href="../html/53.design.html">53.design</a></li>
+      <li><a href="../html/index.html">index</a></li>
+      <li><a href="../html/54.linux.html">54.linux</a></li>
+      <li><a href="../html/57.ts.html">57.ts</a></li>
+      <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+      <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+      <li><a href="../html/59.ketang.html">59.ketang</a></li>
+      <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+      <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+      <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+      <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+      <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+      <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+      <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+      <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+      <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+      <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+      <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+      <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+      <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+      <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+      <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+      <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+      <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+      <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+      <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+      <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+      <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+      <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+      <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+      <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+      <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+      <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+      <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+      <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+      <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+      <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+      <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+      <li><a href="../html/64.1.router.html">64.1.router</a></li>
+      <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+      <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+      <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+      <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+      <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+      <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+      <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+      <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+      <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+      <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+      <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+      <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+      <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+      <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+      <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+      <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+      <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+      <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+      <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+      <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+      <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+      <li><a href="../html/67-1-network.html">67-1-network</a></li>
+      <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+      <li><a href="../html/7.npm2.html">7.npm2</a></li>
+      <li><a href="../html/69-hooks.html">69-hooks</a></li>
+      <li><a href="../html/70-deploy.html">70-deploy</a></li>
+      <li><a href="../html/71-hmr.html">71-hmr</a></li>
+      <li><a href="../html/72.deploy.html">72.deploy</a></li>
+      <li><a href="../html/73.import.html">73.import</a></li>
+      <li><a href="../html/74.mobile.html">74.mobile</a></li>
+      <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+      <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+      <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+      <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+      <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+      <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+      <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+      <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+      <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+      <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+      <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+      <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+      <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+      <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+      <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+      <li><a href="../html/79.grammar.html">79.grammar</a></li>
+      <li><a href="../html/80.tree.html">80.tree</a></li>
+      <li><a href="../html/81.axios.html">81.axios</a></li>
+      <li><a href="../html/82.1.react.html">82.1.react</a></li>
+      <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+      <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+      <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+      <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+      <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+      <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+      <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+      <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+      <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+      <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+      <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+      <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+      <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+      <li><a href="../html/83.upload.html">83.upload</a></li>
+      <li><a href="../html/84.graphql.html">84.graphql</a></li>
+      <li><a href="../html/85.antpro.html">85.antpro</a></li>
+      <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+      <li><a href="../html/86.2.design.html">86.2.design</a></li>
+      <li><a href="../html/87.postcss.html">87.postcss</a></li>
+      <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+      <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+      <li><a href="../html/90.react-test.html">90.react-test</a></li>
+      <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+      <li><a href="../html/92.rbac.html">92.rbac</a></li>
+      <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+      <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+      <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+      <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+      <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+      <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+      <li><a href="../html/94.6.https.html">94.6.https</a></li>
+      <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+      <li><a href="../html/95.1. react.html">95.1. react</a></li>
+      <li><a href="../html/95.2.react.html">95.2.react</a></li>
+      <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+      <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+      <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+      <li><a href="../html/97.serverless.html">97.serverless</a></li>
+      <li><a href="../html/98.websocket.html">98.websocket</a></li>
+      <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+      <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+      <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+      <li><a href="../html/102.java.html">102.java</a></li>
+      <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+      <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+      <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+      <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+      <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+      <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+      <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+      <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+      <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+      <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+      <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+      <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+      <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+      <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+      <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+      <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+      <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+      <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+      <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+      <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+      <li class="active"><a href="../html/106.1.react.html">106.1.react</a></li>
+      <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+      <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+      <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+      <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+      <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+      <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+      <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+      <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+      <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+      <li><a href="../html/107.fiber.html">107.fiber</a></li>
+      <li><a href="../html/108.http.html">108.http</a></li>
+      <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+      <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+      <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+      <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+      <li><a href="../html/111.xstate.html">111.xstate</a></li>
+      <li><a href="../html/112.Form.html">112.Form</a></li>
+      <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+      <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+      <li><a href="../html/115.immer.html">115.immer</a></li>
+      <li><a href="../html/116.pro5.html">116.pro5</a></li>
+      <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+      <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+      <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+      <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+      <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+      <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+      <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+      <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+      <li><a href="../html/124.next.js.html">124.next.js</a></li>
+      <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+      <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+      <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+      <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+      <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+      <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+      <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+      <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+      <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+      <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+      <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+      <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+      <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+      <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+      <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+      <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+      <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+      <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+      <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+      <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+      <li><a href="../html/127.frontend.html">127.frontend</a></li>
+      <li><a href="../html/128.rollup.html">128.rollup</a></li>
+      <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+      <li><a href="../html/130.health.html">130.health</a></li>
+      <li><a href="../html/131.hooks.html">131.hooks</a></li>
+      <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+      <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+      <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+      <li><a href="../html/134.react18.html">134.react18</a></li>
+      <li><a href="../html/135.function.html">135.function</a></li>
+      <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+    </ul>
+  </div>
+
+
+  <div class="warpper">
     <div class="page-toc">
-        <ul><li><a href="#t01. 什么是React">1. 什么是React</a></li><li><a href="#t12.创建项目">2.创建项目</a></li><li><a href="#t23.JSX渲染">3.JSX渲染</a><ul><li><a href="#t33.1 什么是JSX">3.1 什么是JSX</a></li><li><a href="#t43.2 什么是元素">3.2 什么是元素</a></li><li><a href="#t53.3 JSX实现">3.3 JSX实现</a></li><li><a href="#t63.3.1 package.json">3.3.1 package.json</a></li><li><a href="#t73.2 src\index.js">3.2 src\index.js</a></li><li><a href="#t83.3 constants.js">3.3 constants.js</a></li><li><a href="#t93.4 src\utils.js">3.4 src\utils.js</a></li><li><a href="#t103.5 react.js">3.5 react.js</a></li><li><a href="#t113.6 react-dom.js">3.6 react-dom.js</a></li></ul></li><li><a href="#t124.组件">4.组件</a><ul><li><a href="#t134.1 函数(定义的)组件">4.1 函数(定义的)组件</a></li><li><a href="#t144.2 实现">4.2 实现</a><ul><li><a href="#t154.2.1 src\index.js">4.2.1 src\index.js</a></li><li><a href="#t164.2.2 src\react-dom.js">4.2.2 src\react-dom.js</a></li></ul></li><li><a href="#t174.2 类(定义的)组件">4.2 类(定义的)组件</a><ul><li><a href="#t184.2.1 src\index.js">4.2.1 src\index.js</a></li><li><a href="#t194.2.2 src\Component.js">4.2.2 src\Component.js</a></li><li><a href="#t204.2.3 src\react.js">4.2.3 src\react.js</a></li><li><a href="#t214.2.4 src\react-dom.js">4.2.4 src\react-dom.js</a></li></ul></li></ul></li><li><a href="#t225.类组件的更新">5.类组件的更新</a><ul><li><a href="#t235.1 组件状态">5.1 组件状态</a></li><li><a href="#t245.3 更新组新实现">5.3 更新组新实现</a><ul><li><a href="#t255.3.1 src\index.js">5.3.1 src\index.js</a></li><li><a href="#t265.3.2 src\Component.js">5.3.2 src\Component.js</a></li><li><a href="#t275.3.3 react-dom.js">5.3.3 react-dom.js</a></li></ul></li></ul></li><li><a href="#t286.合成事件和批量更新">6.合成事件和批量更新</a><ul><li><a href="#t296.1 src\index.js">6.1 src\index.js</a></li><li><a href="#t306.2 src\utils.js">6.2 src\utils.js</a></li><li><a href="#t316.3 src\Component.js">6.3 src\Component.js</a></li><li><a href="#t326.4 src\event.js">6.4 src\event.js</a></li><li><a href="#t336.5 src\react-dom.js">6.5 src\react-dom.js</a></li></ul></li><li><a href="#t347.ref">7.ref</a><ul><li><a href="#t357.1 为 DOM 元素添加 ref">7.1 为 DOM 元素添加 ref</a></li><li><a href="#t367.2 为 class 组件添加 Ref">7.2 为 class 组件添加 Ref</a></li><li><a href="#t377.3 Ref转发">7.3 Ref转发</a></li><li><a href="#t387.4 ref实现">7.4 ref实现</a><ul><li><a href="#t397.4.1 src\constants.js">7.4.1 src\constants.js</a></li><li><a href="#t407.4.2 src\react.js">7.4.2 src\react.js</a></li><li><a href="#t417.4.3 react-dom.js">7.4.3 react-dom.js</a></li></ul></li></ul></li><li><a href="#t428.基本生命周期">8.基本生命周期</a><ul><li><a href="#t438.1 src\index.js">8.1 src\index.js</a></li><li><a href="#t448.2 src\Component.js">8.2 src\Component.js</a></li><li><a href="#t458.3 src\react-dom.js">8.3 src\react-dom.js</a></li></ul></li><li><a href="#t469.子组件生命周期">9.子组件生命周期</a><ul><li><a href="#t479.1 src\index.js">9.1 src\index.js</a></li><li><a href="#t489.2 src\react-dom.js">9.2 src\react-dom.js</a></li></ul></li><li><a href="#t4910.DOM-DIFF算法">10.DOM-DIFF算法</a><ul><li><a href="#t5010.1 src\index.js">10.1 src\index.js</a></li><li><a href="#t5110.2 src\constants.js">10.2 src\constants.js</a></li><li><a href="#t5210.3 src\react.js">10.3 src\react.js</a></li><li><a href="#t5310.4 src\react-dom.js">10.4 src\react-dom.js</a></li></ul></li><li><a href="#t5411.新的生命周期">11.新的生命周期</a><ul><li><a href="#t5511.1 getDerivedStateFromProps">11.1 getDerivedStateFromProps</a></li><li><a href="#t5611.2 getSnapshotBeforeUpdate">11.2 getSnapshotBeforeUpdate</a></li><li><a href="#t5711.3 实现">11.3 实现</a><ul><li><a href="#t5811.3.1  src\Component.js">11.3.1  src\Component.js</a></li></ul></li></ul></li><li><a href="#t5912. Context(上下文)">12. Context(上下文)</a><ul><li><a href="#t6012.1 src\index.js">12.1 src\index.js</a></li><li><a href="#t6112.2 src\constants.js">12.2 src\constants.js</a></li><li><a href="#t6212.3 src\Component.js">12.3 src\Component.js</a></li><li><a href="#t6312.4 src\react.js">12.4 src\react.js</a></li><li><a href="#t6412.5 src\react-dom.js">12.5 src\react-dom.js</a></li></ul></li><li><a href="#t6513. 高阶组件">13. 高阶组件</a><ul><li><a href="#t6613.1 cra支持装饰器">13.1 cra支持装饰器</a><ul><li><a href="#t6713.1.1 安装">13.1.1 安装</a></li><li><a href="#t6813.1.2 修改package.json">13.1.2 修改package.json</a></li><li><a href="#t6913.1.3 config-overrides.js">13.1.3 config-overrides.js</a></li><li><a href="#t7013.1.4 jsconfig.json">13.1.4 jsconfig.json</a></li></ul></li><li><a href="#t7113.2 属性代理">13.2 属性代理</a></li><li><a href="#t7213.3 反向继承">13.3 反向继承</a></li></ul></li><li><a href="#t7314. render props">14. render props</a><ul><li><a href="#t7414.1 原生实现">14.1 原生实现</a></li><li><a href="#t7514.2  children">14.2  children</a></li><li><a href="#t7614.3 render属性">14.3 render属性</a></li><li><a href="#t7714.4 HOC">14.4 HOC</a></li></ul></li><li><a href="#t7815.性能优化">15.性能优化</a><ul><li><a href="#t7915.1 src\index.js">15.1 src\index.js</a></li><li><a href="#t8015.2 src\constants.js">15.2 src\constants.js</a></li><li><a href="#t8115.3 src\utils.js">15.3 src\utils.js</a></li><li><a href="#t8215.4 src\react.js">15.4 src\react.js</a></li><li><a href="#t8315.5 src\react-dom.js">15.5 src\react-dom.js</a></li></ul></li><li><a href="#t8416.Portal">16.Portal</a><ul><li><a href="#t8516.1 src\index.js">16.1 src\index.js</a></li><li><a href="#t8616.2 src\react-dom.js">16.2 src\react-dom.js</a></li></ul></li></ul>
+      <ul>
+        <li><a href="#t01. 什么是React">1. 什么是React</a></li>
+        <li><a href="#t12.创建项目">2.创建项目</a></li>
+        <li><a href="#t23.JSX渲染">3.JSX渲染</a>
+          <ul>
+            <li><a href="#t33.1 什么是JSX">3.1 什么是JSX</a></li>
+            <li><a href="#t43.2 什么是元素">3.2 什么是元素</a></li>
+            <li><a href="#t53.3 JSX实现">3.3 JSX实现</a></li>
+            <li><a href="#t63.3.1 package.json">3.3.1 package.json</a></li>
+            <li><a href="#t73.2 src\index.js">3.2 src\index.js</a></li>
+            <li><a href="#t83.3 constants.js">3.3 constants.js</a></li>
+            <li><a href="#t93.4 src\utils.js">3.4 src\utils.js</a></li>
+            <li><a href="#t103.5 react.js">3.5 react.js</a></li>
+            <li><a href="#t113.6 react-dom.js">3.6 react-dom.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t124.组件">4.组件</a>
+          <ul>
+            <li><a href="#t134.1 函数(定义的)组件">4.1 函数(定义的)组件</a></li>
+            <li><a href="#t144.2 实现">4.2 实现</a>
+              <ul>
+                <li><a href="#t154.2.1 src\index.js">4.2.1 src\index.js</a></li>
+                <li><a href="#t164.2.2 src\react-dom.js">4.2.2 src\react-dom.js</a></li>
+              </ul>
+            </li>
+            <li><a href="#t174.2 类(定义的)组件">4.2 类(定义的)组件</a>
+              <ul>
+                <li><a href="#t184.2.1 src\index.js">4.2.1 src\index.js</a></li>
+                <li><a href="#t194.2.2 src\Component.js">4.2.2 src\Component.js</a></li>
+                <li><a href="#t204.2.3 src\react.js">4.2.3 src\react.js</a></li>
+                <li><a href="#t214.2.4 src\react-dom.js">4.2.4 src\react-dom.js</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#t225.类组件的更新">5.类组件的更新</a>
+          <ul>
+            <li><a href="#t235.1 组件状态">5.1 组件状态</a></li>
+            <li><a href="#t245.3 更新组新实现">5.3 更新组新实现</a>
+              <ul>
+                <li><a href="#t255.3.1 src\index.js">5.3.1 src\index.js</a></li>
+                <li><a href="#t265.3.2 src\Component.js">5.3.2 src\Component.js</a></li>
+                <li><a href="#t275.3.3 react-dom.js">5.3.3 react-dom.js</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#t286.合成事件和批量更新">6.合成事件和批量更新</a>
+          <ul>
+            <li><a href="#t296.1 src\index.js">6.1 src\index.js</a></li>
+            <li><a href="#t306.2 src\utils.js">6.2 src\utils.js</a></li>
+            <li><a href="#t316.3 src\Component.js">6.3 src\Component.js</a></li>
+            <li><a href="#t326.4 src\event.js">6.4 src\event.js</a></li>
+            <li><a href="#t336.5 src\react-dom.js">6.5 src\react-dom.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t347.ref">7.ref</a>
+          <ul>
+            <li><a href="#t357.1 为 DOM 元素添加 ref">7.1 为 DOM 元素添加 ref</a></li>
+            <li><a href="#t367.2 为 class 组件添加 Ref">7.2 为 class 组件添加 Ref</a></li>
+            <li><a href="#t377.3 Ref转发">7.3 Ref转发</a></li>
+            <li><a href="#t387.4 ref实现">7.4 ref实现</a>
+              <ul>
+                <li><a href="#t397.4.1 src\constants.js">7.4.1 src\constants.js</a></li>
+                <li><a href="#t407.4.2 src\react.js">7.4.2 src\react.js</a></li>
+                <li><a href="#t417.4.3 react-dom.js">7.4.3 react-dom.js</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#t428.基本生命周期">8.基本生命周期</a>
+          <ul>
+            <li><a href="#t438.1 src\index.js">8.1 src\index.js</a></li>
+            <li><a href="#t448.2 src\Component.js">8.2 src\Component.js</a></li>
+            <li><a href="#t458.3 src\react-dom.js">8.3 src\react-dom.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t469.子组件生命周期">9.子组件生命周期</a>
+          <ul>
+            <li><a href="#t479.1 src\index.js">9.1 src\index.js</a></li>
+            <li><a href="#t489.2 src\react-dom.js">9.2 src\react-dom.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t4910.DOM-DIFF算法">10.DOM-DIFF算法</a>
+          <ul>
+            <li><a href="#t5010.1 src\index.js">10.1 src\index.js</a></li>
+            <li><a href="#t5110.2 src\constants.js">10.2 src\constants.js</a></li>
+            <li><a href="#t5210.3 src\react.js">10.3 src\react.js</a></li>
+            <li><a href="#t5310.4 src\react-dom.js">10.4 src\react-dom.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t5411.新的生命周期">11.新的生命周期</a>
+          <ul>
+            <li><a href="#t5511.1 getDerivedStateFromProps">11.1 getDerivedStateFromProps</a></li>
+            <li><a href="#t5611.2 getSnapshotBeforeUpdate">11.2 getSnapshotBeforeUpdate</a></li>
+            <li><a href="#t5711.3 实现">11.3 实现</a>
+              <ul>
+                <li><a href="#t5811.3.1  src\Component.js">11.3.1 src\Component.js</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#t5912. Context(上下文)">12. Context(上下文)</a>
+          <ul>
+            <li><a href="#t6012.1 src\index.js">12.1 src\index.js</a></li>
+            <li><a href="#t6112.2 src\constants.js">12.2 src\constants.js</a></li>
+            <li><a href="#t6212.3 src\Component.js">12.3 src\Component.js</a></li>
+            <li><a href="#t6312.4 src\react.js">12.4 src\react.js</a></li>
+            <li><a href="#t6412.5 src\react-dom.js">12.5 src\react-dom.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t6513. 高阶组件">13. 高阶组件</a>
+          <ul>
+            <li><a href="#t6613.1 cra支持装饰器">13.1 cra支持装饰器</a>
+              <ul>
+                <li><a href="#t6713.1.1 安装">13.1.1 安装</a></li>
+                <li><a href="#t6813.1.2 修改package.json">13.1.2 修改package.json</a></li>
+                <li><a href="#t6913.1.3 config-overrides.js">13.1.3 config-overrides.js</a></li>
+                <li><a href="#t7013.1.4 jsconfig.json">13.1.4 jsconfig.json</a></li>
+              </ul>
+            </li>
+            <li><a href="#t7113.2 属性代理">13.2 属性代理</a></li>
+            <li><a href="#t7213.3 反向继承">13.3 反向继承</a></li>
+          </ul>
+        </li>
+        <li><a href="#t7314. render props">14. render props</a>
+          <ul>
+            <li><a href="#t7414.1 原生实现">14.1 原生实现</a></li>
+            <li><a href="#t7514.2  children">14.2 children</a></li>
+            <li><a href="#t7614.3 render属性">14.3 render属性</a></li>
+            <li><a href="#t7714.4 HOC">14.4 HOC</a></li>
+          </ul>
+        </li>
+        <li><a href="#t7815.性能优化">15.性能优化</a>
+          <ul>
+            <li><a href="#t7915.1 src\index.js">15.1 src\index.js</a></li>
+            <li><a href="#t8015.2 src\constants.js">15.2 src\constants.js</a></li>
+            <li><a href="#t8115.3 src\utils.js">15.3 src\utils.js</a></li>
+            <li><a href="#t8215.4 src\react.js">15.4 src\react.js</a></li>
+            <li><a href="#t8315.5 src\react-dom.js">15.5 src\react-dom.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t8416.Portal">16.Portal</a>
+          <ul>
+            <li><a href="#t8516.1 src\index.js">16.1 src\index.js</a></li>
+            <li><a href="#t8616.2 src\react-dom.js">16.2 src\react-dom.js</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
     <div class="content markdown-body">
-        <h2 id="t01. &#x4EC0;&#x4E48;&#x662F;React">1. &#x4EC0;&#x4E48;&#x662F;React <a href="#t01. &#x4EC0;&#x4E48;&#x662F;React"> # </a></h2>
-<ul>
-<li>React &#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x7528;&#x6237;&#x754C;&#x9762;&#x7684;JavaScript&#x5E93; &#x6838;&#x5FC3;&#x4E13;&#x6CE8;&#x4E8E;&#x89C6;&#x56FE;,&#x76EE;&#x7684;&#x5B9E;&#x73B0;&#x7EC4;&#x4EF6;&#x5316;&#x5F00;&#x53D1;</li>
-</ul>
-<h2 id="t12.&#x521B;&#x5EFA;&#x9879;&#x76EE;">2.&#x521B;&#x5EFA;&#x9879;&#x76EE; <a href="#t12.&#x521B;&#x5EFA;&#x9879;&#x76EE;"> # </a></h2>
-<pre><code class="lang-js">create-react-app zhufengreact
+      <h2 id="t01. &#x4EC0;&#x4E48;&#x662F;React">1. &#x4EC0;&#x4E48;&#x662F;React <a
+          href="#t01. &#x4EC0;&#x4E48;&#x662F;React"> # </a></h2>
+      <ul>
+        <li>React
+          &#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x6784;&#x5EFA;&#x7528;&#x6237;&#x754C;&#x9762;&#x7684;JavaScript&#x5E93;
+          &#x6838;&#x5FC3;&#x4E13;&#x6CE8;&#x4E8E;&#x89C6;&#x56FE;,&#x76EE;&#x7684;&#x5B9E;&#x73B0;&#x7EC4;&#x4EF6;&#x5316;&#x5F00;&#x53D1;
+        </li>
+      </ul>
+      <h2 id="t12.&#x521B;&#x5EFA;&#x9879;&#x76EE;">2.&#x521B;&#x5EFA;&#x9879;&#x76EE; <a
+          href="#t12.&#x521B;&#x5EFA;&#x9879;&#x76EE;"> # </a></h2>
+      <pre><code class="lang-js">create-react-app zhufengreact
 cd zhufengreact
 yarn add cross-env
 </code></pre>
-<h2 id="t23.JSX&#x6E32;&#x67D3;">3.JSX&#x6E32;&#x67D3; <a href="#t23.JSX&#x6E32;&#x67D3;"> # </a></h2>
-<h3 id="t33.1 &#x4EC0;&#x4E48;&#x662F;JSX">3.1 &#x4EC0;&#x4E48;&#x662F;JSX <a href="#t33.1 &#x4EC0;&#x4E48;&#x662F;JSX"> # </a></h3>
-<ul>
-<li>&#x662F;&#x4E00;&#x79CD;JS&#x548C;HTML&#x6DF7;&#x5408;&#x7684;&#x8BED;&#x6CD5;,&#x5C06;&#x7EC4;&#x4EF6;&#x7684;&#x7ED3;&#x6784;&#x3001;&#x6570;&#x636E;&#x751A;&#x81F3;&#x6837;&#x5F0F;&#x90FD;&#x805A;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x5199;&#x6CD5;</li>
-</ul>
-<h3 id="t43.2 &#x4EC0;&#x4E48;&#x662F;&#x5143;&#x7D20;">3.2 &#x4EC0;&#x4E48;&#x662F;&#x5143;&#x7D20; <a href="#t43.2 &#x4EC0;&#x4E48;&#x662F;&#x5143;&#x7D20;"> # </a></h3>
-<ul>
-<li>JSX&#x5176;&#x5B9E;&#x53EA;&#x662F;&#x4E00;&#x79CD;&#x8BED;&#x6CD5;&#x7CD6;,&#x6700;&#x7EC8;&#x4F1A;&#x901A;&#x8FC7;<a href="https://www.babeljs.cn/repl">babeljs</a>&#x8F6C;&#x8BD1;&#x6210;<code>React.createElement</code>&#x8BED;&#x6CD5;</li>
-<li><code>React.createElement</code>&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;React&#x5143;&#x7D20;</li>
-<li>React&#x5143;&#x7D20;&#x4E8B;&#x5B9E;&#x4E0A;&#x662F;&#x666E;&#x901A;&#x7684;JS&#x5BF9;&#x8C61;&#xFF0C;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x4F60;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x770B;&#x5230;&#x7684;&#x5185;&#x5BB9;</li>
-<li><code>ReactDOM</code>&#x6765;&#x786E;&#x4FDD;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684;&#x771F;&#x5B9E;DOM&#x6570;&#x636E;&#x548C;React&#x5143;&#x7D20;&#x4FDD;&#x6301;&#x4E00;&#x81F4;</li>
-</ul>
-<p>JSX</p>
-<pre><code class="lang-js">&lt;h1 className=&quot;title&quot; style={{color:&apos;red&apos;}}&gt;hello&lt;/h1&gt;
+      <h2 id="t23.JSX&#x6E32;&#x67D3;">3.JSX&#x6E32;&#x67D3; <a href="#t23.JSX&#x6E32;&#x67D3;"> # </a></h2>
+      <h3 id="t33.1 &#x4EC0;&#x4E48;&#x662F;JSX">3.1 &#x4EC0;&#x4E48;&#x662F;JSX <a
+          href="#t33.1 &#x4EC0;&#x4E48;&#x662F;JSX"> # </a></h3>
+      <ul>
+        <li>
+          &#x662F;&#x4E00;&#x79CD;JS&#x548C;HTML&#x6DF7;&#x5408;&#x7684;&#x8BED;&#x6CD5;,&#x5C06;&#x7EC4;&#x4EF6;&#x7684;&#x7ED3;&#x6784;&#x3001;&#x6570;&#x636E;&#x751A;&#x81F3;&#x6837;&#x5F0F;&#x90FD;&#x805A;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x5199;&#x6CD5;
+        </li>
+      </ul>
+      <h3 id="t43.2 &#x4EC0;&#x4E48;&#x662F;&#x5143;&#x7D20;">3.2 &#x4EC0;&#x4E48;&#x662F;&#x5143;&#x7D20; <a
+          href="#t43.2 &#x4EC0;&#x4E48;&#x662F;&#x5143;&#x7D20;"> # </a></h3>
+      <ul>
+        <li>
+          JSX&#x5176;&#x5B9E;&#x53EA;&#x662F;&#x4E00;&#x79CD;&#x8BED;&#x6CD5;&#x7CD6;,&#x6700;&#x7EC8;&#x4F1A;&#x901A;&#x8FC7;<a
+            href="https://www.babeljs.cn/repl">babeljs</a>&#x8F6C;&#x8BD1;&#x6210;<code>React.createElement</code>&#x8BED;&#x6CD5;
+        </li>
+        <li><code>React.createElement</code>&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;React&#x5143;&#x7D20;</li>
+        <li>
+          React&#x5143;&#x7D20;&#x4E8B;&#x5B9E;&#x4E0A;&#x662F;&#x666E;&#x901A;&#x7684;JS&#x5BF9;&#x8C61;&#xFF0C;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x4F60;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x770B;&#x5230;&#x7684;&#x5185;&#x5BB9;
+        </li>
+        <li>
+          <code>ReactDOM</code>&#x6765;&#x786E;&#x4FDD;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684;&#x771F;&#x5B9E;DOM&#x6570;&#x636E;&#x548C;React&#x5143;&#x7D20;&#x4FDD;&#x6301;&#x4E00;&#x81F4;
+        </li>
+      </ul>
+      <p>JSX</p>
+      <pre><code class="lang-js">&lt;h1 className=&quot;title&quot; style={{color:&apos;red&apos;}}&gt;hello&lt;/h1&gt;
 </code></pre>
-<p>&#x8F6C;&#x8BD1;&#x540E;&#x7684;&#x4EE3;&#x7801;</p>
-<pre><code class="lang-js">React.createElement(<span class="hljs-string">&quot;h1&quot;</span>, {
+      <p>&#x8F6C;&#x8BD1;&#x540E;&#x7684;&#x4EE3;&#x7801;</p>
+      <pre><code class="lang-js">React.createElement(<span class="hljs-string">&quot;h1&quot;</span>, {
   <span class="hljs-attr">className</span>: <span class="hljs-string">&quot;title&quot;</span>,
   <span class="hljs-attr">style</span>: {
     <span class="hljs-attr">color</span>: <span class="hljs-string">&apos;red&apos;</span>
   }
 }, <span class="hljs-string">&quot;hello&quot;</span>);
 </code></pre>
-<p>&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;</p>
-<pre><code class="lang-js">{
+      <p>&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;</p>
+      <pre><code class="lang-js">{
   <span class="hljs-attr">type</span>:<span class="hljs-string">&apos;h1&apos;</span>,
   <span class="hljs-attr">props</span>:{
     <span class="hljs-attr">className</span>: <span class="hljs-string">&quot;title&quot;</span>,
@@ -77,9 +555,9 @@ yarn add cross-env
   <span class="hljs-attr">children</span>:<span class="hljs-string">&quot;hello&quot;</span>
 }
 </code></pre>
-<h3 id="t53.3 JSX&#x5B9E;&#x73B0;">3.3 JSX&#x5B9E;&#x73B0; <a href="#t53.3 JSX&#x5B9E;&#x73B0;"> # </a></h3>
-<h3 id="t63.3.1 package.json">3.3.1 package.json <a href="#t63.3.1 package.json"> # </a></h3>
-<pre><code class="lang-diff">{
+      <h3 id="t53.3 JSX&#x5B9E;&#x73B0;">3.3 JSX&#x5B9E;&#x73B0; <a href="#t53.3 JSX&#x5B9E;&#x73B0;"> # </a></h3>
+      <h3 id="t63.3.1 package.json">3.3.1 package.json <a href="#t63.3.1 package.json"> # </a></h3>
+      <pre><code class="lang-diff">{
   &quot;name&quot;: &quot;zhufengreact&quot;,
   &quot;version&quot;: &quot;0.1.0&quot;,
   &quot;scripts&quot;: {
@@ -90,9 +568,9 @@ yarn add cross-env
   },
 }
 </code></pre>
-<h3 id="t73.2 src\index.js">3.2 src\index.js <a href="#t73.2 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./react&quot;</span>;
+      <h3 id="t73.2 src\index.js">3.2 src\index.js <a href="#t73.2 src\index.js"> # </a></h3>
+      <p>src\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./react&quot;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./react-dom&quot;</span>;
 <span class="hljs-keyword">let</span> element1 = (
   <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;title&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">color:</span> &quot;<span class="hljs-attr">red</span>&quot; }}&gt;</span>
@@ -102,23 +580,23 @@ yarn add cross-env
 <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">JSON</span>.stringify(element1, <span class="hljs-literal">null</span>, <span class="hljs-number">2</span>));
 ReactDOM.render(element1, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;root&quot;</span>));
 </code></pre>
-<h3 id="t83.3 constants.js">3.3 constants.js <a href="#t83.3 constants.js"> # </a></h3>
-<p>src\constants.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> REACT_TEXT = <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&apos;REACT_TEXT&apos;</span>);
+      <h3 id="t83.3 constants.js">3.3 constants.js <a href="#t83.3 constants.js"> # </a></h3>
+      <p>src\constants.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> REACT_TEXT = <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&apos;REACT_TEXT&apos;</span>);
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> REACT_ELEMENT = <span class="hljs-built_in">Symbol</span>(<span class="hljs-string">&apos;react.element&apos;</span>);
 </code></pre>
-<h3 id="t93.4 src\utils.js">3.4 src\utils.js <a href="#t93.4 src\utils.js"> # </a></h3>
-<p>src\utils.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { REACT_TEXT } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./constants&quot;</span>;
+      <h3 id="t93.4 src\utils.js">3.4 src\utils.js <a href="#t93.4 src\utils.js"> # </a></h3>
+      <p>src\utils.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> { REACT_TEXT } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./constants&quot;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">wrapToVdom</span>(<span class="hljs-params">element</span>) </span>{
   <span class="hljs-keyword">return</span> <span class="hljs-keyword">typeof</span> element === <span class="hljs-string">&quot;string&quot;</span> || <span class="hljs-keyword">typeof</span> element === <span class="hljs-string">&quot;number&quot;</span>
     ? { <span class="hljs-attr">type</span>: REACT_TEXT, <span class="hljs-attr">props</span>: { <span class="hljs-attr">content</span>: element } }
     : element;
 }
 </code></pre>
-<h3 id="t103.5 react.js">3.5 react.js <a href="#t103.5 react.js"> # </a></h3>
-<p>src\react.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { wrapToVdom } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./utils&quot;</span>;
+      <h3 id="t103.5 react.js">3.5 react.js <a href="#t103.5 react.js"> # </a></h3>
+      <p>src\react.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> { wrapToVdom } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./utils&quot;</span>;
 <span class="hljs-keyword">import</span> { REACT_ELEMENT } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./constants&quot;</span>;
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createElement</span>(<span class="hljs-params">type, config, children</span>) </span>{
   <span class="hljs-keyword">let</span> ref;
@@ -150,9 +628,9 @@ ReactDOM.render(element1, <span class="hljs-built_in">document</span>.getElement
 };
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> React;
 </code></pre>
-<h3 id="t113.6 react-dom.js">3.6 react-dom.js <a href="#t113.6 react-dom.js"> # </a></h3>
-<p>src\react-dom.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { REACT_TEXT } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./constants&quot;</span>;
+      <h3 id="t113.6 react-dom.js">3.6 react-dom.js <a href="#t113.6 react-dom.js"> # </a></h3>
+      <p>src\react-dom.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> { REACT_TEXT } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./constants&quot;</span>;
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">render</span>(<span class="hljs-params">vdom, container</span>) </span>{
   mount(vdom, container);
 }
@@ -209,24 +687,45 @@ ReactDOM.render(element1, <span class="hljs-built_in">document</span>.getElement
 };
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> ReactDOM;
 </code></pre>
-<h2 id="t124.&#x7EC4;&#x4EF6;">4.&#x7EC4;&#x4EF6; <a href="#t124.&#x7EC4;&#x4EF6;"> # </a></h2>
-<ul>
-<li>&#x53EF;&#x4EE5;&#x5C06;UI&#x5207;&#x5206;&#x6210;&#x4E00;&#x4E9B;&#x72EC;&#x7ACB;&#x7684;&#x3001;&#x53EF;&#x590D;&#x7528;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x8FD9;&#x6837;&#x4F60;&#x5C31;&#x53EA;&#x9700;&#x4E13;&#x6CE8;&#x4E8E;&#x6784;&#x5EFA;&#x6BCF;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x90E8;&#x4EF6;</li>
-<li>&#x7EC4;&#x4EF6;&#x4ECE;&#x6982;&#x5FF5;&#x4E0A;&#x7C7B;&#x4F3C;&#x4E8E; <code>JavaScript</code> &#x51FD;&#x6570;&#x3002;&#x5B83;&#x63A5;&#x53D7;&#x4EFB;&#x610F;&#x7684;&#x5165;&#x53C2;(props&#x5C5E;&#x6027;)&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x7528;&#x4E8E;&#x63CF;&#x8FF0;&#x9875;&#x9762;&#x5C55;&#x793A;&#x5185;&#x5BB9;&#x7684; React &#x5143;&#x7D20;</li>
-</ul>
-<h3 id="t134.1 &#x51FD;&#x6570;(&#x5B9A;&#x4E49;&#x7684;)&#x7EC4;&#x4EF6;">4.1 &#x51FD;&#x6570;(&#x5B9A;&#x4E49;&#x7684;)&#x7EC4;&#x4EF6; <a href="#t134.1 &#x51FD;&#x6570;(&#x5B9A;&#x4E49;&#x7684;)&#x7EC4;&#x4EF6;"> # </a></h3>
-<ul>
-<li>&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;props&#x5BF9;&#x8C61;&#x5E76;&#x8FD4;&#x56DE;&#x4E86;&#x4E00;&#x4E2A;React&#x5143;&#x7D20;</li>
-<li>&#x7EC4;&#x4EF6;&#x540D;&#x79F0;&#x5FC5;&#x987B;&#x4EE5;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x5F00;&#x5934;</li>
-<li>&#x7EC4;&#x4EF6;&#x5FC5;&#x987B;&#x5728;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x5B9A;&#x4E49;&#x6216;&#x5F15;&#x7528;&#x5B83;</li>
-<li>&#x7EC4;&#x4EF6;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x6839;&#x5143;&#x7D20;</li>
-<li>React&#x5143;&#x7D20;&#x4E0D;&#x4F46;&#x53EF;&#x4EE5;&#x662F;DOM&#x6807;&#x7B7E;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x662F;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7EC4;&#x4EF6;</li>
-<li>&#x5F53; React &#x5143;&#x7D20;&#x4E3A;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x5C06; JSX &#x6240;&#x63A5;&#x6536;&#x7684;&#x5C5E;&#x6027;&#xFF08;attributes&#xFF09;&#x8F6C;&#x6362;&#x4E3A;&#x5355;&#x4E2A;&#x5BF9;&#x8C61;&#x4F20;&#x9012;&#x7ED9;&#x7EC4;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x88AB;&#x79F0;&#x4E4B;&#x4E3A;<code>props</code></li>
-</ul>
-<p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/xuan_ran_han_shu_zu_jian_1626351799850.jpg" alt="xuan_ran_han_shu_zu_jian_1626351799850"></p>
-<h3 id="t144.2 &#x5B9E;&#x73B0;">4.2 &#x5B9E;&#x73B0; <a href="#t144.2 &#x5B9E;&#x73B0;"> # </a></h3>
-<h4 id="t154.2.1 src\index.js">4.2.1 src\index.js <a href="#t154.2.1 src\index.js"> # </a></h4>
-<pre><code class="lang-diff">import React from &quot;./react&quot;;
+      <h2 id="t124.&#x7EC4;&#x4EF6;">4.&#x7EC4;&#x4EF6; <a href="#t124.&#x7EC4;&#x4EF6;"> # </a></h2>
+      <ul>
+        <li>
+          &#x53EF;&#x4EE5;&#x5C06;UI&#x5207;&#x5206;&#x6210;&#x4E00;&#x4E9B;&#x72EC;&#x7ACB;&#x7684;&#x3001;&#x53EF;&#x590D;&#x7528;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x8FD9;&#x6837;&#x4F60;&#x5C31;&#x53EA;&#x9700;&#x4E13;&#x6CE8;&#x4E8E;&#x6784;&#x5EFA;&#x6BCF;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x90E8;&#x4EF6;
+        </li>
+        <li>&#x7EC4;&#x4EF6;&#x4ECE;&#x6982;&#x5FF5;&#x4E0A;&#x7C7B;&#x4F3C;&#x4E8E; <code>JavaScript</code>
+          &#x51FD;&#x6570;&#x3002;&#x5B83;&#x63A5;&#x53D7;&#x4EFB;&#x610F;&#x7684;&#x5165;&#x53C2;(props&#x5C5E;&#x6027;)&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x7528;&#x4E8E;&#x63CF;&#x8FF0;&#x9875;&#x9762;&#x5C55;&#x793A;&#x5185;&#x5BB9;&#x7684;
+          React &#x5143;&#x7D20;</li>
+      </ul>
+      <h3 id="t134.1 &#x51FD;&#x6570;(&#x5B9A;&#x4E49;&#x7684;)&#x7EC4;&#x4EF6;">4.1
+        &#x51FD;&#x6570;(&#x5B9A;&#x4E49;&#x7684;)&#x7EC4;&#x4EF6; <a
+          href="#t134.1 &#x51FD;&#x6570;(&#x5B9A;&#x4E49;&#x7684;)&#x7EC4;&#x4EF6;"> # </a></h3>
+      <ul>
+        <li>
+          &#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;props&#x5BF9;&#x8C61;&#x5E76;&#x8FD4;&#x56DE;&#x4E86;&#x4E00;&#x4E2A;React&#x5143;&#x7D20;
+        </li>
+        <li>&#x7EC4;&#x4EF6;&#x540D;&#x79F0;&#x5FC5;&#x987B;&#x4EE5;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x5F00;&#x5934;
+        </li>
+        <li>
+          &#x7EC4;&#x4EF6;&#x5FC5;&#x987B;&#x5728;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x5B9A;&#x4E49;&#x6216;&#x5F15;&#x7528;&#x5B83;
+        </li>
+        <li>
+          &#x7EC4;&#x4EF6;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x6839;&#x5143;&#x7D20;
+        </li>
+        <li>
+          React&#x5143;&#x7D20;&#x4E0D;&#x4F46;&#x53EF;&#x4EE5;&#x662F;DOM&#x6807;&#x7B7E;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x662F;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7EC4;&#x4EF6;
+        </li>
+        <li>&#x5F53; React
+          &#x5143;&#x7D20;&#x4E3A;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x5C06;
+          JSX
+          &#x6240;&#x63A5;&#x6536;&#x7684;&#x5C5E;&#x6027;&#xFF08;attributes&#xFF09;&#x8F6C;&#x6362;&#x4E3A;&#x5355;&#x4E2A;&#x5BF9;&#x8C61;&#x4F20;&#x9012;&#x7ED9;&#x7EC4;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x88AB;&#x79F0;&#x4E4B;&#x4E3A;<code>props</code>
+        </li>
+      </ul>
+      <p><img
+          src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/xuan_ran_han_shu_zu_jian_1626351799850.jpg"
+          alt="xuan_ran_han_shu_zu_jian_1626351799850"></p>
+      <h3 id="t144.2 &#x5B9E;&#x73B0;">4.2 &#x5B9E;&#x73B0; <a href="#t144.2 &#x5B9E;&#x73B0;"> # </a></h3>
+      <h4 id="t154.2.1 src\index.js">4.2.1 src\index.js <a href="#t154.2.1 src\index.js"> # </a></h4>
+      <pre><code class="lang-diff">import React from &quot;./react&quot;;
 import ReactDOM from &quot;./react-dom&quot;;
 <span class="hljs-addition">+function FunctionComponent(props){</span>
 <span class="hljs-addition">+  return &lt;div className=&quot;title&quot; style={{ color: &apos;red&apos; }}&gt;&lt;span&gt;{props.name}&lt;/span&gt;{props.children}&lt;/div&gt;;</span>
@@ -234,9 +733,9 @@ import ReactDOM from &quot;./react-dom&quot;;
 <span class="hljs-addition">+let element = &lt;FunctionComponent name=&quot;hello&quot;&gt;world&lt;/FunctionComponent&gt;;</span>
 ReactDOM.render(element, document.getElementById(&quot;root&quot;));
 </code></pre>
-<h4 id="t164.2.2 src\react-dom.js">4.2.2 src\react-dom.js <a href="#t164.2.2 src\react-dom.js"> # </a></h4>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff">import { REACT_TEXT } from &quot;./constants&quot;;
+      <h4 id="t164.2.2 src\react-dom.js">4.2.2 src\react-dom.js <a href="#t164.2.2 src\react-dom.js"> # </a></h4>
+      <p>src\react-dom.js</p>
+      <pre><code class="lang-diff">import { REACT_TEXT } from &quot;./constants&quot;;
 function render(vdom, parentDOM) {
     let newDOM = createDOM(vdom)
     if (newDOM) {
@@ -302,15 +801,20 @@ const ReactDOM = {
 };
 export default ReactDOM;
 </code></pre>
-<h3 id="t174.2 &#x7C7B;(&#x5B9A;&#x4E49;&#x7684;)&#x7EC4;&#x4EF6;">4.2 &#x7C7B;(&#x5B9A;&#x4E49;&#x7684;)&#x7EC4;&#x4EF6; <a href="#t174.2 &#x7C7B;(&#x5B9A;&#x4E49;&#x7684;)&#x7EC4;&#x4EF6;"> # </a></h3>
-<ul>
-<li>&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7C7B;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;</li>
-<li>&#x7C7B;&#x7EC4;&#x4EF6;&#x7684;&#x6E32;&#x67D3;&#x662F;&#x6839;&#x636E;&#x5C5E;&#x6027;&#x521B;&#x5EFA;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x5B9E;&#x4F8B;&#x7684;render&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;React&#x5143;&#x7D20;</li>
-</ul>
-<p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/lei_zu_jian_xuan_ran_1626352042061.jpg" alt="lei_zu_jian_xuan_ran_1626352042061"></p>
-<h4 id="t184.2.1 src\index.js">4.2.1 src\index.js <a href="#t184.2.1 src\index.js"> # </a></h4>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import React from &quot;./react&quot;;
+      <h3 id="t174.2 &#x7C7B;(&#x5B9A;&#x4E49;&#x7684;)&#x7EC4;&#x4EF6;">4.2
+        &#x7C7B;(&#x5B9A;&#x4E49;&#x7684;)&#x7EC4;&#x4EF6; <a
+          href="#t174.2 &#x7C7B;(&#x5B9A;&#x4E49;&#x7684;)&#x7EC4;&#x4EF6;"> # </a></h3>
+      <ul>
+        <li>&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7C7B;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;</li>
+        <li>
+          &#x7C7B;&#x7EC4;&#x4EF6;&#x7684;&#x6E32;&#x67D3;&#x662F;&#x6839;&#x636E;&#x5C5E;&#x6027;&#x521B;&#x5EFA;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x5B9E;&#x4F8B;&#x7684;render&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;React&#x5143;&#x7D20;
+        </li>
+      </ul>
+      <p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/lei_zu_jian_xuan_ran_1626352042061.jpg"
+          alt="lei_zu_jian_xuan_ran_1626352042061"></p>
+      <h4 id="t184.2.1 src\index.js">4.2.1 src\index.js <a href="#t184.2.1 src\index.js"> # </a></h4>
+      <p>src\index.js</p>
+      <pre><code class="lang-diff">import React from &quot;./react&quot;;
 import ReactDOM from &quot;./react-dom&quot;;
 <span class="hljs-addition">+class ClassComponent extends React.Component{</span>
 <span class="hljs-addition">+    render(){</span>
@@ -320,18 +824,18 @@ import ReactDOM from &quot;./react-dom&quot;;
 <span class="hljs-addition">+let element = &lt;ClassComponent name=&quot;hello&quot;&gt;world&lt;/ClassComponent&gt;;</span>
 ReactDOM.render(element, document.getElementById(&quot;root&quot;));
 </code></pre>
-<h4 id="t194.2.2 src\Component.js">4.2.2 src\Component.js <a href="#t194.2.2 src\Component.js"> # </a></h4>
-<p>src\Component.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Component</span></span>{
+      <h4 id="t194.2.2 src\Component.js">4.2.2 src\Component.js <a href="#t194.2.2 src\Component.js"> # </a></h4>
+      <p>src\Component.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Component</span></span>{
     <span class="hljs-keyword">static</span> isReactComponent=<span class="hljs-literal">true</span>
     <span class="hljs-keyword">constructor</span>(props){
         <span class="hljs-keyword">this</span>.props = props;
     }
 }
 </code></pre>
-<h4 id="t204.2.3 src\react.js">4.2.3 src\react.js <a href="#t204.2.3 src\react.js"> # </a></h4>
-<p>src\react.js</p>
-<pre><code class="lang-diff">import { wrapToVdom } from &quot;./utils&quot;;
+      <h4 id="t204.2.3 src\react.js">4.2.3 src\react.js <a href="#t204.2.3 src\react.js"> # </a></h4>
+      <p>src\react.js</p>
+      <pre><code class="lang-diff">import { wrapToVdom } from &quot;./utils&quot;;
 <span class="hljs-addition">+import {Component} from &apos;./Component&apos;;</span>
 function createElement(type, config, children) {
   let ref;
@@ -363,9 +867,9 @@ const React = {
 };
 export default React;
 </code></pre>
-<h4 id="t214.2.4 src\react-dom.js">4.2.4 src\react-dom.js <a href="#t214.2.4 src\react-dom.js"> # </a></h4>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff">import { REACT_TEXT } from &quot;./constants&quot;;
+      <h4 id="t214.2.4 src\react-dom.js">4.2.4 src\react-dom.js <a href="#t214.2.4 src\react-dom.js"> # </a></h4>
+      <p>src\react-dom.js</p>
+      <pre><code class="lang-diff">import { REACT_TEXT } from &quot;./constants&quot;;
 function render(vdom, parentDOM) {
     let newDOM = createDOM(vdom)
     if (newDOM) {
@@ -442,18 +946,30 @@ const ReactDOM = {
 };
 export default ReactDOM;
 </code></pre>
-<h2 id="t225.&#x7C7B;&#x7EC4;&#x4EF6;&#x7684;&#x66F4;&#x65B0;">5.&#x7C7B;&#x7EC4;&#x4EF6;&#x7684;&#x66F4;&#x65B0; <a href="#t225.&#x7C7B;&#x7EC4;&#x4EF6;&#x7684;&#x66F4;&#x65B0;"> # </a></h2>
-<h3 id="t235.1 &#x7EC4;&#x4EF6;&#x72B6;&#x6001;">5.1 &#x7EC4;&#x4EF6;&#x72B6;&#x6001; <a href="#t235.1 &#x7EC4;&#x4EF6;&#x72B6;&#x6001;"> # </a></h3>
-<ul>
-<li>&#x7EC4;&#x4EF6;&#x7684;&#x6570;&#x636E;&#x6765;&#x6E90;&#x6709;&#x4E24;&#x4E2A;&#x5730;&#x65B9;&#xFF0C;&#x5206;&#x522B;&#x662F;&#x5C5E;&#x6027;&#x5BF9;&#x8C61;&#x548C;&#x72B6;&#x6001;&#x5BF9;&#x8C61;</li>
-<li>&#x5C5E;&#x6027;&#x662F;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;&#x9012;&#x8FC7;&#x6765;&#x7684;</li>
-<li>&#x72B6;&#x6001;&#x662F;&#x81EA;&#x5DF1;&#x5185;&#x90E8;&#x7684;,&#x6539;&#x53D8;&#x72B6;&#x6001;&#x552F;&#x4E00;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;<code>setState</code></li>
-<li>&#x5C5E;&#x6027;&#x548C;&#x72B6;&#x6001;&#x7684;&#x53D8;&#x5316;&#x90FD;&#x4F1A;&#x5F71;&#x54CD;&#x89C6;&#x56FE;&#x66F4;&#x65B0;</li>
-<li>&#x4E0D;&#x8981;&#x76F4;&#x63A5;&#x4FEE;&#x6539; State&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x662F;&#x552F;&#x4E00;&#x53EF;&#x4EE5;&#x7ED9; this.state &#x8D4B;&#x503C;&#x7684;&#x5730;&#x65B9;</li>
-</ul>
-<h3 id="t245.3 &#x66F4;&#x65B0;&#x7EC4;&#x65B0;&#x5B9E;&#x73B0;">5.3 &#x66F4;&#x65B0;&#x7EC4;&#x65B0;&#x5B9E;&#x73B0; <a href="#t245.3 &#x66F4;&#x65B0;&#x7EC4;&#x65B0;&#x5B9E;&#x73B0;"> # </a></h3>
-<h4 id="t255.3.1 src\index.js">5.3.1 src\index.js <a href="#t255.3.1 src\index.js"> # </a></h4>
-<pre><code class="lang-diff">import React from &quot;./react&quot;;
+      <h2 id="t225.&#x7C7B;&#x7EC4;&#x4EF6;&#x7684;&#x66F4;&#x65B0;">5.&#x7C7B;&#x7EC4;&#x4EF6;&#x7684;&#x66F4;&#x65B0;
+        <a href="#t225.&#x7C7B;&#x7EC4;&#x4EF6;&#x7684;&#x66F4;&#x65B0;"> # </a></h2>
+      <h3 id="t235.1 &#x7EC4;&#x4EF6;&#x72B6;&#x6001;">5.1 &#x7EC4;&#x4EF6;&#x72B6;&#x6001; <a
+          href="#t235.1 &#x7EC4;&#x4EF6;&#x72B6;&#x6001;"> # </a></h3>
+      <ul>
+        <li>
+          &#x7EC4;&#x4EF6;&#x7684;&#x6570;&#x636E;&#x6765;&#x6E90;&#x6709;&#x4E24;&#x4E2A;&#x5730;&#x65B9;&#xFF0C;&#x5206;&#x522B;&#x662F;&#x5C5E;&#x6027;&#x5BF9;&#x8C61;&#x548C;&#x72B6;&#x6001;&#x5BF9;&#x8C61;
+        </li>
+        <li>&#x5C5E;&#x6027;&#x662F;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;&#x9012;&#x8FC7;&#x6765;&#x7684;</li>
+        <li>
+          &#x72B6;&#x6001;&#x662F;&#x81EA;&#x5DF1;&#x5185;&#x90E8;&#x7684;,&#x6539;&#x53D8;&#x72B6;&#x6001;&#x552F;&#x4E00;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;<code>setState</code>
+        </li>
+        <li>
+          &#x5C5E;&#x6027;&#x548C;&#x72B6;&#x6001;&#x7684;&#x53D8;&#x5316;&#x90FD;&#x4F1A;&#x5F71;&#x54CD;&#x89C6;&#x56FE;&#x66F4;&#x65B0;
+        </li>
+        <li>&#x4E0D;&#x8981;&#x76F4;&#x63A5;&#x4FEE;&#x6539;
+          State&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x662F;&#x552F;&#x4E00;&#x53EF;&#x4EE5;&#x7ED9; this.state
+          &#x8D4B;&#x503C;&#x7684;&#x5730;&#x65B9;</li>
+      </ul>
+      <h3 id="t245.3 &#x66F4;&#x65B0;&#x7EC4;&#x65B0;&#x5B9E;&#x73B0;">5.3
+        &#x66F4;&#x65B0;&#x7EC4;&#x65B0;&#x5B9E;&#x73B0; <a
+          href="#t245.3 &#x66F4;&#x65B0;&#x7EC4;&#x65B0;&#x5B9E;&#x73B0;"> # </a></h3>
+      <h4 id="t255.3.1 src\index.js">5.3.1 src\index.js <a href="#t255.3.1 src\index.js"> # </a></h4>
+      <pre><code class="lang-diff">import React from &quot;./react&quot;;
 import ReactDOM from &quot;./react-dom&quot;;
 class Counter extends React.Component {
     constructor(props) {
@@ -477,9 +993,9 @@ class Counter extends React.Component {
 }
 ReactDOM.render(&lt;Counter title=&quot;&#x8BA1;&#x6570;&#x5668;&quot; /&gt;, document.getElementById(&quot;root&quot;));
 </code></pre>
-<h4 id="t265.3.2 src\Component.js">5.3.2 src\Component.js <a href="#t265.3.2 src\Component.js"> # </a></h4>
-<p>src\Component.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import { findDOM, compareTwoVdom } from &apos;./react-dom&apos;;</span>
+      <h4 id="t265.3.2 src\Component.js">5.3.2 src\Component.js <a href="#t265.3.2 src\Component.js"> # </a></h4>
+      <p>src\Component.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+import { findDOM, compareTwoVdom } from &apos;./react-dom&apos;;</span>
 <span class="hljs-addition">+class Updater {</span>
 <span class="hljs-addition">+    constructor(classInstance) {</span>
 <span class="hljs-addition">+        this.classInstance = classInstance;</span>
@@ -537,9 +1053,9 @@ export class Component {
 <span class="hljs-addition">+    }</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h4 id="t275.3.3 react-dom.js">5.3.3 react-dom.js <a href="#t275.3.3 react-dom.js"> # </a></h4>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff">import { REACT_TEXT } from &quot;./constants&quot;;
+      <h4 id="t275.3.3 react-dom.js">5.3.3 react-dom.js <a href="#t275.3.3 react-dom.js"> # </a></h4>
+      <p>src\react-dom.js</p>
+      <pre><code class="lang-diff">import { REACT_TEXT } from &quot;./constants&quot;;
 function render(vdom, parentDOM) {
     let newDOM = createDOM(vdom)
     if (newDOM) {
@@ -632,25 +1148,42 @@ const ReactDOM = {
 };
 export default ReactDOM;
 </code></pre>
-<h2 id="t286.&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x548C;&#x6279;&#x91CF;&#x66F4;&#x65B0;">6.&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x548C;&#x6279;&#x91CF;&#x66F4;&#x65B0; <a href="#t286.&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x548C;&#x6279;&#x91CF;&#x66F4;&#x65B0;"> # </a></h2>
-<ul>
-<li>State &#x7684;&#x66F4;&#x65B0;&#x4F1A;&#x88AB;&#x5408;&#x5E76; &#x5F53;&#x4F60;&#x8C03;&#x7528; setState() &#x7684;&#x65F6;&#x5019;&#xFF0C;React &#x4F1A;&#x628A;&#x4F60;&#x63D0;&#x4F9B;&#x7684;&#x5BF9;&#x8C61;&#x5408;&#x5E76;&#x5230;&#x5F53;&#x524D;&#x7684; state</li>
-<li>State &#x7684;&#x66F4;&#x65B0;&#x53EF;&#x80FD;&#x662F;&#x5F02;&#x6B65;&#x7684;<ul>
-<li>&#x51FA;&#x4E8E;&#x6027;&#x80FD;&#x8003;&#x8651;&#xFF0C;React &#x53EF;&#x80FD;&#x4F1A;&#x628A;&#x591A;&#x4E2A; setState() &#x8C03;&#x7528;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x8C03;&#x7528;</li>
-<li>&#x56E0;&#x4E3A; this.props &#x548C; this.state &#x53EF;&#x80FD;&#x4F1A;&#x5F02;&#x6B65;&#x66F4;&#x65B0;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x4E0D;&#x8981;&#x4F9D;&#x8D56;&#x4ED6;&#x4EEC;&#x7684;&#x503C;&#x6765;&#x66F4;&#x65B0;&#x4E0B;&#x4E00;&#x4E2A;&#x72B6;&#x6001;</li>
-<li>&#x53EF;&#x4EE5;&#x8BA9; setState() &#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7528;&#x4E0A;&#x4E00;&#x4E2A; state &#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;</li>
-</ul>
-</li>
-<li>&#x4E8B;&#x4EF6;&#x5904;&#x7406;<ul>
-<li>React &#x4E8B;&#x4EF6;&#x7684;&#x547D;&#x540D;&#x91C7;&#x7528;&#x5C0F;&#x9A7C;&#x5CF0;&#x5F0F;(camelCase),&#x800C;&#x4E0D;&#x662F;&#x7EAF;&#x5C0F;&#x5199;</li>
-<li>&#x4F7F;&#x7528; JSX &#x8BED;&#x6CD5;&#x65F6;&#x4F60;&#x9700;&#x8981;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;</li>
-<li>&#x4F60;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;&#x8FD4;&#x56DE; <code>false</code> &#x7684;&#x65B9;&#x5F0F;&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x3002;&#x4F60;&#x5FC5;&#x987B;&#x663E;&#x5F0F;&#x7684;&#x4F7F;&#x7528;<code>preventDefault</code></li>
-</ul>
-</li>
-</ul>
-<h3 id="t296.1 src\index.js">6.1 src\index.js <a href="#t296.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import React from &quot;./react&quot;;
+      <h2 id="t286.&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x548C;&#x6279;&#x91CF;&#x66F4;&#x65B0;">
+        6.&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x548C;&#x6279;&#x91CF;&#x66F4;&#x65B0; <a
+          href="#t286.&#x5408;&#x6210;&#x4E8B;&#x4EF6;&#x548C;&#x6279;&#x91CF;&#x66F4;&#x65B0;"> # </a></h2>
+      <ul>
+        <li>State &#x7684;&#x66F4;&#x65B0;&#x4F1A;&#x88AB;&#x5408;&#x5E76; &#x5F53;&#x4F60;&#x8C03;&#x7528; setState()
+          &#x7684;&#x65F6;&#x5019;&#xFF0C;React
+          &#x4F1A;&#x628A;&#x4F60;&#x63D0;&#x4F9B;&#x7684;&#x5BF9;&#x8C61;&#x5408;&#x5E76;&#x5230;&#x5F53;&#x524D;&#x7684;
+          state</li>
+        <li>State &#x7684;&#x66F4;&#x65B0;&#x53EF;&#x80FD;&#x662F;&#x5F02;&#x6B65;&#x7684;<ul>
+            <li>&#x51FA;&#x4E8E;&#x6027;&#x80FD;&#x8003;&#x8651;&#xFF0C;React
+              &#x53EF;&#x80FD;&#x4F1A;&#x628A;&#x591A;&#x4E2A; setState()
+              &#x8C03;&#x7528;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x8C03;&#x7528;</li>
+            <li>&#x56E0;&#x4E3A; this.props &#x548C; this.state
+              &#x53EF;&#x80FD;&#x4F1A;&#x5F02;&#x6B65;&#x66F4;&#x65B0;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x4E0D;&#x8981;&#x4F9D;&#x8D56;&#x4ED6;&#x4EEC;&#x7684;&#x503C;&#x6765;&#x66F4;&#x65B0;&#x4E0B;&#x4E00;&#x4E2A;&#x72B6;&#x6001;
+            </li>
+            <li>&#x53EF;&#x4EE5;&#x8BA9; setState()
+              &#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7528;&#x4E0A;&#x4E00;&#x4E2A;
+              state &#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;</li>
+          </ul>
+        </li>
+        <li>&#x4E8B;&#x4EF6;&#x5904;&#x7406;<ul>
+            <li>React
+              &#x4E8B;&#x4EF6;&#x7684;&#x547D;&#x540D;&#x91C7;&#x7528;&#x5C0F;&#x9A7C;&#x5CF0;&#x5F0F;(camelCase),&#x800C;&#x4E0D;&#x662F;&#x7EAF;&#x5C0F;&#x5199;
+            </li>
+            <li>&#x4F7F;&#x7528; JSX
+              &#x8BED;&#x6CD5;&#x65F6;&#x4F60;&#x9700;&#x8981;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;
+            </li>
+            <li>&#x4F60;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;&#x8FD4;&#x56DE; <code>false</code>
+              &#x7684;&#x65B9;&#x5F0F;&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x3002;&#x4F60;&#x5FC5;&#x987B;&#x663E;&#x5F0F;&#x7684;&#x4F7F;&#x7528;<code>preventDefault</code>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3 id="t296.1 src\index.js">6.1 src\index.js <a href="#t296.1 src\index.js"> # </a></h3>
+      <p>src\index.js</p>
+      <pre><code class="lang-diff">import React from &quot;./react&quot;;
 import ReactDOM from &quot;./react-dom&quot;;
 class Counter extends React.Component {
     constructor(props) {
@@ -681,9 +1214,9 @@ class Counter extends React.Component {
 }
 ReactDOM.render(&lt;Counter title=&quot;&#x8BA1;&#x6570;&#x5668;&quot; /&gt;, document.getElementById(&quot;root&quot;));
 </code></pre>
-<h3 id="t306.2 src\utils.js">6.2 src\utils.js <a href="#t306.2 src\utils.js"> # </a></h3>
-<p>src\utils.js</p>
-<pre><code class="lang-diff">import { REACT_TEXT } from &quot;./constants&quot;;
+      <h3 id="t306.2 src\utils.js">6.2 src\utils.js <a href="#t306.2 src\utils.js"> # </a></h3>
+      <p>src\utils.js</p>
+      <pre><code class="lang-diff">import { REACT_TEXT } from &quot;./constants&quot;;
 export function wrapToVdom(element) {
   return typeof element <span class="hljs-comment">=== &quot;string&quot; || typeof element === &quot;number&quot;</span>
     ? { type: REACT_TEXT, props: { content: element } }
@@ -694,9 +1227,9 @@ export function wrapToVdom(element) {
 <span class="hljs-addition">+    return typeof obj === &apos;function&apos;;</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t316.3 src\Component.js">6.3 src\Component.js <a href="#t316.3 src\Component.js"> # </a></h3>
-<p>src\Component.js</p>
-<pre><code class="lang-diff">import { findDOM, compareTwoVdom } from &apos;./react-dom&apos;;
+      <h3 id="t316.3 src\Component.js">6.3 src\Component.js <a href="#t316.3 src\Component.js"> # </a></h3>
+      <p>src\Component.js</p>
+      <pre><code class="lang-diff">import { findDOM, compareTwoVdom } from &apos;./react-dom&apos;;
 <span class="hljs-addition">+export let updateQueue = {</span>
 <span class="hljs-addition">+    isBatchingUpdate:false,</span>
 <span class="hljs-addition">+    updaters:[],</span>
@@ -771,9 +1304,9 @@ export class Component {
     }
 }
 </code></pre>
-<h3 id="t326.4 src\event.js">6.4 src\event.js <a href="#t326.4 src\event.js"> # </a></h3>
-<p>src\event.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { updateQueue } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Component&apos;</span>;
+      <h3 id="t326.4 src\event.js">6.4 src\event.js <a href="#t326.4 src\event.js"> # </a></h3>
+      <p>src\event.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> { updateQueue } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Component&apos;</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addEvent</span>(<span class="hljs-params">dom, eventType, handleClick</span>) </span>{
     <span class="hljs-keyword">let</span> store;
     <span class="hljs-keyword">if</span> (dom.store) {
@@ -810,9 +1343,9 @@ export class Component {
     <span class="hljs-keyword">return</span> syntheticEvent;
 }
 </code></pre>
-<h3 id="t336.5 src\react-dom.js">6.5 src\react-dom.js <a href="#t336.5 src\react-dom.js"> # </a></h3>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff">import { REACT_TEXT } from &quot;./constants&quot;;
+      <h3 id="t336.5 src\react-dom.js">6.5 src\react-dom.js <a href="#t336.5 src\react-dom.js"> # </a></h3>
+      <p>src\react-dom.js</p>
+      <pre><code class="lang-diff">import { REACT_TEXT } from &quot;./constants&quot;;
 <span class="hljs-addition">+import { addEvent } from &apos;./event&apos;;</span>
 function render(vdom, parentDOM) {
     let newDOM = createDOM(vdom)
@@ -906,17 +1439,26 @@ const ReactDOM = {
 };
 export default ReactDOM;
 </code></pre>
-<h2 id="t347.ref">7.ref <a href="#t347.ref"> # </a></h2>
-<ul>
-<li>Refs &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x8BBF;&#x95EE; DOM &#x8282;&#x70B9;&#x6216;&#x5728; render &#x65B9;&#x6CD5;&#x4E2D;&#x521B;&#x5EFA;&#x7684; React &#x5143;&#x7D20;</li>
-</ul>
-<h3 id="t357.1 &#x4E3A; DOM &#x5143;&#x7D20;&#x6DFB;&#x52A0; ref">7.1 &#x4E3A; DOM &#x5143;&#x7D20;&#x6DFB;&#x52A0; ref <a href="#t357.1 &#x4E3A; DOM &#x5143;&#x7D20;&#x6DFB;&#x52A0; ref"> # </a></h3>
-<ul>
-<li>&#x53EF;&#x4EE5;&#x4F7F;&#x7528; ref &#x53BB;&#x5B58;&#x50A8; DOM &#x8282;&#x70B9;&#x7684;&#x5F15;&#x7528;</li>
-<li>&#x5F53; ref &#x5C5E;&#x6027;&#x7528;&#x4E8E; HTML &#x5143;&#x7D20;&#x65F6;&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528; React.createRef() &#x521B;&#x5EFA;&#x7684; ref &#x63A5;&#x6536;&#x5E95;&#x5C42; DOM &#x5143;&#x7D20;&#x4F5C;&#x4E3A;&#x5176; current &#x5C5E;&#x6027;</li>
-</ul>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+      <h2 id="t347.ref">7.ref <a href="#t347.ref"> # </a></h2>
+      <ul>
+        <li>Refs
+          &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x8BBF;&#x95EE;
+          DOM &#x8282;&#x70B9;&#x6216;&#x5728; render &#x65B9;&#x6CD5;&#x4E2D;&#x521B;&#x5EFA;&#x7684; React
+          &#x5143;&#x7D20;</li>
+      </ul>
+      <h3 id="t357.1 &#x4E3A; DOM &#x5143;&#x7D20;&#x6DFB;&#x52A0; ref">7.1 &#x4E3A; DOM
+        &#x5143;&#x7D20;&#x6DFB;&#x52A0; ref <a href="#t357.1 &#x4E3A; DOM &#x5143;&#x7D20;&#x6DFB;&#x52A0; ref"> # </a>
+      </h3>
+      <ul>
+        <li>&#x53EF;&#x4EE5;&#x4F7F;&#x7528; ref &#x53BB;&#x5B58;&#x50A8; DOM &#x8282;&#x70B9;&#x7684;&#x5F15;&#x7528;
+        </li>
+        <li>&#x5F53; ref &#x5C5E;&#x6027;&#x7528;&#x4E8E; HTML
+          &#x5143;&#x7D20;&#x65F6;&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528; React.createRef()
+          &#x521B;&#x5EFA;&#x7684; ref &#x63A5;&#x6536;&#x5E95;&#x5C42; DOM &#x5143;&#x7D20;&#x4F5C;&#x4E3A;&#x5176;
+          current &#x5C5E;&#x6027;</li>
+      </ul>
+      <p>src\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Sum</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
     a
@@ -946,12 +1488,17 @@ ReactDOM.render(
     <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>)
 );
 </code></pre>
-<h3 id="t367.2 &#x4E3A; class &#x7EC4;&#x4EF6;&#x6DFB;&#x52A0; Ref">7.2 &#x4E3A; class &#x7EC4;&#x4EF6;&#x6DFB;&#x52A0; Ref <a href="#t367.2 &#x4E3A; class &#x7EC4;&#x4EF6;&#x6DFB;&#x52A0; Ref"> # </a></h3>
-<ul>
-<li>&#x5F53; ref &#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49; class &#x7EC4;&#x4EF6;&#x65F6;&#xFF0C;ref &#x5BF9;&#x8C61;&#x63A5;&#x6536;&#x7EC4;&#x4EF6;&#x7684;&#x6302;&#x8F7D;&#x5B9E;&#x4F8B;&#x4F5C;&#x4E3A;&#x5176; current &#x5C5E;&#x6027;</li>
-</ul>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+      <h3 id="t367.2 &#x4E3A; class &#x7EC4;&#x4EF6;&#x6DFB;&#x52A0; Ref">7.2 &#x4E3A; class
+        &#x7EC4;&#x4EF6;&#x6DFB;&#x52A0; Ref <a href="#t367.2 &#x4E3A; class &#x7EC4;&#x4EF6;&#x6DFB;&#x52A0; Ref"> #
+        </a></h3>
+      <ul>
+        <li>&#x5F53; ref &#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49; class
+          &#x7EC4;&#x4EF6;&#x65F6;&#xFF0C;ref
+          &#x5BF9;&#x8C61;&#x63A5;&#x6536;&#x7EC4;&#x4EF6;&#x7684;&#x6302;&#x8F7D;&#x5B9E;&#x4F8B;&#x4F5C;&#x4E3A;&#x5176;
+          current &#x5C5E;&#x6027;</li>
+      </ul>
+      <p>src\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Form</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
     input
@@ -989,14 +1536,18 @@ ReactDOM.render(
     <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>)
 );
 </code></pre>
-<h3 id="t377.3 Ref&#x8F6C;&#x53D1;">7.3 Ref&#x8F6C;&#x53D1; <a href="#t377.3 Ref&#x8F6C;&#x53D1;"> # </a></h3>
-<ul>
-<li>&#x4F60;&#x4E0D;&#x80FD;&#x5728;&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x4E0A;&#x4F7F;&#x7528; ref &#x5C5E;&#x6027;&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x4EEC;&#x6CA1;&#x6709;&#x5B9E;&#x4F8B;</li>
-<li>Ref &#x8F6C;&#x53D1;&#x662F;&#x4E00;&#x9879;&#x5C06; ref &#x81EA;&#x52A8;&#x5730;&#x901A;&#x8FC7;&#x7EC4;&#x4EF6;&#x4F20;&#x9012;&#x5230;&#x5176;&#x4E00;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x6280;&#x5DE7;</li>
-<li>Ref &#x8F6C;&#x53D1;&#x5141;&#x8BB8;&#x67D0;&#x4E9B;&#x7EC4;&#x4EF6;&#x63A5;&#x6536; ref&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x5411;&#x4E0B;&#x4F20;&#x9012;&#x7ED9;&#x5B50;&#x7EC4;&#x4EF6;</li>
-</ul>
-<p>src/index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+      <h3 id="t377.3 Ref&#x8F6C;&#x53D1;">7.3 Ref&#x8F6C;&#x53D1; <a href="#t377.3 Ref&#x8F6C;&#x53D1;"> # </a></h3>
+      <ul>
+        <li>&#x4F60;&#x4E0D;&#x80FD;&#x5728;&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x4E0A;&#x4F7F;&#x7528; ref
+          &#x5C5E;&#x6027;&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x4EEC;&#x6CA1;&#x6709;&#x5B9E;&#x4F8B;</li>
+        <li>Ref &#x8F6C;&#x53D1;&#x662F;&#x4E00;&#x9879;&#x5C06; ref
+          &#x81EA;&#x52A8;&#x5730;&#x901A;&#x8FC7;&#x7EC4;&#x4EF6;&#x4F20;&#x9012;&#x5230;&#x5176;&#x4E00;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x6280;&#x5DE7;
+        </li>
+        <li>Ref &#x8F6C;&#x53D1;&#x5141;&#x8BB8;&#x67D0;&#x4E9B;&#x7EC4;&#x4EF6;&#x63A5;&#x6536;
+          ref&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x5411;&#x4E0B;&#x4F20;&#x9012;&#x7ED9;&#x5B50;&#x7EC4;&#x4EF6;</li>
+      </ul>
+      <p>src/index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
 interface InputProps { }
 <span class="hljs-keyword">const</span> TextInput = React.forwardRef(<span class="hljs-function">(<span class="hljs-params">props, ref</span>) =&gt;</span> (
@@ -1028,14 +1579,14 @@ ReactDOM.render(
     <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>)
 );
 </code></pre>
-<h3 id="t387.4 ref&#x5B9E;&#x73B0;">7.4 ref&#x5B9E;&#x73B0; <a href="#t387.4 ref&#x5B9E;&#x73B0;"> # </a></h3>
-<h4 id="t397.4.1 src\constants.js">7.4.1 src\constants.js <a href="#t397.4.1 src\constants.js"> # </a></h4>
-<pre><code class="lang-diff">export const REACT_TEXT = Symbol(&apos;REACT_TEXT&apos;);
+      <h3 id="t387.4 ref&#x5B9E;&#x73B0;">7.4 ref&#x5B9E;&#x73B0; <a href="#t387.4 ref&#x5B9E;&#x73B0;"> # </a></h3>
+      <h4 id="t397.4.1 src\constants.js">7.4.1 src\constants.js <a href="#t397.4.1 src\constants.js"> # </a></h4>
+      <pre><code class="lang-diff">export const REACT_TEXT = Symbol(&apos;REACT_TEXT&apos;);
 <span class="hljs-addition">+export const REACT_FORWARD_REF_TYPE = Symbol(&apos;react.forward_ref&apos;);</span>
 </code></pre>
-<h4 id="t407.4.2 src\react.js">7.4.2 src\react.js <a href="#t407.4.2 src\react.js"> # </a></h4>
-<p>src\react.js</p>
-<pre><code class="lang-diff">import { wrapToVdom } from &quot;./utils&quot;;
+      <h4 id="t407.4.2 src\react.js">7.4.2 src\react.js <a href="#t407.4.2 src\react.js"> # </a></h4>
+      <p>src\react.js</p>
+      <pre><code class="lang-diff">import { wrapToVdom } from &quot;./utils&quot;;
 import {Component} from &apos;./Component&apos;;
 function createElement(type, config, children) {
   let ref;
@@ -1078,9 +1629,9 @@ const React = {
 };
 export default React;
 </code></pre>
-<h4 id="t417.4.3 react-dom.js">7.4.3 react-dom.js <a href="#t417.4.3 react-dom.js"> # </a></h4>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import {REACT_TEXT,REACT_FORWARD_REF_TYPE} from &apos;./constants&apos;;</span>
+      <h4 id="t417.4.3 react-dom.js">7.4.3 react-dom.js <a href="#t417.4.3 react-dom.js"> # </a></h4>
+      <p>src\react-dom.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+import {REACT_TEXT,REACT_FORWARD_REF_TYPE} from &apos;./constants&apos;;</span>
 import { addEvent } from &apos;./event&apos;;
 function render(vdom, parentDOM) {
     let newDOM = createDOM(vdom)
@@ -1184,11 +1735,13 @@ const ReactDOM = {
 };
 export default ReactDOM;
 </code></pre>
-<h2 id="t428.&#x57FA;&#x672C;&#x751F;&#x547D;&#x5468;&#x671F;">8.&#x57FA;&#x672C;&#x751F;&#x547D;&#x5468;&#x671F; <a href="#t428.&#x57FA;&#x672C;&#x751F;&#x547D;&#x5468;&#x671F;"> # </a></h2>
-<p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/react15_1626405471667.jpg" alt="react15_1626405471667.jpg"></p>
-<h3 id="t438.1 src\index.js">8.1 src\index.js <a href="#t438.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
+      <h2 id="t428.&#x57FA;&#x672C;&#x751F;&#x547D;&#x5468;&#x671F;">8.&#x57FA;&#x672C;&#x751F;&#x547D;&#x5468;&#x671F;
+        <a href="#t428.&#x57FA;&#x672C;&#x751F;&#x547D;&#x5468;&#x671F;"> # </a></h2>
+      <p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/react15_1626405471667.jpg"
+          alt="react15_1626405471667.jpg"></p>
+      <h3 id="t438.1 src\index.js">8.1 src\index.js <a href="#t438.1 src\index.js"> # </a></h3>
+      <p>src\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-dom&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{ <span class="hljs-comment">// &#x4ED6;&#x4F1A;&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x72B6;&#x6001;&#x76F8;&#x7B49;&#x5C31;&#x4E0D;&#x4F1A;&#x5237;&#x65B0;&#x89C6;&#x56FE; PureComponent&#x662F;&#x6D45;&#x6BD4;&#x8F83;</span>
     <span class="hljs-keyword">static</span> defaultProps = {
@@ -1247,9 +1800,9 @@ Counter 3.render
 Counter 7.componentDidUpdate
 */</span>
 </code></pre>
-<h3 id="t448.2 src\Component.js">8.2 src\Component.js <a href="#t448.2 src\Component.js"> # </a></h3>
-<p>src\Component.js</p>
-<pre><code class="lang-diff">import { findDOM, compareTwoVdom } from &apos;./react-dom&apos;;
+      <h3 id="t448.2 src\Component.js">8.2 src\Component.js <a href="#t448.2 src\Component.js"> # </a></h3>
+      <p>src\Component.js</p>
+      <pre><code class="lang-diff">import { findDOM, compareTwoVdom } from &apos;./react-dom&apos;;
 export let updateQueue = {
     isBatchingUpdate:false,
     updaters:[],
@@ -1337,9 +1890,9 @@ export class Component {
     }
 }
 </code></pre>
-<h3 id="t458.3 src\react-dom.js">8.3 src\react-dom.js <a href="#t458.3 src\react-dom.js"> # </a></h3>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff">import {REACT_TEXT,REACT_FORWARD_REF_TYPE} from &apos;./constants&apos;;
+      <h3 id="t458.3 src\react-dom.js">8.3 src\react-dom.js <a href="#t458.3 src\react-dom.js"> # </a></h3>
+      <p>src\react-dom.js</p>
+      <pre><code class="lang-diff">import {REACT_TEXT,REACT_FORWARD_REF_TYPE} from &apos;./constants&apos;;
 import { addEvent } from &apos;./event&apos;;
 
 function render(vdom, parentDOM) {
@@ -1448,11 +2001,14 @@ const ReactDOM = {
 };
 export default ReactDOM;
 </code></pre>
-<h2 id="t469.&#x5B50;&#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;">9.&#x5B50;&#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F; <a href="#t469.&#x5B50;&#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;"> # </a></h2>
-<p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/counterdomdiff_1626412843123.jpg" alt="counterdomdiff_1626412843123"></p>
-<h3 id="t479.1 src\index.js">9.1 src\index.js <a href="#t479.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
+      <h2 id="t469.&#x5B50;&#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;">
+        9.&#x5B50;&#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F; <a
+          href="#t469.&#x5B50;&#x7EC4;&#x4EF6;&#x751F;&#x547D;&#x5468;&#x671F;"> # </a></h2>
+      <p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/counterdomdiff_1626412843123.jpg"
+          alt="counterdomdiff_1626412843123"></p>
+      <h3 id="t479.1 src\index.js">9.1 src\index.js <a href="#t479.1 src\index.js"> # </a></h3>
+      <p>src\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-dom&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{ <span class="hljs-comment">// &#x4ED6;&#x4F1A;&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x72B6;&#x6001;&#x76F8;&#x7B49;&#x5C31;&#x4E0D;&#x4F1A;&#x5237;&#x65B0;&#x89C6;&#x56FE; PureComponent&#x662F;&#x6D45;&#x6BD4;&#x8F83;</span>
     <span class="hljs-keyword">static</span> defaultProps = {
@@ -1576,9 +2132,9 @@ Counter 5.shouldComponentUpdate
 Counter 7.componentDidUpdate
  */</span>
 </code></pre>
-<h3 id="t489.2 src\react-dom.js">9.2 src\react-dom.js <a href="#t489.2 src\react-dom.js"> # </a></h3>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import { REACT_TEXT, REACT_FORWARD_REF_TYPE } from &quot;./constants&quot;;</span>
+      <h3 id="t489.2 src\react-dom.js">9.2 src\react-dom.js <a href="#t489.2 src\react-dom.js"> # </a></h3>
+      <p>src\react-dom.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+import { REACT_TEXT, REACT_FORWARD_REF_TYPE } from &quot;./constants&quot;;</span>
 <span class="hljs-addition">+import { addEvent } from &quot;./event&quot;;</span>
 
 function render(vdom, parentDOM) {
@@ -1767,16 +2323,23 @@ const ReactDOM = {
 };
 export default ReactDOM;
 </code></pre>
-<h2 id="t4910.DOM-DIFF&#x7B97;&#x6CD5;">10.DOM-DIFF&#x7B97;&#x6CD5; <a href="#t4910.DOM-DIFF&#x7B97;&#x6CD5;"> # </a></h2>
-<ul>
-<li>&#x53EA;&#x5BF9;&#x540C;&#x7EA7;&#x8282;&#x70B9;&#x8FDB;&#x884C;&#x5BF9;&#x6BD4;&#xFF0C;&#x5982;&#x679C;DOM&#x8282;&#x70B9;&#x8DE8;&#x5C42;&#x7EA7;&#x79FB;&#x52A8;&#xFF0C;&#x5219;React&#x4E0D;&#x4F1A;&#x590D;&#x7528;</li>
-<li>&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#x4F1A;&#x4EA7;&#x51FA;&#x4E0D;&#x540C;&#x7684;&#x7ED3;&#x6784; &#xFF0C;&#x4F1A;&#x9500;&#x6BC1;&#x8001;&#x7ED3;&#x6784;&#xFF0C;&#x521B;&#x5EFA;&#x65B0;&#x7ED3;&#x6784;</li>
-<li>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>key</code>&#x6807;&#x8BC6;&#x79FB;&#x52A8;&#x7684;&#x5143;&#x7D20;</li>
-</ul>
-<p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/domdiff_1626417725773.jpg" alt="domdiff_1626417725773"></p>
-<h3 id="t5010.1 src\index.js">10.1 src\index.js <a href="#t5010.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
+      <h2 id="t4910.DOM-DIFF&#x7B97;&#x6CD5;">10.DOM-DIFF&#x7B97;&#x6CD5; <a href="#t4910.DOM-DIFF&#x7B97;&#x6CD5;"> #
+        </a></h2>
+      <ul>
+        <li>
+          &#x53EA;&#x5BF9;&#x540C;&#x7EA7;&#x8282;&#x70B9;&#x8FDB;&#x884C;&#x5BF9;&#x6BD4;&#xFF0C;&#x5982;&#x679C;DOM&#x8282;&#x70B9;&#x8DE8;&#x5C42;&#x7EA7;&#x79FB;&#x52A8;&#xFF0C;&#x5219;React&#x4E0D;&#x4F1A;&#x590D;&#x7528;
+        </li>
+        <li>
+          &#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#x4F1A;&#x4EA7;&#x51FA;&#x4E0D;&#x540C;&#x7684;&#x7ED3;&#x6784;
+          &#xFF0C;&#x4F1A;&#x9500;&#x6BC1;&#x8001;&#x7ED3;&#x6784;&#xFF0C;&#x521B;&#x5EFA;&#x65B0;&#x7ED3;&#x6784;</li>
+        <li>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>key</code>&#x6807;&#x8BC6;&#x79FB;&#x52A8;&#x7684;&#x5143;&#x7D20;
+        </li>
+      </ul>
+      <p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/domdiff_1626417725773.jpg"
+          alt="domdiff_1626417725773"></p>
+      <h3 id="t5010.1 src\index.js">10.1 src\index.js <a href="#t5010.1 src\index.js"> # </a></h3>
+      <p>src\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-dom&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
     <span class="hljs-keyword">constructor</span>(props) {
@@ -1806,17 +2369,17 @@ export default ReactDOM;
 }
 ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Counter</span> /&gt;</span></span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>));
 </code></pre>
-<h3 id="t5110.2 src\constants.js">10.2 src\constants.js <a href="#t5110.2 src\constants.js"> # </a></h3>
-<p>src\constants.js</p>
-<pre><code class="lang-diff">export const REACT_TEXT = Symbol(&apos;REACT_TEXT&apos;);
+      <h3 id="t5110.2 src\constants.js">10.2 src\constants.js <a href="#t5110.2 src\constants.js"> # </a></h3>
+      <p>src\constants.js</p>
+      <pre><code class="lang-diff">export const REACT_TEXT = Symbol(&apos;REACT_TEXT&apos;);
 export const REACT_FORWARD_REF_TYPE = Symbol(&apos;react.forward_ref&apos;);
 <span class="hljs-addition">+export const REACT_FRAGMENT = Symbol(&apos;react.fragment&apos;)</span>
 <span class="hljs-addition">+export const PLACEMENT = &apos;PLACEMENT&apos;;</span>
 <span class="hljs-addition">+export const MOVE = &apos;MOVE&apos;;</span>
 </code></pre>
-<h3 id="t5210.3 src\react.js">10.3 src\react.js <a href="#t5210.3 src\react.js"> # </a></h3>
-<p>src\react.js</p>
-<pre><code class="lang-diff">import { wrapToVdom } from &quot;./utils&quot;;
+      <h3 id="t5210.3 src\react.js">10.3 src\react.js <a href="#t5210.3 src\react.js"> # </a></h3>
+      <p>src\react.js</p>
+      <pre><code class="lang-diff">import { wrapToVdom } from &quot;./utils&quot;;
 import { Component } from &apos;./Component&apos;;
 <span class="hljs-addition">+import { REACT_FORWARD_REF_TYPE,REACT_FRAGMENT } from &apos;./constants&apos;;</span>
 function createElement(type, config, children) {
@@ -1862,9 +2425,9 @@ const React = {
 };
 export default React;
 </code></pre>
-<h3 id="t5310.4 src\react-dom.js">10.4 src\react-dom.js <a href="#t5310.4 src\react-dom.js"> # </a></h3>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import { REACT_TEXT, REACT_FORWARD_REF_TYPE, PLACEMENT, MOVE ,REACT_FRAGMENT} from &quot;./constants&quot;;</span>
+      <h3 id="t5310.4 src\react-dom.js">10.4 src\react-dom.js <a href="#t5310.4 src\react-dom.js"> # </a></h3>
+      <p>src\react-dom.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+import { REACT_TEXT, REACT_FORWARD_REF_TYPE, PLACEMENT, MOVE ,REACT_FRAGMENT} from &quot;./constants&quot;;</span>
 import { addEvent } from &quot;./event&quot;;
 <span class="hljs-addition">+import React from &apos;./react&apos;;</span>
 function render(vdom, parentDOM) {
@@ -2112,13 +2675,19 @@ const ReactDOM = {
 };
 export default ReactDOM;
 </code></pre>
-<h2 id="t5411.&#x65B0;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">11.&#x65B0;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F; <a href="#t5411.&#x65B0;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"> # </a></h2>
-<p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/react16_1626532331619.jpg" alt="react16_1626532331619"></p>
-<h3 id="t5511.1 getDerivedStateFromProps">11.1 getDerivedStateFromProps <a href="#t5511.1 getDerivedStateFromProps"> # </a></h3>
-<ul>
-<li><code>static getDerivedStateFromProps(props, state)</code> &#x8FD9;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x529F;&#x80FD;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x5C06;&#x4F20;&#x5165;&#x7684;props&#x6620;&#x5C04;&#x5230;state&#x4E0A;&#x9762;</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+      <h2 id="t5411.&#x65B0;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">
+        11.&#x65B0;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F; <a
+          href="#t5411.&#x65B0;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"> # </a></h2>
+      <p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/react16_1626532331619.jpg"
+          alt="react16_1626532331619"></p>
+      <h3 id="t5511.1 getDerivedStateFromProps">11.1 getDerivedStateFromProps <a
+          href="#t5511.1 getDerivedStateFromProps"> # </a></h3>
+      <ul>
+        <li><code>static getDerivedStateFromProps(props, state)</code>
+          &#x8FD9;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x529F;&#x80FD;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x5C06;&#x4F20;&#x5165;&#x7684;props&#x6620;&#x5C04;&#x5230;state&#x4E0A;&#x9762;
+        </li>
+      </ul>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
     <span class="hljs-keyword">static</span> defaultProps = {
@@ -2172,11 +2741,14 @@ ReactDOM.render(
     <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>)
 );
 </code></pre>
-<h3 id="t5611.2 getSnapshotBeforeUpdate">11.2 getSnapshotBeforeUpdate <a href="#t5611.2 getSnapshotBeforeUpdate"> # </a></h3>
-<ul>
-<li>getSnapshotBeforeUpdate() &#x88AB;&#x8C03;&#x7528;&#x4E8E;render&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x4F46;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;DOM&#x7684;&#x65F6;&#x5019;&#x3002;&#x5B83;&#x4F7F;&#x60A8;&#x7684;&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x5728;&#x53EF;&#x80FD;&#x66F4;&#x6539;&#x4E4B;&#x524D;&#x4ECE;DOM&#x6355;&#x83B7;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#xFF08;&#x4F8B;&#x5982;&#x6EDA;&#x52A8;&#x4F4D;&#x7F6E;&#xFF09;&#x3002;&#x6B64;&#x751F;&#x547D;&#x5468;&#x671F;&#x8FD4;&#x56DE;&#x7684;&#x4EFB;&#x4F55;&#x503C;&#x90FD;&#x5C06;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;componentDidUpdate()</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
+      <h3 id="t5611.2 getSnapshotBeforeUpdate">11.2 getSnapshotBeforeUpdate <a href="#t5611.2 getSnapshotBeforeUpdate">
+          # </a></h3>
+      <ul>
+        <li>getSnapshotBeforeUpdate()
+          &#x88AB;&#x8C03;&#x7528;&#x4E8E;render&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x4F46;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;DOM&#x7684;&#x65F6;&#x5019;&#x3002;&#x5B83;&#x4F7F;&#x60A8;&#x7684;&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x5728;&#x53EF;&#x80FD;&#x66F4;&#x6539;&#x4E4B;&#x524D;&#x4ECE;DOM&#x6355;&#x83B7;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#xFF08;&#x4F8B;&#x5982;&#x6EDA;&#x52A8;&#x4F4D;&#x7F6E;&#xFF09;&#x3002;&#x6B64;&#x751F;&#x547D;&#x5468;&#x671F;&#x8FD4;&#x56DE;&#x7684;&#x4EFB;&#x4F55;&#x503C;&#x90FD;&#x5C06;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;componentDidUpdate()
+        </li>
+      </ul>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-dom&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ScrollingList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
     <span class="hljs-keyword">constructor</span>(props) {
@@ -2228,9 +2800,9 @@ ReactDOM.render(
     <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>)
 );
 </code></pre>
-<h3 id="t5711.3 &#x5B9E;&#x73B0;">11.3 &#x5B9E;&#x73B0; <a href="#t5711.3 &#x5B9E;&#x73B0;"> # </a></h3>
-<h4 id="t5811.3.1  src\Component.js">11.3.1  src\Component.js <a href="#t5811.3.1  src\Component.js"> # </a></h4>
-<pre><code class="lang-diff">import { findDOM, compareTwoVdom } from &apos;./react-dom&apos;;
+      <h3 id="t5711.3 &#x5B9E;&#x73B0;">11.3 &#x5B9E;&#x73B0; <a href="#t5711.3 &#x5B9E;&#x73B0;"> # </a></h3>
+      <h4 id="t5811.3.1  src\Component.js">11.3.1 src\Component.js <a href="#t5811.3.1  src\Component.js"> # </a></h4>
+      <pre><code class="lang-diff">import { findDOM, compareTwoVdom } from &apos;./react-dom&apos;;
 export let updateQueue = {
     isBatchingUpdate: false,
     updaters: [],
@@ -2324,14 +2896,25 @@ export class Component {
     }
 }
 </code></pre>
-<h2 id="t5912. Context(&#x4E0A;&#x4E0B;&#x6587;)">12. Context(&#x4E0A;&#x4E0B;&#x6587;) <a href="#t5912. Context(&#x4E0A;&#x4E0B;&#x6587;)"> # </a></h2>
-<ul>
-<li>&#x5728;&#x67D0;&#x4E9B;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x4F60;&#x60F3;&#x5728;&#x6574;&#x4E2A;&#x7EC4;&#x4EF6;&#x6811;&#x4E2D;&#x4F20;&#x9012;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x5374;&#x4E0D;&#x60F3;&#x624B;&#x52A8;&#x5730;&#x5728;&#x6BCF;&#x4E00;&#x5C42;&#x4F20;&#x9012;&#x5C5E;&#x6027;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728; React &#x4E2D;&#x4F7F;&#x7528;&#x5F3A;&#x5927;&#x7684;contextAPI&#x89E3;&#x51B3;&#x4E0A;&#x8FF0;&#x95EE;&#x9898;</li>
-<li>&#x5728;&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684; React &#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x6570;&#x636E;&#x662F;&#x901A;&#x8FC7; props &#x5C5E;&#x6027;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#xFF08;&#x7531;&#x7236;&#x53CA;&#x5B50;&#xFF09;&#x8FDB;&#x884C;&#x4F20;&#x9012;&#x7684;&#xFF0C;&#x4F46;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x5BF9;&#x4E8E;&#x67D0;&#x4E9B;&#x7C7B;&#x578B;&#x7684;&#x5C5E;&#x6027;&#x800C;&#x8A00;&#x662F;&#x6781;&#x5176;&#x7E41;&#x7410;&#x7684;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;&#x5730;&#x533A;&#x504F;&#x597D;&#xFF0C;UI &#x4E3B;&#x9898;&#xFF09;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x662F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x8BB8;&#x591A;&#x7EC4;&#x4EF6;&#x90FD;&#x9700;&#x8981;&#x7684;&#x3002;Context &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5728;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x5171;&#x4EAB;&#x6B64;&#x7C7B;&#x503C;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x663E;&#x5F0F;&#x5730;&#x901A;&#x8FC7;&#x7EC4;&#x4EF6;&#x6811;&#x7684;&#x9010;&#x5C42;&#x4F20;&#x9012; props</li>
-</ul>
-<p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/contextapi_1626532435193.gif" alt="contextapi_1626532435193"></p>
-<h3 id="t6012.1 src\index.js">12.1 src\index.js <a href="#t6012.1 src\index.js"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
+      <h2 id="t5912. Context(&#x4E0A;&#x4E0B;&#x6587;)">12. Context(&#x4E0A;&#x4E0B;&#x6587;) <a
+          href="#t5912. Context(&#x4E0A;&#x4E0B;&#x6587;)"> # </a></h2>
+      <ul>
+        <li>
+          &#x5728;&#x67D0;&#x4E9B;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x4F60;&#x60F3;&#x5728;&#x6574;&#x4E2A;&#x7EC4;&#x4EF6;&#x6811;&#x4E2D;&#x4F20;&#x9012;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x5374;&#x4E0D;&#x60F3;&#x624B;&#x52A8;&#x5730;&#x5728;&#x6BCF;&#x4E00;&#x5C42;&#x4F20;&#x9012;&#x5C5E;&#x6027;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;
+          React
+          &#x4E2D;&#x4F7F;&#x7528;&#x5F3A;&#x5927;&#x7684;contextAPI&#x89E3;&#x51B3;&#x4E0A;&#x8FF0;&#x95EE;&#x9898;
+        </li>
+        <li>&#x5728;&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684; React
+          &#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x6570;&#x636E;&#x662F;&#x901A;&#x8FC7; props
+          &#x5C5E;&#x6027;&#x81EA;&#x4E0A;&#x800C;&#x4E0B;&#xFF08;&#x7531;&#x7236;&#x53CA;&#x5B50;&#xFF09;&#x8FDB;&#x884C;&#x4F20;&#x9012;&#x7684;&#xFF0C;&#x4F46;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x5BF9;&#x4E8E;&#x67D0;&#x4E9B;&#x7C7B;&#x578B;&#x7684;&#x5C5E;&#x6027;&#x800C;&#x8A00;&#x662F;&#x6781;&#x5176;&#x7E41;&#x7410;&#x7684;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;&#x5730;&#x533A;&#x504F;&#x597D;&#xFF0C;UI
+          &#x4E3B;&#x9898;&#xFF09;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x662F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x8BB8;&#x591A;&#x7EC4;&#x4EF6;&#x90FD;&#x9700;&#x8981;&#x7684;&#x3002;Context
+          &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5728;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x5171;&#x4EAB;&#x6B64;&#x7C7B;&#x503C;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x663E;&#x5F0F;&#x5730;&#x901A;&#x8FC7;&#x7EC4;&#x4EF6;&#x6811;&#x7684;&#x9010;&#x5C42;&#x4F20;&#x9012;
+          props</li>
+      </ul>
+      <p><img src="https://upload-markdown-images.oss-cn-beijing.aliyuncs.com/contextapi_1626532435193.gif"
+          alt="contextapi_1626532435193"></p>
+      <h3 id="t6012.1 src\index.js">12.1 src\index.js <a href="#t6012.1 src\index.js"> # </a></h3>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-dom&apos;</span>;
 <span class="hljs-keyword">let</span> ThemeContext = React.createContext(<span class="hljs-literal">null</span>);
 <span class="hljs-keyword">let</span> root = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;#root&apos;</span>);
@@ -2425,9 +3008,9 @@ export class Component {
 }
 ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Page</span> /&gt;</span></span>, root);
 </code></pre>
-<h3 id="t6112.2 src\constants.js">12.2 src\constants.js <a href="#t6112.2 src\constants.js"> # </a></h3>
-<p>src\constants.js</p>
-<pre><code class="lang-diff">export const REACT_TEXT = Symbol(&apos;REACT_TEXT&apos;);
+      <h3 id="t6112.2 src\constants.js">12.2 src\constants.js <a href="#t6112.2 src\constants.js"> # </a></h3>
+      <p>src\constants.js</p>
+      <pre><code class="lang-diff">export const REACT_TEXT = Symbol(&apos;REACT_TEXT&apos;);
 export const REACT_FORWARD_REF_TYPE = Symbol(&apos;react.forward_ref&apos;);
 
 export const PLACEMENT = &apos;PLACEMENT&apos;;
@@ -2436,9 +3019,9 @@ export const MOVE = &apos;MOVE&apos;;
 <span class="hljs-addition">+export const REACT_PROVIDER = Symbol(&apos;react.provider&apos;);</span>
 <span class="hljs-addition">+export const REACT_CONTEXT = Symbol(&apos;react.context&apos;);</span>
 </code></pre>
-<h3 id="t6212.3 src\Component.js">12.3 src\Component.js <a href="#t6212.3 src\Component.js"> # </a></h3>
-<p>src\Component.js</p>
-<pre><code class="lang-diff">import { findDOM, compareTwoVdom } from &apos;./react-dom&apos;;
+      <h3 id="t6212.3 src\Component.js">12.3 src\Component.js <a href="#t6212.3 src\Component.js"> # </a></h3>
+      <p>src\Component.js</p>
+      <pre><code class="lang-diff">import { findDOM, compareTwoVdom } from &apos;./react-dom&apos;;
 export let updateQueue = {
     isBatchingUpdate: false,
     updaters: [],
@@ -2536,9 +3119,9 @@ export class Component {
     }
 }
 </code></pre>
-<h3 id="t6312.4 src\react.js">12.4 src\react.js <a href="#t6312.4 src\react.js"> # </a></h3>
-<p>src\react.js</p>
-<pre><code class="lang-diff">import { wrapToVdom } from &quot;./utils&quot;;
+      <h3 id="t6312.4 src\react.js">12.4 src\react.js <a href="#t6312.4 src\react.js"> # </a></h3>
+      <p>src\react.js</p>
+      <pre><code class="lang-diff">import { wrapToVdom } from &quot;./utils&quot;;
 import { Component } from &apos;./Component&apos;;
 <span class="hljs-addition">+import { REACT_FORWARD_REF_TYPE, REACT_FRAGMENT,REACT_CONTEXT, REACT_PROVIDER } from &apos;./constants&apos;;</span>
 function createElement(type, config, children) {
@@ -2598,9 +3181,9 @@ const React = {
 export default React;
 
 </code></pre>
-<h3 id="t6412.5 src\react-dom.js">12.5 src\react-dom.js <a href="#t6412.5 src\react-dom.js"> # </a></h3>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import { REACT_TEXT, REACT_FORWARD_REF_TYPE, PLACEMENT, MOVE, REACT_PROVIDER, REACT_CONTEXT,REACT_FRAGMENT } from &quot;./constants&quot;;</span>
+      <h3 id="t6412.5 src\react-dom.js">12.5 src\react-dom.js <a href="#t6412.5 src\react-dom.js"> # </a></h3>
+      <p>src\react-dom.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+import { REACT_TEXT, REACT_FORWARD_REF_TYPE, PLACEMENT, MOVE, REACT_PROVIDER, REACT_CONTEXT,REACT_FRAGMENT } from &quot;./constants&quot;;</span>
 import { addEvent } from &quot;./event&quot;;
 import React from &apos;./react&apos;;
 function render(vdom, parentDOM) {
@@ -2892,27 +3475,35 @@ const ReactDOM = {
 export default ReactDOM;
 
 </code></pre>
-<h2 id="t6513. &#x9AD8;&#x9636;&#x7EC4;&#x4EF6;">13. &#x9AD8;&#x9636;&#x7EC4;&#x4EF6; <a href="#t6513. &#x9AD8;&#x9636;&#x7EC4;&#x4EF6;"> # </a></h2>
-<ul>
-<li>&#x9AD8;&#x9636;&#x7EC4;&#x4EF6;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4F20;&#x7ED9;&#x5B83;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7EC4;&#x4EF6;</li>
-<li>&#x9AD8;&#x9636;&#x7EC4;&#x4EF6;&#x7684;&#x4F5C;&#x7528;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x4EE3;&#x7801;&#x590D;&#x7528;</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> NewComponent = higherOrderComponent(OldComponent)
+      <h2 id="t6513. &#x9AD8;&#x9636;&#x7EC4;&#x4EF6;">13. &#x9AD8;&#x9636;&#x7EC4;&#x4EF6; <a
+          href="#t6513. &#x9AD8;&#x9636;&#x7EC4;&#x4EF6;"> # </a></h2>
+      <ul>
+        <li>
+          &#x9AD8;&#x9636;&#x7EC4;&#x4EF6;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4F20;&#x7ED9;&#x5B83;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7EC4;&#x4EF6;
+        </li>
+        <li>
+          &#x9AD8;&#x9636;&#x7EC4;&#x4EF6;&#x7684;&#x4F5C;&#x7528;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x4EE3;&#x7801;&#x590D;&#x7528;
+        </li>
+      </ul>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> NewComponent = higherOrderComponent(OldComponent)
 </code></pre>
-<h3 id="t6613.1 cra&#x652F;&#x6301;&#x88C5;&#x9970;&#x5668;">13.1 cra&#x652F;&#x6301;&#x88C5;&#x9970;&#x5668; <a href="#t6613.1 cra&#x652F;&#x6301;&#x88C5;&#x9970;&#x5668;"> # </a></h3>
-<h4 id="t6713.1.1 &#x5B89;&#x88C5;">13.1.1 &#x5B89;&#x88C5; <a href="#t6713.1.1 &#x5B89;&#x88C5;"> # </a></h4>
-<pre><code class="lang-js">npm i react-app-rewired customize-cra @babel/plugin-proposal-decorators -D
+      <h3 id="t6613.1 cra&#x652F;&#x6301;&#x88C5;&#x9970;&#x5668;">13.1 cra&#x652F;&#x6301;&#x88C5;&#x9970;&#x5668; <a
+          href="#t6613.1 cra&#x652F;&#x6301;&#x88C5;&#x9970;&#x5668;"> # </a></h3>
+      <h4 id="t6713.1.1 &#x5B89;&#x88C5;">13.1.1 &#x5B89;&#x88C5; <a href="#t6713.1.1 &#x5B89;&#x88C5;"> # </a></h4>
+      <pre><code class="lang-js">npm i react-app-rewired customize-cra @babel/plugin-proposal-decorators -D
 </code></pre>
-<h4 id="t6813.1.2 &#x4FEE;&#x6539;package.json">13.1.2 &#x4FEE;&#x6539;package.json <a href="#t6813.1.2 &#x4FEE;&#x6539;package.json"> # </a></h4>
-<pre><code class="lang-json">  &quot;scripts&quot;: {
+      <h4 id="t6813.1.2 &#x4FEE;&#x6539;package.json">13.1.2 &#x4FEE;&#x6539;package.json <a
+          href="#t6813.1.2 &#x4FEE;&#x6539;package.json"> # </a></h4>
+      <pre><code class="lang-json">  &quot;scripts&quot;: {
     &quot;start&quot;: &quot;react-app-rewired start&quot;,
     &quot;build&quot;: &quot;react-app-rewired build&quot;,
     &quot;test&quot;: &quot;react-app-rewired test&quot;,
     &quot;eject&quot;: &quot;react-app-rewired eject&quot;
   }
 </code></pre>
-<h4 id="t6913.1.3 config-overrides.js">13.1.3 config-overrides.js <a href="#t6913.1.3 config-overrides.js"> # </a></h4>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> {override,addBabelPlugin} = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;customize-cra&apos;</span>);
+      <h4 id="t6913.1.3 config-overrides.js">13.1.3 config-overrides.js <a href="#t6913.1.3 config-overrides.js"> # </a>
+      </h4>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> {override,addBabelPlugin} = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;customize-cra&apos;</span>);
 
 <span class="hljs-built_in">module</span>.exports = override(
   addBabelPlugin( [
@@ -2920,18 +3511,19 @@ export default ReactDOM;
   ])
 )
 </code></pre>
-<h4 id="t7013.1.4 jsconfig.json">13.1.4 jsconfig.json <a href="#t7013.1.4 jsconfig.json"> # </a></h4>
-<pre><code class="lang-json">{
+      <h4 id="t7013.1.4 jsconfig.json">13.1.4 jsconfig.json <a href="#t7013.1.4 jsconfig.json"> # </a></h4>
+      <pre><code class="lang-json">{
   <span class="hljs-attr">&quot;compilerOptions&quot;</span>: {
      <span class="hljs-attr">&quot;experimentalDecorators&quot;</span>: <span class="hljs-literal">true</span>
   }
 }
 </code></pre>
-<h3 id="t7113.2 &#x5C5E;&#x6027;&#x4EE3;&#x7406;">13.2 &#x5C5E;&#x6027;&#x4EE3;&#x7406; <a href="#t7113.2 &#x5C5E;&#x6027;&#x4EE3;&#x7406;"> # </a></h3>
-<ul>
-<li>&#x57FA;&#x4E8E;&#x5C5E;&#x6027;&#x4EE3;&#x7406;&#xFF1A;&#x64CD;&#x4F5C;&#x7EC4;&#x4EF6;&#x7684;props</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+      <h3 id="t7113.2 &#x5C5E;&#x6027;&#x4EE3;&#x7406;">13.2 &#x5C5E;&#x6027;&#x4EE3;&#x7406; <a
+          href="#t7113.2 &#x5C5E;&#x6027;&#x4EE3;&#x7406;"> # </a></h3>
+      <ul>
+        <li>&#x57FA;&#x4E8E;&#x5C5E;&#x6027;&#x4EE3;&#x7406;&#xFF1A;&#x64CD;&#x4F5C;&#x7EC4;&#x4EF6;&#x7684;props</li>
+      </ul>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
 <span class="hljs-keyword">const</span> loading = <span class="hljs-function"><span class="hljs-params">message</span> =&gt;</span><span class="hljs-function"><span class="hljs-params">OldComponent</span> =&gt;</span>{
     <span class="hljs-keyword">return</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
@@ -2963,11 +3555,14 @@ export default ReactDOM;
 ReactDOM.render(
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">LoadingHello</span>/&gt;</span></span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>));
 </code></pre>
-<h3 id="t7213.3 &#x53CD;&#x5411;&#x7EE7;&#x627F;">13.3 &#x53CD;&#x5411;&#x7EE7;&#x627F; <a href="#t7213.3 &#x53CD;&#x5411;&#x7EE7;&#x627F;"> # </a></h3>
-<ul>
-<li>&#x57FA;&#x4E8E;&#x53CD;&#x5411;&#x7EE7;&#x627F;&#xFF1A;&#x62E6;&#x622A;&#x751F;&#x547D;&#x5468;&#x671F;&#x3001;state&#x3001;&#x6E32;&#x67D3;&#x8FC7;&#x7A0B;</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+      <h3 id="t7213.3 &#x53CD;&#x5411;&#x7EE7;&#x627F;">13.3 &#x53CD;&#x5411;&#x7EE7;&#x627F; <a
+          href="#t7213.3 &#x53CD;&#x5411;&#x7EE7;&#x627F;"> # </a></h3>
+      <ul>
+        <li>
+          &#x57FA;&#x4E8E;&#x53CD;&#x5411;&#x7EE7;&#x627F;&#xFF1A;&#x62E6;&#x622A;&#x751F;&#x547D;&#x5468;&#x671F;&#x3001;state&#x3001;&#x6E32;&#x67D3;&#x8FC7;&#x7A0B;
+        </li>
+      </ul>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Button</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
     state = {<span class="hljs-attr">name</span>:<span class="hljs-string">&apos;&#x5F20;&#x4E09;&apos;</span>}
@@ -3016,8 +3611,8 @@ ReactDOM.render(
 ReactDOM.render(
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">WrappedButton</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;&#x6807;&#x9898;&quot;</span>/&gt;</span></span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>));
 </code></pre>
-<p>src\react.js</p>
-<pre><code class="lang-diff">import { wrapToVdom } from &quot;./utils&quot;;
+      <p>src\react.js</p>
+      <pre><code class="lang-diff">import { wrapToVdom } from &quot;./utils&quot;;
 import { Component } from &apos;./Component&apos;;
 import { REACT_FORWARD_REF_TYPE, REACT_FRAGMENT,REACT_CONTEXT, REACT_PROVIDER } from &apos;./constants&apos;;
 function createElement(type, config, children) {
@@ -3086,16 +3681,25 @@ const React = {
 };
 export default React;
 </code></pre>
-<h2 id="t7314. render props">14. render props <a href="#t7314. render props"> # </a></h2>
-<ul>
-<li><a href="https://zh-hans.reactjs.org/docs/render-props.html">render-props</a></li>
-<li><code>render prop</code> &#x662F;&#x6307;&#x4E00;&#x79CD;&#x5728; React &#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x503C;&#x4E3A;&#x51FD;&#x6570;&#x7684; prop &#x5171;&#x4EAB;&#x4EE3;&#x7801;&#x7684;&#x7B80;&#x5355;&#x6280;&#x672F;</li>
-<li>&#x5177;&#x6709; render prop &#x7684;&#x7EC4;&#x4EF6;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; React &#x5143;&#x7D20;&#x5E76;&#x8C03;&#x7528;&#x5B83;&#x800C;&#x4E0D;&#x662F;&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x7684;&#x6E32;&#x67D3;&#x903B;&#x8F91;</li>
-<li>render prop &#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x544A;&#x77E5;&#x7EC4;&#x4EF6;&#x9700;&#x8981;&#x6E32;&#x67D3;&#x4EC0;&#x4E48;&#x5185;&#x5BB9;&#x7684;&#x51FD;&#x6570; prop</li>
-<li>&#x8FD9;&#x4E5F;&#x662F;&#x903B;&#x8F91;&#x590D;&#x7528;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;</li>
-</ul>
-<h3 id="t7414.1 &#x539F;&#x751F;&#x5B9E;&#x73B0;">14.1 &#x539F;&#x751F;&#x5B9E;&#x73B0; <a href="#t7414.1 &#x539F;&#x751F;&#x5B9E;&#x73B0;"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+      <h2 id="t7314. render props">14. render props <a href="#t7314. render props"> # </a></h2>
+      <ul>
+        <li><a href="https://zh-hans.reactjs.org/docs/render-props.html">render-props</a></li>
+        <li><code>render prop</code> &#x662F;&#x6307;&#x4E00;&#x79CD;&#x5728; React
+          &#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x503C;&#x4E3A;&#x51FD;&#x6570;&#x7684; prop
+          &#x5171;&#x4EAB;&#x4EE3;&#x7801;&#x7684;&#x7B80;&#x5355;&#x6280;&#x672F;</li>
+        <li>&#x5177;&#x6709; render prop
+          &#x7684;&#x7EC4;&#x4EF6;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;
+          React
+          &#x5143;&#x7D20;&#x5E76;&#x8C03;&#x7528;&#x5B83;&#x800C;&#x4E0D;&#x662F;&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x7684;&#x6E32;&#x67D3;&#x903B;&#x8F91;
+        </li>
+        <li>render prop
+          &#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x544A;&#x77E5;&#x7EC4;&#x4EF6;&#x9700;&#x8981;&#x6E32;&#x67D3;&#x4EC0;&#x4E48;&#x5185;&#x5BB9;&#x7684;&#x51FD;&#x6570;
+          prop</li>
+        <li>&#x8FD9;&#x4E5F;&#x662F;&#x903B;&#x8F91;&#x590D;&#x7528;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;</li>
+      </ul>
+      <h3 id="t7414.1 &#x539F;&#x751F;&#x5B9E;&#x73B0;">14.1 &#x539F;&#x751F;&#x5B9E;&#x73B0; <a
+          href="#t7414.1 &#x539F;&#x751F;&#x5B9E;&#x73B0;"> # </a></h3>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MouseTracker</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
     <span class="hljs-keyword">constructor</span>(props) {
@@ -3121,11 +3725,11 @@ export default React;
 }
 ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">MouseTracker</span> /&gt;</span></span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>));
 </code></pre>
-<h3 id="t7514.2  children">14.2  children <a href="#t7514.2  children"> # </a></h3>
-<ul>
-<li>children&#x662F;&#x4E00;&#x4E2A;&#x6E32;&#x67D3;&#x7684;&#x65B9;&#x6CD5;</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
+      <h3 id="t7514.2  children">14.2 children <a href="#t7514.2  children"> # </a></h3>
+      <ul>
+        <li>children&#x662F;&#x4E00;&#x4E2A;&#x6E32;&#x67D3;&#x7684;&#x65B9;&#x6CD5;</li>
+      </ul>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-dom&apos;</span>;
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MouseTracker</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
@@ -3160,8 +3764,9 @@ ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-n
     }
 <span class="hljs-tag">&lt;/<span class="hljs-name">MouseTracker</span> &gt;</span>, document.getElementById(&apos;root&apos;));
 </span></code></pre>
-<h3 id="t7614.3 render&#x5C5E;&#x6027;">14.3 render&#x5C5E;&#x6027; <a href="#t7614.3 render&#x5C5E;&#x6027;"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+      <h3 id="t7614.3 render&#x5C5E;&#x6027;">14.3 render&#x5C5E;&#x6027; <a href="#t7614.3 render&#x5C5E;&#x6027;"> #
+        </a></h3>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MouseTracker</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
     <span class="hljs-keyword">constructor</span>(props) {
@@ -3192,8 +3797,8 @@ ReactDOM.render(&lt; MouseTracker render={params =&gt; (
     <span class="hljs-tag">&lt;/&gt;</span></span>
 )} /&gt;, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>));
 </code></pre>
-<h3 id="t7714.4 HOC">14.4 HOC <a href="#t7714.4 HOC"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+      <h3 id="t7714.4 HOC">14.4 HOC <a href="#t7714.4 HOC"> # </a></h3>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">withTracker</span>(<span class="hljs-params">OldComponent</span>)</span>{
   <span class="hljs-keyword">return</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MouseTracker</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
@@ -3229,9 +3834,10 @@ ReactDOM.render(&lt; MouseTracker render={params =&gt; (
 ReactDOM.render(
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">HighShow</span>/&gt;</span></span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>));
 </code></pre>
-<h2 id="t7815.&#x6027;&#x80FD;&#x4F18;&#x5316;">15.&#x6027;&#x80FD;&#x4F18;&#x5316; <a href="#t7815.&#x6027;&#x80FD;&#x4F18;&#x5316;"> # </a></h2>
-<h3 id="t7915.1 src\index.js">15.1 src\index.js <a href="#t7915.1 src\index.js"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
+      <h2 id="t7815.&#x6027;&#x80FD;&#x4F18;&#x5316;">15.&#x6027;&#x80FD;&#x4F18;&#x5316; <a
+          href="#t7815.&#x6027;&#x80FD;&#x4F18;&#x5316;"> # </a></h2>
+      <h3 id="t7915.1 src\index.js">15.1 src\index.js <a href="#t7915.1 src\index.js"> # </a></h3>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-dom&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassCounter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">PureComponent</span> </span>{
     render() {
@@ -3265,9 +3871,9 @@ ReactDOM.render(
 ReactDOM.render(
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span></span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>));
 </code></pre>
-<h3 id="t8015.2 src\constants.js">15.2 src\constants.js <a href="#t8015.2 src\constants.js"> # </a></h3>
-<p>src\constants.js</p>
-<pre><code class="lang-diff">export const REACT_TEXT = Symbol(&apos;REACT_TEXT&apos;);
+      <h3 id="t8015.2 src\constants.js">15.2 src\constants.js <a href="#t8015.2 src\constants.js"> # </a></h3>
+      <p>src\constants.js</p>
+      <pre><code class="lang-diff">export const REACT_TEXT = Symbol(&apos;REACT_TEXT&apos;);
 export const REACT_FORWARD_REF_TYPE = Symbol(&apos;react.forward_ref&apos;);
 
 export const PLACEMENT = &apos;PLACEMENT&apos;;
@@ -3277,9 +3883,9 @@ export const REACT_CONTEXT = Symbol(&apos;react.context&apos;);
 export const REACT_PROVIDER = Symbol(&apos;react.provider&apos;);
 <span class="hljs-addition">+export const REACT_MEMO = Symbol(&apos;react.memo&apos;)</span>
 </code></pre>
-<h3 id="t8115.3 src\utils.js">15.3 src\utils.js <a href="#t8115.3 src\utils.js"> # </a></h3>
-<p>src\utils.js</p>
-<pre><code class="lang-diff">import { REACT_TEXT } from &quot;./constants&quot;;
+      <h3 id="t8115.3 src\utils.js">15.3 src\utils.js <a href="#t8115.3 src\utils.js"> # </a></h3>
+      <p>src\utils.js</p>
+      <pre><code class="lang-diff">import { REACT_TEXT } from &quot;./constants&quot;;
 export function wrapToVdom(element) {
   return typeof element <span class="hljs-comment">=== &quot;string&quot; || typeof element === &quot;number&quot;</span>
     ? { type: REACT_TEXT, props: { content: element } }
@@ -3310,9 +3916,9 @@ export function isFunction(obj) {
 <span class="hljs-addition">+  return true;</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t8215.4 src\react.js">15.4 src\react.js <a href="#t8215.4 src\react.js"> # </a></h3>
-<p>src\react.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import { wrapToVdom, shallowEqual } from &quot;./utils&quot;;</span>
+      <h3 id="t8215.4 src\react.js">15.4 src\react.js <a href="#t8215.4 src\react.js"> # </a></h3>
+      <p>src\react.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+import { wrapToVdom, shallowEqual } from &quot;./utils&quot;;</span>
 import { Component } from &apos;./Component&apos;;
 <span class="hljs-addition">+import { REACT_FORWARD_REF_TYPE,REACT_FRAGMENT, REACT_CONTEXT, REACT_PROVIDER, REACT_MEMO } from &apos;./constants&apos;;</span>
 function createElement(type, config, children) {
@@ -3395,9 +4001,9 @@ const React = {
 };
 export default React;
 </code></pre>
-<h3 id="t8315.5 src\react-dom.js">15.5 src\react-dom.js <a href="#t8315.5 src\react-dom.js"> # </a></h3>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import { REACT_TEXT, REACT_FORWARD_REF_TYPE, PLACEMENT, MOVE, REACT_FRAGMENT,REACT_PROVIDER, REACT_CONTEXT, REACT_MEMO } from &quot;./constants&quot;;</span>
+      <h3 id="t8315.5 src\react-dom.js">15.5 src\react-dom.js <a href="#t8315.5 src\react-dom.js"> # </a></h3>
+      <p>src\react-dom.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+import { REACT_TEXT, REACT_FORWARD_REF_TYPE, PLACEMENT, MOVE, REACT_FRAGMENT,REACT_PROVIDER, REACT_CONTEXT, REACT_MEMO } from &quot;./constants&quot;;</span>
 import { addEvent } from &quot;./event&quot;;
 import React from &apos;./react&apos;;
 function render(vdom, parentDOM) {
@@ -3716,14 +4322,16 @@ const ReactDOM = {
 export default ReactDOM;
 
 </code></pre>
-<h2 id="t8416.Portal">16.Portal <a href="#t8416.Portal"> # </a></h2>
-<ul>
-<li>React v16&#x589E;&#x52A0;&#x4E86;&#x5BF9;Portal&#x7684;&#x76F4;&#x63A5;&#x652F;&#x6301;</li>
-<li>&#x5B83;&#x53EF;&#x4EE5;&#x628A;JSX&#x6E32;&#x67D3;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;DOM&#x8282;&#x70B9;&#x4E2D;</li>
-</ul>
-<h3 id="t8516.1 src\index.js">16.1 src\index.js <a href="#t8516.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
+      <h2 id="t8416.Portal">16.Portal <a href="#t8416.Portal"> # </a></h2>
+      <ul>
+        <li>React v16&#x589E;&#x52A0;&#x4E86;&#x5BF9;Portal&#x7684;&#x76F4;&#x63A5;&#x652F;&#x6301;</li>
+        <li>
+          &#x5B83;&#x53EF;&#x4EE5;&#x628A;JSX&#x6E32;&#x67D3;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;DOM&#x8282;&#x70B9;&#x4E2D;
+        </li>
+      </ul>
+      <h3 id="t8516.1 src\index.js">16.1 src\index.js <a href="#t8516.1 src\index.js"> # </a></h3>
+      <p>src\index.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react&apos;</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./react-dom&apos;</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dialog</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
     <span class="hljs-keyword">constructor</span>(props) {
@@ -3755,9 +4363,9 @@ export default ReactDOM;
 ReactDOM.render(
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span></span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;root&apos;</span>));
 </code></pre>
-<h3 id="t8616.2 src\react-dom.js">16.2 src\react-dom.js <a href="#t8616.2 src\react-dom.js"> # </a></h3>
-<p>src\react-dom.js</p>
-<pre><code class="lang-diff">import { REACT_TEXT, REACT_FORWARD_REF_TYPE, PLACEMENT, MOVE, REACT_FRAGMENT,REACT_PROVIDER, REACT_CONTEXT, REACT_MEMO } from &quot;./constants&quot;;
+      <h3 id="t8616.2 src\react-dom.js">16.2 src\react-dom.js <a href="#t8616.2 src\react-dom.js"> # </a></h3>
+      <p>src\react-dom.js</p>
+      <pre><code class="lang-diff">import { REACT_TEXT, REACT_FORWARD_REF_TYPE, PLACEMENT, MOVE, REACT_FRAGMENT,REACT_PROVIDER, REACT_CONTEXT, REACT_MEMO } from &quot;./constants&quot;;
 import { addEvent } from &quot;./event&quot;;
 import React from &apos;./react&apos;;
 function render(vdom, parentDOM) {
@@ -4081,4 +4689,5 @@ const ReactDOM = {
 export default ReactDOM;
 
 </code></pre>
-<p><a href="git@gitee.com:zhufengpeixun/zhufengreact.git">zhufen</body>
+      <p><a href="git@gitee.com:zhufengpeixun/zhufengreact.git">zhufen
+</body>

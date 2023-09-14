@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        .page-toc > ul .red {
+        .page-toc>ul .red {
             background: #f3f3f3;
             z-index: 1;
             border-left: 3px solid #009a61;
@@ -15,36 +15,492 @@
         }
     </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li class="active"><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
-    <div class="page-toc">
-        <ul><li><a href="#t01. React路由原理">1. React路由原理</a><ul><li><a href="#t11.1 HashRouter">1.1 HashRouter</a></li><li><a href="#t21.2 BrowserRouter">1.2 BrowserRouter</a><ul><li><a href="#t31.2.1 history">1.2.1 history</a><ul><li><a href="#t41.2.1.1 pushState">1.2.1.1 pushState</a></li><li><a href="#t51.2.1.2 replaceState">1.2.1.2 replaceState</a></li><li><a href="#t61.2.1.3 onpopstate">1.2.1.3 onpopstate</a></li><li><a href="#t71.2.1.4 案例">1.2.1.4 案例</a></li></ul></li></ul></li></ul></li><li><a href="#t82.基本路由">2.基本路由</a><ul><li><a href="#t92.1 安装">2.1 安装</a></li><li><a href="#t102.2 src\index.js">2.2 src\index.js</a></li><li><a href="#t112.3 Home.js">2.3 Home.js</a></li><li><a href="#t122.4 Home.js">2.4 Home.js</a></li><li><a href="#t132.4 Profile.js">2.4 Profile.js</a></li></ul></li><li><a href="#t143.实现基本路由">3.实现基本路由</a><ul><li><a href="#t153.1 src\index.js">3.1 src\index.js</a></li><li><a href="#t163.2 RouterContext.js">3.2 RouterContext.js</a></li><li><a href="#t173.3 Router.js">3.3 Router.js</a></li><li><a href="#t183.4 Route.js">3.4 Route.js</a></li><li><a href="#t193.5 react-router\index.js">3.5 react-router\index.js</a></li><li><a href="#t203.6 BrowserRouter.js">3.6 BrowserRouter.js</a></li><li><a href="#t213.7 HashRouter.js">3.7 HashRouter.js</a></li><li><a href="#t223.8 react-router-dom\index.js">3.8 react-router-dom\index.js</a></li></ul></li><li><a href="#t233.实现history">3.实现history</a><ul><li><a href="#t243.1 createBrowserHistory.js">3.1 createBrowserHistory.js</a></li><li><a href="#t253.2 createHashHistory.js">3.2 createHashHistory.js</a></li><li><a href="#t263.3 history\index.js">3.3 history\index.js</a></li><li><a href="#t273.4 BrowserRouter.js">3.4 BrowserRouter.js</a></li><li><a href="#t283.5 HashRouter.js">3.5 HashRouter.js</a></li></ul></li><li><a href="#t294. path-to-regexp">4. path-to-regexp</a><ul><li><a href="#t304.1 /home结束">4.1 /home结束</a></li><li><a href="#t314.2 /home非结束">4.2 /home非结束</a></li><li><a href="#t324.3 路径参数">4.3 路径参数</a></li><li><a href="#t334.4 正则匹配">4.4 正则匹配</a></li></ul></li><li><a href="#t345. 正则匹配">5. 正则匹配</a><ul><li><a href="#t355.1 matchPath.js">5.1 matchPath.js</a></li><li><a href="#t365.2 Router.js">5.2 Router.js</a></li><li><a href="#t375.3 Route.js">5.3 Route.js</a></li><li><a href="#t385.4 react-router\index.js">5.4 react-router\index.js</a></li></ul></li><li><a href="#t396. 实现Switch">6. 实现Switch</a><ul><li><a href="#t406.1 Switch.js">6.1 Switch.js</a></li><li><a href="#t416.2 Route.js">6.2 Route.js</a></li><li><a href="#t426.3 react-router\index.js">6.3 react-router\index.js</a></li><li><a href="#t436.4 src\index.js">6.4 src\index.js</a></li></ul></li><li><a href="#t447. Redirect">7. Redirect</a><ul><li><a href="#t457.1 Redirect.js">7.1 Redirect.js</a></li><li><a href="#t467.2 Lifecycle.js">7.2 Lifecycle.js</a></li><li><a href="#t477.3 react-router\index.js">7.3 react-router\index.js</a></li><li><a href="#t487.4 src\index.js">7.4 src\index.js</a></li></ul></li><li><a href="#t498.Link">8.Link</a><ul><li><a href="#t508.1 Link.js">8.1 Link.js</a></li><li><a href="#t518.2 react-router-dom\index.js">8.2 react-router-dom\index.js</a></li><li><a href="#t528.3 src\index.js">8.3 src\index.js</a></li></ul></li><li><a href="#t539.嵌套路由">9.嵌套路由</a><ul><li><a href="#t549.1 utils.js">9.1 utils.js</a></li><li><a href="#t559.2 User.js">9.2 User.js</a></li><li><a href="#t569.3 UserAdd.js">9.3 UserAdd.js</a></li><li><a href="#t579.4 UserList.js">9.4 UserList.js</a></li><li><a href="#t589.5 UserDetail.js">9.5 UserDetail.js</a></li></ul></li><li><a href="#t5910.受保护路由">10.受保护路由</a><ul><li><a href="#t6010.1 src\index.js">10.1 src\index.js</a></li><li><a href="#t6110.2 Route.js">10.2 Route.js</a></li><li><a href="#t6210.3 Login.js">10.3 Login.js</a></li><li><a href="#t6310.4 Protected.js">10.4 Protected.js</a></li></ul></li><li><a href="#t6411.NavLink">11.NavLink</a><ul><li><a href="#t6511.1 public\index.html">11.1 public\index.html</a></li><li><a href="#t6611.2 src\index.js">11.2 src\index.js</a></li><li><a href="#t6711.3 NavLink.js">11.3 NavLink.js</a></li><li><a href="#t6811.4 react-router-dom\index.js">11.4 react-router-dom\index.js</a></li></ul></li><li><a href="#t6912.withRouter">12.withRouter</a><ul><li><a href="#t7012.1 src\index.js">12.1 src\index.js</a></li><li><a href="#t7112.2 NavHeader.js">12.2 NavHeader.js</a></li><li><a href="#t7212.3 withRouter.js">12.3 withRouter.js</a></li><li><a href="#t7312.4 react-router\index.js">12.4 react-router\index.js</a></li></ul></li><li><a href="#t7413.Prompt">13.Prompt</a><ul><li><a href="#t7513.1 src\index.js">13.1 src\index.js</a></li><li><a href="#t7613.2 UserAdd.js">13.2 UserAdd.js</a></li><li><a href="#t7713.3 Prompt.js">13.3 Prompt.js</a></li><li><a href="#t7813.4 react-router\index.js">13.4 react-router\index.js</a></li><li><a href="#t7913.5 createBrowserHistory.js">13.5 createBrowserHistory.js</a></li></ul></li><li><a href="#t8015.hooks">15.hooks</a><ul><li><a href="#t8115.1 src\index.js">15.1 src\index.js</a></li><li><a href="#t8215.2 hooks.js">15.2 hooks.js</a></li><li><a href="#t8315.3 react-router\index.js">15.3 react-router\index.js</a></li></ul></li><li><a href="#t8416.路由懒加载">16.路由懒加载</a><ul><li><a href="#t8516.1 src\index.js">16.1 src\index.js</a></li></ul></li><li><a href="#t86链接">链接</a></li></ul>
+<body class="modal-open" style="padding-right: 15px;">
+    <div class="nav">
+        <div class="logo">
+
+            珠峰架构师成长计划
+
+        </div>
+        <ul>
+            <li><a href="../index.html">0.Async</a></li>
+            <li><a href="../html/0.editor.html">0.editor</a></li>
+            <li><a href="../html/0.module.html">0.module</a></li>
+            <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+            <li><a href="../html/2.Promise.html">2.Promise</a></li>
+            <li><a href="../html/3.Node.html">3.Node</a></li>
+            <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+            <li><a href="../html/5.REPL.html">5.REPL</a></li>
+            <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+            <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+            <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+            <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+            <li><a href="../html/10.fs.html">10.fs</a></li>
+            <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+            <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+            <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+            <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+            <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+            <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+            <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+            <li><a href="../html/13.tcp.html">13.tcp</a></li>
+            <li><a href="../html/14.http-1.html">14.http-1</a></li>
+            <li><a href="../html/14.http-2.html">14.http-2</a></li>
+            <li><a href="../html/15.compress.html">15.compress</a></li>
+            <li><a href="../html/16.crypto.html">16.crypto</a></li>
+            <li><a href="../html/17.process.html">17.process</a></li>
+            <li><a href="../html/18.yargs.html">18.yargs</a></li>
+            <li><a href="../html/19.cache.html">19.cache</a></li>
+            <li><a href="../html/20.action.html">20.action</a></li>
+            <li><a href="../html/21.https.html">21.https</a></li>
+            <li><a href="../html/22.cookie.html">22.cookie</a></li>
+            <li><a href="../html/23.session.html">23.session</a></li>
+            <li><a href="../html/24.express-1.html">24.express-1</a></li>
+            <li><a href="../html/24.express-2.html">24.express-2</a></li>
+            <li><a href="../html/24.express-3.html">24.express-3</a></li>
+            <li><a href="../html/24.express-4.html">24.express-4</a></li>
+            <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+            <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+            <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+            <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+            <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+            <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+            <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+            <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+            <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+            <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+            <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+            <li><a href="../html/28.redux.html">28.redux</a></li>
+            <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+            <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+            <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+            <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+            <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+            <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+            <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+            <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+            <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+            <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+            <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+            <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+            <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+            <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+            <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+            <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+            <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+            <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+            <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+            <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+            <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+            <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+            <li><a href="../html/31.dva.html">31.dva</a></li>
+            <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+            <li><a href="../html/33.redis.html">33.redis</a></li>
+            <li><a href="../html/34.unittest.html">34.unittest</a></li>
+            <li><a href="../html/35.jwt.html">35.jwt</a></li>
+            <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+            <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+            <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+            <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+            <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+            <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+            <li><a href="../html/38.chat.html">38.chat</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+            <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+            <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+            <li><a href="../html/40.deploy.html">40.deploy</a></li>
+            <li><a href="../html/41.safe.html">41.safe</a></li>
+            <li><a href="../html/42.test.html">42.test</a></li>
+            <li><a href="../html/43.nginx.html">43.nginx</a></li>
+            <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+            <li><a href="../html/45.docker.html">45.docker</a></li>
+            <li><a href="../html/46.elastic.html">46.elastic</a></li>
+            <li><a href="../html/47.oauth.html">47.oauth</a></li>
+            <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/52.UML.html">52.UML</a></li>
+            <li><a href="../html/53.design.html">53.design</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/54.linux.html">54.linux</a></li>
+            <li><a href="../html/57.ts.html">57.ts</a></li>
+            <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+            <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+            <li><a href="../html/59.ketang.html">59.ketang</a></li>
+            <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+            <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+            <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+            <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+            <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+            <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+            <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+            <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+            <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+            <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+            <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+            <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+            <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+            <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+            <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+            <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+            <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+            <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+            <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+            <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+            <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+            <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+            <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+            <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+            <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+            <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+            <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+            <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+            <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+            <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+            <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+            <li><a href="../html/64.1.router.html">64.1.router</a></li>
+            <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+            <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+            <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+            <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+            <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+            <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+            <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+            <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+            <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+            <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+            <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+            <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+            <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+            <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+            <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+            <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+            <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+            <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+            <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+            <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+            <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+            <li><a href="../html/67-1-network.html">67-1-network</a></li>
+            <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+            <li><a href="../html/7.npm2.html">7.npm2</a></li>
+            <li><a href="../html/69-hooks.html">69-hooks</a></li>
+            <li><a href="../html/70-deploy.html">70-deploy</a></li>
+            <li><a href="../html/71-hmr.html">71-hmr</a></li>
+            <li><a href="../html/72.deploy.html">72.deploy</a></li>
+            <li><a href="../html/73.import.html">73.import</a></li>
+            <li><a href="../html/74.mobile.html">74.mobile</a></li>
+            <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+            <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+            <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+            <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+            <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+            <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+            <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+            <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+            <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+            <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+            <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+            <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+            <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+            <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+            <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+            <li><a href="../html/79.grammar.html">79.grammar</a></li>
+            <li><a href="../html/80.tree.html">80.tree</a></li>
+            <li><a href="../html/81.axios.html">81.axios</a></li>
+            <li><a href="../html/82.1.react.html">82.1.react</a></li>
+            <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+            <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+            <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+            <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+            <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+            <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+            <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+            <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+            <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+            <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+            <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+            <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+            <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+            <li><a href="../html/83.upload.html">83.upload</a></li>
+            <li><a href="../html/84.graphql.html">84.graphql</a></li>
+            <li><a href="../html/85.antpro.html">85.antpro</a></li>
+            <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+            <li><a href="../html/86.2.design.html">86.2.design</a></li>
+            <li><a href="../html/87.postcss.html">87.postcss</a></li>
+            <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+            <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+            <li><a href="../html/90.react-test.html">90.react-test</a></li>
+            <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+            <li><a href="../html/92.rbac.html">92.rbac</a></li>
+            <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+            <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+            <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+            <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+            <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+            <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+            <li><a href="../html/94.6.https.html">94.6.https</a></li>
+            <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+            <li><a href="../html/95.1. react.html">95.1. react</a></li>
+            <li><a href="../html/95.2.react.html">95.2.react</a></li>
+            <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+            <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+            <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+            <li><a href="../html/97.serverless.html">97.serverless</a></li>
+            <li><a href="../html/98.websocket.html">98.websocket</a></li>
+            <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+            <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+            <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+            <li><a href="../html/102.java.html">102.java</a></li>
+            <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+            <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+            <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+            <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+            <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+            <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+            <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+            <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+            <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+            <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+            <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+            <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+            <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+            <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+            <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+            <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+            <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+            <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+            <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+            <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+            <li><a href="../html/106.1.react.html">106.1.react</a></li>
+            <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+            <li class="active"><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+            <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+            <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+            <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+            <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+            <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+            <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+            <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+            <li><a href="../html/107.fiber.html">107.fiber</a></li>
+            <li><a href="../html/108.http.html">108.http</a></li>
+            <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+            <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+            <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+            <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+            <li><a href="../html/111.xstate.html">111.xstate</a></li>
+            <li><a href="../html/112.Form.html">112.Form</a></li>
+            <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+            <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+            <li><a href="../html/115.immer.html">115.immer</a></li>
+            <li><a href="../html/116.pro5.html">116.pro5</a></li>
+            <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+            <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+            <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+            <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+            <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+            <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+            <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+            <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+            <li><a href="../html/124.next.js.html">124.next.js</a></li>
+            <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+            <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+            <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+            <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+            <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+            <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+            <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+            <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+            <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+            <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+            <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+            <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+            <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+            <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+            <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+            <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+            <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+            <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+            <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+            <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+            <li><a href="../html/127.frontend.html">127.frontend</a></li>
+            <li><a href="../html/128.rollup.html">128.rollup</a></li>
+            <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+            <li><a href="../html/130.health.html">130.health</a></li>
+            <li><a href="../html/131.hooks.html">131.hooks</a></li>
+            <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+            <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+            <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+            <li><a href="../html/134.react18.html">134.react18</a></li>
+            <li><a href="../html/135.function.html">135.function</a></li>
+            <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+        </ul>
     </div>
-    <div class="content markdown-body">
-        <h2 id="t01. React路由原理">1. React路由原理 <a href="#t01. React路由原理"> # </a></h2>
-<ul>
-<li>不同的路径渲染不同的组件</li>
-<li>有两种实现方式<ul>
-<li>HashRouter:利用hash实现路由切换</li>
-<li>BrowserRouter:实现h5 Api实现路由的切换</li>
-</ul>
-</li>
-</ul>
-<h3 id="t11.1 HashRouter">1.1 HashRouter <a href="#t11.1 HashRouter"> # </a></h3>
-<ul>
-<li>利用hash实现路由切换</li>
-</ul>
-<p>public\index.html</p>
-<pre><code class="lang-js">&lt;!DOCTYPE html&gt;
+
+
+    <div class="warpper">
+        <div class="page-toc">
+            <ul>
+                <li><a href="#t01. React路由原理">1. React路由原理</a>
+                    <ul>
+                        <li><a href="#t11.1 HashRouter">1.1 HashRouter</a></li>
+                        <li><a href="#t21.2 BrowserRouter">1.2 BrowserRouter</a>
+                            <ul>
+                                <li><a href="#t31.2.1 history">1.2.1 history</a>
+                                    <ul>
+                                        <li><a href="#t41.2.1.1 pushState">1.2.1.1 pushState</a></li>
+                                        <li><a href="#t51.2.1.2 replaceState">1.2.1.2 replaceState</a></li>
+                                        <li><a href="#t61.2.1.3 onpopstate">1.2.1.3 onpopstate</a></li>
+                                        <li><a href="#t71.2.1.4 案例">1.2.1.4 案例</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#t82.基本路由">2.基本路由</a>
+                    <ul>
+                        <li><a href="#t92.1 安装">2.1 安装</a></li>
+                        <li><a href="#t102.2 src\index.js">2.2 src\index.js</a></li>
+                        <li><a href="#t112.3 Home.js">2.3 Home.js</a></li>
+                        <li><a href="#t122.4 Home.js">2.4 Home.js</a></li>
+                        <li><a href="#t132.4 Profile.js">2.4 Profile.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t143.实现基本路由">3.实现基本路由</a>
+                    <ul>
+                        <li><a href="#t153.1 src\index.js">3.1 src\index.js</a></li>
+                        <li><a href="#t163.2 RouterContext.js">3.2 RouterContext.js</a></li>
+                        <li><a href="#t173.3 Router.js">3.3 Router.js</a></li>
+                        <li><a href="#t183.4 Route.js">3.4 Route.js</a></li>
+                        <li><a href="#t193.5 react-router\index.js">3.5 react-router\index.js</a></li>
+                        <li><a href="#t203.6 BrowserRouter.js">3.6 BrowserRouter.js</a></li>
+                        <li><a href="#t213.7 HashRouter.js">3.7 HashRouter.js</a></li>
+                        <li><a href="#t223.8 react-router-dom\index.js">3.8 react-router-dom\index.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t233.实现history">3.实现history</a>
+                    <ul>
+                        <li><a href="#t243.1 createBrowserHistory.js">3.1 createBrowserHistory.js</a></li>
+                        <li><a href="#t253.2 createHashHistory.js">3.2 createHashHistory.js</a></li>
+                        <li><a href="#t263.3 history\index.js">3.3 history\index.js</a></li>
+                        <li><a href="#t273.4 BrowserRouter.js">3.4 BrowserRouter.js</a></li>
+                        <li><a href="#t283.5 HashRouter.js">3.5 HashRouter.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t294. path-to-regexp">4. path-to-regexp</a>
+                    <ul>
+                        <li><a href="#t304.1 /home结束">4.1 /home结束</a></li>
+                        <li><a href="#t314.2 /home非结束">4.2 /home非结束</a></li>
+                        <li><a href="#t324.3 路径参数">4.3 路径参数</a></li>
+                        <li><a href="#t334.4 正则匹配">4.4 正则匹配</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t345. 正则匹配">5. 正则匹配</a>
+                    <ul>
+                        <li><a href="#t355.1 matchPath.js">5.1 matchPath.js</a></li>
+                        <li><a href="#t365.2 Router.js">5.2 Router.js</a></li>
+                        <li><a href="#t375.3 Route.js">5.3 Route.js</a></li>
+                        <li><a href="#t385.4 react-router\index.js">5.4 react-router\index.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t396. 实现Switch">6. 实现Switch</a>
+                    <ul>
+                        <li><a href="#t406.1 Switch.js">6.1 Switch.js</a></li>
+                        <li><a href="#t416.2 Route.js">6.2 Route.js</a></li>
+                        <li><a href="#t426.3 react-router\index.js">6.3 react-router\index.js</a></li>
+                        <li><a href="#t436.4 src\index.js">6.4 src\index.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t447. Redirect">7. Redirect</a>
+                    <ul>
+                        <li><a href="#t457.1 Redirect.js">7.1 Redirect.js</a></li>
+                        <li><a href="#t467.2 Lifecycle.js">7.2 Lifecycle.js</a></li>
+                        <li><a href="#t477.3 react-router\index.js">7.3 react-router\index.js</a></li>
+                        <li><a href="#t487.4 src\index.js">7.4 src\index.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t498.Link">8.Link</a>
+                    <ul>
+                        <li><a href="#t508.1 Link.js">8.1 Link.js</a></li>
+                        <li><a href="#t518.2 react-router-dom\index.js">8.2 react-router-dom\index.js</a></li>
+                        <li><a href="#t528.3 src\index.js">8.3 src\index.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t539.嵌套路由">9.嵌套路由</a>
+                    <ul>
+                        <li><a href="#t549.1 utils.js">9.1 utils.js</a></li>
+                        <li><a href="#t559.2 User.js">9.2 User.js</a></li>
+                        <li><a href="#t569.3 UserAdd.js">9.3 UserAdd.js</a></li>
+                        <li><a href="#t579.4 UserList.js">9.4 UserList.js</a></li>
+                        <li><a href="#t589.5 UserDetail.js">9.5 UserDetail.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t5910.受保护路由">10.受保护路由</a>
+                    <ul>
+                        <li><a href="#t6010.1 src\index.js">10.1 src\index.js</a></li>
+                        <li><a href="#t6110.2 Route.js">10.2 Route.js</a></li>
+                        <li><a href="#t6210.3 Login.js">10.3 Login.js</a></li>
+                        <li><a href="#t6310.4 Protected.js">10.4 Protected.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t6411.NavLink">11.NavLink</a>
+                    <ul>
+                        <li><a href="#t6511.1 public\index.html">11.1 public\index.html</a></li>
+                        <li><a href="#t6611.2 src\index.js">11.2 src\index.js</a></li>
+                        <li><a href="#t6711.3 NavLink.js">11.3 NavLink.js</a></li>
+                        <li><a href="#t6811.4 react-router-dom\index.js">11.4 react-router-dom\index.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t6912.withRouter">12.withRouter</a>
+                    <ul>
+                        <li><a href="#t7012.1 src\index.js">12.1 src\index.js</a></li>
+                        <li><a href="#t7112.2 NavHeader.js">12.2 NavHeader.js</a></li>
+                        <li><a href="#t7212.3 withRouter.js">12.3 withRouter.js</a></li>
+                        <li><a href="#t7312.4 react-router\index.js">12.4 react-router\index.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t7413.Prompt">13.Prompt</a>
+                    <ul>
+                        <li><a href="#t7513.1 src\index.js">13.1 src\index.js</a></li>
+                        <li><a href="#t7613.2 UserAdd.js">13.2 UserAdd.js</a></li>
+                        <li><a href="#t7713.3 Prompt.js">13.3 Prompt.js</a></li>
+                        <li><a href="#t7813.4 react-router\index.js">13.4 react-router\index.js</a></li>
+                        <li><a href="#t7913.5 createBrowserHistory.js">13.5 createBrowserHistory.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t8015.hooks">15.hooks</a>
+                    <ul>
+                        <li><a href="#t8115.1 src\index.js">15.1 src\index.js</a></li>
+                        <li><a href="#t8215.2 hooks.js">15.2 hooks.js</a></li>
+                        <li><a href="#t8315.3 react-router\index.js">15.3 react-router\index.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t8416.路由懒加载">16.路由懒加载</a>
+                    <ul>
+                        <li><a href="#t8516.1 src\index.js">16.1 src\index.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t86链接">链接</a></li>
+            </ul>
+        </div>
+        <div class="content markdown-body">
+            <h2 id="t01. React路由原理">1. React路由原理 <a href="#t01. React路由原理"> # </a></h2>
+            <ul>
+                <li>不同的路径渲染不同的组件</li>
+                <li>有两种实现方式<ul>
+                        <li>HashRouter:利用hash实现路由切换</li>
+                        <li>BrowserRouter:实现h5 Api实现路由的切换</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="t11.1 HashRouter">1.1 HashRouter <a href="#t11.1 HashRouter"> # </a></h3>
+            <ul>
+                <li>利用hash实现路由切换</li>
+            </ul>
+            <p>public\index.html</p>
+            <pre><code class="lang-js">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -73,44 +529,48 @@
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h3 id="t21.2 BrowserRouter">1.2 BrowserRouter <a href="#t21.2 BrowserRouter"> # </a></h3>
-<ul>
-<li>利用h5 Api实现路由的切换</li>
-</ul>
-<h4 id="t31.2.1 history">1.2.1 history <a href="#t31.2.1 history"> # </a></h4>
-<ul>
-<li>HTML5规范给我们提供了一个<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/history">history</a>接口</li>
-<li>HTML5 History API包括2个方法：<code>history.pushState()</code>和<code>history.replaceState()</code>，和1个事件<code>window.onpopstate</code></li>
-</ul>
-<h5 id="t41.2.1.1 pushState">1.2.1.1 pushState <a href="#t41.2.1.1 pushState"> # </a></h5>
-<ul>
-<li>history.pushState(stateObject, title, url)，包括三个参数<ul>
-<li>第一个参数用于存储该url对应的状态对象，该对象可在onpopstate事件中获取，也可在history对象中获取</li>
-<li>第二个参数是标题，目前浏览器并未实现</li>
-<li>第三个参数则是设定的url</li>
-</ul>
-</li>
-<li>pushState函数向浏览器的历史堆栈压入一个url为设定值的记录，并改变历史堆栈的当前指针至栈顶  </li>
-</ul>
-<h5 id="t51.2.1.2 replaceState">1.2.1.2 replaceState <a href="#t51.2.1.2 replaceState"> # </a></h5>
-<ul>
-<li>该接口与pushState参数相同，含义也相同</li>
-<li>唯一的区别在于<code>replaceState</code>是替换浏览器历史堆栈的当前历史记录为设定的url</li>
-<li>需要注意的是<code>replaceState</code>不会改动浏览器历史堆栈的当前指针</li>
-</ul>
-<h5 id="t61.2.1.3 onpopstate">1.2.1.3 onpopstate <a href="#t61.2.1.3 onpopstate"> # </a></h5>
-<ul>
-<li>该事件是window的属性</li>
-<li>该事件会在调用浏览器的前进、后退以及执行<code>history.forward</code>、<code>history.back</code>、和<code>history.go</code>触发，因为这些操作有一个共性，即修改了历史堆栈的当前指针</li>
-<li>在不改变document的前提下，一旦当前指针改变则会触发<code>onpopstate</code>事件</li>
-</ul>
-<h5 id="t71.2.1.4 案例">1.2.1.4 案例 <a href="#t71.2.1.4 案例"> # </a></h5>
-<ul>
-<li>浏览器针对每个页面维护一个<code>History</code>栈,执行<code>pushState</code>函数可压入设定的<code>url</code>至栈顶,同时修改当前指针</li>
-<li>当执行<code>back</code>和<code>forward</code>操作时，history栈大小并不会改变（history.length不变），仅仅移动当前指针的位置</li>
-<li>若当前指针在history栈的中间位置(非栈顶)，此时执行pushState会在指针当前的位置添加此条目,并成为新的栈顶</li>
-</ul>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+            <h3 id="t21.2 BrowserRouter">1.2 BrowserRouter <a href="#t21.2 BrowserRouter"> # </a></h3>
+            <ul>
+                <li>利用h5 Api实现路由的切换</li>
+            </ul>
+            <h4 id="t31.2.1 history">1.2.1 history <a href="#t31.2.1 history"> # </a></h4>
+            <ul>
+                <li>HTML5规范给我们提供了一个<a
+                        href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/history">history</a>接口</li>
+                <li>HTML5 History
+                    API包括2个方法：<code>history.pushState()</code>和<code>history.replaceState()</code>，和1个事件<code>window.onpopstate</code>
+                </li>
+            </ul>
+            <h5 id="t41.2.1.1 pushState">1.2.1.1 pushState <a href="#t41.2.1.1 pushState"> # </a></h5>
+            <ul>
+                <li>history.pushState(stateObject, title, url)，包括三个参数<ul>
+                        <li>第一个参数用于存储该url对应的状态对象，该对象可在onpopstate事件中获取，也可在history对象中获取</li>
+                        <li>第二个参数是标题，目前浏览器并未实现</li>
+                        <li>第三个参数则是设定的url</li>
+                    </ul>
+                </li>
+                <li>pushState函数向浏览器的历史堆栈压入一个url为设定值的记录，并改变历史堆栈的当前指针至栈顶 </li>
+            </ul>
+            <h5 id="t51.2.1.2 replaceState">1.2.1.2 replaceState <a href="#t51.2.1.2 replaceState"> # </a></h5>
+            <ul>
+                <li>该接口与pushState参数相同，含义也相同</li>
+                <li>唯一的区别在于<code>replaceState</code>是替换浏览器历史堆栈的当前历史记录为设定的url</li>
+                <li>需要注意的是<code>replaceState</code>不会改动浏览器历史堆栈的当前指针</li>
+            </ul>
+            <h5 id="t61.2.1.3 onpopstate">1.2.1.3 onpopstate <a href="#t61.2.1.3 onpopstate"> # </a></h5>
+            <ul>
+                <li>该事件是window的属性</li>
+                <li>该事件会在调用浏览器的前进、后退以及执行<code>history.forward</code>、<code>history.back</code>、和<code>history.go</code>触发，因为这些操作有一个共性，即修改了历史堆栈的当前指针
+                </li>
+                <li>在不改变document的前提下，一旦当前指针改变则会触发<code>onpopstate</code>事件</li>
+            </ul>
+            <h5 id="t71.2.1.4 案例">1.2.1.4 案例 <a href="#t71.2.1.4 案例"> # </a></h5>
+            <ul>
+                <li>浏览器针对每个页面维护一个<code>History</code>栈,执行<code>pushState</code>函数可压入设定的<code>url</code>至栈顶,同时修改当前指针</li>
+                <li>当执行<code>back</code>和<code>forward</code>操作时，history栈大小并不会改变（history.length不变），仅仅移动当前指针的位置</li>
+                <li>若当前指针在history栈的中间位置(非栈顶)，此时执行pushState会在指针当前的位置添加此条目,并成为新的栈顶</li>
+            </ul>
+            <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
@@ -177,13 +637,13 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h2 id="t82.基本路由">2.基本路由 <a href="#t82.基本路由"> # </a></h2>
-<h3 id="t92.1 安装">2.1 安装 <a href="#t92.1 安装"> # </a></h3>
-<pre><code class="lang-js">npm i react-router-dom --save
+            <h2 id="t82.基本路由">2.基本路由 <a href="#t82.基本路由"> # </a></h2>
+            <h3 id="t92.1 安装">2.1 安装 <a href="#t92.1 安装"> # </a></h3>
+            <pre><code class="lang-js">npm i react-router-dom --save
 </code></pre>
-<h3 id="t102.2 src\index.js">2.2 src\index.js <a href="#t102.2 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t102.2 src\index.js">2.2 src\index.js <a href="#t102.2 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
 <span class="hljs-keyword">import</span> {HashRouter <span class="hljs-keyword">as</span> Router,Route} <span class="hljs-keyword">from</span> <span class="hljs-string">'react-router-dom'</span>;
 <span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">'./components/Home'</span>;
@@ -199,9 +659,9 @@ ReactDOM.render(
     <span class="hljs-tag">&lt;/<span class="hljs-name">Router</span>&gt;</span></span>
 ,<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'root'</span>));
 </code></pre>
-<h3 id="t112.3 Home.js">2.3 Home.js <a href="#t112.3 Home.js"> # </a></h3>
-<p>src\components\Home.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t112.3 Home.js">2.3 Home.js <a href="#t112.3 Home.js"> # </a></h3>
+            <p>src\components\Home.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Home</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
     render(){
         <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.props);
@@ -214,9 +674,9 @@ ReactDOM.render(
     }
 }
 </code></pre>
-<h3 id="t122.4 Home.js">2.4 Home.js <a href="#t122.4 Home.js"> # </a></h3>
-<p>src\components\User.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t122.4 Home.js">2.4 Home.js <a href="#t122.4 Home.js"> # </a></h3>
+            <p>src\components\User.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
     render(){
         <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.props.location.state);
@@ -253,9 +713,9 @@ ReactDOM.render(
 }
  */</span>
 </code></pre>
-<h3 id="t132.4 Profile.js">2.4 Profile.js <a href="#t132.4 Profile.js"> # </a></h3>
-<p>src\components\Profile.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t132.4 Profile.js">2.4 Profile.js <a href="#t132.4 Profile.js"> # </a></h3>
+            <p>src\components\Profile.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{Component} <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Profile</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span></span>{
     render() {
         <span class="hljs-keyword">return</span> (
@@ -264,12 +724,14 @@ ReactDOM.render(
     }
 }
 </code></pre>
-<h2 id="t143.实现基本路由">3.实现基本路由 <a href="#t143.实现基本路由"> # </a></h2>
-<h3 id="t153.1 src\index.js">3.1 src\index.js <a href="#t153.1 src\index.js"> # </a></h3>
-<ul>
-<li><a href="https://gitee.com/zhufengpeixun/react-router/blob/master/packages/react-router-dom/modules/index.js">react-router-dom/modules/index.js</a></li>
-</ul>
-<pre><code class="lang-diff">import React from 'react';
+            <h2 id="t143.实现基本路由">3.实现基本路由 <a href="#t143.实现基本路由"> # </a></h2>
+            <h3 id="t153.1 src\index.js">3.1 src\index.js <a href="#t153.1 src\index.js"> # </a></h3>
+            <ul>
+                <li><a
+                        href="https://gitee.com/zhufengpeixun/react-router/blob/master/packages/react-router-dom/modules/index.js">react-router-dom/modules/index.js</a>
+                </li>
+            </ul>
+            <pre><code class="lang-diff">import React from 'react';
 import ReactDOM from 'react-dom';
 <span class="hljs-addition">+import {HashRouter as Router,Route} from './react-router-dom';</span>
 import Home from './components/Home';
@@ -285,14 +747,14 @@ ReactDOM.render(
     &lt;/Router&gt;
 ,document.getElementById('root'));
 </code></pre>
-<h3 id="t163.2 RouterContext.js">3.2 RouterContext.js <a href="#t163.2 RouterContext.js"> # </a></h3>
-<p>src\react-router\RouterContext.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h3 id="t163.2 RouterContext.js">3.2 RouterContext.js <a href="#t163.2 RouterContext.js"> # </a></h3>
+            <p>src\react-router\RouterContext.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> React.createContext({});
 </code></pre>
-<h3 id="t173.3 Router.js">3.3 Router.js <a href="#t173.3 Router.js"> # </a></h3>
-<p>src\react-router\Router.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h3 id="t173.3 Router.js">3.3 Router.js <a href="#t173.3 Router.js"> # </a></h3>
+            <p>src\react-router\Router.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> RouterContext <span class="hljs-keyword">from</span> <span class="hljs-string">'./RouterContext'</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Router</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
     <span class="hljs-keyword">constructor</span>(props){
@@ -323,9 +785,9 @@ ReactDOM.render(
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Router;
 </code></pre>
-<h3 id="t183.4 Route.js">3.4 Route.js <a href="#t183.4 Route.js"> # </a></h3>
-<p>src\react-router\Route.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h3 id="t183.4 Route.js">3.4 Route.js <a href="#t183.4 Route.js"> # </a></h3>
+            <p>src\react-router\Route.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> RouterContext <span class="hljs-keyword">from</span> <span class="hljs-string">'./RouterContext'</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Route</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
     <span class="hljs-keyword">static</span> contextType = RouterContext
@@ -343,15 +805,16 @@ ReactDOM.render(
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Route;
 </code></pre>
-<h3 id="t193.5 react-router\index.js">3.5 react-router\index.js <a href="#t193.5 react-router\index.js"> # </a></h3>
-<p>src\react-router\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> {<span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> Route} <span class="hljs-keyword">from</span> <span class="hljs-string">'./Route'</span>;
+            <h3 id="t193.5 react-router\index.js">3.5 react-router\index.js <a href="#t193.5 react-router\index.js"> #
+                </a></h3>
+            <p>src\react-router\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> {<span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> Route} <span class="hljs-keyword">from</span> <span class="hljs-string">'./Route'</span>;
 <span class="hljs-keyword">export</span> {<span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> Router} <span class="hljs-keyword">from</span> <span class="hljs-string">'./Router'</span>;
 <span class="hljs-keyword">export</span> {<span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> __RouterContext} <span class="hljs-keyword">from</span> <span class="hljs-string">'./RouterContext'</span>;
 </code></pre>
-<h3 id="t203.6 BrowserRouter.js">3.6 BrowserRouter.js <a href="#t203.6 BrowserRouter.js"> # </a></h3>
-<p>src\react-router-dom\BrowserRouter.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h3 id="t203.6 BrowserRouter.js">3.6 BrowserRouter.js <a href="#t203.6 BrowserRouter.js"> # </a></h3>
+            <p>src\react-router-dom\BrowserRouter.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> {Router} <span class="hljs-keyword">from</span> <span class="hljs-string">'../react-router'</span>;
 <span class="hljs-keyword">import</span> {createBrowserHistory} <span class="hljs-keyword">from</span> <span class="hljs-string">'history'</span>;
 <span class="hljs-comment">//创建相应的历史对象，并且传入Router组件，原样渲染子组件</span>
@@ -368,9 +831,9 @@ ReactDOM.render(
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> BrowserRouter;
 </code></pre>
-<h3 id="t213.7 HashRouter.js">3.7 HashRouter.js <a href="#t213.7 HashRouter.js"> # </a></h3>
-<p>src\react-router-dom\HashRouter.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h3 id="t213.7 HashRouter.js">3.7 HashRouter.js <a href="#t213.7 HashRouter.js"> # </a></h3>
+            <p>src\react-router-dom\HashRouter.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> {Router} <span class="hljs-keyword">from</span> <span class="hljs-string">'../react-router'</span>;
 <span class="hljs-keyword">import</span> {createHashHistory} <span class="hljs-keyword">from</span> <span class="hljs-string">'history'</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HashRouter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
@@ -385,16 +848,18 @@ ReactDOM.render(
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> HashRouter;
 </code></pre>
-<h3 id="t223.8 react-router-dom\index.js">3.8 react-router-dom\index.js <a href="#t223.8 react-router-dom\index.js"> # </a></h3>
-<p>src\react-router-dom\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">'../react-router'</span>;
+            <h3 id="t223.8 react-router-dom\index.js">3.8 react-router-dom\index.js <a
+                    href="#t223.8 react-router-dom\index.js"> # </a></h3>
+            <p>src\react-router-dom\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">'../react-router'</span>;
 <span class="hljs-keyword">export</span> {<span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> HashRouter} <span class="hljs-keyword">from</span> <span class="hljs-string">'./HashRouter'</span>;
 <span class="hljs-keyword">export</span> {<span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> BrowserRouter} <span class="hljs-keyword">from</span> <span class="hljs-string">'./BrowserRouter'</span>;
 </code></pre>
-<h2 id="t233.实现history">3.实现history <a href="#t233.实现history"> # </a></h2>
-<h3 id="t243.1 createBrowserHistory.js">3.1 createBrowserHistory.js <a href="#t243.1 createBrowserHistory.js"> # </a></h3>
-<p>src\history\createBrowserHistory.js</p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createBrowserHistory</span>(<span class="hljs-params"></span>)</span>{
+            <h2 id="t233.实现history">3.实现history <a href="#t233.实现history"> # </a></h2>
+            <h3 id="t243.1 createBrowserHistory.js">3.1 createBrowserHistory.js <a
+                    href="#t243.1 createBrowserHistory.js"> # </a></h3>
+            <p>src\history\createBrowserHistory.js</p>
+            <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createBrowserHistory</span>(<span class="hljs-params"></span>)</span>{
     <span class="hljs-keyword">const</span> globalHistory = <span class="hljs-built_in">window</span>.history;
     <span class="hljs-keyword">let</span> listeners = [];<span class="hljs-comment">//存放所有的监听函数</span>
     <span class="hljs-keyword">let</span> state;
@@ -449,9 +914,10 @@ ReactDOM.render(
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> createBrowserHistory;
 </code></pre>
-<h3 id="t253.2 createHashHistory.js">3.2 createHashHistory.js <a href="#t253.2 createHashHistory.js"> # </a></h3>
-<p>src\history\createHashHistory.js</p>
-<pre><code class="lang-js"><span class="hljs-comment">/**
+            <h3 id="t253.2 createHashHistory.js">3.2 createHashHistory.js <a href="#t253.2 createHashHistory.js"> # </a>
+            </h3>
+            <p>src\history\createHashHistory.js</p>
+            <pre><code class="lang-js"><span class="hljs-comment">/**
  * hash不能使用 浏览器的history对象了
  * <span class="hljs-doctag">@returns </span>
  */</span>
@@ -520,14 +986,14 @@ ReactDOM.render(
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> createHashHistory;
 </code></pre>
-<h3 id="t263.3 history\index.js">3.3 history\index.js <a href="#t263.3 history\index.js"> # </a></h3>
-<p>src\history\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> {<span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> createBrowserHistory} <span class="hljs-keyword">from</span> <span class="hljs-string">'./createBrowserHistory'</span>;
+            <h3 id="t263.3 history\index.js">3.3 history\index.js <a href="#t263.3 history\index.js"> # </a></h3>
+            <p>src\history\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> {<span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> createBrowserHistory} <span class="hljs-keyword">from</span> <span class="hljs-string">'./createBrowserHistory'</span>;
 <span class="hljs-keyword">export</span> {<span class="hljs-keyword">default</span> <span class="hljs-keyword">as</span> createHashHistory} <span class="hljs-keyword">from</span> <span class="hljs-string">'./createHashHistory'</span>;
 </code></pre>
-<h3 id="t273.4 BrowserRouter.js">3.4 BrowserRouter.js <a href="#t273.4 BrowserRouter.js"> # </a></h3>
-<p>src\react-router-dom\BrowserRouter.js</p>
-<pre><code class="lang-diff">import React from 'react'
+            <h3 id="t273.4 BrowserRouter.js">3.4 BrowserRouter.js <a href="#t273.4 BrowserRouter.js"> # </a></h3>
+            <p>src\react-router-dom\BrowserRouter.js</p>
+            <pre><code class="lang-diff">import React from 'react'
 import {Router} from '../react-router';
 <span class="hljs-addition">+import {createBrowserHistory} from '../history';</span>
 //创建相应的历史对象，并且传入Router组件，原样渲染子组件
@@ -544,9 +1010,9 @@ class BrowserRouter extends React.Component{
 }
 export default BrowserRouter;
 </code></pre>
-<h3 id="t283.5 HashRouter.js">3.5 HashRouter.js <a href="#t283.5 HashRouter.js"> # </a></h3>
-<p>src\react-router-dom\HashRouter.js</p>
-<pre><code class="lang-diff">import React from 'react'
+            <h3 id="t283.5 HashRouter.js">3.5 HashRouter.js <a href="#t283.5 HashRouter.js"> # </a></h3>
+            <p>src\react-router-dom\HashRouter.js</p>
+            <pre><code class="lang-diff">import React from 'react'
 import {Router} from '../react-router';
 import {createHashHistory} from '../history';
 class HashRouter extends React.Component{
@@ -561,26 +1027,27 @@ class HashRouter extends React.Component{
 }
 export default HashRouter;
 </code></pre>
-<h2 id="t294. path-to-regexp">4. path-to-regexp <a href="#t294. path-to-regexp"> # </a></h2>
-<ul>
-<li><a href="https://jex.im/regulex">regulex</a></li>
-<li><a href="https://www.npmjs.com/package/path-to-regexp">path-to-regexp</a><ul>
-<li>sensitive 是否大小写敏感 (默认值: false)</li>
-<li>strict 是否允许结尾有一个可选的/  (默认值: false)</li>
-<li>end 是否匹配整个字符串 (默认值: true)</li>
-</ul>
-</li>
-</ul>
-<h3 id="t304.1 /home结束">4.1 /home结束 <a href="#t304.1 /home结束"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> pathToRegExp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path-to-regexp'</span>);
+            <h2 id="t294. path-to-regexp">4. path-to-regexp <a href="#t294. path-to-regexp"> # </a></h2>
+            <ul>
+                <li><a href="https://jex.im/regulex">regulex</a></li>
+                <li><a href="https://www.npmjs.com/package/path-to-regexp">path-to-regexp</a>
+                    <ul>
+                        <li>sensitive 是否大小写敏感 (默认值: false)</li>
+                        <li>strict 是否允许结尾有一个可选的/ (默认值: false)</li>
+                        <li>end 是否匹配整个字符串 (默认值: true)</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 id="t304.1 /home结束">4.1 /home结束 <a href="#t304.1 /home结束"> # </a></h3>
+            <pre><code class="lang-js"><span class="hljs-keyword">let</span> pathToRegExp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path-to-regexp'</span>);
 <span class="hljs-keyword">let</span> regxp = pathToRegExp(<span class="hljs-string">'/home'</span>,[],{<span class="hljs-attr">end</span>:<span class="hljs-literal">true</span>});
 <span class="hljs-built_in">console</span>.log(regxp);<span class="hljs-comment">//   /^\/home\/?$/i</span>
 <span class="hljs-built_in">console</span>.log(regxp.test(<span class="hljs-string">'/home'</span>));
 <span class="hljs-built_in">console</span>.log(regxp.test(<span class="hljs-string">'/home/2'</span>));
 </code></pre>
-<p><img src="http://img.zhufengpeixun.cn/homereg.png" alt="homereg"></p>
-<h3 id="t314.2 /home非结束">4.2 /home非结束 <a href="#t314.2 /home非结束"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> pathToRegExp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path-to-regexp'</span>);
+            <p><img src="http://img.zhufengpeixun.cn/homereg.png" alt="homereg"></p>
+            <h3 id="t314.2 /home非结束">4.2 /home非结束 <a href="#t314.2 /home非结束"> # </a></h3>
+            <pre><code class="lang-js"><span class="hljs-keyword">let</span> pathToRegExp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path-to-regexp'</span>);
 <span class="hljs-keyword">let</span> regExp = pathToRegExp(<span class="hljs-string">'/home'</span>,[],{<span class="hljs-attr">end</span>:<span class="hljs-literal">false</span>});
 <span class="hljs-built_in">console</span>.log(regExp);<span class="hljs-comment">//   /^\/home\/?(?=\/|$)/i</span>
 <span class="hljs-built_in">console</span>.log(regExp.test(<span class="hljs-string">'/home'</span>));
@@ -588,9 +1055,9 @@ export default HashRouter;
 <span class="hljs-built_in">console</span>.log(regExp.test(<span class="hljs-string">'/home//'</span>));
 <span class="hljs-built_in">console</span>.log(regExp.test(<span class="hljs-string">'/home/2'</span>));
 </code></pre>
-<p><img src="http://img.zhufengpeixun.cn/homereg2.png" alt="homereg2"></p>
-<h3 id="t324.3 路径参数">4.3 路径参数 <a href="#t324.3 路径参数"> # </a></h3>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> params = [];
+            <p><img src="http://img.zhufengpeixun.cn/homereg2.png" alt="homereg2"></p>
+            <h3 id="t324.3 路径参数">4.3 路径参数 <a href="#t324.3 路径参数"> # </a></h3>
+            <pre><code class="lang-js"><span class="hljs-keyword">let</span> params = [];
 <span class="hljs-keyword">let</span> regExp = pathToRegExp(<span class="hljs-string">'/user/:id'</span>,params,{<span class="hljs-attr">end</span>:<span class="hljs-literal">true</span>});
 <span class="hljs-built_in">console</span>.log(regExp,params);
 <span class="hljs-comment">/**
@@ -598,34 +1065,38 @@ export default HashRouter;
 [ { name: 'id', optional: false, offset: 7 } ]
 **/</span>
 </code></pre>
-<p><img src="http://img.zhufengpeixun.cn/uerreg.png" alt="uerreg"></p>
-<h3 id="t334.4 正则匹配">4.4 正则匹配 <a href="#t334.4 正则匹配"> # </a></h3>
-<ul>
-<li>是否捕获</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">表达式</th>
-<th style="text-align:left">含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">()</td>
-<td style="text-align:left">表示捕获分组，()会把每个分组里的匹配的值保存起来，使用$n(n是一个数字，表示第n个捕获组的内容)</td>
-</tr>
-<tr>
-<td style="text-align:left">(?:)</td>
-<td style="text-align:left">表示非捕获分组，和捕获分组唯一的区别在于，非捕获分组匹配的值不会保存起来</td>
-</tr>
-<tr>
-<td style="text-align:left">(?<name>...)</name></td>
-<td style="text-align:left">表示命名捕获分组,反向引用一个命名分组的语法是 \k<name>,在 replace() 方法的替换字符串中反向引用是用 $<name></name></name></td>
-</tr>
-</tbody>
-</table>
-<pre><code class="lang-js"><span class="hljs-comment">//分组获取</span>
+            <p><img src="http://img.zhufengpeixun.cn/uerreg.png" alt="uerreg"></p>
+            <h3 id="t334.4 正则匹配">4.4 正则匹配 <a href="#t334.4 正则匹配"> # </a></h3>
+            <ul>
+                <li>是否捕获</li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align:left">表达式</th>
+                        <th style="text-align:left">含义</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align:left">()</td>
+                        <td style="text-align:left">表示捕获分组，()会把每个分组里的匹配的值保存起来，使用$n(n是一个数字，表示第n个捕获组的内容)</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">(?:)</td>
+                        <td style="text-align:left">表示非捕获分组，和捕获分组唯一的区别在于，非捕获分组匹配的值不会保存起来</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">(?<name>...)</name>
+                        </td>
+                        <td style="text-align:left">表示命名捕获分组,反向引用一个命名分组的语法是 \k<name>,在 replace() 方法的替换字符串中反向引用是用 $<name>
+                                </name>
+                            </name>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <pre><code class="lang-js"><span class="hljs-comment">//分组获取</span>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'1ab'</span>.match(<span class="hljs-regexp">/1[a-z]([b-c])/</span>));
 <span class="hljs-comment">//分组不捕获</span>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'1ab'</span>.match(<span class="hljs-regexp">/1[a-z](?:[a-z])/</span>));
@@ -633,36 +1104,36 @@ export default HashRouter;
 <span class="hljs-built_in">console</span>.log(<span class="hljs-regexp">/(?&lt;x&gt;\d{2})-(?&lt;y&gt;\d{2})/</span>.exec(<span class="hljs-string">'11-22'</span>));
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'11-22'</span>.replace(<span class="hljs-regexp">/(?&lt;x&gt;\d{2})-(?&lt;y&gt;\d{2})/</span>,<span class="hljs-string">"$&lt;y&gt;-$&lt;x&gt;"</span>));
 </code></pre>
-<ul>
-<li>前瞻和后顾</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">表达式</th>
-<th style="text-align:left">含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">(?=pattern)</td>
-<td style="text-align:left">正向肯定查找(前瞻),后面必须跟着什么</td>
-</tr>
-<tr>
-<td style="text-align:left">(?!pattern)</td>
-<td style="text-align:left">正向否定查找(前瞻)，后面不能跟着什么</td>
-</tr>
-<tr>
-<td style="text-align:left">(?&lt;=pattern)</td>
-<td style="text-align:left">反向肯定条件查找(后顾),不捕获</td>
-</tr>
-<tr>
-<td style="text-align:left">(?&lt;!pattern)</td>
-<td style="text-align:left">反向否定条件查找（后顾）</td>
-</tr>
-</tbody>
-</table>
-<pre><code class="lang-js"><span class="hljs-comment">//会消耗掉字符的</span>
+            <ul>
+                <li>前瞻和后顾</li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align:left">表达式</th>
+                        <th style="text-align:left">含义</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align:left">(?=pattern)</td>
+                        <td style="text-align:left">正向肯定查找(前瞻),后面必须跟着什么</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">(?!pattern)</td>
+                        <td style="text-align:left">正向否定查找(前瞻)，后面不能跟着什么</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">(?&lt;=pattern)</td>
+                        <td style="text-align:left">反向肯定条件查找(后顾),不捕获</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:left">(?&lt;!pattern)</td>
+                        <td style="text-align:left">反向否定条件查找（后顾）</td>
+                    </tr>
+                </tbody>
+            </table>
+            <pre><code class="lang-js"><span class="hljs-comment">//会消耗掉字符的</span>
 <span class="hljs-comment">//console.log('1a'.match(/\d[a-z][a-z]/));</span>
 <span class="hljs-comment">//?= 正向肯定查找 不消费字符 正向前瞻</span>
 <span class="hljs-comment">//console.log('1a'.match(/\d(?=[a-z])[a-z]/));</span>
@@ -682,10 +1153,10 @@ array.input = <span class="hljs-string">'1ab'</span>;
 array.groups = <span class="hljs-literal">undefined</span>;
 <span class="hljs-built_in">console</span>.log(array);
 </code></pre>
-<h2 id="t345. 正则匹配">5. 正则匹配 <a href="#t345. 正则匹配"> # </a></h2>
-<h3 id="t355.1 matchPath.js">5.1 matchPath.js <a href="#t355.1 matchPath.js"> # </a></h3>
-<p>src\react-router\matchPath.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> pathToRegexp <span class="hljs-keyword">from</span> <span class="hljs-string">'path-to-regexp'</span>;
+            <h2 id="t345. 正则匹配">5. 正则匹配 <a href="#t345. 正则匹配"> # </a></h2>
+            <h3 id="t355.1 matchPath.js">5.1 matchPath.js <a href="#t355.1 matchPath.js"> # </a></h3>
+            <p>src\react-router\matchPath.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> pathToRegexp <span class="hljs-keyword">from</span> <span class="hljs-string">'path-to-regexp'</span>;
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">compilePath</span>(<span class="hljs-params">path,options</span>)</span>{
     <span class="hljs-keyword">const</span> keys = [];
     <span class="hljs-keyword">const</span> regexp = pathToRegexp(path,keys,options);
@@ -722,9 +1193,9 @@ array.groups = <span class="hljs-literal">undefined</span>;
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> matchPath;
 </code></pre>
-<h3 id="t365.2 Router.js">5.2 Router.js <a href="#t365.2 Router.js"> # </a></h3>
-<p>src\react-router\Router.js</p>
-<pre><code class="lang-diff">import React from 'react'
+            <h3 id="t365.2 Router.js">5.2 Router.js <a href="#t365.2 Router.js"> # </a></h3>
+            <p>src\react-router\Router.js</p>
+            <pre><code class="lang-diff">import React from 'react'
 import RouterContext from './RouterContext';
 class Router extends React.Component{
 <span class="hljs-addition">+    static computeRootMatch(pathname) {</span>
@@ -759,9 +1230,9 @@ class Router extends React.Component{
 
 export default Router;
 </code></pre>
-<h3 id="t375.3 Route.js">5.3 Route.js <a href="#t375.3 Route.js"> # </a></h3>
-<p>src\react-router\Route.js</p>
-<pre><code class="lang-diff">import React from 'react'
+            <h3 id="t375.3 Route.js">5.3 Route.js <a href="#t375.3 Route.js"> # </a></h3>
+            <p>src\react-router\Route.js</p>
+            <pre><code class="lang-diff">import React from 'react'
 import RouterContext from './RouterContext';
 <span class="hljs-addition">+import matchPath from './matchPath';</span>
 class Route extends React.Component{
@@ -785,17 +1256,18 @@ class Route extends React.Component{
 }
 export default Route;
 </code></pre>
-<h3 id="t385.4 react-router\index.js">5.4 react-router\index.js <a href="#t385.4 react-router\index.js"> # </a></h3>
-<p>src\react-router\index.js</p>
-<pre><code class="lang-diff">export {default as Route} from './Route';
+            <h3 id="t385.4 react-router\index.js">5.4 react-router\index.js <a href="#t385.4 react-router\index.js"> #
+                </a></h3>
+            <p>src\react-router\index.js</p>
+            <pre><code class="lang-diff">export {default as Route} from './Route';
 export {default as Router} from './Router';
 export {default as __RouterContext} from './RouterContext';
 <span class="hljs-addition">+export {default as matchPath} from './matchPath';</span>
 </code></pre>
-<h2 id="t396. 实现Switch">6. 实现Switch <a href="#t396. 实现Switch"> # </a></h2>
-<h3 id="t406.1 Switch.js">6.1 Switch.js <a href="#t406.1 Switch.js"> # </a></h3>
-<p>src\react-router\Switch.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h2 id="t396. 实现Switch">6. 实现Switch <a href="#t396. 实现Switch"> # </a></h2>
+            <h3 id="t406.1 Switch.js">6.1 Switch.js <a href="#t406.1 Switch.js"> # </a></h3>
+            <p>src\react-router\Switch.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> RouterContext <span class="hljs-keyword">from</span> <span class="hljs-string">'./RouterContext'</span>;
 <span class="hljs-keyword">import</span> matchPath <span class="hljs-keyword">from</span> <span class="hljs-string">'./matchPath'</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Switch</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
@@ -814,9 +1286,9 @@ export {default as __RouterContext} from './RouterContext';
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Switch;
 </code></pre>
-<h3 id="t416.2 Route.js">6.2 Route.js <a href="#t416.2 Route.js"> # </a></h3>
-<p>src\react-router\Route.js</p>
-<pre><code class="lang-diff">import React from 'react'
+            <h3 id="t416.2 Route.js">6.2 Route.js <a href="#t416.2 Route.js"> # </a></h3>
+            <p>src\react-router\Route.js</p>
+            <pre><code class="lang-diff">import React from 'react'
 import RouterContext from './RouterContext';
 import matchPath from './matchPath';
 class Route extends React.Component{
@@ -840,17 +1312,18 @@ class Route extends React.Component{
 }
 export default Route;
 </code></pre>
-<h3 id="t426.3 react-router\index.js">6.3 react-router\index.js <a href="#t426.3 react-router\index.js"> # </a></h3>
-<p>src\react-router\index.js</p>
-<pre><code class="lang-diff">export {default as Route} from './Route';
+            <h3 id="t426.3 react-router\index.js">6.3 react-router\index.js <a href="#t426.3 react-router\index.js"> #
+                </a></h3>
+            <p>src\react-router\index.js</p>
+            <pre><code class="lang-diff">export {default as Route} from './Route';
 export {default as Router} from './Router';
 export {default as __RouterContext} from './RouterContext';
 export {default as matchPath} from './matchPath';
 <span class="hljs-addition">+export {default as Switch} from './Switch';</span>
 </code></pre>
-<h3 id="t436.4 src\index.js">6.4 src\index.js <a href="#t436.4 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import React from 'react';
+            <h3 id="t436.4 src\index.js">6.4 src\index.js <a href="#t436.4 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-diff">import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter as Router,Route,Switch} from './react-router-dom';
 import Home from './components/Home';
@@ -866,10 +1339,10 @@ ReactDOM.render(
     &lt;/Router&gt;
 ,document.getElementById('root'));
 </code></pre>
-<h2 id="t447. Redirect">7. Redirect <a href="#t447. Redirect"> # </a></h2>
-<h3 id="t457.1 Redirect.js">7.1 Redirect.js <a href="#t457.1 Redirect.js"> # </a></h3>
-<p>src\react-router\Redirect.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h2 id="t447. Redirect">7. Redirect <a href="#t447. Redirect"> # </a></h2>
+            <h3 id="t457.1 Redirect.js">7.1 Redirect.js <a href="#t457.1 Redirect.js"> # </a></h3>
+            <p>src\react-router\Redirect.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> RouterContext <span class="hljs-keyword">from</span> <span class="hljs-string">'./RouterContext'</span>;
 <span class="hljs-keyword">import</span> Lifecycle <span class="hljs-keyword">from</span> <span class="hljs-string">'./Lifecycle'</span>;
 
@@ -891,9 +1364,9 @@ ReactDOM.render(
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Redirect;
 </code></pre>
-<h3 id="t467.2 Lifecycle.js">7.2 Lifecycle.js <a href="#t467.2 Lifecycle.js"> # </a></h3>
-<p>src\react-router\Lifecycle.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t467.2 Lifecycle.js">7.2 Lifecycle.js <a href="#t467.2 Lifecycle.js"> # </a></h3>
+            <p>src\react-router\Lifecycle.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lifecycle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
     componentDidMount(){
         <span class="hljs-keyword">if</span>(<span class="hljs-keyword">this</span>.props.onMount)
@@ -909,18 +1382,19 @@ ReactDOM.render(
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Lifecycle;
 </code></pre>
-<h3 id="t477.3 react-router\index.js">7.3 react-router\index.js <a href="#t477.3 react-router\index.js"> # </a></h3>
-<p>src\react-router\index.js</p>
-<pre><code class="lang-diff">export {default as Route} from './Route';
+            <h3 id="t477.3 react-router\index.js">7.3 react-router\index.js <a href="#t477.3 react-router\index.js"> #
+                </a></h3>
+            <p>src\react-router\index.js</p>
+            <pre><code class="lang-diff">export {default as Route} from './Route';
 export {default as Router} from './Router';
 export {default as __RouterContext} from './RouterContext';
 export {default as matchPath} from './matchPath';
 export {default as Switch} from './Switch';
 <span class="hljs-addition">+export {default as Redirect} from './Redirect';</span>
 </code></pre>
-<h3 id="t487.4 src\index.js">7.4 src\index.js <a href="#t487.4 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import React from 'react';
+            <h3 id="t487.4 src\index.js">7.4 src\index.js <a href="#t487.4 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-diff">import React from 'react';
 import ReactDOM from 'react-dom';
 <span class="hljs-addition">+import {HashRouter as Router,Route,Switch,Redirect} from './react-router-dom';</span>
 import Home from './components/Home';
@@ -937,10 +1411,10 @@ ReactDOM.render(
     &lt;/Router&gt;
 ,document.getElementById('root'));
 </code></pre>
-<h2 id="t498.Link">8.Link <a href="#t498.Link"> # </a></h2>
-<h3 id="t508.1 Link.js">8.1 Link.js <a href="#t508.1 Link.js"> # </a></h3>
-<p>src\react-router-dom\Link.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h2 id="t498.Link">8.Link <a href="#t498.Link"> # </a></h2>
+            <h3 id="t508.1 Link.js">8.1 Link.js <a href="#t508.1 Link.js"> # </a></h3>
+            <p>src\react-router-dom\Link.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> {__RouterContext <span class="hljs-keyword">as</span> RouterContext} <span class="hljs-keyword">from</span> <span class="hljs-string">'../react-router'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Link</span>(<span class="hljs-params">props</span>)</span>{
     <span class="hljs-keyword">return</span> (
@@ -962,16 +1436,17 @@ ReactDOM.render(
     )
 }
 </code></pre>
-<h3 id="t518.2 react-router-dom\index.js">8.2 react-router-dom\index.js <a href="#t518.2 react-router-dom\index.js"> # </a></h3>
-<p>src\react-router-dom\index.js</p>
-<pre><code class="lang-diff">export * from '../react-router';
+            <h3 id="t518.2 react-router-dom\index.js">8.2 react-router-dom\index.js <a
+                    href="#t518.2 react-router-dom\index.js"> # </a></h3>
+            <p>src\react-router-dom\index.js</p>
+            <pre><code class="lang-diff">export * from '../react-router';
 export {default as HashRouter} from './HashRouter';
 export {default as BrowserRouter} from './BrowserRouter';
 <span class="hljs-addition">+export {default as Link} from './Link';</span>
 </code></pre>
-<h3 id="t528.3 src\index.js">8.3 src\index.js <a href="#t528.3 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import React from 'react';
+            <h3 id="t528.3 src\index.js">8.3 src\index.js <a href="#t528.3 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-diff">import React from 'react';
 import ReactDOM from 'react-dom';
 <span class="hljs-addition">+import {HashRouter as Router,Route,Switch,Redirect,Link} from './react-router-dom';</span>
 import Home from './components/Home';
@@ -993,10 +1468,10 @@ ReactDOM.render(
     &lt;/Router&gt;
 ,document.getElementById('root'));
 </code></pre>
-<h2 id="t539.嵌套路由">9.嵌套路由 <a href="#t539.嵌套路由"> # </a></h2>
-<h3 id="t549.1 utils.js">9.1 utils.js <a href="#t549.1 utils.js"> # </a></h3>
-<p>src\utils.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> UserAPI = {
+            <h2 id="t539.嵌套路由">9.嵌套路由 <a href="#t539.嵌套路由"> # </a></h2>
+            <h3 id="t549.1 utils.js">9.1 utils.js <a href="#t549.1 utils.js"> # </a></h3>
+            <p>src\utils.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> UserAPI = {
     list(){
         <span class="hljs-keyword">let</span> usersStr = localStorage.getItem(<span class="hljs-string">'users'</span>);
         <span class="hljs-keyword">let</span> users= usersStr ? <span class="hljs-built_in">JSON</span>.parse(usersStr) : [];
@@ -1013,9 +1488,9 @@ ReactDOM.render(
     }
 }
 </code></pre>
-<h3 id="t559.2 User.js">9.2 User.js <a href="#t559.2 User.js"> # </a></h3>
-<p>src\components\User.js</p>
-<pre><code class="lang-diff">import React from 'react';
+            <h3 id="t559.2 User.js">9.2 User.js <a href="#t559.2 User.js"> # </a></h3>
+            <p>src\components\User.js</p>
+            <pre><code class="lang-diff">import React from 'react';
 import { Link, Route } from '../react-router-dom';
 <span class="hljs-addition">+import UserAdd from './UserAdd';</span>
 <span class="hljs-addition">+import UserDetail from './UserDetail';</span>
@@ -1036,9 +1511,9 @@ export default function User() {
     )
 }
 </code></pre>
-<h3 id="t569.3 UserAdd.js">9.3 UserAdd.js <a href="#t569.3 UserAdd.js"> # </a></h3>
-<p>src\components\UserAdd.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t569.3 UserAdd.js">9.3 UserAdd.js <a href="#t569.3 UserAdd.js"> # </a></h3>
+            <p>src\components\UserAdd.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> {UserAPI} <span class="hljs-keyword">from</span> <span class="hljs-string">'../utils'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserAdd</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     usernameRef
@@ -1062,9 +1537,9 @@ export default function User() {
     }
 }
 </code></pre>
-<h3 id="t579.4 UserList.js">9.4 UserList.js <a href="#t579.4 UserList.js"> # </a></h3>
-<p>src\components\UserList.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
+            <h3 id="t579.4 UserList.js">9.4 UserList.js <a href="#t579.4 UserList.js"> # </a></h3>
+            <p>src\components\UserList.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>
 <span class="hljs-keyword">import</span> { Link } <span class="hljs-keyword">from</span> <span class="hljs-string">'../react-router-dom'</span>;
 <span class="hljs-keyword">import</span> {UserAPI} <span class="hljs-keyword">from</span> <span class="hljs-string">'../utils'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
@@ -1088,9 +1563,9 @@ export default function User() {
     }
 }
 </code></pre>
-<h3 id="t589.5 UserDetail.js">9.5 UserDetail.js <a href="#t589.5 UserDetail.js"> # </a></h3>
-<p>src\components\UserDetail.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t589.5 UserDetail.js">9.5 UserDetail.js <a href="#t589.5 UserDetail.js"> # </a></h3>
+            <p>src\components\UserDetail.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> {UserAPI} <span class="hljs-keyword">from</span> <span class="hljs-string">'../utils'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserDetail</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
     state = {
@@ -1114,10 +1589,10 @@ export default function User() {
     }
 }
 </code></pre>
-<h2 id="t5910.受保护路由">10.受保护路由 <a href="#t5910.受保护路由"> # </a></h2>
-<h3 id="t6010.1 src\index.js">10.1 src\index.js <a href="#t6010.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import React from 'react';
+            <h2 id="t5910.受保护路由">10.受保护路由 <a href="#t5910.受保护路由"> # </a></h2>
+            <h3 id="t6010.1 src\index.js">10.1 src\index.js <a href="#t6010.1 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-diff">import React from 'react';
 import ReactDOM from 'react-dom';
 <span class="hljs-addition">+import {HashRouter as Router,Route,Switch,Redirect,Link} from './react-router-dom';</span>
 import Home from './components/Home';
@@ -1142,9 +1617,9 @@ ReactDOM.render(
     &lt;/Router&gt;
 ,document.getElementById('root'));
 </code></pre>
-<h3 id="t6110.2 Route.js">10.2 Route.js <a href="#t6110.2 Route.js"> # </a></h3>
-<p>src\react-router\Route.js</p>
-<pre><code class="lang-diff">import React from 'react'
+            <h3 id="t6110.2 Route.js">10.2 Route.js <a href="#t6110.2 Route.js"> # </a></h3>
+            <p>src\react-router\Route.js</p>
+            <pre><code class="lang-diff">import React from 'react'
 import RouterContext from './RouterContext';
 import matchPath from './matchPath';
 class Route extends React.Component{
@@ -1176,9 +1651,9 @@ class Route extends React.Component{
 }
 export default Route;
 </code></pre>
-<h3 id="t6210.3 Login.js">10.3 Login.js <a href="#t6210.3 Login.js"> # </a></h3>
-<p>src\components\Login.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t6210.3 Login.js">10.3 Login.js <a href="#t6210.3 Login.js"> # </a></h3>
+            <p>src\components\Login.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Login</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
     login = <span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
         localStorage.setItem(<span class="hljs-string">'login'</span>,<span class="hljs-string">'true'</span>);
@@ -1196,9 +1671,9 @@ export default Route;
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Login;
 </code></pre>
-<h3 id="t6310.4 Protected.js">10.4 Protected.js <a href="#t6310.4 Protected.js"> # </a></h3>
-<p>src\components\Protected.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t6310.4 Protected.js">10.4 Protected.js <a href="#t6310.4 Protected.js"> # </a></h3>
+            <p>src\components\Protected.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> {Route,Redirect} <span class="hljs-keyword">from</span> <span class="hljs-string">'../react-router-dom'</span>;
 <span class="hljs-keyword">const</span> Protected =  <span class="hljs-function">(<span class="hljs-params">props</span>)=&gt;</span>{
     <span class="hljs-keyword">let</span> {<span class="hljs-attr">component</span>:RouteComponent,path} = props;
@@ -1213,10 +1688,10 @@ export default Route;
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Protected;
 </code></pre>
-<h2 id="t6411.NavLink">11.NavLink <a href="#t6411.NavLink"> # </a></h2>
-<h3 id="t6511.1 public\index.html">11.1 public\index.html <a href="#t6511.1 public\index.html"> # </a></h3>
-<p>public\index.html</p>
-<pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
+            <h2 id="t6411.NavLink">11.NavLink <a href="#t6411.NavLink"> # </a></h2>
+            <h3 id="t6511.1 public\index.html">11.1 public\index.html <a href="#t6511.1 public\index.html"> # </a></h3>
+            <p>public\index.html</p>
+            <pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
     &lt;meta charset="utf-8" /&gt;
@@ -1241,9 +1716,9 @@ export default Route;
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h3 id="t6611.2 src\index.js">11.2 src\index.js <a href="#t6611.2 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import React from 'react';
+            <h3 id="t6611.2 src\index.js">11.2 src\index.js <a href="#t6611.2 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-diff">import React from 'react';
 import ReactDOM from 'react-dom';
 <span class="hljs-addition">+import {HashRouter as Router,Route,Switch,Redirect,NavLink} from './react-router-dom';</span>
 import Home from './components/Home';
@@ -1268,9 +1743,9 @@ ReactDOM.render(
     &lt;/Router&gt;
 ,document.getElementById('root'));
 </code></pre>
-<h3 id="t6711.3 NavLink.js">11.3 NavLink.js <a href="#t6711.3 NavLink.js"> # </a></h3>
-<p>src\react-router-dom\NavLink.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t6711.3 NavLink.js">11.3 NavLink.js <a href="#t6711.3 NavLink.js"> # </a></h3>
+            <p>src\react-router-dom\NavLink.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> {Route} <span class="hljs-keyword">from</span> <span class="hljs-string">'../react-router'</span>;
 <span class="hljs-keyword">import</span> matchPath <span class="hljs-keyword">from</span> <span class="hljs-string">'../react-router/matchPath'</span>;
 <span class="hljs-keyword">import</span> Link <span class="hljs-keyword">from</span> <span class="hljs-string">'./Link'</span>;
@@ -1333,18 +1808,19 @@ ReactDOM.render(
 }
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> NavLink;
 </code></pre>
-<h3 id="t6811.4 react-router-dom\index.js">11.4 react-router-dom\index.js <a href="#t6811.4 react-router-dom\index.js"> # </a></h3>
-<p>src\react-router-dom\index.js</p>
-<pre><code class="lang-diff">export * from '../react-router';
+            <h3 id="t6811.4 react-router-dom\index.js">11.4 react-router-dom\index.js <a
+                    href="#t6811.4 react-router-dom\index.js"> # </a></h3>
+            <p>src\react-router-dom\index.js</p>
+            <pre><code class="lang-diff">export * from '../react-router';
 export {default as HashRouter} from './HashRouter';
 export {default as BrowserRouter} from './BrowserRouter';
 export {default as Link} from './Link';
 <span class="hljs-addition">+export { default as NavLink } from "./NavLink";</span>
 </code></pre>
-<h2 id="t6912.withRouter">12.withRouter <a href="#t6912.withRouter"> # </a></h2>
-<h3 id="t7012.1 src\index.js">12.1 src\index.js <a href="#t7012.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import React from 'react';
+            <h2 id="t6912.withRouter">12.withRouter <a href="#t6912.withRouter"> # </a></h2>
+            <h3 id="t7012.1 src\index.js">12.1 src\index.js <a href="#t7012.1 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-diff">import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter as Router,Route,Switch,Redirect,NavLink} from './react-router-dom';
 import Home from './components/Home';
@@ -1373,9 +1849,9 @@ ReactDOM.render(
     &lt;/Router&gt;
 ,document.getElementById('root'));
 </code></pre>
-<h3 id="t7112.2 NavHeader.js">12.2 NavHeader.js <a href="#t7112.2 NavHeader.js"> # </a></h3>
-<p>src\components\NavHeader.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t7112.2 NavHeader.js">12.2 NavHeader.js <a href="#t7112.2 NavHeader.js"> # </a></h3>
+            <p>src\components\NavHeader.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> {withRouter} <span class="hljs-keyword">from</span> <span class="hljs-string">'../react-router-dom'</span>;
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NavHeader</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span></span>{
     render(){
@@ -1387,9 +1863,9 @@ ReactDOM.render(
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> withRouter(NavHeader);
 </code></pre>
-<h3 id="t7212.3 withRouter.js">12.3 withRouter.js <a href="#t7212.3 withRouter.js"> # </a></h3>
-<p>src\react-router\withRouter.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t7212.3 withRouter.js">12.3 withRouter.js <a href="#t7212.3 withRouter.js"> # </a></h3>
+            <p>src\react-router\withRouter.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> RouterContext <span class="hljs-keyword">from</span> <span class="hljs-string">'./RouterContext'</span>;
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">withRouter</span>(<span class="hljs-params">OldComponent</span>)</span>{
     <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">props</span> =&gt;</span> {
@@ -1407,9 +1883,10 @@ ReactDOM.render(
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> withRouter;
 </code></pre>
-<h3 id="t7312.4 react-router\index.js">12.4 react-router\index.js <a href="#t7312.4 react-router\index.js"> # </a></h3>
-<p>src\react-router\index.js</p>
-<pre><code class="lang-diff">export {default as Route} from './Route';
+            <h3 id="t7312.4 react-router\index.js">12.4 react-router\index.js <a href="#t7312.4 react-router\index.js">
+                    # </a></h3>
+            <p>src\react-router\index.js</p>
+            <pre><code class="lang-diff">export {default as Route} from './Route';
 export {default as Router} from './Router';
 export {default as __RouterContext} from './RouterContext';
 export {default as matchPath} from './matchPath';
@@ -1417,10 +1894,10 @@ export {default as Switch} from './Switch';
 export {default as Redirect} from './Redirect';
 <span class="hljs-addition">+export {default as withRouter} from './withRouter';</span>
 </code></pre>
-<h2 id="t7413.Prompt">13.Prompt <a href="#t7413.Prompt"> # </a></h2>
-<h3 id="t7513.1 src\index.js">13.1 src\index.js <a href="#t7513.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import React from 'react';
+            <h2 id="t7413.Prompt">13.Prompt <a href="#t7413.Prompt"> # </a></h2>
+            <h3 id="t7513.1 src\index.js">13.1 src\index.js <a href="#t7513.1 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-diff">import React from 'react';
 import ReactDOM from 'react-dom';
 <span class="hljs-addition">+import {BrowserRouter as Router,Route,Switch,Redirect,NavLink} from './react-router-dom';</span>
 import Home from './components/Home';
@@ -1449,9 +1926,9 @@ ReactDOM.render(
     &lt;/Router&gt;
 ,document.getElementById('root'));
 </code></pre>
-<h3 id="t7613.2 UserAdd.js">13.2 UserAdd.js <a href="#t7613.2 UserAdd.js"> # </a></h3>
-<p>src\components\UserAdd.js</p>
-<pre><code class="lang-diff">import React, { Component } from 'react';
+            <h3 id="t7613.2 UserAdd.js">13.2 UserAdd.js <a href="#t7613.2 UserAdd.js"> # </a></h3>
+            <p>src\components\UserAdd.js</p>
+            <pre><code class="lang-diff">import React, { Component } from 'react';
 import {UserAPI} from '../utils';
 import {Prompt} from '../react-router-dom';
 export default class UserAdd extends Component {
@@ -1489,9 +1966,9 @@ export default class UserAdd extends Component {
     }
 }
 </code></pre>
-<h3 id="t7713.3 Prompt.js">13.3 Prompt.js <a href="#t7713.3 Prompt.js"> # </a></h3>
-<p>src\react-router\Prompt.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t7713.3 Prompt.js">13.3 Prompt.js <a href="#t7713.3 Prompt.js"> # </a></h3>
+            <p>src\react-router\Prompt.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> RouterContext <span class="hljs-keyword">from</span> <span class="hljs-string">'./RouterContext'</span>;
 <span class="hljs-keyword">import</span> LifeCycle <span class="hljs-keyword">from</span> <span class="hljs-string">'./LifeCycle'</span>;
 <span class="hljs-comment">//函数组件</span>
@@ -1541,9 +2018,10 @@ export default class UserAdd extends Component {
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Prompt;
 </code></pre>
-<h3 id="t7813.4 react-router\index.js">13.4 react-router\index.js <a href="#t7813.4 react-router\index.js"> # </a></h3>
-<p>src\react-router\index.js</p>
-<pre><code class="lang-diff">export {default as Route} from './Route';
+            <h3 id="t7813.4 react-router\index.js">13.4 react-router\index.js <a href="#t7813.4 react-router\index.js">
+                    # </a></h3>
+            <p>src\react-router\index.js</p>
+            <pre><code class="lang-diff">export {default as Route} from './Route';
 export {default as Router} from './Router';
 export {default as __RouterContext} from './RouterContext';
 export {default as matchPath} from './matchPath';
@@ -1552,9 +2030,10 @@ export {default as Redirect} from './Redirect';
 export {default as withRouter} from './withRouter';
 <span class="hljs-addition">+export {default as Prompt} from './Prompt';</span>
 </code></pre>
-<h3 id="t7913.5 createBrowserHistory.js">13.5 createBrowserHistory.js <a href="#t7913.5 createBrowserHistory.js"> # </a></h3>
-<p>src\history\createBrowserHistory.js</p>
-<pre><code class="lang-diff">
+            <h3 id="t7913.5 createBrowserHistory.js">13.5 createBrowserHistory.js <a
+                    href="#t7913.5 createBrowserHistory.js"> # </a></h3>
+            <p>src\history\createBrowserHistory.js</p>
+            <pre><code class="lang-diff">
 function createBrowserHistory(props){
 <span class="hljs-addition">+   let confirm =props.getUserConfirmation?props.getUserConfirmation():window.confirm;</span>
     let globalHistory = window.history;
@@ -1620,10 +2099,10 @@ function createBrowserHistory(props){
 
 export default createBrowserHistory;
 </code></pre>
-<h2 id="t8015.hooks">15.hooks <a href="#t8015.hooks"> # </a></h2>
-<h3 id="t8115.1 src\index.js">15.1 src\index.js <a href="#t8115.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h2 id="t8015.hooks">15.hooks <a href="#t8015.hooks"> # </a></h2>
+            <h3 id="t8115.1 src\index.js">15.1 src\index.js <a href="#t8115.1 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
 <span class="hljs-keyword">import</span> {BrowserRouter <span class="hljs-keyword">as</span> Router,Route,Link,
 useParams,
@@ -1670,9 +2149,9 @@ useRouteMatch
 );
 
 </code></pre>
-<h3 id="t8215.2 hooks.js">15.2 hooks.js <a href="#t8215.2 hooks.js"> # </a></h3>
-<p>src\react-router\hooks.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h3 id="t8215.2 hooks.js">15.2 hooks.js <a href="#t8215.2 hooks.js"> # </a></h3>
+            <p>src\react-router\hooks.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> RouterContext <span class="hljs-keyword">from</span> <span class="hljs-string">'./RouterContext'</span>;
 <span class="hljs-keyword">import</span> matchPath <span class="hljs-keyword">from</span> <span class="hljs-string">'./matchPath'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useParams</span>(<span class="hljs-params"></span>)</span>{
@@ -1691,9 +2170,10 @@ useRouteMatch
    <span class="hljs-keyword">return</span> path?matchPath(location.pathname,path):match;
 }
 </code></pre>
-<h3 id="t8315.3 react-router\index.js">15.3 react-router\index.js <a href="#t8315.3 react-router\index.js"> # </a></h3>
-<p>src\react-router\index.js</p>
-<pre><code class="lang-diff">export {default as Route} from './Route';
+            <h3 id="t8315.3 react-router\index.js">15.3 react-router\index.js <a href="#t8315.3 react-router\index.js">
+                    # </a></h3>
+            <p>src\react-router\index.js</p>
+            <pre><code class="lang-diff">export {default as Route} from './Route';
 export {default as Router} from './Router';
 export {default as __RouterContext} from './RouterContext';
 export {default as matchPath} from './matchPath';
@@ -1703,10 +2183,10 @@ export {default as withRouter} from './withRouter';
 export {default as Prompt} from './Prompt';
 <span class="hljs-addition">+export {useHistory,useLocation,useParams,useRouteMatch} from './hooks';</span>
 </code></pre>
-<h2 id="t8416.路由懒加载">16.路由懒加载 <a href="#t8416.路由懒加载"> # </a></h2>
-<h3 id="t8516.1 src\index.js">16.1 src\index.js <a href="#t8516.1 src\index.js"> # </a></h3>
-<p>src\index.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Suspense } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
+            <h2 id="t8416.路由懒加载">16.路由懒加载 <a href="#t8416.路由懒加载"> # </a></h2>
+            <h3 id="t8516.1 src\index.js">16.1 src\index.js <a href="#t8516.1 src\index.js"> # </a></h3>
+            <p>src\index.js</p>
+            <pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Suspense } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
 <span class="hljs-keyword">import</span> {
   BrowserRouter <span class="hljs-keyword">as</span> Router, Route,Link
@@ -1761,11 +2241,13 @@ ReactDOM.render(
 );
 
 </code></pre>
-<h2 id="t86链接">链接 <a href="#t86链接"> # </a></h2>
-<ul>
-<li><a href="https://gitee.com/zhufengpeixun/zhufeng_react_router_20201106_prepare">zhufeng_react_router</a></li>
-</ul>
+            <h2 id="t86链接">链接 <a href="#t86链接"> # </a></h2>
+            <ul>
+                <li><a
+                        href="https://gitee.com/zhufengpeixun/zhufeng_react_router_20201106_prepare">zhufeng_react_router</a>
+                </li>
+            </ul>
 
+        </div>
     </div>
-</div>
 </body>

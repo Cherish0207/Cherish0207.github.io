@@ -1,64 +1,574 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <style>
-        .page-toc > ul .red {
-            background: #f3f3f3;
-            z-index: 1;
-            border-left: 3px solid #009a61;
-            -webkit-transition: all .2s ease;
-            transition: all .2s ease;
-            color: #000
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>珠峰架构师成长计划</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    .page-toc>ul .red {
+      background: #f3f3f3;
+      z-index: 1;
+      border-left: 3px solid #009a61;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      color: #000
+    }
+  </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li class="active"><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
+<body class="modal-open" style="padding-right: 15px;">
+  <div class="nav">
+    <div class="logo">
+
+      珠峰架构师成长计划
+
+    </div>
+    <ul>
+      <li><a href="../index.html">0.Async</a></li>
+      <li><a href="../html/0.editor.html">0.editor</a></li>
+      <li><a href="../html/0.module.html">0.module</a></li>
+      <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+      <li><a href="../html/2.Promise.html">2.Promise</a></li>
+      <li><a href="../html/3.Node.html">3.Node</a></li>
+      <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+      <li><a href="../html/5.REPL.html">5.REPL</a></li>
+      <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+      <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+      <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+      <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+      <li><a href="../html/10.fs.html">10.fs</a></li>
+      <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+      <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+      <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+      <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+      <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+      <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+      <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+      <li><a href="../html/13.tcp.html">13.tcp</a></li>
+      <li><a href="../html/14.http-1.html">14.http-1</a></li>
+      <li><a href="../html/14.http-2.html">14.http-2</a></li>
+      <li><a href="../html/15.compress.html">15.compress</a></li>
+      <li><a href="../html/16.crypto.html">16.crypto</a></li>
+      <li><a href="../html/17.process.html">17.process</a></li>
+      <li><a href="../html/18.yargs.html">18.yargs</a></li>
+      <li><a href="../html/19.cache.html">19.cache</a></li>
+      <li><a href="../html/20.action.html">20.action</a></li>
+      <li><a href="../html/21.https.html">21.https</a></li>
+      <li><a href="../html/22.cookie.html">22.cookie</a></li>
+      <li><a href="../html/23.session.html">23.session</a></li>
+      <li><a href="../html/24.express-1.html">24.express-1</a></li>
+      <li><a href="../html/24.express-2.html">24.express-2</a></li>
+      <li><a href="../html/24.express-3.html">24.express-3</a></li>
+      <li><a href="../html/24.express-4.html">24.express-4</a></li>
+      <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+      <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+      <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+      <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+      <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+      <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+      <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+      <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+      <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+      <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+      <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+      <li><a href="../html/28.redux.html">28.redux</a></li>
+      <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+      <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+      <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+      <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+      <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+      <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+      <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+      <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+      <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+      <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+      <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+      <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+      <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+      <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+      <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+      <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+      <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+      <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+      <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+      <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+      <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+      <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+      <li><a href="../html/31.dva.html">31.dva</a></li>
+      <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+      <li><a href="../html/33.redis.html">33.redis</a></li>
+      <li><a href="../html/34.unittest.html">34.unittest</a></li>
+      <li><a href="../html/35.jwt.html">35.jwt</a></li>
+      <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+      <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+      <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+      <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+      <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+      <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+      <li><a href="../html/38.chat.html">38.chat</a></li>
+      <li><a href="../html/38.chat2.html">38.chat2</a></li>
+      <li><a href="../html/38.chat2.html">38.chat2</a></li>
+      <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+      <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+      <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+      <li><a href="../html/40.deploy.html">40.deploy</a></li>
+      <li><a href="../html/41.safe.html">41.safe</a></li>
+      <li><a href="../html/42.test.html">42.test</a></li>
+      <li><a href="../html/43.nginx.html">43.nginx</a></li>
+      <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+      <li><a href="../html/45.docker.html">45.docker</a></li>
+      <li><a href="../html/46.elastic.html">46.elastic</a></li>
+      <li><a href="../html/47.oauth.html">47.oauth</a></li>
+      <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+      <li><a href="../html/index.html">index</a></li>
+      <li><a href="../html/52.UML.html">52.UML</a></li>
+      <li><a href="../html/53.design.html">53.design</a></li>
+      <li><a href="../html/index.html">index</a></li>
+      <li><a href="../html/54.linux.html">54.linux</a></li>
+      <li><a href="../html/57.ts.html">57.ts</a></li>
+      <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+      <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+      <li><a href="../html/59.ketang.html">59.ketang</a></li>
+      <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+      <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+      <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+      <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+      <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+      <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+      <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+      <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+      <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+      <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+      <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+      <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+      <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+      <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+      <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+      <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+      <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+      <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+      <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+      <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+      <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+      <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+      <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+      <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+      <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+      <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+      <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+      <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+      <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+      <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+      <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+      <li><a href="../html/64.1.router.html">64.1.router</a></li>
+      <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+      <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+      <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+      <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+      <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+      <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+      <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+      <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+      <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+      <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+      <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+      <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+      <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+      <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+      <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+      <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+      <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+      <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+      <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+      <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+      <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+      <li><a href="../html/67-1-network.html">67-1-network</a></li>
+      <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+      <li><a href="../html/7.npm2.html">7.npm2</a></li>
+      <li><a href="../html/69-hooks.html">69-hooks</a></li>
+      <li><a href="../html/70-deploy.html">70-deploy</a></li>
+      <li><a href="../html/71-hmr.html">71-hmr</a></li>
+      <li><a href="../html/72.deploy.html">72.deploy</a></li>
+      <li><a href="../html/73.import.html">73.import</a></li>
+      <li><a href="../html/74.mobile.html">74.mobile</a></li>
+      <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+      <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+      <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+      <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+      <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+      <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+      <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+      <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+      <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+      <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+      <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+      <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+      <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+      <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+      <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+      <li><a href="../html/79.grammar.html">79.grammar</a></li>
+      <li><a href="../html/80.tree.html">80.tree</a></li>
+      <li><a href="../html/81.axios.html">81.axios</a></li>
+      <li><a href="../html/82.1.react.html">82.1.react</a></li>
+      <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+      <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+      <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+      <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+      <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+      <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+      <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+      <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+      <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+      <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+      <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+      <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+      <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+      <li><a href="../html/83.upload.html">83.upload</a></li>
+      <li><a href="../html/84.graphql.html">84.graphql</a></li>
+      <li><a href="../html/85.antpro.html">85.antpro</a></li>
+      <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+      <li><a href="../html/86.2.design.html">86.2.design</a></li>
+      <li><a href="../html/87.postcss.html">87.postcss</a></li>
+      <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+      <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+      <li><a href="../html/90.react-test.html">90.react-test</a></li>
+      <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+      <li><a href="../html/92.rbac.html">92.rbac</a></li>
+      <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+      <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+      <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+      <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+      <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+      <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+      <li><a href="../html/94.6.https.html">94.6.https</a></li>
+      <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+      <li><a href="../html/95.1. react.html">95.1. react</a></li>
+      <li><a href="../html/95.2.react.html">95.2.react</a></li>
+      <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+      <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+      <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+      <li><a href="../html/97.serverless.html">97.serverless</a></li>
+      <li><a href="../html/98.websocket.html">98.websocket</a></li>
+      <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+      <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+      <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+      <li><a href="../html/102.java.html">102.java</a></li>
+      <li class="active"><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+      <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+      <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+      <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+      <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+      <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+      <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+      <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+      <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+      <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+      <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+      <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+      <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+      <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+      <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+      <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+      <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+      <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+      <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+      <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+      <li><a href="../html/106.1.react.html">106.1.react</a></li>
+      <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+      <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+      <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+      <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+      <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+      <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+      <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+      <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+      <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+      <li><a href="../html/107.fiber.html">107.fiber</a></li>
+      <li><a href="../html/108.http.html">108.http</a></li>
+      <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+      <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+      <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+      <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+      <li><a href="../html/111.xstate.html">111.xstate</a></li>
+      <li><a href="../html/112.Form.html">112.Form</a></li>
+      <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+      <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+      <li><a href="../html/115.immer.html">115.immer</a></li>
+      <li><a href="../html/116.pro5.html">116.pro5</a></li>
+      <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+      <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+      <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+      <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+      <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+      <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+      <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+      <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+      <li><a href="../html/124.next.js.html">124.next.js</a></li>
+      <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+      <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+      <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+      <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+      <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+      <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+      <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+      <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+      <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+      <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+      <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+      <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+      <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+      <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+      <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+      <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+      <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+      <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+      <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+      <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+      <li><a href="../html/127.frontend.html">127.frontend</a></li>
+      <li><a href="../html/128.rollup.html">128.rollup</a></li>
+      <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+      <li><a href="../html/130.health.html">130.health</a></li>
+      <li><a href="../html/131.hooks.html">131.hooks</a></li>
+      <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+      <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+      <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+      <li><a href="../html/134.react18.html">134.react18</a></li>
+      <li><a href="../html/135.function.html">135.function</a></li>
+      <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+    </ul>
+  </div>
+
+
+  <div class="warpper">
     <div class="page-toc">
-        <ul><li><a href="#t01. webpack介绍">1. webpack介绍</a><ul><li><a href="#t11.1 安装">1.1 安装</a></li><li><a href="#t21.2 入口(entry)">1.2 入口(entry)</a><ul><li><a href="#t31.2.1  src\index.js">1.2.1  src\index.js</a></li><li><a href="#t41.2.2  webpack.config.js">1.2.2  webpack.config.js</a></li></ul></li><li><a href="#t51.3 输出(output)">1.3 输出(output)</a></li><li><a href="#t61.4 loader">1.4 loader</a></li><li><a href="#t71.5 插件(plugin)">1.5 插件(plugin)</a><ul><li><a href="#t81.5.1 src\index.html">1.5.1 src\index.html</a></li><li><a href="#t91.5.2 webpack.config.js">1.5.2 webpack.config.js</a></li></ul></li><li><a href="#t101.6 模式(mode)">1.6 模式(mode)</a><ul><li><a href="#t111.6.1 环境差异">1.6.1 环境差异</a></li><li><a href="#t121.6.2 区分环境">1.6.2 区分环境</a><ul><li><a href="#t131.6.2.1 命令行配置1">1.6.2.1 命令行配置1</a></li><li><a href="#t141.6.2.2 命令行配置2">1.6.2.2 命令行配置2</a></li><li><a href="#t151.6.2.3 命令行配置">1.6.2.3 命令行配置</a></li><li><a href="#t161.6.2.4 mode配置">1.6.2.4 mode配置</a></li><li><a href="#t171.6.2.5 DefinePlugin">1.6.2.5 DefinePlugin</a></li><li><a href="#t181.6.2.6 cross-env">1.6.2.6 cross-env</a></li></ul></li></ul></li></ul></li><li><a href="#t192. 开发环境配置">2. 开发环境配置</a><ul><li><a href="#t202.1 开发服务器">2.1 开发服务器</a><ul><li><a href="#t212.1.1 安装服务器">2.1.1 安装服务器</a></li><li><a href="#t222.1.2 webpack.config.js">2.1.2 webpack.config.js</a></li><li><a href="#t232.1.3 webpack.config.js">2.1.3 webpack.config.js</a></li><li><a href="#t242.1.4 package.json">2.1.4 package.json</a></li></ul></li><li><a href="#t252.2. 支持CSS">2.2. 支持CSS</a><ul><li><a href="#t262.2.1 安装模块">2.2.1 安装模块</a></li><li><a href="#t272.2.2 webpack.config.js">2.2.2 webpack.config.js</a></li><li><a href="#t282.2.3 src\bg.css">2.2.3 src\bg.css</a></li><li><a href="#t292.2.4 src\index.css">2.2.4 src\index.css</a></li><li><a href="#t302.2.5 src\index.js">2.2.5 src\index.js</a></li></ul></li><li><a href="#t312.3. 支持less和sass">2.3. 支持less和sass</a><ul><li><a href="#t322.3.1 安装">2.3.1 安装</a></li><li><a href="#t332.3.2 webpack.config.js">2.3.2 webpack.config.js</a></li><li><a href="#t342.3.3 src\index.html">2.3.3 src\index.html</a></li><li><a href="#t352.3.4 src\index.js">2.3.4 src\index.js</a></li><li><a href="#t362.3.5 src\less.less">2.3.5 src\less.less</a></li><li><a href="#t372.3.6 src\sass.scss">2.3.6 src\sass.scss</a></li></ul></li><li><a href="#t382.4 CSS兼容性">2.4 CSS兼容性</a><ul><li><a href="#t392.4.1 安装">2.4.1 安装</a></li><li><a href="#t402.4.2 postcss.config.js">2.4.2 postcss.config.js</a></li><li><a href="#t412.4.3 webpack.config.js">2.4.3 webpack.config.js</a></li><li><a href="#t422.4.4 src\index.css">2.4.4 src\index.css</a></li><li><a href="#t432.4.5 src\index.html">2.4.5 src\index.html</a></li><li><a href="#t442.4.6 package.json">2.4.6 package.json</a></li></ul></li><li><a href="#t452.5 支持图片">2.5 支持图片</a><ul><li><a href="#t462.5.1 安装">2.5.1 安装</a></li><li><a href="#t472.5.2 webpack.config.js">2.5.2 webpack.config.js</a></li><li><a href="#t482.5.3 src\index.html">2.5.3 src\index.html</a></li><li><a href="#t492.5.4 src\index.js">2.5.4 src\index.js</a></li></ul></li><li><a href="#t502.6 JS兼容性处理">2.6 JS兼容性处理</a><ul><li><a href="#t512.6.1 @babel/preset-env">2.6.1 @babel/preset-env</a></li><li><a href="#t522.6.1.1 安装依赖">2.6.1.1 安装依赖</a></li><li><a href="#t532.6.1.2 webpack.config.js">2.6.1.2 webpack.config.js</a></li><li><a href="#t542.6.1.3 src\index.js">2.6.1.3 src\index.js</a></li><li><a href="#t552.6.1.4  jsconfig.json">2.6.1.4  jsconfig.json</a></li></ul></li><li><a href="#t562.7 ESLint代码校验">2.7 ESLint代码校验</a><ul><li><a href="#t572.7.1 安装">2.7.1 安装</a></li><li><a href="#t582.7.2 webpack.config.js">2.7.2 webpack.config.js</a></li><li><a href="#t592.7.3 src\index.html">2.7.3 src\index.html</a></li><li><a href="#t602.7.4 src\index.js">2.7.4 src\index.js</a></li><li><a href="#t612.7.5 .eslintrc.js">2.7.5 .eslintrc.js</a></li><li><a href="#t622.7.6  airbnb">2.7.6  airbnb</a></li><li><a href="#t632.7.7 自动修复">2.7.7 自动修复</a></li></ul></li><li><a href="#t642.8 sourcemap">2.8 sourcemap</a><ul><li><a href="#t652.8.1 配置项">2.8.1 配置项</a></li><li><a href="#t662.8.2 关键字">2.8.2 关键字</a></li><li><a href="#t672.8.3 webpack.config.js">2.8.3 webpack.config.js</a></li><li><a href="#t682.8.4 组合规则">2.8.4 组合规则</a></li><li><a href="#t692.8.5 最佳实践">2.8.5 最佳实践</a><ul><li><a href="#t702.8.5.1 开发环境">2.8.5.1 开发环境</a></li><li><a href="#t712.8.5.2 生产环境">2.8.5.2 生产环境</a></li></ul></li><li><a href="#t722.8.6 调试代码">2.8.6 调试代码</a><ul><li><a href="#t732.8.6.1 测试环境调试">2.8.6.1 测试环境调试</a></li><li><a href="#t742.8.6.2 生产环境调试">2.8.6.2 生产环境调试</a></li></ul></li></ul></li><li><a href="#t752.9 打包第三方类库">2.9 打包第三方类库</a><ul><li><a href="#t762.9.1 直接引入">2.9.1 直接引入</a></li><li><a href="#t772.9.2 插件引入">2.9.2 插件引入</a></li><li><a href="#t782.9.3 expose-loader">2.9.3 expose-loader</a></li><li><a href="#t792.9.4 externals">2.9.4 externals</a></li></ul></li><li><a href="#t802.10 watch">2.10 watch</a></li><li><a href="#t812.11 添加商标">2.11 添加商标</a></li><li><a href="#t822.12 拷贝静态文件">2.12 拷贝静态文件</a></li><li><a href="#t832.13 clean-webpack-plugin">2.13 clean-webpack-plugin</a></li><li><a href="#t842.14 服务器代理">2.14 服务器代理</a><ul><li><a href="#t852.14.1 不修改路径">2.14.1 不修改路径</a></li><li><a href="#t862.14.2 修改路径">2.14.2 修改路径</a></li><li><a href="#t872.14.3 before after">2.14.3 before after</a></li><li><a href="#t882.14.4 webpack-dev-middleware">2.14.4 webpack-dev-middleware</a></li></ul></li></ul></li><li><a href="#t893.生产环境">3.生产环境</a><ul><li><a href="#t903.1 提取CSS">3.1 提取CSS</a><ul><li><a href="#t913.1.1 安装">3.1.1 安装</a></li><li><a href="#t923.1.2 webpack.config.js">3.1.2 webpack.config.js</a></li></ul></li><li><a href="#t933.2 指定图片和CSS目录">3.2 指定图片和CSS目录</a><ul><li><a href="#t943.2.1 webpack.config.js">3.2.1 webpack.config.js</a></li></ul></li><li><a href="#t953.3 hash、chunkhash和contenthash">3.3 hash、chunkhash和contenthash</a><ul><li><a href="#t963.3.1  hash">3.3.1  hash</a></li><li><a href="#t973.3.2  hash">3.3.2  hash</a></li><li><a href="#t983.3.2 chunkhash">3.3.2 chunkhash</a></li><li><a href="#t993.3.3 contenthash">3.3.3 contenthash</a></li></ul></li><li><a href="#t1003.4 压缩JS、CSS和HTML">3.4 压缩JS、CSS和HTML</a></li><li><a href="#t1013.5 图片压缩">3.5 图片压缩</a></li><li><a href="#t1023.6 px 自动转成rem">3.6 px 自动转成rem</a><ul><li><a href="#t1033.6.1 安装">3.6.1 安装</a></li><li><a href="#t1043.6.2 index.html">3.6.2 index.html</a></li><li><a href="#t1053.6.3 reset.css">3.6.3 reset.css</a></li><li><a href="#t1063.6.4 webpack.config.js">3.6.4 webpack.config.js</a></li></ul></li></ul></li><li><a href="#t1074. polyfill">4. polyfill</a><ul><li><a href="#t1084.1 babel-polyfill">4.1 babel-polyfill</a><ul><li><a href="#t1094.1.1 安装">4.1.1 安装</a></li><li><a href="#t1104.1.2  " usebuiltins":="" false"="">4.1.2  "useBuiltIns": false</a></li><li><a href="#t1114.1.3  " usebuiltins":="" "entry""="">4.1.3  "useBuiltIns": "entry"</a></li><li><a href="#t1124.1.4 " usebuiltins":="" "usage""="">4.1.4 "useBuiltIns": "usage"</a></li></ul></li><li><a href="#t1134.2 babel-runtime">4.2 babel-runtime</a></li><li><a href="#t1144.3 babel-plugin-transform-runtime">4.3 babel-plugin-transform-runtime</a></li><li><a href="#t1154.4 最佳实践">4.4 最佳实践</a></li><li><a href="#t1164.5 polyfill-service">4.5 polyfill-service</a></li></ul></li></ul>
+      <ul>
+        <li><a href="#t01. webpack介绍">1. webpack介绍</a>
+          <ul>
+            <li><a href="#t11.1 安装">1.1 安装</a></li>
+            <li><a href="#t21.2 入口(entry)">1.2 入口(entry)</a>
+              <ul>
+                <li><a href="#t31.2.1  src\index.js">1.2.1 src\index.js</a></li>
+                <li><a href="#t41.2.2  webpack.config.js">1.2.2 webpack.config.js</a></li>
+              </ul>
+            </li>
+            <li><a href="#t51.3 输出(output)">1.3 输出(output)</a></li>
+            <li><a href="#t61.4 loader">1.4 loader</a></li>
+            <li><a href="#t71.5 插件(plugin)">1.5 插件(plugin)</a>
+              <ul>
+                <li><a href="#t81.5.1 src\index.html">1.5.1 src\index.html</a></li>
+                <li><a href="#t91.5.2 webpack.config.js">1.5.2 webpack.config.js</a></li>
+              </ul>
+            </li>
+            <li><a href="#t101.6 模式(mode)">1.6 模式(mode)</a>
+              <ul>
+                <li><a href="#t111.6.1 环境差异">1.6.1 环境差异</a></li>
+                <li><a href="#t121.6.2 区分环境">1.6.2 区分环境</a>
+                  <ul>
+                    <li><a href="#t131.6.2.1 命令行配置1">1.6.2.1 命令行配置1</a></li>
+                    <li><a href="#t141.6.2.2 命令行配置2">1.6.2.2 命令行配置2</a></li>
+                    <li><a href="#t151.6.2.3 命令行配置">1.6.2.3 命令行配置</a></li>
+                    <li><a href="#t161.6.2.4 mode配置">1.6.2.4 mode配置</a></li>
+                    <li><a href="#t171.6.2.5 DefinePlugin">1.6.2.5 DefinePlugin</a></li>
+                    <li><a href="#t181.6.2.6 cross-env">1.6.2.6 cross-env</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#t192. 开发环境配置">2. 开发环境配置</a>
+          <ul>
+            <li><a href="#t202.1 开发服务器">2.1 开发服务器</a>
+              <ul>
+                <li><a href="#t212.1.1 安装服务器">2.1.1 安装服务器</a></li>
+                <li><a href="#t222.1.2 webpack.config.js">2.1.2 webpack.config.js</a></li>
+                <li><a href="#t232.1.3 webpack.config.js">2.1.3 webpack.config.js</a></li>
+                <li><a href="#t242.1.4 package.json">2.1.4 package.json</a></li>
+              </ul>
+            </li>
+            <li><a href="#t252.2. 支持CSS">2.2. 支持CSS</a>
+              <ul>
+                <li><a href="#t262.2.1 安装模块">2.2.1 安装模块</a></li>
+                <li><a href="#t272.2.2 webpack.config.js">2.2.2 webpack.config.js</a></li>
+                <li><a href="#t282.2.3 src\bg.css">2.2.3 src\bg.css</a></li>
+                <li><a href="#t292.2.4 src\index.css">2.2.4 src\index.css</a></li>
+                <li><a href="#t302.2.5 src\index.js">2.2.5 src\index.js</a></li>
+              </ul>
+            </li>
+            <li><a href="#t312.3. 支持less和sass">2.3. 支持less和sass</a>
+              <ul>
+                <li><a href="#t322.3.1 安装">2.3.1 安装</a></li>
+                <li><a href="#t332.3.2 webpack.config.js">2.3.2 webpack.config.js</a></li>
+                <li><a href="#t342.3.3 src\index.html">2.3.3 src\index.html</a></li>
+                <li><a href="#t352.3.4 src\index.js">2.3.4 src\index.js</a></li>
+                <li><a href="#t362.3.5 src\less.less">2.3.5 src\less.less</a></li>
+                <li><a href="#t372.3.6 src\sass.scss">2.3.6 src\sass.scss</a></li>
+              </ul>
+            </li>
+            <li><a href="#t382.4 CSS兼容性">2.4 CSS兼容性</a>
+              <ul>
+                <li><a href="#t392.4.1 安装">2.4.1 安装</a></li>
+                <li><a href="#t402.4.2 postcss.config.js">2.4.2 postcss.config.js</a></li>
+                <li><a href="#t412.4.3 webpack.config.js">2.4.3 webpack.config.js</a></li>
+                <li><a href="#t422.4.4 src\index.css">2.4.4 src\index.css</a></li>
+                <li><a href="#t432.4.5 src\index.html">2.4.5 src\index.html</a></li>
+                <li><a href="#t442.4.6 package.json">2.4.6 package.json</a></li>
+              </ul>
+            </li>
+            <li><a href="#t452.5 支持图片">2.5 支持图片</a>
+              <ul>
+                <li><a href="#t462.5.1 安装">2.5.1 安装</a></li>
+                <li><a href="#t472.5.2 webpack.config.js">2.5.2 webpack.config.js</a></li>
+                <li><a href="#t482.5.3 src\index.html">2.5.3 src\index.html</a></li>
+                <li><a href="#t492.5.4 src\index.js">2.5.4 src\index.js</a></li>
+              </ul>
+            </li>
+            <li><a href="#t502.6 JS兼容性处理">2.6 JS兼容性处理</a>
+              <ul>
+                <li><a href="#t512.6.1 @babel/preset-env">2.6.1 @babel/preset-env</a></li>
+                <li><a href="#t522.6.1.1 安装依赖">2.6.1.1 安装依赖</a></li>
+                <li><a href="#t532.6.1.2 webpack.config.js">2.6.1.2 webpack.config.js</a></li>
+                <li><a href="#t542.6.1.3 src\index.js">2.6.1.3 src\index.js</a></li>
+                <li><a href="#t552.6.1.4  jsconfig.json">2.6.1.4 jsconfig.json</a></li>
+              </ul>
+            </li>
+            <li><a href="#t562.7 ESLint代码校验">2.7 ESLint代码校验</a>
+              <ul>
+                <li><a href="#t572.7.1 安装">2.7.1 安装</a></li>
+                <li><a href="#t582.7.2 webpack.config.js">2.7.2 webpack.config.js</a></li>
+                <li><a href="#t592.7.3 src\index.html">2.7.3 src\index.html</a></li>
+                <li><a href="#t602.7.4 src\index.js">2.7.4 src\index.js</a></li>
+                <li><a href="#t612.7.5 .eslintrc.js">2.7.5 .eslintrc.js</a></li>
+                <li><a href="#t622.7.6  airbnb">2.7.6 airbnb</a></li>
+                <li><a href="#t632.7.7 自动修复">2.7.7 自动修复</a></li>
+              </ul>
+            </li>
+            <li><a href="#t642.8 sourcemap">2.8 sourcemap</a>
+              <ul>
+                <li><a href="#t652.8.1 配置项">2.8.1 配置项</a></li>
+                <li><a href="#t662.8.2 关键字">2.8.2 关键字</a></li>
+                <li><a href="#t672.8.3 webpack.config.js">2.8.3 webpack.config.js</a></li>
+                <li><a href="#t682.8.4 组合规则">2.8.4 组合规则</a></li>
+                <li><a href="#t692.8.5 最佳实践">2.8.5 最佳实践</a>
+                  <ul>
+                    <li><a href="#t702.8.5.1 开发环境">2.8.5.1 开发环境</a></li>
+                    <li><a href="#t712.8.5.2 生产环境">2.8.5.2 生产环境</a></li>
+                  </ul>
+                </li>
+                <li><a href="#t722.8.6 调试代码">2.8.6 调试代码</a>
+                  <ul>
+                    <li><a href="#t732.8.6.1 测试环境调试">2.8.6.1 测试环境调试</a></li>
+                    <li><a href="#t742.8.6.2 生产环境调试">2.8.6.2 生产环境调试</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#t752.9 打包第三方类库">2.9 打包第三方类库</a>
+              <ul>
+                <li><a href="#t762.9.1 直接引入">2.9.1 直接引入</a></li>
+                <li><a href="#t772.9.2 插件引入">2.9.2 插件引入</a></li>
+                <li><a href="#t782.9.3 expose-loader">2.9.3 expose-loader</a></li>
+                <li><a href="#t792.9.4 externals">2.9.4 externals</a></li>
+              </ul>
+            </li>
+            <li><a href="#t802.10 watch">2.10 watch</a></li>
+            <li><a href="#t812.11 添加商标">2.11 添加商标</a></li>
+            <li><a href="#t822.12 拷贝静态文件">2.12 拷贝静态文件</a></li>
+            <li><a href="#t832.13 clean-webpack-plugin">2.13 clean-webpack-plugin</a></li>
+            <li><a href="#t842.14 服务器代理">2.14 服务器代理</a>
+              <ul>
+                <li><a href="#t852.14.1 不修改路径">2.14.1 不修改路径</a></li>
+                <li><a href="#t862.14.2 修改路径">2.14.2 修改路径</a></li>
+                <li><a href="#t872.14.3 before after">2.14.3 before after</a></li>
+                <li><a href="#t882.14.4 webpack-dev-middleware">2.14.4 webpack-dev-middleware</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#t893.生产环境">3.生产环境</a>
+          <ul>
+            <li><a href="#t903.1 提取CSS">3.1 提取CSS</a>
+              <ul>
+                <li><a href="#t913.1.1 安装">3.1.1 安装</a></li>
+                <li><a href="#t923.1.2 webpack.config.js">3.1.2 webpack.config.js</a></li>
+              </ul>
+            </li>
+            <li><a href="#t933.2 指定图片和CSS目录">3.2 指定图片和CSS目录</a>
+              <ul>
+                <li><a href="#t943.2.1 webpack.config.js">3.2.1 webpack.config.js</a></li>
+              </ul>
+            </li>
+            <li><a href="#t953.3 hash、chunkhash和contenthash">3.3 hash、chunkhash和contenthash</a>
+              <ul>
+                <li><a href="#t963.3.1  hash">3.3.1 hash</a></li>
+                <li><a href="#t973.3.2  hash">3.3.2 hash</a></li>
+                <li><a href="#t983.3.2 chunkhash">3.3.2 chunkhash</a></li>
+                <li><a href="#t993.3.3 contenthash">3.3.3 contenthash</a></li>
+              </ul>
+            </li>
+            <li><a href="#t1003.4 压缩JS、CSS和HTML">3.4 压缩JS、CSS和HTML</a></li>
+            <li><a href="#t1013.5 图片压缩">3.5 图片压缩</a></li>
+            <li><a href="#t1023.6 px 自动转成rem">3.6 px 自动转成rem</a>
+              <ul>
+                <li><a href="#t1033.6.1 安装">3.6.1 安装</a></li>
+                <li><a href="#t1043.6.2 index.html">3.6.2 index.html</a></li>
+                <li><a href="#t1053.6.3 reset.css">3.6.3 reset.css</a></li>
+                <li><a href="#t1063.6.4 webpack.config.js">3.6.4 webpack.config.js</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#t1074. polyfill">4. polyfill</a>
+          <ul>
+            <li><a href="#t1084.1 babel-polyfill">4.1 babel-polyfill</a>
+              <ul>
+                <li><a href="#t1094.1.1 安装">4.1.1 安装</a></li>
+                <li><a href="#t1104.1.2  " usebuiltins":="" false"="">4.1.2 "useBuiltIns": false</a></li>
+                <li><a href="#t1114.1.3  " usebuiltins":="" "entry""="">4.1.3  " useBuiltIns": "entry" </a></li>
+                <li><a href="#t1124.1.4 " usebuiltins":="" "usage""="">4.1.4 " useBuiltIns": "usage" </a></li>
+              </ul>
+            </li>
+            <li><a href="#t1134.2 babel-runtime">4.2 babel-runtime</a></li>
+            <li><a href="#t1144.3 babel-plugin-transform-runtime">4.3 babel-plugin-transform-runtime</a></li>
+            <li><a href="#t1154.4 最佳实践">4.4 最佳实践</a></li>
+            <li><a href="#t1164.5 polyfill-service">4.5 polyfill-service</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
     <div class="content markdown-body">
-        <h2 id="t01. webpack介绍">1. webpack介绍 <a href="#t01. webpack介绍"> # </a></h2>
-<ul>
-<li>本质上，webpack 是一个用于现代 JavaScript 应用程序的静态模块打包工具。当 webpack 处理应用程序时，它会在内部构建一个 依赖图(dependency graph)，此依赖图对应映射到项目所需的每个模块，并生成一个或多个 bundle</li>
-</ul>
-<h3 id="t11.1 安装">1.1 安装 <a href="#t11.1 安装"> # </a></h3>
-<pre><code class="lang-js">npm install  webpack webpack-cli --save-dev
+      <h2 id="t01. webpack介绍">1. webpack介绍 <a href="#t01. webpack介绍"> # </a></h2>
+      <ul>
+        <li>本质上，webpack 是一个用于现代 JavaScript 应用程序的静态模块打包工具。当 webpack 处理应用程序时，它会在内部构建一个 依赖图(dependency
+          graph)，此依赖图对应映射到项目所需的每个模块，并生成一个或多个 bundle</li>
+      </ul>
+      <h3 id="t11.1 安装">1.1 安装 <a href="#t11.1 安装"> # </a></h3>
+      <pre><code class="lang-js">npm install  webpack webpack-cli --save-dev
 </code></pre>
-<h3 id="t21.2 入口(entry)">1.2 入口(entry) <a href="#t21.2 入口(entry)"> # </a></h3>
-<ul>
-<li>入口起点(entry point)指示 webpack 应该使用哪个模块，来作为构建其内部 依赖图(dependency graph) 的开始。进入入口起点后，webpack 会找出有哪些模块和库是入口起点（直接和间接）依赖的</li>
-<li>默认值是 <code>./src/index.js</code>，但你可以通过在 <code>webpack configuration</code> 中配置 <code>entry</code> 属性，来指定一个（或多个）不同的入口起点</li>
-</ul>
-<h4 id="t31.2.1  src\index.js">1.2.1  src\index.js <a href="#t31.2.1  src\index.js"> # </a></h4>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> title = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./title.txt'</span>);
+      <h3 id="t21.2 入口(entry)">1.2 入口(entry) <a href="#t21.2 入口(entry)"> # </a></h3>
+      <ul>
+        <li>入口起点(entry point)指示 webpack 应该使用哪个模块，来作为构建其内部 依赖图(dependency graph) 的开始。进入入口起点后，webpack
+          会找出有哪些模块和库是入口起点（直接和间接）依赖的</li>
+        <li>默认值是 <code>./src/index.js</code>，但你可以通过在 <code>webpack configuration</code> 中配置 <code>entry</code>
+          属性，来指定一个（或多个）不同的入口起点</li>
+      </ul>
+      <h4 id="t31.2.1  src\index.js">1.2.1 src\index.js <a href="#t31.2.1  src\index.js"> # </a></h4>
+      <pre><code class="lang-js"><span class="hljs-keyword">let</span> title = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./title.txt'</span>);
 <span class="hljs-built_in">document</span>.write(title.default);
 </code></pre>
-<h4 id="t41.2.2  webpack.config.js">1.2.2  webpack.config.js <a href="#t41.2.2  webpack.config.js"> # </a></h4>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+      <h4 id="t41.2.2  webpack.config.js">1.2.2 webpack.config.js <a href="#t41.2.2  webpack.config.js"> # </a></h4>
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
 <span class="hljs-built_in">module</span>.exports = {
   <span class="hljs-attr">entry</span>: <span class="hljs-string">'./src/index.js'</span>,
 };
 </code></pre>
-<h3 id="t51.3 输出(output)">1.3 输出(output) <a href="#t51.3 输出(output)"> # </a></h3>
-<ul>
-<li><code>output</code> 属性告诉 webpack 在哪里输出它所创建的 bundle，以及如何命名这些文件</li>
-<li>主要输出文件的默认值是 <code>./dist/main.js</code>，其他生成文件默认放置在 <code>./dist</code> 文件夹中。</li>
-</ul>
-<p>webpack.config.js</p>
-<pre><code class="lang-diff">const path = require('path');
+      <h3 id="t51.3 输出(output)">1.3 输出(output) <a href="#t51.3 输出(output)"> # </a></h3>
+      <ul>
+        <li><code>output</code> 属性告诉 webpack 在哪里输出它所创建的 bundle，以及如何命名这些文件</li>
+        <li>主要输出文件的默认值是 <code>./dist/main.js</code>，其他生成文件默认放置在 <code>./dist</code> 文件夹中。</li>
+      </ul>
+      <p>webpack.config.js</p>
+      <pre><code class="lang-diff">const path = require('path');
 module.exports = {
   entry: './src/index.js',
 <span class="hljs-addition">+  output: {</span>
@@ -67,13 +577,13 @@ module.exports = {
 <span class="hljs-addition">+  }</span>
 };
 </code></pre>
-<h3 id="t61.4 loader">1.4 loader <a href="#t61.4 loader"> # </a></h3>
-<ul>
-<li>webpack 只能理解 <code>JavaScript</code> 和 <code>JSON</code> 文件</li>
-<li>loader 让 <code>webpack</code> 能够去处理其他类型的文件，并将它们转换为有效模块，以供应用程序使用，以及被添加到依赖图中</li>
-</ul>
-<p>webpack.config.js</p>
-<pre><code class="lang-diff">const path = require('path');
+      <h3 id="t61.4 loader">1.4 loader <a href="#t61.4 loader"> # </a></h3>
+      <ul>
+        <li>webpack 只能理解 <code>JavaScript</code> 和 <code>JSON</code> 文件</li>
+        <li>loader 让 <code>webpack</code> 能够去处理其他类型的文件，并将它们转换为有效模块，以供应用程序使用，以及被添加到依赖图中</li>
+      </ul>
+      <p>webpack.config.js</p>
+      <pre><code class="lang-diff">const path = require('path');
 module.exports = {
   mode: 'development',
   devtool:false,
@@ -89,13 +599,13 @@ module.exports = {
 <span class="hljs-addition">+  }</span>
 };
 </code></pre>
-<h3 id="t71.5 插件(plugin)">1.5 插件(plugin) <a href="#t71.5 插件(plugin)"> # </a></h3>
-<ul>
-<li>loader 用于转换某些类型的模块，而插件则可以用于执行范围更广的任务。包括：打包优化，资源管理，注入环境变量</li>
-</ul>
-<h4 id="t81.5.1 src\index.html">1.5.1 src\index.html <a href="#t81.5.1 src\index.html"> # </a></h4>
-<p>src\index.html</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+      <h3 id="t71.5 插件(plugin)">1.5 插件(plugin) <a href="#t71.5 插件(plugin)"> # </a></h3>
+      <ul>
+        <li>loader 用于转换某些类型的模块，而插件则可以用于执行范围更广的任务。包括：打包优化，资源管理，注入环境变量</li>
+      </ul>
+      <h4 id="t81.5.1 src\index.html">1.5.1 src\index.html <a href="#t81.5.1 src\index.html"> # </a></h4>
+      <p>src\index.html</p>
+      <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
@@ -106,8 +616,8 @@ module.exports = {
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
-<h4 id="t91.5.2 webpack.config.js">1.5.2 webpack.config.js <a href="#t91.5.2 webpack.config.js"> # </a></h4>
-<pre><code class="lang-diff">const path = require('path');
+      <h4 id="t91.5.2 webpack.config.js">1.5.2 webpack.config.js <a href="#t91.5.2 webpack.config.js"> # </a></h4>
+      <pre><code class="lang-diff">const path = require('path');
 <span class="hljs-addition">+const HtmlWebpackPlugin = require('html-webpack-plugin');</span>
 module.exports = {
   mode: 'development',
@@ -127,181 +637,187 @@ module.exports = {
 <span class="hljs-addition">+  ]</span>
 };
 </code></pre>
-<h3 id="t101.6 模式(mode)">1.6 模式(mode) <a href="#t101.6 模式(mode)"> # </a></h3>
-<ul>
-<li>日常的前端开发工作中，一般都会有两套构建环境</li>
-<li>一套开发时使用，构建结果用于本地开发调试，不进行代码压缩，打印 debug 信息，包含 sourcemap 文件</li>
-<li>一套构建后的结果是直接应用于线上的，即代码都是压缩后，运行时不打印 debug 信息，静态文件不包括 sourcemap</li>
-<li>webpack 4.x 版本引入了 <a href="https://webpack.docschina.org/configuration/mode/">mode</a> 的概念</li>
-<li>当你指定使用 production mode 时，默认会启用各种性能优化的功能，包括构建结果优化以及 webpack 运行性能优化</li>
-<li>而如果是 development mode 的话，则会开启 debug 工具，运行时打印详细的错误信息，以及更加快速的增量编译构建</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">选项</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">development</td>
-<td style="text-align:left">会将 process.env.NODE_ENV 的值设为 development。启用 NamedChunksPlugin 和 NamedModulesPlugin</td>
-</tr>
-<tr>
-<td style="text-align:left">production</td>
-<td style="text-align:left">会将 process.env.NODE_ENV 的值设为 production。启用 FlagDependencyUsagePlugin, FlagIncludedChunksPlugin, ModuleConcatenationPlugin, NoEmitOnErrorsPlugin, OccurrenceOrderPlugin, SideEffectsFlagPlugin 和 UglifyJsPlugin</td>
-</tr>
-</tbody>
-</table>
-<h4 id="t111.6.1 环境差异">1.6.1 环境差异 <a href="#t111.6.1 环境差异"> # </a></h4>
-<ul>
-<li>开发环境<ul>
-<li>需要生成 sourcemap 文件</li>
-<li>需要打印 debug 信息</li>
-<li>需要 live reload 或者 hot reload 的功能</li>
-</ul>
-</li>
-<li>生产环境<ul>
-<li>可能需要分离 CSS 成单独的文件，以便多个页面共享同一个 CSS 文件</li>
-<li>需要压缩 HTML/CSS/JS 代码</li>
-<li>需要压缩图片</li>
-</ul>
-</li>
-<li>其默认值为 production</li>
-</ul>
-<h4 id="t121.6.2 区分环境">1.6.2 区分环境 <a href="#t121.6.2 区分环境"> # </a></h4>
-<ul>
-<li><code>--mode</code>用来设置模块内的<code>process.env.NODE_ENV</code></li>
-<li><code>--env</code>用来设置webpack配置文件的函数参数</li>
-<li><code>cross-env</code>用来设置node环境的<code>process.env.NODE_ENV</code></li>
-<li><code>DefinePlugin</code>用来设置模块内的全局变量</li>
-</ul>
-<h5 id="t131.6.2.1 命令行配置1">1.6.2.1 命令行配置1 <a href="#t131.6.2.1 命令行配置1"> # </a></h5>
-<ul>
-<li>webpack的mode默认为<code>production</code></li>
-<li><code>webpack serve</code>的mode默认为<code>development</code></li>
-<li>可以在模块内通过<code>process.env.NODE_ENV</code>获取当前的环境变量,无法在webpack配置文件中获取此变量</li>
-</ul>
-<pre><code class="lang-json">  "scripts": {
+      <h3 id="t101.6 模式(mode)">1.6 模式(mode) <a href="#t101.6 模式(mode)"> # </a></h3>
+      <ul>
+        <li>日常的前端开发工作中，一般都会有两套构建环境</li>
+        <li>一套开发时使用，构建结果用于本地开发调试，不进行代码压缩，打印 debug 信息，包含 sourcemap 文件</li>
+        <li>一套构建后的结果是直接应用于线上的，即代码都是压缩后，运行时不打印 debug 信息，静态文件不包括 sourcemap</li>
+        <li>webpack 4.x 版本引入了 <a href="https://webpack.docschina.org/configuration/mode/">mode</a> 的概念</li>
+        <li>当你指定使用 production mode 时，默认会启用各种性能优化的功能，包括构建结果优化以及 webpack 运行性能优化</li>
+        <li>而如果是 development mode 的话，则会开启 debug 工具，运行时打印详细的错误信息，以及更加快速的增量编译构建</li>
+      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align:left">选项</th>
+            <th style="text-align:left">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left">development</td>
+            <td style="text-align:left">会将 process.env.NODE_ENV 的值设为 development。启用 NamedChunksPlugin 和
+              NamedModulesPlugin</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">production</td>
+            <td style="text-align:left">会将 process.env.NODE_ENV 的值设为 production。启用 FlagDependencyUsagePlugin,
+              FlagIncludedChunksPlugin, ModuleConcatenationPlugin, NoEmitOnErrorsPlugin, OccurrenceOrderPlugin,
+              SideEffectsFlagPlugin 和 UglifyJsPlugin</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="t111.6.1 环境差异">1.6.1 环境差异 <a href="#t111.6.1 环境差异"> # </a></h4>
+      <ul>
+        <li>开发环境<ul>
+            <li>需要生成 sourcemap 文件</li>
+            <li>需要打印 debug 信息</li>
+            <li>需要 live reload 或者 hot reload 的功能</li>
+          </ul>
+        </li>
+        <li>生产环境<ul>
+            <li>可能需要分离 CSS 成单独的文件，以便多个页面共享同一个 CSS 文件</li>
+            <li>需要压缩 HTML/CSS/JS 代码</li>
+            <li>需要压缩图片</li>
+          </ul>
+        </li>
+        <li>其默认值为 production</li>
+      </ul>
+      <h4 id="t121.6.2 区分环境">1.6.2 区分环境 <a href="#t121.6.2 区分环境"> # </a></h4>
+      <ul>
+        <li><code>--mode</code>用来设置模块内的<code>process.env.NODE_ENV</code></li>
+        <li><code>--env</code>用来设置webpack配置文件的函数参数</li>
+        <li><code>cross-env</code>用来设置node环境的<code>process.env.NODE_ENV</code></li>
+        <li><code>DefinePlugin</code>用来设置模块内的全局变量</li>
+      </ul>
+      <h5 id="t131.6.2.1 命令行配置1">1.6.2.1 命令行配置1 <a href="#t131.6.2.1 命令行配置1"> # </a></h5>
+      <ul>
+        <li>webpack的mode默认为<code>production</code></li>
+        <li><code>webpack serve</code>的mode默认为<code>development</code></li>
+        <li>可以在模块内通过<code>process.env.NODE_ENV</code>获取当前的环境变量,无法在webpack配置文件中获取此变量</li>
+      </ul>
+      <pre><code class="lang-json">  "scripts": {
     "build": "webpack",
     "start": "webpack serve"
   },
 </code></pre>
-<p>index.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(process.env.NODE_ENV);<span class="hljs-comment">// development | production</span>
+      <p>index.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(process.env.NODE_ENV);<span class="hljs-comment">// development | production</span>
 </code></pre>
-<p>webpack.config.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'NODE_ENV'</span>,process.env.NODE_ENV);<span class="hljs-comment">// undefined</span>
+      <p>webpack.config.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'NODE_ENV'</span>,process.env.NODE_ENV);<span class="hljs-comment">// undefined</span>
 </code></pre>
-<h5 id="t141.6.2.2 命令行配置2">1.6.2.2 命令行配置2 <a href="#t141.6.2.2 命令行配置2"> # </a></h5>
-<ul>
-<li>同配置1<pre><code class="lang-json">"scripts": {
+      <h5 id="t141.6.2.2 命令行配置2">1.6.2.2 命令行配置2 <a href="#t141.6.2.2 命令行配置2"> # </a></h5>
+      <ul>
+        <li>同配置1
+          <pre><code class="lang-json">"scripts": {
   "build": "webpack --mode=production",
   "start": "webpack --mode=development serve"
 },
 </code></pre>
-</li>
-</ul>
-<h5 id="t151.6.2.3 命令行配置">1.6.2.3 命令行配置 <a href="#t151.6.2.3 命令行配置"> # </a></h5>
-<ul>
-<li>无法在模块内通过<code>process.env.NODE_ENV</code>访问</li>
-<li>可以通过<code>webpack 配置文件中</code>中通过函数获取当前环境变量</li>
-</ul>
-<pre><code class="lang-json">"scripts": {
+        </li>
+      </ul>
+      <h5 id="t151.6.2.3 命令行配置">1.6.2.3 命令行配置 <a href="#t151.6.2.3 命令行配置"> # </a></h5>
+      <ul>
+        <li>无法在模块内通过<code>process.env.NODE_ENV</code>访问</li>
+        <li>可以通过<code>webpack 配置文件中</code>中通过函数获取当前环境变量</li>
+      </ul>
+      <pre><code class="lang-json">"scripts": {
    "dev": "webpack serve --env=development",
    "build": "webpack --env=production",
 }
 </code></pre>
-<p>index.js</p>
-<pre><code class="lang-js"> <span class="hljs-built_in">console</span>.log(process.env.NODE_ENV);<span class="hljs-comment">// undefined</span>
+      <p>index.js</p>
+      <pre><code class="lang-js"> <span class="hljs-built_in">console</span>.log(process.env.NODE_ENV);<span class="hljs-comment">// undefined</span>
 </code></pre>
-<p>webpack.config.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'NODE_ENV'</span>,process.env.NODE_ENV);<span class="hljs-comment">// undefined</span>
+      <p>webpack.config.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'NODE_ENV'</span>,process.env.NODE_ENV);<span class="hljs-comment">// undefined</span>
 </code></pre>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function">(<span class="hljs-params">env,argv</span>) =&gt;</span> {
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function">(<span class="hljs-params">env,argv</span>) =&gt;</span> {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'env'</span>,env);<span class="hljs-comment">// development | production</span>
 };
 </code></pre>
-<h5 id="t161.6.2.4 mode配置">1.6.2.4 mode配置 <a href="#t161.6.2.4 mode配置"> # </a></h5>
-<ul>
-<li>和命令行配置2一样<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+      <h5 id="t161.6.2.4 mode配置">1.6.2.4 mode配置 <a href="#t161.6.2.4 mode配置"> # </a></h5>
+      <ul>
+        <li>和命令行配置2一样
+          <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
 <span class="hljs-attr">mode</span>: <span class="hljs-string">'development'</span>
 }
 </code></pre>
-</li>
-</ul>
-<h5 id="t171.6.2.5 DefinePlugin">1.6.2.5 DefinePlugin <a href="#t171.6.2.5 DefinePlugin"> # </a></h5>
-<ul>
-<li>设置全局变量(不是<code>window</code>),所有模块都能读取到该变量的值</li>
-<li>可以在任意模块内通过 <code>process.env.NODE_ENV</code> 获取当前的环境变量</li>
-<li>但无法在<code>node环境</code>(webpack 配置文件中)下获取当前的环境变量</li>
-</ul>
-<pre><code class="lang-js">plugins:[
+        </li>
+      </ul>
+      <h5 id="t171.6.2.5 DefinePlugin">1.6.2.5 DefinePlugin <a href="#t171.6.2.5 DefinePlugin"> # </a></h5>
+      <ul>
+        <li>设置全局变量(不是<code>window</code>),所有模块都能读取到该变量的值</li>
+        <li>可以在任意模块内通过 <code>process.env.NODE_ENV</code> 获取当前的环境变量</li>
+        <li>但无法在<code>node环境</code>(webpack 配置文件中)下获取当前的环境变量</li>
+      </ul>
+      <pre><code class="lang-js">plugins:[
    <span class="hljs-keyword">new</span> webpack.DefinePlugin({
       <span class="hljs-string">'process.env.NODE_ENV'</span>:<span class="hljs-built_in">JSON</span>.stringify(<span class="hljs-string">'development'</span>),
       <span class="hljs-string">'NODE_ENV'</span>:<span class="hljs-built_in">JSON</span>.stringify(<span class="hljs-string">'production'</span>),
    })
 ]   
 </code></pre>
-<p>index.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(NODE_ENV);<span class="hljs-comment">//  production</span>
+      <p>index.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(NODE_ENV);<span class="hljs-comment">//  production</span>
 </code></pre>
-<p>webpack.config.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'process.env.NODE_ENV'</span>,process.env.NODE_ENV);<span class="hljs-comment">// undefined</span>
+      <p>webpack.config.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'process.env.NODE_ENV'</span>,process.env.NODE_ENV);<span class="hljs-comment">// undefined</span>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'NODE_ENV'</span>,NODE_ENV);<span class="hljs-comment">// error ！！！</span>
 </code></pre>
-<h5 id="t181.6.2.6 cross-env">1.6.2.6 cross-env <a href="#t181.6.2.6 cross-env"> # </a></h5>
-<ul>
-<li>只能设置<code>node环境</code>下的变量NODE_ENV</li>
-</ul>
-<p>package.json</p>
-<pre><code class="lang-json">"scripts": {
+      <h5 id="t181.6.2.6 cross-env">1.6.2.6 cross-env <a href="#t181.6.2.6 cross-env"> # </a></h5>
+      <ul>
+        <li>只能设置<code>node环境</code>下的变量NODE_ENV</li>
+      </ul>
+      <p>package.json</p>
+      <pre><code class="lang-json">"scripts": {
   "build": "cross-env NODE_ENV=development webpack"
 }
 </code></pre>
-<p>webpack.config.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'process.env.NODE_ENV'</span>,process.env.NODE_ENV);<span class="hljs-comment">// development</span>
+      <p>webpack.config.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'process.env.NODE_ENV'</span>,process.env.NODE_ENV);<span class="hljs-comment">// development</span>
 </code></pre>
-<h2 id="t192. 开发环境配置">2. 开发环境配置 <a href="#t192. 开发环境配置"> # </a></h2>
-<h3 id="t202.1 开发服务器">2.1 开发服务器 <a href="#t202.1 开发服务器"> # </a></h3>
-<h4 id="t212.1.1 安装服务器">2.1.1 安装服务器 <a href="#t212.1.1 安装服务器"> # </a></h4>
-<pre><code class="lang-js">npm install webpack-dev-server --save-dev
+      <h2 id="t192. 开发环境配置">2. 开发环境配置 <a href="#t192. 开发环境配置"> # </a></h2>
+      <h3 id="t202.1 开发服务器">2.1 开发服务器 <a href="#t202.1 开发服务器"> # </a></h3>
+      <h4 id="t212.1.1 安装服务器">2.1.1 安装服务器 <a href="#t212.1.1 安装服务器"> # </a></h4>
+      <pre><code class="lang-js">npm install webpack-dev-server --save-dev
 </code></pre>
-<h4 id="t222.1.2 webpack.config.js">2.1.2 webpack.config.js <a href="#t222.1.2 webpack.config.js"> # </a></h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">类别</th>
-<th style="text-align:left">配置名称</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">output</td>
-<td style="text-align:left">path</td>
-<td style="text-align:left">指定输出到硬盘上的目录</td>
-</tr>
-<tr>
-<td style="text-align:left">output</td>
-<td style="text-align:left">publicPath</td>
-<td style="text-align:left">表示的是打包生成的index.html文件里面引用资源的前缀</td>
-</tr>
-<tr>
-<td style="text-align:left">devServer</td>
-<td style="text-align:left">publicPath</td>
-<td style="text-align:left">表示的是打包生成的静态文件所在的位置(若是devServer里面的publicPath没有设置，则会认为是output里面设置的publicPath的值)</td>
-</tr>
-<tr>
-<td style="text-align:left">devServer</td>
-<td style="text-align:left">contentBase</td>
-<td style="text-align:left">用于配置提供额外静态文件内容的目录</td>
-</tr>
-</tbody>
-</table>
-<h4 id="t232.1.3 webpack.config.js">2.1.3 webpack.config.js <a href="#t232.1.3 webpack.config.js"> # </a></h4>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+      <h4 id="t222.1.2 webpack.config.js">2.1.2 webpack.config.js <a href="#t222.1.2 webpack.config.js"> # </a></h4>
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align:left">类别</th>
+            <th style="text-align:left">配置名称</th>
+            <th style="text-align:left">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left">output</td>
+            <td style="text-align:left">path</td>
+            <td style="text-align:left">指定输出到硬盘上的目录</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">output</td>
+            <td style="text-align:left">publicPath</td>
+            <td style="text-align:left">表示的是打包生成的index.html文件里面引用资源的前缀</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">devServer</td>
+            <td style="text-align:left">publicPath</td>
+            <td style="text-align:left">表示的是打包生成的静态文件所在的位置(若是devServer里面的publicPath没有设置，则会认为是output里面设置的publicPath的值)
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left">devServer</td>
+            <td style="text-align:left">contentBase</td>
+            <td style="text-align:left">用于配置提供额外静态文件内容的目录</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="t232.1.3 webpack.config.js">2.1.3 webpack.config.js <a href="#t232.1.3 webpack.config.js"> # </a></h4>
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
   <span class="hljs-attr">devServer</span>: {
     <span class="hljs-attr">contentBase</span>: path.resolve(__dirname, <span class="hljs-string">'dist'</span>),
     <span class="hljs-attr">compress</span>: <span class="hljs-literal">true</span>,
@@ -310,21 +826,21 @@ module.exports = {
   },
 }
 </code></pre>
-<h4 id="t242.1.4 package.json">2.1.4 package.json <a href="#t242.1.4 package.json"> # </a></h4>
-<pre><code class="lang-diff">  "scripts": {
+      <h4 id="t242.1.4 package.json">2.1.4 package.json <a href="#t242.1.4 package.json"> # </a></h4>
+      <pre><code class="lang-diff">  "scripts": {
     "build": "webpack",
 <span class="hljs-addition">+   "start": "webpack serve"</span>
   }
 </code></pre>
-<h3 id="t252.2. 支持CSS">2.2. 支持CSS <a href="#t252.2. 支持CSS"> # </a></h3>
-<ul>
-<li><a href="https://www.npmjs.com/package/css-loader">css-loader</a>用来翻译处理@import和url()</li>
-<li><a href="https://www.npmjs.com/package/style-loader">style-loader</a>可以把CSS插入DOM中</li>
-</ul>
-<h4 id="t262.2.1 安装模块">2.2.1 安装模块 <a href="#t262.2.1 安装模块"> # </a></h4>
-<pre><code class="lang-js">cnpm i style-loader css-loader -D
+      <h3 id="t252.2. 支持CSS">2.2. 支持CSS <a href="#t252.2. 支持CSS"> # </a></h3>
+      <ul>
+        <li><a href="https://www.npmjs.com/package/css-loader">css-loader</a>用来翻译处理@import和url()</li>
+        <li><a href="https://www.npmjs.com/package/style-loader">style-loader</a>可以把CSS插入DOM中</li>
+      </ul>
+      <h4 id="t262.2.1 安装模块">2.2.1 安装模块 <a href="#t262.2.1 安装模块"> # </a></h4>
+      <pre><code class="lang-js">cnpm i style-loader css-loader -D
 </code></pre>
-<pre><code class="lang-js">  {
+      <pre><code class="lang-js">  {
       <span class="hljs-attr">test</span>:<span class="hljs-regexp">/\.css$/</span>,
       <span class="hljs-comment">//最后一个loader,就上面最左边的loader一定要返回一个JS脚本</span>
       <span class="hljs-attr">use</span>:[<span class="hljs-string">'style-loader'</span>,{
@@ -333,12 +849,12 @@ module.exports = {
       },<span class="hljs-string">'postcss-loader'</span>]
   },
 </code></pre>
-<pre><code class="lang-js">#less-container{
+      <pre><code class="lang-js">#less-container{
     transform:rotate(7deg);
 }
 </code></pre>
-<h4 id="t272.2.2 webpack.config.js">2.2.2 webpack.config.js <a href="#t272.2.2 webpack.config.js"> # </a></h4>
-<pre><code class="lang-diff">const path = require('path');
+      <h4 id="t272.2.2 webpack.config.js">2.2.2 webpack.config.js <a href="#t272.2.2 webpack.config.js"> # </a></h4>
+      <pre><code class="lang-diff">const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
@@ -359,33 +875,33 @@ module.exports = {
   ]
 };
 </code></pre>
-<h4 id="t282.2.3 src\bg.css">2.2.3 src\bg.css <a href="#t282.2.3 src\bg.css"> # </a></h4>
-<p>src\bg.css</p>
-<pre><code class="lang-css"><span class="hljs-selector-tag">body</span>{
+      <h4 id="t282.2.3 src\bg.css">2.2.3 src\bg.css <a href="#t282.2.3 src\bg.css"> # </a></h4>
+      <p>src\bg.css</p>
+      <pre><code class="lang-css"><span class="hljs-selector-tag">body</span>{
     <span class="hljs-attribute">background-color</span>: green;
 }
 </code></pre>
-<h4 id="t292.2.4 src\index.css">2.2.4 src\index.css <a href="#t292.2.4 src\index.css"> # </a></h4>
-<p>src\index.css</p>
-<pre><code class="lang-css"><span class="hljs-keyword">@import</span> <span class="hljs-string">"./bg.css"</span>;
+      <h4 id="t292.2.4 src\index.css">2.2.4 src\index.css <a href="#t292.2.4 src\index.css"> # </a></h4>
+      <p>src\index.css</p>
+      <pre><code class="lang-css"><span class="hljs-keyword">@import</span> <span class="hljs-string">"./bg.css"</span>;
 <span class="hljs-selector-tag">body</span>{
     <span class="hljs-attribute">color</span>:red;
 }
 </code></pre>
-<h4 id="t302.2.5 src\index.js">2.2.5 src\index.js <a href="#t302.2.5 src\index.js"> # </a></h4>
-<p>src\index.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import './index.css';</span>
+      <h4 id="t302.2.5 src\index.js">2.2.5 src\index.js <a href="#t302.2.5 src\index.js"> # </a></h4>
+      <p>src\index.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+import './index.css';</span>
 let title = require('./title.txt');
 document.write(title.default);
 </code></pre>
-<h3 id="t312.3. 支持less和sass">2.3. 支持less和sass <a href="#t312.3. 支持less和sass"> # </a></h3>
-<h4 id="t322.3.1 安装">2.3.1 安装 <a href="#t322.3.1 安装"> # </a></h4>
-<pre><code class="lang-js">npm i less less-loader -D
+      <h3 id="t312.3. 支持less和sass">2.3. 支持less和sass <a href="#t312.3. 支持less和sass"> # </a></h3>
+      <h4 id="t322.3.1 安装">2.3.1 安装 <a href="#t322.3.1 安装"> # </a></h4>
+      <pre><code class="lang-js">npm i less less-loader -D
 npm i node-sass sass-loader -D
 </code></pre>
-<h4 id="t332.3.2 webpack.config.js">2.3.2 webpack.config.js <a href="#t332.3.2 webpack.config.js"> # </a></h4>
-<p>webpack.config.js</p>
-<pre><code class="lang-diff">const path = require('path');
+      <h4 id="t332.3.2 webpack.config.js">2.3.2 webpack.config.js <a href="#t332.3.2 webpack.config.js"> # </a></h4>
+      <p>webpack.config.js</p>
+      <pre><code class="lang-diff">const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
@@ -408,9 +924,9 @@ module.exports = {
   ]
 };
 </code></pre>
-<h4 id="t342.3.3 src\index.html">2.3.3 src\index.html <a href="#t342.3.3 src\index.html"> # </a></h4>
-<p>src\index.html</p>
-<pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
+      <h4 id="t342.3.3 src\index.html">2.3.3 src\index.html <a href="#t342.3.3 src\index.html"> # </a></h4>
+      <p>src\index.html</p>
+      <pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -423,59 +939,59 @@ module.exports = {
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h4 id="t352.3.4 src\index.js">2.3.4 src\index.js <a href="#t352.3.4 src\index.js"> # </a></h4>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import './index.css';
+      <h4 id="t352.3.4 src\index.js">2.3.4 src\index.js <a href="#t352.3.4 src\index.js"> # </a></h4>
+      <p>src\index.js</p>
+      <pre><code class="lang-diff">import './index.css';
 <span class="hljs-addition">+import './less.less';</span>
 <span class="hljs-addition">+import './sass.scss';</span>
 let title = require('./title.txt');
 document.write(title.default);
 </code></pre>
-<h4 id="t362.3.5 src\less.less">2.3.5 src\less.less <a href="#t362.3.5 src\less.less"> # </a></h4>
-<p>src\less.less</p>
-<pre><code class="lang-less"><span class="hljs-variable">@color:</span>blue;
+      <h4 id="t362.3.5 src\less.less">2.3.5 src\less.less <a href="#t362.3.5 src\less.less"> # </a></h4>
+      <p>src\less.less</p>
+      <pre><code class="lang-less"><span class="hljs-variable">@color:</span>blue;
 <span class="hljs-selector-id">#less-container</span>{
     <span class="hljs-attribute">color</span>:<span class="hljs-variable">@color</span>;
 }
 </code></pre>
-<h4 id="t372.3.6 src\sass.scss">2.3.6 src\sass.scss <a href="#t372.3.6 src\sass.scss"> # </a></h4>
-<p>src\sass.scss</p>
-<pre><code class="lang-less">$color:orange;
+      <h4 id="t372.3.6 src\sass.scss">2.3.6 src\sass.scss <a href="#t372.3.6 src\sass.scss"> # </a></h4>
+      <p>src\sass.scss</p>
+      <pre><code class="lang-less">$color:orange;
 #sass-container{
     color:$color;
 }
 </code></pre>
-<h3 id="t382.4 CSS兼容性">2.4 CSS兼容性 <a href="#t382.4 CSS兼容性"> # </a></h3>
-<ul>
-<li>为了浏览器的兼容性，有时候我们必须加入-webkit,-ms,-o,-moz这些前缀<ul>
-<li>Trident内核：主要代表为IE浏览器, 前缀为-ms</li>
-<li>Gecko内核：主要代表为Firefox, 前缀为-moz</li>
-<li>Presto内核：主要代表为Opera, 前缀为-o</li>
-<li>Webkit内核：产要代表为Chrome和Safari, 前缀为-webkit</li>
-</ul>
-</li>
-<li>伪元素<code>::placeholder</code>可以选择一个表单元素的占位文本，它允许开发者和设计师自定义占位文本的样式。</li>
-</ul>
-<h4 id="t392.4.1 安装">2.4.1 安装 <a href="#t392.4.1 安装"> # </a></h4>
-<ul>
-<li><a href="https://caniuse.com/">https://caniuse.com/</a></li>
-<li><a href="https://github.com/webpack-contrib/postcss-loader">postcss-loader</a>可以使用PostCSS处理CSS</li>
-<li><a href="https://github.com/csstools/postcss-preset-env">postcss-preset-env</a>把现代的CSS转换成大多数浏览器能理解的</li>
-<li>PostCSS Preset Env已经包含了<code>autoprefixer</code>和<code>browsers</code>选项</li>
-</ul>
-<pre><code class="lang-js">npm i postcss-loader postcss-preset-env -D
+      <h3 id="t382.4 CSS兼容性">2.4 CSS兼容性 <a href="#t382.4 CSS兼容性"> # </a></h3>
+      <ul>
+        <li>为了浏览器的兼容性，有时候我们必须加入-webkit,-ms,-o,-moz这些前缀<ul>
+            <li>Trident内核：主要代表为IE浏览器, 前缀为-ms</li>
+            <li>Gecko内核：主要代表为Firefox, 前缀为-moz</li>
+            <li>Presto内核：主要代表为Opera, 前缀为-o</li>
+            <li>Webkit内核：产要代表为Chrome和Safari, 前缀为-webkit</li>
+          </ul>
+        </li>
+        <li>伪元素<code>::placeholder</code>可以选择一个表单元素的占位文本，它允许开发者和设计师自定义占位文本的样式。</li>
+      </ul>
+      <h4 id="t392.4.1 安装">2.4.1 安装 <a href="#t392.4.1 安装"> # </a></h4>
+      <ul>
+        <li><a href="https://caniuse.com/">https://caniuse.com/</a></li>
+        <li><a href="https://github.com/webpack-contrib/postcss-loader">postcss-loader</a>可以使用PostCSS处理CSS</li>
+        <li><a href="https://github.com/csstools/postcss-preset-env">postcss-preset-env</a>把现代的CSS转换成大多数浏览器能理解的</li>
+        <li>PostCSS Preset Env已经包含了<code>autoprefixer</code>和<code>browsers</code>选项</li>
+      </ul>
+      <pre><code class="lang-js">npm i postcss-loader postcss-preset-env -D
 </code></pre>
-<h4 id="t402.4.2 postcss.config.js">2.4.2 postcss.config.js <a href="#t402.4.2 postcss.config.js"> # </a></h4>
-<p>postcss.config.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">let</span> postcssPresetEnv = <span class="hljs-built_in">require</span>(<span class="hljs-string">'postcss-preset-env'</span>);
+      <h4 id="t402.4.2 postcss.config.js">2.4.2 postcss.config.js <a href="#t402.4.2 postcss.config.js"> # </a></h4>
+      <p>postcss.config.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">let</span> postcssPresetEnv = <span class="hljs-built_in">require</span>(<span class="hljs-string">'postcss-preset-env'</span>);
 <span class="hljs-built_in">module</span>.exports={
     <span class="hljs-attr">plugins</span>:[postcssPresetEnv({
         <span class="hljs-attr">browsers</span>: <span class="hljs-string">'last 5 version'</span>
     })]
 }
 </code></pre>
-<h4 id="t412.4.3 webpack.config.js">2.4.3 webpack.config.js <a href="#t412.4.3 webpack.config.js"> # </a></h4>
-<pre><code class="lang-diff">const path = require('path');
+      <h4 id="t412.4.3 webpack.config.js">2.4.3 webpack.config.js <a href="#t412.4.3 webpack.config.js"> # </a></h4>
+      <pre><code class="lang-diff">const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
@@ -498,9 +1014,9 @@ module.exports = {
   ]
 };
 </code></pre>
-<h4 id="t422.4.4 src\index.css">2.4.4 src\index.css <a href="#t422.4.4 src\index.css"> # </a></h4>
-<p>src\index.css</p>
-<pre><code class="lang-diff">@import "./bg.css";
+      <h4 id="t422.4.4 src\index.css">2.4.4 src\index.css <a href="#t422.4.4 src\index.css"> # </a></h4>
+      <p>src\index.css</p>
+      <pre><code class="lang-diff">@import "./bg.css";
 body{
     color:red;
 }
@@ -514,9 +1030,9 @@ body{
 <span class="hljs-addition">+    color: red;</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h4 id="t432.4.5 src\index.html">2.4.5 src\index.html <a href="#t432.4.5 src\index.html"> # </a></h4>
-<p>src\index.html</p>
-<pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
+      <h4 id="t432.4.5 src\index.html">2.4.5 src\index.html <a href="#t432.4.5 src\index.html"> # </a></h4>
+      <p>src\index.html</p>
+      <pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -531,13 +1047,13 @@ body{
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h4 id="t442.4.6 package.json">2.4.6 package.json <a href="#t442.4.6 package.json"> # </a></h4>
-<ul>
-<li><a href="https://github.com/browserslist/browserslist">browserslist</a></li>
-<li><a href="https://github.com/browserslist/browserslist-example">browserslist-example</a></li>
-<li>.browserslistrc</li>
-</ul>
-<pre><code class="lang-diff">{
+      <h4 id="t442.4.6 package.json">2.4.6 package.json <a href="#t442.4.6 package.json"> # </a></h4>
+      <ul>
+        <li><a href="https://github.com/browserslist/browserslist">browserslist</a></li>
+        <li><a href="https://github.com/browserslist/browserslist-example">browserslist-example</a></li>
+        <li>.browserslistrc</li>
+      </ul>
+      <pre><code class="lang-diff">{
 <span class="hljs-addition">+  "browserslist": {</span>
 <span class="hljs-addition">+    "development": [</span>
 <span class="hljs-addition">+      "last 1 chrome version",</span>
@@ -550,16 +1066,18 @@ body{
 <span class="hljs-addition">+  }</span>
 <span class="hljs-addition">+}</span>
 </code></pre>
-<h3 id="t452.5 支持图片">2.5 支持图片 <a href="#t452.5 支持图片"> # </a></h3>
-<h4 id="t462.5.1 安装">2.5.1 安装 <a href="#t462.5.1 安装"> # </a></h4>
-<ul>
-<li><a href="http://npmjs.com/package/file-loader">file-loader</a> 解决CSS等文件中的引入图片路径问题</li>
-<li><a href="https://www.npmjs.com/package/url-loader">url-loader</a> 当图片小于<code>limit</code>的时候会把图片<code>BASE64</code>编码，大于<code>limit</code>参数的时候还是使用<code>file-loader</code>进行拷贝</li>
-</ul>
-<pre><code class="lang-js">cnpm i file-loader url-loader html-loader -D
+      <h3 id="t452.5 支持图片">2.5 支持图片 <a href="#t452.5 支持图片"> # </a></h3>
+      <h4 id="t462.5.1 安装">2.5.1 安装 <a href="#t462.5.1 安装"> # </a></h4>
+      <ul>
+        <li><a href="http://npmjs.com/package/file-loader">file-loader</a> 解决CSS等文件中的引入图片路径问题</li>
+        <li><a href="https://www.npmjs.com/package/url-loader">url-loader</a>
+          当图片小于<code>limit</code>的时候会把图片<code>BASE64</code>编码，大于<code>limit</code>参数的时候还是使用<code>file-loader</code>进行拷贝
+        </li>
+      </ul>
+      <pre><code class="lang-js">cnpm i file-loader url-loader html-loader -D
 </code></pre>
-<h4 id="t472.5.2 webpack.config.js">2.5.2 webpack.config.js <a href="#t472.5.2 webpack.config.js"> # </a></h4>
-<pre><code class="lang-diff">const path = require('path');
+      <h4 id="t472.5.2 webpack.config.js">2.5.2 webpack.config.js <a href="#t472.5.2 webpack.config.js"> # </a></h4>
+      <pre><code class="lang-diff">const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
@@ -592,9 +1110,9 @@ module.exports = {
   ]
 };
 </code></pre>
-<h4 id="t482.5.3 src\index.html">2.5.3 src\index.html <a href="#t482.5.3 src\index.html"> # </a></h4>
-<p>src\index.html</p>
-<pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
+      <h4 id="t482.5.3 src\index.html">2.5.3 src\index.html <a href="#t482.5.3 src\index.html"> # </a></h4>
+      <p>src\index.html</p>
+      <pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -608,9 +1126,9 @@ module.exports = {
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h4 id="t492.5.4 src\index.js">2.5.4 src\index.js <a href="#t492.5.4 src\index.js"> # </a></h4>
-<p>src\index.js</p>
-<pre><code class="lang-diff">import './index.css';
+      <h4 id="t492.5.4 src\index.js">2.5.4 src\index.js <a href="#t492.5.4 src\index.js"> # </a></h4>
+      <p>src\index.js</p>
+      <pre><code class="lang-diff">import './index.css';
 import './less.less';
 import './sass.scss';
 let title = require('./title.txt');
@@ -620,28 +1138,34 @@ document.write(title.default);
 <span class="hljs-addition">+img.src=logo.default;</span>
 <span class="hljs-addition">+document.body.appendChild(img);</span>
 </code></pre>
-<h3 id="t502.6 JS兼容性处理">2.6 JS兼容性处理 <a href="#t502.6 JS兼容性处理"> # </a></h3>
-<ul>
-<li>Babel其实是一个编译JavaScript的平台,可以把ES6/ES7,React的JSX转义为ES5</li>
-</ul>
-<h4 id="t512.6.1 @babel/preset-env">2.6.1 @babel/preset-env <a href="#t512.6.1 @babel/preset-env"> # </a></h4>
-<ul>
-<li>Babel默认只转换新的最新ES语法,比如箭头函数</li>
-</ul>
-<h4 id="t522.6.1.1 安装依赖">2.6.1.1 安装依赖 <a href="#t522.6.1.1 安装依赖"> # </a></h4>
-<ul>
-<li><a href="https://www.npmjs.com/package/babel-loader">babel-loader</a>使用Babel和webpack转译JavaScript文件</li>
-<li><a href="https://www.npmjs.com/package/@babel/core">@babel/@babel/core</a>Babel编译的核心包</li>
-<li><a href="https://www.babeljs.cn/docs/babel-preset-env">babel-preset-env</a></li>
-<li><a href="https://www.npmjs.com/package/@babel/preset-react">@babel/@babel/preset-react</a>React插件的Babel预设</li>
-<li><a href="https://babeljs.io/docs/en/babel-plugin-proposal-decorators">@babel/plugin-proposal-decorators</a>把类和对象装饰器编译成ES5</li>
-<li><a href="https://babeljs.io/docs/en/babel-plugin-proposal-class-properties">@babel/plugin-proposal-class-properties</a>转换静态类属性以及使用属性初始值化语法声明的属性</li>
-</ul>
-<pre><code class="lang-js">cnpm i babel-loader @babel/core @babel/preset-env @babel/preset-react  -D
+      <h3 id="t502.6 JS兼容性处理">2.6 JS兼容性处理 <a href="#t502.6 JS兼容性处理"> # </a></h3>
+      <ul>
+        <li>Babel其实是一个编译JavaScript的平台,可以把ES6/ES7,React的JSX转义为ES5</li>
+      </ul>
+      <h4 id="t512.6.1 @babel/preset-env">2.6.1 @babel/preset-env <a href="#t512.6.1 @babel/preset-env"> # </a></h4>
+      <ul>
+        <li>Babel默认只转换新的最新ES语法,比如箭头函数</li>
+      </ul>
+      <h4 id="t522.6.1.1 安装依赖">2.6.1.1 安装依赖 <a href="#t522.6.1.1 安装依赖"> # </a></h4>
+      <ul>
+        <li><a href="https://www.npmjs.com/package/babel-loader">babel-loader</a>使用Babel和webpack转译JavaScript文件</li>
+        <li><a href="https://www.npmjs.com/package/@babel/core">@babel/@babel/core</a>Babel编译的核心包</li>
+        <li><a href="https://www.babeljs.cn/docs/babel-preset-env">babel-preset-env</a></li>
+        <li><a href="https://www.npmjs.com/package/@babel/preset-react">@babel/@babel/preset-react</a>React插件的Babel预设
+        </li>
+        <li><a
+            href="https://babeljs.io/docs/en/babel-plugin-proposal-decorators">@babel/plugin-proposal-decorators</a>把类和对象装饰器编译成ES5
+        </li>
+        <li><a
+            href="https://babeljs.io/docs/en/babel-plugin-proposal-class-properties">@babel/plugin-proposal-class-properties</a>转换静态类属性以及使用属性初始值化语法声明的属性
+        </li>
+      </ul>
+      <pre><code class="lang-js">cnpm i babel-loader @babel/core @babel/preset-env @babel/preset-react  -D
 cnpm i @babel/plugin-proposal-decorators @babel/plugin-proposal-<span class="hljs-class"><span class="hljs-keyword">class</span>-<span class="hljs-title">properties</span> -<span class="hljs-title">D</span>
 </span></code></pre>
-<h4 id="t532.6.1.2 webpack.config.js">2.6.1.2 webpack.config.js <a href="#t532.6.1.2 webpack.config.js"> # </a></h4>
-<pre><code class="lang-diff">const path = require('path');
+      <h4 id="t532.6.1.2 webpack.config.js">2.6.1.2 webpack.config.js <a href="#t532.6.1.2 webpack.config.js"> # </a>
+      </h4>
+      <pre><code class="lang-diff">const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
@@ -693,9 +1217,9 @@ module.exports = {
   ]
 };
 </code></pre>
-<h4 id="t542.6.1.3 src\index.js">2.6.1.3 src\index.js <a href="#t542.6.1.3 src\index.js"> # </a></h4>
-<p>src\index.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+function readonly(target,key,descriptor) {</span>
+      <h4 id="t542.6.1.3 src\index.js">2.6.1.3 src\index.js <a href="#t542.6.1.3 src\index.js"> # </a></h4>
+      <p>src\index.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+function readonly(target,key,descriptor) {</span>
 <span class="hljs-addition">+    descriptor.writable=false;</span>
 <span class="hljs-addition">+}</span>
 <span class="hljs-addition">+</span>
@@ -706,31 +1230,31 @@ module.exports = {
 <span class="hljs-addition">+p1.PI=3.15;</span>
 <span class="hljs-addition">+console.log(p1)</span>
 </code></pre>
-<h4 id="t552.6.1.4  jsconfig.json">2.6.1.4  jsconfig.json <a href="#t552.6.1.4  jsconfig.json"> # </a></h4>
-<ul>
-<li><a href="https://code.visualstudio.com/docs/languages/jsconfig">jsconfig</a></li>
-</ul>
-<p>jsconfig.json</p>
-<pre><code class="lang-json">{
+      <h4 id="t552.6.1.4  jsconfig.json">2.6.1.4 jsconfig.json <a href="#t552.6.1.4  jsconfig.json"> # </a></h4>
+      <ul>
+        <li><a href="https://code.visualstudio.com/docs/languages/jsconfig">jsconfig</a></li>
+      </ul>
+      <p>jsconfig.json</p>
+      <pre><code class="lang-json">{
     <span class="hljs-attr">"compilerOptions"</span>: {
         <span class="hljs-attr">"experimentalDecorators"</span>: <span class="hljs-literal">true</span>
     }
 }
 </code></pre>
-<h3 id="t562.7 ESLint代码校验">2.7 ESLint代码校验 <a href="#t562.7 ESLint代码校验"> # </a></h3>
-<h4 id="t572.7.1 安装">2.7.1 安装 <a href="#t572.7.1 安装"> # </a></h4>
-<ul>
-<li><a href="https://eslint.org/docs/developer-guide/nodejs-api#cliengine">eslint</a></li>
-<li><a href="https://www.npmjs.com/package/eslint-loader">eslint-loader</a></li>
-<li><a href="https://eslint.org/docs/user-guide/configuring">configuring</a></li>
-<li><a href="https://www.npmjs.com/package/babel-eslint">babel-eslint</a></li>
-<li><a href="https://cloud.tencent.com/developer/chapter/12618">Rules</a></li>
-<li><a href="https://segmentfault.com/a/1190000008742240">ESlint 语法检测配置说明</a></li>
-</ul>
-<pre><code class="lang-js">cnpm install eslint eslint-loader babel-eslint --D
+      <h3 id="t562.7 ESLint代码校验">2.7 ESLint代码校验 <a href="#t562.7 ESLint代码校验"> # </a></h3>
+      <h4 id="t572.7.1 安装">2.7.1 安装 <a href="#t572.7.1 安装"> # </a></h4>
+      <ul>
+        <li><a href="https://eslint.org/docs/developer-guide/nodejs-api#cliengine">eslint</a></li>
+        <li><a href="https://www.npmjs.com/package/eslint-loader">eslint-loader</a></li>
+        <li><a href="https://eslint.org/docs/user-guide/configuring">configuring</a></li>
+        <li><a href="https://www.npmjs.com/package/babel-eslint">babel-eslint</a></li>
+        <li><a href="https://cloud.tencent.com/developer/chapter/12618">Rules</a></li>
+        <li><a href="https://segmentfault.com/a/1190000008742240">ESlint 语法检测配置说明</a></li>
+      </ul>
+      <pre><code class="lang-js">cnpm install eslint eslint-loader babel-eslint --D
 </code></pre>
-<h4 id="t582.7.2 webpack.config.js">2.7.2 webpack.config.js <a href="#t582.7.2 webpack.config.js"> # </a></h4>
-<pre><code class="lang-diff">const path = require('path');
+      <h4 id="t582.7.2 webpack.config.js">2.7.2 webpack.config.js <a href="#t582.7.2 webpack.config.js"> # </a></h4>
+      <pre><code class="lang-diff">const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
@@ -789,9 +1313,9 @@ module.exports = {
   ]
 };
 </code></pre>
-<h4 id="t592.7.3 src\index.html">2.7.3 src\index.html <a href="#t592.7.3 src\index.html"> # </a></h4>
-<p>src\index.html</p>
-<pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
+      <h4 id="t592.7.3 src\index.html">2.7.3 src\index.html <a href="#t592.7.3 src\index.html"> # </a></h4>
+      <p>src\index.html</p>
+      <pre><code class="lang-diff">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -803,9 +1327,9 @@ module.exports = {
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h4 id="t602.7.4 src\index.js">2.7.4 src\index.js <a href="#t602.7.4 src\index.js"> # </a></h4>
-<p>src\index.js</p>
-<pre><code class="lang-diff"><span class="hljs-addition">+import React from "react";</span>
+      <h4 id="t602.7.4 src\index.js">2.7.4 src\index.js <a href="#t602.7.4 src\index.js"> # </a></h4>
+      <p>src\index.js</p>
+      <pre><code class="lang-diff"><span class="hljs-addition">+import React from "react";</span>
 <span class="hljs-addition">+import ReactDOM from "react-dom";</span>
 <span class="hljs-addition">+ReactDOM.render("hello",document.getElementById("root"));</span>
 <span class="hljs-addition">+</span>
@@ -819,9 +1343,9 @@ module.exports = {
 <span class="hljs-addition">+let p1=new Person();</span>
 <span class="hljs-addition">+p1.PI=3.15;</span>
 </code></pre>
-<h4 id="t612.7.5 .eslintrc.js">2.7.5 .eslintrc.js <a href="#t612.7.5 .eslintrc.js"> # </a></h4>
-<p>.eslintrc.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+      <h4 id="t612.7.5 .eslintrc.js">2.7.5 .eslintrc.js <a href="#t612.7.5 .eslintrc.js"> # </a></h4>
+      <p>.eslintrc.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
     <span class="hljs-attr">root</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-attr">parser</span>:<span class="hljs-string">"babel-eslint"</span>,
     <span class="hljs-comment">//指定解析器选项</span>
@@ -841,14 +1365,16 @@ module.exports = {
     }
 }
 </code></pre>
-<h4 id="t622.7.6  airbnb">2.7.6  airbnb <a href="#t622.7.6  airbnb"> # </a></h4>
-<ul>
-<li><a href="https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb">eslint-config-airbnb</a></li>
-</ul>
-<pre><code class="lang-js">cnpm i eslint-config-airbnb eslint-loader eslint eslint-plugin-<span class="hljs-keyword">import</span> eslint-plugin-react eslint-plugin-react-hooks and eslint-plugin-jsx-a11y -D
+      <h4 id="t622.7.6  airbnb">2.7.6 airbnb <a href="#t622.7.6  airbnb"> # </a></h4>
+      <ul>
+        <li><a
+            href="https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb">eslint-config-airbnb</a>
+        </li>
+      </ul>
+      <pre><code class="lang-js">cnpm i eslint-config-airbnb eslint-loader eslint eslint-plugin-<span class="hljs-keyword">import</span> eslint-plugin-react eslint-plugin-react-hooks and eslint-plugin-jsx-a11y -D
 </code></pre>
-<p>eslintrc.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+      <p>eslintrc.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
     <span class="hljs-string">"parser"</span>:<span class="hljs-string">"babel-eslint"</span>,
     <span class="hljs-string">"extends"</span>:<span class="hljs-string">"airbnb"</span>,
     <span class="hljs-string">"rules"</span>:{
@@ -864,13 +1390,14 @@ module.exports = {
     }
 }
 </code></pre>
-<h4 id="t632.7.7 自动修复">2.7.7 自动修复 <a href="#t632.7.7 自动修复"> # </a></h4>
-<ul>
-<li>安装vscode的<a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">eslint</a>插件</li>
-<li>配置自动修复参数</li>
-</ul>
-<p>.vscode\settings.json</p>
-<pre><code class="lang-js">{
+      <h4 id="t632.7.7 自动修复">2.7.7 自动修复 <a href="#t632.7.7 自动修复"> # </a></h4>
+      <ul>
+        <li>安装vscode的<a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">eslint</a>插件
+        </li>
+        <li>配置自动修复参数</li>
+      </ul>
+      <p>.vscode\settings.json</p>
+      <pre><code class="lang-js">{
     <span class="hljs-string">"eslint.validate"</span>: [
         <span class="hljs-string">"javascript"</span>,
         <span class="hljs-string">"javascriptreact"</span>,
@@ -882,89 +1409,91 @@ module.exports = {
     }
   }
 </code></pre>
-<h3 id="t642.8 sourcemap">2.8 sourcemap <a href="#t642.8 sourcemap"> # </a></h3>
-<ul>
-<li><a href="https://webpack.js.org/configuration/devtool/#root">sourcemap</a>是为了解决开发代码与实际运行代码不一致时帮助我们<code>debug</code>到原始开发代码的技术</li>
-<li><code>webpack</code>通过配置可以自动给我们<code>source maps</code>文件，<code>map</code>文件是一种对应编译文件和源文件的方法</li>
-<li><a href="https://github.com/webpack/docs/wiki/build-performance#sourcemaps">whyeval</a>可以单独缓存map，重建性能更高</li>
-<li><a href="https://github.com/mozilla/source-map">source-map</a></li>
-</ul>
-<h4 id="t652.8.1 配置项">2.8.1 配置项 <a href="#t652.8.1 配置项"> # </a></h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">类型</th>
-<th style="text-align:left">含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">source-map</td>
-<td style="text-align:left">原始代码 最好的sourcemap质量有完整的结果，但是会很慢</td>
-</tr>
-<tr>
-<td style="text-align:left">eval-source-map</td>
-<td style="text-align:left">原始代码 同样道理，但是最高的质量和最低的性能</td>
-</tr>
-<tr>
-<td style="text-align:left">cheap-module-eval-source-map</td>
-<td style="text-align:left">原始代码（只有行内） 同样道理，但是更高的质量和更低的性能</td>
-</tr>
-<tr>
-<td style="text-align:left">cheap-eval-source-map</td>
-<td style="text-align:left">转换代码（行内） 每个模块被eval执行，并且sourcemap作为eval的一个dataurl</td>
-</tr>
-<tr>
-<td style="text-align:left">eval</td>
-<td style="text-align:left">生成代码 每个模块都被eval执行，并且存在@sourceURL,带eval的构建模式能cache SourceMap</td>
-</tr>
-<tr>
-<td style="text-align:left">cheap-source-map</td>
-<td style="text-align:left">转换代码（行内） 生成的sourcemap没有列映射，从loaders生成的sourcemap没有被使用</td>
-</tr>
-<tr>
-<td style="text-align:left">cheap-module-source-map</td>
-<td style="text-align:left">原始代码（只有行内） 与上面一样除了每行特点的从loader中进行映射</td>
-</tr>
-</tbody>
-</table>
-<h4 id="t662.8.2 关键字">2.8.2 关键字 <a href="#t662.8.2 关键字"> # </a></h4>
-<ul>
-<li>看似配置项很多， 其实只是五个关键字eval、source-map、cheap、module和inline的任意组合</li>
-<li>关键字可以任意组合，但是有顺序要求</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">关键字</th>
-<th style="text-align:left">含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">eval</td>
-<td style="text-align:left">使用eval包裹模块代码</td>
-</tr>
-<tr>
-<td style="text-align:left">source-map</td>
-<td style="text-align:left">产生.map文件</td>
-</tr>
-<tr>
-<td style="text-align:left">cheap</td>
-<td style="text-align:left">不包含列信息（关于列信息的解释下面会有详细介绍)也不包含loader的sourcemap</td>
-</tr>
-<tr>
-<td style="text-align:left">module</td>
-<td style="text-align:left">包含loader的sourcemap（比如jsx to js ，babel的sourcemap）,否则无法定义源文件</td>
-</tr>
-<tr>
-<td style="text-align:left">inline</td>
-<td style="text-align:left">将.map作为DataURI嵌入，不单独生成.map文件</td>
-</tr>
-</tbody>
-</table>
-<h4 id="t672.8.3 webpack.config.js">2.8.3 webpack.config.js <a href="#t672.8.3 webpack.config.js"> # </a></h4>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+      <h3 id="t642.8 sourcemap">2.8 sourcemap <a href="#t642.8 sourcemap"> # </a></h3>
+      <ul>
+        <li><a
+            href="https://webpack.js.org/configuration/devtool/#root">sourcemap</a>是为了解决开发代码与实际运行代码不一致时帮助我们<code>debug</code>到原始开发代码的技术
+        </li>
+        <li><code>webpack</code>通过配置可以自动给我们<code>source maps</code>文件，<code>map</code>文件是一种对应编译文件和源文件的方法</li>
+        <li><a href="https://github.com/webpack/docs/wiki/build-performance#sourcemaps">whyeval</a>可以单独缓存map，重建性能更高</li>
+        <li><a href="https://github.com/mozilla/source-map">source-map</a></li>
+      </ul>
+      <h4 id="t652.8.1 配置项">2.8.1 配置项 <a href="#t652.8.1 配置项"> # </a></h4>
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align:left">类型</th>
+            <th style="text-align:left">含义</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left">source-map</td>
+            <td style="text-align:left">原始代码 最好的sourcemap质量有完整的结果，但是会很慢</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">eval-source-map</td>
+            <td style="text-align:left">原始代码 同样道理，但是最高的质量和最低的性能</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">cheap-module-eval-source-map</td>
+            <td style="text-align:left">原始代码（只有行内） 同样道理，但是更高的质量和更低的性能</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">cheap-eval-source-map</td>
+            <td style="text-align:left">转换代码（行内） 每个模块被eval执行，并且sourcemap作为eval的一个dataurl</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">eval</td>
+            <td style="text-align:left">生成代码 每个模块都被eval执行，并且存在@sourceURL,带eval的构建模式能cache SourceMap</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">cheap-source-map</td>
+            <td style="text-align:left">转换代码（行内） 生成的sourcemap没有列映射，从loaders生成的sourcemap没有被使用</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">cheap-module-source-map</td>
+            <td style="text-align:left">原始代码（只有行内） 与上面一样除了每行特点的从loader中进行映射</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="t662.8.2 关键字">2.8.2 关键字 <a href="#t662.8.2 关键字"> # </a></h4>
+      <ul>
+        <li>看似配置项很多， 其实只是五个关键字eval、source-map、cheap、module和inline的任意组合</li>
+        <li>关键字可以任意组合，但是有顺序要求</li>
+      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align:left">关键字</th>
+            <th style="text-align:left">含义</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left">eval</td>
+            <td style="text-align:left">使用eval包裹模块代码</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">source-map</td>
+            <td style="text-align:left">产生.map文件</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">cheap</td>
+            <td style="text-align:left">不包含列信息（关于列信息的解释下面会有详细介绍)也不包含loader的sourcemap</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">module</td>
+            <td style="text-align:left">包含loader的sourcemap（比如jsx to js ，babel的sourcemap）,否则无法定义源文件</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">inline</td>
+            <td style="text-align:left">将.map作为DataURI嵌入，不单独生成.map文件</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="t672.8.3 webpack.config.js">2.8.3 webpack.config.js <a href="#t672.8.3 webpack.config.js"> # </a></h4>
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
   <span class="hljs-attr">devtool</span>: <span class="hljs-string">'source-map'</span>,
   <span class="hljs-attr">devtool</span>: <span class="hljs-string">'eval-source-map'</span>,
   <span class="hljs-attr">devtool</span>: <span class="hljs-string">'cheap-module-eval-source-map'</span>,
@@ -974,45 +1503,48 @@ module.exports = {
   <span class="hljs-attr">devtool</span>: <span class="hljs-string">'cheap-module-source-map'</span>,
 }
 </code></pre>
-<h4 id="t682.8.4 组合规则">2.8.4 组合规则 <a href="#t682.8.4 组合规则"> # </a></h4>
-<ul>
-<li>[inline-|hidden-|eval-][nosources-][cheap-[module-]]source-map</li>
-<li>source-map 单独在外部生成完整的sourcemap文件，并且在目标文件里建立关联,能提示错误代码的准确原始位置</li>
-<li>inline-source-map  以base64格式内联在打包后的文件中，内联构建速度更快,也能提示错误代码的准确原始位置</li>
-<li>hidden-source-map  会在外部生成sourcemap文件,但是在目标文件里没有建立关联,不能提示错误代码的准确原始位置</li>
-<li>eval-source-map 会为每一个模块生成一个单独的sourcemap文件进行内联，并使用<code>eval</code>执行</li>
-<li>nosources-source-map 也会在外部生成sourcemap文件,能找到源始代码位置，但源代码内容为空</li>
-<li>cheap-source-map 外部生成sourcemap文件,不包含列和loader的map</li>
-<li>cheap-module-source-map 外部生成sourcemap文件,不包含列的信息但包含loader的map</li>
-</ul>
-<h4 id="t692.8.5 最佳实践">2.8.5 最佳实践 <a href="#t692.8.5 最佳实践"> # </a></h4>
-<h5 id="t702.8.5.1 开发环境">2.8.5.1 开发环境 <a href="#t702.8.5.1 开发环境"> # </a></h5>
-<ul>
-<li>我们在开发环境对sourceMap的要求是：速度快，调试更友好</li>
-<li>要想速度快 推荐 <code>eval-cheap-source-map</code></li>
-<li>如果想调试更友好 <code>cheap-module-source-map</code></li>
-<li>折中的选择就是 <code>eval-source-map</code></li>
-</ul>
-<h5 id="t712.8.5.2 生产环境">2.8.5.2 生产环境 <a href="#t712.8.5.2 生产环境"> # </a></h5>
-<ul>
-<li>首先排除内联，因为一方面我们了隐藏源代码，另一方面要减少文件体积</li>
-<li>要想调试友好 <code>sourcemap&gt;cheap-source-map/cheap-module-source-map&gt;hidden-source-map/nosources-sourcemap</code></li>
-<li>要想速度快 优先选择<code>cheap</code></li>
-<li>折中的选择就是 <code>hidden-source-map</code></li>
-</ul>
-<h4 id="t722.8.6 调试代码">2.8.6 调试代码 <a href="#t722.8.6 调试代码"> # </a></h4>
-<h5 id="t732.8.6.1 测试环境调试">2.8.6.1 测试环境调试 <a href="#t732.8.6.1 测试环境调试"> # </a></h5>
-<ul>
-<li><a href="https://www.webpackjs.com/plugins/source-map-dev-tool-plugin/">source-map-dev-tool-plugin</a>实现了对 source map 生成，进行更细粒度的控制<ul>
-<li>filename (string)：定义生成的 source map 的名称（如果没有值将会变成 inlined）。</li>
-<li>append (string)：在原始资源后追加给定值。通常是 #sourceMappingURL 注释。[url] 被替换成 source map 文件的 URL</li>
-</ul>
-</li>
-<li>市面上流行两种形式的文件指定，分别是以 <code>@</code> 和 <code>#</code>符号开头的,<code>@</code>开头的已经被废弃</li>
-</ul>
-<p><img src="http://img.zhufengpeixun.cn/enablesourcemap.png" alt="enablesourcemap"></p>
-<p>webpack.config.js</p>
-<pre><code class="lang-diff">const path = require('path');
+      <h4 id="t682.8.4 组合规则">2.8.4 组合规则 <a href="#t682.8.4 组合规则"> # </a></h4>
+      <ul>
+        <li>[inline-|hidden-|eval-][nosources-][cheap-[module-]]source-map</li>
+        <li>source-map 单独在外部生成完整的sourcemap文件，并且在目标文件里建立关联,能提示错误代码的准确原始位置</li>
+        <li>inline-source-map 以base64格式内联在打包后的文件中，内联构建速度更快,也能提示错误代码的准确原始位置</li>
+        <li>hidden-source-map 会在外部生成sourcemap文件,但是在目标文件里没有建立关联,不能提示错误代码的准确原始位置</li>
+        <li>eval-source-map 会为每一个模块生成一个单独的sourcemap文件进行内联，并使用<code>eval</code>执行</li>
+        <li>nosources-source-map 也会在外部生成sourcemap文件,能找到源始代码位置，但源代码内容为空</li>
+        <li>cheap-source-map 外部生成sourcemap文件,不包含列和loader的map</li>
+        <li>cheap-module-source-map 外部生成sourcemap文件,不包含列的信息但包含loader的map</li>
+      </ul>
+      <h4 id="t692.8.5 最佳实践">2.8.5 最佳实践 <a href="#t692.8.5 最佳实践"> # </a></h4>
+      <h5 id="t702.8.5.1 开发环境">2.8.5.1 开发环境 <a href="#t702.8.5.1 开发环境"> # </a></h5>
+      <ul>
+        <li>我们在开发环境对sourceMap的要求是：速度快，调试更友好</li>
+        <li>要想速度快 推荐 <code>eval-cheap-source-map</code></li>
+        <li>如果想调试更友好 <code>cheap-module-source-map</code></li>
+        <li>折中的选择就是 <code>eval-source-map</code></li>
+      </ul>
+      <h5 id="t712.8.5.2 生产环境">2.8.5.2 生产环境 <a href="#t712.8.5.2 生产环境"> # </a></h5>
+      <ul>
+        <li>首先排除内联，因为一方面我们了隐藏源代码，另一方面要减少文件体积</li>
+        <li>要想调试友好
+          <code>sourcemap&gt;cheap-source-map/cheap-module-source-map&gt;hidden-source-map/nosources-sourcemap</code>
+        </li>
+        <li>要想速度快 优先选择<code>cheap</code></li>
+        <li>折中的选择就是 <code>hidden-source-map</code></li>
+      </ul>
+      <h4 id="t722.8.6 调试代码">2.8.6 调试代码 <a href="#t722.8.6 调试代码"> # </a></h4>
+      <h5 id="t732.8.6.1 测试环境调试">2.8.6.1 测试环境调试 <a href="#t732.8.6.1 测试环境调试"> # </a></h5>
+      <ul>
+        <li><a href="https://www.webpackjs.com/plugins/source-map-dev-tool-plugin/">source-map-dev-tool-plugin</a>实现了对
+          source map 生成，进行更细粒度的控制<ul>
+            <li>filename (string)：定义生成的 source map 的名称（如果没有值将会变成 inlined）。</li>
+            <li>append (string)：在原始资源后追加给定值。通常是 #sourceMappingURL 注释。[url] 被替换成 source map 文件的 URL</li>
+          </ul>
+        </li>
+        <li>市面上流行两种形式的文件指定，分别是以 <code>@</code> 和 <code>#</code>符号开头的,<code>@</code>开头的已经被废弃</li>
+      </ul>
+      <p><img src="http://img.zhufengpeixun.cn/enablesourcemap.png" alt="enablesourcemap"></p>
+      <p>webpack.config.js</p>
+      <pre><code class="lang-diff">const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
@@ -1133,35 +1665,35 @@ module.exports = {
   ],
 };
 </code></pre>
-<h5 id="t742.8.6.2 生产环境调试">2.8.6.2 生产环境调试 <a href="#t742.8.6.2 生产环境调试"> # </a></h5>
-<ul>
-<li>webpack打包仍然生成sourceMap，但是将map文件挑出放到本地服务器，将不含有map文件的部署到服务器</li>
-</ul>
-<p><img src="https://img.zhufengpeixun.com/addsourcemapfile.png" alt="addsourcemapfile.png"></p>
-<h3 id="t752.9 打包第三方类库">2.9 打包第三方类库 <a href="#t752.9 打包第三方类库"> # </a></h3>
-<h4 id="t762.9.1 直接引入">2.9.1 直接引入 <a href="#t762.9.1 直接引入"> # </a></h4>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> _ <span class="hljs-keyword">from</span> <span class="hljs-string">'lodash'</span>;
+      <h5 id="t742.8.6.2 生产环境调试">2.8.6.2 生产环境调试 <a href="#t742.8.6.2 生产环境调试"> # </a></h5>
+      <ul>
+        <li>webpack打包仍然生成sourceMap，但是将map文件挑出放到本地服务器，将不含有map文件的部署到服务器</li>
+      </ul>
+      <p><img src="https://img.zhufengpeixun.com/addsourcemapfile.png" alt="addsourcemapfile.png"></p>
+      <h3 id="t752.9 打包第三方类库">2.9 打包第三方类库 <a href="#t752.9 打包第三方类库"> # </a></h3>
+      <h4 id="t762.9.1 直接引入">2.9.1 直接引入 <a href="#t762.9.1 直接引入"> # </a></h4>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> _ <span class="hljs-keyword">from</span> <span class="hljs-string">'lodash'</span>;
 alert(_.join([<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'c'</span>],<span class="hljs-string">'@'</span>));
 </code></pre>
-<h4 id="t772.9.2 插件引入">2.9.2 插件引入 <a href="#t772.9.2 插件引入"> # </a></h4>
-<ul>
-<li>webpack配置ProvidePlugin后，在使用时将不再需要import和require进行引入，直接使用即可</li>
-<li>_ 函数会自动添加到当前模块的上下文，无需显示声明</li>
-</ul>
-<pre><code class="lang-diff"><span class="hljs-addition">+ new webpack.ProvidePlugin({</span>
+      <h4 id="t772.9.2 插件引入">2.9.2 插件引入 <a href="#t772.9.2 插件引入"> # </a></h4>
+      <ul>
+        <li>webpack配置ProvidePlugin后，在使用时将不再需要import和require进行引入，直接使用即可</li>
+        <li>_ 函数会自动添加到当前模块的上下文，无需显示声明</li>
+      </ul>
+      <pre><code class="lang-diff"><span class="hljs-addition">+ new webpack.ProvidePlugin({</span>
 <span class="hljs-addition">+     _:'lodash'</span>
 <span class="hljs-addition">+ })</span>
 </code></pre>
-<blockquote>
-<p>没有全局的<code>$</code>函数，所以导入依赖全局变量的插件依旧会失败</p>
-</blockquote>
-<h4 id="t782.9.3 expose-loader">2.9.3 expose-loader <a href="#t782.9.3 expose-loader"> # </a></h4>
-<ul>
-<li>expose-loader可以把模块添加到全局对象上，在调试的时候比较有用</li>
-<li>The expose loader adds modules to the global object. This is useful for debugging</li>
-<li>不需要任何其他的插件配合，只要将下面的代码添加到所有的<code>loader</code>之前</li>
-</ul>
-<pre><code class="lang-diff">  module: {
+      <blockquote>
+        <p>没有全局的<code>$</code>函数，所以导入依赖全局变量的插件依旧会失败</p>
+      </blockquote>
+      <h4 id="t782.9.3 expose-loader">2.9.3 expose-loader <a href="#t782.9.3 expose-loader"> # </a></h4>
+      <ul>
+        <li>expose-loader可以把模块添加到全局对象上，在调试的时候比较有用</li>
+        <li>The expose loader adds modules to the global object. This is useful for debugging</li>
+        <li>不需要任何其他的插件配合，只要将下面的代码添加到所有的<code>loader</code>之前</li>
+      </ul>
+      <pre><code class="lang-diff">  module: {
     rules: [
 <span class="hljs-addition">+      {</span>
 <span class="hljs-addition">+          test: require.resolve('lodash'),</span>
@@ -1177,21 +1709,22 @@ alert(_.join([<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'
   }
 
 </code></pre>
-<h4 id="t792.9.4 externals">2.9.4 externals <a href="#t792.9.4 externals"> # </a></h4>
-<p>如果我们想引用一个库，但是又不想让webpack打包，并且又不影响我们在程序中以CMD、AMD或者window/global全局等方式进行使用，那就可以通过配置externals</p>
-<pre><code class="lang-js"> <span class="hljs-keyword">const</span> jQuery = <span class="hljs-built_in">require</span>(<span class="hljs-string">"jquery"</span>);
+      <h4 id="t792.9.4 externals">2.9.4 externals <a href="#t792.9.4 externals"> # </a></h4>
+      <p>如果我们想引用一个库，但是又不想让webpack打包，并且又不影响我们在程序中以CMD、AMD或者window/global全局等方式进行使用，那就可以通过配置externals</p>
+      <pre><code class="lang-js"> <span class="hljs-keyword">const</span> jQuery = <span class="hljs-built_in">require</span>(<span class="hljs-string">"jquery"</span>);
  <span class="hljs-keyword">import</span> jQuery <span class="hljs-keyword">from</span> <span class="hljs-string">'jquery'</span>;
 </code></pre>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.bootcss.com/jquery/3.4.1/jquery.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+      <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.bootcss.com/jquery/3.4.1/jquery.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
-<pre><code class="lang-diff"><span class="hljs-addition">+externals: {</span>
+      <pre><code class="lang-diff"><span class="hljs-addition">+externals: {</span>
 <span class="hljs-addition">+  lodash: '_',</span>
 <span class="hljs-addition">+},</span>
   module: {
 </code></pre>
-<h3 id="t802.10 watch">2.10 watch <a href="#t802.10 watch"> # </a></h3>
-<ul>
-<li>当代码发生修改后可以自动重新编译<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+      <h3 id="t802.10 watch">2.10 watch <a href="#t802.10 watch"> # </a></h3>
+      <ul>
+        <li>当代码发生修改后可以自动重新编译
+          <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
   <span class="hljs-comment">//默认false,也就是不开启</span>
   <span class="hljs-attr">watch</span>:<span class="hljs-literal">true</span>,
   <span class="hljs-comment">//只有开启监听模式时，watchOptions才有意义</span>
@@ -1205,22 +1738,22 @@ alert(_.join([<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'
   }
 }
 </code></pre>
-</li>
-<li>webpack定时获取文件的更新时间，并跟上次保存的时间进行比对，不一致就表示发生了变化,poll就用来配置每秒问多少次</li>
-<li>当检测文件不再发生变化，会先缓存起来，等待一段时间后之后再通知监听者，这个等待时间通过<code>aggregateTimeout</code>配置</li>
-<li>webpack只会监听entry依赖的文件</li>
-<li>我们需要尽可能减少需要监听的文件数量和检查频率，当然频率的降低会导致灵敏度下降</li>
-</ul>
-<h3 id="t812.11 添加商标">2.11 添加商标 <a href="#t812.11 添加商标"> # </a></h3>
-<pre><code class="lang-diff"><span class="hljs-addition">+ new webpack.BannerPlugin('珠峰架构'),</span>
+        </li>
+        <li>webpack定时获取文件的更新时间，并跟上次保存的时间进行比对，不一致就表示发生了变化,poll就用来配置每秒问多少次</li>
+        <li>当检测文件不再发生变化，会先缓存起来，等待一段时间后之后再通知监听者，这个等待时间通过<code>aggregateTimeout</code>配置</li>
+        <li>webpack只会监听entry依赖的文件</li>
+        <li>我们需要尽可能减少需要监听的文件数量和检查频率，当然频率的降低会导致灵敏度下降</li>
+      </ul>
+      <h3 id="t812.11 添加商标">2.11 添加商标 <a href="#t812.11 添加商标"> # </a></h3>
+      <pre><code class="lang-diff"><span class="hljs-addition">+ new webpack.BannerPlugin('珠峰架构'),</span>
 </code></pre>
-<h3 id="t822.12 拷贝静态文件">2.12 拷贝静态文件 <a href="#t822.12 拷贝静态文件"> # </a></h3>
-<ul>
-<li><a href="https://webpack.js.org/plugins/copy-webpack-plugin">copy-webpack-plugin</a>可以拷贝源文件到目标目录</li>
-</ul>
-<pre><code class="lang-js">npm i copy-webpack-plugin -D
+      <h3 id="t822.12 拷贝静态文件">2.12 拷贝静态文件 <a href="#t822.12 拷贝静态文件"> # </a></h3>
+      <ul>
+        <li><a href="https://webpack.js.org/plugins/copy-webpack-plugin">copy-webpack-plugin</a>可以拷贝源文件到目标目录</li>
+      </ul>
+      <pre><code class="lang-js">npm i copy-webpack-plugin -D
 </code></pre>
-<pre><code class="lang-diff"><span class="hljs-addition">+const CopyWebpackPlugin = require('copy-webpack-plugin');</span>
+      <pre><code class="lang-diff"><span class="hljs-addition">+const CopyWebpackPlugin = require('copy-webpack-plugin');</span>
 <span class="hljs-addition">+new CopyWebpackPlugin({</span>
 <span class="hljs-addition">+  patterns: [{</span>
 <span class="hljs-addition">+    from: path.resolve(__dirname,'src/static'),//静态资源目录源地址</span>
@@ -1228,31 +1761,33 @@ alert(_.join([<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'
 <span class="hljs-addition">+  }],</span>
 <span class="hljs-addition">+}),</span>
 </code></pre>
-<h3 id="t832.13 clean-webpack-plugin">2.13 clean-webpack-plugin <a href="#t832.13 clean-webpack-plugin"> # </a></h3>
-<ul>
-<li><a href="https://www.npmjs.com/package/clean-webpack-plugin">clean-webpack-plugin</a>可以打包前先清空输出目录</li>
-</ul>
-<pre><code class="lang-js">npm i  clean-webpack-plugin -D
+      <h3 id="t832.13 clean-webpack-plugin">2.13 clean-webpack-plugin <a href="#t832.13 clean-webpack-plugin"> # </a>
+      </h3>
+      <ul>
+        <li><a href="https://www.npmjs.com/package/clean-webpack-plugin">clean-webpack-plugin</a>可以打包前先清空输出目录</li>
+      </ul>
+      <pre><code class="lang-js">npm i  clean-webpack-plugin -D
 </code></pre>
-<pre><code class="lang-diff"><span class="hljs-addition">+ const {CleanWebpackPlugin} = require('clean-webpack-plugin');</span>
+      <pre><code class="lang-diff"><span class="hljs-addition">+ const {CleanWebpackPlugin} = require('clean-webpack-plugin');</span>
 plugins:[
 <span class="hljs-addition">+ new CleanWebpackPlugin({cleanOnceBeforeBuildPatterns: ['**/*'],})</span>
 ]
 </code></pre>
-<h3 id="t842.14 服务器代理">2.14 服务器代理 <a href="#t842.14 服务器代理"> # </a></h3>
-<p>如果你有单独的后端开发服务器 API，并且希望在同域名下发送 API 请求 ，那么代理某些 URL 会很有用。</p>
-<h4 id="t852.14.1 不修改路径">2.14.1 不修改路径 <a href="#t852.14.1 不修改路径"> # </a></h4>
-<ul>
-<li>请求到 /api/users 现在会被代理到请求 <a href="http://localhost:3000/api/users。">http://localhost:3000/api/users。</a></li>
-</ul>
-<pre><code class="lang-js">devServer: {
+      <h3 id="t842.14 服务器代理">2.14 服务器代理 <a href="#t842.14 服务器代理"> # </a></h3>
+      <p>如果你有单独的后端开发服务器 API，并且希望在同域名下发送 API 请求 ，那么代理某些 URL 会很有用。</p>
+      <h4 id="t852.14.1 不修改路径">2.14.1 不修改路径 <a href="#t852.14.1 不修改路径"> # </a></h4>
+      <ul>
+        <li>请求到 /api/users 现在会被代理到请求 <a href="http://localhost:3000/api/users。">http://localhost:3000/api/users。</a>
+        </li>
+      </ul>
+      <pre><code class="lang-js">devServer: {
   <span class="hljs-attr">proxy</span>: {
     <span class="hljs-string">"/api"</span>: <span class="hljs-string">'http://localhost:3000'</span>
   }
 }
 </code></pre>
-<h4 id="t862.14.2 修改路径">2.14.2 修改路径 <a href="#t862.14.2 修改路径"> # </a></h4>
-<pre><code class="lang-js">devServer: {
+      <h4 id="t862.14.2 修改路径">2.14.2 修改路径 <a href="#t862.14.2 修改路径"> # </a></h4>
+      <pre><code class="lang-js">devServer: {
   <span class="hljs-attr">proxy</span>: {
       <span class="hljs-string">"/api"</span>: {
        <span class="hljs-attr">target</span>: <span class="hljs-string">'http://localhost:3000'</span>,
@@ -1261,9 +1796,9 @@ plugins:[
   }
 }
 </code></pre>
-<h4 id="t872.14.3 before after">2.14.3 before after <a href="#t872.14.3 before after"> # </a></h4>
-<p>before 在 webpack-dev-server 静态资源中间件处理之前，可以用于拦截部分请求返回特定内容，或者实现简单的数据 mock。</p>
-<pre><code class="lang-js">devServer: {
+      <h4 id="t872.14.3 before after">2.14.3 before after <a href="#t872.14.3 before after"> # </a></h4>
+      <p>before 在 webpack-dev-server 静态资源中间件处理之前，可以用于拦截部分请求返回特定内容，或者实现简单的数据 mock。</p>
+      <pre><code class="lang-js">devServer: {
   before(app){
     app.get(<span class="hljs-string">'/api/users'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{ 
        res.json([{<span class="hljs-attr">id</span>:<span class="hljs-number">1</span>,<span class="hljs-attr">name</span>:<span class="hljs-string">'zhufeng'</span>}])
@@ -1271,11 +1806,13 @@ plugins:[
   }
 }
 </code></pre>
-<h4 id="t882.14.4 webpack-dev-middleware">2.14.4 webpack-dev-middleware <a href="#t882.14.4 webpack-dev-middleware"> # </a></h4>
-<p><a href="https://www.npmjs.com/package/">webpack-dev-middleware</a>就是在 Express 中提供 <code>webpack-dev-server</code> 静态服务能力的一个中间件</p>
-<pre><code class="lang-js">npm install webpack-dev-middleware --save-dev
+      <h4 id="t882.14.4 webpack-dev-middleware">2.14.4 webpack-dev-middleware <a
+          href="#t882.14.4 webpack-dev-middleware"> # </a></h4>
+      <p><a href="https://www.npmjs.com/package/">webpack-dev-middleware</a>就是在 Express 中提供
+        <code>webpack-dev-server</code> 静态服务能力的一个中间件</p>
+      <pre><code class="lang-js">npm install webpack-dev-middleware --save-dev
 </code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+      <pre><code class="lang-js"><span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
 <span class="hljs-keyword">const</span> app = express();
 <span class="hljs-keyword">const</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack'</span>);
 <span class="hljs-keyword">const</span> webpackDevMiddleware = <span class="hljs-built_in">require</span>(<span class="hljs-string">'webpack-dev-middleware'</span>);
@@ -1285,24 +1822,25 @@ webpackOptions.mode = <span class="hljs-string">'development'</span>;
 app.use(webpackDevMiddleware(compiler, {}));
 app.listen(<span class="hljs-number">3000</span>);
 </code></pre>
-<ul>
-<li>webpack-dev-server 的好处是相对简单，直接安装依赖后执行命令即可</li>
-<li>而使用<code>webpack-dev-middleware</code>的好处是可以在既有的 Express 代码基础上快速添加 webpack-dev-server 的功能，同时利用 Express 来根据需要添加更多的功能，如 mock 服务、代理 API 请求等</li>
-</ul>
-<h2 id="t893.生产环境">3.生产环境 <a href="#t893.生产环境"> # </a></h2>
-<h3 id="t903.1 提取CSS">3.1 提取CSS <a href="#t903.1 提取CSS"> # </a></h3>
-<ul>
-<li>因为CSS的下载和JS可以并行,当一个HTML文件很大的时候，我们可以把CSS单独提取出来加载</li>
-</ul>
-<h4 id="t913.1.1 安装">3.1.1 安装 <a href="#t913.1.1 安装"> # </a></h4>
-<ul>
-<li><a href="https://github.com/webpack-contrib/mini-css-extract-plugin">mini-css-extract-plugin</a></li>
-</ul>
-<pre><code class="lang-js">cnpm install --save-dev mini-css-extract-plugin
+      <ul>
+        <li>webpack-dev-server 的好处是相对简单，直接安装依赖后执行命令即可</li>
+        <li>而使用<code>webpack-dev-middleware</code>的好处是可以在既有的 Express 代码基础上快速添加 webpack-dev-server 的功能，同时利用 Express
+          来根据需要添加更多的功能，如 mock 服务、代理 API 请求等</li>
+      </ul>
+      <h2 id="t893.生产环境">3.生产环境 <a href="#t893.生产环境"> # </a></h2>
+      <h3 id="t903.1 提取CSS">3.1 提取CSS <a href="#t903.1 提取CSS"> # </a></h3>
+      <ul>
+        <li>因为CSS的下载和JS可以并行,当一个HTML文件很大的时候，我们可以把CSS单独提取出来加载</li>
+      </ul>
+      <h4 id="t913.1.1 安装">3.1.1 安装 <a href="#t913.1.1 安装"> # </a></h4>
+      <ul>
+        <li><a href="https://github.com/webpack-contrib/mini-css-extract-plugin">mini-css-extract-plugin</a></li>
+      </ul>
+      <pre><code class="lang-js">cnpm install --save-dev mini-css-extract-plugin
 </code></pre>
-<h4 id="t923.1.2 webpack.config.js">3.1.2 webpack.config.js <a href="#t923.1.2 webpack.config.js"> # </a></h4>
-<p>webpack.config.js</p>
-<pre><code class="lang-diff">const path = require('path');
+      <h4 id="t923.1.2 webpack.config.js">3.1.2 webpack.config.js <a href="#t923.1.2 webpack.config.js"> # </a></h4>
+      <p>webpack.config.js</p>
+      <pre><code class="lang-diff">const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 <span class="hljs-addition">+const MiniCssExtractPlugin = require('mini-css-extract-plugin');</span>
 module.exports = {
@@ -1340,9 +1878,9 @@ module.exports = {
   ]
 };
 </code></pre>
-<h3 id="t933.2 指定图片和CSS目录">3.2 指定图片和CSS目录 <a href="#t933.2 指定图片和CSS目录"> # </a></h3>
-<h4 id="t943.2.1 webpack.config.js">3.2.1 webpack.config.js <a href="#t943.2.1 webpack.config.js"> # </a></h4>
-<pre><code class="lang-diff">const path = require('path');
+      <h3 id="t933.2 指定图片和CSS目录">3.2 指定图片和CSS目录 <a href="#t933.2 指定图片和CSS目录"> # </a></h3>
+      <h4 id="t943.2.1 webpack.config.js">3.2.1 webpack.config.js <a href="#t943.2.1 webpack.config.js"> # </a></h4>
+      <pre><code class="lang-diff">const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
@@ -1382,53 +1920,56 @@ module.exports = {
   ]
 };
 </code></pre>
-<h3 id="t953.3 hash、chunkhash和contenthash">3.3 hash、chunkhash和contenthash <a href="#t953.3 hash、chunkhash和contenthash"> # </a></h3>
-<ul>
-<li><code>文件指纹</code>是指打包后输出的文件名和后缀</li>
-<li>hash一般是结合CDN缓存来使用，通过webpack构建之后，生成对应文件名自动带上对应的MD5值。如果文件内容改变的话，那么对应文件哈希值也会改变，对应的HTML引用的URL地址也会改变，触发CDN服务器从源服务器上拉取对应数据，进而更新本地缓存。</li>
-</ul>
-<p>指纹占位符</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">占位符名称</th>
-<th style="text-align:left">含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">ext</td>
-<td style="text-align:left">资源后缀名</td>
-</tr>
-<tr>
-<td style="text-align:left">name</td>
-<td style="text-align:left">文件名称</td>
-</tr>
-<tr>
-<td style="text-align:left">path</td>
-<td style="text-align:left">文件的相对路径</td>
-</tr>
-<tr>
-<td style="text-align:left">folder</td>
-<td style="text-align:left">文件所在的文件夹</td>
-</tr>
-<tr>
-<td style="text-align:left">hash</td>
-<td style="text-align:left">每次webpack构建时生成一个唯一的hash值</td>
-</tr>
-<tr>
-<td style="text-align:left">chunkhash</td>
-<td style="text-align:left">根据chunk生成hash值，来源于同一个chunk，则hash值就一样</td>
-</tr>
-<tr>
-<td style="text-align:left">contenthash</td>
-<td style="text-align:left">根据内容生成hash值，文件内容相同hash值就相同</td>
-</tr>
-</tbody>
-</table>
-<h4 id="t963.3.1  hash">3.3.1  hash <a href="#t963.3.1  hash"> # </a></h4>
-<p><img src="https://img.zhufengpeixun.com/variableHash.jpg" alt="variableHash.jpg"></p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createHash</span>(<span class="hljs-params"></span>)</span>{
+      <h3 id="t953.3 hash、chunkhash和contenthash">3.3 hash、chunkhash和contenthash <a
+          href="#t953.3 hash、chunkhash和contenthash"> # </a></h3>
+      <ul>
+        <li><code>文件指纹</code>是指打包后输出的文件名和后缀</li>
+        <li>
+          hash一般是结合CDN缓存来使用，通过webpack构建之后，生成对应文件名自动带上对应的MD5值。如果文件内容改变的话，那么对应文件哈希值也会改变，对应的HTML引用的URL地址也会改变，触发CDN服务器从源服务器上拉取对应数据，进而更新本地缓存。
+        </li>
+      </ul>
+      <p>指纹占位符</p>
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align:left">占位符名称</th>
+            <th style="text-align:left">含义</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left">ext</td>
+            <td style="text-align:left">资源后缀名</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">name</td>
+            <td style="text-align:left">文件名称</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">path</td>
+            <td style="text-align:left">文件的相对路径</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">folder</td>
+            <td style="text-align:left">文件所在的文件夹</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">hash</td>
+            <td style="text-align:left">每次webpack构建时生成一个唯一的hash值</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">chunkhash</td>
+            <td style="text-align:left">根据chunk生成hash值，来源于同一个chunk，则hash值就一样</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">contenthash</td>
+            <td style="text-align:left">根据内容生成hash值，文件内容相同hash值就相同</td>
+          </tr>
+        </tbody>
+      </table>
+      <h4 id="t963.3.1  hash">3.3.1 hash <a href="#t963.3.1  hash"> # </a></h4>
+      <p><img src="https://img.zhufengpeixun.com/variableHash.jpg" alt="variableHash.jpg"></p>
+      <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createHash</span>(<span class="hljs-params"></span>)</span>{
    <span class="hljs-keyword">return</span>  <span class="hljs-built_in">require</span>(<span class="hljs-string">'crypto'</span>).createHash(<span class="hljs-string">'md5'</span>);
 }
 <span class="hljs-keyword">let</span> entry = {
@@ -1470,11 +2011,11 @@ module.exports = {
 .update(entry2File).digest(<span class="hljs-string">'hex'</span>);;
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'entry2ContentHash'</span>,entry2ContentHash);
 </code></pre>
-<h4 id="t973.3.2  hash">3.3.2  hash <a href="#t973.3.2  hash"> # </a></h4>
-<ul>
-<li>Hash 是整个项目的hash值，其根据每次编译内容计算得到，每次编译之后都会生成新的hash,即修改任何文件都会导致所有文件的hash发生改变</li>
-</ul>
-<pre><code class="lang-diff">
+      <h4 id="t973.3.2  hash">3.3.2 hash <a href="#t973.3.2  hash"> # </a></h4>
+      <ul>
+        <li>Hash 是整个项目的hash值，其根据每次编译内容计算得到，每次编译之后都会生成新的hash,即修改任何文件都会导致所有文件的hash发生改变</li>
+      </ul>
+      <pre><code class="lang-diff">
 module.exports = {
 <span class="hljs-addition">+  entry: {</span>
 <span class="hljs-addition">+    main: './src/index.js',</span>
@@ -1491,12 +2032,14 @@ module.exports = {
   ]
 };
 </code></pre>
-<h4 id="t983.3.2 chunkhash">3.3.2 chunkhash <a href="#t983.3.2 chunkhash"> # </a></h4>
-<ul>
-<li>chunkhash 采用hash计算的话，每一次构建后生成的哈希值都不一样，即使文件内容压根没有改变。这样子是没办法实现缓存效果，我们需要换另一种哈希值计算方式，即chunkhash</li>
-<li>chunkhash和hash不一样，它根据不同的入口文件(Entry)进行依赖文件解析、构建对应的chunk，生成对应的哈希值。我们在生产环境里把一些公共库和程序入口文件区分开，单独打包构建，接着我们采用chunkhash的方式生成哈希值，那么只要我们不改动公共库的代码，就可以保证其哈希值不会受影响</li>
-</ul>
-<pre><code class="lang-diff">
+      <h4 id="t983.3.2 chunkhash">3.3.2 chunkhash <a href="#t983.3.2 chunkhash"> # </a></h4>
+      <ul>
+        <li>chunkhash 采用hash计算的话，每一次构建后生成的哈希值都不一样，即使文件内容压根没有改变。这样子是没办法实现缓存效果，我们需要换另一种哈希值计算方式，即chunkhash</li>
+        <li>
+          chunkhash和hash不一样，它根据不同的入口文件(Entry)进行依赖文件解析、构建对应的chunk，生成对应的哈希值。我们在生产环境里把一些公共库和程序入口文件区分开，单独打包构建，接着我们采用chunkhash的方式生成哈希值，那么只要我们不改动公共库的代码，就可以保证其哈希值不会受影响
+        </li>
+      </ul>
+      <pre><code class="lang-diff">
 module.exports = {
   entry: {
     main: './src/index.js',
@@ -1514,11 +2057,13 @@ module.exports = {
 };
 
 </code></pre>
-<h4 id="t993.3.3 contenthash">3.3.3 contenthash <a href="#t993.3.3 contenthash"> # </a></h4>
-<ul>
-<li>使用chunkhash存在一个问题，就是当在一个JS文件中引入CSS文件，编译后它们的hash是相同的，而且只要js文件发生改变 ，关联的css文件hash也会改变,这个时候可以使用<code>mini-css-extract-plugin</code>里的<code>contenthash</code>值，保证即使css文件所处的模块里就算其他文件内容改变，只要css文件内容不变，那么不会重复构建</li>
-</ul>
-<pre><code class="lang-diff">module.exports = {
+      <h4 id="t993.3.3 contenthash">3.3.3 contenthash <a href="#t993.3.3 contenthash"> # </a></h4>
+      <ul>
+        <li>使用chunkhash存在一个问题，就是当在一个JS文件中引入CSS文件，编译后它们的hash是相同的，而且只要js文件发生改变
+          ，关联的css文件hash也会改变,这个时候可以使用<code>mini-css-extract-plugin</code>里的<code>contenthash</code>值，保证即使css文件所处的模块里就算其他文件内容改变，只要css文件内容不变，那么不会重复构建
+        </li>
+      </ul>
+      <pre><code class="lang-diff">module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
 <span class="hljs-addition">+      filename: "css/[name].[contenthash].css"</span>
@@ -1526,13 +2071,15 @@ module.exports = {
   ],
 };
 </code></pre>
-<h3 id="t1003.4 压缩JS、CSS和HTML">3.4 压缩JS、CSS和HTML <a href="#t1003.4 压缩JS、CSS和HTML"> # </a></h3>
-<ul>
-<li><a href="https://www.npmjs.com/package/optimize-css-assets-webpack-plugin">optimize-css-assets-webpack-plugin</a>是一个优化和压缩CSS资源的插件</li>
-<li><a href="https://www.npmjs.com/package/terser-webpack-plugin">terser-webpack-plugin</a>是一个优化和压缩JS资源的插件</li>
-</ul>
-<p>webpack.config.js</p>
-<pre><code class="lang-diff">const path = require('path');
+      <h3 id="t1003.4 压缩JS、CSS和HTML">3.4 压缩JS、CSS和HTML <a href="#t1003.4 压缩JS、CSS和HTML"> # </a></h3>
+      <ul>
+        <li><a
+            href="https://www.npmjs.com/package/optimize-css-assets-webpack-plugin">optimize-css-assets-webpack-plugin</a>是一个优化和压缩CSS资源的插件
+        </li>
+        <li><a href="https://www.npmjs.com/package/terser-webpack-plugin">terser-webpack-plugin</a>是一个优化和压缩JS资源的插件</li>
+      </ul>
+      <p>webpack.config.js</p>
+      <pre><code class="lang-diff">const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 <span class="hljs-addition">+const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');</span>
@@ -1636,13 +2183,13 @@ module.exports = {
   ],
 };
 </code></pre>
-<h3 id="t1013.5 图片压缩">3.5 图片压缩 <a href="#t1013.5 图片压缩"> # </a></h3>
-<ul>
-<li><a href="https://www.npmjs.com/package/image-webpack-loader">image-webpack-loader</a>可以帮助我们对图片进行压缩和优化</li>
-</ul>
-<pre><code class="lang-js">npm install image-webpack-loader --save-dev
+      <h3 id="t1013.5 图片压缩">3.5 图片压缩 <a href="#t1013.5 图片压缩"> # </a></h3>
+      <ul>
+        <li><a href="https://www.npmjs.com/package/image-webpack-loader">image-webpack-loader</a>可以帮助我们对图片进行压缩和优化</li>
+      </ul>
+      <pre><code class="lang-js">npm install image-webpack-loader --save-dev
 </code></pre>
-<pre><code class="lang-diff"> {
+      <pre><code class="lang-diff"> {
           test: /\.(png|svg|jpg|gif|jpeg|ico)$/,
           use: [
             'url-loader',
@@ -1671,19 +2218,19 @@ module.exports = {
           ]
         }
 </code></pre>
-<h3 id="t1023.6 px 自动转成rem">3.6 px 自动转成rem <a href="#t1023.6 px 自动转成rem"> # </a></h3>
-<ul>
-<li><a href="https://github.com/amfe/lib-flexible">lib-flexible</a> + rem，实现移动端自适应</li>
-<li><a href="https://www.npmjs.com/package/px2rem-loader">px2rem-loader</a>自动将px转换为rem</li>
-<li><a href="https://github.com/songsiqi/px2rem">px2rem</a></li>
-<li>页面渲染时计算根元素的<code>font-size</code>值</li>
-</ul>
-<h4 id="t1033.6.1 安装">3.6.1 安装 <a href="#t1033.6.1 安装"> # </a></h4>
-<pre><code class="lang-js">cnpm i px2rem-loader lib-flexible -D
+      <h3 id="t1023.6 px 自动转成rem">3.6 px 自动转成rem <a href="#t1023.6 px 自动转成rem"> # </a></h3>
+      <ul>
+        <li><a href="https://github.com/amfe/lib-flexible">lib-flexible</a> + rem，实现移动端自适应</li>
+        <li><a href="https://www.npmjs.com/package/px2rem-loader">px2rem-loader</a>自动将px转换为rem</li>
+        <li><a href="https://github.com/songsiqi/px2rem">px2rem</a></li>
+        <li>页面渲染时计算根元素的<code>font-size</code>值</li>
+      </ul>
+      <h4 id="t1033.6.1 安装">3.6.1 安装 <a href="#t1033.6.1 安装"> # </a></h4>
+      <pre><code class="lang-js">cnpm i px2rem-loader lib-flexible -D
 </code></pre>
-<h4 id="t1043.6.2 index.html">3.6.2 index.html <a href="#t1043.6.2 index.html"> # </a></h4>
-<p>index.html</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      <h4 id="t1043.6.2 index.html">3.6.2 index.html <a href="#t1043.6.2 index.html"> # </a></h4>
+      <p>index.html</p>
+      <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span>
@@ -1702,9 +2249,9 @@ module.exports = {
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"root"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 </code></pre>
-<h4 id="t1053.6.3 reset.css">3.6.3 reset.css <a href="#t1053.6.3 reset.css"> # </a></h4>
-<p>src/reset.css</p>
-<pre><code class="lang-css">*{
+      <h4 id="t1053.6.3 reset.css">3.6.3 reset.css <a href="#t1053.6.3 reset.css"> # </a></h4>
+      <p>src/reset.css</p>
+      <pre><code class="lang-css">*{
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
 }
@@ -1715,8 +2262,8 @@ module.exports = {
     <span class="hljs-attribute">box-sizing</span>: border-box;
 }
 </code></pre>
-<h4 id="t1063.6.4 webpack.config.js">3.6.4 webpack.config.js <a href="#t1063.6.4 webpack.config.js"> # </a></h4>
-<pre><code class="lang-diff"> {
+      <h4 id="t1063.6.4 webpack.config.js">3.6.4 webpack.config.js <a href="#t1063.6.4 webpack.config.js"> # </a></h4>
+      <pre><code class="lang-diff"> {
       test:/\.css$/,
         use:[{
                 MiniCssExtractPlugin.loader,
@@ -1731,34 +2278,44 @@ module.exports = {
 <span class="hljs-addition">+                }]</span>
 <span class="hljs-addition">+            },</span>
 </code></pre>
-<h2 id="t1074. polyfill">4. polyfill <a href="#t1074. polyfill"> # </a></h2>
-<ul>
-<li><code>@babel/preset-env</code>会根据预设的浏览器兼容列表从stage-4选取必须的plugin，也就是说，不引入别的stage-x，@babel/preset-env将只支持到stage-4</li>
-<li>三个概念<ul>
-<li>最新ES 语法：比如，箭头函数</li>
-<li>最新ES API：，比如，Promise</li>
-<li>最新ES 实例方法：比如，String.prototype.includes<h3 id="t1084.1 babel-polyfill">4.1 babel-polyfill <a href="#t1084.1 babel-polyfill"> # </a></h3>
-</li>
-</ul>
-</li>
-<li>Babel默认只转换新的javascript语法，而不转换新的API，比如 Iterator, Generator, Set, Maps, Proxy, Reflect,Symbol,Promise 等全局对象。以及一些在全局对象上的方法(比如 Object.assign)都不会转码。</li>
-<li>比如说，ES6在Array对象上新增了<code>Array.form</code>方法，Babel就不会转码这个方法，如果想让这个方法运行，必须使用 <code>babel-polyfill</code>来转换等</li>
-<li><code>babel-polyfill</code> 它是通过向全局对象和内置对象的prototype上添加方法来实现的。比如运行环境中不支持<code>Array.prototype.find</code>方法，引入<code>polyfill</code>, 我们就可以使用<code>es6</code>方法来编写了，但是缺点就是会造成全局空间污染</li>
-<li><a href="https://www.npmjs.com/package/@babel/preset-env">@babel/@babel/preset-env</a>为每一个环境的预设</li>
-<li>@babel/preset-env默认支持语法转化，需要开启<code>useBuiltIns</code>配置才能转化API和实例方法</li>
-<li><code>useBuiltIns</code>可选值包括："usage" | "entry" | false, 默认为 false，表示不对 polyfills 处理，这个配置是引入 polyfills 的关键</li>
-</ul>
-<h4 id="t1094.1.1 安装">4.1.1 安装 <a href="#t1094.1.1 安装"> # </a></h4>
-<pre><code class="lang-js">npm i @babel/polyfill
+      <h2 id="t1074. polyfill">4. polyfill <a href="#t1074. polyfill"> # </a></h2>
+      <ul>
+        <li>
+          <code>@babel/preset-env</code>会根据预设的浏览器兼容列表从stage-4选取必须的plugin，也就是说，不引入别的stage-x，@babel/preset-env将只支持到stage-4
+        </li>
+        <li>三个概念<ul>
+            <li>最新ES 语法：比如，箭头函数</li>
+            <li>最新ES API：，比如，Promise</li>
+            <li>最新ES 实例方法：比如，String.prototype.includes<h3 id="t1084.1 babel-polyfill">4.1 babel-polyfill <a
+                  href="#t1084.1 babel-polyfill"> # </a></h3>
+            </li>
+          </ul>
+        </li>
+        <li>Babel默认只转换新的javascript语法，而不转换新的API，比如 Iterator, Generator, Set, Maps, Proxy, Reflect,Symbol,Promise
+          等全局对象。以及一些在全局对象上的方法(比如 Object.assign)都不会转码。</li>
+        <li>比如说，ES6在Array对象上新增了<code>Array.form</code>方法，Babel就不会转码这个方法，如果想让这个方法运行，必须使用 <code>babel-polyfill</code>来转换等
+        </li>
+        <li><code>babel-polyfill</code>
+          它是通过向全局对象和内置对象的prototype上添加方法来实现的。比如运行环境中不支持<code>Array.prototype.find</code>方法，引入<code>polyfill</code>,
+          我们就可以使用<code>es6</code>方法来编写了，但是缺点就是会造成全局空间污染</li>
+        <li><a href="https://www.npmjs.com/package/@babel/preset-env">@babel/@babel/preset-env</a>为每一个环境的预设</li>
+        <li>@babel/preset-env默认支持语法转化，需要开启<code>useBuiltIns</code>配置才能转化API和实例方法</li>
+        <li><code>useBuiltIns</code>可选值包括："usage" | "entry" | false, 默认为 false，表示不对 polyfills 处理，这个配置是引入 polyfills 的关键
+        </li>
+      </ul>
+      <h4 id="t1094.1.1 安装">4.1.1 安装 <a href="#t1094.1.1 安装"> # </a></h4>
+      <pre><code class="lang-js">npm i @babel/polyfill
 </code></pre>
-<h4 id="t1104.1.2  &quot;useBuiltIns&quot;: false">4.1.2  "useBuiltIns": false <a href="#t1104.1.2  " usebuiltins":="" false"=""> # </a></h4>
-<ul>
-<li>"useBuiltIns": false  此时不对 polyfill 做操作。如果引入 <code>@babel/polyfill</code>，则无视配置的浏览器兼容，引入所有的 <code>polyfill</code></li>
-<li><code>86.4 KiB</code></li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-string">'@babel/polyfill'</span>;
+      <h4 id="t1104.1.2  &quot;useBuiltIns&quot;: false">4.1.2 "useBuiltIns": false <a href="#t1104.1.2  "
+          usebuiltins":="" false"=""> # </a></h4>
+      <ul>
+        <li>"useBuiltIns": false 此时不对 polyfill 做操作。如果引入 <code>@babel/polyfill</code>，则无视配置的浏览器兼容，引入所有的
+          <code>polyfill</code></li>
+        <li><code>86.4 KiB</code></li>
+      </ul>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-string">'@babel/polyfill'</span>;
 </code></pre>
-<pre><code class="lang-diff"> {
+      <pre><code class="lang-diff"> {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use: {
@@ -1776,26 +2333,30 @@ module.exports = {
                 }
 },
 </code></pre>
-<h4 id="t1114.1.3  &quot;useBuiltIns&quot;: &quot;entry&quot;">4.1.3  "useBuiltIns": "entry" <a href="#t1114.1.3  " usebuiltins":="" "entry""=""> # </a></h4>
+      <h4 id="t1114.1.3  &quot;useBuiltIns&quot;: &quot;entry&quot;">4.1.3 "useBuiltIns": "entry" <a href="#t1114.1.3  "
+          usebuiltins":="" "entry""=""> # </a></h4>
 <ul>
 <li>在项目入口引入一次（多次引入会报错）</li>
-<li>"useBuiltIns": "entry" 根据配置的浏览器兼容，引入浏览器不兼容的 polyfill。需要在入口文件手动添加 <code>import '@babel/polyfill'</code>，会自动根据 browserslist 替换成浏览器不兼容的所有 polyfill</li>
-<li>这里需要指定 core-js 的版本, 如果 "corejs": 3, 则 import '@babel/polyfill' 需要改成 <code>import 'core-js/stable';import 'regenerator-runtime/runtime';</code></li>
-<li><ul>
-<li><code>corejs</code>默认是2,配置2的话需要单独安装<code>core-js@3</code></li>
-</ul>
-</li>
-<li><code>80.6 KiB</code></li>
-<li><code>10.7 KiB</code></li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-string">'@babel/polyfill'</span>;
+<li>" useBuiltIns": "entry" 根据配置的浏览器兼容，引入浏览器不兼容的 polyfill。需要在入口文件手动添加 <code>import '@babel/polyfill'</code>，会自动根据
+          browserslist 替换成浏览器不兼容的所有 polyfill</li>
+          <li>这里需要指定 core-js 的版本, 如果 "corejs": 3, 则 import '@babel/polyfill' 需要改成
+            <code>import 'core-js/stable';import 'regenerator-runtime/runtime';</code></li>
+          <li>
+            <ul>
+              <li><code>corejs</code>默认是2,配置2的话需要单独安装<code>core-js@3</code></li>
+            </ul>
+          </li>
+          <li><code>80.6 KiB</code></li>
+          <li><code>10.7 KiB</code></li>
+          </ul>
+          <pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-string">'@babel/polyfill'</span>;
 </code></pre>
-<pre><code class="lang-js">npm i core-js@<span class="hljs-number">3</span>
+          <pre><code class="lang-js">npm i core-js@<span class="hljs-number">3</span>
 </code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-string">'core-js/stable'</span>;
+          <pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-string">'core-js/stable'</span>;
 <span class="hljs-keyword">import</span> <span class="hljs-string">'regenerator-runtime/runtime'</span>;
 </code></pre>
-<pre><code class="lang-diff"> {
+          <pre><code class="lang-diff"> {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use: {
@@ -1814,7 +2375,7 @@ module.exports = {
                 }
 },
 </code></pre>
-<pre><code class="lang-json">{
+          <pre><code class="lang-json">{
     <span class="hljs-attr">"browserslist"</span>: {
     <span class="hljs-attr">"development"</span>: [
       <span class="hljs-string">"last 1 chrome version"</span>,
@@ -1827,18 +2388,20 @@ module.exports = {
   },
 }
 </code></pre>
-<h4 id="t1124.1.4 &quot;useBuiltIns&quot;: &quot;usage&quot;">4.1.4 "useBuiltIns": "usage" <a href="#t1124.1.4 " usebuiltins":="" "usage""=""> # </a></h4>
+          <h4 id="t1124.1.4 &quot;useBuiltIns&quot;: &quot;usage&quot;">4.1.4 "useBuiltIns": "usage" <a
+              href="#t1124.1.4 " usebuiltins":="" "usage""=""> # </a></h4>
 <ul>
-<li>"useBuiltIns": "usage" <code>usage</code> 会根据配置的浏览器兼容，以及你代码中用到的 API 来进行 polyfill，实现了按需添加</li>
-<li>当设置为usage时，polyfills会自动按需添加，不再需要手工引入<code>@babel/polyfill</code></li>
-<li>usage 的行为类似 <code>babel-transform-runtime</code>，不会造成全局污染,因此也会不会对类似 <code>Array.prototype.includes()</code> 进行 polyfill</li>
-<li><code>0 bytes</code></li>
-<li><code>8.98 KiB</code></li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-string">'@babel/polyfill'</span>;
+<li>" useBuiltIns": "usage" <code>usage</code> 会根据配置的浏览器兼容，以及你代码中用到的 API 来进行 polyfill，实现了按需添加</li>
+              <li>当设置为usage时，polyfills会自动按需添加，不再需要手工引入<code>@babel/polyfill</code></li>
+              <li>usage 的行为类似 <code>babel-transform-runtime</code>，不会造成全局污染,因此也会不会对类似
+                <code>Array.prototype.includes()</code> 进行 polyfill</li>
+              <li><code>0 bytes</code></li>
+              <li><code>8.98 KiB</code></li>
+              </ul>
+              <pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-string">'@babel/polyfill'</span>;
 <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">Array</span>.from([]));
 </code></pre>
-<pre><code class="lang-diff"> {
+              <pre><code class="lang-diff"> {
     test: /\.jsx?$/,
     exclude: /node_modules/,
     use: {
@@ -1856,39 +2419,46 @@ module.exports = {
     }
 },
 </code></pre>
-<h3 id="t1134.2 babel-runtime">4.2 babel-runtime <a href="#t1134.2 babel-runtime"> # </a></h3>
-<ul>
-<li>Babel为了解决全局空间污染的问题，提供了单独的包<a href="https://babeljs.io/docs/en/babel-runtime">babel-runtime</a>用以提供编译模块的工具函数</li>
-<li>简单说 <code>babel-runtime</code> 更像是一种按需加载的实现，比如你哪里需要使用 Promise，只要在这个文件头部<code>import Promise from 'babel-runtime/core-js/promise'</code>就行了</li>
-</ul>
-<pre><code class="lang-js">npm i babel-runtime -D
+              <h3 id="t1134.2 babel-runtime">4.2 babel-runtime <a href="#t1134.2 babel-runtime"> # </a></h3>
+              <ul>
+                <li>Babel为了解决全局空间污染的问题，提供了单独的包<a
+                    href="https://babeljs.io/docs/en/babel-runtime">babel-runtime</a>用以提供编译模块的工具函数</li>
+                <li>简单说 <code>babel-runtime</code> 更像是一种按需加载的实现，比如你哪里需要使用
+                  Promise，只要在这个文件头部<code>import Promise from 'babel-runtime/core-js/promise'</code>就行了</li>
+              </ul>
+              <pre><code class="lang-js">npm i babel-runtime -D
 </code></pre>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-built_in">Promise</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'babel-runtime/core-js/promise'</span>;
+              <pre><code class="lang-js"><span class="hljs-keyword">import</span> <span class="hljs-built_in">Promise</span> <span class="hljs-keyword">from</span> <span class="hljs-string">'babel-runtime/core-js/promise'</span>;
 <span class="hljs-keyword">const</span> p = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span> {
 
 });
 <span class="hljs-built_in">console</span>.log(p);
 </code></pre>
-<h3 id="t1144.3 babel-plugin-transform-runtime">4.3 babel-plugin-transform-runtime <a href="#t1144.3 babel-plugin-transform-runtime"> # </a></h3>
-<ul>
-<li>@babel/plugin-transform-runtime插件是为了解决<ul>
-<li>多个文件重复引用相同helpers（帮助函数）-&gt; 提取运行时</li>
-<li>新API方法全局污染 -&gt; 局部引入</li>
-</ul>
-</li>
-<li>启用插件<code>babel-plugin-transform-runtime</code>后，Babel就会使用<code>babel-runtime</code>下的工具函数</li>
-<li><code>babel-plugin-transform-runtime</code>插件能够将这些工具函数的代码转换成<code>require</code>语句，指向为对<code>babel-runtime</code>的引用</li>
-<li><code>babel-plugin-transform-runtime</code> 就是可以在我们使用新 API 时自动 <code>import babel-runtime</code> 里面的 <code>polyfill</code><ul>
-<li>当我们使用 <code>async/await</code> 时，自动引入 <code>babel-runtime/regenerator</code></li>
-<li>当我们使用 ES6 的静态事件或内置对象时，自动引入 <code>babel-runtime/core-js</code></li>
-<li>移除内联<code>babel helpers</code>并替换使用<code>babel-runtime/helpers</code> 来替换</li>
-</ul>
-</li>
-<li><code>corejs</code>默认是3,配置2的话需要单独安装<code>@babel/runtime-corejs2</code></li>
-</ul>
-<pre><code class="lang-js">npm i @babel/runtime-corejs2 -D
+              <h3 id="t1144.3 babel-plugin-transform-runtime">4.3 babel-plugin-transform-runtime <a
+                  href="#t1144.3 babel-plugin-transform-runtime"> # </a></h3>
+              <ul>
+                <li>@babel/plugin-transform-runtime插件是为了解决<ul>
+                    <li>多个文件重复引用相同helpers（帮助函数）-&gt; 提取运行时</li>
+                    <li>新API方法全局污染 -&gt; 局部引入</li>
+                  </ul>
+                </li>
+                <li>启用插件<code>babel-plugin-transform-runtime</code>后，Babel就会使用<code>babel-runtime</code>下的工具函数</li>
+                <li>
+                  <code>babel-plugin-transform-runtime</code>插件能够将这些工具函数的代码转换成<code>require</code>语句，指向为对<code>babel-runtime</code>的引用
+                </li>
+                <li><code>babel-plugin-transform-runtime</code> 就是可以在我们使用新 API 时自动 <code>import babel-runtime</code> 里面的
+                  <code>polyfill</code>
+                  <ul>
+                    <li>当我们使用 <code>async/await</code> 时，自动引入 <code>babel-runtime/regenerator</code></li>
+                    <li>当我们使用 ES6 的静态事件或内置对象时，自动引入 <code>babel-runtime/core-js</code></li>
+                    <li>移除内联<code>babel helpers</code>并替换使用<code>babel-runtime/helpers</code> 来替换</li>
+                  </ul>
+                </li>
+                <li><code>corejs</code>默认是3,配置2的话需要单独安装<code>@babel/runtime-corejs2</code></li>
+              </ul>
+              <pre><code class="lang-js">npm i @babel/runtime-corejs2 -D
 </code></pre>
-<pre><code class="lang-diff">      {
+              <pre><code class="lang-diff">      {
         test: /\.jsx?$/,
         use: {
           loader: 'babel-loader',
@@ -1910,16 +2480,16 @@ module.exports = {
         },
       },
 </code></pre>
-<p>corejs: 2
-corejs 2=&gt;false
-131 KiB =&gt; 224 bytes</p>
-<pre><code class="lang-js"><span class="hljs-keyword">const</span> p = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span> {});
+              <p>corejs: 2
+                corejs 2=&gt;false
+                131 KiB =&gt; 224 bytes</p>
+              <pre><code class="lang-js"><span class="hljs-keyword">const</span> p = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span> {});
 <span class="hljs-built_in">console</span>.log(p);
 
 </code></pre>
-<p>helpers true=&gt;false
-160 KiB=&gt;150 KiB</p>
-<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
+              <p>helpers true=&gt;false
+                160 KiB=&gt;150 KiB</p>
+              <pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{
 
 }
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
@@ -1927,25 +2497,25 @@ corejs 2=&gt;false
 }
 <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">new</span> B());
 </code></pre>
-<p>regenerator false=&gt;true
-B490 bytes-&gt;28.6 Ki</p>
-<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">gen</span>(<span class="hljs-params"></span>) </span>{
+              <p>regenerator false=&gt;true
+                B490 bytes-&gt;28.6 Ki</p>
+              <pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">gen</span>(<span class="hljs-params"></span>) </span>{
 
 }
 <span class="hljs-built_in">console</span>.log(gen());
 </code></pre>
-<h3 id="t1154.4 最佳实践">4.4 最佳实践 <a href="#t1154.4 最佳实践"> # </a></h3>
-<ul>
-<li><code>babel-runtime</code>适合在组件和类库项目中使用，而<code>babel-polyfill</code>适合在业务项目中使用。</li>
-</ul>
-<h3 id="t1164.5 polyfill-service">4.5 polyfill-service <a href="#t1164.5 polyfill-service"> # </a></h3>
-<ul>
-<li><a href="https://polyfill.io/v3/">polyfill.io</a>自动化的 JavaScript Polyfill 服务</li>
-<li><a href="https://polyfill.io/v3/">polyfill.io</a>通过分析请求头信息中的 UserAgent 实现自动加载浏览器所需的 polyfills</li>
-</ul>
-<pre><code class="lang-js">&lt;script src="https://polyfill.io/v3/polyfill.min.js"&gt;&lt;/script&gt;
+              <h3 id="t1154.4 最佳实践">4.4 最佳实践 <a href="#t1154.4 最佳实践"> # </a></h3>
+              <ul>
+                <li><code>babel-runtime</code>适合在组件和类库项目中使用，而<code>babel-polyfill</code>适合在业务项目中使用。</li>
+              </ul>
+              <h3 id="t1164.5 polyfill-service">4.5 polyfill-service <a href="#t1164.5 polyfill-service"> # </a></h3>
+              <ul>
+                <li><a href="https://polyfill.io/v3/">polyfill.io</a>自动化的 JavaScript Polyfill 服务</li>
+                <li><a href="https://polyfill.io/v3/">polyfill.io</a>通过分析请求头信息中的 UserAgent 实现自动加载浏览器所需的 polyfills</li>
+              </ul>
+              <pre><code class="lang-js">&lt;script src="https://polyfill.io/v3/polyfill.min.js"&gt;&lt;/script&gt;
 </code></pre>
 
     </div>
-</div>
+  </div>
 </body>

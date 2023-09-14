@@ -2,10 +2,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        .page-toc > ul .red {
+        .page-toc>ul .red {
             background: #f3f3f3;
             z-index: 1;
             border-left: 3px solid #009a61;
@@ -15,112 +15,476 @@
         }
     </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li class="active"><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
-    <div class="page-toc">
-        <ul><li><a href="#t01. 屏幕尺寸">1. 屏幕尺寸</a></li><li><a href="#t12.像素">2.像素</a><ul><li><a href="#t22.1 屏幕分辨率（物理像素）">2.1 屏幕分辨率（物理像素）</a></li><li><a href="#t32.2 像素密度(pixels per inch,PPI)">2.2 像素密度(pixels per inch,PPI)</a></li><li><a href="#t42.3 位图像素">2.3 位图像素</a></li><li><a href="#t52.4 设备独立像素">2.4 设备独立像素</a></li><li><a href="#t62.5 像素比">2.5 像素比</a></li></ul></li><li><a href="#t73.视口">3.视口</a><ul><li><a href="#t83.1 布局视口（layout viewport）">3.1 布局视口（layout viewport）</a></li><li><a href="#t93.2 视觉视口（visual viewport）">3.2 视觉视口（visual viewport）</a></li><li><a href="#t103.3 理想视口(ideal viewport)">3.3 理想视口(ideal viewport)</a></li><li><a href="#t113.4 视口设置">3.4 视口设置</a></li><li><a href="#t123.5 缩放">3.5 缩放</a></li></ul></li><li><a href="#t134. REM">4. REM</a></li><li><a href="#t145. vw+rem">5. vw+rem</a></li><li><a href="#t156. px 自动转成rem">6. px 自动转成rem</a><ul><li><a href="#t166.1 安装">6.1 安装</a></li><li><a href="#t176.2 index.html">6.2 index.html</a></li><li><a href="#t186.3 reset.css">6.3 reset.css</a></li><li><a href="#t196.4 webpack.config.js">6.4 webpack.config.js</a></li></ul></li><li><a href="#t20概念">概念</a><ul><li><a href="#t21尺寸">尺寸</a></li><li><a href="#t22像素">像素</a></li><li><a href="#t23单位">单位</a></li><li><a href="#t24视口(viewport)">视口(viewport)</a></li><li><a href="#t25布局">布局</a></li></ul></li></ul>
+<body class="modal-open" style="padding-right: 15px;">
+    <div class="nav">
+        <div class="logo">
+
+            珠峰架构师成长计划
+
+        </div>
+        <ul>
+            <li><a href="../index.html">0.Async</a></li>
+            <li><a href="../html/0.editor.html">0.editor</a></li>
+            <li><a href="../html/0.module.html">0.module</a></li>
+            <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+            <li><a href="../html/2.Promise.html">2.Promise</a></li>
+            <li><a href="../html/3.Node.html">3.Node</a></li>
+            <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+            <li><a href="../html/5.REPL.html">5.REPL</a></li>
+            <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+            <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+            <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+            <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+            <li><a href="../html/10.fs.html">10.fs</a></li>
+            <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+            <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+            <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+            <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+            <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+            <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+            <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+            <li><a href="../html/13.tcp.html">13.tcp</a></li>
+            <li><a href="../html/14.http-1.html">14.http-1</a></li>
+            <li><a href="../html/14.http-2.html">14.http-2</a></li>
+            <li><a href="../html/15.compress.html">15.compress</a></li>
+            <li><a href="../html/16.crypto.html">16.crypto</a></li>
+            <li><a href="../html/17.process.html">17.process</a></li>
+            <li><a href="../html/18.yargs.html">18.yargs</a></li>
+            <li><a href="../html/19.cache.html">19.cache</a></li>
+            <li><a href="../html/20.action.html">20.action</a></li>
+            <li><a href="../html/21.https.html">21.https</a></li>
+            <li><a href="../html/22.cookie.html">22.cookie</a></li>
+            <li><a href="../html/23.session.html">23.session</a></li>
+            <li><a href="../html/24.express-1.html">24.express-1</a></li>
+            <li><a href="../html/24.express-2.html">24.express-2</a></li>
+            <li><a href="../html/24.express-3.html">24.express-3</a></li>
+            <li><a href="../html/24.express-4.html">24.express-4</a></li>
+            <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+            <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+            <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+            <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+            <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+            <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+            <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+            <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+            <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+            <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+            <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+            <li><a href="../html/28.redux.html">28.redux</a></li>
+            <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+            <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+            <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+            <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+            <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+            <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+            <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+            <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+            <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+            <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+            <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+            <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+            <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+            <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+            <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+            <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+            <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+            <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+            <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+            <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+            <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+            <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+            <li><a href="../html/31.dva.html">31.dva</a></li>
+            <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+            <li><a href="../html/33.redis.html">33.redis</a></li>
+            <li><a href="../html/34.unittest.html">34.unittest</a></li>
+            <li><a href="../html/35.jwt.html">35.jwt</a></li>
+            <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+            <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+            <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+            <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+            <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+            <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+            <li><a href="../html/38.chat.html">38.chat</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/38.chat2.html">38.chat2</a></li>
+            <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+            <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+            <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+            <li><a href="../html/40.deploy.html">40.deploy</a></li>
+            <li><a href="../html/41.safe.html">41.safe</a></li>
+            <li><a href="../html/42.test.html">42.test</a></li>
+            <li><a href="../html/43.nginx.html">43.nginx</a></li>
+            <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+            <li><a href="../html/45.docker.html">45.docker</a></li>
+            <li><a href="../html/46.elastic.html">46.elastic</a></li>
+            <li><a href="../html/47.oauth.html">47.oauth</a></li>
+            <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/52.UML.html">52.UML</a></li>
+            <li><a href="../html/53.design.html">53.design</a></li>
+            <li><a href="../html/index.html">index</a></li>
+            <li><a href="../html/54.linux.html">54.linux</a></li>
+            <li><a href="../html/57.ts.html">57.ts</a></li>
+            <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+            <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+            <li><a href="../html/59.ketang.html">59.ketang</a></li>
+            <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+            <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+            <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+            <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+            <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+            <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+            <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+            <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+            <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+            <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+            <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+            <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+            <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+            <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+            <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+            <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+            <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+            <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+            <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+            <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+            <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+            <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+            <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+            <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+            <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+            <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+            <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+            <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+            <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+            <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+            <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+            <li><a href="../html/64.1.router.html">64.1.router</a></li>
+            <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+            <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+            <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+            <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+            <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+            <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+            <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+            <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+            <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+            <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+            <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+            <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+            <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+            <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+            <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+            <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+            <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+            <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+            <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+            <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+            <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+            <li><a href="../html/67-1-network.html">67-1-network</a></li>
+            <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+            <li><a href="../html/7.npm2.html">7.npm2</a></li>
+            <li><a href="../html/69-hooks.html">69-hooks</a></li>
+            <li><a href="../html/70-deploy.html">70-deploy</a></li>
+            <li><a href="../html/71-hmr.html">71-hmr</a></li>
+            <li><a href="../html/72.deploy.html">72.deploy</a></li>
+            <li><a href="../html/73.import.html">73.import</a></li>
+            <li class="active"><a href="../html/74.mobile.html">74.mobile</a></li>
+            <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+            <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+            <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+            <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+            <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+            <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+            <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+            <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+            <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+            <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+            <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+            <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+            <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+            <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+            <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+            <li><a href="../html/79.grammar.html">79.grammar</a></li>
+            <li><a href="../html/80.tree.html">80.tree</a></li>
+            <li><a href="../html/81.axios.html">81.axios</a></li>
+            <li><a href="../html/82.1.react.html">82.1.react</a></li>
+            <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+            <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+            <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+            <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+            <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+            <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+            <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+            <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+            <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+            <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+            <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+            <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+            <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+            <li><a href="../html/83.upload.html">83.upload</a></li>
+            <li><a href="../html/84.graphql.html">84.graphql</a></li>
+            <li><a href="../html/85.antpro.html">85.antpro</a></li>
+            <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+            <li><a href="../html/86.2.design.html">86.2.design</a></li>
+            <li><a href="../html/87.postcss.html">87.postcss</a></li>
+            <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+            <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+            <li><a href="../html/90.react-test.html">90.react-test</a></li>
+            <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+            <li><a href="../html/92.rbac.html">92.rbac</a></li>
+            <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+            <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+            <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+            <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+            <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+            <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+            <li><a href="../html/94.6.https.html">94.6.https</a></li>
+            <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+            <li><a href="../html/95.1. react.html">95.1. react</a></li>
+            <li><a href="../html/95.2.react.html">95.2.react</a></li>
+            <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+            <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+            <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+            <li><a href="../html/97.serverless.html">97.serverless</a></li>
+            <li><a href="../html/98.websocket.html">98.websocket</a></li>
+            <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+            <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+            <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+            <li><a href="../html/102.java.html">102.java</a></li>
+            <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+            <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+            <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+            <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+            <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+            <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+            <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+            <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+            <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+            <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+            <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+            <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+            <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+            <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+            <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+            <li><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+            <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+            <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+            <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+            <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+            <li><a href="../html/106.1.react.html">106.1.react</a></li>
+            <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+            <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+            <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+            <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+            <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+            <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+            <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+            <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+            <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+            <li><a href="../html/107.fiber.html">107.fiber</a></li>
+            <li><a href="../html/108.http.html">108.http</a></li>
+            <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+            <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+            <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+            <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+            <li><a href="../html/111.xstate.html">111.xstate</a></li>
+            <li><a href="../html/112.Form.html">112.Form</a></li>
+            <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+            <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+            <li><a href="../html/115.immer.html">115.immer</a></li>
+            <li><a href="../html/116.pro5.html">116.pro5</a></li>
+            <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+            <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+            <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+            <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+            <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+            <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+            <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+            <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+            <li><a href="../html/124.next.js.html">124.next.js</a></li>
+            <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+            <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+            <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+            <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+            <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+            <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+            <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+            <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+            <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+            <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+            <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+            <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+            <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+            <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+            <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+            <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+            <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+            <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+            <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+            <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+            <li><a href="../html/127.frontend.html">127.frontend</a></li>
+            <li><a href="../html/128.rollup.html">128.rollup</a></li>
+            <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+            <li><a href="../html/130.health.html">130.health</a></li>
+            <li><a href="../html/131.hooks.html">131.hooks</a></li>
+            <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+            <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+            <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+            <li><a href="../html/134.react18.html">134.react18</a></li>
+            <li><a href="../html/135.function.html">135.function</a></li>
+            <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+        </ul>
     </div>
-    <div class="content markdown-body">
-        <h2 id="t01. 屏幕尺寸">1. 屏幕尺寸 <a href="#t01. 屏幕尺寸"> # </a></h2>
-<ul>
-<li>指屏幕对角线的长度，单位是英寸，1英寸=2.54cm</li>
-</ul>
-<p><img src="http://img.zhufengpeixun.cn/allphones.png" alt="allphones"></p>
-<h2 id="t12.像素">2.像素 <a href="#t12.像素"> # </a></h2>
-<h3 id="t22.1 屏幕分辨率（物理像素）">2.1 屏幕分辨率（物理像素） <a href="#t22.1 屏幕分辨率（物理像素）"> # </a></h3>
-<ul>
-<li>指在横纵方向上的像素点，单位是px，1px=1个像素点</li>
-<li>这里的1像素指的是设备的1个物理像素点。如第一点中的图，iphone6的分辨率为750*1334px，即是横向上有750个物理像素点，纵向上有1334个物理像素点。</li>
-</ul>
-<h3 id="t32.2 像素密度(pixels per inch,PPI)">2.2 像素密度(pixels per inch,PPI) <a href="#t32.2 像素密度(pixels per inch,PPI)"> # </a></h3>
-<ul>
-<li>　屏幕上每英寸可以显示的像素点的数量，单位ppi；屏幕像素密度与屏幕尺寸和屏幕分辨率有关。以上图的iphone6的为例： 开方(750<em>750+ 1334</em>1334)/ 4.7英寸 = 326 ppi</li>
-</ul>
-<h3 id="t42.3 位图像素">2.3 位图像素 <a href="#t42.3 位图像素"> # </a></h3>
-<ul>
-<li>1个位图像素对应1个物理像素，图片才能得要完美清晰的展现(不失真，不锐化)</li>
-<li>要显示宽度为30px<em>18px（CSS像素）的照片，在DPR为2的情况下，对应的图片需要为60px</em>36px；DPR为3的情况下，对应的图片需要为90px*54px；基于此种情况，移动端的图片一般需要设计2套，以适应不同的像素比</li>
-</ul>
-<h3 id="t52.4 设备独立像素">2.4 设备独立像素 <a href="#t52.4 设备独立像素"> # </a></h3>
-<ul>
-<li>设备独立像素是CSS像素和物理像素之间转换的很重要的关键点</li>
-<li>在设置了<code>width=device-width</code>时，那么设备独立像素就等于CSS像素</li>
-</ul>
-<h3 id="t62.5 像素比">2.5 像素比 <a href="#t62.5 像素比"> # </a></h3>
-<ul>
-<li>定义：设备物理像素比上设备独立像素</li>
-<li>公式：devicePixelRatio = 设备物理像素(分辨率) / 设备独立像素(近似CSS像素)</li>
-<li>以iphone6plus为例：DPR = 1080 / 414 ≈ 3</li>
-<li>通过JS获取：<code>window.devicePixelRatio</code></li>
-<li>通过CSS获取：<code>@media only screen and (-webkit-min-device-pixel-ratio:2){}</code></li>
-</ul>
-<p><img src="http://img.zhufengpeixun.cn/logic.jpg" alt="logic">
-<img src="http://img.zhufengpeixun.cn/point.jpg" alt="point"></p>
-<h2 id="t73.视口">3.视口 <a href="#t73.视口"> # </a></h2>
-<h3 id="t83.1 布局视口（layout viewport）">3.1 布局视口（layout viewport） <a href="#t83.1 布局视口（layout viewport）"> # </a></h3>
-<ul>
-<li>在移动设备上，为了容纳为电脑浏览器设计的网站，默认的布局视口的宽度远大于移动设备屏幕的宽度</li>
-<li>以下是常见的移动端浏览器的布局视口值，单位为px（CSS像素），该值是不可变的（布局视口不变，和性能有关系，如果布局视口变化了，那么就会触发重汇重排）</li>
-<li>可以通过<code>document.documentElement.clientWidth</code>来获取布局视口值</li>
-<li>当网页的宽度大于以上的值时，就会出现横向滚动条。</li>
-<li>以iphone5为例，宽度占满的时候，需要640个物理像素，换而言之，需要980px的CSS像素，其对应的像素比为：640/980</li>
-<li>另一种情况，设置了<code>width=device-width</code>的情况下，即是布局视口的宽度等于设备独立像素，这种情况下，CSS像素就等于设备独立像素了</li>
-<li></li>
-</ul>
-<p><img src="http://img.zhufengpeixun.cn/layout.png" alt="layout"></p>
-<h3 id="t93.2 视觉视口（visual viewport）">3.2 视觉视口（visual viewport） <a href="#t93.2 视觉视口（visual viewport）"> # </a></h3>
-<ul>
-<li>用户看到的网站展示区域，一般视觉视口和设备宽度一致</li>
-<li>并且它的CSS像素的数量会随着用户缩放而改变，单位是px（CSS像素）；该值是可变的（缩放情况下）。可以通过<code>window.innerWidth</code>获取,iphone6就是375px。</li>
-</ul>
-<h3 id="t103.3 理想视口(ideal viewport)">3.3 理想视口(ideal viewport) <a href="#t103.3 理想视口(ideal viewport)"> # </a></h3>
-<ul>
-<li>布局视口的默认宽度并不是一个理想的宽度，于是 Apple 和其他浏览器厂商引入了理想视口的概念，它对设备而言是最理想的布局视口尺寸。显示在理想视口中的网站具有最理想的宽度，用户无需进行缩放</li>
-<li>理想视口的值其实就是屏幕分辨率的值，它对应的像素叫做设备逻辑像素（device independent pixel, dip）</li>
-<li>dip 和设备的物理像素无关，一个 dip 在任意像素密度的设备屏幕上都占据相同的空间。如果用户没有进行缩放，那么一个 CSS 像素就等于一个 dip</li>
-<li><code>&lt;meta name="viewport" content="width=device-width"&gt;</code>可以使布局视口与理想视口的宽度一致</li>
-<li>刚好符合手机屏幕尺寸显示完美页面的区域称为理想视口<code>ideal layout</code></li>
-</ul>
-<h3 id="t113.4 视口设置">3.4 视口设置 <a href="#t113.4 视口设置"> # </a></h3>
-<p><code>&lt;meta name="viewport"
+
+
+    <div class="warpper">
+        <div class="page-toc">
+            <ul>
+                <li><a href="#t01. 屏幕尺寸">1. 屏幕尺寸</a></li>
+                <li><a href="#t12.像素">2.像素</a>
+                    <ul>
+                        <li><a href="#t22.1 屏幕分辨率（物理像素）">2.1 屏幕分辨率（物理像素）</a></li>
+                        <li><a href="#t32.2 像素密度(pixels per inch,PPI)">2.2 像素密度(pixels per inch,PPI)</a></li>
+                        <li><a href="#t42.3 位图像素">2.3 位图像素</a></li>
+                        <li><a href="#t52.4 设备独立像素">2.4 设备独立像素</a></li>
+                        <li><a href="#t62.5 像素比">2.5 像素比</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t73.视口">3.视口</a>
+                    <ul>
+                        <li><a href="#t83.1 布局视口（layout viewport）">3.1 布局视口（layout viewport）</a></li>
+                        <li><a href="#t93.2 视觉视口（visual viewport）">3.2 视觉视口（visual viewport）</a></li>
+                        <li><a href="#t103.3 理想视口(ideal viewport)">3.3 理想视口(ideal viewport)</a></li>
+                        <li><a href="#t113.4 视口设置">3.4 视口设置</a></li>
+                        <li><a href="#t123.5 缩放">3.5 缩放</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t134. REM">4. REM</a></li>
+                <li><a href="#t145. vw+rem">5. vw+rem</a></li>
+                <li><a href="#t156. px 自动转成rem">6. px 自动转成rem</a>
+                    <ul>
+                        <li><a href="#t166.1 安装">6.1 安装</a></li>
+                        <li><a href="#t176.2 index.html">6.2 index.html</a></li>
+                        <li><a href="#t186.3 reset.css">6.3 reset.css</a></li>
+                        <li><a href="#t196.4 webpack.config.js">6.4 webpack.config.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#t20概念">概念</a>
+                    <ul>
+                        <li><a href="#t21尺寸">尺寸</a></li>
+                        <li><a href="#t22像素">像素</a></li>
+                        <li><a href="#t23单位">单位</a></li>
+                        <li><a href="#t24视口(viewport)">视口(viewport)</a></li>
+                        <li><a href="#t25布局">布局</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content markdown-body">
+            <h2 id="t01. 屏幕尺寸">1. 屏幕尺寸 <a href="#t01. 屏幕尺寸"> # </a></h2>
+            <ul>
+                <li>指屏幕对角线的长度，单位是英寸，1英寸=2.54cm</li>
+            </ul>
+            <p><img src="http://img.zhufengpeixun.cn/allphones.png" alt="allphones"></p>
+            <h2 id="t12.像素">2.像素 <a href="#t12.像素"> # </a></h2>
+            <h3 id="t22.1 屏幕分辨率（物理像素）">2.1 屏幕分辨率（物理像素） <a href="#t22.1 屏幕分辨率（物理像素）"> # </a></h3>
+            <ul>
+                <li>指在横纵方向上的像素点，单位是px，1px=1个像素点</li>
+                <li>这里的1像素指的是设备的1个物理像素点。如第一点中的图，iphone6的分辨率为750*1334px，即是横向上有750个物理像素点，纵向上有1334个物理像素点。</li>
+            </ul>
+            <h3 id="t32.2 像素密度(pixels per inch,PPI)">2.2 像素密度(pixels per inch,PPI) <a
+                    href="#t32.2 像素密度(pixels per inch,PPI)"> # </a></h3>
+            <ul>
+                <li>　屏幕上每英寸可以显示的像素点的数量，单位ppi；屏幕像素密度与屏幕尺寸和屏幕分辨率有关。以上图的iphone6的为例： 开方(750<em>750+ 1334</em>1334)/ 4.7英寸 =
+                    326 ppi</li>
+            </ul>
+            <h3 id="t42.3 位图像素">2.3 位图像素 <a href="#t42.3 位图像素"> # </a></h3>
+            <ul>
+                <li>1个位图像素对应1个物理像素，图片才能得要完美清晰的展现(不失真，不锐化)</li>
+                <li>要显示宽度为30px<em>18px（CSS像素）的照片，在DPR为2的情况下，对应的图片需要为60px</em>36px；DPR为3的情况下，对应的图片需要为90px*54px；基于此种情况，移动端的图片一般需要设计2套，以适应不同的像素比
+                </li>
+            </ul>
+            <h3 id="t52.4 设备独立像素">2.4 设备独立像素 <a href="#t52.4 设备独立像素"> # </a></h3>
+            <ul>
+                <li>设备独立像素是CSS像素和物理像素之间转换的很重要的关键点</li>
+                <li>在设置了<code>width=device-width</code>时，那么设备独立像素就等于CSS像素</li>
+            </ul>
+            <h3 id="t62.5 像素比">2.5 像素比 <a href="#t62.5 像素比"> # </a></h3>
+            <ul>
+                <li>定义：设备物理像素比上设备独立像素</li>
+                <li>公式：devicePixelRatio = 设备物理像素(分辨率) / 设备独立像素(近似CSS像素)</li>
+                <li>以iphone6plus为例：DPR = 1080 / 414 ≈ 3</li>
+                <li>通过JS获取：<code>window.devicePixelRatio</code></li>
+                <li>通过CSS获取：<code>@media only screen and (-webkit-min-device-pixel-ratio:2){}</code></li>
+            </ul>
+            <p><img src="http://img.zhufengpeixun.cn/logic.jpg" alt="logic">
+                <img src="http://img.zhufengpeixun.cn/point.jpg" alt="point">
+            </p>
+            <h2 id="t73.视口">3.视口 <a href="#t73.视口"> # </a></h2>
+            <h3 id="t83.1 布局视口（layout viewport）">3.1 布局视口（layout viewport） <a href="#t83.1 布局视口（layout viewport）"> #
+                </a></h3>
+            <ul>
+                <li>在移动设备上，为了容纳为电脑浏览器设计的网站，默认的布局视口的宽度远大于移动设备屏幕的宽度</li>
+                <li>以下是常见的移动端浏览器的布局视口值，单位为px（CSS像素），该值是不可变的（布局视口不变，和性能有关系，如果布局视口变化了，那么就会触发重汇重排）</li>
+                <li>可以通过<code>document.documentElement.clientWidth</code>来获取布局视口值</li>
+                <li>当网页的宽度大于以上的值时，就会出现横向滚动条。</li>
+                <li>以iphone5为例，宽度占满的时候，需要640个物理像素，换而言之，需要980px的CSS像素，其对应的像素比为：640/980</li>
+                <li>另一种情况，设置了<code>width=device-width</code>的情况下，即是布局视口的宽度等于设备独立像素，这种情况下，CSS像素就等于设备独立像素了</li>
+                <li></li>
+            </ul>
+            <p><img src="http://img.zhufengpeixun.cn/layout.png" alt="layout"></p>
+            <h3 id="t93.2 视觉视口（visual viewport）">3.2 视觉视口（visual viewport） <a href="#t93.2 视觉视口（visual viewport）"> #
+                </a></h3>
+            <ul>
+                <li>用户看到的网站展示区域，一般视觉视口和设备宽度一致</li>
+                <li>并且它的CSS像素的数量会随着用户缩放而改变，单位是px（CSS像素）；该值是可变的（缩放情况下）。可以通过<code>window.innerWidth</code>获取,iphone6就是375px。
+                </li>
+            </ul>
+            <h3 id="t103.3 理想视口(ideal viewport)">3.3 理想视口(ideal viewport) <a href="#t103.3 理想视口(ideal viewport)"> # </a>
+            </h3>
+            <ul>
+                <li>布局视口的默认宽度并不是一个理想的宽度，于是 Apple 和其他浏览器厂商引入了理想视口的概念，它对设备而言是最理想的布局视口尺寸。显示在理想视口中的网站具有最理想的宽度，用户无需进行缩放</li>
+                <li>理想视口的值其实就是屏幕分辨率的值，它对应的像素叫做设备逻辑像素（device independent pixel, dip）</li>
+                <li>dip 和设备的物理像素无关，一个 dip 在任意像素密度的设备屏幕上都占据相同的空间。如果用户没有进行缩放，那么一个 CSS 像素就等于一个 dip</li>
+                <li><code>&lt;meta name="viewport" content="width=device-width"&gt;</code>可以使布局视口与理想视口的宽度一致</li>
+                <li>刚好符合手机屏幕尺寸显示完美页面的区域称为理想视口<code>ideal layout</code></li>
+            </ul>
+            <h3 id="t113.4 视口设置">3.4 视口设置 <a href="#t113.4 视口设置"> # </a></h3>
+            <p><code>&lt;meta name="viewport"
     content="width=device-width,initial-scale=1.0,maximum-scale=1"&gt;</code></p>
-<p>|属性名|取值|描述|
-|width|正整数或device-width|定义视口的宽度，单位为像素|
-|height|正整数或device-height|定义视口的高度，单位为像素，一般不用|
-|initial-scale|[0.0-10.0]|定义初始缩放值|
-|minimum-scale|[0.0-10.0]|定义放大最大比例，它必须小于或等于maximum-scale设置|
-|maximum-scale|[0.0-10.0]|定义缩小最小比例，它必须大于或等于minimum-scale设置|
-|user-scalable|yes / no|定义是否允许用户手动缩放页面，默认值 yes|</p>
-<blockquote>
-<p>当缩放比例为 100% 时，dip 宽度 = CSS 像素宽度 = 理想视口的宽度 = 布局视口的</p>
-</blockquote>
-<h3 id="t123.5 缩放">3.5 缩放 <a href="#t123.5 缩放"> # </a></h3>
-<ul>
-<li>用户放大：一个CSS像素的面积变大，视觉视口内的CSS像素个数变少，视觉视口的尺寸变小（能看到的内容变少了，所以视觉视口变小）；切记，布局视口的大小是不变的，没有设置<code>width=device-width</code>的情况下，布局视口是980px；设置了<code>width=device-width</code>的情况下，布局视口的大小等于设备独立像素</li>
-<li>用户缩小：一个CSS像素的面积变小，视觉视口内的CSS像素个数变多，视觉视口的尺寸变多（能看到的内容变多了，所以视觉视口变大）；切记，布局视口的大小是不变的，没有设置width=device-width的情况下，布局视口是980px；设置了width=device-width的情况下，布局视口的大小等于设备独立像素</li>
-<li>系统缩放：在meta标签中使用initial-scale=1.0，该initial-scale值改变的是布局视口和视觉视口，而width=device-width改变的是布局视口</li>
-<li>当布局视口超过视觉视口才会出现滚动条</li>
-<li><code>initial-scale</code>值的变化对布局视口和视觉视口的影响：在iphone6下，该值变大的时候，CSS元素的面积变大，看到的内容变少了，所以布局视口和视觉是变小了为187；反之，设置initial-scale为0.5时，布局视口和视觉视口都会变大，变为750. </li>
-<li>如果<code>width=device-width</code>和<code>initial-scale</code>都设置了，谁的值大就听谁的.最终布局视口和视觉视口为750px</li>
-</ul>
-<h2 id="t134. REM">4. REM <a href="#t134. REM"> # </a></h2>
-<ul>
-<li>我把页面中CSS的像素单位全部都放大DPR倍的比例，就是用布局视图来写，就刚好对应设计稿的单位大小啦，整个页面写完后再整体将页面的比例缩小1/DPR倍，就刚好回到CCS对应的逻辑像素单位啦</li>
-<li>REM是一个相对单位 ，是相对于根元素，也就是html标签的font-size值，如果HTML的font-size=14px,则1rem=14px</li>
-<li>REM的本质是等比例缩放，所以REM布局提供了等比例缩放的布局能力</li>
-<li>REM还需要添加视口变化之后的事件绑定，重新设置HTML的<code>font-size</code></li>
-<li>REM是一个相对单位，PX是一个绝对单位</li>
-</ul>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+            <p>|属性名|取值|描述|
+                |width|正整数或device-width|定义视口的宽度，单位为像素|
+                |height|正整数或device-height|定义视口的高度，单位为像素，一般不用|
+                |initial-scale|[0.0-10.0]|定义初始缩放值|
+                |minimum-scale|[0.0-10.0]|定义放大最大比例，它必须小于或等于maximum-scale设置|
+                |maximum-scale|[0.0-10.0]|定义缩小最小比例，它必须大于或等于minimum-scale设置|
+                |user-scalable|yes / no|定义是否允许用户手动缩放页面，默认值 yes|</p>
+            <blockquote>
+                <p>当缩放比例为 100% 时，dip 宽度 = CSS 像素宽度 = 理想视口的宽度 = 布局视口的</p>
+            </blockquote>
+            <h3 id="t123.5 缩放">3.5 缩放 <a href="#t123.5 缩放"> # </a></h3>
+            <ul>
+                <li>用户放大：一个CSS像素的面积变大，视觉视口内的CSS像素个数变少，视觉视口的尺寸变小（能看到的内容变少了，所以视觉视口变小）；切记，布局视口的大小是不变的，没有设置<code>width=device-width</code>的情况下，布局视口是980px；设置了<code>width=device-width</code>的情况下，布局视口的大小等于设备独立像素
+                </li>
+                <li>用户缩小：一个CSS像素的面积变小，视觉视口内的CSS像素个数变多，视觉视口的尺寸变多（能看到的内容变多了，所以视觉视口变大）；切记，布局视口的大小是不变的，没有设置width=device-width的情况下，布局视口是980px；设置了width=device-width的情况下，布局视口的大小等于设备独立像素
+                </li>
+                <li>系统缩放：在meta标签中使用initial-scale=1.0，该initial-scale值改变的是布局视口和视觉视口，而width=device-width改变的是布局视口</li>
+                <li>当布局视口超过视觉视口才会出现滚动条</li>
+                <li><code>initial-scale</code>值的变化对布局视口和视觉视口的影响：在iphone6下，该值变大的时候，CSS元素的面积变大，看到的内容变少了，所以布局视口和视觉是变小了为187；反之，设置initial-scale为0.5时，布局视口和视觉视口都会变大，变为750.
+                </li>
+                <li>如果<code>width=device-width</code>和<code>initial-scale</code>都设置了，谁的值大就听谁的.最终布局视口和视觉视口为750px</li>
+            </ul>
+            <h2 id="t134. REM">4. REM <a href="#t134. REM"> # </a></h2>
+            <ul>
+                <li>我把页面中CSS的像素单位全部都放大DPR倍的比例，就是用布局视图来写，就刚好对应设计稿的单位大小啦，整个页面写完后再整体将页面的比例缩小1/DPR倍，就刚好回到CCS对应的逻辑像素单位啦</li>
+                <li>REM是一个相对单位 ，是相对于根元素，也就是html标签的font-size值，如果HTML的font-size=14px,则1rem=14px</li>
+                <li>REM的本质是等比例缩放，所以REM布局提供了等比例缩放的布局能力</li>
+                <li>REM还需要添加视口变化之后的事件绑定，重新设置HTML的<code>font-size</code></li>
+                <li>REM是一个相对单位，PX是一个绝对单位</li>
+            </ul>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span>
@@ -145,25 +509,25 @@
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 </code></pre>
-<h2 id="t145. vw+rem">5. vw+rem <a href="#t145. vw+rem"> # </a></h2>
-<ul>
-<li>vw: 1vw等于布局视口宽度的1%</li>
-<li>浏览器兼容性不好的时候rem是最好的解决方案，兼容性好的时候vw就是最好的解决方案。</li>
-<li>可以配合postcss插件，直接使用视觉稿来进行布局计算,减少了转换单位的时间,也不用担心兼容性问题。</li>
-<li>支持vw则10rem等于10vw,可以直接使用vw单位，如果不支持vw,则10rem=cientWith/10</li>
-</ul>
-<h2 id="t156. px 自动转成rem">6. px 自动转成rem <a href="#t156. px 自动转成rem"> # </a></h2>
-<ul>
-<li>使用px2rem-loader</li>
-<li>页面渲染时计算根元素的<code>font-size</code>值</li>
-<li><a href="https://github.com/amfe/lib-flexible">lib-flexible</a></li>
-</ul>
-<h3 id="t166.1 安装">6.1 安装 <a href="#t166.1 安装"> # </a></h3>
-<pre><code class="lang-js">cnpm i px2rem-loader lib-flexible -D
+            <h2 id="t145. vw+rem">5. vw+rem <a href="#t145. vw+rem"> # </a></h2>
+            <ul>
+                <li>vw: 1vw等于布局视口宽度的1%</li>
+                <li>浏览器兼容性不好的时候rem是最好的解决方案，兼容性好的时候vw就是最好的解决方案。</li>
+                <li>可以配合postcss插件，直接使用视觉稿来进行布局计算,减少了转换单位的时间,也不用担心兼容性问题。</li>
+                <li>支持vw则10rem等于10vw,可以直接使用vw单位，如果不支持vw,则10rem=cientWith/10</li>
+            </ul>
+            <h2 id="t156. px 自动转成rem">6. px 自动转成rem <a href="#t156. px 自动转成rem"> # </a></h2>
+            <ul>
+                <li>使用px2rem-loader</li>
+                <li>页面渲染时计算根元素的<code>font-size</code>值</li>
+                <li><a href="https://github.com/amfe/lib-flexible">lib-flexible</a></li>
+            </ul>
+            <h3 id="t166.1 安装">6.1 安装 <a href="#t166.1 安装"> # </a></h3>
+            <pre><code class="lang-js">cnpm i px2rem-loader lib-flexible -D
 </code></pre>
-<h3 id="t176.2 index.html">6.2 index.html <a href="#t176.2 index.html"> # </a></h3>
-<p>index.html</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+            <h3 id="t176.2 index.html">6.2 index.html <a href="#t176.2 index.html"> # </a></h3>
+            <p>index.html</p>
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"ie=edge"</span>&gt;</span>
@@ -182,8 +546,8 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"root"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 </code></pre>
-<h3 id="t186.3 reset.css">6.3 reset.css <a href="#t186.3 reset.css"> # </a></h3>
-<pre><code class="lang-css">*{
+            <h3 id="t186.3 reset.css">6.3 reset.css <a href="#t186.3 reset.css"> # </a></h3>
+            <pre><code class="lang-css">*{
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
 }
@@ -194,8 +558,8 @@
     <span class="hljs-attribute">box-sizing</span>: border-box;
 }
 </code></pre>
-<h3 id="t196.4 webpack.config.js">6.4 webpack.config.js <a href="#t196.4 webpack.config.js"> # </a></h3>
-<pre><code class="lang-diff"> {
+            <h3 id="t196.4 webpack.config.js">6.4 webpack.config.js <a href="#t196.4 webpack.config.js"> # </a></h3>
+            <pre><code class="lang-diff"> {
         test:/\.css$/,//如果要require或import的文件是css的文件的话
         //从右向左处理CSS文件,oader是一个函数
         use:[{
@@ -228,44 +592,45 @@
 <span class="hljs-addition">+                }]</span>
 <span class="hljs-addition">+            },</span>
 </code></pre>
-<h2 id="t20概念">概念 <a href="#t20概念"> # </a></h2>
-<h3 id="t21尺寸">尺寸 <a href="#t21尺寸"> # </a></h3>
-<ul>
-<li>屏幕尺寸</li>
-<li>英寸</li>
-</ul>
-<h3 id="t22像素">像素 <a href="#t22像素"> # </a></h3>
-<ul>
-<li>屏幕分辨率</li>
-<li>物理像素</li>
-<li>像素密度</li>
-<li>位图像素</li>
-<li>设备独立像素</li>
-<li>设备像素比devicePixelRatio</li>
-</ul>
-<h3 id="t23单位">单位 <a href="#t23单位"> # </a></h3>
-<ul>
-<li>px：pixel，像素，电子屏幕上组成一幅图画或照片的最基本单元</li>
-<li>pt: point，点，印刷行业常用单位，等于1/72英寸</li>
-<li>ppi: pixel per inch，每英寸像素数，该值越高，则屏幕越细腻</li>
-<li>dpi: dot per inch，每英寸多少点，该值越高，则图片越细腻</li>
-<li>dp: dip，Density-independent pixel, 是安卓开发用的长度单位，1dp表示在屏幕像素点密度为160ppi时1px长度</li>
-<li>sp: scale-independent pixel，安卓开发用的字体大小单位</li>
-</ul>
-<h3 id="t24视口(viewport)">视口(viewport) <a href="#t24视口(viewport)"> # </a></h3>
-<ul>
-<li>布局视口</li>
-<li>视觉视口</li>
-<li>理想视口</li>
-<li>缩放</li>
-<li><h3 id="t25布局">布局 <a href="#t25布局"> # </a></h3>
-</li>
-<li>媒体查询</li>
-<li>百分比</li>
-<li>REM</li>
-<li>vw</li>
-</ul>
+            <h2 id="t20概念">概念 <a href="#t20概念"> # </a></h2>
+            <h3 id="t21尺寸">尺寸 <a href="#t21尺寸"> # </a></h3>
+            <ul>
+                <li>屏幕尺寸</li>
+                <li>英寸</li>
+            </ul>
+            <h3 id="t22像素">像素 <a href="#t22像素"> # </a></h3>
+            <ul>
+                <li>屏幕分辨率</li>
+                <li>物理像素</li>
+                <li>像素密度</li>
+                <li>位图像素</li>
+                <li>设备独立像素</li>
+                <li>设备像素比devicePixelRatio</li>
+            </ul>
+            <h3 id="t23单位">单位 <a href="#t23单位"> # </a></h3>
+            <ul>
+                <li>px：pixel，像素，电子屏幕上组成一幅图画或照片的最基本单元</li>
+                <li>pt: point，点，印刷行业常用单位，等于1/72英寸</li>
+                <li>ppi: pixel per inch，每英寸像素数，该值越高，则屏幕越细腻</li>
+                <li>dpi: dot per inch，每英寸多少点，该值越高，则图片越细腻</li>
+                <li>dp: dip，Density-independent pixel, 是安卓开发用的长度单位，1dp表示在屏幕像素点密度为160ppi时1px长度</li>
+                <li>sp: scale-independent pixel，安卓开发用的字体大小单位</li>
+            </ul>
+            <h3 id="t24视口(viewport)">视口(viewport) <a href="#t24视口(viewport)"> # </a></h3>
+            <ul>
+                <li>布局视口</li>
+                <li>视觉视口</li>
+                <li>理想视口</li>
+                <li>缩放</li>
+                <li>
+                    <h3 id="t25布局">布局 <a href="#t25布局"> # </a></h3>
+                </li>
+                <li>媒体查询</li>
+                <li>百分比</li>
+                <li>REM</li>
+                <li>vw</li>
+            </ul>
 
+        </div>
     </div>
-</div>
 </body>

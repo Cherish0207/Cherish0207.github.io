@@ -1,65 +1,492 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>珠峰架构师成长计划</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <style>
-        .page-toc > ul .red {
-            background: #f3f3f3;
-            z-index: 1;
-            border-left: 3px solid #009a61;
-            -webkit-transition: all .2s ease;
-            transition: all .2s ease;
-            color: #000
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>珠峰架构师成长计划</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    .page-toc>ul .red {
+      background: #f3f3f3;
+      z-index: 1;
+      border-left: 3px solid #009a61;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+      color: #000
+    }
+  </style>
 </head>
-<body class="modal-open" style="padding-right: 15px;">
-<div class="nav">
-    <div class="logo">
-        
-                    珠峰架构师成长计划
-                        
-                        </div>
-                        <ul><li><a href="../index.html">0.Async</a></li><li><a href="../html/0.editor.html">0.editor</a></li><li><a href="../html/0.module.html">0.module</a></li><li><a href="../html/1.ES2015.html">1.ES2015</a></li><li><a href="../html/2.Promise.html">2.Promise</a></li><li><a href="../html/3.Node.html">3.Node</a></li><li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li><li><a href="../html/5.REPL.html">5.REPL</a></li><li><a href="../html/6.NodeCore.html">6.NodeCore</a></li><li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li><li><a href="../html/8.Encoding.html">8.Encoding</a></li><li><a href="../html/9.Buffer.html">9.Buffer</a></li><li><a href="../html/10.fs.html">10.fs</a></li><li><a href="../html/11.Stream-1.html">11.Stream-1</a></li><li><a href="../html/11.Stream-2.html">11.Stream-2</a></li><li><a href="../html/11.Stream-3.html">11.Stream-3</a></li><li><a href="../html/11.Stream-4.html">11.Stream-4</a></li><li><a href="../html/12-Network-2.html">12-Network-2</a></li><li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li><li><a href="../html/12.Network-1.html">12.Network-1</a></li><li><a href="../html/13.tcp.html">13.tcp</a></li><li><a href="../html/14.http-1.html">14.http-1</a></li><li><a href="../html/14.http-2.html">14.http-2</a></li><li><a href="../html/15.compress.html">15.compress</a></li><li><a href="../html/16.crypto.html">16.crypto</a></li><li><a href="../html/17.process.html">17.process</a></li><li><a href="../html/18.yargs.html">18.yargs</a></li><li><a href="../html/19.cache.html">19.cache</a></li><li><a href="../html/20.action.html">20.action</a></li><li><a href="../html/21.https.html">21.https</a></li><li><a href="../html/22.cookie.html">22.cookie</a></li><li><a href="../html/23.session.html">23.session</a></li><li><a href="../html/24.express-1.html">24.express-1</a></li><li><a href="../html/24.express-2.html">24.express-2</a></li><li><a href="../html/24.express-3.html">24.express-3</a></li><li><a href="../html/24.express-4.html">24.express-4</a></li><li><a href="../html/25.koa-1.html">25.koa-1</a></li><li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li><li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li><li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li><li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li><li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li><li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li><li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li><li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li><li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li><li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li><li><a href="../html/28.redux.html">28.redux</a></li><li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li><li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li><li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li><li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li><li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li><li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li><li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li><li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li><li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li><li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li><li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li><li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li><li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li><li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li><li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li><li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li><li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li><li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li><li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li><li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li><li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li><li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li><li><a href="../html/31.dva.html">31.dva</a></li><li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li><li><a href="../html/33.redis.html">33.redis</a></li><li><a href="../html/34.unittest.html">34.unittest</a></li><li><a href="../html/35.jwt.html">35.jwt</a></li><li><a href="../html/36.websocket-1.html">36.websocket-1</a></li><li><a href="../html/36.websocket-2.html">36.websocket-2</a></li><li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li><li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li><li><a href="../html/38.chat-3.html">38.chat-3</a></li><li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li><li><a href="../html/38.chat.html">38.chat</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/38.chat2.html">38.chat2</a></li><li><a href="../html/39.crawl-0.html">39.crawl-0</a></li><li><a href="../html/39.crawl-1.html">39.crawl-1</a></li><li><a href="../html/39.crawl-2.html">39.crawl-2</a></li><li><a href="../html/40.deploy.html">40.deploy</a></li><li><a href="../html/41.safe.html">41.safe</a></li><li><a href="../html/42.test.html">42.test</a></li><li><a href="../html/43.nginx.html">43.nginx</a></li><li><a href="../html/44.enzyme.html">44.enzyme</a></li><li><a href="../html/45.docker.html">45.docker</a></li><li><a href="../html/46.elastic.html">46.elastic</a></li><li><a href="../html/47.oauth.html">47.oauth</a></li><li><a href="../html/48.wxpay.html">48.wxpay</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/52.UML.html">52.UML</a></li><li><a href="../html/53.design.html">53.design</a></li><li><a href="../html/index.html">index</a></li><li><a href="../html/54.linux.html">54.linux</a></li><li><a href="../html/57.ts.html">57.ts</a></li><li><a href="../html/56.react-ssr.html">56.react-ssr</a></li><li><a href="../html/58.ts_react.html">58.ts_react</a></li><li><a href="../html/59.ketang.html">59.ketang</a></li><li><a href="../html/59.ketang2.html">59.ketang2</a></li><li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li><li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li><li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li><li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li><li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li><li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li><li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li><li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li><li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li><li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li><li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li><li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li><li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li><li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li><li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li><li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li><li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li><li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li><li><a href="../html/62.2.react-state.html">62.2.react-state</a></li><li><a href="../html/62.3.react-high.html">62.3.react-high</a></li><li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li><li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li><li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li><li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li><li><a href="../html/62.8.react-source.html">62.8.react-source</a></li><li><a href="../html/63.1.redux.html">63.1.redux</a></li><li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li><li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li><li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li><li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li><li><a href="../html/64.1.router.html">64.1.router</a></li><li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li><li><a href="../html/65.1.typescript.html">65.1.typescript</a></li><li><a href="../html/65.2.typescript.html">65.2.typescript</a></li><li><a href="../html/65.3.typescript.html">65.3.typescript</a></li><li><a href="../html/65.4.antd.html">65.4.antd</a></li><li><a href="../html/65.4.definition.html">65.4.definition</a></li><li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li><li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li><li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li><li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li><li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li><li><a href="../html/66-6.tree.html">66-6.tree</a></li><li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li><li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li><li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li><li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li><li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li><li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li><li><a href="../html/66-13.pwa.html">66-13.pwa</a></li><li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li><li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li><li><a href="../html/67-1-network.html">67-1-network</a></li><li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li><li><a href="../html/7.npm2.html">7.npm2</a></li><li><a href="../html/69-hooks.html">69-hooks</a></li><li><a href="../html/70-deploy.html">70-deploy</a></li><li><a href="../html/71-hmr.html">71-hmr</a></li><li><a href="../html/72.deploy.html">72.deploy</a></li><li><a href="../html/73.import.html">73.import</a></li><li><a href="../html/74.mobile.html">74.mobile</a></li><li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li><li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li><li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li><li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li><li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li><li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li><li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li><li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li><li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li><li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li><li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li><li><a href="../html/76.react_optimize.html">76.react_optimize</a></li><li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li><li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li><li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li><li><a href="../html/79.grammar.html">79.grammar</a></li><li><a href="../html/80.tree.html">80.tree</a></li><li><a href="../html/81.axios.html">81.axios</a></li><li><a href="../html/82.1.react.html">82.1.react</a></li><li><a href="../html/82.2.react-high.html">82.2.react-high</a></li><li><a href="../html/82.3.react-router.html">82.3.react-router</a></li><li><a href="../html/82.4.redux.html">82.4.redux</a></li><li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li><li><a href="../html/82.6.connected.html">82.6.connected</a></li><li><a href="../html/82.7.saga.html">82.7.saga</a></li><li><a href="../html/82.8.dva.html">82.8.dva</a></li><li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li><li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li><li><a href="../html/82.10.umi.html">82.10.umi</a></li><li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li><li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li><li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li><li><a href="../html/83.upload.html">83.upload</a></li><li><a href="../html/84.graphql.html">84.graphql</a></li><li><a href="../html/85.antpro.html">85.antpro</a></li><li><a href="../html/86.1.uml.html">86.1.uml</a></li><li><a href="../html/86.2.design.html">86.2.design</a></li><li><a href="../html/87.postcss.html">87.postcss</a></li><li><a href="../html/88.react16-1.html">88.react16-1</a></li><li><a href="../html/89.nextjs.html">89.nextjs</a></li><li><a href="../html/90.react-test.html">90.react-test</a></li><li><a href="../html/91.react-ts.html">91.react-ts</a></li><li><a href="../html/92.rbac.html">92.rbac</a></li><li><a href="../html/93.tsnode.html">93.tsnode</a></li><li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li><li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li><li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li><li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li><li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li><li><a href="../html/94.6.https.html">94.6.https</a></li><li><a href="../html/94.7. nginx.html">94.7. nginx</a></li><li><a href="../html/95.1. react.html">95.1. react</a></li><li><a href="../html/95.2.react.html">95.2.react</a></li><li><a href="../html/96.1.react16.html">96.1.react16</a></li><li><a href="../html/96.2.fiber.html">96.2.fiber</a></li><li><a href="../html/96.3.fiber.html">96.3.fiber</a></li><li><a href="../html/97.serverless.html">97.serverless</a></li><li><a href="../html/98.websocket.html">98.websocket</a></li><li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li><li><a href="../html/101.1.monitor.html">101.1.monitor</a></li><li><a href="../html/101.2.monitor.html">101.2.monitor</a></li><li><a href="../html/102.java.html">102.java</a></li><li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li><li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li><li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li><li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li><li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li><li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li><li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li><li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li><li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li><li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li><li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li><li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li><li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li><li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li><li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li><li class="active"><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li><li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li><li><a href="../html/104.1.binary.html">104.1.binary</a></li><li><a href="../html/104.2.binary.html">104.2.binary</a></li><li><a href="../html/105.skeleton.html">105.skeleton</a></li><li><a href="../html/106.1.react.html">106.1.react</a></li><li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li><li><a href="../html/106.3.react_router.html">106.3.react_router</a></li><li><a href="../html/106.4.redux.html">106.4.redux</a></li><li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li><li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li><li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li><li><a href="../html/106.8.dva.html">106.8.dva</a></li><li><a href="../html/106.9.umi.html">106.9.umi</a></li><li><a href="../html/106.10.antpro.html">106.10.antpro</a></li><li><a href="../html/107.fiber.html">107.fiber</a></li><li><a href="../html/108.http.html">108.http</a></li><li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li><li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li><li><a href="../html/109.3.dll.html">109.3.dll</a></li><li><a href="../html/110.nest.js.html">110.nest.js</a></li><li><a href="../html/111.xstate.html">111.xstate</a></li><li><a href="../html/112.Form.html">112.Form</a></li><li><a href="../html/113.redux-saga.html">113.redux-saga</a></li><li><a href="../html/114.react+typescript.html">114.react+typescript</a></li><li><a href="../html/115.immer.html">115.immer</a></li><li><a href="../html/116.pro5.html">116.pro5</a></li><li><a href="../html/117.css-loader.html">117.css-loader</a></li><li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li><li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li><li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li><li><a href="../html/120.create-react-app.html">120.create-react-app</a></li><li><a href="../html/121.react-scripts.html">121.react-scripts</a></li><li><a href="../html/122.react-optimize.html">122.react-optimize</a></li><li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li><li><a href="../html/124.next.js.html">124.next.js</a></li><li><a href="../html/106.11.ketang.html">106.11.ketang</a></li><li><a href="../html/125.1.linux.html">125.1.linux</a></li><li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li><li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li><li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li><li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li><li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li><li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li><li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li><li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li><li><a href="../html/125.10.nginx.html">125.10.nginx</a></li><li><a href="../html/125.11.docker.html">125.11.docker</a></li><li><a href="../html/125.12.ci.html">125.12.ci</a></li><li><a href="../html/126.11.react-1.html">126.11.react-1</a></li><li><a href="../html/125.13.k8s.html">125.13.k8s</a></li><li><a href="../html/125.14.k8s.html">125.14.k8s</a></li><li><a href="../html/125.15.k8s.html">125.15.k8s</a></li><li><a href="../html/125.16.k8s.html">125.16.k8s</a></li><li><a href="../html/126.12.react-2.html">126.12.react-2</a></li><li><a href="../html/126.12.react-3.html">126.12.react-3</a></li><li><a href="../html/127.frontend.html">127.frontend</a></li><li><a href="../html/128.rollup.html">128.rollup</a></li><li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li><li><a href="../html/130.health.html">130.health</a></li><li><a href="../html/131.hooks.html">131.hooks</a></li><li><a href="../html/126.12.react-4.html">126.12.react-4</a></li><li><a href="../html/132.keepalive.html">132.keepalive</a></li><li><a href="../html/133.vue-cli.html">133.vue-cli</a></li><li><a href="../html/134.react18.html">134.react18</a></li><li><a href="../html/135.function.html">135.function</a></li><li><a href="../html/136.toolkit.html">136.toolkit</a></li></ul>                        </div>
 
-                        
-<div class="warpper">
+<body class="modal-open" style="padding-right: 15px;">
+  <div class="nav">
+    <div class="logo">
+
+      珠峰架构师成长计划
+
+    </div>
+    <ul>
+      <li><a href="../index.html">0.Async</a></li>
+      <li><a href="../html/0.editor.html">0.editor</a></li>
+      <li><a href="../html/0.module.html">0.module</a></li>
+      <li><a href="../html/1.ES2015.html">1.ES2015</a></li>
+      <li><a href="../html/2.Promise.html">2.Promise</a></li>
+      <li><a href="../html/3.Node.html">3.Node</a></li>
+      <li><a href="../html/4.NodeInstall.html">4.NodeInstall</a></li>
+      <li><a href="../html/5.REPL.html">5.REPL</a></li>
+      <li><a href="../html/6.NodeCore.html">6.NodeCore</a></li>
+      <li><a href="../html/7.module&amp;NPM.html">7.module&amp;NPM</a></li>
+      <li><a href="../html/8.Encoding.html">8.Encoding</a></li>
+      <li><a href="../html/9.Buffer.html">9.Buffer</a></li>
+      <li><a href="../html/10.fs.html">10.fs</a></li>
+      <li><a href="../html/11.Stream-1.html">11.Stream-1</a></li>
+      <li><a href="../html/11.Stream-2.html">11.Stream-2</a></li>
+      <li><a href="../html/11.Stream-3.html">11.Stream-3</a></li>
+      <li><a href="../html/11.Stream-4.html">11.Stream-4</a></li>
+      <li><a href="../html/12-Network-2.html">12-Network-2</a></li>
+      <li><a href="../html/12.NetWork-3.html">12.NetWork-3</a></li>
+      <li><a href="../html/12.Network-1.html">12.Network-1</a></li>
+      <li><a href="../html/13.tcp.html">13.tcp</a></li>
+      <li><a href="../html/14.http-1.html">14.http-1</a></li>
+      <li><a href="../html/14.http-2.html">14.http-2</a></li>
+      <li><a href="../html/15.compress.html">15.compress</a></li>
+      <li><a href="../html/16.crypto.html">16.crypto</a></li>
+      <li><a href="../html/17.process.html">17.process</a></li>
+      <li><a href="../html/18.yargs.html">18.yargs</a></li>
+      <li><a href="../html/19.cache.html">19.cache</a></li>
+      <li><a href="../html/20.action.html">20.action</a></li>
+      <li><a href="../html/21.https.html">21.https</a></li>
+      <li><a href="../html/22.cookie.html">22.cookie</a></li>
+      <li><a href="../html/23.session.html">23.session</a></li>
+      <li><a href="../html/24.express-1.html">24.express-1</a></li>
+      <li><a href="../html/24.express-2.html">24.express-2</a></li>
+      <li><a href="../html/24.express-3.html">24.express-3</a></li>
+      <li><a href="../html/24.express-4.html">24.express-4</a></li>
+      <li><a href="../html/25.koa-1.html">25.koa-1</a></li>
+      <li><a href="../html/26.webpack-1-basic.html">26.webpack-1-basic</a></li>
+      <li><a href="../html/26.webpack-2-optimize.html">26.webpack-2-optimize</a></li>
+      <li><a href="../html/26.webpack-3-file.html">26.webpack-3-file</a></li>
+      <li><a href="../html/26.webpack-4.tapable.html">26.webpack-4.tapable</a></li>
+      <li><a href="../html/26.webpack-5-AST.html">26.webpack-5-AST</a></li>
+      <li><a href="../html/26.webpack-6-sources.html">26.webpack-6-sources</a></li>
+      <li><a href="../html/26.webpack-7-loader.html">26.webpack-7-loader</a></li>
+      <li><a href="../html/26.webpack-8-plugin.html">26.webpack-8-plugin</a></li>
+      <li><a href="../html/26.webpack-9-hand.html">26.webpack-9-hand</a></li>
+      <li><a href="../html/26.webpack-10-prepare.html">26.webpack-10-prepare</a></li>
+      <li><a href="../html/28.redux.html">28.redux</a></li>
+      <li><a href="../html/28.redux-jwt-back.html">28.redux-jwt-back</a></li>
+      <li><a href="../html/28.redux-jwt-front.html">28.redux-jwt-front</a></li>
+      <li><a href="../html/29.mongodb-1.html">29.mongodb-1</a></li>
+      <li><a href="../html/29.mongodb-2.html">29.mongodb-2</a></li>
+      <li><a href="../html/29.mongodb-3.html">29.mongodb-3</a></li>
+      <li><a href="../html/29.mongodb-4.html">29.mongodb-4</a></li>
+      <li><a href="../html/29.mongodb-5.html">29.mongodb-5</a></li>
+      <li><a href="../html/29.mongodb-6.html">29.mongodb-6</a></li>
+      <li><a href="../html/30.cms-1-mysql.html">30.cms-1-mysql</a></li>
+      <li><a href="../html/30.cms-2-mysql.html">30.cms-2-mysql</a></li>
+      <li><a href="../html/30.cms-3-mysql.html">30.cms-3-mysql</a></li>
+      <li><a href="../html/30.cms-4-nunjucks.html">30.cms-4-nunjucks</a></li>
+      <li><a href="../html/30.cms-5-mock.html">30.cms-5-mock</a></li>
+      <li><a href="../html/30.cms-6-egg.html">30.cms-6-egg</a></li>
+      <li><a href="../html/30.cms-7-api.html">30.cms-7-api</a></li>
+      <li><a href="../html/30.cms-8-roadhog.html">30.cms-8-roadhog</a></li>
+      <li><a href="../html/30.cms-9-yaml.html">30.cms-9-yaml</a></li>
+      <li><a href="../html/30.cms-10-umi.html">30.cms-10-umi</a></li>
+      <li><a href="../html/30.cms-12-dva.html">30.cms-12-dva</a></li>
+      <li><a href="../html/30.cms-13-dva-ant.html">30.cms-13-dva-ant</a></li>
+      <li><a href="../html/30.cms-14-front.html">30.cms-14-front</a></li>
+      <li><a href="../html/30.cms-15-deploy.html">30.cms-15-deploy</a></li>
+      <li><a href="../html/31.dva.html">31.dva</a></li>
+      <li><a href="../html/31.cms-13-dva-antdesign.html">31.cms-13-dva-antdesign</a></li>
+      <li><a href="../html/33.redis.html">33.redis</a></li>
+      <li><a href="../html/34.unittest.html">34.unittest</a></li>
+      <li><a href="../html/35.jwt.html">35.jwt</a></li>
+      <li><a href="../html/36.websocket-1.html">36.websocket-1</a></li>
+      <li><a href="../html/36.websocket-2.html">36.websocket-2</a></li>
+      <li><a href="../html/38.chat-api-1.html">38.chat-api-1</a></li>
+      <li><a href="../html/38.chat-api-2.html">38.chat-api-2</a></li>
+      <li><a href="../html/38.chat-3.html">38.chat-3</a></li>
+      <li><a href="../html/38.chat-api-3.html">38.chat-api-3</a></li>
+      <li><a href="../html/38.chat.html">38.chat</a></li>
+      <li><a href="../html/38.chat2.html">38.chat2</a></li>
+      <li><a href="../html/38.chat2.html">38.chat2</a></li>
+      <li><a href="../html/39.crawl-0.html">39.crawl-0</a></li>
+      <li><a href="../html/39.crawl-1.html">39.crawl-1</a></li>
+      <li><a href="../html/39.crawl-2.html">39.crawl-2</a></li>
+      <li><a href="../html/40.deploy.html">40.deploy</a></li>
+      <li><a href="../html/41.safe.html">41.safe</a></li>
+      <li><a href="../html/42.test.html">42.test</a></li>
+      <li><a href="../html/43.nginx.html">43.nginx</a></li>
+      <li><a href="../html/44.enzyme.html">44.enzyme</a></li>
+      <li><a href="../html/45.docker.html">45.docker</a></li>
+      <li><a href="../html/46.elastic.html">46.elastic</a></li>
+      <li><a href="../html/47.oauth.html">47.oauth</a></li>
+      <li><a href="../html/48.wxpay.html">48.wxpay</a></li>
+      <li><a href="../html/index.html">index</a></li>
+      <li><a href="../html/52.UML.html">52.UML</a></li>
+      <li><a href="../html/53.design.html">53.design</a></li>
+      <li><a href="../html/index.html">index</a></li>
+      <li><a href="../html/54.linux.html">54.linux</a></li>
+      <li><a href="../html/57.ts.html">57.ts</a></li>
+      <li><a href="../html/56.react-ssr.html">56.react-ssr</a></li>
+      <li><a href="../html/58.ts_react.html">58.ts_react</a></li>
+      <li><a href="../html/59.ketang.html">59.ketang</a></li>
+      <li><a href="../html/59.ketang2.html">59.ketang2</a></li>
+      <li><a href="../html/61.1.devops-linux.html">61.1.devops-linux</a></li>
+      <li><a href="../html/61.2.devops-vi.html">61.2.devops-vi</a></li>
+      <li><a href="../html/61.3.devops-user.html">61.3.devops-user</a></li>
+      <li><a href="../html/61.4.devops-auth.html">61.4.devops-auth</a></li>
+      <li><a href="../html/61.5.devops-shell.html">61.5.devops-shell</a></li>
+      <li><a href="../html/61.6.devops-install.html">61.6.devops-install</a></li>
+      <li><a href="../html/61.7.devops-system.html">61.7.devops-system</a></li>
+      <li><a href="../html/61.8.devops-service.html">61.8.devops-service</a></li>
+      <li><a href="../html/61.9.devops-network.html">61.9.devops-network</a></li>
+      <li><a href="../html/61.10.devops-nginx.html">61.10.devops-nginx</a></li>
+      <li><a href="../html/61.11.devops-docker.html">61.11.devops-docker</a></li>
+      <li><a href="../html/61.12.devops-jekins.html">61.12.devops-jekins</a></li>
+      <li><a href="../html/61.13.devops-groovy.html">61.13.devops-groovy</a></li>
+      <li><a href="../html/61.14.devops-php.html">61.14.devops-php</a></li>
+      <li><a href="../html/61.15.devops-java.html">61.15.devops-java</a></li>
+      <li><a href="../html/61.16.devops-node.html">61.16.devops-node</a></li>
+      <li><a href="../html/61.17.devops-k8s.html">61.17.devops-k8s</a></li>
+      <li><a href="../html/62.1.react-basic.html">62.1.react-basic</a></li>
+      <li><a href="../html/62.2.react-state.html">62.2.react-state</a></li>
+      <li><a href="../html/62.3.react-high.html">62.3.react-high</a></li>
+      <li><a href="../html/62.4.react-optimize.html">62.4.react-optimize</a></li>
+      <li><a href="../html/62.5.react-hooks.html">62.5.react-hooks</a></li>
+      <li><a href="../html/62.6.react-immutable.html">62.6.react-immutable</a></li>
+      <li><a href="../html/62.7.react-mobx.html">62.7.react-mobx</a></li>
+      <li><a href="../html/62.8.react-source.html">62.8.react-source</a></li>
+      <li><a href="../html/63.1.redux.html">63.1.redux</a></li>
+      <li><a href="../html/63.2.redux-middleware.html">63.2.redux-middleware</a></li>
+      <li><a href="../html/63.3.redux-hooks.html">63.3.redux-hooks</a></li>
+      <li><a href="../html/63.4.redux-saga.html">63.4.redux-saga</a></li>
+      <li><a href="../html/63.5.redux-saga-hand.html">63.5.redux-saga-hand</a></li>
+      <li><a href="../html/64.1.router.html">64.1.router</a></li>
+      <li><a href="../html/64.2.router-connected.html">64.2.router-connected</a></li>
+      <li><a href="../html/65.1.typescript.html">65.1.typescript</a></li>
+      <li><a href="../html/65.2.typescript.html">65.2.typescript</a></li>
+      <li><a href="../html/65.3.typescript.html">65.3.typescript</a></li>
+      <li><a href="../html/65.4.antd.html">65.4.antd</a></li>
+      <li><a href="../html/65.4.definition.html">65.4.definition</a></li>
+      <li><a href="../html/66-1.vue-base.html">66-1.vue-base</a></li>
+      <li><a href="../html/66-2.vue-component.html">66-2.vue-component</a></li>
+      <li><a href="../html/66-3.vue-cli3.0.html">66-3.vue-cli3.0</a></li>
+      <li><a href="../html/66-4.$message组件.html">66-4.$message组件</a></li>
+      <li><a href="../html/66-5.Form组件.html">66-5.Form组件</a></li>
+      <li><a href="../html/66-6.tree.html">66-6.tree</a></li>
+      <li><a href="../html/66-7.vue-router-apply.html">66-7.vue-router-apply</a></li>
+      <li><a href="../html/66-8.axios-apply.html">66-8.axios-apply</a></li>
+      <li><a href="../html/66-9.vuex-apply.html">66-9.vuex-apply</a></li>
+      <li><a href="../html/66-10.jwt-vue.html">66-10.jwt-vue</a></li>
+      <li><a href="../html/66-11.vue-ssr.html">66-11.vue-ssr</a></li>
+      <li><a href="../html/66-12.nuxt-apply.html">66-12.nuxt-apply</a></li>
+      <li><a href="../html/66-13.pwa.html">66-13.pwa</a></li>
+      <li><a href="../html/66-14.vue单元测试.html">66-14.vue单元测试</a></li>
+      <li><a href="../html/66-15.权限校验.html">66-15.权限校验</a></li>
+      <li><a href="../html/67-1-network.html">67-1-network</a></li>
+      <li><a href="../html/68-2-wireshark.html">68-2-wireshark</a></li>
+      <li><a href="../html/7.npm2.html">7.npm2</a></li>
+      <li><a href="../html/69-hooks.html">69-hooks</a></li>
+      <li><a href="../html/70-deploy.html">70-deploy</a></li>
+      <li><a href="../html/71-hmr.html">71-hmr</a></li>
+      <li><a href="../html/72.deploy.html">72.deploy</a></li>
+      <li><a href="../html/73.import.html">73.import</a></li>
+      <li><a href="../html/74.mobile.html">74.mobile</a></li>
+      <li><a href="../html/75.webpack-1.文件分析.html">75.webpack-1.文件分析</a></li>
+      <li><a href="../html/75.webpack-2.loader.html">75.webpack-2.loader</a></li>
+      <li><a href="../html/75.webpack-3.源码流程.html">75.webpack-3.源码流程</a></li>
+      <li><a href="../html/75.webpack-4.tapable.html">75.webpack-4.tapable</a></li>
+      <li><a href="../html/75.webpack-5.prepare.html">75.webpack-5.prepare</a></li>
+      <li><a href="../html/75.webpack-6.resolve.html">75.webpack-6.resolve</a></li>
+      <li><a href="../html/75.webpack-7.loader.html">75.webpack-7.loader</a></li>
+      <li><a href="../html/75.webpack-8.module.html">75.webpack-8.module</a></li>
+      <li><a href="../html/75.webpack-9.chunk.html">75.webpack-9.chunk</a></li>
+      <li><a href="../html/75.webpack-10.asset.html">75.webpack-10.asset</a></li>
+      <li><a href="../html/75.webpack-11.实现.html">75.webpack-11.实现</a></li>
+      <li><a href="../html/76.react_optimize.html">76.react_optimize</a></li>
+      <li><a href="../html/77.ts_ketang_back.html">77.ts_ketang_back</a></li>
+      <li><a href="../html/77.ts_ketang_front.html">77.ts_ketang_front</a></li>
+      <li><a href="../html/78.vue-domdiff.html">78.vue-domdiff</a></li>
+      <li><a href="../html/79.grammar.html">79.grammar</a></li>
+      <li><a href="../html/80.tree.html">80.tree</a></li>
+      <li><a href="../html/81.axios.html">81.axios</a></li>
+      <li><a href="../html/82.1.react.html">82.1.react</a></li>
+      <li><a href="../html/82.2.react-high.html">82.2.react-high</a></li>
+      <li><a href="../html/82.3.react-router.html">82.3.react-router</a></li>
+      <li><a href="../html/82.4.redux.html">82.4.redux</a></li>
+      <li><a href="../html/82.5.redux_middleware.html">82.5.redux_middleware</a></li>
+      <li><a href="../html/82.6.connected.html">82.6.connected</a></li>
+      <li><a href="../html/82.7.saga.html">82.7.saga</a></li>
+      <li><a href="../html/82.8.dva.html">82.8.dva</a></li>
+      <li><a href="../html/82.8.dva-source.html">82.8.dva-source</a></li>
+      <li><a href="../html/82.9.roadhog.html">82.9.roadhog</a></li>
+      <li><a href="../html/82.10.umi.html">82.10.umi</a></li>
+      <li><a href="../html/82.11.antdesign.html">82.11.antdesign</a></li>
+      <li><a href="../html/82.12.ketang-front.html">82.12.ketang-front</a></li>
+      <li><a href="../html/82.12.ketang-back.html">82.12.ketang-back</a></li>
+      <li><a href="../html/83.upload.html">83.upload</a></li>
+      <li><a href="../html/84.graphql.html">84.graphql</a></li>
+      <li><a href="../html/85.antpro.html">85.antpro</a></li>
+      <li><a href="../html/86.1.uml.html">86.1.uml</a></li>
+      <li><a href="../html/86.2.design.html">86.2.design</a></li>
+      <li><a href="../html/87.postcss.html">87.postcss</a></li>
+      <li><a href="../html/88.react16-1.html">88.react16-1</a></li>
+      <li><a href="../html/89.nextjs.html">89.nextjs</a></li>
+      <li><a href="../html/90.react-test.html">90.react-test</a></li>
+      <li><a href="../html/91.react-ts.html">91.react-ts</a></li>
+      <li><a href="../html/92.rbac.html">92.rbac</a></li>
+      <li><a href="../html/93.tsnode.html">93.tsnode</a></li>
+      <li><a href="../html/94.1.JavaScript.html">94.1.JavaScript</a></li>
+      <li><a href="../html/94.2.JavaScript.html">94.2.JavaScript</a></li>
+      <li><a href="../html/94.3.MODULE.html">94.3.MODULE</a></li>
+      <li><a href="../html/94.4.EventLoop.html">94.4.EventLoop</a></li>
+      <li><a href="../html/94.5.文件上传.html">94.5.文件上传</a></li>
+      <li><a href="../html/94.6.https.html">94.6.https</a></li>
+      <li><a href="../html/94.7. nginx.html">94.7. nginx</a></li>
+      <li><a href="../html/95.1. react.html">95.1. react</a></li>
+      <li><a href="../html/95.2.react.html">95.2.react</a></li>
+      <li><a href="../html/96.1.react16.html">96.1.react16</a></li>
+      <li><a href="../html/96.2.fiber.html">96.2.fiber</a></li>
+      <li><a href="../html/96.3.fiber.html">96.3.fiber</a></li>
+      <li><a href="../html/97.serverless.html">97.serverless</a></li>
+      <li><a href="../html/98.websocket.html">98.websocket</a></li>
+      <li><a href="../html/100.1.react-basic.html">100.1.react-basic</a></li>
+      <li><a href="../html/101.1.monitor.html">101.1.monitor</a></li>
+      <li><a href="../html/101.2.monitor.html">101.2.monitor</a></li>
+      <li><a href="../html/102.java.html">102.java</a></li>
+      <li><a href="../html/103.1.webpack-usage.html">103.1.webpack-usage</a></li>
+      <li><a href="../html/103.2.webpack-bundle.html">103.2.webpack-bundle</a></li>
+      <li><a href="../html/103.3.webpack-ast.html">103.3.webpack-ast</a></li>
+      <li><a href="../html/103.4.webpack-flow.html">103.4.webpack-flow</a></li>
+      <li><a href="../html/103.5.webpack-loader.html">103.5.webpack-loader</a></li>
+      <li><a href="../html/103.6.webpack-tapable.html">103.6.webpack-tapable</a></li>
+      <li><a href="../html/103.7.webpack-plugin.html">103.7.webpack-plugin</a></li>
+      <li><a href="../html/103.8.webpack-optimize1.html">103.8.webpack-optimize1</a></li>
+      <li><a href="../html/103.9.webpack-optimize2.html">103.9.webpack-optimize2</a></li>
+      <li><a href="../html/103.10.webpack-hand.html">103.10.webpack-hand</a></li>
+      <li><a href="../html/103.11.webpack-hmr.html">103.11.webpack-hmr</a></li>
+      <li><a href="../html/103.13.webpack5.html">103.13.webpack5</a></li>
+      <li><a href="../html/103.14.webpack-sourcemap.html">103.14.webpack-sourcemap</a></li>
+      <li><a href="../html/103.15.webpack-compiler1.html">103.15.webpack-compiler1</a></li>
+      <li><a href="../html/103.15.webpack-compiler2.html">103.15.webpack-compiler2</a></li>
+      <li class="active"><a href="../html/103.16.vite.basic.html">103.16.vite.basic</a></li>
+      <li><a href="../html/103.16.vite.source.html">103.16.vite.source</a></li>
+      <li><a href="../html/104.1.binary.html">104.1.binary</a></li>
+      <li><a href="../html/104.2.binary.html">104.2.binary</a></li>
+      <li><a href="../html/105.skeleton.html">105.skeleton</a></li>
+      <li><a href="../html/106.1.react.html">106.1.react</a></li>
+      <li><a href="../html/106.2.react_hooks.html">106.2.react_hooks</a></li>
+      <li><a href="../html/106.3.react_router.html">106.3.react_router</a></li>
+      <li><a href="../html/106.4.redux.html">106.4.redux</a></li>
+      <li><a href="../html/106.5.redux_middleware.html">106.5.redux_middleware</a></li>
+      <li><a href="../html/106.6.connected-react-router.html">106.6.connected-react-router</a></li>
+      <li><a href="../html/106.7.redux-saga.html">106.7.redux-saga</a></li>
+      <li><a href="../html/106.8.dva.html">106.8.dva</a></li>
+      <li><a href="../html/106.9.umi.html">106.9.umi</a></li>
+      <li><a href="../html/106.10.antpro.html">106.10.antpro</a></li>
+      <li><a href="../html/107.fiber.html">107.fiber</a></li>
+      <li><a href="../html/108.http.html">108.http</a></li>
+      <li><a href="../html/109.1.webpack_usage.html">109.1.webpack_usage</a></li>
+      <li><a href="../html/109.2.webpack_source.html">109.2.webpack_source</a></li>
+      <li><a href="../html/109.3.dll.html">109.3.dll</a></li>
+      <li><a href="../html/110.nest.js.html">110.nest.js</a></li>
+      <li><a href="../html/111.xstate.html">111.xstate</a></li>
+      <li><a href="../html/112.Form.html">112.Form</a></li>
+      <li><a href="../html/113.redux-saga.html">113.redux-saga</a></li>
+      <li><a href="../html/114.react+typescript.html">114.react+typescript</a></li>
+      <li><a href="../html/115.immer.html">115.immer</a></li>
+      <li><a href="../html/116.pro5.html">116.pro5</a></li>
+      <li><a href="../html/117.css-loader.html">117.css-loader</a></li>
+      <li><a href="../html/118.1.umi-core.html">118.1.umi-core</a></li>
+      <li><a href="../html/119.2.module-federation.html">119.2.module-federation</a></li>
+      <li><a href="../html/119.1.module-federation.html">119.1.module-federation</a></li>
+      <li><a href="../html/120.create-react-app.html">120.create-react-app</a></li>
+      <li><a href="../html/121.react-scripts.html">121.react-scripts</a></li>
+      <li><a href="../html/122.react-optimize.html">122.react-optimize</a></li>
+      <li><a href="../html/123.jsx-runtime.html">123.jsx-runtime</a></li>
+      <li><a href="../html/124.next.js.html">124.next.js</a></li>
+      <li><a href="../html/106.11.ketang.html">106.11.ketang</a></li>
+      <li><a href="../html/125.1.linux.html">125.1.linux</a></li>
+      <li><a href="../html/125.2.linux-vi.html">125.2.linux-vi</a></li>
+      <li><a href="../html/125.3.linux-user.html">125.3.linux-user</a></li>
+      <li><a href="../html/125.4.linux-auth.html">125.4.linux-auth</a></li>
+      <li><a href="../html/125.5.linux-shell.html">125.5.linux-shell</a></li>
+      <li><a href="../html/125.6.linux-install.html">125.6.linux-install</a></li>
+      <li><a href="../html/125.7.linux-system.html">125.7.linux-system</a></li>
+      <li><a href="../html/125.8.linux-service.html">125.8.linux-service</a></li>
+      <li><a href="../html/125.9.linux-network.html">125.9.linux-network</a></li>
+      <li><a href="../html/125.10.nginx.html">125.10.nginx</a></li>
+      <li><a href="../html/125.11.docker.html">125.11.docker</a></li>
+      <li><a href="../html/125.12.ci.html">125.12.ci</a></li>
+      <li><a href="../html/126.11.react-1.html">126.11.react-1</a></li>
+      <li><a href="../html/125.13.k8s.html">125.13.k8s</a></li>
+      <li><a href="../html/125.14.k8s.html">125.14.k8s</a></li>
+      <li><a href="../html/125.15.k8s.html">125.15.k8s</a></li>
+      <li><a href="../html/125.16.k8s.html">125.16.k8s</a></li>
+      <li><a href="../html/126.12.react-2.html">126.12.react-2</a></li>
+      <li><a href="../html/126.12.react-3.html">126.12.react-3</a></li>
+      <li><a href="../html/127.frontend.html">127.frontend</a></li>
+      <li><a href="../html/128.rollup.html">128.rollup</a></li>
+      <li><a href="../html/129.px2rem-loader.html">129.px2rem-loader</a></li>
+      <li><a href="../html/130.health.html">130.health</a></li>
+      <li><a href="../html/131.hooks.html">131.hooks</a></li>
+      <li><a href="../html/126.12.react-4.html">126.12.react-4</a></li>
+      <li><a href="../html/132.keepalive.html">132.keepalive</a></li>
+      <li><a href="../html/133.vue-cli.html">133.vue-cli</a></li>
+      <li><a href="../html/134.react18.html">134.react18</a></li>
+      <li><a href="../html/135.function.html">135.function</a></li>
+      <li><a href="../html/136.toolkit.html">136.toolkit</a></li>
+    </ul>
+  </div>
+
+
+  <div class="warpper">
     <div class="page-toc">
-        <ul><li><a href="#t01.Vite">1.Vite</a></li><li><a href="#t12.配置开发环境">2.配置开发环境</a><ul><li><a href="#t22.1 安装依赖">2.1 安装依赖</a></li><li><a href="#t32.2 配置文件">2.2 配置文件</a></li><li><a href="#t42.3 package.json">2.3 package.json</a></li><li><a href="#t52.4 index.html">2.4 index.html</a></li><li><a href="#t62.5 src\main.js">2.5 src\main.js</a></li><li><a href="#t72.6 src\App.vue">2.6 src\App.vue</a></li><li><a href="#t82.7 HelloWorld.vue">2.7 HelloWorld.vue</a></li></ul></li><li><a href="#t93.静态资源处理">3.静态资源处理</a><ul><li><a href="#t103.1 模板中引入">3.1 模板中引入</a></li><li><a href="#t113.2 JS中引入">3.2 JS中引入</a></li><li><a href="#t123.3 CSS中引入">3.3 CSS中引入</a></li><li><a href="#t133.4 public目录">3.4 public目录</a></li></ul></li><li><a href="#t144.配置别名">4.配置别名</a><ul><li><a href="#t154.1 vite.config.js">4.1 vite.config.js</a></li><li><a href="#t164.2 App.vue">4.2 App.vue</a></li></ul></li><li><a href="#t175.样式处理">5.样式处理</a><ul><li><a href="#t185.1 全局样式">5.1 全局样式</a></li><li><a href="#t195.2 局部样式">5.2 局部样式</a></li><li><a href="#t205.2.1 scoped">5.2.1 scoped</a></li><li><a href="#t215.2.2 CSS Modules">5.2.2 CSS Modules</a></li><li><a href="#t225.2.2.1  内联">5.2.2.1  内联</a></li><li><a href="#t235.2.2.2  外联">5.2.2.2  外联</a></li><li><a href="#t245.3 less和sass">5.3 less和sass</a><ul><li><a href="#t255.3.1 安装">5.3.1 安装</a></li><li><a href="#t265.3.2 HelloWorld.vue">5.3.2 HelloWorld.vue</a></li></ul></li><li><a href="#t275.4 PostCSS">5.4 PostCSS</a><ul><li><a href="#t285.4.1 安装">5.4.1 安装</a></li><li><a href="#t295.4.2 postcss.config.js">5.4.2 postcss.config.js</a></li><li><a href="#t305.4.3 .browserslistrc">5.4.3 .browserslistrc</a></li><li><a href="#t315.4.4 HelloWorld.vue">5.4.4 HelloWorld.vue</a></li></ul></li></ul></li><li><a href="#t326.typescript">6.typescript</a><ul><li><a href="#t336.1 安装">6.1 安装</a></li><li><a href="#t346.2 .babelrc">6.2 .babelrc</a></li><li><a href="#t356.3 tsconfig.json">6.3 tsconfig.json</a></li><li><a href="#t366.4 HelloWorld.vue">6.4 HelloWorld.vue</a></li><li><a href="#t376.5 shims-vue.d.ts">6.5 shims-vue.d.ts</a></li><li><a href="#t386.6 vite-env.d.ts">6.6 vite-env.d.ts</a></li></ul></li><li><a href="#t397.配置代理">7.配置代理</a><ul><li><a href="#t407.1 vite.config.js">7.1 vite.config.js</a></li><li><a href="#t417.2 src\App.vue">7.2 src\App.vue</a></li></ul></li><li><a href="#t428.mock">8.mock</a><ul><li><a href="#t438.1 vite.config.js">8.1 vite.config.js</a></li><li><a href="#t448.2 mock\test.ts">8.2 mock\test.ts</a></li></ul></li><li><a href="#t459.ESLint">9.ESLint</a><ul><li><a href="#t469.1 src\components\HelloWorld.vue">9.1 src\components\HelloWorld.vue</a></li><li><a href="#t479.2 main.ts">9.2 main.ts</a></li><li><a href="#t489.3 .eslintrc.js">9.3 .eslintrc.js</a></li><li><a href="#t499.4 .eslintignore">9.4 .eslintignore</a></li><li><a href="#t509.5 package.json">9.5 package.json</a></li></ul></li><li><a href="#t5110.Prettier">10.Prettier</a><ul><li><a href="#t5210.1 安装">10.1 安装</a></li><li><a href="#t5310.2 package.json">10.2 package.json</a></li><li><a href="#t5410.3 .eslintrc.js">10.3 .eslintrc.js</a></li></ul></li><li><a href="#t5511.单元测试">11.单元测试</a><ul><li><a href="#t5611.1 安装依赖">11.1 安装依赖</a></li><li><a href="#t5711.2 package.json">11.2 package.json</a></li><li><a href="#t5811.3 jest.config.js">11.3 jest.config.js</a></li><li><a href="#t5911.4 tests\test.ts">11.4 tests\test.ts</a></li><li><a href="#t6011.5 tsconfig.json">11.5 tsconfig.json</a></li><li><a href="#t6111.6 package.json">11.6 package.json</a></li></ul></li><li><a href="#t6212.git hook">12.git hook</a><ul><li><a href="#t6312.1 注释规范">12.1 注释规范</a><ul><li><a href="#t6412.1.1 type类型">12.1.1 type类型</a></li></ul></li><li><a href="#t6512.2 安装">12.2 安装</a></li><li><a href="#t6612.3 配置脚本">12.3 配置脚本</a></li><li><a href="#t6712.4 创建hooks">12.4 创建hooks</a></li><li><a href="#t6812.5 commitlint.config.js">12.5 commitlint.config.js</a></li></ul></li><li><a href="#t69参考">参考</a></li></ul>
+      <ul>
+        <li><a href="#t01.Vite">1.Vite</a></li>
+        <li><a href="#t12.配置开发环境">2.配置开发环境</a>
+          <ul>
+            <li><a href="#t22.1 安装依赖">2.1 安装依赖</a></li>
+            <li><a href="#t32.2 配置文件">2.2 配置文件</a></li>
+            <li><a href="#t42.3 package.json">2.3 package.json</a></li>
+            <li><a href="#t52.4 index.html">2.4 index.html</a></li>
+            <li><a href="#t62.5 src\main.js">2.5 src\main.js</a></li>
+            <li><a href="#t72.6 src\App.vue">2.6 src\App.vue</a></li>
+            <li><a href="#t82.7 HelloWorld.vue">2.7 HelloWorld.vue</a></li>
+          </ul>
+        </li>
+        <li><a href="#t93.静态资源处理">3.静态资源处理</a>
+          <ul>
+            <li><a href="#t103.1 模板中引入">3.1 模板中引入</a></li>
+            <li><a href="#t113.2 JS中引入">3.2 JS中引入</a></li>
+            <li><a href="#t123.3 CSS中引入">3.3 CSS中引入</a></li>
+            <li><a href="#t133.4 public目录">3.4 public目录</a></li>
+          </ul>
+        </li>
+        <li><a href="#t144.配置别名">4.配置别名</a>
+          <ul>
+            <li><a href="#t154.1 vite.config.js">4.1 vite.config.js</a></li>
+            <li><a href="#t164.2 App.vue">4.2 App.vue</a></li>
+          </ul>
+        </li>
+        <li><a href="#t175.样式处理">5.样式处理</a>
+          <ul>
+            <li><a href="#t185.1 全局样式">5.1 全局样式</a></li>
+            <li><a href="#t195.2 局部样式">5.2 局部样式</a></li>
+            <li><a href="#t205.2.1 scoped">5.2.1 scoped</a></li>
+            <li><a href="#t215.2.2 CSS Modules">5.2.2 CSS Modules</a></li>
+            <li><a href="#t225.2.2.1  内联">5.2.2.1 内联</a></li>
+            <li><a href="#t235.2.2.2  外联">5.2.2.2 外联</a></li>
+            <li><a href="#t245.3 less和sass">5.3 less和sass</a>
+              <ul>
+                <li><a href="#t255.3.1 安装">5.3.1 安装</a></li>
+                <li><a href="#t265.3.2 HelloWorld.vue">5.3.2 HelloWorld.vue</a></li>
+              </ul>
+            </li>
+            <li><a href="#t275.4 PostCSS">5.4 PostCSS</a>
+              <ul>
+                <li><a href="#t285.4.1 安装">5.4.1 安装</a></li>
+                <li><a href="#t295.4.2 postcss.config.js">5.4.2 postcss.config.js</a></li>
+                <li><a href="#t305.4.3 .browserslistrc">5.4.3 .browserslistrc</a></li>
+                <li><a href="#t315.4.4 HelloWorld.vue">5.4.4 HelloWorld.vue</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#t326.typescript">6.typescript</a>
+          <ul>
+            <li><a href="#t336.1 安装">6.1 安装</a></li>
+            <li><a href="#t346.2 .babelrc">6.2 .babelrc</a></li>
+            <li><a href="#t356.3 tsconfig.json">6.3 tsconfig.json</a></li>
+            <li><a href="#t366.4 HelloWorld.vue">6.4 HelloWorld.vue</a></li>
+            <li><a href="#t376.5 shims-vue.d.ts">6.5 shims-vue.d.ts</a></li>
+            <li><a href="#t386.6 vite-env.d.ts">6.6 vite-env.d.ts</a></li>
+          </ul>
+        </li>
+        <li><a href="#t397.配置代理">7.配置代理</a>
+          <ul>
+            <li><a href="#t407.1 vite.config.js">7.1 vite.config.js</a></li>
+            <li><a href="#t417.2 src\App.vue">7.2 src\App.vue</a></li>
+          </ul>
+        </li>
+        <li><a href="#t428.mock">8.mock</a>
+          <ul>
+            <li><a href="#t438.1 vite.config.js">8.1 vite.config.js</a></li>
+            <li><a href="#t448.2 mock\test.ts">8.2 mock\test.ts</a></li>
+          </ul>
+        </li>
+        <li><a href="#t459.ESLint">9.ESLint</a>
+          <ul>
+            <li><a href="#t469.1 src\components\HelloWorld.vue">9.1 src\components\HelloWorld.vue</a></li>
+            <li><a href="#t479.2 main.ts">9.2 main.ts</a></li>
+            <li><a href="#t489.3 .eslintrc.js">9.3 .eslintrc.js</a></li>
+            <li><a href="#t499.4 .eslintignore">9.4 .eslintignore</a></li>
+            <li><a href="#t509.5 package.json">9.5 package.json</a></li>
+          </ul>
+        </li>
+        <li><a href="#t5110.Prettier">10.Prettier</a>
+          <ul>
+            <li><a href="#t5210.1 安装">10.1 安装</a></li>
+            <li><a href="#t5310.2 package.json">10.2 package.json</a></li>
+            <li><a href="#t5410.3 .eslintrc.js">10.3 .eslintrc.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t5511.单元测试">11.单元测试</a>
+          <ul>
+            <li><a href="#t5611.1 安装依赖">11.1 安装依赖</a></li>
+            <li><a href="#t5711.2 package.json">11.2 package.json</a></li>
+            <li><a href="#t5811.3 jest.config.js">11.3 jest.config.js</a></li>
+            <li><a href="#t5911.4 tests\test.ts">11.4 tests\test.ts</a></li>
+            <li><a href="#t6011.5 tsconfig.json">11.5 tsconfig.json</a></li>
+            <li><a href="#t6111.6 package.json">11.6 package.json</a></li>
+          </ul>
+        </li>
+        <li><a href="#t6212.git hook">12.git hook</a>
+          <ul>
+            <li><a href="#t6312.1 注释规范">12.1 注释规范</a>
+              <ul>
+                <li><a href="#t6412.1.1 type类型">12.1.1 type类型</a></li>
+              </ul>
+            </li>
+            <li><a href="#t6512.2 安装">12.2 安装</a></li>
+            <li><a href="#t6612.3 配置脚本">12.3 配置脚本</a></li>
+            <li><a href="#t6712.4 创建hooks">12.4 创建hooks</a></li>
+            <li><a href="#t6812.5 commitlint.config.js">12.5 commitlint.config.js</a></li>
+          </ul>
+        </li>
+        <li><a href="#t69参考">参考</a></li>
+      </ul>
     </div>
     <div class="content markdown-body">
-        <h2 id="t01.Vite">1.Vite <a href="#t01.Vite"> # </a></h2>
-<ul>
-<li><a href="https://cn.vitejs.dev/">Vite (法语意为 "快速的"，发音 /vit/) </a>是下一代前端开发与构建工具</li>
-<li>💡 极速的服务启动 使用原生 ESM 文件，无需打包!</li>
-<li>⚡️ 轻量快速的热重载 无论应用程序大小如何，都始终极快的模块热重载（HMR）</li>
-<li>🛠️ 丰富的功能 对 TypeScript、JSX、CSS 等支持开箱即用。</li>
-<li>📦 优化的构建 可选 “多页应用” 或 “库” 模式的预配置 Rollup 构建</li>
-<li>🔩 通用的插件 在开发和构建之间共享 Rollup-superset 插件接口。</li>
-<li>🔑 完全类型化的API 灵活的 API 和完整 TypeS</li>
-</ul>
-<h2 id="t12.配置开发环境">2.配置开发环境 <a href="#t12.配置开发环境"> # </a></h2>
-<ul>
-<li><a href="https://github.com/vuejs/rfcs/blob/master/active-rfcs/0040-script-setup.md">script-setup</a></li>
-</ul>
-<h3 id="t22.1 安装依赖">2.1 安装依赖 <a href="#t22.1 安装依赖"> # </a></h3>
-<pre><code class="lang-js">npm install vue  --save
+      <h2 id="t01.Vite">1.Vite <a href="#t01.Vite"> # </a></h2>
+      <ul>
+        <li><a href="https://cn.vitejs.dev/">Vite (法语意为 "快速的"，发音 /vit/) </a>是下一代前端开发与构建工具</li>
+        <li>💡 极速的服务启动 使用原生 ESM 文件，无需打包!</li>
+        <li>⚡️ 轻量快速的热重载 无论应用程序大小如何，都始终极快的模块热重载（HMR）</li>
+        <li>🛠️ 丰富的功能 对 TypeScript、JSX、CSS 等支持开箱即用。</li>
+        <li>📦 优化的构建 可选 “多页应用” 或 “库” 模式的预配置 Rollup 构建</li>
+        <li>🔩 通用的插件 在开发和构建之间共享 Rollup-superset 插件接口。</li>
+        <li>🔑 完全类型化的API 灵活的 API 和完整 TypeS</li>
+      </ul>
+      <h2 id="t12.配置开发环境">2.配置开发环境 <a href="#t12.配置开发环境"> # </a></h2>
+      <ul>
+        <li><a href="https://github.com/vuejs/rfcs/blob/master/active-rfcs/0040-script-setup.md">script-setup</a></li>
+      </ul>
+      <h3 id="t22.1 安装依赖">2.1 安装依赖 <a href="#t22.1 安装依赖"> # </a></h3>
+      <pre><code class="lang-js">npm install vue  --save
 npm install  @vitejs/plugin-vue @vue/compiler-sfc vite --save-dev
 </code></pre>
-<h3 id="t32.2 配置文件">2.2 配置文件 <a href="#t32.2 配置文件"> # </a></h3>
-<p>vite.config.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite'</span>
+      <h3 id="t32.2 配置文件">2.2 配置文件 <a href="#t32.2 配置文件"> # </a></h3>
+      <p>vite.config.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> { defineConfig } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite'</span>
 <span class="hljs-keyword">import</span> vue <span class="hljs-keyword">from</span> <span class="hljs-string">'@vitejs/plugin-vue'</span>
 <span class="hljs-comment">// https://vitejs.dev/config/</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineConfig({
   <span class="hljs-attr">plugins</span>: [vue()]
 })
 </code></pre>
-<h3 id="t42.3 package.json">2.3 package.json <a href="#t42.3 package.json"> # </a></h3>
-<p>package.json</p>
-<pre><code class="lang-json">{
+      <h3 id="t42.3 package.json">2.3 package.json <a href="#t42.3 package.json"> # </a></h3>
+      <p>package.json</p>
+      <pre><code class="lang-json">{
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"vite2-prepare"</span>,
   <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.0.0"</span>,
   <span class="hljs-attr">"scripts"</span>: {
@@ -77,9 +504,9 @@ npm install  @vitejs/plugin-vue @vue/compiler-sfc vite --save-dev
   }
 }
 </code></pre>
-<h3 id="t52.4 index.html">2.4 index.html <a href="#t52.4 index.html"> # </a></h3>
-<p>index.html</p>
-<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+      <h3 id="t52.4 index.html">2.4 index.html <a href="#t52.4 index.html"> # </a></h3>
+      <p>index.html</p>
+      <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span> /&gt;</span>
@@ -94,15 +521,15 @@ npm install  @vitejs/plugin-vue @vue/compiler-sfc vite --save-dev
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 
 </code></pre>
-<h3 id="t62.5 src\main.js">2.5 src\main.js <a href="#t62.5 src\main.js"> # </a></h3>
-<p>src\main.js</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createApp } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+      <h3 id="t62.5 src\main.js">2.5 src\main.js <a href="#t62.5 src\main.js"> # </a></h3>
+      <p>src\main.js</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> { createApp } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
 <span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'./App.vue'</span>
 createApp(App).mount(<span class="hljs-string">'#app'</span>)
 </code></pre>
-<h3 id="t72.6 src\App.vue">2.6 src\App.vue <a href="#t72.6 src\App.vue"> # </a></h3>
-<p>src\App.vue</p>
-<pre><code class="lang-js">&lt;template&gt;
+      <h3 id="t72.6 src\App.vue">2.6 src\App.vue <a href="#t72.6 src\App.vue"> # </a></h3>
+      <p>src\App.vue</p>
+      <pre><code class="lang-js">&lt;template&gt;
   &lt;img src="./assets/ico.jpg" /&gt;
   &lt;HelloWorld msg="Vue3 + Vite" /&gt;
 &lt;/template&gt;
@@ -112,25 +539,25 @@ createApp(App).mount(<span class="hljs-string">'#app'</span>)
 import HelloWorld from './components/HelloWorld.vue'
 &lt;/script&gt;
 </code></pre>
-<h3 id="t82.7 HelloWorld.vue">2.7 HelloWorld.vue <a href="#t82.7 HelloWorld.vue"> # </a></h3>
-<p>src\components\HelloWorld.vue</p>
-<pre><code class="lang-js">&lt;template&gt;
+      <h3 id="t82.7 HelloWorld.vue">2.7 HelloWorld.vue <a href="#t82.7 HelloWorld.vue"> # </a></h3>
+      <p>src\components\HelloWorld.vue</p>
+      <pre><code class="lang-js">&lt;template&gt;
   &lt;h1&gt;{{ msg }}&lt;/h1&gt;
 &lt;/template&gt;
 </code></pre>
-<h2 id="t93.静态资源处理">3.静态资源处理 <a href="#t93.静态资源处理"> # </a></h2>
-<ul>
-<li><a href="https://cn.vitejs.dev/guide/assets.html">静态资源处理</a></li>
-<li>服务时引入一个静态资源会返回解析后的公共路径</li>
-</ul>
-<h3 id="t103.1 模板中引入">3.1 模板中引入 <a href="#t103.1 模板中引入"> # </a></h3>
-<p>src\App.vue</p>
-<pre><code class="lang-diff">&lt;template&gt;
+      <h2 id="t93.静态资源处理">3.静态资源处理 <a href="#t93.静态资源处理"> # </a></h2>
+      <ul>
+        <li><a href="https://cn.vitejs.dev/guide/assets.html">静态资源处理</a></li>
+        <li>服务时引入一个静态资源会返回解析后的公共路径</li>
+      </ul>
+      <h3 id="t103.1 模板中引入">3.1 模板中引入 <a href="#t103.1 模板中引入"> # </a></h3>
+      <p>src\App.vue</p>
+      <pre><code class="lang-diff">&lt;template&gt;
 <span class="hljs-addition">+  &lt;img  src="./assets/avatar.jpg" /&gt;</span>
 &lt;/template&gt;
 </code></pre>
-<h3 id="t113.2 JS中引入">3.2 JS中引入 <a href="#t113.2 JS中引入"> # </a></h3>
-<pre><code class="lang-diff">&lt;template&gt;
+      <h3 id="t113.2 JS中引入">3.2 JS中引入 <a href="#t113.2 JS中引入"> # </a></h3>
+      <pre><code class="lang-diff">&lt;template&gt;
   &lt;img  src="./assets/avatar.jpg" /&gt;
 <span class="hljs-addition">+  &lt;img  :src="imgUrl" /&gt;</span>
   &lt;HelloWorld msg="Hello Vue 3 + Vite" /&gt;
@@ -142,8 +569,8 @@ import HelloWorld from './components/HelloWorld.vue'
 <span class="hljs-addition">+import imgUrl from './assets/avatar.jpg'</span>
 &lt;/script&gt;
 </code></pre>
-<h3 id="t123.3 CSS中引入">3.3 CSS中引入 <a href="#t123.3 CSS中引入"> # </a></h3>
-<pre><code class="lang-diff">&lt;template&gt;
+      <h3 id="t123.3 CSS中引入">3.3 CSS中引入 <a href="#t123.3 CSS中引入"> # </a></h3>
+      <pre><code class="lang-diff">&lt;template&gt;
   &lt;img  src="./assets/avatar.jpg" /&gt;
   &lt;img  :src="imgUrl" /&gt;
 <span class="hljs-addition">+ &lt;div class="avatar"&gt;&lt;/div&gt;</span>
@@ -164,21 +591,21 @@ import imgUrl from './assets/avatar.jpg'
 <span class="hljs-addition">+}</span>
 <span class="hljs-addition">+&lt;/style&gt;</span>
 </code></pre>
-<h3 id="t133.4 public目录">3.4 public目录 <a href="#t133.4 public目录"> # </a></h3>
-<ul>
-<li><a href="https://cn.vitejs.dev/guide/assets.html#the-public-directory">public目录</a></li>
-<li>如果有以下需求<ul>
-<li>这些资源不会被源码引用（例如 robots.txt）</li>
-<li>这些资源必须保持原有文件名（没有经过 hash）</li>
-</ul>
-</li>
-<li>那么你可以将该资源放在指定的 <code>public</code> 目录中，它应位于你的项目根目录</li>
-<li>该目录中的资源在开发时能直接通过 <code>/</code> 根路径访问到，并且打包时会被完整复制到目标目录的根目录下</li>
-</ul>
-<p><code>public\avatar.jpg</code></p>
-<h2 id="t144.配置别名">4.配置别名 <a href="#t144.配置别名"> # </a></h2>
-<h3 id="t154.1 vite.config.js">4.1 vite.config.js <a href="#t154.1 vite.config.js"> # </a></h3>
-<pre><code class="lang-diff">import { defineConfig } from 'vite'
+      <h3 id="t133.4 public目录">3.4 public目录 <a href="#t133.4 public目录"> # </a></h3>
+      <ul>
+        <li><a href="https://cn.vitejs.dev/guide/assets.html#the-public-directory">public目录</a></li>
+        <li>如果有以下需求<ul>
+            <li>这些资源不会被源码引用（例如 robots.txt）</li>
+            <li>这些资源必须保持原有文件名（没有经过 hash）</li>
+          </ul>
+        </li>
+        <li>那么你可以将该资源放在指定的 <code>public</code> 目录中，它应位于你的项目根目录</li>
+        <li>该目录中的资源在开发时能直接通过 <code>/</code> 根路径访问到，并且打包时会被完整复制到目标目录的根目录下</li>
+      </ul>
+      <p><code>public\avatar.jpg</code></p>
+      <h2 id="t144.配置别名">4.配置别名 <a href="#t144.配置别名"> # </a></h2>
+      <h3 id="t154.1 vite.config.js">4.1 vite.config.js <a href="#t154.1 vite.config.js"> # </a></h3>
+      <pre><code class="lang-diff">import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 <span class="hljs-addition">+import {resolve} from 'path';</span>
 
@@ -192,9 +619,9 @@ export default defineConfig({
   plugins: [vue()]
 })
 </code></pre>
-<h3 id="t164.2 App.vue">4.2 App.vue <a href="#t164.2 App.vue"> # </a></h3>
-<p>src\App.vue</p>
-<pre><code class="lang-diff">&lt;template&gt;
+      <h3 id="t164.2 App.vue">4.2 App.vue <a href="#t164.2 App.vue"> # </a></h3>
+      <p>src\App.vue</p>
+      <pre><code class="lang-diff">&lt;template&gt;
 <span class="hljs-addition">+ &lt;img src="@/assets/avatar.jpg" /&gt;</span>
   &lt;img :src="avatarUrl" /&gt;
   &lt;div class="avatar"&gt;&lt;/div&gt;
@@ -214,27 +641,27 @@ export default defineConfig({
 }
 &lt;/style&gt;
 </code></pre>
-<h2 id="t175.样式处理">5.样式处理 <a href="#t175.样式处理"> # </a></h2>
-<h3 id="t185.1 全局样式">5.1 全局样式 <a href="#t185.1 全局样式"> # </a></h3>
-<p>src\main.js</p>
-<pre><code class="lang-diff">import { createApp } from 'vue'
+      <h2 id="t175.样式处理">5.样式处理 <a href="#t175.样式处理"> # </a></h2>
+      <h3 id="t185.1 全局样式">5.1 全局样式 <a href="#t185.1 全局样式"> # </a></h3>
+      <p>src\main.js</p>
+      <pre><code class="lang-diff">import { createApp } from 'vue'
 import App from './App.vue'
 <span class="hljs-addition">+import './global.css'</span>
 createApp(App).mount('#app')
 </code></pre>
-<p>src\global.css</p>
-<pre><code class="lang-css"><span class="hljs-selector-id">#app</span> {
+      <p>src\global.css</p>
+      <pre><code class="lang-css"><span class="hljs-selector-id">#app</span> {
     <span class="hljs-attribute">background-color</span>: lightgrey;
 }
 </code></pre>
-<h3 id="t195.2 局部样式">5.2 局部样式 <a href="#t195.2 局部样式"> # </a></h3>
-<h3 id="t205.2.1 scoped">5.2.1 scoped <a href="#t205.2.1 scoped"> # </a></h3>
-<ul>
-<li>当 <code>&lt;style&gt;</code> 标签有 <code>scoped</code> 属性时，它的 CSS 只作用于当前组件中的元素</li>
-<li>它使用了<code>data-v-hash</code>的方式来使css有了它对应模块的标识</li>
-</ul>
-<p>src\components\HelloWorld.vue</p>
-<pre><code class="lang-diff">&lt;template&gt;
+      <h3 id="t195.2 局部样式">5.2 局部样式 <a href="#t195.2 局部样式"> # </a></h3>
+      <h3 id="t205.2.1 scoped">5.2.1 scoped <a href="#t205.2.1 scoped"> # </a></h3>
+      <ul>
+        <li>当 <code>&lt;style&gt;</code> 标签有 <code>scoped</code> 属性时，它的 CSS 只作用于当前组件中的元素</li>
+        <li>它使用了<code>data-v-hash</code>的方式来使css有了它对应模块的标识</li>
+      </ul>
+      <p>src\components\HelloWorld.vue</p>
+      <pre><code class="lang-diff">&lt;template&gt;
   &lt;h1&gt;{{ msg }}&lt;/h1&gt;
 <span class="hljs-addition">+  &lt;a&gt;超链接&lt;/a&gt;</span>
 &lt;/template&gt;
@@ -244,14 +671,14 @@ createApp(App).mount('#app')
 <span class="hljs-addition">+}</span>
 <span class="hljs-addition">+&lt;/style&gt;</span>
 </code></pre>
-<h3 id="t215.2.2 CSS Modules">5.2.2 CSS Modules <a href="#t215.2.2 CSS Modules"> # </a></h3>
-<ul>
-<li><a href="https://cn.vitejs.dev/guide/features.html#postcss">CSS Modules</a></li>
-<li>通过<code>module</code>作用的<code>style</code>都被保存到<code>$style</code>对象中</li>
-</ul>
-<h3 id="t225.2.2.1  内联">5.2.2.1  内联 <a href="#t225.2.2.1  内联"> # </a></h3>
-<p>src\components\HelloWorld.vue</p>
-<pre><code class="lang-diff">&lt;template&gt;
+      <h3 id="t215.2.2 CSS Modules">5.2.2 CSS Modules <a href="#t215.2.2 CSS Modules"> # </a></h3>
+      <ul>
+        <li><a href="https://cn.vitejs.dev/guide/features.html#postcss">CSS Modules</a></li>
+        <li>通过<code>module</code>作用的<code>style</code>都被保存到<code>$style</code>对象中</li>
+      </ul>
+      <h3 id="t225.2.2.1  内联">5.2.2.1 内联 <a href="#t225.2.2.1  内联"> # </a></h3>
+      <p>src\components\HelloWorld.vue</p>
+      <pre><code class="lang-diff">&lt;template&gt;
   &lt;h1&gt;{{ msg }}&lt;/h1&gt;
 <span class="hljs-addition">+ &lt;a :class="$style.link"&gt;超链接&lt;/a&gt;</span>
 &lt;/template&gt;
@@ -261,13 +688,13 @@ createApp(App).mount('#app')
 <span class="hljs-addition">+}</span>
 <span class="hljs-addition">+&lt;/style&gt;</span>
 </code></pre>
-<h3 id="t235.2.2.2  外联">5.2.2.2  外联 <a href="#t235.2.2.2  外联"> # </a></h3>
-<ul>
-<li>任何以 .module.css 为后缀名的 CSS 文件都被认为是一个 CSS modules 文件</li>
-<li>导入这样的文件会返回一个相应的模块对象
-src\components\HelloWorld.vue</li>
-</ul>
-<pre><code class="lang-diff">&lt;template&gt;
+      <h3 id="t235.2.2.2  外联">5.2.2.2 外联 <a href="#t235.2.2.2  外联"> # </a></h3>
+      <ul>
+        <li>任何以 .module.css 为后缀名的 CSS 文件都被认为是一个 CSS modules 文件</li>
+        <li>导入这样的文件会返回一个相应的模块对象
+          src\components\HelloWorld.vue</li>
+      </ul>
+      <pre><code class="lang-diff">&lt;template&gt;
   &lt;h1&gt;{{ msg }}&lt;/h1&gt;
 <span class="hljs-addition">+ &lt;a :class="style.link"&gt;超链接&lt;/a&gt;</span>
 &lt;/template&gt;
@@ -276,22 +703,22 @@ src\components\HelloWorld.vue</li>
 <span class="hljs-addition">+import style from './HelloWorld.module.css';</span>
 &lt;/script&gt;
 </code></pre>
-<p>src\components\HelloWorld.module.css</p>
-<pre><code class="lang-js">.link {
+      <p>src\components\HelloWorld.module.css</p>
+      <pre><code class="lang-js">.link {
     color: #42b983;
 }
 </code></pre>
-<h3 id="t245.3 less和sass">5.3 less和sass <a href="#t245.3 less和sass"> # </a></h3>
-<ul>
-<li>Vite 也同时提供了对 .scss, .sass, .less, .styl 和 .stylus 文件的内置支持。没有必要为它们安装特定的 Vite 插件，但必须安装相应的预处理器依赖</li>
-<li>如果是用的是单文件组件，可以通过 <code>style lang="sass"</code>（或其他预处理器）自动开启</li>
-</ul>
-<h4 id="t255.3.1 安装">5.3.1 安装 <a href="#t255.3.1 安装"> # </a></h4>
-<pre><code class="lang-js">npm i less sass -S
+      <h3 id="t245.3 less和sass">5.3 less和sass <a href="#t245.3 less和sass"> # </a></h3>
+      <ul>
+        <li>Vite 也同时提供了对 .scss, .sass, .less, .styl 和 .stylus 文件的内置支持。没有必要为它们安装特定的 Vite 插件，但必须安装相应的预处理器依赖</li>
+        <li>如果是用的是单文件组件，可以通过 <code>style lang="sass"</code>（或其他预处理器）自动开启</li>
+      </ul>
+      <h4 id="t255.3.1 安装">5.3.1 安装 <a href="#t255.3.1 安装"> # </a></h4>
+      <pre><code class="lang-js">npm i less sass -S
 </code></pre>
-<h4 id="t265.3.2 HelloWorld.vue">5.3.2 HelloWorld.vue <a href="#t265.3.2 HelloWorld.vue"> # </a></h4>
-<p>src\components\HelloWorld.vue</p>
-<pre><code class="lang-diff">&lt;template&gt;
+      <h4 id="t265.3.2 HelloWorld.vue">5.3.2 HelloWorld.vue <a href="#t265.3.2 HelloWorld.vue"> # </a></h4>
+      <p>src\components\HelloWorld.vue</p>
+      <pre><code class="lang-diff">&lt;template&gt;
   &lt;h1&gt;{{ msg }}&lt;/h1&gt;
   &lt;a :class="style.link"&gt;超链接&lt;/a&gt;
 <span class="hljs-addition">+ &lt;h2&gt;less&lt;/h2&gt;</span>
@@ -315,29 +742,29 @@ import style from './HelloWorld.module.css';
 <span class="hljs-addition">+}</span>
 &lt;/style&gt;
 </code></pre>
-<h3 id="t275.4 PostCSS">5.4 PostCSS <a href="#t275.4 PostCSS"> # </a></h3>
-<ul>
-<li><a href="https://cn.vitejs.dev/guide/features.html#postcss">postcss</a></li>
-<li>如果项目包含有效的 PostCSS 配置 (任何受 postcss-load-config 支持的格式，例如 postcss.config.js)，它将会自动应用于所有已导入的 CSS</li>
-</ul>
-<h4 id="t285.4.1 安装">5.4.1 安装 <a href="#t285.4.1 安装"> # </a></h4>
-<pre><code class="lang-js">npm install autoprefixer --save
+      <h3 id="t275.4 PostCSS">5.4 PostCSS <a href="#t275.4 PostCSS"> # </a></h3>
+      <ul>
+        <li><a href="https://cn.vitejs.dev/guide/features.html#postcss">postcss</a></li>
+        <li>如果项目包含有效的 PostCSS 配置 (任何受 postcss-load-config 支持的格式，例如 postcss.config.js)，它将会自动应用于所有已导入的 CSS</li>
+      </ul>
+      <h4 id="t285.4.1 安装">5.4.1 安装 <a href="#t285.4.1 安装"> # </a></h4>
+      <pre><code class="lang-js">npm install autoprefixer --save
 </code></pre>
-<h4 id="t295.4.2 postcss.config.js">5.4.2 postcss.config.js <a href="#t295.4.2 postcss.config.js"> # </a></h4>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+      <h4 id="t295.4.2 postcss.config.js">5.4.2 postcss.config.js <a href="#t295.4.2 postcss.config.js"> # </a></h4>
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
   <span class="hljs-attr">plugins</span>: [
       <span class="hljs-built_in">require</span>(<span class="hljs-string">'autoprefixer'</span>)
   ]
 }
 </code></pre>
-<h4 id="t305.4.3 .browserslistrc">5.4.3 .browserslistrc <a href="#t305.4.3 .browserslistrc"> # </a></h4>
-<pre><code class="lang-js">&gt;<span class="hljs-number">0.2</span>%
+      <h4 id="t305.4.3 .browserslistrc">5.4.3 .browserslistrc <a href="#t305.4.3 .browserslistrc"> # </a></h4>
+      <pre><code class="lang-js">&gt;<span class="hljs-number">0.2</span>%
 not dead
 not op_mini all
 </code></pre>
-<h4 id="t315.4.4 HelloWorld.vue">5.4.4 HelloWorld.vue <a href="#t315.4.4 HelloWorld.vue"> # </a></h4>
-<p>src\components\HelloWorld.vue</p>
-<pre><code class="lang-diff">&lt;template&gt;
+      <h4 id="t315.4.4 HelloWorld.vue">5.4.4 HelloWorld.vue <a href="#t315.4.4 HelloWorld.vue"> # </a></h4>
+      <p>src\components\HelloWorld.vue</p>
+      <pre><code class="lang-diff">&lt;template&gt;
   &lt;h1&gt;{{ msg }}&lt;/h1&gt;
   &lt;a :class="style.link"&gt;超链接&lt;/a&gt;
   &lt;h2&gt;less&lt;/h2&gt;
@@ -371,21 +798,21 @@ h3{
 <span class="hljs-addition">+}</span>
 <span class="hljs-addition">+&lt;/style&gt;</span>
 </code></pre>
-<h2 id="t326.typescript">6.typescript <a href="#t326.typescript"> # </a></h2>
-<h3 id="t336.1 安装">6.1 安装 <a href="#t336.1 安装"> # </a></h3>
-<pre><code class="lang-js">cnpm install typescript @babel/core @babel/preset-env  @babel/preset-typescript --save-dev
+      <h2 id="t326.typescript">6.typescript <a href="#t326.typescript"> # </a></h2>
+      <h3 id="t336.1 安装">6.1 安装 <a href="#t336.1 安装"> # </a></h3>
+      <pre><code class="lang-js">cnpm install typescript @babel/core @babel/preset-env  @babel/preset-typescript --save-dev
 </code></pre>
-<h3 id="t346.2 .babelrc">6.2 .babelrc <a href="#t346.2 .babelrc"> # </a></h3>
-<p>.babelrc</p>
-<pre><code class="lang-js">{
+      <h3 id="t346.2 .babelrc">6.2 .babelrc <a href="#t346.2 .babelrc"> # </a></h3>
+      <p>.babelrc</p>
+      <pre><code class="lang-js">{
     <span class="hljs-string">"presets"</span>: [
         [<span class="hljs-string">"@babel/preset-env"</span>],
         <span class="hljs-string">"@babel/preset-typescript"</span>
     ]
 }
 </code></pre>
-<h3 id="t356.3 tsconfig.json">6.3 tsconfig.json <a href="#t356.3 tsconfig.json"> # </a></h3>
-<pre><code class="lang-json">{
+      <h3 id="t356.3 tsconfig.json">6.3 tsconfig.json <a href="#t356.3 tsconfig.json"> # </a></h3>
+      <pre><code class="lang-json">{
   <span class="hljs-attr">"compilerOptions"</span>: {
     <span class="hljs-attr">"target"</span>: <span class="hljs-string">"esnext"</span>,
     <span class="hljs-attr">"module"</span>: <span class="hljs-string">"esnext"</span>,
@@ -400,9 +827,9 @@ h3{
   <span class="hljs-attr">"include"</span>: [<span class="hljs-string">"src/**/*.ts"</span>, <span class="hljs-string">"src/**/*.d.ts"</span>, <span class="hljs-string">"src/**/*.tsx"</span>, <span class="hljs-string">"src/**/*.vue"</span>]
 }
 </code></pre>
-<h3 id="t366.4 HelloWorld.vue">6.4 HelloWorld.vue <a href="#t366.4 HelloWorld.vue"> # </a></h3>
-<p>src\components\HelloWorld.vue</p>
-<pre><code class="lang-diff">&lt;template&gt;
+      <h3 id="t366.4 HelloWorld.vue">6.4 HelloWorld.vue <a href="#t366.4 HelloWorld.vue"> # </a></h3>
+      <p>src\components\HelloWorld.vue</p>
+      <pre><code class="lang-diff">&lt;template&gt;
   &lt;h1&gt;{{ msg }}&lt;/h1&gt;
   &lt;h2&gt;less&lt;/h2&gt;
   &lt;h3&gt;sass&lt;/h3&gt;
@@ -446,35 +873,36 @@ h3{
 }
 &lt;/style&gt;
 </code></pre>
-<h3 id="t376.5 shims-vue.d.ts">6.5 shims-vue.d.ts <a href="#t376.5 shims-vue.d.ts"> # </a></h3>
-<ul>
-<li>让typescript识别支持<code>.vue</code>文件</li>
-</ul>
-<p>src\shims-vue.d.ts</p>
-<pre><code class="lang-js">declare <span class="hljs-built_in">module</span> <span class="hljs-string">'*.vue'</span> {
+      <h3 id="t376.5 shims-vue.d.ts">6.5 shims-vue.d.ts <a href="#t376.5 shims-vue.d.ts"> # </a></h3>
+      <ul>
+        <li>让typescript识别支持<code>.vue</code>文件</li>
+      </ul>
+      <p>src\shims-vue.d.ts</p>
+      <pre><code class="lang-js">declare <span class="hljs-built_in">module</span> <span class="hljs-string">'*.vue'</span> {
   <span class="hljs-keyword">import</span> { DefineComponent } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
   <span class="hljs-keyword">const</span> component: DefineComponent&lt;{}, {}, any&gt;
   <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> component
 }
 
 </code></pre>
-<h3 id="t386.6 vite-env.d.ts">6.6 vite-env.d.ts <a href="#t386.6 vite-env.d.ts"> # </a></h3>
-<ul>
-<li>如果你的库依赖于某个全局库，使用/// <reference types="...">指令</reference></li>
-<li>三斜线指令仅可放在包含它的文件的最顶端</li>
-<li>三斜线引用告诉编译器在编译过程中要引入的额外的文件</li>
-</ul>
-<p>src\vite-env.d.ts</p>
-<pre><code class="lang-js"><span class="hljs-comment">/// &lt;reference types="vite/client" /&gt;</span>
+      <h3 id="t386.6 vite-env.d.ts">6.6 vite-env.d.ts <a href="#t386.6 vite-env.d.ts"> # </a></h3>
+      <ul>
+        <li>如果你的库依赖于某个全局库，使用/// <reference types="...">指令</reference>
+        </li>
+        <li>三斜线指令仅可放在包含它的文件的最顶端</li>
+        <li>三斜线引用告诉编译器在编译过程中要引入的额外的文件</li>
+      </ul>
+      <p>src\vite-env.d.ts</p>
+      <pre><code class="lang-js"><span class="hljs-comment">/// &lt;reference types="vite/client" /&gt;</span>
 </code></pre>
-<h2 id="t397.配置代理">7.配置代理 <a href="#t397.配置代理"> # </a></h2>
-<ul>
-<li><a href="https://cn.vitejs.dev/config/#server-proxy">server-proxy</a></li>
-<li>为开发服务器配置自定义代理规则</li>
-<li>期望接收一个 { key: options } 对象。如果 key 值以 ^ 开头，将会被解释为 RegExp。configure 可用于访问 proxy 实例。</li>
-</ul>
-<h3 id="t407.1 vite.config.js">7.1 vite.config.js <a href="#t407.1 vite.config.js"> # </a></h3>
-<pre><code class="lang-diff">import { defineConfig } from 'vite'
+      <h2 id="t397.配置代理">7.配置代理 <a href="#t397.配置代理"> # </a></h2>
+      <ul>
+        <li><a href="https://cn.vitejs.dev/config/#server-proxy">server-proxy</a></li>
+        <li>为开发服务器配置自定义代理规则</li>
+        <li>期望接收一个 { key: options } 对象。如果 key 值以 ^ 开头，将会被解释为 RegExp。configure 可用于访问 proxy 实例。</li>
+      </ul>
+      <h3 id="t407.1 vite.config.js">7.1 vite.config.js <a href="#t407.1 vite.config.js"> # </a></h3>
+      <pre><code class="lang-diff">import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path';
 
@@ -498,9 +926,9 @@ export default defineConfig({
 })
 
 </code></pre>
-<h3 id="t417.2 src\App.vue">7.2 src\App.vue <a href="#t417.2 src\App.vue"> # </a></h3>
-<p>src\App.vue</p>
-<pre><code class="lang-diff">&lt;template&gt;
+      <h3 id="t417.2 src\App.vue">7.2 src\App.vue <a href="#t417.2 src\App.vue"> # </a></h3>
+      <p>src\App.vue</p>
+      <pre><code class="lang-diff">&lt;template&gt;
   &lt;img src="@/assets/avatar.jpg" /&gt;
   &lt;img :src="avatarUrl" /&gt;
   &lt;div class="avatar"&gt;&lt;/div&gt;
@@ -524,15 +952,15 @@ import avatarUrl from "@/assets/avatar.jpg";
 }
 &lt;/style&gt;
 </code></pre>
-<h2 id="t428.mock">8.mock <a href="#t428.mock"> # </a></h2>
-<ul>
-<li><a href="https://www.npmjs.com/package/vite-plugin-mock">vite-plugin-mock</a></li>
-</ul>
-<pre><code class="lang-js">npm i mockjs vite-plugin-mock -D
+      <h2 id="t428.mock">8.mock <a href="#t428.mock"> # </a></h2>
+      <ul>
+        <li><a href="https://www.npmjs.com/package/vite-plugin-mock">vite-plugin-mock</a></li>
+      </ul>
+      <pre><code class="lang-js">npm i mockjs vite-plugin-mock -D
 node ./node_modules/vite-plugin-mock/node_modules/esbuild/install.js
 </code></pre>
-<h3 id="t438.1 vite.config.js">8.1 vite.config.js <a href="#t438.1 vite.config.js"> # </a></h3>
-<pre><code class="lang-diff">import { defineConfig } from 'vite'
+      <h3 id="t438.1 vite.config.js">8.1 vite.config.js <a href="#t438.1 vite.config.js"> # </a></h3>
+      <pre><code class="lang-diff">import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path';
 <span class="hljs-addition">+import { viteMockServe } from "vite-plugin-mock";</span>
@@ -555,9 +983,9 @@ export default defineConfig({
 <span class="hljs-addition">+  plugins: [vue(),viteMockServe({})]</span>
 })
 </code></pre>
-<h3 id="t448.2 mock\test.ts">8.2 mock\test.ts <a href="#t448.2 mock\test.ts"> # </a></h3>
-<p>mock\test.ts</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { MockMethod } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite-plugin-mock'</span>;
+      <h3 id="t448.2 mock\test.ts">8.2 mock\test.ts <a href="#t448.2 mock\test.ts"> # </a></h3>
+      <p>mock\test.ts</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> { MockMethod } <span class="hljs-keyword">from</span> <span class="hljs-string">'vite-plugin-mock'</span>;
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> [
     {
         <span class="hljs-attr">url</span>: <span class="hljs-string">'/api/get'</span>,
@@ -573,19 +1001,20 @@ export default defineConfig({
     },
 ] <span class="hljs-keyword">as</span> MockMethod[];
 </code></pre>
-<h2 id="t459.ESLint">9.ESLint <a href="#t459.ESLint"> # </a></h2>
-<ul>
-<li>ESLint是一个开源的 JavaScript 的 linting 工具<ul>
-<li>代码质量问题：使用方式有可能有问题</li>
-<li>代码风格问题：风格不符合一定规则</li>
-</ul>
-</li>
-</ul>
-<pre><code class="lang-js">npm install eslint eslint-plugin-vue  @vue/eslint-config-typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
+      <h2 id="t459.ESLint">9.ESLint <a href="#t459.ESLint"> # </a></h2>
+      <ul>
+        <li>ESLint是一个开源的 JavaScript 的 linting 工具<ul>
+            <li>代码质量问题：使用方式有可能有问题</li>
+            <li>代码风格问题：风格不符合一定规则</li>
+          </ul>
+        </li>
+      </ul>
+      <pre><code class="lang-js">npm install eslint eslint-plugin-vue  @vue/eslint-config-typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
 </code></pre>
-<h3 id="t469.1 src\components\HelloWorld.vue">9.1 src\components\HelloWorld.vue <a href="#t469.1 src\components\HelloWorld.vue"> # </a></h3>
-<p>src\components\HelloWorld.vue</p>
-<pre><code class="lang-diff">&lt;template&gt;
+      <h3 id="t469.1 src\components\HelloWorld.vue">9.1 src\components\HelloWorld.vue <a
+          href="#t469.1 src\components\HelloWorld.vue"> # </a></h3>
+      <p>src\components\HelloWorld.vue</p>
+      <pre><code class="lang-diff">&lt;template&gt;
   &lt;h1&gt;{{ msg }}&lt;/h1&gt;
   &lt;h2&gt;less&lt;/h2&gt;
   &lt;h3&gt;sass&lt;/h3&gt;
@@ -634,16 +1063,16 @@ h3{
 }
 &lt;/style&gt;
 </code></pre>
-<h3 id="t479.2 main.ts">9.2 main.ts <a href="#t479.2 main.ts"> # </a></h3>
-<p>src\main.ts</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { createApp } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+      <h3 id="t479.2 main.ts">9.2 main.ts <a href="#t479.2 main.ts"> # </a></h3>
+      <p>src\main.ts</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> { createApp } <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
 <span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">'./App.vue'</span>
 <span class="hljs-keyword">import</span> <span class="hljs-string">'./global.css'</span>
 createApp(App).mount(<span class="hljs-string">'#app'</span>)
 </code></pre>
-<h3 id="t489.3 .eslintrc.js">9.3 .eslintrc.js <a href="#t489.3 .eslintrc.js"> # </a></h3>
-<p>.eslintrc.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+      <h3 id="t489.3 .eslintrc.js">9.3 .eslintrc.js <a href="#t489.3 .eslintrc.js"> # </a></h3>
+      <p>.eslintrc.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
     <span class="hljs-attr">root</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-attr">env</span>: {
         <span class="hljs-attr">browser</span>: <span class="hljs-literal">true</span>,
@@ -664,18 +1093,18 @@ createApp(App).mount(<span class="hljs-string">'#app'</span>)
     }
 }
 </code></pre>
-<h3 id="t499.4 .eslintignore">9.4 .eslintignore <a href="#t499.4 .eslintignore"> # </a></h3>
-<p>.eslintignore</p>
-<pre><code class="lang-js">*.css
+      <h3 id="t499.4 .eslintignore">9.4 .eslintignore <a href="#t499.4 .eslintignore"> # </a></h3>
+      <p>.eslintignore</p>
+      <pre><code class="lang-js">*.css
 *.jpg
 *.jpeg
 *.png
 *.gif
 *.d.ts
 </code></pre>
-<h3 id="t509.5 package.json">9.5 package.json <a href="#t509.5 package.json"> # </a></h3>
-<p>package.json</p>
-<pre><code class="lang-diff">{
+      <h3 id="t509.5 package.json">9.5 package.json <a href="#t509.5 package.json"> # </a></h3>
+      <p>package.json</p>
+      <pre><code class="lang-diff">{
   "name": "zhufeng-vite2-prepare",
   "version": "1.0.0",
   "scripts": {
@@ -705,34 +1134,34 @@ createApp(App).mount(<span class="hljs-string">'#app'</span>)
   }
 }
 </code></pre>
-<h2 id="t5110.Prettier">10.Prettier <a href="#t5110.Prettier"> # </a></h2>
-<ul>
-<li>ESLint 主要解决的是代码质量问题</li>
-<li>代码质量规则 (code-quality rules)<ul>
-<li>no-unused-vars</li>
-<li>no-extra-bind</li>
-<li>no-implicit-globals</li>
-<li>prefer-promise-reject-errors</li>
-</ul>
-</li>
-<li>代码风格规则 (code-formatting rules)<ul>
-<li>max-len</li>
-<li>no-mixed-spaces-and-tabs</li>
-<li>keyword-spacing</li>
-<li>comma-style</li>
-</ul>
-</li>
-<li>代码风格问题需要使用<code>Prettier</code></li>
-<li>Prettier 声称自己是一个有主见的代码格式化工具 (opinionated code formatter)</li>
-</ul>
-<h3 id="t5210.1 安装">10.1 安装 <a href="#t5210.1 安装"> # </a></h3>
-<ul>
-<li><a href="https://github.com/prettier/eslint-plugin-prettier#options">eslint-plugin-prettier</a></li>
-</ul>
-<pre><code class="lang-js">npm install prettier eslint-plugin-prettier  @vue/eslint-config-prettier --save-dev
+      <h2 id="t5110.Prettier">10.Prettier <a href="#t5110.Prettier"> # </a></h2>
+      <ul>
+        <li>ESLint 主要解决的是代码质量问题</li>
+        <li>代码质量规则 (code-quality rules)<ul>
+            <li>no-unused-vars</li>
+            <li>no-extra-bind</li>
+            <li>no-implicit-globals</li>
+            <li>prefer-promise-reject-errors</li>
+          </ul>
+        </li>
+        <li>代码风格规则 (code-formatting rules)<ul>
+            <li>max-len</li>
+            <li>no-mixed-spaces-and-tabs</li>
+            <li>keyword-spacing</li>
+            <li>comma-style</li>
+          </ul>
+        </li>
+        <li>代码风格问题需要使用<code>Prettier</code></li>
+        <li>Prettier 声称自己是一个有主见的代码格式化工具 (opinionated code formatter)</li>
+      </ul>
+      <h3 id="t5210.1 安装">10.1 安装 <a href="#t5210.1 安装"> # </a></h3>
+      <ul>
+        <li><a href="https://github.com/prettier/eslint-plugin-prettier#options">eslint-plugin-prettier</a></li>
+      </ul>
+      <pre><code class="lang-js">npm install prettier eslint-plugin-prettier  @vue/eslint-config-prettier --save-dev
 </code></pre>
-<h3 id="t5310.2 package.json">10.2 package.json <a href="#t5310.2 package.json"> # </a></h3>
-<pre><code class="lang-diff">{
+      <h3 id="t5310.2 package.json">10.2 package.json <a href="#t5310.2 package.json"> # </a></h3>
+      <pre><code class="lang-diff">{
   "name": "zhufeng-vite2-prepare",
   "version": "1.0.0",
   "scripts": {
@@ -765,9 +1194,9 @@ createApp(App).mount(<span class="hljs-string">'#app'</span>)
   }
 }
 </code></pre>
-<h3 id="t5410.3 .eslintrc.js">10.3 .eslintrc.js <a href="#t5410.3 .eslintrc.js"> # </a></h3>
-<p>.eslintrc.js</p>
-<pre><code class="lang-diff">module.exports = {
+      <h3 id="t5410.3 .eslintrc.js">10.3 .eslintrc.js <a href="#t5410.3 .eslintrc.js"> # </a></h3>
+      <p>.eslintrc.js</p>
+      <pre><code class="lang-diff">module.exports = {
   root: true,
   env: {
     browser: true,
@@ -792,17 +1221,17 @@ createApp(App).mount(<span class="hljs-string">'#app'</span>)
 };
 
 </code></pre>
-<h2 id="t5511.单元测试">11.单元测试 <a href="#t5511.单元测试"> # </a></h2>
-<ul>
-<li><a href="https://next.vue-test-utils.vuejs.org/">next.vue-test-utils.vuejs.org</a></li>
-<li><a href="https://github.com/vuejs/vue-jest/tree/v3">vue-jest/tree/v3</a></li>
-<li><a href="https://www.jestjs.cn/docs/getting-started">jestjs</a></li>
-</ul>
-<h3 id="t5611.1 安装依赖">11.1 安装依赖 <a href="#t5611.1 安装依赖"> # </a></h3>
-<pre><code class="lang-js">cnpm i jest@next babel-jest@next @types/jest vue-jest@next ts-jest@next @vue/test-utils@next --save-dev
+      <h2 id="t5511.单元测试">11.单元测试 <a href="#t5511.单元测试"> # </a></h2>
+      <ul>
+        <li><a href="https://next.vue-test-utils.vuejs.org/">next.vue-test-utils.vuejs.org</a></li>
+        <li><a href="https://github.com/vuejs/vue-jest/tree/v3">vue-jest/tree/v3</a></li>
+        <li><a href="https://www.jestjs.cn/docs/getting-started">jestjs</a></li>
+      </ul>
+      <h3 id="t5611.1 安装依赖">11.1 安装依赖 <a href="#t5611.1 安装依赖"> # </a></h3>
+      <pre><code class="lang-js">cnpm i jest@next babel-jest@next @types/jest vue-jest@next ts-jest@next @vue/test-utils@next --save-dev
 </code></pre>
-<h3 id="t5711.2 package.json">11.2 package.json <a href="#t5711.2 package.json"> # </a></h3>
-<pre><code class="lang-diff">{
+      <h3 id="t5711.2 package.json">11.2 package.json <a href="#t5711.2 package.json"> # </a></h3>
+      <pre><code class="lang-diff">{
   "name": "zhufeng-vite2-prepare",
   "version": "1.0.0",
   "scripts": {
@@ -835,14 +1264,16 @@ createApp(App).mount(<span class="hljs-string">'#app'</span>)
   }
 }
 </code></pre>
-<h3 id="t5811.3 jest.config.js">11.3 jest.config.js <a href="#t5811.3 jest.config.js"> # </a></h3>
-<ul>
-<li><a href="https://github.com/vuejs/vue-jest/tree/v3">vue-jest</a>Jest Vue transformer with source map support</li>
-<li><a href="https://www.npmjs.com/package/babel-jest">babel-jest</a>Babel jest plugin</li>
-<li><a href="https://www.npmjs.com/package/ts-jest">ts-jest</a>A Jest transformer with source map support that lets you use Jest to test projects written in TypeScript</li>
-</ul>
-<p>jest.config.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+      <h3 id="t5811.3 jest.config.js">11.3 jest.config.js <a href="#t5811.3 jest.config.js"> # </a></h3>
+      <ul>
+        <li><a href="https://github.com/vuejs/vue-jest/tree/v3">vue-jest</a>Jest Vue transformer with source map support
+        </li>
+        <li><a href="https://www.npmjs.com/package/babel-jest">babel-jest</a>Babel jest plugin</li>
+        <li><a href="https://www.npmjs.com/package/ts-jest">ts-jest</a>A Jest transformer with source map support that
+          lets you use Jest to test projects written in TypeScript</li>
+      </ul>
+      <p>jest.config.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
   <span class="hljs-attr">testEnvironment</span>: <span class="hljs-string">"jsdom"</span>,
   <span class="hljs-attr">transform</span>: {
     <span class="hljs-string">"^.+\\.vue$"</span>: <span class="hljs-string">"vue-jest"</span>,
@@ -855,9 +1286,9 @@ createApp(App).mount(<span class="hljs-string">'#app'</span>)
   <span class="hljs-attr">testMatch</span>: [<span class="hljs-string">"**/tests/**/*.spec.[jt]s"</span>],
 };
 </code></pre>
-<h3 id="t5911.4 tests\test.ts">11.4 tests\test.ts <a href="#t5911.4 tests\test.ts"> # </a></h3>
-<p>tests\test.ts</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { mount } <span class="hljs-keyword">from</span> <span class="hljs-string">'@vue/test-utils'</span>
+      <h3 id="t5911.4 tests\test.ts">11.4 tests\test.ts <a href="#t5911.4 tests\test.ts"> # </a></h3>
+      <p>tests\test.ts</p>
+      <pre><code class="lang-js"><span class="hljs-keyword">import</span> { mount } <span class="hljs-keyword">from</span> <span class="hljs-string">'@vue/test-utils'</span>
 <span class="hljs-keyword">const</span> MessageComponent = {
   <span class="hljs-attr">template</span>: <span class="hljs-string">'&lt;p&gt;{{ msg }}&lt;/p&gt;'</span>,
   <span class="hljs-attr">props</span>: [<span class="hljs-string">'msg'</span>]
@@ -871,9 +1302,9 @@ test(<span class="hljs-string">'displays message'</span>, () =&gt; {
   expect(wrapper.text()).toContain(<span class="hljs-string">'Hello world'</span>)
 })
 </code></pre>
-<h3 id="t6011.5 tsconfig.json">11.5 tsconfig.json <a href="#t6011.5 tsconfig.json"> # </a></h3>
-<p>tsconfig.json</p>
-<pre><code class="lang-diff">{
+      <h3 id="t6011.5 tsconfig.json">11.5 tsconfig.json <a href="#t6011.5 tsconfig.json"> # </a></h3>
+      <p>tsconfig.json</p>
+      <pre><code class="lang-diff">{
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
@@ -893,9 +1324,9 @@ test(<span class="hljs-string">'displays message'</span>, () =&gt; {
 <span class="hljs-addition">+ "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue","tests/**/*.spec.ts", "tests/test.ts"]</span>
 }
 </code></pre>
-<h3 id="t6111.6 package.json">11.6 package.json <a href="#t6111.6 package.json"> # </a></h3>
-<p>package.json</p>
-<pre><code class="lang-diff">{
+      <h3 id="t6111.6 package.json">11.6 package.json <a href="#t6111.6 package.json"> # </a></h3>
+      <p>package.json</p>
+      <pre><code class="lang-diff">{
    "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -906,99 +1337,103 @@ test(<span class="hljs-string">'displays message'</span>, () =&gt; {
   }
 }
 </code></pre>
-<h2 id="t6212.git hook">12.git hook <a href="#t6212.git hook"> # </a></h2>
-<ul>
-<li>可以在<code>git commit</code>之前检查代码，保证所有提交到版本库中的代码都是符合规范的</li>
-<li>可以在<code>git push</code>之前执行单元测试,保证所有的提交的代码经过的单元测试</li>
-<li><a href="[husky](https://www.npmjs.com/package/husky">husky</a>)可以让我们向项目中方便添加git hooks</li>
-<li><a href="https://www.npmjs.com/package/lint-staged">lint-staged</a>用于实现每次提交只检查本次提交所修改的文件</li>
-<li><a href="https://github.com/okonet/lint-staged#configuration">lint-staged#configuration</a></li>
-<li><a href="">Commitlint</a>可以规范<code>git commit -m ""</code>中的描述信息</li>
-</ul>
-<h3 id="t6312.1 注释规范">12.1 注释规范 <a href="#t6312.1 注释规范"> # </a></h3>
-<ul>
-<li>commitlint 推荐我们使用 config-conventional 配置去写 commit</li>
-<li>提交格式 <code>git commit -m &lt;type&gt;[optional scope]: &lt;description&gt;</code><ul>
-<li>type ：用于表明我们这次提交的改动类型，是新增了功能？还是修改了测试代码？又或者是更新了文档？</li>
-<li>optional scope：一个可选的修改范围。用于标识此次提交主要涉及到代码中哪个模块</li>
-<li>description：一句话描述此次提交的主要内容，做到言简意赅</li>
-</ul>
-</li>
-</ul>
-<h4 id="t6412.1.1 type类型">12.1.1 type类型 <a href="#t6412.1.1 type类型"> # </a></h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">类型</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">build</td>
-<td style="text-align:left">编译相关的修改，例如发布版本、对项目构建或者依赖的改动</td>
-</tr>
-<tr>
-<td style="text-align:left">chore</td>
-<td style="text-align:left">其他修改, 比如改变构建流程、或者增加依赖库、工具等</td>
-</tr>
-<tr>
-<td style="text-align:left">ci</td>
-<td style="text-align:left">持续集成修改</td>
-</tr>
-<tr>
-<td style="text-align:left">docs</td>
-<td style="text-align:left">文档修改</td>
-</tr>
-<tr>
-<td style="text-align:left">feature</td>
-<td style="text-align:left">新特性、新功能</td>
-</tr>
-<tr>
-<td style="text-align:left">fix</td>
-<td style="text-align:left">修改bug</td>
-</tr>
-<tr>
-<td style="text-align:left">perf</td>
-<td style="text-align:left">优化相关，比如提升性能、体验</td>
-</tr>
-<tr>
-<td style="text-align:left">refactor</td>
-<td style="text-align:left">代码重构</td>
-</tr>
-<tr>
-<td style="text-align:left">revert</td>
-<td style="text-align:left">回滚到上一个版本</td>
-</tr>
-<tr>
-<td style="text-align:left">style</td>
-<td style="text-align:left">代码格式修改</td>
-</tr>
-<tr>
-<td style="text-align:left">test</td>
-<td style="text-align:left">测试用例修改</td>
-</tr>
-</tbody>
-</table>
-<h3 id="t6512.2 安装">12.2 安装 <a href="#t6512.2 安装"> # </a></h3>
-<pre><code class="lang-js">cnpm i husky lint-staged @commitlint/cli @commitlint/config-conventional --save-dev
+      <h2 id="t6212.git hook">12.git hook <a href="#t6212.git hook"> # </a></h2>
+      <ul>
+        <li>可以在<code>git commit</code>之前检查代码，保证所有提交到版本库中的代码都是符合规范的</li>
+        <li>可以在<code>git push</code>之前执行单元测试,保证所有的提交的代码经过的单元测试</li>
+        <li><a href="[husky](https://www.npmjs.com/package/husky">husky</a>)可以让我们向项目中方便添加git hooks</li>
+        <li><a href="https://www.npmjs.com/package/lint-staged">lint-staged</a>用于实现每次提交只检查本次提交所修改的文件</li>
+        <li><a href="https://github.com/okonet/lint-staged#configuration">lint-staged#configuration</a></li>
+        <li><a href="">Commitlint</a>可以规范<code>git commit -m ""</code>中的描述信息</li>
+      </ul>
+      <h3 id="t6312.1 注释规范">12.1 注释规范 <a href="#t6312.1 注释规范"> # </a></h3>
+      <ul>
+        <li>commitlint 推荐我们使用 config-conventional 配置去写 commit</li>
+        <li>提交格式 <code>git commit -m &lt;type&gt;[optional scope]: &lt;description&gt;</code>
+          <ul>
+            <li>type ：用于表明我们这次提交的改动类型，是新增了功能？还是修改了测试代码？又或者是更新了文档？</li>
+            <li>optional scope：一个可选的修改范围。用于标识此次提交主要涉及到代码中哪个模块</li>
+            <li>description：一句话描述此次提交的主要内容，做到言简意赅</li>
+          </ul>
+        </li>
+      </ul>
+      <h4 id="t6412.1.1 type类型">12.1.1 type类型 <a href="#t6412.1.1 type类型"> # </a></h4>
+      <table>
+        <thead>
+          <tr>
+            <th style="text-align:left">类型</th>
+            <th style="text-align:left">描述</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:left">build</td>
+            <td style="text-align:left">编译相关的修改，例如发布版本、对项目构建或者依赖的改动</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">chore</td>
+            <td style="text-align:left">其他修改, 比如改变构建流程、或者增加依赖库、工具等</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">ci</td>
+            <td style="text-align:left">持续集成修改</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">docs</td>
+            <td style="text-align:left">文档修改</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">feature</td>
+            <td style="text-align:left">新特性、新功能</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">fix</td>
+            <td style="text-align:left">修改bug</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">perf</td>
+            <td style="text-align:left">优化相关，比如提升性能、体验</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">refactor</td>
+            <td style="text-align:left">代码重构</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">revert</td>
+            <td style="text-align:left">回滚到上一个版本</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">style</td>
+            <td style="text-align:left">代码格式修改</td>
+          </tr>
+          <tr>
+            <td style="text-align:left">test</td>
+            <td style="text-align:left">测试用例修改</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="t6512.2 安装">12.2 安装 <a href="#t6512.2 安装"> # </a></h3>
+      <pre><code class="lang-js">cnpm i husky lint-staged @commitlint/cli @commitlint/config-conventional --save-dev
 </code></pre>
-<h3 id="t6612.3 配置脚本">12.3 配置脚本 <a href="#t6612.3 配置脚本"> # </a></h3>
-<ul>
-<li><code>prepare</code>脚本会在<code>npm install</code>(不带参数)之后自动执行</li>
-<li>当我们执行npm install安装完项目依赖后会执行<code>husky install</code>命令，该命令会创建<code>.husky/</code>目录并指定该目录为<code>git hooks</code>所在的目录</li>
-</ul>
-<pre><code class="lang-js">npm <span class="hljs-keyword">set</span>-script prepare "husky install"
+      <h3 id="t6612.3 配置脚本">12.3 配置脚本 <a href="#t6612.3 配置脚本"> # </a></h3>
+      <ul>
+        <li><code>prepare</code>脚本会在<code>npm install</code>(不带参数)之后自动执行</li>
+        <li>当我们执行npm
+          install安装完项目依赖后会执行<code>husky install</code>命令，该命令会创建<code>.husky/</code>目录并指定该目录为<code>git hooks</code>所在的目录
+        </li>
+      </ul>
+      <pre><code class="lang-js">npm <span class="hljs-keyword">set</span>-script prepare "husky install"
 npm run prepare
 </code></pre>
-<h3 id="t6712.4 创建hooks">12.4 创建hooks <a href="#t6712.4 创建hooks"> # </a></h3>
-<pre><code class="lang-js">npx husky add .husky/pre-commit <span class="hljs-string">"lint-staged"</span>
+      <h3 id="t6712.4 创建hooks">12.4 创建hooks <a href="#t6712.4 创建hooks"> # </a></h3>
+      <pre><code class="lang-js">npx husky add .husky/pre-commit <span class="hljs-string">"lint-staged"</span>
 npx husky add .husky/commit-msg <span class="hljs-string">"npx --no-install commitlint --edit $1"</span>
 npx husky add .husky/pre-push <span class="hljs-string">"npm run test"</span>
 </code></pre>
-<h3 id="t6812.5 commitlint.config.js">12.5 commitlint.config.js <a href="#t6812.5 commitlint.config.js"> # </a></h3>
-<p>commitlint.config.js</p>
-<pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
+      <h3 id="t6812.5 commitlint.config.js">12.5 commitlint.config.js <a href="#t6812.5 commitlint.config.js"> # </a>
+      </h3>
+      <p>commitlint.config.js</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">module</span>.exports = {
   <span class="hljs-attr">extends</span>: [<span class="hljs-string">"@commitlint/config-conventional"</span>],
   <span class="hljs-attr">rules</span>: {
     <span class="hljs-string">"type-enum"</span>: [
@@ -1025,11 +1460,11 @@ npx husky add .husky/pre-push <span class="hljs-string">"npm run test"</span>
   },
 };
 </code></pre>
-<h2 id="t69参考">参考 <a href="#t69参考"> # </a></h2>
-<ul>
-<li><a href="https://zhuanlan.zhihu.com/p/80574300">搞懂 ESLint 和 Prettier</a></li>
-</ul>
+      <h2 id="t69参考">参考 <a href="#t69参考"> # </a></h2>
+      <ul>
+        <li><a href="https://zhuanlan.zhihu.com/p/80574300">搞懂 ESLint 和 Prettier</a></li>
+      </ul>
 
     </div>
-</div>
+  </div>
 </body>
